@@ -1,10 +1,12 @@
 // Bulk data work stays outside model context. Logs remain local; stdout is compact.
-import {spawnSync} from 'node:child_process';import {readFileSync,mkdirSync,openSync,closeSync} from 'node:fs';import {join,dirname} from 'node:path';import {fileURLToPath} from 'node:url';import {openDb,cairoDate} from './core.mjs';import {marketBusy} from './market.mjs';
+import {spawnSync} from 'node:child_process';import {readFileSync,mkdirSync,openSync,closeSync,writeFileSync,renameSync} from 'node:fs';import {join,dirname} from 'node:path';import {fileURLToPath} from 'node:url';import {openDb,cairoDate} from './core.mjs';import {marketBusy} from './market.mjs';
+import {createStageTiming} from './stage-timing.mjs';
 import {initPreparation,receiptFor} from './preparation-store.mjs';
 const root=dirname(dirname(fileURLToPath(import.meta.url))),db=openDb(join(root,'data','egx.sqlite')),now=new Date(),today=cairoDate(now),dir=join(root,'data','market','refreshes');mkdirSync(dir,{recursive:true});
 const logPath=join(dir,now.toISOString().replace(/[:.]/g,'-')+'.log'),fd=openSync(logPath,'a'),steps=[];
+const timingPath=logPath.replace(/\.log$/,'.timing.json'),timing=createStageTiming({onUpdate:value=>{writeFileSync(timingPath+'.tmp',JSON.stringify(value,null,2));renameSync(timingPath+'.tmp',timingPath);}});
 initPreparation(db);
-function run(file,args=[]){const r=spawnSync(process.execPath,[join(root,'app',file),...args],{cwd:root,windowsHide:true,stdio:['ignore',fd,fd],env:process.env});steps.push({step:file,status:r.status===0?'completed':'failed'});if(r.error||r.status!==0)throw Error(file+' failed; inspect '+logPath);}
+function run(file,args=[]){return timing.measure(file,()=>{const r=spawnSync(process.execPath,[join(root,'app',file),...args],{cwd:root,windowsHide:true,stdio:['ignore',fd,fd],env:process.env});steps.push({step:file,status:r.status===0?'completed':'failed'});if(r.error||r.status!==0)throw Error(file+' failed; inspect '+logPath);});}
 try{
  if(marketBusy(db))throw Error('Existing chart importer owns the refresh; resume after it finishes');
  let catalog;try{catalog=JSON.parse(readFileSync(join(root,'data','market','catalog.json'),'utf8'));}catch{}
@@ -17,5 +19,6 @@ try{
  run('import-market.mjs',[sunday?'--all':'--known','--due']);
  run('prepare-data.mjs');
  const history=db.prepare('SELECT total,done,success,failed,status FROM market_jobs ORDER BY id DESC LIMIT 1').get();
- console.log(JSON.stringify({status:history?.status==='completed'?'completed':'partial',steps,history,logPath,note:'Preparation preserves all fields and gaps. Completion is not investment eligibility, news clearance or paper activation.'}));
-}catch(e){console.log(JSON.stringify({status:'blocked',reason:e.message,steps,logPath}));process.exitCode=1;}finally{closeSync(fd);db.close();}
+ for(const step of steps.filter(x=>x.status==='reused'))timing.record(step.step,'reused',{capturedAt:step.capturedAt??null});
+ console.log(JSON.stringify({status:history?.status==='completed'?'completed':'partial',steps,history,logPath,timingPath,timing:timing.snapshot(),note:'Preparation preserves all fields and gaps. Completion is not investment eligibility, news clearance or paper activation.'}));
+}catch(e){timing.record('refresh','blocked',{error:e.message});console.log(JSON.stringify({status:'blocked',reason:e.message,steps,logPath,timingPath,timing:timing.snapshot()}));process.exitCode=1;}finally{closeSync(fd);db.close();}

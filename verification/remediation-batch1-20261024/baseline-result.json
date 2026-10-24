@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-24T11:03:18.973707+00:00",
+  "archive": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\data\\backups\\remediation-batch1-20261024-verified\\baseline.zip",
+  "restore": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\data\\backups\\remediation-batch1-20261024-verified\\restore",
+  "databases": [
+    {
+      "path": "data/analysis.sqlite",
+      "integrity": "ok",
+      "counts": {
+        "analysis_records": 144
+      }
+    },
+    {
+      "path": "data/egx-before-finality.sqlite",
+      "integrity": "ok",
+      "counts": {}
+    },
+    {
+      "path": "data/egx.sqlite",
+      "integrity": "ok",
+      "counts": {
+        "stocks": 296,
+        "bars": 129540,
+        "runs": 1708,
+        "events": 3,
+        "bar_captures": 129540,
+        "migrations": 1,
+        "journal": 0,
+        "journal_reviews": 0,
+        "attention": 54,
+        "fills": 0,
+        "market_catalog": 296,
+        "market_jobs": 26,
+        "market_facts": 296,
+        "market_benchmarks": 2,
+        "scout_runs": 8,
+        "research_queue": 35,
+        "research_notifications": 18,
+        "decision_inbox": 33,
+        "agent_decisions": 33,
+        "decision_outcomes": 167,
+        "decision_notes": 63,
+        "decision_journal": 0,
+        "intraday_rules": 90,
+        "intraday_events": 0,
+        "intraday_settings": 2,
+        "intraday_jobs": 0,
+        "operations_runs": 2,
+        "operations_checks": 8,
+        "preparation_attempts": 330,
+        "preparation_receipts": 5,
+        "chart_recovery": 3
+      }
+    },
+    {
+      "path": "data/experiments/egx-paper-2026-10-11/paper.sqlite",
+      "integrity": "ok",
+      "counts": {
+        "config": 1,
+        "ledger": 58,
+        "observations": 4591,
+        "orders": 0,
+        "fills": 0
+      }
+    }
+  ],
+  "restoredAllHashes": true,
+  "scope": "Each database is a SQLite online consistent snapshot; not an atomic cross-database snapshot. No original database opened for writing.",
+  "files": 3304,
+  "bytes": 1004411857
+}

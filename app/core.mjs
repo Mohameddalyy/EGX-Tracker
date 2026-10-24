@@ -6,6 +6,7 @@ import {dirname} from 'node:path';
 import {priceLevels} from './levels.mjs';
 import {replay} from './replay.mjs';
 import {initWatchlist} from './watchlist.mjs';
+import {historyRefreshState} from './refresh-selection.mjs';
 export const names={COMI:'Commercial International Bank',AMOC:'Alexandria Mineral Oils',SWDY:'Elsewedy Electric'};
 
 export function validateBars(bars){
@@ -58,7 +59,7 @@ export function ingest(db,payload){
 }
 export function snapshot(db,tickers=null,now=new Date()){
  const today=cairoDate(now);return {now:now.toISOString(),today,finalityPolicy:sessionPolicy,stocks:db.prepare('SELECT * FROM stocks ORDER BY ticker').all().filter(s=>tickers?tickers.includes(s.ticker):s.watched).map(s=>{const metadata=JSON.parse(s.metadata);const bars=db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON b.ticker=c.ticker AND b.day=c.day WHERE b.ticker=? ORDER BY b.day').all(s.ticker);const complete=bars.filter(b=>isConfirmedBar(b,now));const holidays=new Set((metadata.symbolInfo?.session_holidays||'').split(','));let gaps=[];for(let i=1;i<bars.length;i++){for(let t=Date.parse(bars[i-1].day)+86400000;t<Date.parse(bars[i].day);t+=86400000){const d=new Date(t),day=d.toISOString().slice(0,10);if(![5,6].includes(d.getUTCDay())&&!holidays.has(day.replaceAll('-','')))gaps.push(day);}}
- const last=complete.at(-1),previous=complete.at(-2);return {...s,metadata,bars,latest:last,latestFinality:barFinality(last,now),provisional:complete.length!==bars.length,unconfirmed:bars.filter(b=>!complete.includes(b)).map(b=>b.day),change:last&&previous?(last.close/previous.close-1)*100:null,indicators:indicators(complete),levels:priceLevels(complete,indicators(complete).atr14,today,now),replay:replay(complete,indicators,[...gaps,...bars.filter(b=>!complete.includes(b)).map(b=>b.day)]),gaps,captureAgeHours:s.retrieved_at?(now.getTime()-Date.parse(s.retrieved_at))/3600000:null};}),runs:db.prepare('SELECT id,at,status,message FROM runs ORDER BY id DESC LIMIT 12').all(),events:db.prepare('SELECT * FROM events ORDER BY id DESC LIMIT 20').all()};
+ const last=complete.at(-1),previous=complete.at(-2);return {...s,metadata,bars,latest:last,historyReadiness:historyRefreshState(s,last,now),latestFinality:barFinality(last,now),provisional:complete.length!==bars.length,unconfirmed:bars.filter(b=>!complete.includes(b)).map(b=>b.day),change:last&&previous?(last.close/previous.close-1)*100:null,indicators:indicators(complete),levels:priceLevels(complete,indicators(complete).atr14,today,now),replay:replay(complete,indicators,[...gaps,...bars.filter(b=>!complete.includes(b)).map(b=>b.day)]),gaps,captureAgeHours:s.retrieved_at?(now.getTime()-Date.parse(s.retrieved_at))/3600000:null};}),runs:db.prepare('SELECT id,at,status,message FROM runs ORDER BY id DESC LIMIT 12').all(),events:db.prepare('SELECT * FROM events ORDER BY id DESC LIMIT 20').all()};
 }
 
 

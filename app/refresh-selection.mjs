@@ -1,4 +1,4 @@
-import {cairoDate} from './core.mjs';
+import {cairoDate} from './finality.mjs';
 import {isConfirmedBar} from './finality.mjs';
 // Preparation freshness, not an exchange-certified trading calendar.
 export function expectedHistorySession(stock,now=new Date()){
@@ -19,10 +19,12 @@ export function expectedHistorySession(stock,now=new Date()){
 }
 export function historyRefreshState(stock,bar,now=new Date()){
  const expected=expectedHistorySession(stock,now),captured=Date.parse(stock?.retrieved_at),age=+now-captured;
- if(!expected.day){const legacy=!!bar&&bar.day===cairoDate(now)&&isConfirmedBar(bar,now)&&Number.isFinite(captured)&&age>=0&&cairoDate(new Date(captured))===cairoDate(now);return {due:!legacy,expectedSession:null,reason:expected.reason};}
- const code=!bar?'NO_HISTORY':bar.day<expected.day?'EXPECTED_SESSION_ABSENT':bar.day>expected.day?'LATEST_BAR_NOT_COMPLETED_SESSION':!isConfirmedBar(bar,now)?'BAR_FINALITY_UNCONFIRMED':!Number.isFinite(captured)||age<0?'CAPTURE_TIMESTAMP_INVALID':age>7*86400000?'CAPTURE_OR_METADATA_TOO_OLD':'REUSABLE';
+ const observationCapture=Date.parse(bar?.captured_at),sameCapture=Number.isFinite(observationCapture)&&observationCapture===captured;
+ if(!expected.day){const legacy=!!bar&&bar.day===cairoDate(now)&&isConfirmedBar(bar,now)&&sameCapture&&Number.isFinite(captured)&&age>=0&&cairoDate(new Date(captured))===cairoDate(now);return {due:!legacy,code:legacy?'REUSABLE':'SESSION_METADATA_UNAVAILABLE',expectedSession:null,reason:expected.reason,executionCertified:false};}
+ const code=!bar?'NO_HISTORY':bar.day<expected.day?'EXPECTED_SESSION_ABSENT':bar.day>expected.day?'LATEST_BAR_NOT_COMPLETED_SESSION':!isConfirmedBar(bar,now)?'BAR_FINALITY_UNCONFIRMED':!Number.isFinite(captured)||age<0?'CAPTURE_TIMESTAMP_INVALID':!sameCapture?'RETAINED_TAIL_NOT_RECONFIRMED':age>7*86400000?'CAPTURE_OR_METADATA_TOO_OLD':'REUSABLE';
  const reasons={NO_HISTORY:'No retained daily bars',EXPECTED_SESSION_ABSENT:'Latest bar '+bar?.day+' precedes expected session '+expected.day+'; no-trade/suspension/provider cause unverified',LATEST_BAR_NOT_COMPLETED_SESSION:'Latest bar is beyond the last completed provider session',BAR_FINALITY_UNCONFIRMED:'Expected-session bar lacks confirmed capture finality',CAPTURE_TIMESTAMP_INVALID:'Capture timestamp missing or future-dated',CAPTURE_OR_METADATA_TOO_OLD:'Capture/session metadata older than seven days',REUSABLE:'Reuse confirmed expected-session capture'};
- return {due:code!=='REUSABLE',code,expectedSession:expected.day,latestDay:bar?.day??null,reason:reasons[code],calendar:expected};
+ reasons.RETAINED_TAIL_NOT_RECONFIRMED='Latest retained bar was not verified by the latest stock capture; reconcile partial refresh';
+ return {due:code!=='REUSABLE',code,expectedSession:expected.day,latestDay:bar?.day??null,observationCapturedAt:bar?.captured_at??null,reason:reasons[code],calendar:expected,executionCertified:false};
 }
 export function needsHistoryRefresh(stock,bar,now=new Date()){
  return historyRefreshState(stock,bar,now).due;

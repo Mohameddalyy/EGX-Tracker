@@ -1,4 +1,4 @@
-import {evidenceDictionary,fieldConsequence} from './evidence-policy.mjs';
+import {evidenceDictionary,evidenceContractVersion,fieldConsequence} from './evidence-policy.mjs';
 import {historyRefreshState} from './refresh-selection.mjs';
 import {exchangeEvidence} from './exchange-evidence.mjs';
 import {documentReviews} from './document-verification.mjs';
@@ -8,7 +8,7 @@ export function readinessOverview(db,{root}={}){
  const receipts=has(db,'preparation_receipts')?db.prepare('SELECT * FROM preparation_receipts ORDER BY at DESC').all().map(x=>({...x,payload:JSON.parse(x.payload)})):[];
  let library=null;if(root){const path=join(root,'data','research','evidence','library','index.json');if(existsSync(path)){const index=JSON.parse(readFileSync(path,'utf8')),items=Object.values(index.items);library={updatedAt:index.updatedAt,routes:items.length,responsesRetained:items.filter(x=>x.bodyPath).length,unavailable:items.filter(x=>x.status==='UNAVAILABLE').length,lastPass:index.coverage,indexPath:path,verifiedByDownload:false};}}
  if(root&&library){const path=join(root,'data','research','evidence','library','inspection.json');if(existsSync(path)){const inspected=JSON.parse(readFileSync(path,'utf8'));library.inspection={at:inspected.at,counts:inspected.counts};}const reviewed=documentReviews(root);library.reviewedDocuments=reviewed.length;library.reviewedFacts=reviewed.reduce((n,r)=>n+r.facts.length,0);}
- return {contract:'egx-field-evidence-1',exchange:root?exchangeEvidence(root):null,library,baseline:receipts.find(x=>x.component==='baseline')||null,components:receipts.filter(x=>x.component!=='baseline').slice(0,8),repairs:has(db,'preparation_attempts')?db.prepare("SELECT ticker,component,target,at,status,next_retry,detail FROM preparation_attempts WHERE id IN (SELECT MAX(id) FROM preparation_attempts GROUP BY ticker,component) AND status!='verified' ORDER BY at DESC").all():[],note:'Missing optional fields do not reject a stock. Critical gaps block only dependent steps. Provider values still need source validation.'};
+ return {contract:evidenceContractVersion,exchange:root?exchangeEvidence(root,null,db.prepare('SELECT ticker,metadata FROM stocks').all()):null,library,baseline:receipts.find(x=>x.component==='baseline')||null,components:receipts.filter(x=>x.component!=='baseline').slice(0,8),repairs:has(db,'preparation_attempts')?db.prepare("SELECT ticker,component,target,at,status,next_retry,detail FROM preparation_attempts WHERE id IN (SELECT MAX(id) FROM preparation_attempts GROUP BY ticker,component) AND status!='verified' ORDER BY at DESC").all():[],note:'Missing optional fields do not reject a stock. Critical gaps block only dependent steps. Provider values still need source validation.'};
 }
 export function preparationManifest(db,now=new Date(),{savedAnalysis=[]}={}){
  const stats=db.prepare('SELECT ticker,COUNT(*) n,MIN(day) first,MAX(day) last FROM bars GROUP BY ticker').all();

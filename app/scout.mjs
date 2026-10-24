@@ -1,4 +1,5 @@
 import {isConfirmedBar} from './finality.mjs';
+import {historyRefreshState} from './refresh-selection.mjs';
 import {randomUUID} from 'node:crypto';import {cairoDate,indicators} from './core.mjs';import {initFacts,factsFor} from './market-facts.mjs';
 const median=a=>{const v=a.filter(Number.isFinite).sort((a,b)=>a-b);return v.length?(v[Math.floor((v.length-1)/2)]+v[Math.ceil((v.length-1)/2)])/2:null;};
 export function initScout(db){initFacts(db);db.exec(`CREATE TABLE IF NOT EXISTS scout_runs(id TEXT PRIMARY KEY,at TEXT NOT NULL,policy TEXT NOT NULL,summary TEXT NOT NULL,payload TEXT NOT NULL); CREATE TABLE IF NOT EXISTS research_queue(id TEXT PRIMARY KEY,run_id TEXT NOT NULL,ticker TEXT NOT NULL,as_of TEXT NOT NULL,policy_version TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'pending',created_at TEXT NOT NULL,updated_at TEXT NOT NULL,evidence TEXT NOT NULL,report_id TEXT,note TEXT,UNIQUE(ticker,as_of,policy_version)); CREATE TABLE IF NOT EXISTS research_notifications(id TEXT PRIMARY KEY,created_at TEXT NOT NULL,ticker TEXT,queue_id TEXT,report_id TEXT,message TEXT NOT NULL,read_at TEXT);`);}
@@ -13,13 +14,14 @@ export function screenStocks(stocks,policy,benchmarks=[],now=new Date()){
   if(bars.length<policy.minConfirmedBars)reasons.push('Insufficient confirmed history');
   const age=(time-Date.parse(s.retrieved_at))/3600000;if(!Number.isFinite(age)||age<0||age>policy.maxCaptureAgeHours)reasons.push('Stale or missing price capture');
   if(!last||Date.parse(today)-Date.parse(last.day)>policy.maxLastBarAgeDays*86400000)reasons.push('No recent confirmed trading session');
+  const historyReadiness=historyRefreshState(s,last,now);if(historyReadiness.due)reasons.push('History readiness: '+historyReadiness.reason);
   if(medianTurnover===null||medianTurnover<policy.minMedianTurnoverEGP||activeDays<policy.minNonzeroVolumeSessions20)reasons.push('Liquidity below research-screen minimum');
   if(atrPercent===null||atrPercent>policy.maxAtrPercent)reasons.push('Volatility unavailable or above screening limit');
   const factsAge=(time-Date.parse(s.facts?.capturedAt))/3600000,factsFresh=Number.isFinite(factsAge)&&factsAge>=0&&factsAge<=policy.maxCaptureAgeHours;
   const f=factsFresh?s.facts.values:{};if(!factsFresh)flags.push('Financial snapshot missing/stale');
   if(!(f.price_earnings_ttm>0))flags.push('Positive P/E unavailable; verify earnings');if(!Number.isFinite(f.return_on_equity))flags.push('ROE unavailable');
   flags.push('Financial periods, majority/major shareholders, filings, news and corporate actions require analyst verification');
-  return {ticker:s.ticker,name:s.name,currency:s.currency,sector:s.sector||'',industry:f.industry||'',watched:!!s.watched,asOf:last?.day||null,priceCapture:s.retrieved_at,eligible:!reasons.length,exclusions:reasons,flags,score:0,signals:[],metrics:{close:last?.close,sma50:i.sma50,momentum6mExLastMonth:momentum,atrPercent,medianTurnoverEGP:s.currency==='EGP'?medianTurnover:null,activeDays20:activeDays,rv20:i.rv20,pe:f.price_earnings_ttm??null,roe:f.return_on_equity??null,debtEquity:f.debt_to_equity??null},facts:s.facts||null};
+  return {ticker:s.ticker,name:s.name,currency:s.currency,sector:s.sector||'',industry:f.industry||'',watched:!!s.watched,asOf:last?.day||null,priceCapture:s.retrieved_at,historyReadiness,eligible:!reasons.length,exclusions:reasons,flags,score:0,signals:[],metrics:{close:last?.close,sma50:i.sma50,momentum6mExLastMonth:momentum,atrPercent,medianTurnoverEGP:s.currency==='EGP'?medianTurnover:null,activeDays20:activeDays,rv20:i.rv20,pe:f.price_earnings_ttm??null,roe:f.return_on_equity??null,debtEquity:f.debt_to_equity??null},facts:s.facts||null};
  });
  const eligible=rows.filter(r=>r.eligible),momentums=eligible.map(r=>r.metrics.momentum6mExLastMonth).filter(Number.isFinite);
  for(const r of eligible){const m=r.metrics,peers=eligible.filter(p=>r.industry&&p.industry===r.industry),pes=peers.map(p=>p.metrics.pe).filter(p=>Number.isFinite(p)&&p>0),roes=peers.map(p=>p.metrics.roe).filter(Number.isFinite);
@@ -41,7 +43,7 @@ export function runScout(db,policy,now=new Date(),{enqueue=true}={}){
  const rows=screenStocks(stocks,policy,benchmarks,now),sessionKey=rows.filter(r=>r.eligible).map(r=>r.asOf).sort().at(-1)||null,previous=db.prepare("SELECT summary,payload FROM scout_runs WHERE json_extract(summary,'$.total') IS NOT NULL ORDER BY at DESC LIMIT 1").get(),sameSession=previous&&(JSON.parse(previous.summary).sessionKey??JSON.parse(previous.payload).rows?.filter(r=>r.eligible).map(r=>r.asOf).sort().at(-1))===sessionKey,id='screen-'+randomUUID(),at=now.toISOString(),queued=[];
  db.exec('BEGIN IMMEDIATE');try{for(const r of rows.filter(r=>enqueue&&(!sameSession||policy.drainResearchBacklog)&&r.candidate&&(policy.includeWatchedInResearch||!r.watched))){
   if(queued.length>=policy.maxNewCandidatesPerRun)break;
-  if(policy.drainResearchBacklog&&db.prepare("SELECT COUNT(*) n FROM research_queue WHERE status IN ('pending','researching','awaiting_decision')").get().n>=policy.maxNewCandidatesPerRun)break;
+  if(db.prepare("SELECT COUNT(*) n FROM research_queue WHERE status IN ('pending','researching','awaiting_decision')").get().n>=Math.min(5,policy.maxNewCandidatesPerRun))break;
   const prior=db.prepare('SELECT * FROM research_queue WHERE ticker=? ORDER BY created_at DESC LIMIT 1').get(r.ticker);if(prior&&(prior.status==='pending'||prior.status==='researching'||prior.status==='awaiting_decision'||prior.as_of===r.asOf||Date.parse(at)-Date.parse(prior.updated_at)<policy.reviewCooldownDays*86400000))continue;
   const qid='candidate-'+randomUUID();db.prepare('INSERT INTO research_queue(id,run_id,ticker,as_of,policy_version,created_at,updated_at,evidence) VALUES(?,?,?,?,?,?,?,?)').run(qid,id,r.ticker,r.asOf,policy.version,at,at,JSON.stringify(r));queued.push({id:qid,ticker:r.ticker,score:r.score});
  }

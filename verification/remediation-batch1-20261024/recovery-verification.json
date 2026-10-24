@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-10-24T11:24:18.502885+00:00",
+  "sourceBaselineCommit": "6a39953",
+  "node": "24",
+  "baselineFiles": 3304,
+  "databases": 4,
+  "baselineRestoredHashesMatch": true,
+  "dependencyFiles": 16589,
+  "dependencyRestoredHashesMatch": true,
+  "archives": {
+    "baseline.zip": "4a1f4cb8abe40f548047c78bfcd394b8db4324c435f474cf207fc0e9a3a01040",
+    "dependencies.zip": "1c88daa860fb9ff1138b05c26734a060f3443e4b2aad678b5e5dcd8dbdbfff9e",
+    "manifest.json": "9fc1613fc0671a89dff2bb5ad875185e9e6927c1bffdcb440dbffdc0287519a1",
+    "dependencies-manifest.json": "5b5a2b40848704a1cd30c932cc7101c6c455bd48c73a42b1d3f6ee1cafced25e"
+  },
+  "restoredOriginalTests": {
+    "passed": 132,
+    "failed": 0,
+    "log": "restored-baseline-tests-fixed.log"
+  },
+  "currentTests": {
+    "passed": 144,
+    "failed": 0,
+    "log": "full-tests-final.log"
+  },
+  "limitations": [
+    "Same-machine isolated recovery; configured runtime reused.",
+    "Each database is an individual online snapshot, not cross-database atomic.",
+    "Credentials are not promised recoverable by this dependency supplement."
+  ]
+}

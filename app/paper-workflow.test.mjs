@@ -1,3 +1,4 @@
+import {evidenceFixture} from './evidence-fixture.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';
 import {mkdtempSync,mkdirSync,readFileSync,writeFileSync,rmSync} from 'node:fs';import {tmpdir} from 'node:os';import {join} from 'node:path';
 import {openDb,ingest} from './core.mjs';import {initMarket} from './market.mjs';import {initScout,runScout} from './scout.mjs';
@@ -15,7 +16,7 @@ test('isolated screen → analyst → guarded decision → confirmed trigger →
  ingest(db,{retrieved_at:reviewed.toISOString(),stocks:[{ticker:'TEST',history:{bars:stock.bars},adjustment:{...stock.metadata,symbolExt:{symbol:'TEST'},symbolInfo:{...stock.metadata.symbolInfo,currency_code:'EGP'},properties:{dividendsAdjustment:false}}}]});
  const screen=runScout(db,{...JSON.parse(readFileSync('research/screening-policy.json')),minScore:0,maxAtrPercent:100},reviewed),candidate=screen.queued.find(x=>x.ticker==='TEST');assert(candidate,'The actual screen must enqueue the synthetic research candidate');
  const plan=buildTradePlan(stock,planOptions),sources=[{id:'fixture',url:'https://example.com/synthetic-test',title:'Synthetic test evidence — not market research',accessedAt:reviewed.toISOString()}];
- const a={ticker:'TEST',candidateId:candidate.id,verdict:'Conditional setup',pipelineDecision:'approve',horizon:'Medium term',rationale:'Synthetic pipeline fixture',sourceIds:['fixture'],riskPlan:plan,evidenceChecks:Object.fromEntries(requiredChecks.map(k=>[k,{status:'verified',asOf:'2026-10-07',sourceIds:['fixture'],note:'Synthetic isolated test only'}]))};
+ const a={ticker:'TEST',candidateId:candidate.id,verdict:'Conditional setup',pipelineDecision:'approve',horizon:'Medium term',rationale:'Synthetic pipeline fixture',sourceIds:['fixture'],fieldEvidence:evidenceFixture(reviewed,'fixture'),riskPlan:plan,evidenceChecks:Object.fromEntries(requiredChecks.map(k=>[k,{status:'verified',asOf:'2026-10-07',sourceIds:['fixture'],note:'Synthetic isolated test only'}]))};
  for(const k of ['fundamentals','technicals','catalysts','risks','invalidation','positionReview','entryConditions'])a[k]='Synthetic test only';
  const report={version:'1.0',id:'report-test',createdAt:reviewed.toISOString(),contextId:'context-test',type:'research',summary:'Isolated test',limitations:['Synthetic evidence'],sources,assessments:[a]};
  mkdirSync(join(root,'data','research'),{recursive:true});mkdirSync(join(root,'research'));writeFileSync(join(root,'data','research','report-test.json'),JSON.stringify(report));writeFileSync(join(root,'data','research','context-test.json'),JSON.stringify({id:'context-test',createdAt:reviewed.toISOString(),stocks:[stock]}));writeFileSync(join(root,'research','decision-policy.json'),readFileSync('research/decision-policy.json'));

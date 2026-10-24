@@ -1,0 +1,1296 @@
+{
+  "version": "v5-phase2-design-only",
+  "asOf": "2026-10-23",
+  "timezone": "Africa/Cairo",
+  "activated": false,
+  "sourcePolicy": "No Stock Analysis, Mubasher, Thndr or legacy Notion setups.",
+  "proposedImportantGapSizeMultiplier": 0.5,
+  "confidencePenalty": "None: do not invent calibrated probabilities or arbitrary numeric penalties.",
+  "rows": [
+    {
+      "id": "name",
+      "unit": "string",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "TradingView symbol metadata",
+        "EGX instrument notice",
+        "issuer identity evidence"
+      ],
+      "formula": "Cross-check ISIN, listing, share class, market segment and currency; ticker string alone is insufficient.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Catalog weekly plus daily membership delta; currency/action changes immediately.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "type",
+      "unit": "string",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "TradingView symbol metadata",
+        "EGX instrument notice",
+        "issuer identity evidence"
+      ],
+      "formula": "Cross-check ISIN, listing, share class, market segment and currency; ticker string alone is insufficient.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Catalog weekly plus daily membership delta; currency/action changes immediately.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "exchange",
+      "unit": "string",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "TradingView symbol metadata",
+        "EGX instrument notice",
+        "issuer identity evidence"
+      ],
+      "formula": "Cross-check ISIN, listing, share class, market segment and currency; ticker string alone is insufficient.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Catalog weekly plus daily membership delta; currency/action changes immediately.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "currency",
+      "unit": "string",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "TradingView symbol metadata",
+        "EGX instrument notice",
+        "issuer identity evidence"
+      ],
+      "formula": "Cross-check ISIN, listing, share class, market segment and currency; ticker string alone is insufficient.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Catalog weekly plus daily membership delta; currency/action changes immediately.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "sector",
+      "unit": "classification",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "issuer business segments",
+        "analyst classification with dated rationale"
+      ],
+      "formula": "Do not silently use an unrelated peer sector.",
+      "consequence": "Unknown sector blocks new allocation until classified; sector cap cannot be bypassed.",
+      "cadence": "Quarterly/event; reuse dated classification.",
+      "coverage": {
+        "nonNull": 278,
+        "usable": 278
+      }
+    },
+    {
+      "id": "industry",
+      "unit": "classification",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "issuer business segments",
+        "analyst classification with dated rationale"
+      ],
+      "formula": "Do not silently use an unrelated peer sector.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Quarterly/event; reuse dated classification.",
+      "coverage": {
+        "nonNull": 278,
+        "usable": 278
+      }
+    },
+    {
+      "id": "open",
+      "unit": "native currency/share",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "confirmed TradingView chart bar",
+        "timestamped official exchange price"
+      ],
+      "formula": "Scanner value is discovery only without bar time/finality. For action use confirmed bar/quote plus delay and session metadata.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "high",
+      "unit": "native currency/share",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "confirmed TradingView chart bar",
+        "timestamped official exchange price"
+      ],
+      "formula": "Scanner value is discovery only without bar time/finality. For action use confirmed bar/quote plus delay and session metadata.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "low",
+      "unit": "native currency/share",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "confirmed TradingView chart bar",
+        "timestamped official exchange price"
+      ],
+      "formula": "Scanner value is discovery only without bar time/finality. For action use confirmed bar/quote plus delay and session metadata.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "close",
+      "unit": "native currency/share",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "confirmed TradingView chart bar",
+        "timestamped official exchange price"
+      ],
+      "formula": "Scanner value is discovery only without bar time/finality. For action use confirmed bar/quote plus delay and session metadata.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "volume",
+      "unit": "shares per bar",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "TradingView chart volume",
+        "dated exchange share volume"
+      ],
+      "formula": "Null is unknown; zero requires a complete, confirmed zero-activity interval. Preserve split adjustment basis.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 294
+      }
+    },
+    {
+      "id": "price_earnings_ttm",
+      "unit": "multiple",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Price / diluted trailing EPS, only EPS > 0 and compatible share/currency basis.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 62,
+        "usable": 62
+      }
+    },
+    {
+      "id": "price_book_fq",
+      "unit": "multiple",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Market capitalization / common equity, only positive comparable common equity; match share class and accounting scope.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 163,
+        "usable": 163
+      }
+    },
+    {
+      "id": "return_on_equity",
+      "unit": "provider unit; normalize to fraction",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Trailing attributable earnings / average attributable common equity; do not mix provider latest-equity ROE with this definition.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 65,
+        "usable": 65
+      }
+    },
+    {
+      "id": "debt_to_equity",
+      "unit": "provider unit; normalize to ratio",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Interest-bearing debt / positive equity, explicitly defined. Bank deposits are not industrial borrowing; bank quality requires separate capital/asset-quality fields.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 163,
+        "usable": 163
+      }
+    },
+    {
+      "id": "market_cap_basic",
+      "unit": "native currency; verify unit",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "issuer shares plus valid chart price"
+      ],
+      "formula": "Price × current shares outstanding for the same share class; disclose free-float versus total capitalization.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline. Price component daily.",
+      "coverage": {
+        "nonNull": 242,
+        "usable": 242
+      }
+    },
+    {
+      "id": "earnings_per_share_diluted_ttm",
+      "unit": "native currency/share",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Sum four non-overlapping quarterly diluted EPS only when share basis is consistent; otherwise calculate from attributable earnings and matching weighted diluted shares.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 68,
+        "usable": 68
+      }
+    },
+    {
+      "id": "total_revenue_yoy_growth_ttm",
+      "unit": "provider percent; normalize",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Revenue TTM / prior-year comparable TTM - 1; a zero or incompatible base is unavailable.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 70,
+        "usable": 70
+      }
+    },
+    {
+      "id": "float_shares_outstanding",
+      "unit": "shares",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "issuer ownership/shareholding disclosure",
+        "EGX dated float disclosure"
+      ],
+      "formula": "No inference from trading volume; stale float cannot certify current available supply.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 161,
+        "usable": 161
+      }
+    },
+    {
+      "id": "average_volume_30d_calc",
+      "unit": "shares; provider definition",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local 30-session share-volume mean"
+      ],
+      "formula": "Local mean of prior 30 completed exchange sessions, labeled a different series if provider uses another calendar.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "Perf.1M",
+      "unit": "percent",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local adjusted-close return"
+      ],
+      "formula": "Local substitute = 100 × (C[t]/C[t-21] - 1), using exchange sessions and known adjustment basis. Do not claim exact provider calendar equivalence.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 264,
+        "usable": 264
+      }
+    },
+    {
+      "id": "Perf.3M",
+      "unit": "percent",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local adjusted-close return"
+      ],
+      "formula": "Local substitute = 100 × (C[t]/C[t-63] - 1), using exchange sessions and known adjustment basis. Do not claim exact provider calendar equivalence.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 264,
+        "usable": 264
+      }
+    },
+    {
+      "id": "Perf.6M",
+      "unit": "percent",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local adjusted-close return"
+      ],
+      "formula": "Local substitute = 100 × (C[t]/C[t-126] - 1), using exchange sessions and known adjustment basis. Do not claim exact provider calendar equivalence.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 264,
+        "usable": 264
+      }
+    },
+    {
+      "id": "Perf.Y",
+      "unit": "percent",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local adjusted-close return"
+      ],
+      "formula": "Local substitute = 100 × (C[t]/C[t-252] - 1), using exchange sessions and known adjustment basis. Do not claim exact provider calendar equivalence.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 264,
+        "usable": 264
+      }
+    },
+    {
+      "id": "Recommend.All",
+      "unit": "technical composite [-1,1]",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "documented local technical feature vector"
+      ],
+      "formula": "Do not recreate a provider score from a subset or count daily/weekly ratings as independent analyst votes. Local features remain separately named.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "Recommend.MA",
+      "unit": "technical composite [-1,1]",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "documented local technical feature vector"
+      ],
+      "formula": "Do not recreate a provider score from a subset or count daily/weekly ratings as independent analyst votes. Local features remain separately named.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "Recommend.Other",
+      "unit": "technical composite [-1,1]",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "documented local technical feature vector"
+      ],
+      "formula": "Do not recreate a provider score from a subset or count daily/weekly ratings as independent analyst votes. Local features remain separately named.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "Recommend.All|1W",
+      "unit": "technical composite [-1,1]",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "documented local technical feature vector"
+      ],
+      "formula": "Do not recreate a provider score from a subset or count daily/weekly ratings as independent analyst votes. Local features remain separately named.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "Recommend.MA|1W",
+      "unit": "technical composite [-1,1]",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "documented local technical feature vector"
+      ],
+      "formula": "Do not recreate a provider score from a subset or count daily/weekly ratings as independent analyst votes. Local features remain separately named.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "Recommend.Other|1W",
+      "unit": "technical composite [-1,1]",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "documented local technical feature vector"
+      ],
+      "formula": "Do not recreate a provider score from a subset or count daily/weekly ratings as independent analyst votes. Local features remain separately named.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "RSI",
+      "unit": "0–100",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local Wilder RSI(14)"
+      ],
+      "formula": "100 - 100/(1+RMA(gain,14)/RMA(loss,14)); zero loss/gain conventions and warmup versioned.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "MACD.macd",
+      "unit": "native price units",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local EMA MACD"
+      ],
+      "formula": "EMA(close,12) - EMA(close,26); initialization/warmup versioned.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "MACD.signal",
+      "unit": "native price units",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local EMA MACD signal"
+      ],
+      "formula": "EMA(MACD,9); do not compare to a different warmup series without labeling.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "ADX",
+      "unit": "0–100",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "local Wilder ADX(14)"
+      ],
+      "formula": "Directional movement and true range use Wilder smoothing; 14-period smoothed DX. Flat/zero-range bars handled explicitly.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 262,
+        "usable": 262
+      }
+    },
+    {
+      "id": "relative_volume_10d_calc",
+      "unit": "multiple",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "separately named local RV10"
+      ],
+      "formula": "Local RV10 = V[t]/mean(V[t-10..t-1]); not RV20 and not proof of intraday volume surprise.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": {
+        "nonNull": 260,
+        "usable": 260
+      }
+    },
+    {
+      "id": "dividends_yield_current",
+      "unit": "provider percent; normalize",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "issuer/EGX declared cash dividends plus valid price"
+      ],
+      "formula": "State whether declared forward or paid trailing yield. No assumed dividend or sustainability from a high yield.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 238,
+        "usable": 238
+      }
+    },
+    {
+      "id": "net_margin",
+      "unit": "provider percent; normalize",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Comparable net income / revenue; identify consolidated/standalone and minority interests.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 69,
+        "usable": 69
+      }
+    },
+    {
+      "id": "return_on_assets",
+      "unit": "provider percent; normalize",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Trailing earnings / average assets; define bank/non-bank scope.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 65,
+        "usable": 65
+      }
+    },
+    {
+      "id": "current_ratio",
+      "unit": "multiple",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Current assets/current liabilities for nonfinancials. Banks: not applicable, never zero or a screening penalty.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 166,
+        "usable": 166
+      }
+    },
+    {
+      "id": "total_revenue_ttm",
+      "unit": "native currency; verify scale",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Four non-overlapping quarters; annual + current YTD - prior comparable YTD where accounting basis matches.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 70,
+        "usable": 70
+      }
+    },
+    {
+      "id": "net_income_ttm",
+      "unit": "native currency; verify scale",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Four non-overlapping quarters or annual + current YTD - prior YTD. Separate one-offs, FX and attributable/common income.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": {
+        "nonNull": 70,
+        "usable": 70
+      }
+    },
+    {
+      "id": "price_target_average",
+      "unit": "native currency/share",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "dated identifiable analyst research if lawfully available"
+      ],
+      "formula": "NoRating/missing horizon/count makes consensus context-only; never copy into an executable target.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Check daily snapshot; actual target date/horizon mandatory to interpret.",
+      "coverage": {
+        "nonNull": 49,
+        "usable": 49
+      }
+    },
+    {
+      "id": "AnalystRating",
+      "unit": "provider consensus category",
+      "criticality": "nice-to-have",
+      "scope": "All",
+      "fallback": [
+        "TradingView scanner",
+        "dated identifiable analyst research if lawfully available"
+      ],
+      "formula": "NoRating means unavailable, not neutral. No company financial approval from consensus.",
+      "consequence": "N: omit optional feature; no score renormalization or sizing penalty.",
+      "cadence": "Daily snapshot; recommendation vintage/count separate.",
+      "coverage": {
+        "nonNull": 294,
+        "usable": 49
+      }
+    },
+    {
+      "id": "isin_alias_segment",
+      "unit": "identity record",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "EGX instrument/listing notice",
+        "TradingView metadata",
+        "issuer notice"
+      ],
+      "formula": "Keep old/new ticker effective dates. Temporary listing does not prove tradability.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Weekly reconciliation; immediate corporate-action/event update.",
+      "coverage": null
+    },
+    {
+      "id": "bar_time_session_delay",
+      "unit": "UTC time + Cairo session + seconds",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView bar and symbol metadata",
+        "verified exchange session specification"
+      ],
+      "formula": "Capture time, event time, bar-end time and feed delay separate. Require latest expected completed bar/session, not latest calendar date.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Every capture; calendar daily and notice-driven.",
+      "coverage": null
+    },
+    {
+      "id": "adjustment_basis",
+      "unit": "versioned enum and action factors",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView chart metadata plus issuer/EGX corporate actions",
+        "verified vendor adjustment specification"
+      ],
+      "formula": "Raw price for fills; action-adjusted series for continuity. DividendsAdjustment=false does not prove all corporate-action adjustments absent.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Every capture/action; hash series vintage.",
+      "coverage": null
+    },
+    {
+      "id": "historical_ohlcv",
+      "unit": "dated OHLCV array",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "TradingView confirmed chart history",
+        "official exchange licensed/downloaded history if available",
+        "existing same-basis valid cache"
+      ],
+      "formula": "Required lookback + indicator warmup; do not compress missing sessions into consecutive trading days or fabricate bars.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "D; repair only absent/revised partitions.",
+      "coverage": null
+    },
+    {
+      "id": "median_turnover20",
+      "unit": "EGP/session",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Official traded value",
+        "intraday sum(price × shares)",
+        "daily typical-price proxy with uncertainty"
+      ],
+      "formula": "Proxy median over prior 20 sessions of ((H+L+C)/3) × V; require native EGP or verified FX. Conservative floor check uses L × V; if eligibility changes across proxy bounds, block.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": null
+    },
+    {
+      "id": "active_sessions20",
+      "unit": "integer 0–20",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Validated bars plus exchange calendar",
+        "official trading history"
+      ],
+      "formula": "Count confirmed sessions with V > 0; a missing bar is unknown, not an inactive day.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": null
+    },
+    {
+      "id": "rv20",
+      "unit": "multiple",
+      "criticality": "critical for volume-confirmed model",
+      "scope": "All",
+      "fallback": [
+        "Validated local daily volumes",
+        "official equivalent volume series"
+      ],
+      "formula": "V[t]/mean(V[t-20..t-1]); exclude signal bar from denominator; no zero/missing denominator. Preserve action-adjusted volume basis.",
+      "consequence": "Block volume-confirmed strategy; other explicitly tested strategy may continue, never an ad-hoc bypass.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": null
+    },
+    {
+      "id": "intraday_rv_by_time",
+      "unit": "multiple and sample count",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "Validated minute history",
+        "complete past session cumulative-volume profiles"
+      ],
+      "formula": "Current cumulative V through time u / median prior 20 comparable sessions cumulative V through u; require >=15 complete matched sessions. No comparison of 10:45 volume with full-day average.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Each monitored interval.",
+      "coverage": null
+    },
+    {
+      "id": "atr14",
+      "unit": "native currency/share",
+      "criticality": "critical when used for stop/filter",
+      "scope": "All",
+      "fallback": [
+        "Validated local daily bars",
+        "equivalent verified exchange series"
+      ],
+      "formula": "Wilder mean(14) of max(H-L,abs(H-Cprev),abs(L-Cprev)); exclude incomplete bars and handle actions.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": null
+    },
+    {
+      "id": "bid_ask_depth",
+      "unit": "native price and shares with timestamps",
+      "criticality": "critical for live execution; optional for delayed bar simulation",
+      "scope": "All",
+      "fallback": [
+        "Entitled TradingView quote/depth if available",
+        "authorized timestamped broker/exchange quote"
+      ],
+      "formula": "High-low range is not bid-ask spread. No invented order queue or market depth.",
+      "consequence": "No live execution approval without verified spread/executable liquidity. Delayed-bar paper simulation may use predeclared conservative costs, with unavailable depth explicit.",
+      "cadence": "At action/fill; never infer from last price.",
+      "coverage": null
+    },
+    {
+      "id": "minute_fill_evidence",
+      "unit": "completed dated OHLCV",
+      "criticality": "critical for minute-based paper fill",
+      "scope": "All",
+      "fallback": [
+        "TradingView complete confirmed minute capture",
+        "authorized exchange minute history"
+      ],
+      "formula": "Use later eligible observations, participation limits and declared ambiguous-path handling; no retroactive same-bar hindsight fills.",
+      "consequence": "No minute-based fill if missing/gapped/stale. A separately frozen next-session daily simulator is a different experiment.",
+      "cadence": "Every simulated action; decision must precede eligible observation.",
+      "coverage": null
+    },
+    {
+      "id": "corporate_actions",
+      "unit": "typed action, effective dates, factors",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "EGX original disclosure",
+        "issuer original announcement",
+        "regulator notice",
+        "verified manual original"
+      ],
+      "formula": "Splits, rights, cash dividends, mergers, suspensions and capital changes distinct. Empty failed feed is not no actions.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Baseline plus event deltas; recheck immediately before approving a new setup.",
+      "coverage": null
+    },
+    {
+      "id": "news_disclosure_coverage",
+      "unit": "window + watermarks + event IDs",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "EGX complete paginated feed and issuer notices",
+        "issuer/regulator direct search with declared time window",
+        "verified manual original"
+      ],
+      "formula": "Record successfully searched sources and interval; dedupe content, not just headline. Unchanged scores do not imply unchanged news.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Delta checks each run and for approved/held names during monitoring.",
+      "coverage": null
+    },
+    {
+      "id": "ownership_control",
+      "unit": "dated holders and control changes",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "Issuer ownership disclosures",
+        "EGX ownership notices",
+        "regulator filings",
+        "verified manual original"
+      ],
+      "formula": "No inference from free-float estimate alone. A control dispute or material change makes missing detail critical.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Latest filing plus daily change/event sweep.",
+      "coverage": null
+    },
+    {
+      "id": "audited_statements",
+      "unit": "dated signed statements and notes",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Verify auditor opinion, reporting period, publication time, currency/scale, consolidation and restatements.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": null
+    },
+    {
+      "id": "cash_flow_quality",
+      "unit": "currency and ratios",
+      "criticality": "conditional critical",
+      "scope": "All",
+      "fallback": [
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "CFO, capex and FCF=CFO-capex with capex sign normalized; CFO/net income only for nonzero comparable income. Separate working-capital releases and one-offs.",
+      "consequence": "F: critical for quality/value approval; for technical research omit this factor and mark the fundamental section incomplete. A material solvency/earnings uncertainty blocks approval.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": null
+    },
+    {
+      "id": "solvency_bank_metrics",
+      "unit": "sector-specific ratios",
+      "criticality": "critical when material",
+      "scope": "All",
+      "fallback": [
+        "Original issuer filing",
+        "original exchange filing copy",
+        "authenticated regulator filing",
+        "manually supplied original with issuer/date/page validation"
+      ],
+      "formula": "Nonbanks: maturities, interest cover, FX debt; banks: capital adequacy, NPL/coverage, funding and margins. Sector-inapplicable metrics marked N/A.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": null
+    },
+    {
+      "id": "peer_set_valuation",
+      "unit": "dated comparables and sample size",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "Validated local same-business filings",
+        "broader explicitly justified peer set"
+      ],
+      "formula": "Use median positive denominator multiples with >=5 comparable names; if fewer, no peer valuation conclusion. Do not discard missing companies as low quality.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Check for new filing daily; update on publication/revision; compare with expected reporting deadline.",
+      "coverage": null
+    },
+    {
+      "id": "macro_rates_fx_inflation",
+      "unit": "dated values and event calendar",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "CBE official releases/FX/rates",
+        "CAPMAS official inflation",
+        "dated official government release"
+      ],
+      "formula": "Separate nominal/real and source dates. Missing thesis-critical FX debt sensitivity becomes C.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Daily event check; values update only on publication.",
+      "coverage": null
+    },
+    {
+      "id": "market_regime",
+      "unit": "trend/breadth/volatility with coverage",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "Validated EGX index and stock histories",
+        "official index series"
+      ],
+      "formula": "Index versus 50/200-session averages; breadth over eligible names with valid data, numerator/denominator exposed. Unknown if <80% eligible-name coverage or required lookback absent; proposed threshold for testing.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": null
+    },
+    {
+      "id": "sector_relative_strength",
+      "unit": "relative return and constituent vintage",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "Validated stock/sector series",
+        "official sector index history"
+      ],
+      "formula": "Use same-session sector median total or price return minus matched benchmark return; label basis and exclude target from its peer comparison. Require >=5 names and >=80% eligible sector coverage.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Once per completed session; invalidate on correction/action.",
+      "coverage": null
+    },
+    {
+      "id": "session_calendar",
+      "unit": "dated rules and exceptions",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Current effective EGX session/holiday notice",
+        "verified regulator notice",
+        "manually supplied official document"
+      ],
+      "formula": "Provider metadata corroborates but cannot resolve conflicting official rules. Include auctions, Ramadan and holidays.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Daily notice check; timezone Africa/Cairo, not fixed UTC.",
+      "coverage": null
+    },
+    {
+      "id": "tick_size",
+      "unit": "price-dependent increment",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Current EGX instrument/tick specification",
+        "regulator-approved rule",
+        "verified manual official specification"
+      ],
+      "formula": "TradingView variable_tick_size is corroboration. Apply piecewise increment, then revalidate entry zone and risk; never assume 0.01 globally.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Rule-version/event; validate every proposed price.",
+      "coverage": null
+    },
+    {
+      "id": "price_bands_reference",
+      "unit": "currency bounds/reference/date",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "EGX security-specific daily reference and band notice",
+        "authorized official quote/rule source"
+      ],
+      "formula": "No generic percentage without instrument class/reference/exceptions. Unknown bound or locked queue blocks new simulated entry under conservative model.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Every session/action change.",
+      "coverage": null
+    },
+    {
+      "id": "suspension_tradability",
+      "unit": "status + effective interval",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "EGX suspension/resumption and listing notices",
+        "regulator notice",
+        "authorized timestamped official status"
+      ],
+      "formula": "Provider is_tradable is not proof of current executable status; no print is not proof of suspension.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Baseline and before approval/fill; event driven.",
+      "coverage": null
+    },
+    {
+      "id": "settlement_eligibility",
+      "unit": "cycle, session calendar, account eligibility",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "MCDR current rules plus actual authorized account/broker terms",
+        "verified manual rule documents"
+      ],
+      "formula": "T+2 is not blanket T+0 permission; separate settled cash, receivables and sellable shares.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Initial verification; changes and each pending settlement.",
+      "coverage": null
+    },
+    {
+      "id": "fees_taxes",
+      "unit": "currency + rates + effective dates",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Current official tax/exchange/clearing rules plus authorized broker tariff",
+        "verified manual documents"
+      ],
+      "formula": "Commission min/max, taxes, levies and side-specific charges modeled separately; old fixed EGP5 is not a verified tariff.",
+      "consequence": "No realistic performance/size approval until configured. Scenario-only simulations may show cost ranges, explicitly not actual account returns.",
+      "cadence": "Effective-date updates; check before new experiment.",
+      "coverage": null
+    },
+    {
+      "id": "portfolio_capital_positions",
+      "unit": "EGP and whole shares",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Authorized portfolio ledger reconciled to user-provided account facts",
+        "verified user correction"
+      ],
+      "formula": "Do not borrow historical paper capital or infer real risk authorization.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Every action; proposals never count as fills.",
+      "coverage": null
+    },
+    {
+      "id": "portfolio_limits",
+      "unit": "versioned authorized limits",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "User-approved frozen plan and risk profile"
+      ],
+      "formula": "Cash/stock/sector/issuer/group caps, aggregate planned loss, maximum positions, unsettled orders all enforced.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "At every proposed action and policy revision.",
+      "coverage": null
+    },
+    {
+      "id": "correlation_stress",
+      "unit": "matrix and scenario losses",
+      "criticality": "important",
+      "scope": "All",
+      "fallback": [
+        "Aligned valid local returns and exposure data",
+        "transparent common-shock scenarios"
+      ],
+      "formula": "Require >=60 aligned return observations for correlation; no fabricated covariance. Hard concentration caps remain without a matrix.",
+      "consequence": "I: mark degraded; proposed aggregate size multiplier 0.5 for any unresolved important gap, never compounded. No probability adjustment. Block if the gap becomes material to the thesis.",
+      "cadence": "Once per completed session; invalidate on correction/action. Recompute exposures on every action.",
+      "coverage": null
+    },
+    {
+      "id": "priced_plan",
+      "unit": "dated entry/exit/invalidation/horizon",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Completed analyst thesis and independent final review plus deterministic validation"
+      ],
+      "formula": "Target derived from scenario/business or stated technical structure, not reward-risk arithmetic alone.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Until explicit expiry or invalidating event; revalidate prices/costs.",
+      "coverage": null
+    },
+    {
+      "id": "benchmark_history",
+      "unit": "dated index series with return basis",
+      "criticality": "critical for relative-performance evaluation",
+      "scope": "All",
+      "fallback": [
+        "TradingView confirmed EGX30 and EGX70EWI histories",
+        "official EGX historical series"
+      ],
+      "formula": "Price return versus price return; use verified total-return index for dividend-inclusive comparison or disclose mismatch.",
+      "consequence": "Keep trading research separate; report relative performance unavailable until aligned series exists. Never substitute snapshot Perf.1M for experiment return.",
+      "cadence": "Daily completed session; freeze vintage.",
+      "coverage": null
+    },
+    {
+      "id": "cash_benchmark",
+      "unit": "dated attainable net cash return",
+      "criticality": "important for evaluation",
+      "scope": "All",
+      "fallback": [
+        "Authorized actual cash account yield/terms",
+        "verified eligible cash instrument net yield"
+      ],
+      "formula": "Accrue documented day-count net costs/tax; policy rate is not an attainable account yield.",
+      "consequence": "Use 0% idle cash only as explicitly labeled baseline, not assumed attainable risk-free rate.",
+      "cadence": "Before test; update by frozen methodology.",
+      "coverage": null
+    },
+    {
+      "id": "forecast_outcomes",
+      "unit": "immutable forecast and later measurements",
+      "criticality": "critical for model evaluation",
+      "scope": "All",
+      "fallback": [
+        "Timestamped precommitted forecast plus later valid evidence"
+      ],
+      "formula": "Separate price forecast, action, fill and realized outcome; do not count overlapping forecasts as independent trades.",
+      "consequence": "No calibration or edge claim if absent/immature; record uncertainty and censored/missing outcomes.",
+      "cadence": "5/20/60 completed sessions or frozen horizon.",
+      "coverage": null
+    },
+    {
+      "id": "document_provenance",
+      "unit": "hash, URL, page, times, version",
+      "criticality": "critical",
+      "scope": "All",
+      "fallback": [
+        "Original document/source record",
+        "verified manual original"
+      ],
+      "formula": "ObservedAt, publishedAt, effectiveAt and economic period are separate. Unknown publication time excludes fact from point-in-time backtests.",
+      "consequence": "C: block new BUY approval/fill; continue research and position monitoring with explicit uncertainty.",
+      "cadence": "Every extracted fact; revisions append.",
+      "coverage": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "observedAt": "2026-10-24T11:23:28.9504663Z",
+  "url": "http://127.0.0.1:4317/api/operations",
+  "contract": "egx-field-evidence-2",
+  "routingCounts": {
+    "EXACT_TICKER": 603,
+    "UNMAPPED": 347,
+    "RETAINED_ISIN_MATCH_REQUIRES_REVIEW": 23,
+    "IDENTITY_REVIEW_REQUIRED": 7
+  },
+  "recordVersions": 980,
+  "importerStatus": "completed_with_errors",
+  "scope": "Dashboard reloaded by existing supervisor; GET only, no collection or schedule activation"
+}
