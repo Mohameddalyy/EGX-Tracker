@@ -1,0 +1,712 @@
+{
+  "version": "incremental-workflow-1",
+  "plannedAt": "2026-10-24T12:07:31.158Z",
+  "workload": "checkpoint",
+  "limits": {
+    "targetMs": 300000,
+    "hardMs": 480000
+  },
+  "jobs": [
+    {
+      "kind": "health",
+      "target": "local",
+      "priority": 0,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "positions",
+      "target": "all",
+      "priority": 1,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-amia-initial",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-cana-initial",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-cira-initial",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-hdbk-initial",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-masr-initial",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-amoc-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-acgc-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-moin-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-twsa-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-oras-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-adri-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-aih-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-adib-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-ajwa-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-amoc-universe-02",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261012-arab-universe-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-comi-representative-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-cira-representative-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-amoc-representative-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-comi-pullback-02",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-cira-pullback-02",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261018-ajwa-completeness-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-arab-material-reassessment-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-ajwa-material-reassessment-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-hdbk-support-reassessment-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-moin-support-reassessment-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-amia-support-reassessment-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-cpci-ranked-primary-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-adci-ranked-primary-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-napr-ranked-primary-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-adri-ranked-primary-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261020-aih-ranked-primary-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261022-cira-reassessment-01",
+      "priority": 2,
+      "critical": true,
+      "source": "local"
+    },
+    {
+      "kind": "minute-obligations",
+      "target": "tracked",
+      "priority": 3,
+      "critical": false,
+      "source": "local"
+    },
+    {
+      "kind": "minutes",
+      "target": "COMI,CPCI",
+      "priority": 6,
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "queue-resume",
+      "target": "existing",
+      "priority": 4,
+      "critical": false,
+      "source": "local"
+    },
+    {
+      "kind": "document-discovery",
+      "target": "cited-reports",
+      "priority": 8,
+      "critical": false,
+      "source": "local"
+    },
+    {
+      "kind": "learning-export",
+      "target": "all",
+      "priority": 5,
+      "critical": false,
+      "source": "local"
+    },
+    {
+      "kind": "exchange",
+      "target": "2026-10-24",
+      "priority": 10,
+      "critical": true,
+      "source": "egx-exchange"
+    },
+    {
+      "kind": "documents",
+      "target": "2026-10-24",
+      "priority": 30,
+      "critical": false,
+      "source": "issuer-documents"
+    },
+    {
+      "kind": "preparation",
+      "target": "retained",
+      "priority": 45,
+      "critical": false,
+      "source": "local"
+    }
+  ],
+  "obligations": [
+    {
+      "decisionId": "decision-20261008-amia-initial",
+      "ticker": "AMIA",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "59ace263e3425c583ba6052fe04ffe50cd90595e3cac98bb9d22cbd7c50ae6c6",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Reassess on current financial statements with recurring earnings, subsidiary NAV and funding/cash-flow reconciliation; a dated ownership/free-float register; and current EGX/news/action checks. A held reversal near EGP 18.1-18.5 or a confirmed break/retest above EGP 20.15 is a review trigger only. Rebuild the target and risk calculation from that new evidence before changing to Watch.",
+      "evidenceFingerprint": "4799529ab628934be6c29ce332d9efbd92a479a5a9f0a82767de2a7e810934c5"
+    },
+    {
+      "decisionId": "decision-20261008-cana-initial",
+      "ticker": "CANA",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "d73b9a8a281b272c06552b19f407b7ca82be561359bfdbca075da30bf3e22ada",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain full current bank statements including credit quality, provisions, sovereign exposures and capital/EPS reconciliation, a dated ownership register, and current actions/news. Then require a confirmed reversal/rejection of EGP 44.50 with renewed buying and rebuild the plan at an available quote. A move through EGP 48.48 needs a fresh target/stop rationale; do not recycle the old bounce math.",
+      "evidenceFingerprint": "0bd054cdc7ddcea9a50f8f916d7de72fa768522ddddefcd9bd89c5f3b9925e83"
+    },
+    {
+      "decisionId": "decision-20261008-cira-initial",
+      "ticker": "CIRA",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "288ab6c134ceb966f241d457e82356c9489016bbb68fe9b29cbd23a614215092",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Require current statutory attributable accounts and normalization bridge, debt/capex/interest coverage, a dated post-transaction register and current actions/news. Reassess a confirmed reversal near EGP 37-38 or a sustained break/retest above EGP 41.74 with a defensible new target. The issuer page repeats 88.7% ownership without an as-of date, so it does not close the dated-register gap.",
+      "evidenceFingerprint": "edc7bb051a0a39083262ab2233ff62032f88cc44068f39412645de071d6d9a1a"
+    },
+    {
+      "decisionId": "decision-20261008-hdbk-initial",
+      "ticker": "HDBK",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "40b85a2e370b696ba65cd2fc9f331c3d2c041a31d160e9c4f147b7c1eb74db43",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Require dated post-capital-increase ownership, exact effective/ex dates and consistent share/EPS/price adjustments, plus current news. Reassess a confirmed reversal around EGP 102-104 or reclaim/retest of EGP 112.40; recalculate from the then-current quote. Next bank results should test NIM, stage-2/NPL exposures, provisions and funding quality.",
+      "evidenceFingerprint": "6fb4e2d74fdea5e6c3c166632c3cda379504371b9132b33c9410a68717bc60d4"
+    },
+    {
+      "decisionId": "decision-20261008-masr-initial",
+      "ticker": "MASR",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "c358446e643e3a40993a62fe832c4e54d000a58f334b3ff63b5a361bdc7ab010",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Reconcile dated ownership, current actions including actual buyback execution, and subsequent results/news. Obtain a project cash-flow/NAV sensitivity rather than bank peer comparisons. Review a newly confirmed higher low above EGP 7.50 or reversal nearer EGP 6.8-7.2; only then recompute risk to the EGP 8.88-8.95 zone. A breakout needs a new target rationale.",
+      "evidenceFingerprint": "71d36fa56dc196c6ef946c09b4350f22a09e0a4e1281cb8deb00510a6dec3931"
+    },
+    {
+      "decisionId": "decision-20261011-amoc-universe-01",
+      "ticker": "AMOC",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "636e50666d8794c8733714b532dc7547f59f7b840c656534ccbdf4bc933ac272",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Return to the analyst when the actual interim review conclusion, latest ownership/control evidence and an October exchange action/news sweep are available. Reassess a confirmed close above14.74 with adequate volume, or a pullback with newly confirmed support; require a fresh calculated priced-plan and all six evidence checks before Watch. Review after five observed sessions even if evidence remains unavailable.",
+      "evidenceFingerprint": "311b0593677d7248be54fd8ed8aa89d6eec4743aceeb9c7b54bb137c36838d4f"
+    },
+    {
+      "decisionId": "decision-20261011-acgc-universe-01",
+      "ticker": "ACGC",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "644f5756c7e69ed8bf0546f80ec2ce2e975ffd711a6f42666a6baa8e1c583c74",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain the subsequent exchange filing-cure announcement and underlying consolidated statements/opinion, current major-owner disclosures, and August bonus terms/effective adjustment. Reassess after those arrive or after a confirmed recovery above14.87 with RV20>=1 and a fresh priced plan. Review after five observed sessions if still unresolved; keep observing Wait outcomes.",
+      "evidenceFingerprint": "e94ca6b6d5be4c24671f0c9f6a42dc49faa8ecad451eb25da0d2fbbd0fe5863c"
+    },
+    {
+      "decisionId": "decision-20261011-moin-universe-01",
+      "ticker": "MOIN",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "807f28e41f5aacbbd3c3a6c090325434c6e900c560f626788c4baea4f0c3301c",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain latest consolidated and standalone statements and review opinion, underwriting/claims and reserve analysis, solvency capital, investment and reinsurance exposures, dated owners and current exchange actions. Reassess confirmed recovery above37.98 or a supported pullback using fresh levels and a calculated plan. Review after five observed sessions if still unresolved.",
+      "evidenceFingerprint": "2f6a7c9d79704856214f7c19e2fd90d9de772a7d3a64264e76ab58f187ee3f7e"
+    },
+    {
+      "decisionId": "decision-20261011-twsa-universe-01",
+      "ticker": "TWSA",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "813f1e8e7e3379c6c0695229530b29a247647cd0bb57a0576f72c17061906e82",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain current statements/opinion, receivables aging/ECL and concentration, recourse and bank-funding terms, capital adequacy, owners, and verified event/action explanation. Reassess a confirmed acceptance/retest with sustainable liquidity and evidenced target geometry. Review after five observed sessions if unavailable; do not turn an arbitrary upside projection into a target.",
+      "evidenceFingerprint": "822d6516d475fd4157f1d548defa83c31b7df5a1276dfb643b485b059b5a443d"
+    },
+    {
+      "decisionId": "decision-20261011-oras-universe-01",
+      "ticker": "ORAS",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "439561e4cbd3de603d3cb1001d0dc26e175132118be2bf1018b09b2771363e3c",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain current OCI approval/closing or amendment notices, post-June ownership changes and full dividend/capital/suspension status; reconcile USD accounts to EGP per-share valuation and potential new-share count. Reassess a confirmed breakout above894 or a better pullback with a newly calculated cost-adjusted plan. Review after five observed sessions if evidence remains unresolved.",
+      "evidenceFingerprint": "540bf8fe841c4ffe4fcec531b76e14982660e8132a5a37cad978ea4c9c0a3d49"
+    },
+    {
+      "decisionId": "decision-20261011-adri-universe-01",
+      "ticker": "ADRI",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "fcae87f44105a242c2f565400343832eba93dad64301e3ba4b2f6883e02afeb4",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read both recent Article29 attachments, obtain latest consolidated financials/opinion and dated beneficial ownership, and clear current actions/suspensions. Reassess newly confirmed support/resistance or a confirmed13.70 break only with a complete analyst-approved priced plan. Review after five observed sessions if evidence remains unavailable.",
+      "evidenceFingerprint": "e467e0527027c09b531a85776e75cbb1d7deb8f3ed0af13563549a18141095c7"
+    },
+    {
+      "decisionId": "decision-20261011-aih-universe-01",
+      "ticker": "AIH",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "288f1d5c5bf720ca5b4d801eca659f001554a0e708283f83d6c37d592fab66c1",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read Oct5 board meeting attachment345055_1.pdf and Article29 attachment345127_1.pdf, obtain audited2025/interim2026 group accounts/opinion, ownership and complete current action status. Reassess confirmed0.860 breakout or supported pullback only through a new analyst plan. Review after five observed sessions if unresolved.",
+      "evidenceFingerprint": "fa04a7cbb04b304308567a76fe1ddfeb66f53e2335ab86e61b032581497f14d4"
+    },
+    {
+      "decisionId": "decision-20261011-adib-universe-01",
+      "ticker": "ADIB",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "798bc85c868199e42a7fe8948be43c2a1c4ed7f3ea9195e27f0022fbbd72fef5",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Reconcile capital increase record/ex dates and historical per-share adjustment, review remaining cash-flow/contingency/annual notes and subsequent exchange notices, and obtain a confirmed stabilization/recovery plus calculated entry plan. Monitor stage2/3 exposure and normalized credit cost in next results. Review after five observed sessions if unresolved.",
+      "evidenceFingerprint": "515b4325cd7f2ee7d2b1fac54f38c1c232a0eb72a02a38f8e2fb00b6de6980fa"
+    },
+    {
+      "decisionId": "decision-20261011-ajwa-universe-01",
+      "ticker": "AJWA",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "933607f1fe6405d1c5c0151207362e8ea51e06813a684e3ddfcb054ea8c4315e",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain current consolidated and standalone statements/opinions, dated ownership-form contents and current exchange corporate-action/legal notices. Reassess confirmed close above201 and next203.8-204 supply or supported pullback with a full priced plan. Review after five observed sessions if unavailable.",
+      "evidenceFingerprint": "a98a28aa0a406017c9400e31a0b417af23cf97c693d661ac708e8e5aa3bab054"
+    },
+    {
+      "decisionId": "decision-20261011-amoc-universe-02",
+      "ticker": "AMOC",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "917b3306d3b68763637bb00a7270a8b96cccdb6288eb8a597cc7a1c0dc4a23e2",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain actual review conclusion, remaining financial notes, current control and October action sweep; verify commercial GroupII volumes/margins and measured acid-gas savings after trial stabilization. Reassess confirmed breakout above14.74 or supported pullback with fresh analyst-priced plan and all checks. Review after five observed sessions if unresolved.",
+      "evidenceFingerprint": "311b0593677d7248be54fd8ed8aa89d6eec4743aceeb9c7b54bb137c36838d4f"
+    },
+    {
+      "decisionId": "decision-20261012-arab-universe-01",
+      "ticker": "ARAB",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "b5b480c78b71b11c1ade5896cc45649ad9afc44f0cc2a255cbf986ccba4f8a99",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain rights completion, entitlement and effective/listing dates and reconcile historical adjustment; read current financials/opinion and dated named owners. Reassess a supported pullback or confirmed price discovery with an evidenced target and new analyst plan. RefreshOctober11 confirmed history before any price-sensitive action and review after five observed sessions.",
+      "evidenceFingerprint": "bd712d9ebb18bb6398b547daf5b5f73cbf39d8849609c0548747bd9192ad9a4a"
+    },
+    {
+      "decisionId": "decision-20261015-comi-representative-01",
+      "ticker": "COMI",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "8c3482df5e026df1db958c76220d1e6e58402863b2b2a413530a88d9dbb68c23",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Reconcile bank revenue definitions and latest filings; render dated ownership and verify current actions/news. Analyst must assess the independently generated support pullback: zone120–120.64, stop118.71, T1 128.79, diagnostic cost-adjusted RR3.398. This is not approved: support has one pivot, price is currently outside zone, and a later bullish confirmation/RV20 condition is required. Use actual applicable costs in any eventual approved plan.",
+      "evidenceFingerprint": "600fbaa3ca6bd0dd23a6126fad7d8483a92cfc28676846f42648999302c24be8"
+    },
+    {
+      "decisionId": "decision-20261015-cira-representative-01",
+      "ticker": "CIRA",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "d6656bdbb22abf97d678fef05c8eeea60a4ba96fd3cdcfc15098cfa81cc64b37",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain current statutory cash flow, debt maturities and dated ownership/action disclosures; distinguish normalized from statutory earnings. Analyst should assess support pullback zone35.51–35.95, stop34.62,T1 41.48, diagnostic RR3.771 instead of ruling out all geometry from close37.77. Require subsequent confirmation and current evidence before any Watch.",
+      "evidenceFingerprint": "edc7bb051a0a39083262ab2233ff62032f88cc44068f39412645de071d6d9a1a"
+    },
+    {
+      "decisionId": "decision-20261015-amoc-representative-01",
+      "ticker": "AMOC",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "4e30872fde69b1c7a0ef53e5c2a96e747e8908bed51d1e79488e8a58d544a5e5",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Render current consolidated statements and notes; reconcile statutory versus attributable profit, owner effective dates and current dividends/actions. Feed newly accessible forecast metadata to analyst: TradingView page reports two analysts, one-year target horizon and ratings within past three months; individual dates remain missing. The alternative support pullback13.05–13.19, stop12.51,T1 14.62 has diagnostic RR1.932 and still fails2:1 at0.3% cost. Do not extend target merely to pass.",
+      "evidenceFingerprint": "311b0593677d7248be54fd8ed8aa89d6eec4743aceeb9c7b54bb137c36838d4f"
+    },
+    {
+      "decisionId": "decision-20261015-comi-pullback-02",
+      "ticker": "COMI",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "0410693e37944d09ee62896c3a0355c729c6011cac3060774c931f38a16af34c",
+      "entryExpired": true,
+      "historyDue": false,
+      "reviewConditions": "Obtain dated current per-stock action, suspension and price-limit evidence; reconcile missing 2025-07-08 history. Then route genuinely new evidence to an updated analyst report and independent decision. Only after guarded approval, require a later bullish confirmed daily candle closing within EGP120–120.64 with RV20>=1 and no stop breach. Review the next session quote within the zone; never chase. Research expiry does not extend the paper entry week.",
+      "evidenceFingerprint": "600fbaa3ca6bd0dd23a6126fad7d8483a92cfc28676846f42648999302c24be8"
+    },
+    {
+      "decisionId": "decision-20261015-cira-pullback-02",
+      "ticker": "CIRA",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "e3798d4cbbf2f68ac5c147c5b8d76a1cbb5686e90c6220c47552f9946d9d4b09",
+      "entryExpired": true,
+      "historyDue": false,
+      "reviewConditions": "Obtain dated current news and per-stock action/suspension/price-limit evidence, refresh ownership changes since 2026-02-28, and reconcile 2024-11-04 and 2025-07-08 history gaps. Then route genuinely new evidence to an updated analyst report and independent decision. Only after guarded approval, require a later bullish confirmed daily candle closing within EGP35.51–35.95 with RV20>=1 and no stop breach. Review the next session quote within the zone; never chase. Research expiry does not extend the paper entry week.",
+      "evidenceFingerprint": "edc7bb051a0a39083262ab2233ff62032f88cc44068f39412645de071d6d9a1a"
+    },
+    {
+      "decisionId": "decision-20261018-ajwa-completeness-01",
+      "ticker": "AJWA",
+      "action": "Wait",
+      "superseded": true,
+      "revision": "002431d9e39063d5f13f26c530df3ecf0e93ef1200b9a7cad1847dbc60acf8b8",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Immediately route notices295811 (October11) and296029 (October14) plus attachment345512_1.pdf to a new analyst candidate/report. Establish exact filing scope/deadlines and subsequent cure, inspect AGM agenda and later decisions, current statements/opinions, ownership/pledge developments and corporate actions. Reconcile20,095,300 form shares against100,476,500 stale website shares and price-history adjustments; reconcile asynchronous provider market-cap mark. Refresh immutable analytical context after collector completion; require all six evidence checks and identical validated priced-plan-1.0 for Watch. Review at next scheduled run and after five observed sessions if unresolved.",
+      "evidenceFingerprint": "a98a28aa0a406017c9400e31a0b417af23cf97c693d661ac708e8e5aa3bab054"
+    },
+    {
+      "decisionId": "decision-20261019-arab-material-reassessment-01",
+      "ticker": "ARAB",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "8ce7ff31a22c6ed63be97e30bedaf8dc6103e72c8c0f10562396b82c8113e237",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read attachment345614_1 from notice296158 and establish dated named owners. Verify actual subscription completion, entitlement/ex-right/listing/effective dates and adjusted price/share history; obtain current complete group statements/opinion, project cash flows, delivery costs, collections, net debt, minorities and related parties. Reconcile provider valuation marks by their actual date before peer/NAV comparisons. Require a new immutable analyst report with all six verified checks and an identical validated priced-plan-1.0 before Watch. Monitor next scheduled run, new primary disclosure and after five observed sessions; no action inferred from the October29 policy checkpoint.",
+      "evidenceFingerprint": "bd712d9ebb18bb6398b547daf5b5f73cbf39d8849609c0548747bd9192ad9a4a"
+    },
+    {
+      "decisionId": "decision-20261019-ajwa-material-reassessment-01",
+      "ticker": "AJWA",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "d288247536b49a1f81d676e875e24852d1bfb85c5564e5bfdc6d81c1423e115d",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read AGM attachment345512_1 and later meeting decisions; establish official payment notification and original filing-grant anchors before calculating deadlines; verify actual current filing cure or committee status. Obtain current consolidated/standalone statements/opinions and action/suspension/price-limit clearance; reconcile fivefold website/form share-count chronology and adjusted history, subsequent ownership/pledges and provider cap mark date. Any material findings need a fresh analyst candidate/report. Before Watch require all six verified checks, suitable confirmed price structure and identical validated priced-plan-1.0; review at next scheduled run/new primary evidence and after five observed sessions. November9 09:30 AGM is a checkpoint, not an assumed approval or dividend.",
+      "evidenceFingerprint": "a98a28aa0a406017c9400e31a0b417af23cf97c693d661ac708e8e5aa3bab054"
+    },
+    {
+      "decisionId": "decision-20261019-hdbk-support-reassessment-01",
+      "ticker": "HDBK",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "1013c0b9c13cf5b07490985206e9b2a2e7ed4414c794a9e4916860b6a583378a",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read actual September30 holder attachment345225_1 under official notice295745, reconcile note34 unlabelled holder table with1.0626bn June30 shares, and establish bonus effective/ex-date and price-history basis. Complete current exchange/issuer legal/action sweep and sustainable bank ROE, credit-loss, payout and cost-of-equity scenarios; compare COMI on matching scope. Review on material disclosure or the next five observed sessions if unresolved; any new thesis facts or changed levels must return through analyst review.",
+      "evidenceFingerprint": "6fb4e2d74fdea5e6c3c166632c3cda379504371b9132b33c9410a68717bc60d4"
+    },
+    {
+      "decisionId": "decision-20261019-moin-support-reassessment-01",
+      "ticker": "MOIN",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "827b328c40445f234734dbf9c4461f9e7d4c5e6171f59f36db2f55895d6a00fd",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Review full claims/reserve, reinsurance, investment duration/realization and solvency notes and sustainable book returns. Read October4 board attachment345018_1 under notice295535; resolve primary June17 litigation and June14 CAO report leads without treating index titles as adverse facts. Complete current actions/dividends/suspension and price-adjustment chain; compare DEIN with sector-matched assumptions. Review on material disclosure or the next five observed sessions if unresolved; any new thesis facts or changed levels must return through analyst review.",
+      "evidenceFingerprint": "2f6a7c9d79704856214f7c19e2fd90d9de772a7d3a64264e76ab58f187ee3f7e"
+    },
+    {
+      "decisionId": "decision-20261019-amia-support-reassessment-01",
+      "ticker": "AMIA",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "0b664740ac5af41b08297d3165e6f3b0d80427d9950a46cf07b112a2eb7b16fa",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Build sourced subsidiary ownership/value, recurring-profit, leasing receivable/funding and parent-distribution bridge with parent net debt; avoid double counting finance subsidiary liabilities or group cash. Reconcile current dividend entitlement, actions, legal and suspension coverage and history adjustments. Compare AIH through a matched-scope holding-company assessment, then obtain a fresh confirmed reversal and approved full plan. Review on material disclosure or the next five observed sessions if unresolved; any new thesis facts or changed levels must return through analyst review.",
+      "evidenceFingerprint": "4799529ab628934be6c29ce332d9efbd92a479a5a9f0a82767de2a7e810934c5"
+    },
+    {
+      "decisionId": "decision-20261019-cpci-ranked-primary-01",
+      "ticker": "CPCI",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "eb141158cee16943ecf2fc7d5337d639d61ba3dccd6063b13459095a3675fa35",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read October22 2026 14:30Cairo actual AGM resolutions and later approved dividend entitlement/ex/payment notices; assess wage ratification and quantified company response to financial/governance observations. Verify current disclosures/action continuity, normalized recurring margins/collections/reinvestment and source-supported valuation scenarios versusADCI. Reassess a later bullish accepted support candle with suitable liquidity and complete newly approved cost-stressed plan; October22midnight diagnostic expiry precedes the meeting and requires new research after it. Review within five observed sessions if gaps persist.",
+      "evidenceFingerprint": "1537756a419d4d21f4f70ab1a46ec033bfd520558c25bda47cc9846ce82ce8e5"
+    },
+    {
+      "decisionId": "decision-20261019-adci-ranked-primary-01",
+      "ticker": "ADCI",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "442fdb0ebf912b0505b4d62467f08974d869fa14cc4929f15f7274e49a71568e",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Assess independent tax/ECL and bill-and-hold/control-transfer evidence, returns estimates and subsequent audited treatment against the management reply. Verify exact prior bonus listing/ex dates and complete current disclosures/actions; read October29 16:00Cairo AGM resolutions, wages, treasury allocation and later dividend entitlement/ex/payment notices. Proposed5/share is not approved. Compare normalized collections/earnings and debt withCPCI; source forward scenarios only where supportable. Require fresh confirmed quote/history and bullish zone acceptance withRV20>=1 plus a newly approved full cost-qualified plan; existing prototype expiresOctober22midnight. Review within five observed sessions if unresolved.",
+      "evidenceFingerprint": "72eae011985ee23f55204da8047bdc05ae30ab3c9305cf9135f50d88d5d9883a"
+    },
+    {
+      "decisionId": "decision-20261019-napr-ranked-primary-01",
+      "ticker": "EGS370O1C013",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "0c7ed3c1307b4f3a8817067c3b7758efa0fbd7950c5948430d381790498440fb",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Reassess subsequent paper demand, project utilization/returns, collections and cash after interest/investment, parent versus NCI distribution and the cash-settled LTIP payment/remeasurement bridge. Clarify the printed holder percentage inconsistency without assuming common control. Verify intervening news, land status and exact prior share-swap market dates/actions; June2026AGM retainedFY2025profits and does not create shareholder entitlement. Source comparable forward valuation cases if defensible. Require fresh confirmed market/history and later bullish zone acceptance withRV20>=1 plus a newly analyst-approved cost-qualified full plan. Prototype expiresOctober22midnightCairo; review within five observed sessions if unresolved.",
+      "evidenceFingerprint": "4efef70f1f8f285ad88ee99bd321c710a5426bebe35aaae665f1af0980a26db9"
+    },
+    {
+      "decisionId": "decision-20261019-adri-ranked-primary-01",
+      "ticker": "ADRI",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "47952198a493a137c1b45e63abdadb6f60159ba785786bb256ce43e05ac305db",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain dated project completion, collections, land/partner rights and cost-to-complete inputs for a supported NAV sensitivity. Assess recurring economics without adding back all impairment/provisions. Verify bonus effective/listing/ex dates and price/share continuity, clarify183EGP note difference, and complete current news/actions/legal updates. Keep Q3 register and later person-trade dates separate. Require fresh confirmed structure, later bullish acceptance with RV20>=1 and a full analyst-approved measured target/stop/cost/expiry plan. Review after five observed sessions if unresolved.",
+      "evidenceFingerprint": "e467e0527027c09b531a85776e75cbb1d7deb8f3ed0af13563549a18141095c7"
+    },
+    {
+      "decisionId": "decision-20261020-aih-ranked-primary-01",
+      "ticker": "AIH",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "51a44919dac691db4ad6e17dc0d67bc3676a67acb3f92ab860f752b8044dca44",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Read actual post-August6 exchange/issuer compliance and investment-transfer/paid-capital status, resolve the specifically unconfirmed BanqueMisr loan/current-credit balances and assess later credit stages, collections, reserve adequacy and funding maturity. Explain51.233823m opening cash definition with sourced accounting treatment. Obtain parent standalone cash/debt and matched subsidiary valuation/capital/distribution/minority cases, exact demerger market effective/ex/adjustment chain and intervening actions/news. October organization and board forms do not establish cure. Reassess fresh confirmed market history and later bullish zone acceptance withRV20>=1, applicable costs and a full newly analyst-approved plan; prototype expiresOctober22midnightCairo. Review within five observed sessions if unresolved.",
+      "evidenceFingerprint": "fa04a7cbb04b304308567a76fe1ddfeb66f53e2335ab86e61b032581497f14d4"
+    },
+    {
+      "decisionId": "decision-20261022-cira-reassessment-01",
+      "ticker": "CIRA",
+      "action": "Wait",
+      "superseded": false,
+      "revision": "2e6d38024a93c9c561d01189cd1ac3946ec8781dd124f05fb57ffdc941d17afd",
+      "entryExpired": false,
+      "historyDue": false,
+      "reviewConditions": "Obtain dated creditor waiver, refinancing, current covenant compliance, maturity, reset and consent evidence; current tuition collections and enrollment, maintenance versus growth spending, project returns, and a parent/minority cash bridge. Verify October ownership, capital changes, actions and news; resolve the2024-11-04 and2025-07-08 history gaps. A lagged market-cap price basis is plausible, not proof of a capital change. Confirm any October28 results date with the issuer and inspect actual results; October29 CBE is not a guaranteed rate cut. Review material updates at the next scheduled run and within five observed sessions if unresolved. Changed thesis facts or levels require fresh analyst research. A future Watch requires all six evidence checks, an identical validated plan, a later accepted bullish zone candle with RV20>=1, and a future available quote. Do not chase35.91 or extend the closed paper week.",
+      "evidenceFingerprint": "edc7bb051a0a39083262ab2233ff62032f88cc44068f39412645de071d6d9a1a"
+    }
+  ],
+  "minuteTargets": [
+    "COMI",
+    "CPCI"
+  ],
+  "sourceGaps": [
+    {
+      "kind": "minutes",
+      "target": "COMI,CPCI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "exchange",
+      "target": "2026-10-24",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": true
+    },
+    {
+      "kind": "documents",
+      "target": "2026-10-24",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    }
+  ],
+  "counts": {
+    "universe": 296,
+    "recordedDecisions": 33,
+    "positions": 0,
+    "activeHandoffs": 2
+  },
+  "limitations": [
+    "Source watermark means response/window coverage only, not reviewed event clearance.",
+    "Minute adapter retains observations only; no automatic settlement or entries here.",
+    "Existing unstructured reviewConditions are presented for substantive review, not guessed into executable triggers."
+  ]
+}

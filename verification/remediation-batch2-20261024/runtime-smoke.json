@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-10-24T12:06:10.9090923+00:00",
+  "endpoint": "http://127.0.0.1:4317/api/operations",
+  "workflow": {
+    "status": "NOT_STARTED",
+    "activation": false,
+    "note": "Incremental dispatcher installed; no run recorded. Scheduled reviews are controlled separately."
+  },
+  "scriptStatus": 200,
+  "scriptContainsInventory": true
+}

@@ -1,3 +1,4 @@
+import {activeResearchCount} from './research-queue-state.mjs';
 import {decisionExecution} from './decision-execution.mjs';
 import {readFileSync,existsSync} from 'node:fs';import {join} from 'node:path';import {createHash,randomUUID} from 'node:crypto';import {cairoDate} from './core.mjs';import {initScout} from './scout.mjs';import {validateReport,entryRisk} from './research.mjs';import {validatePromotion} from './promotion-policy.mjs';
 export const digest=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
@@ -9,6 +10,7 @@ export function readAnalyst(root,queueId,reportId,ticker){
 }
 export function handoffDecision(db,root,queueId,reportId,now=new Date()){
  initDecisions(db);const q=db.prepare('SELECT * FROM research_queue WHERE id=?').get(queueId);if(!q)throw Error('Candidate not found');readAnalyst(root,queueId,reportId,q.ticker);const prior=db.prepare('SELECT * FROM decision_inbox WHERE queue_id=?').get(queueId);if(prior){if(prior.report_id!==reportId)throw Error('Existing handoff uses another report; use a new research candidate for updated evidence');return {status:prior.status,duplicate:true};}
+ if(!['pending','researching','awaiting_decision'].includes(q.status))throw Error('Resume waiting work into available capacity before analyst handoff');
  db.exec('BEGIN IMMEDIATE');try{db.prepare('INSERT INTO decision_inbox(queue_id,report_id,ticker,created_at) VALUES(?,?,?,?)').run(queueId,reportId,q.ticker,now.toISOString());db.prepare("UPDATE research_queue SET status='awaiting_decision',report_id=?,updated_at=?,note='Analyst report passed to the final decision agent' WHERE id=?").run(reportId,now.toISOString(),queueId);db.exec('COMMIT');return {queueId,ticker:q.ticker,status:'awaiting_decision'};}catch(e){db.exec('ROLLBACK');throw e;}
 }
 export function validateDecision(d,now=new Date()){
@@ -22,11 +24,11 @@ export function validateDecision(d,now=new Date()){
 }
 export function requestReassessment(db,decisionId,reason,now=new Date()){
  initDecisions(db);const d=db.prepare('SELECT * FROM agent_decisions WHERE id=?').get(decisionId);if(!d||typeof reason!=='string'||!reason.trim()||reason.length>4000)throw Error('Existing decision and concrete review reason required');
- const active=db.prepare("SELECT id FROM research_queue WHERE ticker=? AND status IN ('pending','researching','awaiting_decision') ORDER BY created_at DESC LIMIT 1").get(d.ticker);if(active)return {id:active.id,ticker:d.ticker,duplicate:true};
+ const active=db.prepare("SELECT id FROM research_queue WHERE ticker=? AND status IN ('pending','researching','awaiting_decision','waiting_event','retry_not_due','waiting_capacity') ORDER BY created_at DESC LIMIT 1").get(d.ticker);if(active)return {id:active.id,ticker:d.ticker,duplicate:true};
  // Deduplicate the actual decision/trigger, not every review of a ticker that day.
  const at=now.toISOString(),id='candidate-'+randomUUID(),day=cairoDate(now),routingKey='decision-recheck-1.1-'+digest([d.id,reason.trim()]).slice(0,24),prior=db.prepare('SELECT id FROM research_queue WHERE ticker=? AND as_of=? AND policy_version=?').get(d.ticker,day,routingKey);if(prior)return {id:prior.id,ticker:d.ticker,duplicate:true};
  const evidence={ticker:d.ticker,score:null,signals:['Final decision reassessment'],flags:[reason],previousDecisionId:d.id,triggeredAt:at,reviewReason:reason,notAScreen:true};
- db.exec('BEGIN IMMEDIATE');try{db.prepare('INSERT INTO research_queue(id,run_id,ticker,as_of,policy_version,created_at,updated_at,evidence,note) VALUES(?,?,?,?,?,?,?,?,?)').run(id,'recheck-'+d.id,d.ticker,day,routingKey,at,at,JSON.stringify(evidence),'Reassess after decision '+d.id+': '+reason);db.prepare('INSERT INTO decision_notes VALUES(?,?,?,?,?)').run('note-'+randomUUID(),d.id,at,'review-trigger',reason+' · analyst candidate '+id);db.exec('COMMIT');return {id,ticker:d.ticker,status:'pending'};}catch(e){db.exec('ROLLBACK');throw e;}
+ db.exec('BEGIN IMMEDIATE');try{db.prepare('INSERT INTO research_queue(id,run_id,ticker,as_of,policy_version,created_at,updated_at,evidence,note) VALUES(?,?,?,?,?,?,?,?,?)').run(id,'recheck-'+d.id,d.ticker,day,routingKey,at,at,JSON.stringify(evidence),'Reassess after decision '+d.id+': '+reason);if(activeResearchCount(db)>5)db.prepare("UPDATE research_queue SET status='waiting_capacity' WHERE id=?").run(id);db.prepare('INSERT INTO decision_notes VALUES(?,?,?,?,?)').run('note-'+randomUUID(),d.id,at,'review-trigger',reason+' · analyst candidate '+id);db.exec('COMMIT');return {id,ticker:d.ticker,status:db.prepare('SELECT status FROM research_queue WHERE id=?').get(id).status};}catch(e){db.exec('ROLLBACK');throw e;}
 }
 export function saveDecisionRecord(db,root,d,now=new Date()){
  initDecisions(db);validateDecision(d,now);const duplicate=db.prepare('SELECT payload FROM agent_decisions WHERE id=?').get(d.id);if(duplicate){if(JSON.stringify(JSON.parse(duplicate.payload))!==JSON.stringify(d))throw Error('Decision ID already exists with different content');return {id:d.id,duplicate:true};}

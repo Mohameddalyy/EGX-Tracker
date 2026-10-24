@@ -7,6 +7,7 @@ function identityRegistry(identities){
  return registry;
 }
 export function routeAnnouncement(record,identities=[]){return routeWithRegistry(record,identityRegistry(identities));}
+export function routeAnnouncements(records,identities=[]){const registry=identityRegistry(identities);return records.map(record=>routeWithRegistry(record,registry));}
 function routeWithRegistry(record,registry){
  const exact=[...new Set(record.tickers||[])],matches=(record.isins||[]).flatMap(i=>[...(registry.get(i)||[])]),resolved=[...new Set(matches)];
  const ambiguous=(record.isins||[]).some(i=>registry.get(i)?.size>1),conflict=exact.length&&resolved.some(t=>!exact.includes(t));

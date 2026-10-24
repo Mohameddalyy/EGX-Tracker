@@ -1,3 +1,4 @@
+import {resumeResearch} from './research-queue-state.mjs';
 import {isConfirmedBar} from './finality.mjs';
 import {historyRefreshState} from './refresh-selection.mjs';
 import {randomUUID} from 'node:crypto';import {cairoDate,indicators} from './core.mjs';import {initFacts,factsFor} from './market-facts.mjs';
@@ -38,13 +39,13 @@ export function screenStocks(stocks,policy,benchmarks=[],now=new Date()){
  return rows.sort((a,b)=>b.score-a.score||a.ticker.localeCompare(b.ticker));
 }
 export function runScout(db,policy,now=new Date(),{enqueue=true}={}){
- initScout(db);const stocks=db.prepare('SELECT s.*,m.sector FROM stocks s LEFT JOIN market_catalog m ON m.ticker=s.ticker').all().map(s=>({...s,facts:factsFor(db,s.ticker),bars:db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON c.ticker=b.ticker AND c.day=b.day WHERE b.ticker=? ORDER BY b.day').all(s.ticker)}));
+ initScout(db);resumeResearch(db,{},now);const stocks=db.prepare('SELECT s.*,m.sector FROM stocks s LEFT JOIN market_catalog m ON m.ticker=s.ticker').all().map(s=>({...s,facts:factsFor(db,s.ticker),bars:db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON c.ticker=b.ticker AND c.day=b.day WHERE b.ticker=? ORDER BY b.day').all(s.ticker)}));
  const benchmarks=db.prepare('SELECT * FROM market_benchmarks').all().map(b=>({symbol:b.symbol,capturedAt:b.captured_at,values:JSON.parse(b.payload)}));
  const rows=screenStocks(stocks,policy,benchmarks,now),sessionKey=rows.filter(r=>r.eligible).map(r=>r.asOf).sort().at(-1)||null,previous=db.prepare("SELECT summary,payload FROM scout_runs WHERE json_extract(summary,'$.total') IS NOT NULL ORDER BY at DESC LIMIT 1").get(),sameSession=previous&&(JSON.parse(previous.summary).sessionKey??JSON.parse(previous.payload).rows?.filter(r=>r.eligible).map(r=>r.asOf).sort().at(-1))===sessionKey,id='screen-'+randomUUID(),at=now.toISOString(),queued=[];
  db.exec('BEGIN IMMEDIATE');try{for(const r of rows.filter(r=>enqueue&&(!sameSession||policy.drainResearchBacklog)&&r.candidate&&(policy.includeWatchedInResearch||!r.watched))){
   if(queued.length>=policy.maxNewCandidatesPerRun)break;
   if(db.prepare("SELECT COUNT(*) n FROM research_queue WHERE status IN ('pending','researching','awaiting_decision')").get().n>=Math.min(5,policy.maxNewCandidatesPerRun))break;
-  const prior=db.prepare('SELECT * FROM research_queue WHERE ticker=? ORDER BY created_at DESC LIMIT 1').get(r.ticker);if(prior&&(prior.status==='pending'||prior.status==='researching'||prior.status==='awaiting_decision'||prior.as_of===r.asOf||Date.parse(at)-Date.parse(prior.updated_at)<policy.reviewCooldownDays*86400000))continue;
+  const prior=db.prepare('SELECT * FROM research_queue WHERE ticker=? ORDER BY created_at DESC LIMIT 1').get(r.ticker);if(prior&&(prior.status==='pending'||prior.status==='researching'||prior.status==='awaiting_decision'||['waiting_event','retry_not_due','waiting_capacity'].includes(prior.status)||prior.as_of===r.asOf||Date.parse(at)-Date.parse(prior.updated_at)<policy.reviewCooldownDays*86400000))continue;
   const qid='candidate-'+randomUUID();db.prepare('INSERT INTO research_queue(id,run_id,ticker,as_of,policy_version,created_at,updated_at,evidence) VALUES(?,?,?,?,?,?,?,?)').run(qid,id,r.ticker,r.asOf,policy.version,at,at,JSON.stringify(r));queued.push({id:qid,ticker:r.ticker,score:r.score});
  }
  const summary={sessionKey,noNewSession:!!sameSession,total:rows.length,eligible:rows.filter(r=>r.eligible).length,matches:rows.filter(r=>r.candidate).length,queued,benchmarkCount:benchmarks.length};db.prepare('INSERT INTO scout_runs VALUES(?,?,?,?,?)').run(id,at,JSON.stringify(policy),JSON.stringify(summary),JSON.stringify({rows,benchmarks}));db.exec('COMMIT');return {id,at,...summary};

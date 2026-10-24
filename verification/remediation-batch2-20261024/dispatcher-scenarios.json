@@ -1,0 +1,141 @@
+{
+  "observedAt": "2026-10-24T12:07:26.362Z",
+  "scope": "In-memory scheduler/receipt fixtures. Durations exclude real collectors, model research, production databases and PC sleep. Not a live-session SLA or throughput certification.",
+  "rows": [
+    {
+      "name": "cold-receipts",
+      "status": "completed",
+      "adapterCalls": 33,
+      "durationMs": 64.3634,
+      "counts": {
+        "fetched": 0,
+        "reused": 0,
+        "deferred": 0,
+        "failed": 0
+      },
+      "pending": []
+    },
+    {
+      "name": "cached-receipts",
+      "status": "completed",
+      "adapterCalls": 0,
+      "durationMs": 13.399799999999999,
+      "counts": {
+        "fetched": 0,
+        "reused": 33,
+        "deferred": 0,
+        "failed": 0
+      },
+      "pending": []
+    },
+    {
+      "name": "one-changed-decision",
+      "status": "completed",
+      "adapterCalls": 1,
+      "durationMs": 14.464500000000015,
+      "counts": {
+        "fetched": 0,
+        "reused": 32,
+        "deferred": 0,
+        "failed": 0
+      },
+      "pending": []
+    },
+    {
+      "name": "source-failures",
+      "status": "partial",
+      "adapterCalls": 4,
+      "durationMs": 5.177500000000009,
+      "counts": {
+        "fetched": 0,
+        "reused": 0,
+        "deferred": 4,
+        "failed": 4
+      },
+      "pending": [
+        {
+          "kind": "fixture-source",
+          "target": "source-3",
+          "status": "failed",
+          "nextRetry": "2026-10-24T13:07:26.330Z"
+        },
+        {
+          "kind": "fixture-source",
+          "target": "source-0",
+          "status": "failed",
+          "nextRetry": "2026-10-24T13:07:26.331Z"
+        },
+        {
+          "kind": "fixture-source",
+          "target": "source-2",
+          "status": "failed",
+          "nextRetry": "2026-10-24T13:07:26.332Z"
+        },
+        {
+          "kind": "fixture-source",
+          "target": "source-1",
+          "status": "failed",
+          "nextRetry": "2026-10-24T13:07:26.332Z"
+        }
+      ]
+    },
+    {
+      "name": "retry-heavy-next-window",
+      "status": "partial",
+      "adapterCalls": 0,
+      "durationMs": 1.6113,
+      "counts": {
+        "fetched": 0,
+        "reused": 0,
+        "deferred": 4,
+        "failed": 0
+      },
+      "pending": [
+        {
+          "kind": "fixture-source",
+          "target": "source-0",
+          "status": "pending",
+          "nextRetry": "2026-10-24T13:07:26.331Z"
+        },
+        {
+          "kind": "fixture-source",
+          "target": "source-2",
+          "status": "pending",
+          "nextRetry": "2026-10-24T13:07:26.332Z"
+        },
+        {
+          "kind": "fixture-source",
+          "target": "source-3",
+          "status": "pending",
+          "nextRetry": "2026-10-24T13:07:26.330Z"
+        },
+        {
+          "kind": "fixture-source",
+          "target": "source-1",
+          "status": "pending",
+          "nextRetry": "2026-10-24T13:07:26.332Z"
+        }
+      ]
+    },
+    {
+      "name": "unresponsive-adapter",
+      "status": "partial",
+      "adapterCalls": 1,
+      "durationMs": 25.406800000000004,
+      "counts": {
+        "fetched": 0,
+        "reused": 0,
+        "deferred": 1,
+        "failed": 1
+      },
+      "pending": [
+        {
+          "kind": "fixture-hang",
+          "target": "one",
+          "status": "running",
+          "nextRetry": null
+        }
+      ]
+    }
+  ]
+}

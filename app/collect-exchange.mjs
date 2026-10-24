@@ -6,8 +6,11 @@ try{
  const indexPath=join(dir,'index.json'),index=existsSync(indexPath)?JSON.parse(readFileSync(indexPath,'utf8')):{version:'egx-exchange-feed-1',windows:{},records:{},failures:[]};
  const {from,to}=exchangeWindow(index,today,{from:arg('from'),to:arg('to')}),key=from+'_'+to;
  feedRequest(exchangeEndpoints[0],from,to);
- if(process.argv.includes('--refresh')&&index.windows[key]){index.windowHistory??=[];index.windowHistory.push({...index.windows[key],archivedAt:new Date().toISOString()});delete index.windows[key];}
- const window=index.windows[key]||{from,to,endpoints:{}},deadline=Date.now()+5*60000;index.windows[key]=window;
+ const oldestPage=w=>Math.min(...Object.values(w?.endpoints||{}).flatMap(e=>Object.values(e.pages||{}).map(p=>Date.parse(p.at))));
+ const cutoff=arg('coverage-cutoff');if(cutoff&&!Number.isFinite(Date.parse(cutoff)))throw Error('Invalid coverage cutoff');
+ if((process.argv.includes('--refresh')||cutoff&&index.windows[key]?.complete&&oldestPage(index.windows[key])<Date.parse(cutoff))&&index.windows[key]){index.windowHistory??=[];index.windowHistory.push({...index.windows[key],archivedAt:new Date().toISOString()});delete index.windows[key];}
+ const deadlineMs=Number(process.env.EGX_SOURCE_DEADLINE_MS||300000);if(!Number.isFinite(deadlineMs)||deadlineMs<1000||deadlineMs>300000)throw Error('Invalid exchange deadline');
+ const window=index.windows[key]||{from,to,endpoints:{}},deadline=Date.now()+deadlineMs;index.windows[key]=window;
  const save=()=>{index.updatedAt=new Date().toISOString();writeFileSync(indexPath+'.tmp',JSON.stringify(index,null,2));renameSync(indexPath+'.tmp',indexPath);};let fetched=0,reused=0;
  for(const endpoint of exchangeEndpoints){const state=window.endpoints[endpoint]||{pages:{},complete:false};window.endpoints[endpoint]=state;let page=1;
   while(Date.now()<deadline){if(state.totalPages!==undefined&&page>Math.max(1,state.totalPages))break;if(state.pages[page]){reused++;page++;continue;}

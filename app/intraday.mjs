@@ -1,3 +1,4 @@
+import {activeResearchCount} from './research-queue-state.mjs';
 import {randomBytes,randomUUID} from 'node:crypto';
 import {initDecisions} from './decisions.mjs';
 import {initJournal} from './journal.mjs';
@@ -93,11 +94,11 @@ export function ingestIntradayEvent(db,input,{now=new Date(),receivedAt=now.toIS
  let candidateId=null;
  db.exec('BEGIN IMMEDIATE');try{
   if(status==='review_queued'){
-   const day=cairoDate(now),eventPolicy='intraday-1.0-'+row.id.slice(6),existing=db.prepare("SELECT id,status FROM research_queue WHERE ticker=? AND (status IN ('pending','researching','awaiting_decision') OR (as_of=? AND policy_version=?)) ORDER BY created_at DESC LIMIT 1").get(r.ticker,day,eventPolicy);
-   if(existing){candidateId=existing.id;if(!['pending','researching','awaiting_decision'].includes(existing.status)){status='repeat_trigger';reason+=' Same rule already reviewed today; observation retained without launching another identical review.';}}
+   const day=cairoDate(now),eventPolicy='intraday-1.0-'+row.id.slice(6),existing=db.prepare("SELECT id,status FROM research_queue WHERE ticker=? AND (status IN ('pending','researching','awaiting_decision','waiting_event','retry_not_due','waiting_capacity') OR (as_of=? AND policy_version=?)) ORDER BY created_at DESC LIMIT 1").get(r.ticker,day,eventPolicy);
+   if(existing){candidateId=existing.id;if(!['pending','researching','awaiting_decision','waiting_event','retry_not_due','waiting_capacity'].includes(existing.status)){status='repeat_trigger';reason+=' Same rule already reviewed today; observation retained without launching another identical review.';}}
    else{
     candidateId='candidate-'+randomUUID();const at=now.toISOString(),evidence={ticker:r.ticker,signals:['Intraday research trigger'],flags:[reason],eventId:e.eventId,ruleId:row.id,previousDecisionId:r.decisionId||null,journalId:r.journalId||null,notAScreen:true,triggeredAt:e.triggeredAt};
-    db.prepare('INSERT INTO research_queue(id,run_id,ticker,as_of,policy_version,created_at,updated_at,evidence,note) VALUES(?,?,?,?,?,?,?,?,?)').run(candidateId,'intraday-'+e.eventId,r.ticker,day,eventPolicy,at,at,JSON.stringify(evidence),reason);
+    db.prepare('INSERT INTO research_queue(id,run_id,ticker,as_of,policy_version,created_at,updated_at,evidence,note) VALUES(?,?,?,?,?,?,?,?,?)').run(candidateId,'intraday-'+e.eventId,r.ticker,day,eventPolicy,at,at,JSON.stringify(evidence),reason);if(activeResearchCount(db)>5)db.prepare("UPDATE research_queue SET status='waiting_capacity' WHERE id=?").run(candidateId);
    }
    const notification='intraday-'+hash(r.ticker+'|'+row.id+'|'+day).slice(0,32);
    if(status==='review_queued'){
