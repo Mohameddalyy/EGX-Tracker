@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "id": "report-20261008-scout-masr-review",
+  "createdAt": "2026-10-08T11:28:40.827Z",
+  "type": "research",
+  "contextId": "context-97de619d-fb57-48f2-abcd-e63023735d0a",
+  "summary": "MASR: independent analyst review deferred; no watchlist promotion. Defer. Sales and collections improved, but earnings/margins declined and the current close offers less upside to resistance than downside to confirmed support. This developer must not be valued against banks merely because TradingView groups it under Finance.",
+  "limitations": [
+    "This is a documented research pass with unresolved checks, not a completed approval-quality due-diligence report. Missing checks remain unavailable.",
+    "TradingView MCP health/state succeeded and chart remained ELWA 60-minute candlesticks. OHLCV and financial snapshots came from the immutable tracker context. Public TradingView news routes returned empty shells or errors; issuer documents supplied the substantive facts. No claim of access to every TradingView entitlement, order book, exchange trade count or proprietary bank research.",
+    "Frozen screen Finance median groups unlike businesses; its valuation signals are not used as analyst evidence. Price momentum is not dividend-adjusted total return.",
+    "Web cache dates and page freshness vary. Some issuer sources required direct public downloads; source financial periods and missing publication/ownership dates are explicitly distinguished. No complete October event clearance or fully reconciled corporate-action ledger.",
+    "Stop/target calculations use deterministic entryRisk; actual spreads, broker costs, taxes and gap/slippage losses are unknown. No orders, alerts or holdings were created."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "MASR TradingView symbol; local immutable OHLCV capture is authoritative for calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-MASR/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "tvnews",
+      "title": "MASR TradingView news route (no complete readable headline feed returned)",
+      "url": "https://www.tradingview.com/symbols/EGX-MASR/news/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "results",
+      "title": "Madinet Masr H1 2026 earnings release",
+      "url": "https://irfiles.technologyverse.com/MASR/MMHD-ER-2Q26-E-Final.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "Six months ended 30 June 2026",
+      "publishedAt": "2026-08-06"
+    },
+    {
+      "id": "presentation",
+      "title": "Madinet Masr H1 2026 investor presentation",
+      "url": "https://irfiles.technologyverse.com/MASR/MMHD-ERP-2Q26-E-v3.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "H1 2026"
+    },
+    {
+      "id": "owners",
+      "title": "Madinet Masr share information, owners and dividends; direct issuer fetch",
+      "url": "https://ir.madinetmasr.com/en/share-information",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "ir",
+      "title": "Madinet Masr investor relations",
+      "url": "https://ir.madinetmasr.com/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "MASR",
+      "candidateId": "candidate-54a8ff32-a7ad-4784-abcd-3f4d79aeb123",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Sales and collections improved, but earnings/margins declined and the current close offers less upside to resistance than downside to confirmed support. This developer must not be valued against banks merely because TradingView groups it under Finance.",
+      "sourceIds": [
+        "tv",
+        "tvnews",
+        "results",
+        "presentation",
+        "owners",
+        "ir"
+      ],
+      "fundamentals": "H1 2026 revenue EGP 5.135bn rose 7.2%, but net profit EGP 1.027bn fell 19.9%. Deliveries rose to 1,200 and net cash collections to EGP 9.9bn; debt about EGP 7.0bn was nearly offset by cash/short-term investments, leaving only EGP 163.3m net cash. Different project mix and deferred co-development recognition depressed margins [results]. Backlog is not present cash or profit. The presentation describes land-portion revenue recognition at sale and remainder at delivery [presentation]; discounting collections, cost-to-complete, cancellation rates and revenue recognition matter. TradingView P/E 5.47/PB 1.28 are provisional valuation inputs; screen revenue growth is TTM, not H1 growth. No independent NAV/DCF has been built.",
+      "technicals": "Close 7.86 is only slightly above SMA50 7.80 and SMA20 7.68; RV20 1.02 is ordinary volume. ATR14 0.277. Confirmed support is 6.71–6.82 from June/September, with resistance 8.88–8.95 from September. Aggregated weekly closes 7.98, 8.30, 7.88, 7.45, 7.65, 7.86 show recovery from correction, not a new high. The latest four-session week remains below September resistance. Calculated from C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-97de619d-fb57-48f2-abcd-e63023735d0a.json, captured 2026-10-08T10:49:19.835Z; latest confirmed daily bar 2026-10-07. Weekly aggregation is derived from these daily bars, not a separately fetched TradingView weekly study. TradingView holiday metadata includes 2026-10-08. Feed delay 900 seconds; dividend adjustment false. Historical gap 2025-07-08 remains unexplained; recent 20 observations contain volume. [tv]",
+      "catalysts": "Delivery and collection conversion could improve earnings visibility, while margin pressure is the competing thesis. H1 disclosures describe new commercial projects and a buyback authorization; authorization does not prove completed purchases [results]. The share-information page records a 4.17% distribution on 9 March and EGP 0.15 cash dividend on 24 May 2026 [owners]. These must be reconciled to chart split adjustments before interpreting long-horizon price momentum as shareholder return.",
+      "risks": "Elevated: property affordability/interest rates, construction cost inflation, long receivables, project execution and recognition timing. The issuer page lists BIG Investment Group 30.97%, Holding Company for Construction & Development 15.56%, National Organization for Social Insurance 9.43%, Sallam Family 5.84%, Olayan 4.66%, National Investment Bank 3.78% and others/free float 29.76%, but no ownership as-of date. No single listed owner has majority control [owners]. That same page includes stale EPS based on Q2 2024 and a September quote, so use the immutable TradingView capture for pricing. Prior-20-observation median daily volume 7,591,314 shares; median close-times-volume turnover proxy EGP 56421137.60. Latest volume 7,734,086. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]",
+      "invalidation": "Illustrative 6.57 stop sits about half ATR below the 6.71 support-zone floor. A failure of the zone, deterioration in collections or adverse funding/delivery disclosures cancels the medium-term recovery thesis. The resulting wide stop is the reason not to chase at 7.86.",
+      "positionReview": "No actual holdings or fills appear in this selected immutable context. Portfolio capital, available cash, user risk/concentration/volume limits and actual costs are unset. No numerical share quantity is proposed. Concurrent exposures and bank/financial-sector correlation need a portfolio-level check before any sizing.",
+      "entryConditions": "No entry now with the distant structural stop. Monitor for a new higher low above 7.50, which requires future bars to confirm, or a well-defined support reversal nearer 6.8–7.2. Recalculate risk to 8.88 before considering a swing. A break above 8.95 requires a fresh target rationale; do not substitute an arbitrary percentage target. Verify current ownership/action ledger and results updates first. At the reference close 7.86, an illustrative stop 6.57 and nearest-resistance target 8.88 imply EGP 1.29 per-share downside (16.41%) versus EGP 1.02 upside (12.98%), gross reward/risk 0.79. A hypothetical 0.50% round-trip cost scenario yields EGP 1.3293 loss and 0.74 reward/risk. Costs are a stress assumption, not known broker charges. This is diagnostic math, not an approved entry or guaranteed loss cap.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "results",
+            "presentation"
+          ],
+          "note": "Reviewed H1 consolidated release and presentation financial tables, cash collections, debt, margin decline and recognition policy; independent NAV remains unmodelled."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "owners"
+          ],
+          "note": "Major owners identified on issuer page but current dated ownership disclosure not obtained."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "results",
+            "ir",
+            "tvnews"
+          ],
+          "note": "H1 release and IR page reviewed; full subsequent EGX/news event coverage not established."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "results",
+            "owners"
+          ],
+          "note": "March bonus and May cash distributions checked; complete later actions, execution of buyback and adjustment chain remain unverified."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Inspected validated daily history and derived Sunday–Thursday weekly structure with dated pivots; scenarios are not confirmed entries."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Prior-20-observation median daily volume 7,591,314 shares; median close-times-volume turnover proxy EGP 56421137.60. Latest volume 7,734,086. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]"
+        }
+      },
+      "diagnosticRiskScenario": {
+        "notApproved": true,
+        "currency": "EGP",
+        "method": "Existing prototype support minus 0.5 ATR, rounded to tick; nearest confirmed resistance; not an institutional standard",
+        "gross": {
+          "entry": 7.86,
+          "stop": 6.57,
+          "target": 8.88,
+          "roundTripCostFraction": 0,
+          "lossPerShareEGP": 1.29,
+          "lossPercent": 16.412213740458014,
+          "gainPerShareEGP": 1.0200000000000005,
+          "rewardRisk": 0.790697674418605,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        },
+        "costScenario": {
+          "entry": 7.86,
+          "stop": 6.57,
+          "target": 8.88,
+          "roundTripCostFraction": 0.005,
+          "lossPerShareEGP": 1.3293,
+          "lossPercent": 16.91221374045801,
+          "gainPerShareEGP": 0.9807000000000005,
+          "rewardRisk": 0.737756714060032,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        }
+      }
+    }
+  ]
+}

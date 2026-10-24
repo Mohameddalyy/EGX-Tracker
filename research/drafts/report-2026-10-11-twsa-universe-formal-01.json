@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-twsa-universe-formal-01",
+  "createdAt": "2026-10-11T08:31:06.462Z",
+  "type": "research",
+  "contextId": "context-d0144510-26c6-4494-b408-6b54b83848d2",
+  "summary": "TWSA: Insufficient evidence; analyst defer. Defer: exceptional confirmed volume/price expansion is a hypothesis requiring company evidence, not proof of informed accumulation. Current statements, credit quality, beneficial control and corporate actions are not verified; no measured overhead resistance exists in the frozen level set.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-twsa",
+      "title": "TradingView TWSA; market observations frozen in context-d0144510-26c6-4494-b408-6b54b83848d2",
+      "url": "https://www.tradingview.com/symbols/EGX-TWSA/",
+      "accessedAt": "2026-10-11T08:31:06.460Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "twsa-fs",
+      "title": "Issuer financial statement archive",
+      "url": "https://www.tawasoa.com/page/financial-statements",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-dis",
+      "title": "Issuer disclosures",
+      "url": "https://www.tawasoa.com/page/disclosures",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-act",
+      "title": "Issuer corporate actions",
+      "url": "https://www.tawasoa.com/page/corporate-action",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-news",
+      "title": "Issuer news page linking press coverage, undated headings",
+      "url": "https://www.tawasoa.com/page/news",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-profile",
+      "title": "Issuer company-profile route",
+      "url": "https://www.tawasoa.com/page/company-profile",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-egid-fs",
+      "title": "Issuer-linked EGID financial iframe; zero readable lines",
+      "url": "https://ir.egidegypt.com/en/financialstatement/Or8_I9_rfvoZnmhp-0BkC0anvo5T0fjSGWNffq9sxmc!",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-egid-dis",
+      "title": "Issuer-linked EGID disclosures iframe; zero readable lines",
+      "url": "https://ir.egidegypt.com/en/disclosures/Or8_I9_rfvoZnmhp-0BkC0anvo5T0fjSGWNffq9sxmc!",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    },
+    {
+      "id": "twsa-egid-act",
+      "title": "Issuer-linked EGID actions iframe; zero readable lines",
+      "url": "https://ir.egidegypt.com/en/corporateactions/Or8_I9_rfvoZnmhp-0BkC0anvo5T0fjSGWNffq9sxmc!",
+      "accessedAt": "2026-10-11T08:31:06.460Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "TWSA",
+      "candidateId": "candidate-96ac2040-ec72-4078-948f-9137abcf4745",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: exceptional confirmed volume/price expansion is a hypothesis requiring company evidence, not proof of informed accumulation. Current statements, credit quality, beneficial control and corporate actions are not verified; no measured overhead resistance exists in the frozen level set.",
+      "sourceIds": [
+        "tv-twsa",
+        "twsa-fs",
+        "twsa-dis",
+        "twsa-act",
+        "twsa-news",
+        "twsa-profile",
+        "twsa-egid-fs",
+        "twsa-egid-dis",
+        "twsa-egid-act"
+      ],
+      "fundamentals": "[twsa-fs] Issuer static archive exposes2022–2024 annual and March/June2025 documents, not current2026 statements in the opened page. [twsa-egid-fs] Embedded issuer-linked EGID financial route opened but returned no readable text. TradingView identity EGS7D231C010 confirmed; market-cap, earnings and PE missing in provider overview. For a factor, require receivables aging, ECL, customer concentration/recourse, bank-funding cost/maturity, capital adequacy, cash collections and related-party balances; these cannot be inferred from a high momentum percentile. [twsa-profile] Company-profile wrapper provides no dated owner percentages; no majority owner can be established.",
+      "technicals": "[tv-twsa] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 218 accepted daily observations through2026-10-07, recaptured2026-10-11T08:21:45.628Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close8.62, SMA20=7.3385, SMA50=7.0238, ATR14=0.5126, RV20=26.1284. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means7.2450/6.1255, latest weekly high/low8.62/7.05. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:none. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[twsa-news] Issuer news page links external press headlines about credit facilities, results and dividends; the headlines lack a full current primary filing and include an excluded provider, which was not followed/adopted. No financial amount or dividend timetable from those headlines is cleared. A verified financing/results/action disclosure could explain the observed volume shock.",
+      "risks": "Very high qualitative swing/evidence risk: latest confirmed range7.08–8.62 and RV20=26.13, with only218 daily observations since November2025. This may reflect speculative/event activity; neither insider buying nor manipulation is inferred. Normal median turnover is much lower than the spike. No current balance sheet, funding leverage or control verification; spread/depth unavailable.",
+      "invalidation": "A later confirmed failure back below prior weekly high8.45 would weaken breakout acceptance; loss of6.16–6.30 support invalidates the wider continuation structure. These are research-monitoring boundaries, not an approved stop. Any unreconciled capital action requires recomputing levels.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry or priced plan. Require full current primary statements, owners and action/event explanation; wait for confirmed acceptance/retest and sustainable liquidity, then reassess. Frozen levels have no resistance above8.62, so there is no evidenced target supporting a2:1 plan. Do not project an arbitrary target or chase provisionalOctober11 quotes.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "twsa-fs",
+            "twsa-egid-fs"
+          ],
+          "note": "Static archive older than required; embedded current financial content unreadable. Current earnings, ECL/aging, funding, solvency and review opinion missing."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "twsa-profile",
+            "twsa-dis",
+            "twsa-egid-dis"
+          ],
+          "note": "No dated named-shareholder percentages or beneficial control obtained; do not use float or board names as owners."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "twsa-news",
+            "twsa-dis"
+          ],
+          "note": "Issuer press-link headlines inspected but underlying primary current event narrative unavailable. Excluded provider not used."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "twsa-act",
+            "twsa-egid-act"
+          ],
+          "note": "Action page and iframe attempted; zero readable action content. Dividend/rights/split/capital/listing-event verification incomplete."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-twsa"
+          ],
+          "note": "[tv-twsa] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 218 accepted daily observations through2026-10-07, recaptured2026-10-11T08:21:45.628Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close8.62, SMA20=7.3385, SMA50=7.0238, ATR14=0.5126, RV20=26.1284. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means7.2450/6.1255, latest weekly high/low8.62/7.05. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:none. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-twsa"
+          ],
+          "note": "[tv-twsa] Inspected raw volumes and finality in data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; latest14617875 shares,20-observation median594192.5, median close-times-volume turnoverEGP4212473.87;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

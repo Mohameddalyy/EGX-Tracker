@@ -1,0 +1,12 @@
+{
+  "horizon": "Prioritize swing trades (days to weeks) and medium-term trades (weeks to months). Propose conditional entries and per-share/percentage risk before capital is supplied; defer share quantities.",
+  "capitalEGP": null,
+  "availableCashEGP": null,
+  "riskPerTradeFraction": null,
+  "maxPositionFraction": null,
+  "maxPortfolioRiskFraction": null,
+  "maxDailyVolumeParticipation": null,
+  "estimatedRoundTripCostFraction": null,
+  "allowOrders": false
+}
+

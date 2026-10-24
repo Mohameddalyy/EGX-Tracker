@@ -1,0 +1,179 @@
+{
+  "version": "1.0",
+  "id": "report-20261008-scout-cira-review",
+  "createdAt": "2026-10-08T11:28:40.827Z",
+  "type": "research",
+  "contextId": "context-97de619d-fb57-48f2-abcd-e63023735d0a",
+  "summary": "CIRA: independent analyst review deferred; no watchlist promotion. Defer. Primary sources support education growth, but scanner earnings nulls are not proof of losses or of cheapness. High ownership concentration and unverified latest corporate actions remain concerns. Current price sits below repeated resistance with insufficient reward to a structural stop.",
+  "limitations": [
+    "This is a documented research pass with unresolved checks, not a completed approval-quality due-diligence report. Missing checks remain unavailable.",
+    "TradingView MCP health/state succeeded and chart remained ELWA 60-minute candlesticks. OHLCV and financial snapshots came from the immutable tracker context. Public TradingView news routes returned empty shells or errors; issuer documents supplied the substantive facts. No claim of access to every TradingView entitlement, order book, exchange trade count or proprietary bank research.",
+    "Frozen screen Finance median groups unlike businesses; its valuation signals are not used as analyst evidence. Price momentum is not dividend-adjusted total return.",
+    "Web cache dates and page freshness vary. Some issuer sources required direct public downloads; source financial periods and missing publication/ownership dates are explicitly distinguished. No complete October event clearance or fully reconciled corporate-action ledger.",
+    "Stop/target calculations use deterministic entryRisk; actual spreads, broker costs, taxes and gap/slippage losses are unknown. No orders, alerts or holdings were created."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "CIRA TradingView symbol; local immutable OHLCV capture is authoritative for calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-CIRA/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "tvnews",
+      "title": "CIRA TradingView news route (no complete readable headline feed returned)",
+      "url": "https://www.tradingview.com/symbols/EGX-CIRA/news/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "results",
+      "title": "CIRA 9M FY2025/26 earnings release",
+      "url": "https://irfiles.technologyverse.com/cira/CIRA-Earnings-9M26-E-vf.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "Nine months ended 31 May 2026",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "id": "owners",
+      "title": "CIRA issuer majority shareholder page",
+      "url": "https://cira.com.eg/en/our-shareholders",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "takeover",
+      "title": "SIC additional-stake mandatory takeover announcement",
+      "url": "https://irfiles.technologyverse.com/cira/SEIC-SIC-Acquisition-EN-19-Jan-2025-FINAL.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "January 2025 transaction",
+      "publishedAt": "2025-01-19"
+    },
+    {
+      "id": "alliance",
+      "title": "Egyptian Education Alliance agreement",
+      "url": "https://irfiles.technologyverse.com/cira/NBE-x-CIRA-PRL-V3.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "June 2026",
+      "publishedAt": "2026-06-14"
+    },
+    {
+      "id": "dividends",
+      "title": "CIRA issuer dividend history and policy",
+      "url": "https://cira.com.eg/en/dividends",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "news",
+      "title": "CIRA issuer news/disclosures library",
+      "url": "https://cira.com.eg/en/news-and-disclosures",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "CIRA",
+      "candidateId": "candidate-5a27edd8-e093-4c17-bb39-f9e194607cb1",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Primary sources support education growth, but scanner earnings nulls are not proof of losses or of cheapness. High ownership concentration and unverified latest corporate actions remain concerns. Current price sits below repeated resistance with insufficient reward to a structural stop.",
+      "sourceIds": [
+        "tv",
+        "tvnews",
+        "results",
+        "owners",
+        "takeover",
+        "alliance",
+        "dividends",
+        "news"
+      ],
+      "fundamentals": "For the nine months ended May 2026, issuer adjusted revenue was EGP 4.505bn (+35%), normalized EBITDA EGP 2.403bn (+33%), and normalized net profit EGP 1.184bn (+91%). These normalized measures exclude construction-related items; do not call them audited statutory TTM earnings. Net debt was EGP 5.53bn, and K-12 normalized EBITDA weakened despite group growth [results]. TradingView P/E/EPS/ROE are null and P/B is 9.24; obtain attributable statutory earnings, cash-flow/debt schedules and reconcile normalization before calculating valuation. Enrollment, tuition collection, capex and interest coverage are more useful than a Finance-style median. No earnings multiple or fair value is manufactured.",
+      "technicals": "Close 39.42 is just above SMA20 39.36 and SMA50 37.69; ATR14 1.662 and RV20 1.80. Repeated resistance 41.49–41.74 comes from 14/20 September and 5 October; support 37.00 (30 September), then 32.10. Aggregated weekly closes 35.00, 37.00, 40.65, 39.07, 39.29, 39.42 show consolidation after a strong rise. A high-volume red/flat session does not independently prove institutional accumulation. Calculated from C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-97de619d-fb57-48f2-abcd-e63023735d0a.json, captured 2026-10-08T10:36:27.916Z; latest confirmed daily bar 2026-10-07. Weekly aggregation is derived from these daily bars, not a separately fetched TradingView weekly study. TradingView holiday metadata includes 2026-10-08. Feed delay 900 seconds; dividend adjustment false. Historical gap 2025-07-08 remains unexplained; recent 20 observations contain volume. [tv]",
+      "catalysts": "The June education-alliance announcement envisages over 100 schools; NBE intends EGP 250m investment for 20% of that alliance, not 20% of listed CIRA [alliance]. Admissions and future annual results can test growth durability; planned projects are not assured revenue. The July release discusses longer-dated launches, so these are medium-term execution hypotheses rather than near-term guarantees [results].",
+      "risks": "Elevated: concentrated control/limited float, financing and education regulation, cost inflation, execution of new capacity and valuation uncertainty. Issuer ownership page says SIC owns 88.7% but supplies no as-of date [owners]. The 19 January 2025 release described an additional 37.5% acquisition pending settlement from a 51.2% base; it must not itself be treated as settlement proof [takeover]. The issuer dividend table ends in 2024 and has ambiguous PT units [dividends]; do not infer no later dividend or use it to adjust returns. Prior-20-observation median daily volume 558,701 shares; median close-times-volume turnover proxy EGP 21616141.38. Latest volume 1,003,146. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]",
+      "invalidation": "Illustrative 36.17 stop sits roughly half ATR below 37.00 support. A failure there or adverse leverage/ownership/education-policy disclosure cancels the thesis. Reconfirm the float and corporate-action dates before any quantity calculation.",
+      "positionReview": "No actual holdings or fills appear in this selected immutable context. Portfolio capital, available cash, user risk/concentration/volume limits and actual costs are unset. No numerical share quantity is proposed. Concurrent exposures and bank/financial-sector correlation need a portfolio-level check before any sizing.",
+      "entryConditions": "No entry now. Monitor a future controlled pullback near 37–38 with a verified reversal, or a sustained break/retest above 41.74 after financial/action checks. A breakout has no nearby confirmed overhead pivot in this 120-observation map, so do not invent a target just to create attractive reward/risk. Refresh and reassess on a new structure. At the reference close 39.42, an illustrative stop 36.17 and nearest-resistance target 41.49 imply EGP 3.25 per-share downside (8.24%) versus EGP 2.07 upside (5.25%), gross reward/risk 0.64. A hypothetical 0.50% round-trip cost scenario yields EGP 3.4471 loss and 0.54 reward/risk. Costs are a stress assumption, not known broker charges. This is diagnostic math, not an approved entry or guaranteed loss cap.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-05-31",
+          "sourceIds": [
+            "results"
+          ],
+          "note": "Current issuer release inspected and normalized basis identified, but statutory attributable TTM earnings, cash flow and debt/valuation reconciliation remain incomplete."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "owners",
+            "takeover"
+          ],
+          "note": "88.7% stated by issuer without as-of date; historical MTO was pending settlement, so current dated register is still required."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "results",
+            "alliance",
+            "tvnews"
+          ],
+          "note": "July release and June alliance inspected; complete subsequent event/news coverage not established."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "takeover",
+            "dividends"
+          ],
+          "note": "Historical MTO and old dividend table reviewed; no complete current action register or unit reconciliation."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Inspected validated daily history and derived Sunday–Thursday weekly structure with dated pivots; scenarios are not confirmed entries."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Prior-20-observation median daily volume 558,701 shares; median close-times-volume turnover proxy EGP 21616141.38. Latest volume 1,003,146. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]"
+        }
+      },
+      "diagnosticRiskScenario": {
+        "notApproved": true,
+        "currency": "EGP",
+        "method": "Existing prototype support minus 0.5 ATR, rounded to tick; nearest confirmed resistance; not an institutional standard",
+        "gross": {
+          "entry": 39.42,
+          "stop": 36.17,
+          "target": 41.49,
+          "roundTripCostFraction": 0,
+          "lossPerShareEGP": 3.25,
+          "lossPercent": 8.244545915778792,
+          "gainPerShareEGP": 2.0700000000000003,
+          "rewardRisk": 0.636923076923077,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        },
+        "costScenario": {
+          "entry": 39.42,
+          "stop": 36.17,
+          "target": 41.49,
+          "roundTripCostFraction": 0.005,
+          "lossPerShareEGP": 3.4471,
+          "lossPercent": 8.744545915778792,
+          "gainPerShareEGP": 1.8729000000000002,
+          "rewardRisk": 0.5433262742595226,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-amia-support-reassessment-01",
+  "createdAt": "2026-10-18T22:14:14.128Z",
+  "type": "research",
+  "contextId": "context-c3e0c5af-7200-413d-8265-0f98601a8e4b",
+  "summary": "AMIA: Defer. Original 18.03 support failed. Recovered H1 and Q3 primary copies improve financial/control evidence, but negative group cash conversion, OCI-driven book growth, subsidiary/parent valuation and current action/news gaps remain; the lower-zone plan has no accepted reversal.",
+  "limitations": [
+    "This is a targeted substantive reassessment, not review of all 296 stocks or all numerical matches. Original reports, decisions and uncertain forecasts are preserved.",
+    "Underlying issuer/auditor archive copies were assessed on identity, dates, signatures, corroborating directly read official notices and arithmetic. Archive custody and local hashes are recorded; no original-host retrieval or cryptographic identity is claimed. No editorial archive numbers or excluded-domain data were adopted.",
+    "Only relevant inspected main tables, opinions, capital/ownership pages and identified notes support the stated facts. Full current legal/action completeness and all source-note questions remain explicit. Date-only source evidence cannot establish start-of-day availability.",
+    "Fresh parent collector history and snapshot were used after release; analyst chart health read succeeded and chart was not changed. No new collection or model/policy changes.",
+    "No orders, paper fills, actual share sizing, calibrated probabilities, forward model invention or renewal of the expired experiment."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView AMIA frozen history",
+      "url": "https://www.tradingview.com/symbols/EGX-AMIA/",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "2026-10-18"
+    },
+    {
+      "id": "egx",
+      "title": "Official Arabic Article 30 notice 295711 independently read",
+      "url": "https://beta.egx.com.eg/ar/media-center?tab=disclosure",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "2026-09-30",
+      "publishedAt": "2026-10-11T09:07:00+03:00"
+    },
+    {
+      "id": "fs",
+      "title": "Underlying issuer/UHY H1 consolidated primary report, archived copy",
+      "url": "https://foudalens.com/disclosures/AMIA.CA/financial_statement/2026-08-13_292927_1.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "H1 2026"
+    },
+    {
+      "id": "parent",
+      "title": "Underlying issuer/UHY H1 standalone report, archived copy",
+      "url": "https://foudalens.com/disclosures/AMIA.CA/financial_statement/2026-08-13_292929_1.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "H1 2026"
+    },
+    {
+      "id": "owners",
+      "title": "Underlying Q3 Article 30 primary register, archived copy",
+      "url": "https://foudalens.com/disclosures/AMIA.CA/board_agm/2026-10-11_295711_1.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "2026-09-30",
+      "publishedAt": "2026-10-11T09:07:00+03:00"
+    },
+    {
+      "id": "q1",
+      "title": "Direct issuer Q1 consolidated report, pages 3-8 independently read",
+      "url": "https://www.amic-eg.com/media/Documents/55e7995e-a90f-4a27-aed8-32a3642c9cb3.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "Q1 2026",
+      "publishedAt": "2026-05-19"
+    },
+    {
+      "id": "portfolio",
+      "title": "Issuer investment portfolio inspected",
+      "url": "https://www.amic-eg.com/Investments/Portfolio",
+      "accessedAt": "2026-10-18T22:14:14.128Z"
+    },
+    {
+      "id": "index",
+      "title": "Issuer financial index lists Q1, not a complete current archive",
+      "url": "https://www.amic-eg.com/Investor-Relations/Financial-Statements/Consolidated",
+      "accessedAt": "2026-10-18T22:14:14.128Z"
+    },
+    {
+      "id": "disclosures",
+      "title": "Issuer disclosure library bounded to displayed 2026 decisions through May",
+      "url": "https://www.amic-eg.com/investor-relations/disclosures",
+      "accessedAt": "2026-10-18T22:14:14.128Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AMIA",
+      "candidateId": "candidate-185f06b3-9d88-420d-9a54-6163bacb0679",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Original 18.03 support failed. Recovered H1 and Q3 primary copies improve financial/control evidence, but negative group cash conversion, OCI-driven book growth, subsidiary/parent valuation and current action/news gaps remain; the lower-zone plan has no accepted reversal.",
+      "sourceIds": [
+        "tv",
+        "egx",
+        "fs",
+        "parent",
+        "owners",
+        "q1",
+        "portfolio",
+        "index",
+        "disclosures"
+      ],
+      "fundamentals": "[portfolio] AMIA combines leasing, poultry, water, distribution and property investments. A holding-company subsidiary sum-of-parts and parent distributable-cash bridge are appropriate; generic bank rankings or one industrial group DCF are inadequate. [q1] Direct issuer Q1 reviewed accounts independently reread show owners profit about EGP 205.36 million and negative operating cash about EGP 380.24 million. [fs] Recovered underlying H1 group copy has UHY limited review dated August 12, negative assurance rather than annual audit. Main tables show total profit about EGP 268.68 million, owners profit about EGP 285.73 million and NCI loss about EGP 17.05 million; negative group operating cash about EGP 600.14 million. Large leasing receivable and financing flows need matching-scope interpretation; negative group CFO alone is not insolvency. The EGP 228,009,504 fair-value gain is in OCI/equity, not recurring operating profit: book growth is not all earnings. [parent] Standalone cash approximately EGP 170.11 million differs from group balance-sheet cash approximately EGP 611.97 million; neither is automatically free parent cash. Standalone profit approximately EGP 285.77 million and investment accounting require dividend/cash and subsidiary debt reconciliation. Archive dating August 13 is attributed to custody metadata, not an independently verified public minute. [owners] Actual September 30 register, prepared October 6, matches official 295711: Dallah 226,566,332/44.38%, Al-Tawfeek 193,299,682/37.86%, explicitly related group 82.24%; no named individual direct holder exceeds 50%. Total 510,570,561 shares and free float 90,085,942/17.64417%, no treasury shares. Old website count rounding differs by one share in holder rows; no invented transaction inferred. Provider PE 21.1445/PB 5.0923/ROE 28.66% with zero PE/ROE peers and one PB peer cannot establish relative cheapness. Subsidiary fair values, parent net debt, minorities, recurring distributions and supported forward assumptions remain missing; no auditable SOTP or fair value.",
+      "technicals": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c3e0c5af-7200-413d-8265-0f98601a8e4b.json. 506 daily observations through 2026-10-18; captured 2026-10-18T20:54:36.249Z. EGP, EGX identity EGS67221C019, Africa/Cairo session 10:00-14:30 and 900-second delay. Persisted finality: post-close, confirmed true. October 19 has no trading session yet. OHLC 19/19/17.3/17.33. Reproduced SMA20 18.633500, SMA50 17.726400, Wilder ATR14 0.824591, RV20 0.566602. Simple mean of 14 true ranges 0.717143 is the distinct challenger measure. Completed October 11 week closed 19, high/low 19.4/18; completed 10/30-week means 18.064000/11.727000. The October 18 week has one session and remains developing. Weekly bars use the same daily data, not independent confirmation. Current close is below SMA20, SMA50 and completed 10-week mean; this is failed swing timing despite longer-horizon recovery. Provider Sell daily versus Buy weekly ratings are correlated composites; weekly readings can be forming. Historical gaps: 2025-07-08. Adjustment flags false do not clear actions. October 18 confirmed close 17.33 breaks the preserved original 18.03 support and illustrative 17.63 diagnostic. No fill or realized loss is inferred. New support 17.12 is a separate review hypothesis, not a retrospective replacement. Adverse funding/cash or related-party evidence can invalidate a business recovery independently.",
+      "catalysts": "[egx] Official 295711 published October 11 at 09:07 Cairo for September 30 ownership; actual copied form now read rather than relying on its wrapper. [disclosures][index] Issuer HTML is bounded, displaying financial Q1 and board decisions through May; its incompleteness does not prove the H1 filing is absent. H1 original-document copies establish a later accounting period, but no current complete legal/action sweep. Historical issuer/provider dividend discrepancies still need entitlement/payment/basis reconciliation. The OCI gain is an accounting development rather than cash or a forecast catalyst. The leasing funding/collections and parent distributions channel to CBE rates is saved with unknown sensitivity; a lower rate has no universal sign across subsidiaries.",
+      "risks": "High qualitative holding-company, funding, valuation and timing risk. Related-group concentration and limited float can amplify gaps. Group debt supports operating finance assets and cannot be subtracted again at parent level without eliminating intercompany flows. OCI fair-value gains and operating profit must remain distinct; recent price strength can be speculative repricing. Broad regime is falling: fresh aligned EGP 229/296 catalog, with 17 other-currency stocks. Only 6/74 broad Finance members are above SMA50 and their median 20-session return is -16.6354%; this heterogeneous bucket is not an investable bank/insurance/holding index. No matched benchmark alpha or calibrated probability.",
+      "invalidation": "October 18 confirmed close 17.33 breaks the preserved original 18.03 support and illustrative 17.63 diagnostic. No fill or realized loss is inferred. New support 17.12 is a separate review hypothesis, not a retrospective replacement. Adverse funding/cash or related-party evidence can invalidate a business recovery independently.",
+      "positionReview": "The selected context records zero actual positions/fills. No recorded exit requires management, but journal completeness is not guaranteed. Real capital, cash, costs and risk/concentration/participation limits remain null. The expired hypothetical paper EGP 20,000 is isolated. No share quantity, whole-portfolio VaR/CVaR, sector/correlation allocation or live capacity is inferred.",
+      "entryConditions": "No approved entry or assessment riskPlan. Full deterministic diagnostics are saved separately from context-f200d359-7825-4447-b5a7-1b9942b7973b; final context contains the same bars/levels. Pullback index 0 yields zone 17.12-17.32, stop 16.7, T1 19.95, expiry October 26 at 00:00 +03:00. Worst-zone gross loss EGP 0.6200 per share (3.580%), gross RR 4.242; illustrative 0.5% round-trip loss EGP 0.7066 and RR 3.599; 1% cost stress RR 3.097. These are not broker fees or guaranteed loss limits. Geometry qualifies numerically but remains unapproved: original support failed, no subsequent bullish daily zone acceptance is recorded, and company/action checks remain incomplete. Broken former supports can add supply before a measured pivot is confirmed. The October 18 candle is bearish with RV20 below 1; a zone touch would not satisfy the rule. Require all six checks, a new confirmed reversal with RV20 at least 1 and fresh next-session quote review before independent approval; cancel for new adverse evidence, stop/target-before-entry events or expiry.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "fs",
+            "parent",
+            "q1"
+          ],
+          "note": "Direct Q1 and copied H1 group/parent main financial, review, cash and equity pages inspected. Current recurring subsidiary profit, parent distribution/funding bridge and SOTP inputs remain unresolved; no automatic annualization or value conclusion."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "egx"
+          ],
+          "note": "September 30 underlying signed register matches official entity/period and original December register. Explicit related-group control, share count and dated float now substantiated; copy custody and subsequent changes remain explicit."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "disclosures"
+          ],
+          "note": "Specific official notices and actual recovered primary documents read, but default portal/archive coverage is bounded. No complete current legal/news clearance; source reachability or a wrapper is insufficient."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "owners",
+            "disclosures",
+            "tv"
+          ],
+          "note": "Dated register improves shares/owners. Current dividend/entitlement, market adjustment, suspension and other material action coverage is not fully reconciled; unchanged shares do not clear all actions."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c3e0c5af-7200-413d-8265-0f98601a8e4b.json. 506 daily observations through 2026-10-18; captured 2026-10-18T20:54:36.249Z. EGP, EGX identity EGS67221C019, Africa/Cairo session 10:00-14:30 and 900-second delay. Persisted finality: post-close, confirmed true. October 19 has no trading session yet. OHLC 19/19/17.3/17.33. Reproduced SMA20 18.633500, SMA50 17.726400, Wilder ATR14 0.824591, RV20 0.566602. Simple mean of 14 true ranges 0.717143 is the distinct challenger measure. Completed October 11 week closed 19, high/low 19.4/18; completed 10/30-week means 18.064000/11.727000. The October 18 week has one session and remains developing. Weekly bars use the same daily data, not independent confirmation. Current close is below SMA20, SMA50 and completed 10-week mean; this is failed swing timing despite longer-horizon recovery. Provider Sell daily versus Buy weekly ratings are correlated composites; weekly readings can be forming. Historical gaps: 2025-07-08. Adjustment flags false do not clear actions. October 18 confirmed close 17.33 breaks the preserved original 18.03 support and illustrative 17.63 diagnostic. No fill or realized loss is inferred. New support 17.12 is a separate review hypothesis, not a retrospective replacement. Adverse funding/cash or related-party evidence can invalidate a business recovery independently."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c3e0c5af-7200-413d-8265-0f98601a8e4b.json: latest raw volume 417353 shares; inclusive last-20 median 654505, median close-times-volume turnover proxy EGP 12438845.21, last-20 missing volumes 0. RV20 uses the previous 20 median, not inclusive liquidity median or scanner relative-10-day volume. No spread, depth, auction, fill or market-impact assurance. Historical action basis affects comparability; no capacity or shares proposed."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "AMIA",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-e4695ae19570297e11dcdf6f",
+            "document-8aa25a19833a76b5b9ff1832"
+          ],
+          "alternativeTicker": "AIH",
+          "whyThisStock": "Normal reassessment of the preserved original Wait after a newly confirmed support failure, with substantive primary document recovery.",
+          "whyNow": "October18 confirmed price crossed the original review condition; source recovery permits a deeper challenge of the original economics, not a retrospective trade.",
+          "mispricingMechanism": "A potential rerating requires proof that durable cash/earnings and capital quality outweigh uncertainty. No mispricing magnitude or probability is established.",
+          "bullCase": "Operating subsidiaries and investment value could support a recovery; related-group continuity is now dated.",
+          "bearCase": "Group operating cash outflow, OCI-driven book growth and failed support challenge the earnings rerating.",
+          "alternativeExplanation": "Earlier gains may have reflected speculation, expected future results or liquidity, rather than recurring cash generation; the later fall may reflect broad market risk, not a company event.",
+          "pricedIn": "Prior appreciation and subsequent correction show expectations changed, but no verified consensus or event-study isolates how much fundamental news is priced.",
+          "invalidation": "Preserve original failed support evidence. Verified adverse capital, reserve, credit, funding or legal facts can defeat a recovery thesis. No execution stop is approved.",
+          "whatWouldChangeMyMind": "Close the explicit company/action gaps, obtain a confirmed new reversal and suitable liquidity, then validate the complete cost-stressed priced plan independently.",
+          "whyBetterThanAlternative": "No superiority over AIH is established. It is a distinct opportunity-cost comparator, requiring its own complete sector-aware assessment.",
+          "disagreementResolution": "Improved primary facts reduce uncertainty but do not offset failed timing or remaining action/quality gaps. Defer despite mechanically attractive lower-zone diagnostic geometry.",
+          "evidenceQuality": "Direct issuer accounts for HDB; actual signed primary scans with explicit mirror custody for MOIN/AMIA, corroborating official notices and arithmetic. Missing evidence stays explicit.",
+          "uncertainties": "Use a subsidiary sum-of-parts and holding-company cash/debt bridge, with operating finance subsidiaries valued on matching scope. No generic group industrial DCF. No three sourced forward scenarios, calibrated probability, full portfolio or real sizing.",
+          "asOf": "2026-10-18T22:08:34.632Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-46dbc9a700e492d996a794ca",
+          "recordedAt": "2026-10-18T22:08:34.632Z",
+          "digest": "46dbc9a700e492d996a794ca5915f949f880a4811a8fed3a4e47d32bb8dba8fb"
+        },
+        "priorCases": "Original AMIA Wait has six observed sessions, -9.6455% through October 18; the five through October 15 were -0.9385%. October 18 newly broke support. A fall after Wait is not proof of correctness; original 20-session uncertain direction remains unscored. AJWA rising after Wait is an opportunity-cost counterexample to keep in view.",
+        "alternativeCompany": "AIH",
+        "relativeOpportunity": "No superiority established. Distinct alternative needs its own complete sourced assessment. Cash is not assigned a fabricated return.",
+        "valuation": "Unavailable: three independently sourced forward scenarios and sector-correct operating/ownership boundaries are missing. No invented fair value, annualization or probability."
+      },
+      "cashClassification": {
+        "unresolvedEvidence": "This candidate is deferred for its stated gaps.",
+        "rejectedTiming": "The old rebound/support scenario failed; mechanically attractive lower-zone math is unapproved.",
+        "untriggeredApprovedEntry": "None.",
+        "requiredReserve": "Unknown; real profile limits unset.",
+        "unresearchedUniverse": "Other catalog and queued candidates remain unfinished research, not investment decisions to hold cash."
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/moin-hdbk-amia-primary-review-20261019.json",
+    "data/research/evidence/moin-hdbk-amia-calculations-20261019.json",
+    "data/research/evidence/moin-hdbk-amia-plan-diagnostics-20261019.json",
+    "data/research/evidence/moin-hdbk-amia-analysis-bundle-20261019.json",
+    "data/research/evidence/moin-archive-provenance-20261019.json",
+    "data/research/evidence/amia-hdbk-archive-provenance-20261019.json"
+  ]
+}

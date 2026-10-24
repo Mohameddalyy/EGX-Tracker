@@ -1,0 +1,11 @@
+{
+  "version": "egx-post-close-1.0",
+  "timezone": "Africa/Cairo",
+  "regularClose": "14:30",
+  "bufferMinutes": 30,
+  "verifiedOn": "2026-10-08",
+  "source": "https://support.thndr.app/en/articles/638525-why-is-my-stock-order-still-pending",
+  "verification": "Broker's Main and SME session table ends trade-at-close at 14:30. TradingView EGX metadata independently reports 1000-1430 and a 900-second delay. Direct EGX session page was inaccessible. Use the later of this close floor and the provider's supported session closes/corrections; never shorten the floor for Ramadan.",
+  "dateOverrides": {},
+  "limitations": "Post-close eligibility is a capture-time safeguard, not exchange certification. Provider corrections remain possible. Unknown session formats, missing delay/timezone/calendar metadata or known non-trading dates require a later-date recapture. Reverify when session notices or provider metadata change."
+}

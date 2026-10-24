@@ -1,0 +1,36 @@
+{
+  "id": "decision-20261011-moin-universe-01",
+  "queueId": "candidate-727250ea-6031-4f3a-a0ec-5bdb1c2c55c7",
+  "reportId": "report-2026-10-11-moin-universe-formal-01",
+  "ticker": "MOIN",
+  "createdAt": "2026-10-11T08:30:22.427Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "rationale": "Wait for current insurer financial, solvency, ownership and action evidence. Screen score5 is driven by momentum and volume, not demonstrated underwriting value; no approved priced entry exists.",
+  "thesis": "Longer-term momentum and renewed volume could support a recovery if underwriting reserves, investment income and solvency capital substantiate the valuation and a defensible price structure develops.",
+  "counterargument": "Price35.49 remains above SMA50=34.9966 with RV20=1.565, so waiting may miss a rebound. Yet it is below SMA20=35.706, about23% below45.99 historical peak, with ATR6.82%; greater volume can accompany distribution as well as accumulation.",
+  "invalidation": "Confirmed failure of32.00 support or verified deterioration in reserves/solvency invalidates the recovery hypothesis. A33.42 loss prompts reassessment but is not itself proof of insolvency or an executable stop.",
+  "reviewConditions": "Obtain latest consolidated and standalone statements and review opinion, underwriting/claims and reserve analysis, solvency capital, investment and reinsurance exposures, dated owners and current exchange actions. Reassess confirmed recovery above37.98 or a supported pullback using fresh levels and a calculated plan. Review after five observed sessions if still unresolved.",
+  "processAssessment": "Read entire analyst report, frozen context and original screen. Independently opened issuer AboutUs page: holder percentages are undated and visible financial headings end2023; they cannot establish October2026 control or solvency. Scanner debt/equity0 does not measure insurer claims liabilities. Current P/E/ROE missing and no sector valuation established. Nearest support33.42 is older than the lower32.00 September30 swing, so future plans must address that breach. Resistance37.55-37.98 gives only2.06 to its lower edge from35.49, versus2.07 to33.42 before buffer/costs. This rejects an immediate chase, not every future pullback. Four checks unavailable, analyst defer and no riskPlan prevent Watch. Current-day bar provisional; confirmed October7 history captured on later date. No chart access, orders or share sizing.",
+  "uncertainties": [
+    "Current insurer reserve adequacy, capital and reinsurance recoverability",
+    "Recurring underwriting versus investment earnings and valuation",
+    "Dated beneficial ownership and control",
+    "Current corporate actions, suspension/price-limit and news coverage",
+    "Execution spread and historical gap/adjustment reconciliation"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Mixed technical structure and missing insurer-specific economics do not support a defensible directional forecast; uncertainty remains unscored and monitored."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.mohins.com/AboutUs/",
+      "accessedAt": "2026-10-11T08:30:22.427Z",
+      "verification": "Independently inspected issuer holder list and financial archive headings: percentages undated, visible financial headings through2023, current2026 financial/control evidence not established."
+    }
+  ]
+}

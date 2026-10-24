@@ -1,0 +1,20 @@
+{
+  "version": "data-readiness-prototype-1",
+  "status": "ISOLATED_NOT_ACTIVATED",
+  "scope": "Representative executable contracts. Not a complete replacement for the frozen 78-field dictionary or trading gates.",
+  "requirements": [
+    {"id":"identity_currency","importance":"critical","stages":["technical-screen","thesis","paper-entry","paper-fill"],"fallbacks":["verified provider identity","exchange instrument notice","issuer identity document"]},
+    {"id":"confirmed_ohlcv","importance":"critical","stages":["technical-screen","paper-entry"],"fallbacks":["valid existing same-basis cache","confirmed provider history delta","verified exchange history"]},
+    {"id":"analyst_consensus","importance":"optional","stages":["thesis","paper-entry"],"fallbacks":["dated provider consensus with horizon and coverage"]},
+    {"id":"pe_ratio","importance":"conditional","requiredForClaims":["earnings-valuation"],"stages":["thesis","paper-entry"],"fallbacks":["compatible positive diluted EPS and current price calculation","verified comparable primary filing"]},
+    {"id":"current_ratio","importance":"important","notApplicableSectors":["Bank"],"stages":["thesis","paper-entry"],"fallbacks":["compatible current assets/current liabilities from issuer filing"]},
+    {"id":"ownership_detail","importance":"important","stages":["thesis","paper-entry"],"fallbacks":["issuer ownership disclosure","exchange ownership notice","regulator filing"]},
+    {"id":"material_control_dispute","importance":"critical","stages":["thesis","paper-entry"],"fallbacks":["resolved primary disclosure and independent review; false value means verified absence in checked scope"]},
+    {"id":"material_solvency_review","importance":"critical","stages":["thesis","paper-entry"],"fallbacks":["sector-appropriate primary financial statements and notes"]},
+    {"id":"news_action_coverage","importance":"critical","stages":["thesis","paper-entry"],"fallbacks":["complete paginated exchange feed plus relevant issuer updates","documented issuer/regulator sweep for the required interval"]},
+    {"id":"peer_comparison","importance":"important","stages":["thesis","paper-entry"],"fallbacks":["comparable local validated filings","explicitly justified comparable peer set"]},
+    {"id":"minute_fill_evidence","importance":"critical","stages":["paper-fill"],"fallbacks":["eligible later confirmed raw minute bar"]},
+    {"id":"tick_band_rules","importance":"critical","stages":["paper-entry","paper-fill"],"fallbacks":["effective exchange instrument rules","verified official equivalent"]},
+    {"id":"bid_ask_depth","importance":"optional","stages":["paper-fill"],"fallbacks":[],"note":"Optional only for frozen delayed-bar paper simulation; this rule never authorizes live execution."}
+  ]
+}

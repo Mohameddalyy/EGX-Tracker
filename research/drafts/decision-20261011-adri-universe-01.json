@@ -1,0 +1,36 @@
+{
+  "id": "decision-20261011-adri-universe-01",
+  "queueId": "candidate-92a55b61-adc6-4d8a-a2c4-2b15bfc70e67",
+  "reportId": "report-2026-10-11-adri-universe-formal-01",
+  "ticker": "ADRI",
+  "createdAt": "2026-10-11T08:39:27.204Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "rationale": "Wait for current financial/control evidence and the contents of October4/5 Article29 releases. Momentum is positive, but four evidence checks and a priced plan are missing.",
+  "thesis": "Strong confirmed momentum may reflect improving real-estate economics; that hypothesis requires verified deliveries, collections, funding and ownership evidence before being actionable.",
+  "counterargument": "Price13.60 above SMA20/50 and a large multi-month advance may continue before evidence is recovered. Conversely RV20=0.964 is ordinary participation, and price alone cannot establish earnings quality or value.",
+  "invalidation": "A confirmed close belowOctober4 low11.13 undermines the current continuation structure; verified adverse collections, leverage, ownership or action evidence requires earlier reassessment. This is a research boundary, not an order stop.",
+  "reviewConditions": "Read both recent Article29 attachments, obtain latest consolidated financials/opinion and dated beneficial ownership, and clear current actions/suspensions. Reassess newly confirmed support/resistance or a confirmed13.70 break only with a complete analyst-approved priced plan. Review after five observed sessions if evidence remains unavailable.",
+  "processAssessment": "Read entire report, original screen and immutable context. Independently opened issuer URL and verified a Coming Soon placeholder, not financial disclosures. October7 bar is confirmed by later recapture;October11 remains provisional. Analyst recent-high13.70 is not a confirmed overhead resistance pivot in the actual frozen levels array, which is empty: its0.10 distance must not be treated as a validated target/RR. This framework currently cannot generate an evidenced overhead target. Broad Finance peer medians mix businesses and cannot value ADRI without its earnings/ROE. Unread filing headings do not establish their content or ownership. Analyst defer plus missing four checks and absent plan prohibits Watch; no adverse-business allegation is inferred. No orders or share sizing.",
+  "uncertainties": [
+    "Current consolidated financials, collections and leverage",
+    "Named beneficial owners/control",
+    "Contents and implications of recent Article29 filings",
+    "Complete current corporate actions/suspensions/news",
+    "Fresh measurable target structure and execution liquidity"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Strong price momentum with missing company/action evidence is insufficient for a defensible directional forecast; retain uncertainty and monitor."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://arab-egypt.com/",
+      "accessedAt": "2026-10-11T08:39:27.204Z",
+      "verification": "Independently opened URL: Coming Soon/Welcome placeholder, no current financial or ownership evidence."
+    }
+  ]
+}

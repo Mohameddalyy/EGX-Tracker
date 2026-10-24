@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-arab-material-reassessment-02",
+  "createdAt": "2026-10-18T21:30:21.235Z",
+  "type": "research",
+  "contextId": "context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2",
+  "summary": "ARAB: Defer: new Q3 disclosure is a genuine evidence lead, but actual attachment unread, named owners and rights-adjustment chronology remain unresolved; current financials and an evidenced priced plan are missing.",
+  "limitations": [
+    "Selected two-company material-evidence reassessment; other catalog stocks remain unresearched by this analyst batch. Original decisions and forecasts preserved.",
+    "Official attachment server unavailable through web, PowerShell and Python; browser PDF rendering/download also failed. Failed access is a source gap, not adverse issuer evidence.",
+    "All market observations from TradingView parent collector. Research context is current after collector release; direct read-only chart state succeeded at EGX_DLY:AIFI 1D, analyst made no chart changes. Historical source-policy/session metadata retained unchanged; provider metadata independently supplies session/delay evidence.",
+    "No current audited/interim statement model or justified three-scenario valuation. No calibrated expected return/profit probability, no sizing, orders/fills, paper-week reopening or policy change.",
+    "AccessedAt is report compilation from actual inspected records, not exact per-browser action time; known official publication minutes retained. Default portal coverage and indexing are incomplete."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView ARAB frozen daily/weekly calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-ARAB/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "period": "confirmed2026-10-18"
+    },
+    {
+      "id": "egx",
+      "title": "EGX Arabic/English disclosure portal, notice 296158 directly read",
+      "url": "https://beta.egx.com.eg/ar/media-center?tab=disclosure",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-18T15:48:00+03:00"
+    },
+    {
+      "id": "new-form",
+      "title": "Attachment 345614_1 unavailable; no contents verified",
+      "url": "https://egx.com.eg/downloads/Bulletins/345614_1.pdf",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-18T15:48:00+03:00",
+      "period": "2026-09-30"
+    },
+    {
+      "id": "egm",
+      "title": "Preserved certified August 13 EGM; all 4 pages independently visually read",
+      "url": "https://egx.com.eg/downloads/Bulletins/344226_1.pdf",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-09-16T15:02:00+03:00",
+      "period": "2026-08-13"
+    },
+    {
+      "id": "rights",
+      "title": "Issuer proposed capital increase",
+      "url": "https://ad-holding.com/مجلس-إدارة-المطورون-العرب-القابضة-ي/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2025-11-02"
+    },
+    {
+      "id": "ir",
+      "title": "IssuerIR wrapper with embedded sections, no current statements extracted",
+      "url": "https://ad-holding.com/investor-relations/",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    },
+    {
+      "id": "portal",
+      "title": "Issuer-linked disclosure portal inaccessible",
+      "url": "https://ir.feedgfm.com/arab/ir/arab/en/disclosures/case/arab",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    },
+    {
+      "id": "old-earnings",
+      "title": "Issuer 9 M 2025 operating summary; current 2026 accounts not established",
+      "url": "https://ad-holding.com/المطورون-العرب-تواصل-الأداء-الإيجابي/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2025-11-26",
+      "period": "2025-09-30"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ARAB",
+      "candidateId": "candidate-c369ee02-0ca8-4db2-969b-0f52a7c269a6",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: new Q3 disclosure is a genuine evidence lead, but actual attachment unread, named owners and rights-adjustment chronology remain unresolved; current financials and an evidenced priced plan are missing.",
+      "sourceIds": [
+        "tv",
+        "egx",
+        "new-form",
+        "egm",
+        "rights",
+        "ir",
+        "portal",
+        "old-earnings"
+      ],
+      "fundamentals": "[egm] The August 13 EGM states issued capital of EGP 2,390,296,339 and 23,902,963,390 issued/subscribed shares. Attendance of 51.72% does not identify a majority shareholder. [rights] The November 2025 proposal envisaged 10 billion new shares at EGP 0.10 plus 1% issue expenses. Later capital corroborates enlargement but not entitlement, subscription completion, ex-right, listing or effective dates. [egx][new-form] The new September 30 Article 30 wrapper proves submission; the actual ownership PDF remains unread. [ir][portal] Current group accounts, audit/review opinion, collections, delivery costs, related parties and financing remain unavailable. [old-earnings] The issuer reported 9M 2025 revenue of EGP 1.191 billion, gross profit of EGP 391 million, EBIT of EGP 59 million and net profit of EGP 159 million. Net profit above EBIT needs a finance/nonrecurring/tax bridge; this old promotional summary cannot establish current recurring profit or be annualized. Provider P/B 1.996 versus 22 same-industry peers with a median of 2.923 does not prove undervaluation; debt/equity 1.2049 versus 22 peers at 0.1361 and current ratio 1.2338 versus 22 peers at 1.4474 need dated statement reconciliation. Missing earnings fields are gaps, not losses. Property NAV/DCF is unavailable without dated project cash flows, current net debt, minority interests and reconciled shares.",
+      "technicals": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json. There are 506 daily observations through October 18, captured 2026-10-18T20:54:55.822Z, after the persisted 15:15 Cairo post-close cutoff. Native EGP; EGX identity EGS694A1C018; provider session 10:00-14:30 Africa/Cairo and delay 900 seconds. October 19 has no session yet. OHLC 0.269/0.269/0.250/0.250, down 7.0632%. Reproduced SMA20 0.249600, SMA50 0.249780, Wilder ATR14 0.01321045 and RV20 2.48945. The separate simple mean of 14 true ranges is 0.01514286, used by challengers and not interchangeable with plan ATR. The completed October 11 week closed 0.269, with high/low 0.285/0.256; completed 10/30-week means are 0.251200/0.22456232. The October 18 week has one session and is developing. Weekly aggregation uses the same daily observations, not independent confirmation. Price broke the prior week low and sits near both daily means, below the completed 10-week mean but above the 30-week mean. Daily Neutral versus weekly Buy and weekly oscillator Sell is a horizon conflict. The original 0.238 review low has not broken; do not rewrite it retrospectively. Historical gap 2025-07-08 remains. Raw dividendsAdjustment=false/backAdjustment=false does not settle action adjustments. The measured 120-observation resistance array is empty; a recent high is not an established target.",
+      "catalysts": "[egx] Notice 296158 was published October 18 at 15:48 Cairo for the September 30 Article 30 form. It came after the regular 14:30 close; the October 18 selloff cannot be attributed to that publication without independent evidence of earlier information. Attachment 345614_1 is unread. [egm] All four preserved certified EGM pages corroborate the headquarters/Article 4 change and enlarged capital; FRA certification covers form/procedure, not commercial validity. [rights] Intended construction and delivery acceleration remains a prospective execution claim; actual proceeds deployment is unverified. The saved ownership catalyst has unknown impact and expectations. The shared authoritative CBE record says September 24 overnight deposit policy rate 19%, unchanged; this is not a retail cash hurdle. A company-specific financing/affordability transmission hypothesis is saved with unknown sensitivity. The October 29 MPC meeting is a checkpoint, not an automatic bullish event.",
+      "risks": "High qualitative evidence, action, project and financing risk. At EGP 0.250, one EGP 0.001 tick is 0.4%, materially affecting tight geometry. A close at the day low on 622.6 million shares weakens timing but proves neither distribution nor informed selling. The broad analytical regime is falling: 229 of 296 catalog stocks have fresh aligned EGP evidence; 17 are other-currency stocks. Only 6/74 Finance members are above SMA50; median 20-session return is -16.635%. This bucket mixes banks and property and is not a property index. No calibrated loss probability or matched benchmark alpha.",
+      "invalidation": "Preserve the original 0.238 review low and 0.200-0.205 structural area as thesis review conditions, not approved stops. The new break of prior-week 0.256 weakens timing earlier without retrospectively changing the original rule. Adverse verified financial or action evidence can invalidate the business thesis independently.",
+      "positionReview": "The context has zero recorded actual positions and fills, so no recorded exit needs management. Journal completeness is not guaranteed. Real capital, cash, costs and limits remain null. The historical paper EGP 20,000 is hypothetical and isolated. No numerical shares, whole-portfolio VaR/CVaR or capacity assessment can be supported without complete holdings and approved limits.",
+      "entryConditions": "No approved entry, riskPlan or reward/risk ratio. The deterministic pullback index-0 builder was attempted on context-3f6a344b-2e28-406b-99a7-6af9c2f93c72 using an illustrative 0.5% round-trip cost and October 26 00:00 +03:00 expiry. Both attempts failed because a measured target was unavailable. The final context has the same bars and levels. No arbitrary target or stop was substituted. Require all company/action gaps closed, measured geometry, accepted subsequent daily confirmation and RV20 at least 1, then full priced-plan-1.0 and independent final review. When a valid plan exists, stress unknown costs explicitly; currently gain/loss math lacks a supportable target. Swing timing remains deferred; the 20-session thesis is a research hypothesis.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "ir",
+            "portal",
+            "old-earnings"
+          ],
+          "note": "Current complete statements, opinion, cash-flow and valuation inputs are unavailable. See the complete fundamentals section; absence is not evidence of losses."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "new-form",
+            "egm"
+          ],
+          "note": "New wrapper read, actual Q3 shareholder PDF unread. Meeting attendance is not ownership."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "new-form"
+          ],
+          "note": "Specific new primary notices independently read. Bounded search/indexing and unread attachments prevent comprehensive current news/legal clearance. See catalysts and the exact source archive."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "rights",
+            "egm",
+            "new-form"
+          ],
+          "note": "Capital enlargement corroborated. Subscription completion, entitlement, ex-right, effective/listing dates and adjusted history remain unresolved. No comprehensive dividend/suspension clearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json. There are 506 daily observations through October 18, captured 2026-10-18T20:54:55.822Z, after the persisted 15:15 Cairo post-close cutoff. Native EGP; EGX identity EGS694A1C018; provider session 10:00-14:30 Africa/Cairo and delay 900 seconds. October 19 has no session yet. OHLC 0.269/0.269/0.250/0.250, down 7.0632%. Reproduced SMA20 0.249600, SMA50 0.249780, Wilder ATR14 0.01321045 and RV20 2.48945. The separate simple mean of 14 true ranges is 0.01514286, used by challengers and not interchangeable with plan ATR. The completed October 11 week closed 0.269, with high/low 0.285/0.256; completed 10/30-week means are 0.251200/0.22456232. The October 18 week has one session and is developing. Weekly aggregation uses the same daily observations, not independent confirmation. Price broke the prior week low and sits near both daily means, below the completed 10-week mean but above the 30-week mean. Daily Neutral versus weekly Buy and weekly oscillator Sell is a horizon conflict. The original 0.238 review low has not broken; do not rewrite it retrospectively. Historical gap 2025-07-08 remains. Raw dividendsAdjustment=false/backAdjustment=false does not settle action adjustments. The measured 120-observation resistance array is empty; a recent high is not an established target."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json. Latest raw volume 622,556,030 shares; inclusive last-20 median 265,918,889; median close-times-volume EGP 67,270,832.705. No last-20 missing raw volumes. RV20 uses the previous 20, a different denominator. No spread/depth, fill or market-impact assurance; no share-capacity proposal."
+        }
+      },
+      "analyticalReview": {
+        "thesisRecord": "thesis-59045448a99da9b2bec27f0e",
+        "horizonSessions": 20,
+        "bullCase": "Equity funding could accelerate deliveries and cash conversion, sustaining a recovery once current economics are verified.",
+        "bearCase": "Unverified current economics and capital chronology plus the latest high-volume decline undermine immediate continuation.",
+        "alternativeExplanation": "Speculation or liquidity-driven rerating can create momentum without better operating cash generation. Volume does not identify investor intent.",
+        "pricedIn": "Recent advances may reflect expected improvement; the expectations baseline and surprise are unknown.",
+        "changeOfMind": "Verified current statements, opinion, actions and ownership plus suitable measured geometry and full guarded pricing.",
+        "alternativeCompany": "TMGH",
+        "relativeChoice": "No superiority established. The distinct same-sector alternative needs its own complete valuation and timing review.",
+        "disagreementResolution": "Momentum supports further research but cannot clear missing economics and actions. Missing targets limit this method rather than imply no upside.",
+        "priorCases": "Original ARAB Wait has four observed sessions and a -9.4203% price path from its conservative next-session baseline. AJWA Wait rose 9.5565% over five sessions while MASR fell 10.43% over six: outcomes raise different questions but do not validate the process. Original uncertain 20-session forecasts remain unscored.",
+        "valuationStatus": "Unavailable. No invented forecast, share assumption, intrinsic value or calibrated probability."
+      },
+      "cashClassification": {
+        "unresolvedResearchAndData": "Deferred for the explicit current evidence gaps.",
+        "rejectedSetup": "The current engine cannot produce a measured target; this is not a permanent company rejection.",
+        "untriggeredApprovedEntry": "None; no approved entry.",
+        "requiredReserve": "Unknown; real capital and limits are unconfigured.",
+        "unresearchedUniverse": "Other queued candidates remain unfinished work, not investment decisions to retain cash."
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/arab-ajwa-primary-reassessment-20261019.json",
+    "data/research/evidence/arab-ajwa-calculations-20261019.json",
+    "data/research/evidence/arab-ajwa-analysis-bundle-20261019.json"
+  ],
+  "revisesReportId": "report-2026-10-19-arab-material-reassessment-01"
+}

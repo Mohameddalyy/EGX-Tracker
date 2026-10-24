@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-aih-universe-formal-01",
+  "createdAt": "2026-10-11T08:38:32.638Z",
+  "type": "research",
+  "contextId": "context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+  "summary": "AIH: Insufficient evidence; analyst defer. Defer: price momentum and activity are observable but current consolidated financials, control and action evidence remain missing. The screen is a research lead, not a fundamental clearance.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-aih",
+      "title": "TradingView AIH; market observations frozen in context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+      "url": "https://www.tradingview.com/symbols/EGX-AIH/",
+      "accessedAt": "2026-10-11T08:38:32.624Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "issuer",
+      "title": "AIH issuer website; timeout and HTTP500 during current research",
+      "url": "https://aih-group.com/",
+      "accessedAt": "2026-10-11T08:38:32.624Z"
+    },
+    {
+      "id": "egx",
+      "title": "EGX News Center; analyst browser access unavailable, current company sweep incomplete",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-11T08:38:32.624Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AIH",
+      "candidateId": "candidate-1fcad200-bf2e-4cef-9674-5e8233bd287b",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: price momentum and activity are observable but current consolidated financials, control and action evidence remain missing. The screen is a research lead, not a fundamental clearance.",
+      "sourceIds": [
+        "tv-aih",
+        "issuer",
+        "egx"
+      ],
+      "fundamentals": "[tv-aih] Identity Arabia Investments Holding, ISIN EGS21351C019; AIHC may appear in exchange naming. Frozen provider screen flags negative ROE around40% and debt/equity around7.13, but report period, consolidation scope and accounting reconciliation are unavailable. Treat these as adverse hypotheses, not verified primary ratios. [issuer] Site timeout/HTTP500 prevented primary statements. Need audited2025 and interim2026 group statements, cash flow, finance costs, subsidiaries, related parties and opinion before valuation or control conclusions.",
+      "technicals": "[tv-aih] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:57:43.947Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close0.836, SMA20=0.7596, SMA50=0.6445, ATR14=0.0462, RV20=1.4406. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means0.6715/0.4835, latest weekly high/low0.846/0.743. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08, 2025-08-04, 2025-08-05, 2025-08-06, 2025-08-07, 2025-08-10. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "No current primary company catalyst verified. Fresh readable statements and current exchange documents may change the conclusion. Price strength alone cannot establish improved subsidiary economics.",
+      "risks": "High qualitative volatility and financial-evidence risk. Confirmed0.836 is near recent0.846 weekly high; ATR0.0462 is roughly5.5% of price. Screen loss/leverage signals need reconciliation. Corporate actions could distort unadjusted history. Access failure is not evidence of misconduct or proof the business is impaired.",
+      "invalidation": "A later confirmed close below the latest weekly low, or adverse primary financial/action evidence, cancels the continuation hypothesis. No executable stop is proposed before action reconciliation.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry, target, size or priced plan. Obtain current statements, owners and dated action/news sweep, then recalculate measured geometry. The recent0.846 high is only0.010 above0.836 reference before costs; no invented target to force minimum reward/risk.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "issuer",
+            "tv-aih"
+          ],
+          "note": "Current primary statements/opinion missing; negative provider ratios explicitly unreconciled."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "issuer",
+            "egx"
+          ],
+          "note": "No current primary named-holder, controlling-party or subsidiary ownership document read."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "issuer",
+            "egx"
+          ],
+          "note": "Issuer inaccessible and full current exchange company sweep incomplete in this analyst runtime."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "egx"
+          ],
+          "note": "Recent capital/dividend/rights/suspension documents not obtained; raw adjustment flags do not clear actions."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-aih"
+          ],
+          "note": "[tv-aih] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:57:43.947Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close0.836, SMA20=0.7596, SMA50=0.6445, ATR14=0.0462, RV20=1.4406. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means0.6715/0.4835, latest weekly high/low0.846/0.743. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08, 2025-08-04, 2025-08-05, 2025-08-06, 2025-08-07, 2025-08-10. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-aih"
+          ],
+          "note": "[tv-aih] Inspected raw volumes and finality in data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; latest71129960 shares,20-observation median49373772.5, median close-times-volume turnoverEGP36062599.28;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

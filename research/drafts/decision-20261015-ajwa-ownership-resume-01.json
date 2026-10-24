@@ -1,0 +1,30 @@
+{
+  "id": "decision-20261015-ajwa-ownership-resume-01",
+  "queueId": "candidate-73e4315c-b941-4783-bcb8-fc3637be3119",
+  "reportId": "report-2026-10-15-ajwa-ownership-resume-01",
+  "ticker": "AJWA",
+  "createdAt": "2026-10-15T18:32:54.5198350Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "supersedes": "decision-20261011-ajwa-universe-01",
+  "rationale": "Dated majority ownership is now established, but current group financial quality, subsequent filing/legal status and corporate-action reconciliation remain unresolved. The fresh EGP227 close shows continuation; it does not supply a defensible target or an approved entry plan. These remediable gaps support Wait rather than a conclusion that the business is adverse.",
+  "thesis": "Momentum and the increase in Future of Egypt ownership could be consistent with improving prospects, conditional on primary accounts demonstrating sustainable cash generation, manageable debt and acceptable related-party exposure. Neither the holder change nor rising prices establishes operating improvement or fair value.",
+  "counterargument": "The October15 close227 is above SMA20 190.7805 and SMA50 187.5272, with prior20-median RV20 2.3306. Continuation can persist despite RSI84.60 and a missing overhead pivot; waiting can miss further gains. Conversely, dated majority control includes a pledged stake and cannot substitute for current economics or a cleared corporate-action history.",
+  "invalidation": "Adverse current audit, cash-flow, debt, related-party or legal findings would defeat the proposed quality/continuation thesis. Confirmed loss of the frozen175.15-179 support cluster would undermine its technical premise, subject to action-adjustment reconciliation; this is a research trigger, not an executable stop. Missing disclosures alone do not establish misconduct.",
+  "reviewConditions": "Obtain current consolidated and standalone accounts and opinions, independently establish whether the September committee filing and AGM issues were cured, and verify subsequent legal/suspension/dividend/action notices. Reconcile20,095,300 shares in the dated form against100,476,500 on the undated issuer page with effective dates and price-history adjustments. Review subsequent ownership or pledge changes. Require a new analyst candidate/report and identical validated priced-plan-1.0 with evidenced target, expiry and adequate cost-adjusted reward/risk before Watch; revisit within five observed sessions if evidence remains unavailable.",
+  "processAssessment": "Read the complete analyst report, AJWA frozen context, saved profile, original screen and reassessment evidence, and prior decision. Independently visually inspected all five saved ownership pages: Q3 form prepared6October2026;12,382,589 majority shares about61.61933%; Future of Egypt1,283,146 about6.38530%;20,095,300 total shares; pledged total matches majority stake; no treasury shares; board reconstitution meeting2August2026. Dashes for the former8.335058% holder do not establish transaction date or proceeds. Independently reopened issuer archives: financial page displays annual2024 and2025 standalone quarters with blank2025 consolidated row; ownership page has the fivefold share total and2017 attachments. These bounded/cached pages cannot establish current absence of filings. Fresh TradingView metadata supports post-close timing and EGP identity; historical excluded-source session provenance is preserved but not relied on. Empty resistance set prevents a priced target under this framework, not all possible upside. Financials, news and actions remain unavailable, analyst defers and supplies no riskPlan. No linked intraday events in frozen context or candidate query. No chart navigation, orders, sizing or watchlist change. Original forecast remains immutable; parent will run all-decision monitoring after collection completes.",
+  "uncertainties": [
+    "Current group profit, operating cash conversion, debt, related parties and review/audit opinion",
+    "Later cure or ongoing status of September filing/AGM notices and current legal/action clearance",
+    "Fivefold dated-form versus undated-website share-count difference and unresolved historical gaps/adjustments",
+    "Post-September ownership/pledge changes, spread/depth and executable liquidity",
+    "No measured overhead target or approved conditional entry plan"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Strong observed momentum is insufficient to resolve the competing continuation and reversal scenarios while financial and corporate-action evidence is incomplete. No calibrated directional edge is claimed."
+  }
+}

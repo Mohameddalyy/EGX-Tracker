@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-adri-universe-formal-01",
+  "createdAt": "2026-10-11T08:37:13.168Z",
+  "type": "research",
+  "contextId": "context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+  "summary": "ADRI: Insufficient evidence; analyst defer. Defer pending financial statements, named owners and the contents of recent Article29 filings. Confirmed momentum is strong but does not establish project economics or clear actions.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-adri",
+      "title": "TradingView ADRI; market observations frozen in context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+      "url": "https://www.tradingview.com/symbols/EGX-ADRI/",
+      "accessedAt": "2026-10-11T08:37:12.850Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "issuer",
+      "title": "Issuer website; Coming Soon placeholder inspected",
+      "url": "https://arab-egypt.com/",
+      "accessedAt": "2026-10-11T08:37:12.850Z"
+    },
+    {
+      "id": "egx",
+      "title": "EGX primary disclosure modals 295555 and 295504 inspected 11 October around 08:00 UTC",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-11T08:37:12.850Z"
+    },
+    {
+      "id": "form-oct5",
+      "title": "EGX October5 Article29 attachment, inaccessible",
+      "url": "https://egx.com.eg/downloads/Bulletins/345035_1.pdf",
+      "publishedAt": "2026-10-05",
+      "accessedAt": "2026-10-11T08:37:12.850Z"
+    },
+    {
+      "id": "form-oct4",
+      "title": "EGX October4 Article29 attachment, unread",
+      "url": "https://egx.com.eg/downloads/Bulletins/344974_1.pdf",
+      "publishedAt": "2026-10-04",
+      "accessedAt": "2026-10-11T08:37:12.850Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ADRI",
+      "candidateId": "candidate-92a55b61-adc6-4d8a-a2c4-2b15bfc70e67",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer pending financial statements, named owners and the contents of recent Article29 filings. Confirmed momentum is strong but does not establish project economics or clear actions.",
+      "sourceIds": [
+        "tv-adri",
+        "issuer",
+        "egx",
+        "form-oct5",
+        "form-oct4"
+      ],
+      "fundamentals": "[issuer] Issuer website was a Coming Soon placeholder. Current consolidated cash flow, deliveries, collections, debt, related parties and review opinion could not be verified. No auditable valuation or current named-owner/control assessment is available. Price appreciation is an alternative momentum hypothesis, not evidence of recurring earnings growth.",
+      "technicals": "[tv-adri] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:57:43.947Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close13.6, SMA20=12.0960, SMA50=10.5050, ATR14=0.7713, RV20=0.9642. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means10.7510/8.4000, latest weekly high/low13.7/11.13. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[egx] Directly opened October5 14:56 disclosure295555 and October4 11:27 disclosure295504, both SMEs Market Article29 form releases. [form-oct5] and [form-oct4] contents remain unread. Their headlines do not establish a dividend, capital change or ownership transaction. Obtain their contents before describing a catalyst.",
+      "risks": "High qualitative evidence and swing risk. Price13.60 is near the latest weekly high13.70 after rising from the preceding weekly close11.82; ATR14 about0.77 is material. Latest RV20 below1 does not independently confirm exceptional participation. Real-estate collection/delivery, financing and control risks cannot be assessed without statements and ownership filings. No wrongdoing or poor business is inferred from access failures.",
+      "invalidation": "A later confirmed close below the latest weekly low11.13 would contradict this continuation hypothesis; fresh company or action evidence may invalidate it sooner. This monitoring boundary is not a proposed executable stop.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry or numerical sizing. First obtain statements/opinion, current owners and Article29 contents; then refresh confirmed structure and test a measured priced plan. At13.60 reference,13.70 recent high offers only0.10 before costs, too little against broad weekly downside. Do not invent a higher target or interpret current-day movement as final.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Latest interim/audited group statements, cash collections, leverage and review opinion absent from accessible issuer page."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "form-oct5",
+            "form-oct4"
+          ],
+          "note": "Current named owners and beneficial control not established by disclosure headings."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "egx"
+          ],
+          "note": "Two dated primary modals inspected in bounded UI scope; no complete wider current disclosure sweep. Browser2 remains inaccessible in analyst runtime despite parent access."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "form-oct5",
+            "form-oct4"
+          ],
+          "note": "Both recent Article29 attachments need reading; no inferred terms or clean action clearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-adri"
+          ],
+          "note": "[tv-adri] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:57:43.947Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close13.6, SMA20=12.0960, SMA50=10.5050, ATR14=0.7713, RV20=0.9642. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means10.7510/8.4000, latest weekly high/low13.7/11.13. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-adri"
+          ],
+          "note": "[tv-adri] Inspected raw volumes and finality in data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; latest2787282 shares,20-observation median2874994.5, median close-times-volume turnoverEGP36524490.06;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

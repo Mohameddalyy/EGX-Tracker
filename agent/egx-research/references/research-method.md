@@ -1,0 +1,18 @@
+# Research foundation — reviewed 8 October 2026
+
+These are public research/process descriptions, not access to private investment-bank models. Asset management, systematic investing and sell-side research have different mandates; their publications do not establish an EGX trading edge.
+
+| Source | Supported principle | Tracker implementation / limit |
+|---|---|---|
+| [J.P. Morgan Asset Management: Global Equities Research Capabilities](https://am.jpmorgan.com/us/en/asset-management/institutional/media/global-equities-research-capabilities/) | Quality, risk assessment and valuation using longer-term cash-flow forecasts; comparable company research. | Require business/sector understanding and a dated financial model before valuation conclusions. Do not reduce analysis to chart indicators. |
+| [AQR: Value and Momentum Everywhere, 2013](https://www.aqr.com/Insights/Research/Journal-Article/Value-and-Momentum-Everywhere) | Evidence on value and momentum across multiple markets/assets, including their differing relationships. | Test distinct value and trend hypotheses. Results are not specific to this six-stock EGX sample; a short-term breakout is not the paper's strategy. |
+| [AQR: Trading Costs of Asset Pricing Anomalies, 2012](https://www.aqr.com/Insights/Research/Working-Paper/Trading-Costs-of-Asset-Pricing-Anomalies) | Strategy implementation must consider transaction costs and capacity. | Stress fees, spreads, market impact, turnover and participation in actual EGX liquidity. Do not transfer developed-market cost estimates unchanged. |
+| [BlackRock: Total Portfolio Approach](https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/our-take-on-total-portfolio-approach) | Evaluate contributions to whole-portfolio risk, economic/factor exposures and scenarios. | Combine ticker/sector concentration, FX/rate sensitivity, correlated positions and cash/risk budgets; use bear/base/bull scenarios. |
+| [TradingView: market data coverage](https://www.tradingview.com/data-coverage/) | EGX delayed coverage is listed at 15 minutes; exchange entitlements determine available data. | Inspect actual account metadata each run. The local feed was verified at 900 seconds; do not advertise live execution signals. |
+| [EGX official disclosures](https://beta.egx.com.eg/en) | Exchange entry point for financial statements/disclosures. | Retrieve actual issuer documents in Arabic or English. This homepage could not be fetched in the initial research check; mark access failures, use issuer IR, and do not fabricate missing filings. |
+
+## Research checklist for EGX
+
+Issuer identity/share class, reporting currency and scale, reporting period and publication date; consolidated vs standalone; audited vs interim; recurring vs one-off earnings; cash conversion, leverage, refinancing, related parties, ownership and governance. Bank metrics differ from industrial and real-estate metrics. Identify corporate actions and suspensions before interpreting price discontinuities. Verify macro/event claims through CBE, EGX and issuers. Label nominal EGP returns separately from real or FX-adjusted returns.
+
+Entry hypotheses may include trend continuation, breakout/retest or value with a catalyst. Each needs a trigger, invalidation, liquidity check and explicit horizon. Do not select a hypothesis merely because a past chart fits. Rank evidence strength and missing inputs, not a made-up probability of success. Exclude stale/missing data from actionable timing assessments. Record why “no trade” is the appropriate conclusion when evidence is incomplete.

@@ -1,0 +1,28 @@
+{
+  "createdAt": "2026-10-11T08:42:25.008Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-ajwa-universe-01",
+  "queueId": "candidate-10c6da0b-e528-4fef-bd5c-1c507ae6fb70",
+  "reportId": "report-2026-10-11-ajwa-universe-formal-01",
+  "ticker": "AJWA",
+  "rationale": "Wait for current group financials, dated control and action evidence. Strong trading activity is observable, but the historical investor settlement is not a dividend for a new buyer and no approved priced plan exists.",
+  "thesis": "Price recovery may reflect better operating prospects or reduced uncertainty, but current group cash generation, margins and legal/action effects must substantiate that interpretation.",
+  "counterargument": "Confirmed price is above daily means with RV20=3.81, so continuation is plausible. However latest close196.16 remained below measured199 resistance despite201 high; high volume on that candle does not establish accepted breakout or informed accumulation.",
+  "invalidation": "Confirmed loss of179 support or adverse primary financial/legal/action evidence invalidates continuation. A failed retest of199-201 triggers reassessment, not an automatic sell order.",
+  "reviewConditions": "Obtain current consolidated and standalone statements/opinions, dated ownership-form contents and current exchange corporate-action/legal notices. Reassess confirmed close above201 and next203.8-204 supply or supported pullback with a full priced plan. Review after five observed sessions if unavailable.",
+  "processAssessment": "Read full report, immutable context and original screen. Independently opened issuer ownership page but no newly dated current control established. Analyst61.619% undated holder table cannot establish October majority. FRA settlement applies to specified2009 purchasers/heirs, not new2026 buyer income. Actual nearest confirmed resistance is199, not201 recent high, leaving2.84 before costs from196.16; the October7 close was below its197.44 open. Thus the report phrase confirmed breakout needs qualification: recovery above moving averages is verified, sustained resistance breakout is not. Four substantive checks unavailable, analyst defer, no priced plan. Existing archive access does not prove no newer filings exist. No orders/sizing.",
+  "uncertainties": [
+    "Current group earnings, cash flow, debt and related parties",
+    "Dated beneficial ownership/control",
+    "Current legal/action and suspension status",
+    "Resistance acceptance and execution liquidity"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Strong activity without current economics and event clearance cannot support a defensible directional forecast."
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "id": "report-20261008-scout-cana-review",
+  "createdAt": "2026-10-08T11:28:40.827Z",
+  "type": "research",
+  "contextId": "context-97de619d-fb57-48f2-abcd-e63023735d0a",
+  "summary": "CANA: independent analyst review deferred; no watchlist promotion. Defer despite the most promising numerical support-bounce geometry in this batch. Falling recent prices, weak relative volume and incomplete credit-quality/ownership/action evidence prevent promotion. A ratio screen is not a bank due-diligence report.",
+  "limitations": [
+    "This is a documented research pass with unresolved checks, not a completed approval-quality due-diligence report. Missing checks remain unavailable.",
+    "TradingView MCP health/state succeeded and chart remained ELWA 60-minute candlesticks. OHLCV and financial snapshots came from the immutable tracker context. Public TradingView news routes returned empty shells or errors; issuer documents supplied the substantive facts. No claim of access to every TradingView entitlement, order book, exchange trade count or proprietary bank research.",
+    "Frozen screen Finance median groups unlike businesses; its valuation signals are not used as analyst evidence. Price momentum is not dividend-adjusted total return.",
+    "Web cache dates and page freshness vary. Some issuer sources required direct public downloads; source financial periods and missing publication/ownership dates are explicitly distinguished. No complete October event clearance or fully reconciled corporate-action ledger.",
+    "Stop/target calculations use deterministic entryRisk; actual spreads, broker costs, taxes and gap/slippage losses are unknown. No orders, alerts or holdings were created."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "CANA TradingView symbol; local immutable OHLCV capture is authoritative for calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-CANA/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "tvnews",
+      "title": "CANA TradingView news route (no complete readable headline feed returned)",
+      "url": "https://www.tradingview.com/symbols/EGX-CANA/news/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "results",
+      "title": "Suez Canal Bank H1 2026 release",
+      "url": "https://scbank.com.eg/Press_SCB_H1_2026.aspx",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "Six months ended 30 June 2026"
+    },
+    {
+      "id": "owners",
+      "title": "Suez Canal Bank major shareholders",
+      "url": "https://scbank.com.eg/Shareholders.aspx",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "ir",
+      "title": "Suez Canal Bank investor relations",
+      "url": "https://scbank.com.eg/investor.aspx",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "statements",
+      "title": "Issuer-embedded EGID financial statement interface",
+      "url": "https://ir.egidegypt.com/en/englishfinancialstatement/TmVHwfpGdr3itlNpsycB22EWbFQfw-yVaxQYBUroKVI!",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "CANA",
+      "candidateId": "candidate-f4f4ffe1-d526-4cfd-9664-6e88959b5df4",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer despite the most promising numerical support-bounce geometry in this batch. Falling recent prices, weak relative volume and incomplete credit-quality/ownership/action evidence prevent promotion. A ratio screen is not a bank due-diligence report.",
+      "sourceIds": [
+        "tv",
+        "tvnews",
+        "results",
+        "owners",
+        "ir",
+        "statements"
+      ],
+      "fundamentals": "The issuer reports H1 2026 net profit EGP 3.63bn (+17.7%), NII EGP 5.70bn (+47.4%), ROAE 33.42% and CAR 18.02%. Corporate loans remain about 91% of net loans and corporate deposits 74.8% of deposits [results]. This gives a corporate-finance thesis, but current NPL/stage-2 exposures, provisions, sovereign concentration and full capital notes were not verified: the embedded financial-statements interface returned a shell [ir, statements]. TradingView P/E 7.57/PB 2.14/ROE 33.35% are starting points only. Bank deposits are operating funding; generic debt/equity should not rank this bank against nonbanks.",
+      "technicals": "Close 44.93 is near SMA20 45.00 and above SMA50 42.78; ATR14 1.835, RV20 0.70. Support 44.50 is the 28 September pivot; deeper support 41.00–41.35. Resistance 48.48 (27 September) then 52.00 (20 September). Weekly closes 42.90, 42.99, 44.15, 47.49, 45.77, 44.93 show a late-September spike followed by two declining weeks. Four latest daily closes fall from 46.20 to 44.93, so a bounce is not confirmed. Calculated from C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-97de619d-fb57-48f2-abcd-e63023735d0a.json, captured 2026-10-08T10:36:05.851Z; latest confirmed daily bar 2026-10-07. Weekly aggregation is derived from these daily bars, not a separately fetched TradingView weekly study. TradingView holiday metadata includes 2026-10-08. Feed delay 900 seconds; dividend adjustment false. Historical gap 2025-07-08 remains unexplained; recent 20 observations contain volume. [tv]",
+      "catalysts": "H1 lending/deposit expansion and greater retail funding are disclosed progress, not a scheduled price catalyst. The issuer confirms paid-up capital rose from EGP 6.5bn to EGP 10bn [results]; effective dates, allotment terms and EPS comparability must be reconciled. The release has no clear publication date in the retrieved body. No complete subsequent EGX event calendar was accessible.",
+      "risks": "Moderate-to-high: concentrated corporate credit/funding, rate repricing, capital-action comparability and a narrow float. The undated issuer ownership page lists Arab International Bank 41.50%, Libyan Foreign Bank 27.71%, Suez Canal Authority Pension Fund 10.11%, others 20.69% (rounding totals differ slightly) [owners]. No listed individual holder exceeds 50%; these are major shareholders, not evidence of a single majority owner. A dated post-capital-change disclosure is required. Prior-20-observation median daily volume 297,873 shares; median close-times-volume turnover proxy EGP 13348216.02. Latest volume 209,412. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]",
+      "invalidation": "Illustrative 43.58 stop is about half ATR below 44.50. Loss of that base, weakening credit quality, materially adverse capital terms or a new corporate event cancels the scenario. Daily bars cannot establish fill quality or intraday stop/target ordering.",
+      "positionReview": "No actual holdings or fills appear in this selected immutable context. Portfolio capital, available cash, user risk/concentration/volume limits and actual costs are unset. No numerical share quantity is proposed. Concurrent exposures and bank/financial-sector correlation need a portfolio-level check before any sizing.",
+      "entryConditions": "Do not enter from this report. After missing due diligence is resolved, monitor a confirmed rejection of 44.50 support and renewed buying, then recompute at an executable quote. The 44.93 reference-price calculation is hypothetical: waiting for a reclaim near 45.20 materially reduces reward/risk. A break/retest of 48.48 would require a new plan against 52.00, not reuse this stop. At the reference close 44.93, an illustrative stop 43.58 and nearest-resistance target 48.48 imply EGP 1.35 per-share downside (3.00%) versus EGP 3.55 upside (7.90%), gross reward/risk 2.63. A hypothetical 0.50% round-trip cost scenario yields EGP 1.5747 loss and 2.11 reward/risk. Costs are a stress assumption, not known broker charges. This is diagnostic math, not an approved entry or guaranteed loss cap.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "results",
+            "statements"
+          ],
+          "note": "H1 release checked; current full statements, asset-quality/credit-cost evidence and EPS/capital reconciliation are missing."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "owners"
+          ],
+          "note": "Major owners found on undated issuer page; current dated post-capital-action register absent."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "results",
+            "ir",
+            "tvnews"
+          ],
+          "note": "Issuer H1 release reviewed; TradingView news page/IR interface yielded no complete readable current news feed."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "results",
+            "ir"
+          ],
+          "note": "Issuer confirms capital increase; exact effective dates, allotment and chart adjustments unverified."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Inspected validated daily history and derived Sunday–Thursday weekly structure with dated pivots; scenarios are not confirmed entries."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Prior-20-observation median daily volume 297,873 shares; median close-times-volume turnover proxy EGP 13348216.02. Latest volume 209,412. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]"
+        }
+      },
+      "diagnosticRiskScenario": {
+        "notApproved": true,
+        "currency": "EGP",
+        "method": "Existing prototype support minus 0.5 ATR, rounded to tick; nearest confirmed resistance; not an institutional standard",
+        "gross": {
+          "entry": 44.93,
+          "stop": 43.58,
+          "target": 48.48,
+          "roundTripCostFraction": 0,
+          "lossPerShareEGP": 1.3500000000000014,
+          "lossPercent": 3.004673937235703,
+          "gainPerShareEGP": 3.549999999999997,
+          "rewardRisk": 2.629629629629625,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        },
+        "costScenario": {
+          "entry": 44.93,
+          "stop": 43.58,
+          "target": 48.48,
+          "roundTripCostFraction": 0.005,
+          "lossPerShareEGP": 1.5746500000000014,
+          "lossPercent": 3.5046739372357036,
+          "gainPerShareEGP": 3.325349999999997,
+          "rewardRisk": 2.111802622805064,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": "decision-1.1",
+  "pricedPlanRequired": "priced-plan-1.0: computed entry zone, evidence levels, stop, targets, costs, trigger and expiry",
+  "role": "Independent final decision after analyst research; watchlist research decisions, never broker execution",
+  "actions": ["Watch", "Wait", "Avoid"],
+  "outcomeHorizons": [5, 20, 60],
+  "trackingMethod": "forward-daily-1.0",
+  "baseline": "First confirmed observed session open strictly after the Cairo decision date; same-day bars excluded conservatively",
+  "maxCaptureAgeHours": 36,
+  "learningMode": "Preserve all decisions and forward observations for later independent review; no automatic model retraining or policy changes",
+  "limitations": ["Price-only counterfactual observations, not actual fills or realized P/L", "Daily OHLC cannot establish stop/target ordering when both are touched", "Corporate actions, missing sessions and revised provider data can invalidate comparisons", "No matched-period EGX benchmark series is yet available for outcome attribution", "A favorable price move is not proof that a decision process was correct"]
+}

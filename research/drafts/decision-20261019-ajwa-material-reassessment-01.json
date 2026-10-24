@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-10-18T21:32:25.176Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Competing continuation and reversal hypotheses remain unresolved because current economics and corporate-action evidence are incomplete and no validated priced plan exists. No calibrated directional edge or probability; prior forecasts remain immutable."
+  },
+  "id": "decision-20261019-ajwa-material-reassessment-01",
+  "queueId": "candidate-3cd331ca-de6a-4db0-adb0-a9cf7e76db7f",
+  "reportId": "report-2026-10-19-ajwa-material-reassessment-02",
+  "ticker": "AJWA",
+  "supersedes": "decision-20261018-ajwa-completeness-01",
+  "rationale": "Wait after the analyst addresses the newly discovered committee and AGM notices. The Arabic scope and distinct grace clocks are clarified, but current accounts/opinion, filing cure, AGM attachment and action/share-history reconciliation remain unresolved. Fresh momentum and dated ownership do not replace those checks; no approved measured target or riskPlan exists.",
+  "thesis": "Dated Future of Egypt ownership growth and relative price strength could accompany improving operating prospects or reduced uncertainty. That hypothesis requires current consolidated cash generation, debt, related-party and audit evidence; a holder increase and a routine AGM invitation cannot establish sustainable earnings or fair value.",
+  "counterargument": "Waiting has a demonstrated opportunity-cost challenge: originalWait was followed by+9.5565% over five observed sessions from199.55 baseline. Fresh218.62 remains above SMA20 192.7115/SMA50 188.0616 and completed10/30-week means189.779/163.456667 with RV20 1.79869; continuation can resume without an overhead pivot. Conversely October18 reversed from229.98, closed down3.6916% and RSI72.16 is extended while fundamental verification is incomplete. Neither path proves process correctness or informed buying.",
+  "invalidation": "Verified adverse audit, cash-conversion, debt, related-party, pledge or legal facts may defeat the prospective operating/continuation thesis. A confirmed failure of prior175.15–179 structure prompts research review only after action-adjustment reconciliation; this remote boundary is not an approved execution stop. A pledged stake does not establish enforcement and missing access does not prove distress.",
+  "reviewConditions": "Read AGM attachment345512_1 and later meeting decisions; establish official payment notification and original filing-grant anchors before calculating deadlines; verify actual current filing cure or committee status. Obtain current consolidated/standalone statements/opinions and action/suspension/price-limit clearance; reconcile fivefold website/form share-count chronology and adjusted history, subsequent ownership/pledges and provider cap mark date. Any material findings need a fresh analyst candidate/report. Before Watch require all six verified checks, suitable confirmed price structure and identical validated priced-plan-1.0; review at next scheduled run/new primary evidence and after five observed sessions. November9 09:30 AGM is a checkpoint, not an assumed approval or dividend.",
+  "processAssessment": "Read complete01/02 reports and differences, both immutable dossiers, full analytical import records, original screen, priorWaits/forecasts and22-decision outcome review.02 is readable revision with same frozen evidence/candidate/Defer. Independently parsed exact archived Arabic295811:15days from company notification for penalty payment is separate from15days after September22-grant expiry for June30quarterly consolidated filing; anchors unknown, no exact deadline/current breach/cure inferred. Earlier live English notices independently inspected; current CUA unavailable, no false claim of fresh Arabic browser reopening. Five saved ownership pages previously independently inspected; majority61.61933%, Future6.38530% (+192457shares/0.95772pp), total20,095,300, pledged majority and no treasury shares are datedSeptember30. Fresh calculations independently reproduce506bars, SMA20/50,RV20,median volume122366.5/turnover24,971,161.95,WilderATR8.312054 versus simpleTR8.995714, completed weekly means. The developing week is not independent confirmation. Builder rejected no measured target on identical final bars; no arbitrary plan. Three checks unavailable(financials/news/actions); no companyDCF/relative superiority versusJUFO can be established. Provider cap matches prior227×shares, not218.62current mark; no inferred share change. Broader1/12consumer breadth is heterogeneous and not a matched benchmark. Prior20-session uncertain forecasts unchanged; new one explicitly uncertain. Real portfolio inputs absent. No chart changes, trades, fills, sizing or policy changes. Evidence:data/research/evidence/arab-ajwa-independent-final-20261019.json.",
+  "uncertainties": [
+    "Current group cash generation, leverage, related parties and audit/review opinion",
+    "Filing/payment anchor dates, actual cure and subsequent committee status",
+    "Unread AGM345512_1 agenda and eventual meeting outcome",
+    "Share-count/action chronology, historical gaps, subsequent ownership/pledges",
+    "No measured target/approved riskPlan, company valuation, calibrated expectations or complete real portfolio inputs"
+  ]
+}

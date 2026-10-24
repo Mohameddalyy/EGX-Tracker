@@ -1,0 +1,8 @@
+{
+ "version":"sources-2026-10-09",
+ "marketData":"TradingView",
+ "excludedDomains":["stockanalysis.com","mubasher.info","mubasher.com","thndr.app"],
+ "researchFallbacks":"Dated issuer, exchange, regulator and other authoritative primary disclosures; record unavailable evidence explicitly",
+ "brokerAssumptions":"None. Thndr is irrelevant to this workflow. Paper fees and settlement come from the authorized experiment policy, not a broker schedule.",
+ "historicalEvidence":"Preserve prior reports and observations; do not erase excluded-source citations from history. New approvals must use allowed sources."
+}

@@ -1,0 +1,208 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-adri-ranked-primary-01",
+  "createdAt": "2026-10-19T11:27:50.795Z",
+  "type": "research",
+  "contextId": "context-5ee4813c-1ca7-436b-8bf3-e2f016811be9",
+  "summary": "ADRI: Defer after recovered full accounts, owners and shareholdertrade forms. No supportedNAV/currentactionclearance or measuredtarget for priced approval.",
+  "limitations": [
+    "Selected normal ranked candidate, not all62matches or296companies. AIH andcatalogbacklog remainunfinished.",
+    "Actual underlying issuer/auditor scans from observed archive links evaluated by identity, content, dates and arithmetic; mirrorcustody explicit. Prior accessfailures preserved asroute-specifichistory, not continuingglobalunavailability.",
+    "Publicationdates archiveonly except originalwrapperOctober4/5 observations in preservedoldreport. Q3ownerspreparedOctober12 2026; September30asof inferredfromquarter, not an inventedvisibledate.",
+    "Finalcontextafternewimports, marketOctober18 confirmed andactualOctober19 reporttime distinct. No currentintradayquote, orders/fills or rulechanges.",
+    "No propertyNAV, fairvalue, calibratedprobability or real sizing when required inputs absent."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView ADRI immutable confirmed October18 evidence",
+      "url": "https://www.tradingview.com/symbols/EGX-ADRI/",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "fs",
+      "title": "Actual24-page company interim accounts and Nexia limited review",
+      "url": "https://foudalens.com/disclosures/ADRI.CA/financial_statement/2026-08-16_293168_1.pdf",
+      "publishedAt": "2026-08-16",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "owners",
+      "title": "Actual Q3 Article30 form, prepared October12 2026",
+      "url": "https://foudalens.com/disclosures/ADRI.CA/board_agm/2026-10-12_295892_1.pdf",
+      "publishedAt": "2026-10-12",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "buy",
+      "title": "Actual October4 shareholder purchase post-execution form",
+      "url": "https://foudalens.com/disclosures/ADRI.CA/other/2026-10-05_295555_1.pdf",
+      "publishedAt": "2026-10-05",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "sell",
+      "title": "Actual September29 shareholder sale post-execution form",
+      "url": "https://foudalens.com/disclosures/ADRI.CA/other/2026-10-04_295504_1.pdf",
+      "publishedAt": "2026-10-04",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "issuer",
+      "title": "Issuer domain now ComingSoon placeholder, not current financial evidence",
+      "url": "https://arab-egypt.com/",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "egx",
+      "title": "Official EGX portal; historical October4/5 modals inspected in original report, not complete current sweep",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    },
+    {
+      "id": "cbe",
+      "title": "CBE dated policy observation in analytical dossier",
+      "url": "https://www.cbe.org.eg/en/monetary-policy/monetary-policy-decisions",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-10-19T11:27:50.795Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ADRI",
+      "candidateId": "candidate-21a59813-dcf1-445a-973a-0aaae1955161",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer after materially improved primary research. CompanyH1loss/projectcashburn and bonus chronology need economic/valuation work; named holders and actual recent shareholdertransactions are now known. No measured target permits a complete priced approval, independently of source uncertainty.",
+      "sourceIds": [
+        "tv",
+        "fs",
+        "owners",
+        "buy",
+        "sell",
+        "issuer",
+        "egx",
+        "cbe"
+      ],
+      "fundamentals": "[fs] Full 24-page actual January 1-June 30 2026 company accounts, EGP units, standalone rather than consolidated group. Nexia Maged Sherif unmodified limited-review conclusion August 13; current is not a full audit. ComparativeFY 2025 separate auditor unmodified opinion February 21 is mentioned, not newly adopted as current assurance. Revenue 4,107,381 versus 5,194,492 declines 20.93%; grossprofit 1,747,124 versus 1,012,444 improves. Administration 1,469,925, WIP impairment 1,631,236, ECL expense 230,728 and provision 150,000 contribute to net loss 1,867,461 versus 114,608 loss. Do not assume these are all one-off addbacks. Assets 57,798,350 versus liabilities 12,010,654 plus equity 45,787,695 leaves 1 EGP residual; no plug. Prior equity 49,910,748. CFO-9,364,063 reflects 10,794,218 WIP investment partly offset by 2,360,258 joint-operation release. Investing-17,900 and financing-2,255,592 bridge 19,975,875 opening cash to 8,338,320 versusprinted 8,338,319, a 1 EGP residual; no inventedFX. Cashburn is real but not itself insolvency. Note 6 WIPgross 38,718,795 includes Obour 6,311,194, Kayan 1,844,986 and EliteTower 30,562,615, less 1,631,236 impairment, printednet 37,087,560 (rounding residual 1). Partner/railway-land arrangements are not ownership of all project cash. Finished property inventory 9,814,117 is cost, notNAV. Receivables 1,263,167 less 239,622 ECL equals 1,023,545 exactly in both main statement andnote 9, verified high-resolution. Interest-free 4 m chair loan for completion is related-party funding, approvedSeptember 8 2025 board andMay 13 2026 AGM; limited externalbank facilities/directFX in notes defeats a mechanicalrate-cut earnings claim. Provision 150 k authority-claim detail is withheld by management because disclosure might prejudice negotiations. Note 26 says no cases by/against company throughJune 30, notOctober 19. Tax 2020-25 not inspected;2018 settlement installments do not clear all taxes. [owners][fs] Paid capital 35,135,168 at 0.5 par equals 70,270,336 shares atJune 30 andQ 3. Separate bonus transfer 10,540,551 plusoldcapital implies 45,675,719 target, while note 12 prints 10,540,734 increase:183 EGP discrepancy. May 13 EGM approved retained-profit bonus; July 20 GAFI approval mentioned, but actual exchangeeffective/listing/exbonus dates unverified. Totaldeclaredallocation 12,796,143 comprises 10,540,551 bonuscomponent and 2,255,592 cashdistribution. Equity 49,910,748+10,540,551-12,796,143-1,867,461=45,787,695 exactly; bonus is not a cash inflow. Do not apply a presumed new sharecount or price adjustment. [owners] All 4 pages read, Q 3 marked and preparationOctober 12 2026 printedp 4 supportsSeptember 30 period inference; mainpage itself does not print year/enddate. Chair 6,571,663/9.352% plus explicitlyrelated 2,304,497/3.279% totals 8,876,160/12.631%. Hisham 19,177,839/27.291%, ArabEconomicGroup 7,032,362/10.007%, Moustafa 5,310,001/7.556%; aggregate 40,396,362/57.487% is not one proven controller. No individual majority; other relationships not independently cleared. No treasury holding shown. [tv] Providerfundamentals and same-industry valuationpeers missing, not negative business findings. No dated projectcashflows, costtocomplete, collections/deliveries, landrights and matched discount/capital assumptions support a propertyNAV or fairvalue. BroadFinance median includes banks/insurers and is unsuitable for universalPE valuation.",
+      "technicals": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5 ee 4813 c-1 ca 7-436 b-8 bf 3-e 2 f 016811 be 9.json contains 506 accepted daily observations throughOctober 18, captured 2026-10-18 T 20:54:17.085 Z after persisted 15:15 Cairo cutoff including 900-second delay and safety buffer. ISIN EGS 65 AN 1 C 018, native EGP, chart EGX_DLY:ADRI, issuer Arab Development and Real Estate Investment. Its ARAB brand must not be confused with separate ARAB ticker/Arab Developers Holding. OHLC 13.62/14.18/13.25/13.38, volume 4,134,937; SMA 20 12.9565, SMA 50 11.2048, WilderATR 14 0.83471735, challenger simple 14-TR mean 0.89214286, RV 20 1.43824. Price remains above both daily means but current candle is bearish. CompletedOctober 11 week close 13.62, high 14.7/low 12.9,10/30-week means 11.299/8.683; October 18 week is one developing session. Daily/weekly Buy composites coexist with Sell oscillators and are correlated summaries. Measured supports 12.90/11.13/8.91; no measured overhead resistance in accepted current level map. Historical July 8 2025 gap retained; adjustmentflags false do not reconcile bonus chronology. ActualOctober 19 session is in progress; no current quote or timely execution conclusion from these October 18 bars.",
+      "catalysts": "[buy][sell] Actual forms resolve earlier unread Article 29 requests. September 29 sale 2,007,076 shares by Moustafa ElSayed Mohammed AhmedOqda at 13.063 average, holding 7.48% to 4.70%, publishedOctober 4; October 4 purchase 1,751,000 at 12.10 average, holding 4.89% to 7.38%, publishedOctober 5. These are reported person-level transactions with date/settlement bases, not dividends, bonuslisting or proof of institutional accumulation/informed intent. Q 3 registerSeptember 30 holding 7.556% is not automatically laterposttradeholding; no unexplained beneficial-control roll-forward invented. [fs] Bonusapproval/GAFI chronology and note amount discrepancy need actual listing/effective/exdate. Project completion/collection and claim resolution are potential business drivers without verified forward dates or impact estimates. [issuer] Current domain is a ComingSoon/Bluehost placeholder, no financial archive. Earlier direct EGX wrapper observations are historical; actual PDFs now recovered improve content access but do not imply a complete October 19 legal/news/action/suspension sweep. [cbe] September 24 policydeposit 19% unchanged andOctober 29 MPC are not a retailhurdle; customer affordability/constructioninputFX can affect collections/costs, but interest-freechairloan and limited externalfunding offset directrate effects. No quantified sensitivity.",
+      "risks": "High qualitative project-execution, valuation, capital-adjustment and liquidity risk. Finance sector 74/74 fresh,6/74 aboveSMA 50 (8.1081%), median 20-sessionreturn-16.6354%, ADRI+15.6439%: relative strength, not investable sectoralpha or comparablebusinessquality. Broadfallingregime 229 freshalignedEGP/296 catalog,17 othercurrency. No alleged misconduct, automatic clean-audit gate or calibrated loss probability.",
+      "invalidation": "Confirmed break below 12.90 defeats current higher-low thesis. WIP cost/impairment, collection, claim or bonuscapital facts can invalidate the business case separately.",
+      "positionReview": "Final context records no actual positions/fills but is not proof of complete outsideaccount exposure. Actualcapital, cash, costs and risk/concentration/participation limits are null. No quantity, cashbudget or wholeportfolioVaR/CVaR inferred. Frozen expired paper state unchanged.",
+      "entryConditions": "No approved riskPlan or actionable entry. The unchanged shared priced-plan builder fails ADRI because no measured overhead target is available (and entry/resistance geometry cannot be completed). Do not invent resistance beyond the accepted map, adopt a broker target or substitute a fixed holding-period challenger exit for the existing 2:1 cost gate.12.90 support is a review/invalidation level; a structural break below it calls for reassessment toward 11.13. Require current company/actions, bonusshare/price continuity, subsequent confirmed bullish acceptance withRV 20>=1 and a complete measured target/stop/cost/expiry plan before anyWatch. Without target, expectedupside and reward/risk remain unavailable rather than zero. No share size or stop order.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "fs"
+          ],
+          "note": "All24pages read. Interim company scope, unmodifiedlimitedreview and loss/cash/projectfacts reconciled;1EGP balance/cash residuals and183capitalnote discrepancy preserved, no plugs or intrinsicvalue."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "buy",
+            "sell",
+            "fs"
+          ],
+          "note": "Actual4pQ3form preparedOctober12 2026 supportsperiod, names holders/explicitchairrelatedgroup/float/shares. No individualmajority or assumedotherrelationships; later reportedtrades not forcedintoSeptemberregister."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "buy",
+            "sell",
+            "fs",
+            "issuer",
+            "egx"
+          ],
+          "note": "Specific actualrecenttransactions andJunelegalnotes read. CurrentOctober19 news/claims/suspension completeness not established; issuerplaceholderandportalaccesslimits not adversecompanyfindings."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "fs",
+            "owners",
+            "buy",
+            "sell",
+            "egx"
+          ],
+          "note": "Maybonusapproval/JulyGAFI and unchangedQ3count substantiated;183amount discrepancy andactualmarketlisting/ex/effectivedates unresolved. Cash/bonusprofitallocation separated; no generalactionclearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5ee4813c-1ca7-436b-8bf3-e2f016811be9.json contains506 accepted daily observations throughOctober18, captured2026-10-18T20:54:17.085Z after persisted15:15Cairo cutoff including900-second delay and safety buffer. ISIN EGS65AN1C018, native EGP, chart EGX_DLY:ADRI, issuer Arab Development and Real Estate Investment. Its ARAB brand must not be confused with separate ARAB ticker/Arab Developers Holding. OHLC13.62/14.18/13.25/13.38, volume4,134,937; SMA20 12.9565, SMA50 11.2048, WilderATR14 0.83471735, challenger simple14-TR mean0.89214286, RV20 1.43824. Price remains above both daily means but current candle is bearish. CompletedOctober11 week close13.62, high14.7/low12.9,10/30-week means11.299/8.683; October18 week is one developing session. Daily/weekly Buy composites coexist with Sell oscillators and are correlated summaries. Measured supports12.90/11.13/8.91; no measured overhead resistance in accepted current level map. Historical July8 2025 gap retained; adjustmentflags false do not reconcile bonus chronology. ActualOctober19 session is in progress; no current quote or timely execution conclusion from these October18 bars."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv",
+            "owners"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5ee4813c-1ca7-436b-8bf3-e2f016811be9.json: latest4,134,937 shares; inclusive20 median2,890,856.5 shares and median close-times-volume turnover proxyEGP37,305,983.16; no missing raw volume0/20. RV20 compares prior20 median, distinct from liquidity denominator. [owners]35,656,537 shares/50.74195% labelled freely tradable,69,962,157 deposited of70,270,336 issued;34,305,620 retained shares. Float is not identified beneficial control. No live spread/depth/auction/fill or impact estimate. No numerical participation or quantity assumed."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "ADRI",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-a257af78ba44192d8da52022",
+            "document-77d963147032e2fb8127998e",
+            "document-6ab63421fe6e11bf3bb8c700",
+            "document-56ac47bf7f857bb4e7c08796"
+          ],
+          "alternativeTicker": "MASR",
+          "whyThisStock": "Normal ranked screen finds strong price momentum and renewed volume; recoveredpropertyaccounts andowners now challengeformerlymissingsourceareas.",
+          "whyNow": "ConfirmedOctober18close13.38 remainsabove20/50daymeans afterprioruncertainWait; actualArticle29tradeformsandbonusproposalarematerialnewresearch, notfreshnumericalmatch.",
+          "mispricingMechanism": "Projectdelivery/collection improvements mightunlockhistoriccostinventoryvalue, but no reliableNAVormispricinggap established.",
+          "bullCase": "Grossmargin improves despitefallingrevenue;8.338mcashand4minterestfreechairfunding provideprojectliquidity; positivepricevolumeandnamedownershipareobservable.",
+          "bearCase": "H1loss1.867m, CFOoutflow9.364m andWIPimpairment1.631m challengecashquality; bonussharecontinuityandprojectcompletion/claims remainunresolved; nomeasuredoverheadtarget available.",
+          "alternativeExplanation": "Low-pricedpropertymomentum orshareholdertrading can drivepricewithoutimprovedprojecteconomics. Namedpurchaseisnotproofinsiderinformationoraccumulation.",
+          "pricedIn": "60-sessionpricegain68.30% alreadyembedsoptimism; noexpectedreturns, consensusgap or isolatedeventattribution.",
+          "invalidation": "Confirmedfailurebelow12.90support defeatscurrenthigherlow; adversecompletion/claims/capitalfacts defeatbusinesshypothesis independently.",
+          "whatWouldChangeMyMind": "Reconcileactualbonuslisting/exdateand183noteamountdifference, readcurrentactions, sourceprojectcosttocomplete/collections/rights andsupportedNAV, thenconfirmedacceptanceandmeasuredtargetwithpriced2:1costgate.",
+          "whyBetterThanAlternative": "No superiority overMASRestablished. MASRlargeprojectscaleandhistoricalcollectionevidence differ; comparematchedcash/landrights/debtandNAV ratherthanbankFinance median.",
+          "disagreementResolution": "Improvinggrossprofitdoesnotcontradictnetloss/projectcashburn. OneEGPbridgeresiduals retainedwithoutplugsand183capitalnoteconflictneedsclarification, notautomaticAvoid. Missingtargetblocksapprovalindependently.",
+          "evidenceQuality": "Full24pinterimcompanyaccountsand4pQ3ownersplusbothpostexecutionformsread. Archivecustodyexplicit, priorofficialwrappershistorical, exactcurrentaction/newscoverageincomplete.",
+          "uncertainties": "No defensibleprojectNAV/currentlegalclearance/bonussharepriceadjustmentchain orcalibratedprobability. No realcapital/fees/risklimits.",
+          "asOf": "2026-10-19T11:24:00.956Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-c43d2fbff3b78171f30c453a",
+          "recordedAt": "2026-10-19T11:24:00.956Z",
+          "digest": "c43d2fbff3b78171f30c453a31a3df81fc4efcd0349c6212bbbe30476202da3c"
+        },
+        "alternativeCompany": "MASR",
+        "relativeOpportunity": "No superiority established: need matched projectrights, collections and cost-to-complete/NAV across scale. Originaldecision-20261011-adri-universe-01 uncertainWait had5-session-0.1493%price path withbesthigh+9.7015%/worstlow-3.7313%, nofilledplan orbenchmark. This is notdirectionforecastaccuracy; source-driven reassessment matters more than whetherWaiting missed transienthigh.",
+        "valuation": "PropertyNAV unavailable; historicinventorycost andshareholdertradeprices notfairvalue.",
+        "records": [
+          "statement-51ca7bcfd05ca85220d8b00a",
+          "thesis-c43d2fbff3b78171f30c453a",
+          "transmission-b1273e7e28ba390c3e48d12c"
+        ]
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/adri-analyst-primary-review-20261019.json",
+    "data/research/evidence/adri-analyst-analysis-bundle-20261019.json",
+    "data/research/evidence/adri-analyst-provenance-20261019.json",
+    "data/research/evidence/adri-balance-highres.png",
+    "data/research/evidence/adri-receivables-highres.png",
+    "data/research/evidence/ranked-five-calculations-20261019.json",
+    "data/research/evidence/ranked-five-plan-diagnostics-20261019.json"
+  ]
+}

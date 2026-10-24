@@ -1,0 +1,135 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-amoc-universe-formal-01",
+  "createdAt": "2026-10-11T08:26:59.265Z",
+  "type": "research",
+  "contextId": "context-d0144510-26c6-4494-b408-6b54b83848d2",
+  "summary": "AMOC: Insufficient evidence; analyst defer. Defer: strong trend and substantial observed liquidity do not clear missing current ownership, review opinion and complete October action/news evidence. Nearby measured resistance also gives poor immediate entry geometry.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-amoc",
+      "title": "TradingView AMOC; market observations frozen in context-d0144510-26c6-4494-b408-6b54b83848d2",
+      "url": "https://www.tradingview.com/symbols/EGX-AMOC/",
+      "accessedAt": "2026-10-11T08:26:59.253Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "amoc-fs",
+      "title": "Issuer June2026 consolidated interim statements; board approval13 August; publication day unspecified",
+      "url": "https://www.amoceg.com/reports/investor/financialStatement/93-6a8425a18c8e71787045281.pdf",
+      "accessedAt": "2026-10-11T08:26:59.253Z",
+      "period": "H1 2026"
+    },
+    {
+      "id": "amoc-own",
+      "title": "Issuer March2026 ownership disclosure",
+      "url": "https://www.amoceg.com/reports/investor/disclosure/43-6a55dbe63a52a1784011750.pdf",
+      "accessedAt": "2026-10-11T08:26:59.253Z",
+      "period": "2026-03-31"
+    },
+    {
+      "id": "amoc-div",
+      "title": "Issuer signed Form232 coupon22 schedule",
+      "url": "https://www.amoceg.com/reports/investor/generalAssembly/35-69ca3d737e15f1774861683.pdf",
+      "accessedAt": "2026-10-11T08:26:59.253Z",
+      "period": "July–December2025"
+    },
+    {
+      "id": "amoc-chp",
+      "title": "Issuer CHP term-sheet announcement",
+      "url": "https://www.amoceg.com/en/media-center/news/186",
+      "accessedAt": "2026-10-11T08:26:59.253Z",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "id": "egx",
+      "title": "EGX News Center; follow-up browser unavailable",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-11T08:26:59.253Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AMOC",
+      "candidateId": "candidate-87dc7261-b68b-4831-ad6c-6392b0df7338",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: strong trend and substantial observed liquidity do not clear missing current ownership, review opinion and complete October action/news evidence. Nearby measured resistance also gives poor immediate entry geometry.",
+      "sourceIds": [
+        "tv-amoc",
+        "amoc-fs",
+        "amoc-own",
+        "amoc-div",
+        "amoc-chp",
+        "egx"
+      ],
+      "fundamentals": "[amoc-fs] June2026 is an interim period after the fiscal year changed to January–December; figures in EGP. Revenue26.223bn, attributable profit1.882bn, CFO1.412bn versus1.521bn comparative. Receivables2.035bn versus573m at December2025; cash3.018bn versus current liabilities5.154bn. Cash conversion and receivable growth temper earnings. Actual limited-review conclusion was not located in inspected pages; no clean audit claim or reconciled valuation model. [amoc-own] March31 named stakes: Alexandria Petroleum20.774%, Ahly Capital15.033%, Misr Insurance5.478%, governmental social insurance5.156%, other social insurance5%; no individual majority established. March evidence does not establish October beneficial control.",
+      "technicals": "[tv-amoc] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:58:44.066Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close14.48, SMA20=13.6040, SMA50=12.0724, ATR14=0.6153, RV20=1.8841. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means12.4490/9.6563, latest weekly high/low14.74/13.67. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[amoc-chp] July31 term sheet for16MW CHP (scalable30MW), up toUSD50m BOOT investment; issuer projects AMOC savingsEGP49m/year. The174m total includes125m government benefit, not company earnings. No commissioning verified. [amoc-div] Coupon22 second0.20EGP scheduled15 October is for19 April record holders; a new October buyer gets no entitlement.",
+      "risks": "High qualitative swing risk: ATR about4.25% of confirmed price, possible trend exhaustion near14.63 historical resistance, refinery margin/FX and collection sensitivity. Full tax/related-party/contingency notes and review conclusion incomplete. Projection and scheduled payment are not completion evidence.",
+      "invalidation": "Cancel any continuation hypothesis if a later confirmed close loses12.18 September28 swing low, or dated filings reveal material deterioration; these are monitoring conditions, not a stop order. Nearer12.81 support is older. A current-day quote cannot establish a daily trigger.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry or priced plan. Obtain latest owners, actual review opinion and October action/news sweep; then recalculate levels using later confirmed bars. At14.48 reference, nearest measured resistance14.63 leaves only0.15EGP before costs against much larger structural/ATR downside. Do not manufacture a higher target to force2:1.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "amoc-fs"
+          ],
+          "note": "Substantive interim facts read visually (local tmp/pdfs/amoc-consolidated-2026-06.pdf pages1–5,7–9,35–38); actual review conclusion, full contingencies and valuation reconciliation incomplete."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "amoc-own"
+          ],
+          "note": "March31 ownership verified, latest October control/beneficial holdings not verified."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "amoc-chp",
+            "egx"
+          ],
+          "note": "July31 issuer catalyst read; full October exchange sweep unavailable."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "amoc-div",
+            "egx"
+          ],
+          "note": "Coupon22 signed schedule verified; April19 record date means no dividend for new October buyers. Complete subsequent action/suspension sweep unavailable."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-amoc"
+          ],
+          "note": "[tv-amoc] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:58:44.066Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close14.48, SMA20=13.6040, SMA50=12.0724, ATR14=0.6153, RV20=1.8841. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means12.4490/9.6563, latest weekly high/low14.74/13.67. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-amoc"
+          ],
+          "note": "[tv-amoc] Inspected raw volumes and finality in data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; latest17390295 shares,20-observation median9230030, median close-times-volume turnoverEGP126982718.52;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-aih-ranked-primary-01",
+  "createdAt": "2026-10-19T12:06:26.608Z",
+  "type": "research",
+  "contextId": "context-84f051f3-e467-4ce6-b059-f995290e4d99",
+  "summary": "AIH: Defer after full current primary reading. Numerically passing lower pullback remains unapproved amid demerger/compliance, lending-quality and parent-value uncertainties.",
+  "limitations": [
+    "Finalselectedcompany ofnormalrankedfive; no claimthatall62matches or296cataloghavefullresearch. Catalogbacklog remains.",
+    "Actualunderlyingissuer/auditorscansfromobservedarchiveURLsread; archiveeditorialfinancialdataandexcludedcompanysourcesnotadopted. EarlierofficialQ3retrievalfailureremainsroute-specific, notcurrentunreadstatement.",
+    "Exactpublicationminutesunverified; archivepublicationdateonly differsfromreview/event/preparationdates. No intradayavailabilityinference.",
+    "Finalcontextfollowsallimportsandsourcecorrections. Earliercontextsandoriginaldocuments/statementsretained; supersedingstatementandthreecorrectionnotesexplicit.",
+    "ConfirmedOctober18markettimeandactualOctober19report/sourceaccesstime distinct; no currentintradayquote, timelyentry, real/papertrade orpolicychange.",
+    "Industrialstoragecategoryislimitedschemaonly; economicreasoningisnonbankfinance/holdingcompany. NoindustrialDCF, unsupportedSOTP, calibratedprobability orquantity."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView AIH confirmed October18 immutable market evidence",
+      "url": "https://www.tradingview.com/symbols/EGX-AIH/",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "fs",
+      "title": "Actual30-page H1 consolidated accounts and qualified PKF limited review",
+      "url": "https://foudalens.com/disclosures/AIHC.CA/financial_statement/2026-08-31_294131_1.pdf",
+      "publishedAt": "2026-08-31",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "owners",
+      "title": "Actual3-page Q3 Article30, prepared October7 2026",
+      "url": "https://foudalens.com/disclosures/AIHC.CA/board_agm/2026-10-12_295887_1.pdf",
+      "publishedAt": "2026-10-12",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "amwal",
+      "title": "Actual October12 Amwal purchase post-execution form",
+      "url": "https://foudalens.com/disclosures/AIH.CA/other/2026-10-14_296041_1.pdf",
+      "publishedAt": "2026-10-14",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "zady",
+      "title": "Actual October6 Zady fund purchase post-execution form",
+      "url": "https://foudalens.com/disclosures/AIH.CA/other/2026-10-07_295676_1.pdf",
+      "publishedAt": "2026-10-07",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "board",
+      "title": "Actual October5 board resignation and audit committee changes",
+      "url": "https://foudalens.com/disclosures/AIHC.CA/board_agm/2026-10-06_295571_1.pdf",
+      "publishedAt": "2026-10-06",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "org",
+      "title": "Actual October6 issuer organizational forms208/210; not regulatory cure",
+      "url": "https://foudalens.com/disclosures/AIH.CA/board_agm/2026-10-06_295603_1.pdf",
+      "publishedAt": "2026-10-06",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "issuer",
+      "title": "Correct issuer domain; HTTP500 route observation",
+      "url": "https://aih-group.com/",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "egx",
+      "title": "Official EGX News Center, bounded earlier notices inspected",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "egxpdf",
+      "title": "Direct official Q3attachment route failed; archived original contents now recovered separately",
+      "url": "https://www.egx.com.eg/downloads/Bulletins/345319_1.pdf",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    },
+    {
+      "id": "cbe",
+      "title": "Authoritative CBE September24 unchanged policy and October29 meeting in dossier",
+      "url": "https://www.cbe.org.eg/en/monetary-policy/monetary-policy-decisions",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-10-19T12:06:26.608Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AIH",
+      "candidateId": "candidate-4f577f06-43cc-46a3-aa90-30d6b693539e",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Actualcurrentfinancials, owners andreportedtrades materially improve evidence, but qualifiedassurance, unresolveddemerger/compliance andcashdefinition, lendingquality andunsupportedparentSOTP preventapproval. The conditionalpriceddiagnosticpassesnumerically butcurrentredcandleoutsidezoneandmissingchecksremain.",
+      "sourceIds": [
+        "tv",
+        "fs",
+        "owners",
+        "amwal",
+        "zady",
+        "board",
+        "org",
+        "issuer",
+        "egx",
+        "egxpdf",
+        "cbe"
+      ],
+      "fundamentals": "[fs] All 30 pages read. Cover year-ended wording is superseded for period interpretation by explicit limited-review/P&L/cash headers: six months January 1-June 30 2026 with separateQ 2 columns. Consolidated EGP units; prior 2025 income/cash comparatives explicitly before demerger and not like-for-like growth. PKF August 30 qualified limited-review conclusion: BanqueMisr confirmation missing for UEFinance loan 19,352,005 and credit current 57,275. This does not mean all groupdebt is unconfirmed, a full current audit, or automatic misconduct. PriorFY 2025 otherauditor qualifiedMay 14 is mentioned; underlying full annualaccounts not independently read here. Group revenue 111,318,512 lessactivitycost 145,479,509 givesgrossloss 34,160,997. Operatingexpenses 60,471,119 producecorrectoperatingloss 94,632,116. Interest 63,352, provisioncharge 8,988,159 andbaddebtreversal 1,577,378 bridgepretaxloss 101,979,545; deferredtaxbenefit 411,350 givesnetloss 101,568,195. Ownersloss 81,113,739 plusNCI loss 20,454,456 reconcileexactly. OCIrevaluationgain 18,526,894 narrowscomprehensiveloss 83,041,301; it is not recurringprofit or cash. Assets 1,828,329,617 equal liabilities 1,564,814,094 plus totalequity 263,515,523 exactly. Owners 203,838,243 andNCI 59,677,280 are separate. Loans 1,440,512,350 =current 1,153,667,226 +noncurrent 286,845,124 =UEFinance 1,337,151,870 +Rawaj 103,360,480 exactly. High-resolution correction replaces earlier 500 EGP digit error; originalstatement preserved and superseded. Netlease/factoring receivables 1,490,505,729 =noncurrent 489,197,716 +current 1,001,308,013 exactly, after 139,065,957 ECL. This corrects earlier 450 k transcription in primary narrative, not balance totals. Shortreceivables andotherdebtors carryadditionalECL; reserve adequacy requires credit-stage/collection assessment, not zero-provision inference. UEFinance borrowing is supported byassigned lease andinsurance/compensationrights andpromissory principalguarantees, not all unencumberedassets. CFO 175,441,427 includes 236,917,646 lease/factoring receivable runoff, while financing-157,624,024 repays loans. Investing-1,443,617 and CFopening 26,017,663 bridgeclosing 42,391,449 exactly. Balance/note 12 Decembercash 77,251,486 differs fromCFopening by 51,233,823, matching separateopeningloaninstallmentliability 51,233,823 that disappears byJune. This supports a netting/reclassification hypothesis but does not establish the sourceaccountingdefinition; unresolved, no FXplug/restatement invented. Lendingrunoff is not industrialfreecash or distributableparentcash. Current groupcash cannot be assumed available toparent. [fs] Postdemerger scope includes UEFinance 79.545%, Rawaj 69.753%, Tawriq 98.70%; Takhseem 97.48% is underliquidation with 15 m nonconsolidatedinvestment disclosed. SOTP needs matching subsidiaryequityvalue/capital/creditreturns, parentstandalonecash/debt anddistributionrights/minorities; subtractingallgroupdebt from subsidiaryequityvalues would doublecount funding. No sourced three forward cases or currentfairvalue. [tv] PB 5.88595 versus 3 sameindustrypeermedian 2.43471 and D/E 7.1305 versus 3 median 0.29753 are unreconciled snapshot comparisons. ROE-40.3645%, EPS-0.155 andTTMnetloss-199,271,486 have periods/scope requiring demergerbridge; providerTTMrevenue-98,658,303 is not adopted as currentcompanysales because actualH 1 revenue ispositive. No universalFinancePE or automaticallycheapnegativePE conclusion. [owners] ActualQ 3 formpreparedOctober 7 2026 supportsSeptember 30 quarterinference; day/year notprintedonpage 1. Shares 1,558,128,698 corroborate note 17 paidcapital 296,044,453 rounded at 0.19 par anddemergerreserve 26,377,872. Jamal 118,167,052/7.583908% versusprior 494,027,052/31.70643%; Amwal 113,689,902/calculated 7.296567%, AbsharGeneralConsulting 78,250,000/5.02205%; total 310,106,954/calculated 19.902525%. No individualmajority or assumedcommoncontrol. Freelytradable 1,555,522,806, retained 2,554,582, pledged 11,548 andotherfrozen 2,543,034 quantitiesretained. Printedotherfrozen.16395% versuscalculated.1632108%, retained.16469% versuscalculated.1639519% are bounded sourcepercentage discrepancies; float 99.83276% agrees. No treasuryshares. LaterOctobertrades are not inserted intoSeptemberregister.",
+      "technicals": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-84 f 051 f 3-e 467-4 ce 6-b 059-f 995290 e 4 d 99.json contains 506 accepted daily observations through October 18, captured at 2026-10-18 T 20:54:17.085 Z after persisted 15:15 Cairo cutoff including 900-second feed delay and buffer. Native EGP, ISIN EGS 21351 C 019, chart EGX_DLY:AIH; issuer Arabia Investments Holding, exchange Reutersalias AIHC.CA. This is not similarly named Saudi AlArabia or the demerged company. OHLC 0.830/0.840/0.763/0.770, volume 46,371,616. Reproduced SMA 20=0.76795, SMA 50=0.686, WilderATR 14=0.053257656, challenger simple 14-TR mean 0.057642857, RV 20=1.25828054. Close is marginally aboveSMA 20 and aboveSMA 50, but current candle is bearish near its low. Completed October 11 week close 0.830/high 0.913/low 0.736; completed 10/30-week means 0.7036/0.500033. October 18 week is one developing observation. Support 0.736,0.630,0.467; resistance 0.913. Nearest 0.736 support is one October 13 pivot confirmedOctober 15, not repeated proof of demand. DailyNeutral/weeklyBuy with dailyoscillatorSell are correlated summaries, not independent votes. Historical July 8 and August 4-7/10 2025 gaps retained. Adjustmentflags false do not reconcile demerger share/price continuity. ActualclockOctober 19, no fresh intradayquote or timelyentry claim.",
+      "catalysts": "[fs] Auditor emphasis: demerger into continuingArabiaInvestmentsHolding andresultingArabiaInvestmentDevelopment, with three investmenttransfers (energy, NahdaPetroleumGas, EastOweinatElectricity) incomplete because relevantpaidcapital ratio 10% below 25% minimum. This ratio is retained in transfercontext, not asserted as parentcapital 10%paid. Auditor citesFebruary 3 EGX six-monthgrace endingAugust 6 2026; currentoutcome after that deadline remainsunverified. No automaticdelisting/adverseoutcome inferred. UEFinance five-year liquiditysupportplan fromDecember 31 2025 andgoingconcernbasis are not guarantees. [board] ActualOctober 5 board ratifiesAugust 30 minutes/priorprocedures, acceptsZakariaKamelIbrahimEzzresignation and reconstitutesauditcommittee. [org] ActualOctober 6 forms 208/210 are issuerorganizationalstructure/changeforms, not regulatororders or cure ofbankconfirmation, paidcapital or transfers. [zady] ActualOctober 6 Zadyfund purchase 22.5 m at 0.834, holding 3.69% to 5.13%, publishedOctober 7. [amwal] ActualOctober 12 AmwalArabiaCotton purchase 15 m atprintedaverage 0.836, holding 9.28% to 10.25%, publishedOctober 14; total 12,545,222 printed neednotexactlyequalroundedaverageproduct. Neitherformassertsrelatedgroup. These are reportedinvestorpositions, not economicrecovery/finalbeneficialcontrol orcompanycashinflow. [fs] Externalclaimprovisions 34,824,468 have detailswithheld fornegotiations; taxnotes areperiod-specific, not currentlegalclearance. [issuer][egx] CorrectissuerdomainHTTP 500 and bounded official/list/archival coverage do not prove no additionalfilings. The earlierOkazsix-monthlead wasactually 2025 despite changingdisplaydate; preservedrouteaudit preventsusingitas 2026 release. Actualcurrent 30 pPDFnowestablishesH 1 contentseparately. [cbe] September 24 overnightdeposit 19%unchanged,nextOctober 29 MPC; notretailcashhurdle. Lendingyield/fundingrepricing, creditlosses andcustomercollections havecompetinglags. No numerical sensitivity or assumedpolicychange.",
+      "risks": "High qualitative capital/compliance, funding, credit, governance and executionrisk; no calibratedprobability. Finance 74 freshmembers,6/74 aboveSMA 50,median 20-sessionreturn-16.6354%. BroadFinance combinesbanks, insurers andproperty/holdingcompanies, so breadthcontext isnot matchedvaluationbenchmark. Broadfallingregime 229 freshalignedEGP/296 catalog,17 othercurrency. Qualifiedreview is economicuncertainty, not an invented clean-audit hardgate; neitherlossesnoraccessfailureprovepermanentimpairment.",
+      "invalidation": "Confirmedfailurebelow 0.736 support anddiagnostic 0.709 defeatpullback; newadversedebtconfirmation, capital/transfer, collection/ECL orlegalfacts caninvalidatethesis separately. No approvedstoporder.",
+      "positionReview": "Noactualpositions/fills recorded inselectedcontext, notproofcompleteoutsideaccountexposure. Actualcapital/cash/fees/risk/concentration/participationinputsnull. Noquantity, simultaneouscashallocation, portfolioVaR/CVaR orcorrelationinferred. Expiredhypotheticalpaperledgerunchanged.",
+      "entryConditions": "No approved riskPlan despite a numerically qualifying conditional diagnostic. Unchanged full builder pullback 0: zone 0.736-0.749, worstentry 0.749, stop 0.709 below 0.736 support by 0.5 WilderATR rounded; T 10.912 one tick below 0.913 resistance. Gross downside 0.040/share=5.34045%, gain 0.163, grossRR 4.075. Illustrative 0.5%roundtripcost: downside 0.043745/share=5.84045%, gain 0.159255, RR 3.64053.1%stress: downside 0.047490=6.34045%, gain 0.155510, RR 3.274584. Costs are scenarios, not actualbrokerfees or guaranteedstoploss; gaps can exceedthem. PrototypeexpiryOctober 22 00:00 Cairo andcancelon any postdecisionlow<=0.709, targettouchbeforeentry, materialadversefact or expiry. Current 0.770 close isabovezone andbearish, notlaterconfirmedbullishzoneacceptancewithRV 20>=1. Onepivotsupportandtightishvolatilitybuffer increasefalsebreakrisk. Before reconsideration require currentcure/action/valuation evidence, applicablecosts andfreshconfirmedquote/trigger, thenindependentguardedapproval. No sharequantity, fill or instruction tobuy.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "fs"
+          ],
+          "note": "All30pagesread; actualH1groupperiod andqualifiedlimitedreview retained. Exactbalance,parent/NCIprofit andCFstatementbridges; openingbalancecashdefinition51,233,823 remainsunresolved. Correctedreceivables/debt/operatingloss append-onlynotes included. No currentfairvalue or cleanassurance."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "amwal",
+            "zady",
+            "fs"
+          ],
+          "note": "All3actualQ3pagesread, preparedOctober7 2026. Quarterendinferredexplicitly. Namedholders/currentsharecount/floatquantities, noindividualmajority; boundedprintedpercentageerrors andlatertradechronology preserved."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "fs",
+            "board",
+            "org",
+            "amwal",
+            "zady",
+            "egx",
+            "issuer"
+          ],
+          "note": "Concretecurrentmaterialdocumentsread; no completeinterveningOctober19news/legal/deadlinecurecoverage. StaleOkazleadrejectedbyactualperiod, nottreatedasfreshrelease."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "fs",
+            "owners",
+            "board",
+            "org",
+            "egx"
+          ],
+          "note": "Actualdemergerapproval/capital/sharebasisread butexactexchangeeffective/ex/priceadjustment andpostAugust6paidcapital/transfercomplianceoutcome unverified. Organizationalforms/boardratificationarenotcure. No generalsuspension/dividendclearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-84f051f3-e467-4ce6-b059-f995290e4d99.json contains506 accepted daily observations through October18, captured at2026-10-18T20:54:17.085Z after persisted15:15 Cairo cutoff including900-second feed delay and buffer. Native EGP, ISIN EGS21351C019, chart EGX_DLY:AIH; issuer Arabia Investments Holding, exchange Reutersalias AIHC.CA. This is not similarly named Saudi AlArabia or the demerged company. OHLC0.830/0.840/0.763/0.770, volume46,371,616. Reproduced SMA20=0.76795, SMA50=0.686, WilderATR14=0.053257656, challenger simple14-TR mean0.057642857, RV20=1.25828054. Close is marginally aboveSMA20 and aboveSMA50, but current candle is bearish near its low. Completed October11 week close0.830/high0.913/low0.736; completed10/30-week means0.7036/0.500033. October18 week is one developing observation. Support0.736,0.630,0.467; resistance0.913. Nearest0.736 support is one October13 pivot confirmedOctober15, not repeated proof of demand. DailyNeutral/weeklyBuy with dailyoscillatorSell are correlated summaries, not independent votes. Historical July8 and August4-7/10 2025 gaps retained. Adjustmentflags false do not reconcile demerger share/price continuity. ActualclockOctober19, no fresh intradayquote or timelyentry claim."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv",
+            "owners"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-84f051f3-e467-4ce6-b059-f995290e4d99.json: inclusive20 median36,853,161.5 shares and median close-times-volume turnover proxyEGP27,127,827.569, missing raw volume0/20; latest46,371,616. RV20 uses prior20 median, not this inclusive liquidity denominator or scanner10-day relative volume0.6553. [owners] Form labels1,555,522,806 shares/99.83276% freely tradable after holder changes; classification does not prove dispersion of beneficialcontrol. It can change with named reportedpurchases. No orderbook, spread, auction, impact or fill evidence. Sharecount1558128698 is primarydated, not inferred from provider marketcap. No quantity or live execution assumed."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "AIH",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-7c1f2ce1e482055c6a516afc",
+            "document-6e5fd14ce31fae310e1ca534",
+            "document-a0679107d4da402984a278a9",
+            "document-6d9b0cf762324641ba7baccb",
+            "document-197ebcef4d8dd4a112142d5b",
+            "document-109a9bdeddac5570f9fac1b4"
+          ],
+          "alternativeTicker": "AMIA",
+          "whyThisStock": "NormalrankedscreenmomentumandliquidityleadnowchallengedbyactualH1groupaccounts, demergerandchangedownership.",
+          "whyNow": "October18bearishbarnearSMA20andmeasuredlowerpullbackzonefollowingpreviousWait; newactualsourcesresolvecontentgapsbutrevealqualifiedreview/complianceuncertainty.",
+          "mispricingMechanism": "Acrediblepostdemergercapitalandfundingresolutionwithsustainablecreditreturns couldimproveequityvalue; noquantifiedmispricinggapestablished.",
+          "bullCase": "CFstatement175.441mpositiveCFOand157.624mdebtrepaymentshown; datedinvestorpurchasesandremainingpriceaboveSMA50 canaccompanyrecovery. Qualifiedreportedfactsnotproofpermanentimpairment.",
+          "bearCase": "GroupH1loss101.568m, negativegrossmargin, liquiditysupport, incompleteinvestmenttransfersandgracefollow-upunverified; creditbookrunoff ratherthanfreshprofitablegrowthsupportsCFO. Parentcash/valueunknown.",
+          "alternativeExplanation": "Highturnover/priceappreciationmayreflectfloatreclassification, investorpositionchanges, restructuringoptionalityorspeculationratherthancurrentbusinessrecovery.",
+          "pricedIn": "ProviderPB5.886against3peermedian2.435 andstrongoldermomentumcouldalreadypriceoptimism; scopesnotmatchedandneitheraNAVtarget. CurrentlossnotautomaticallycheapnegativePE.",
+          "invalidation": "Confirmedfailurebelow0.736anddiagnostic0.709defeatcurrentpullback; adversecapital/transfer/debtconfirmationorcreditcollections caninvalidatebusinesshypothesisindependently.",
+          "whatWouldChangeMyMind": "ReadactualpostAug6compliance/transferandpaidcapitalcure, bankconfirmation, parentstandaloneandmatchedsubsidiarycredit/funding/SOTPcases,currentactionsandnewconfirmedbullishzoneacceptancewithRV20>=1 plusunchangedpricedguard.",
+          "whyBetterThanAlternative": "No superiority overAMIA established. Bothholdinggroupsneedparent/subsidiarycash, debtandminoritybridges; AMIApositivegroupprofit/OCIandfinancereceivablesdifferfromAIHpostdemergerlosses, so no universalFinancePEcomparison.",
+          "disagreementResolution": "Attractivepricedpullbacknumericsdonotoverrideunresolvedcompanyfacts orredcandleoutsidezone. CFOstatementreconcilesbutdifferentopeningbalancecashdoesnotjustifyinventedFX; lendingrunoffanddebtpaydownareconsistent.",
+          "evidenceQuality": "Actual30pqualifiedreview/companyfinancialsandallcurrentownership/trade/board/orgformsreadwithtransparentmirrorcustody. Exactratios/model/currentcureunknownremaingaps.",
+          "uncertainties": "Postdemergercomparability/actioncontinuity, cashdefinition51.233823m, currentregulatorydeadlineoutcome, subsidiarydistributions/valuationandrealcapitalcostinputs.",
+          "asOf": "2026-10-19T11:49:44.494Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-48e300ea7a709f414044ad86",
+          "recordedAt": "2026-10-19T11:49:44.494Z",
+          "digest": "48e300ea7a709f414044ad867302bf914ce7a21b7bc77f3cda64dc31f622726d"
+        },
+        "alternativeCompany": "AMIA",
+        "relativeOpportunity": "No superiority established. AMIApositivegroupprofit/OCI andleasingfundingstillneedSOTP; AIHpostdemergerlosses/transferissuesdiffer. Ownoriginaldecision-20261011-aih-universe-01 uncertainWait hasfive-sessionprice-10.5691%, besthigh+0.8130%, worstlow-14.5180%, noapprovedentry/fills/benchmark. This is notdirectionforecastaccuracy orproofWaitcorrect; companyevidenceisnowmateriallybetter andmustbejudgedafresh.",
+        "valuation": "Unavailable: needsparentstandaloneandmatchedsubsidiaryvalue/capital/distribution/minoritybridgewiththreesourcedcases, notindustrialDCF orallgroupdebtdeduction.",
+        "records": [
+          "statement-49b5863febdf13c046bf8830",
+          "document-16a744cffe7ef54fc8ac3f87",
+          "document-14ded1eeeb3079711ca42159",
+          "document-949eca9565a958ed7917b783",
+          "thesis-48e300ea7a709f414044ad86",
+          "transmission-5facd20ec7efc58dc2cf4f61",
+          "catalyst-ed2ef7641937acbfab7143d5"
+        ]
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/aih-analyst-primary-review-20261019.json",
+    "data/research/evidence/aih-analyst-analysis-bundle-20261019.json",
+    "data/research/evidence/aih-analyst-provenance-20261019.json",
+    "data/research/evidence/aih-analyst-receivables-correction-20261019.json",
+    "data/research/evidence/aih-analyst-debt-correction-20261019.json",
+    "data/research/evidence/aih-analyst-operating-loss-correction-20261019.json",
+    "data/research/evidence/aih-corrected-statement-bundle-20261019.json",
+    "data/research/evidence/aih-final-supplement-bundle-20261019.json",
+    "data/research/evidence/aih-source-date-audit-20261019.json",
+    "data/research/evidence/aih-q3-official-retrieval-audit-20261019.json",
+    "data/research/evidence/ranked-five-calculations-20261019.json",
+    "data/research/evidence/ranked-five-plan-diagnostics-20261019.json"
+  ]
+}

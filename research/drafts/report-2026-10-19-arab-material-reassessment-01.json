@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-arab-material-reassessment-01",
+  "createdAt": "2026-10-18T21:27:31.324Z",
+  "type": "research",
+  "contextId": "context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2",
+  "summary": "ARAB: Defer: new Q3 disclosure is a genuine evidence lead, but actual attachment unread, named owners and rights-adjustment chronology remain unresolved; current financials and an evidenced priced plan are missing.",
+  "limitations": [
+    "Selected two-company material-evidence reassessment; other catalog stocks remain unresearched by this analyst batch. Original decisions and forecasts preserved.",
+    "Official attachment server unavailable through web, PowerShell and Python; browser PDF rendering/download also failed. Failed access is a source gap, not adverse issuer evidence.",
+    "All market observations from TradingView parent collector. Research context is current after collector release; direct read-only chart state succeeded at EGX_DLY:AIFI 1D, analyst made no chart changes. Historical source-policy/session metadata retained unchanged; provider metadata independently supplies session/delay evidence.",
+    "No current audited/interim statement model or justified three-scenario valuation. No calibrated expected return/profit probability, no sizing, orders/fills, paper-week reopening or policy change.",
+    "AccessedAt is report compilation from actual inspected records, not exact per-browser action time; known official publication minutes retained. Default portal coverage and indexing are incomplete."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView ARAB frozen daily/weekly calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-ARAB/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "period": "confirmed2026-10-18"
+    },
+    {
+      "id": "egx",
+      "title": "EGX Arabic/English disclosure portal, notice296158 directly read",
+      "url": "https://beta.egx.com.eg/ar/media-center?tab=disclosure",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-18T15:48:00+03:00"
+    },
+    {
+      "id": "new-form",
+      "title": "Attachment345614_1 unavailable; no contents verified",
+      "url": "https://egx.com.eg/downloads/Bulletins/345614_1.pdf",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-18T15:48:00+03:00",
+      "period": "2026-09-30"
+    },
+    {
+      "id": "egm",
+      "title": "Preserved certified August13EGM; all4pages independently visually read",
+      "url": "https://egx.com.eg/downloads/Bulletins/344226_1.pdf",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-09-16T15:02:00+03:00",
+      "period": "2026-08-13"
+    },
+    {
+      "id": "rights",
+      "title": "Issuer proposed capital increase",
+      "url": "https://ad-holding.com/مجلس-إدارة-المطورون-العرب-القابضة-ي/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2025-11-02"
+    },
+    {
+      "id": "ir",
+      "title": "IssuerIR wrapper with embedded sections, no current statements extracted",
+      "url": "https://ad-holding.com/investor-relations/",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    },
+    {
+      "id": "portal",
+      "title": "Issuer-linked disclosure portal inaccessible",
+      "url": "https://ir.feedgfm.com/arab/ir/arab/en/disclosures/case/arab",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    },
+    {
+      "id": "old-earnings",
+      "title": "Issuer9M2025 operating summary; current2026accounts not established",
+      "url": "https://ad-holding.com/المطورون-العرب-تواصل-الأداء-الإيجابي/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2025-11-26",
+      "period": "2025-09-30"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ARAB",
+      "candidateId": "candidate-c369ee02-0ca8-4db2-969b-0f52a7c269a6",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: new Q3 disclosure is a genuine evidence lead, but actual attachment unread, named owners and rights-adjustment chronology remain unresolved; current financials and an evidenced priced plan are missing.",
+      "sourceIds": [
+        "tv",
+        "egx",
+        "new-form",
+        "egm",
+        "rights",
+        "ir",
+        "portal",
+        "old-earnings"
+      ],
+      "fundamentals": "[egm] August13issuedcapitalEGP2,390,296,339 and23,902,963,390issued/subscribedshares independently read; attendance51.72% is not a named majority-owner stake. [rights] November2025boardproposal10bnnewshares atEGP0.10plus1%issueexpense; latercapital corroborates enlargement but not subscription completion/ex-right/listing dates. [egx][new-form] NewQ3Article30wrapper confirms submission only; unreadPDF cannot clearowners. [ir][portal] Current2026group statements/opinion, collections, delivery costs, debt maturities, related parties and projectcashflows remainunverified. [old-earnings] Dated9M2025issuerrelease reportsrevenueEGP1.191bn,grossprofit391m,EBIT59m,netprofit159m; netprofitaboveEBITrequiresfinance/nonrecurring/taxbridge, not assumedrecurrence. This old promotionalsummary lacks current complete statements and cannot be rolled forward or annualized. ProviderP/B1.996 vs22same-industryusablepeersmedian2.923 is notundervaluation; debt/equity1.2049 vs22peer0.1361 andcurrentratio1.2338 vs22peer1.4474 needperiod/definition reconciliation. MissingPE,EPS,ROE,netincome are gaps, notlossproof. PropertyNAV/DCF unavailable withoutprojectcashflows, valuationdate, netdebt/minority bridge and verifiedcurrent shares.",
+      "technicals": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json; 506daily observations, latest 2026-10-18, capture 2026-10-18T20:54:55.822Z; EGP, ISIN EGS694A1C018, session10:00-14:30 Africa/Cairo, delay900seconds. Persisted post-close finality true with15:15Cairo cutoff; noOctober19session yet. OHLC 0.269/0.269/0.25/0.25; change-7.0632%. Reproduced SMA20=0.24960000000000004, SMA50=0.24978, WilderATR14=0.013210447237897048, RV20=2.489452937269093. Separate simple14true-range mean=0.015142857142857144 for analytical challengers, not interchangeable withWilder planATR. Completed weekOct11 close0.269, high/low0.285/0.256; completed10/30weekmean0.25120000000000003/0.22456232333333334. Oct18week has1session and is developing; weekly aggregation uses same daily data, not independent provider confirmation. Gaps 2025-07-08; no gap filling. Raw dividendsAdjustment=false/backAdjustment=false does not reconcile corporate actions. Measured120observation resistance array empty; next-session highs are not retroactive pivots. Current0.250 sits close to bothdailymeans; it fellbelowpriorweek0.256low and belowcompleted10weekmean, while still above30weekmean. Original0.238reviewlow hasnotbeenbroken; do not move original invalidation retrospectively. DailyNeutral/weeklyBuy/weeklyoscillatorSell conflict indicates horizon disagreement.",
+      "catalysts": "[egx] Official296158publishedOct18at15:48CairoforSep30Article30form. It was afterregular14:30close, soOctober18selloff cannot be causally attributed to thatdisclosurewithoutindependentprepublicevidence. ActualPDF345614_1unread. [egm] Headquarters/Article4change formallycertified; substantivebusinessvaliditynotendorsedbyFRA. [rights] Intendedfundingconstruction/delivery accelerationremainsexecutionhypothesis; actualproceedsdeployment notverified. Structuredcatalog recordsnewdisclosure as ownership-evidencelead withunknownimpact/expectations. CBEauthoritativeSep24overnightdeposit19%sharedrecord ismonetarypolicy, notretailcashhurdle; company-specificfunding/affordabilityhypothesisregistered withunknownsensitivity. Oct29meeting ispotentialmacrocheckpoint, notautomaticbullishcatalyst.",
+      "risks": "High qualitativeevidence/action/project-financingrisk; verylowunitpricemeansEGP0.001tickis0.4%of0.250andcanmatterformicrogeometry. Current0.250closeatdaylowon622.6msharesisweakparticipationstructure, notproofofdistribution. Broadanalyticalregime is fallingtrend; freshalignedEGP229/296catalog, othercurrency17. Sectorbreadth 6/74FinanceaboveSMA50withmedian20return-16.635%; thisbroadbucketmixesbanks/propertyandisnotpropertyindex. Price-onlyreturns lack matchedtotalreturnbenchmark. No calibratedprobability oruniversalPEranking.",
+      "invalidation": "Original0.238reviewlow and0.200-0.205structuralarea retained as thesis review conditions, notapprovedstops. Latestweek0.256break weakenstimingscenario earlier; do not retrospectivelyrewriteoriginalthreshold. Adverse financial/actionfacts couldinvalidatecompanythesis independently.",
+      "positionReview": "Currentfrozencontextcontains0recordedactualpositions/fills; no exits to manage inrecord. Journalcompletenessnotguaranteed. Realcapital,cash,costsandrisklimitsnull; historicalpaperEGP20,000neverusedforrealsizing. WholeportfolioVaR/CVaR,corr/sectorcapacitycannotbeverifiedwithoutcompleteholdingsandlimits. No numericalshares.",
+      "entryConditions": "No approvedentry,riskPlan orRR. Deterministicpullbackindex0attemptfrommarketcontext-3f6a344b-2e28-406b-99a7-6af9c2f93c72, illustrative0.5%roundtripcost, expiry2026-10-26T00:00+03:00, rejectedbecause measuredtargetunavailable. Finalcontextsamebarsandlevels. No arbitrarytargetorstop substituted. Requireallcurrentprimarygapsclosed, measuredsupport/resistance, subsequentaccepteddailyconfirmationandRV20>=1, thenfullpriced-plan1.0andindependentfinalreview. Unknownbrokerfeesrequireexplicit0.5%/highercoststresswhenplanexists; currentlyno validgain/lossratio. Days-to-weeksswingtimingdeferred;20sessionmediumthesishypothesisonly.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "ir",
+            "portal",
+            "old-earnings"
+          ],
+          "note": "Currentcompletefinancialsandopinionunread; noauditablevaluation. [egm] August13issuedcapitalEGP2,390,296,339 and23,902,963,390issued/subscribedshares independently read; attendance51.72% is not a named majority-owner stake. [rights] November2025boardproposal10bnnewshares atEGP0.10plus1%issueexpense; latercapital corroborates enlargement but not subscription completion/ex-right/listing dates. [egx][new-form] NewQ3Article30wrapper confirms submission only; unreadPDF cannot clearowners. [ir][portal] Current2026group statements/opinion, collections, delivery costs, debt maturities, related parties and projectcashflows remainunverified. [old-earnings] Dated9M2025issuerrelease reportsrevenueEGP1.191bn,grossprofit391m,EBIT59m,netprofit159m; netprofitaboveEBITrequiresfinance/nonrecurring/taxbridge, not assumedrecurrence. This old promotionalsummary lacks current complete statements and cannot be rolled forward or annualized. ProviderP/B1.996 vs22same-industryusablepeersmedian2.923 is notundervaluation; debt/equity1.2049 vs22peer0.1361 andcurrentratio1.2338 vs22peer1.4474 needperiod/definition reconciliation. MissingPE,EPS,ROE,netincome are gaps, notlossproof. PropertyNAV/DCF unavailable withoutprojectcashflows, valuationdate, netdebt/minority bridge and verifiedcurrent shares."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "new-form",
+            "egm"
+          ],
+          "note": "Newwrapperonly; actualQ3registerunread, meetingattendanceisnotownership."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "new-form"
+          ],
+          "note": "Specificnewprimarynoticesread; default/indexingbounded, actualattachmentsunread. No comprehensivenews/legalclearance. [egx] Official296158publishedOct18at15:48CairoforSep30Article30form. It was afterregular14:30close, soOctober18selloff cannot be causally attributed to thatdisclosurewithoutindependentprepublicevidence. ActualPDF345614_1unread. [egm] Headquarters/Article4change formallycertified; substantivebusinessvaliditynotendorsedbyFRA. [rights] Intendedfundingconstruction/delivery accelerationremainsexecutionhypothesis; actualproceedsdeployment notverified. Structuredcatalog recordsnewdisclosure as ownership-evidencelead withunknownimpact/expectations. CBEauthoritativeSep24overnightdeposit19%sharedrecord ismonetarypolicy, notretailcashhurdle; company-specificfunding/affordabilityhypothesisregistered withunknownsensitivity. Oct29meeting ispotentialmacrocheckpoint, notautomaticbullishcatalyst."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "rights",
+            "egm",
+            "new-form"
+          ],
+          "note": "Capitalenlargementcorroborated; subscriptioncompletion,entitlement,ex-right/effective/listingdatesandadjustedhistoricalseriesunreconciled. No comprehensive dividend/suspensionclearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json; 506daily observations, latest 2026-10-18, capture 2026-10-18T20:54:55.822Z; EGP, ISIN EGS694A1C018, session10:00-14:30 Africa/Cairo, delay900seconds. Persisted post-close finality true with15:15Cairo cutoff; noOctober19session yet. OHLC 0.269/0.269/0.25/0.25; change-7.0632%. Reproduced SMA20=0.24960000000000004, SMA50=0.24978, WilderATR14=0.013210447237897048, RV20=2.489452937269093. Separate simple14true-range mean=0.015142857142857144 for analytical challengers, not interchangeable withWilder planATR. Completed weekOct11 close0.269, high/low0.285/0.256; completed10/30weekmean0.25120000000000003/0.22456232333333334. Oct18week has1session and is developing; weekly aggregation uses same daily data, not independent provider confirmation. Gaps 2025-07-08; no gap filling. Raw dividendsAdjustment=false/backAdjustment=false does not reconcile corporate actions. Measured120observation resistance array empty; next-session highs are not retroactive pivots. Current0.250 sits close to bothdailymeans; it fellbelowpriorweek0.256low and belowcompleted10weekmean, while still above30weekmean. Original0.238reviewlow hasnotbeenbroken; do not move original invalidation retrospectively. DailyNeutral/weeklyBuy/weeklyoscillatorSell conflict indicates horizon disagreement."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json; rawlatestvolume622556030, inclusive20median265918889shares, median(close×sharesvolume)EGP67270832.70500001; last20missingvolumes0. RV20denominator is previous20median, not inclusivemedian; scannerrelative10d is a different series. Positive volume is observed participation, not buyer identity. No spread/depth/auction/market-impact assurance. Action adjustments can affect old volumes; no share-capacity proposal withoutapprovedlimits."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "ARAB",
+          "horizonSessions": 20,
+          "family": "catalyst",
+          "documentIds": [
+            "document-4641e90b613e9910fb98682b",
+            "document-1d7cdd33d3ab30bd32537a1a",
+            "document-c54450f1d22665d4fa7658d1"
+          ],
+          "alternativeTicker": "TMGH",
+          "whyThisStock": "Selected for specific dated primary evidence connected to the original Wait, not assumed cheapness.",
+          "whyNow": "NewQ3form lead is a material evidence opportunity, not numerical score reuse.",
+          "mispricingMechanism": "Potential confidence recovery if transparent financial/capital facts substantiate operating value. This is an unverified mechanism, not evidence of undervaluation.",
+          "bullCase": "Equity-funded delivery execution could improve cash conversion and sustain a rebound; original EGM confirms enlarged capital.",
+          "bearCase": "Current financials/owners and rights adjustment unverified; October18closeatdaylow onhighvolume weakens immediate continuation.",
+          "alternativeExplanation": "Price momentum/rerating can arise from speculation or broad liquidity without improved operating cash generation; high volume identifies neither buyer nor seller intent.",
+          "pricedIn": "Recent price advance may incorporate expected improvement; consensus/expectations magnitude unknown. Freshclose alone cannot isolate disclosure effect.",
+          "invalidation": "Adverse verified accounts, action adjustments or failed confirmed structure invalidate prospective continuation; no executable stop until guarded plan approval.",
+          "whatWouldChangeMyMind": "Current complete statements/opinions plus dated action/ownership reconciliation, then suitable confirmed structure and fullpriced-plan gate.",
+          "whyBetterThanAlternative": "No established superiority versus TMGH. Same-sector candidate is a distinct opportunity-cost comparator requiring its own full due diligence; current missing valuation/cash inputs prevent ranking.",
+          "disagreementResolution": "Momentum supports research interest but cannot clear missing economics/actions; defer. No overhead pivot is a framework limitation, not proof of no upside.",
+          "evidenceQuality": "Mixed: primary notices and original scanned documents read; current statements and specific new attachments inaccessible.",
+          "uncertainties": "No current intrinsic value, calibrated probability, expected return, full portfolio or share sizing. Original uncertain20sessionforecast preserved; realized price path is not directional accuracy.",
+          "asOf": "2026-10-18T21:24:48.215Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-59045448a99da9b2bec27f0e",
+          "recordedAt": "2026-10-18T21:24:48.215Z",
+          "digest": "59045448a99da9b2bec27f0e4598f64f19419a42449556d2a0ea2626d8c6cacb"
+        },
+        "valuationsStatus": "Unavailable; input/scope/action/model gaps preserved. No inventedsharesorforecasts.",
+        "priorCases": "OriginalWait20261012has4observedsessionsfromnextsessionbaseline, -9.4203%pricepath; neither successproof norcompleted20sessionforecast. RelevantMASR/propertyWaitfell10.43%over6sessionsandAJWAWaitrose9.56%over5: bothpathsraisequestionswithoutvalidatingpolicy.",
+        "alternative": "TMGHdistinctpropertyalternative; no relativevaluationsuperiorityestablished."
+      },
+      "cashClassification": {
+        "unresolvedResearchAndData": "Thiscandidateisdeferredforexplicitgaps.",
+        "rejectedSetup": "Currentpriced-planbuilderhasnomeasuredtarget; companynotpermanentlyrejected.",
+        "untriggeredApprovedEntry": "None; noapprovedentry.",
+        "requiredReserve": "Unknown; realcapital/limitsnotconfigured.",
+        "unresearchedUniverse": "Otherqueuedcandidatesareunfinishedwork, notdecisions toretaincash."
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/arab-ajwa-primary-reassessment-20261019.json",
+    "data/research/evidence/arab-ajwa-calculations-20261019.json",
+    "data/research/evidence/arab-ajwa-analysis-bundle-20261019.json"
+  ]
+}

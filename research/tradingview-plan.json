@@ -1,0 +1,11 @@
+{
+  "plan": "Basic",
+  "confirmedBy": "User, 2026-10-09",
+  "checkedAt": "2026-10-09",
+  "priceAlertLimit": 3,
+  "webhooks": false,
+  "technicalAlerts": false,
+  "monitoringChoice": "Investigate local monitoring while the PC is on",
+  "source": "https://www.tradingview.com/pricing/",
+  "note": "Local prepared rules are not active TradingView alerts. No upgrade or hosting purchase is authorized. Market-data delay is separate from alert-plan features."
+}

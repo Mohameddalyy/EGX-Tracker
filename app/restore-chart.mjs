@@ -1,0 +1,4 @@
+import {getState,setSymbol,setTimeframe} from '../integrations/tradingview-mcp/src/core/chart.js';
+import {ready} from './chart-readiness.mjs';
+const original=JSON.parse(process.env.EGX_RESTORE_CHART||'null');if(!original?.symbol||!original.resolution)throw Error('Saved chart state required');
+try{await setSymbol({symbol:original.symbol,_deps:{waitForChartReady:ready}});await setTimeframe({timeframe:original.resolution,_deps:{waitForChartReady:ready}});const valid=await ready(original.symbol,original.resolution),state=await getState();const verified=valid&&state.symbol===original.symbol&&state.resolution===original.resolution&&state.chartType===original.chartType;console.log(JSON.stringify({verified,symbol:state.symbol,resolution:state.resolution,chartType:state.chartType}));process.exit(verified?0:1);}catch(e){console.error(e.message);process.exit(1);}

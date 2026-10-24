@@ -1,0 +1,10 @@
+import {writeFileSync,mkdirSync} from 'node:fs';
+const columns=['name','description','type','exchange','currency','close','volume','sector'];
+const url='https://scanner.tradingview.com/egypt/scan';
+const response=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filter:[{left:'exchange',operation:'equal',right:'EGX'},{left:'type',operation:'equal',right:'stock'}],columns,range:[0,2000],sort:{sortBy:'name',sortOrder:'asc'}}),signal:AbortSignal.timeout(30000)});
+if(!response.ok)throw Error('TradingView catalog HTTP '+response.status);
+const raw=await response.json();if(!Array.isArray(raw.data)||raw.data.length!==raw.totalCount||!raw.data.length)throw Error('Incomplete market catalog; pagination or provider response needs review');
+const stocks=raw.data.map(row=>Object.fromEntries([['symbol',row.s],...columns.map((k,i)=>[k,row.d[i]])]));
+if(stocks.some(s=>s.exchange!=='EGX'||s.type!=='stock'||!s.symbol.startsWith('EGX:')))throw Error('Unexpected catalog identity');
+mkdirSync('data/market',{recursive:true});writeFileSync('data/market/catalog.json',JSON.stringify({source:url,retrievedAt:new Date().toISOString(),totalCount:raw.totalCount,stocks},null,2));
+console.log(JSON.stringify({count:stocks.length,currencies:[...new Set(stocks.map(s=>s.currency))],invalidSymbols:stocks.filter(s=>!/^[A-Z][A-Z0-9-]{1,23}$/.test(s.name)).map(s=>s.name),path:'data/market/catalog.json'}));

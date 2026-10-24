@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-oras-universe-formal-01",
+  "createdAt": "2026-10-11T08:31:06.730Z",
+  "type": "research",
+  "contextId": "context-d0144510-26c6-4494-b408-6b54b83848d2",
+  "summary": "ORAS: Insufficient evidence; analyst defer. Defer despite credible growing operations and strong trend: cash conversion weakened, the OCI combination creates unresolved event/dilution exposure, complete October actions/control changes are not cleared, and877.02 reference is too close to890 measured resistance for a defensible immediate plan.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-oras",
+      "title": "TradingView ORAS; market observations frozen in context-d0144510-26c6-4494-b408-6b54b83848d2",
+      "url": "https://www.tradingview.com/symbols/EGX-ORAS/",
+      "accessedAt": "2026-10-11T08:31:06.727Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "oras-fs",
+      "title": "Issuer H1 consolidated reviewed financial statements; KPMG conclusion13August2026",
+      "url": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "period": "six months ended2026-06-30",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    },
+    {
+      "id": "oras-results",
+      "title": "Issuer H1 results announcement14August2026",
+      "url": "https://orascom.com/updates/orascom-construction-reports-backlog-of-usd-10-9-billion-and-ebitda-of-usd-92-6-million-in-q2-2026-bringing-ebitda-to-usd-200-9-million-in-h1-2026/",
+      "publishedAt": "2026-08-14",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    },
+    {
+      "id": "oras-nns",
+      "title": "Nassef Sawiris beneficial holding disclosure; actual text dated8May2026 despite filename",
+      "url": "https://orascom.com/wp-content/uploads/Shareholding-Disclosure_NNS_080525.pdf",
+      "publishedAt": "2026-05-08",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    },
+    {
+      "id": "oras-fund",
+      "title": "Sustainable Capital holding disclosure",
+      "url": "https://orascom.com/wp-content/uploads/Shareholding-Disclosure-Sustainable-Capital.pdf",
+      "publishedAt": "2026-06-26",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    },
+    {
+      "id": "oras-oci",
+      "title": "Issuer proposed OCI combination update",
+      "url": "https://orascom.com/updates/update-on-proposed-combination-with-oci-global/",
+      "publishedAt": "2026-07-07",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    },
+    {
+      "id": "oras-ir",
+      "title": "Issuer investor archive read including public financial links",
+      "url": "https://orascom.com/investors/",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    },
+    {
+      "id": "oras-agm",
+      "title": "April20 board resolution to convene May13 AGM, not an action clearance",
+      "url": "https://orascom.com/wp-content/uploads/Board-Resolution-AGM-May-2026.pdf",
+      "publishedAt": "2026-04-20",
+      "accessedAt": "2026-10-11T08:31:06.727Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ORAS",
+      "candidateId": "candidate-e73b40c6-3a00-41ad-b2f5-0db4dcac4a8e",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer despite credible growing operations and strong trend: cash conversion weakened, the OCI combination creates unresolved event/dilution exposure, complete October actions/control changes are not cleared, and877.02 reference is too close to890 measured resistance for a defensible immediate plan.",
+      "sourceIds": [
+        "tv-oras",
+        "oras-fs",
+        "oras-results",
+        "oras-nns",
+        "oras-fund",
+        "oras-oci",
+        "oras-ir",
+        "oras-agm"
+      ],
+      "fundamentals": "[oras-fs] H1 consolidated USD millions, unlike EGP trading price: revenue2,978.0 versus1,955.9; attributable profit115.3 versus82.7; CFO−54.5 versus+26.2. Cash1,230.1, debt499.1, current assets4,591.7/current liabilities4,397.8. Receivable expansion drove cash absorption; KPMG13August limited-review conclusion unmodified, not an audit. Reviewed in web text and local tmp/pdfs/oras-h1-2026.pdf; conclusion/balance sheet visually inspected. Material litigation and related-party notes read; no assumption all claims resolved. Scanner PE8.49/ROE26.57% are provider snapshots, not an independently reconciled EGP/USD valuation. [oras-nns] May8 Nassef beneficial stake43.95%; internal transfer30.66% did not change beneficial ownership. [oras-fund] June26 Sustainable Capital14.98%, reduced from15.84%. No single majority established; complete current family/control register and later changes remain unverified.",
+      "technicals": "[tv-oras] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T08:17:13.653Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close877.02, SMA20=834.6745, SMA50=799.5390, ATR14=29.9687, RV20=4.3033. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means816.1530/711.9303, latest weekly high/low894/814. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[oras-results] August14 issuer reports10.9bnUSD backlog,4.8bnH1 awards, data-center portfolio over2GW and progress toward900MW wind financial close; these do not ensure cash realization. [oras-oci] July7 extends proposed combination long-stop to30December2026, unchanged0.4634 ORAS shares per OCI share and expectedQ4 process; conditional, not completed. New-share dilution and combined-company valuation require updated evidence.",
+      "risks": "High qualitative event/swing risk: negative operating cash conversion despite profit growth, receivable/funding/FX exposure, litigation and conditional merger. Observed cash cannot be assumed freely distributable across all entities. Corporate-action terms and current control need updating. No fair value from PE alone or invented FX conversion.",
+      "invalidation": "Continuation monitoring fails on a later confirmed break below763 September30 low, or worsening collection/funding/merger conditions.890 historical resistance remains relevant despite intraday894 high; a high touch is not accepted closing breakout. These are monitoring conditions, not a stop order.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry or priced plan. Verify subsequent OCI regulatory/shareholder/closing developments, post-June holdings and complete dividend/capital actions. Await a confirmed breakout/retest or materially better pullback geometry, then rebuild priced-plan from frozen bars.877.02 reference to890 resistance gives12.98EGP upside versus29.97ATR and much wider structural risk; do not force a distant target. All trading amounts nativeEGP; financial accounts USD.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "oras-fs",
+            "oras-results"
+          ],
+          "note": "Consolidated H1June2026 statements, cashflow, leverage, actual KPMG13August conclusion and material notes inspected. Unmodified limited review, not audited. Currency distinction preserved; no numerical fair value asserted. Complete investment valuation would need FX/per-share and merger reconciliation."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "oras-nns",
+            "oras-fund",
+            "oras-ir"
+          ],
+          "note": "Dated primary major-holder changes verified:43.95% beneficial NassefMay8 and14.98% fundJune26. Complete current family/control register, later changes and post-merger structure not verified."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "oras-results",
+            "oras-oci",
+            "oras-ir"
+          ],
+          "note": "Current issuer H1 operational update and July7 merger update read. Subsequent October merger/regulatory status and full exchange sweep not established."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "oras-oci",
+            "oras-fs",
+            "oras-agm",
+            "oras-ir"
+          ],
+          "note": "Conditional new-share combination terms verified but completion absent; MayAGM convening document is not proof of all subsequent actions. Complete October dividend/capital/suspension review unavailable."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-oras"
+          ],
+          "note": "[tv-oras] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T08:17:13.653Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close877.02, SMA20=834.6745, SMA50=799.5390, ATR14=29.9687, RV20=4.3033. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means816.1530/711.9303, latest weekly high/low894/814. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-oras"
+          ],
+          "note": "[tv-oras] Inspected raw volumes and finality in data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; latest729229 shares,20-observation median169458.5, median close-times-volume turnoverEGP144008777.36;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "asOf": "2026-10-23",
+  "timezone": "Africa/Cairo",
+  "scope": "Read-only Phase 2 capability probes; no production imports or decisions",
+  "health": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"cdp_connected\": true,\n  \"target_id\": \"EA005A41BF69B9E22793B9455B01789D\",\n  \"target_url\": \"https://www.tradingview.com/chart/TND9491V/\",\n  \"target_title\": \"Live stock, index, futures, Forex and Bitcoin charts on TradingView\",\n  \"chart_symbol\": \"EGX_DLY:AIFI\",\n  \"chart_resolution\": \"1D\",\n  \"chart_type\": 1,\n  \"api_available\": true\n}"
+      }
+    ]
+  },
+  "symbol": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"symbol\": \"AIFI\",\n  \"full_name\": \"EGX_DLY:AIFI\",\n  \"exchange\": \"EGX\",\n  \"description\": \"Atlas for Investment & Food Industries SAE\",\n  \"type\": \"stock\",\n  \"pro_name\": \"EGX:AIFI\",\n  \"typespecs\": [\n    \"common\"\n  ],\n  \"resolution\": \"1D\",\n  \"chart_type\": 1\n}"
+      }
+    ]
+  },
+  "quote": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"symbol\": \"EGX_DLY:AIFI\",\n  \"time\": 1792652400,\n  \"open\": 1.95,\n  \"high\": 1.97,\n  \"low\": 1.87,\n  \"close\": 1.97,\n  \"last\": 1.97,\n  \"volume\": 4746945,\n  \"description\": \"Atlas for Investment & Food Industries SAE\",\n  \"exchange\": \"EGX\",\n  \"type\": \"stock\"\n}"
+      }
+    ]
+  },
+  "minute": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"bar_count\": 3,\n  \"total_available\": 542,\n  \"source\": \"direct_bars\",\n  \"bars\": [\n    {\n      \"time\": 1792667580,\n      \"open\": 1.91,\n      \"high\": 1.91,\n      \"low\": 1.91,\n      \"close\": 1.91,\n      \"volume\": 200000\n    },\n    {\n      \"time\": 1792667640,\n      \"open\": 1.91,\n      \"high\": 1.97,\n      \"low\": 1.91,\n      \"close\": 1.97,\n      \"volume\": 591962\n    },\n    {\n      \"time\": 1792668360,\n      \"open\": 1.97,\n      \"high\": 1.97,\n      \"low\": 1.97,\n      \"close\": 1.97,\n      \"volume\": 8000\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "browserObservations": [
+    {
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "observed": "2026-10-23",
+      "status": "Rendered disclosure list and detail verified",
+      "detail": "PRDC disclosure 296431 published Oct 22 2026 15:32 Cairo, ISIN EGS21FW1C015, treasury-stock purchase notice, link to https://egx.com.eg/downloads/Bulletins/345933_1.pdf. Linked attachment not retrieved through web tool. Feed continuity/full historical coverage not tested."
+    },
+    {
+      "url": "https://www.tradingview.com/symbols/EGX-COMI/documents/",
+      "observed": "2026-10-23",
+      "status": "Dated filings list verified",
+      "detail": "Quarterly earnings releases, presentations and reports visible. Sample Q2 FY2026 release dated July 20."
+    },
+    {
+      "url": "https://www.tradingview.com/document/EGX-COMI/urn:report:quartr.com:4330186/",
+      "observed": "2026-10-23",
+      "status": "Provider AI summary visible; original document body unverified",
+      "detail": "Quartr disclaimer explicitly describes AI-generated summary. Read full document button produced no accessibility-state change. Summary is discovery only, not verified issuer financial evidence."
+    },
+    {
+      "url": "https://www.tradingview.com/symbols/EGX-COMI/financials-statistics-and-ratios/",
+      "observed": "2026-10-23",
+      "status": "Page exists; reliable numerical extraction not established in public browser session",
+      "detail": "Historical locked cells and dash cells observed; this does not establish Desktop account entitlement."
+    }
+  ],
+  "chartReadNotes": {
+    "weekly": "AIFI 1W read succeeded",
+    "minute": "AIFI one-minute read succeeded; sample timestamps include 12-minute gap",
+    "depth": "depth_get returned DOM/Depth of Market panel not found. Does not prove unavailable with every configuration.",
+    "restoration": "chart_get_state verified EGX_DLY:AIFI, resolution 1D, original Volume study pI9u09 after probes"
+  },
+  "catalogDifference": {
+    "production": 296,
+    "scanner": 294,
+    "missingFromScanner": [
+      "HALN",
+      "RMTV"
+    ],
+    "new": [],
+    "conclusion": "Do not infer delisting; retain and reconcile identities."
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-adci-ranked-primary-01",
+  "createdAt": "2026-10-19T10:00:13.827Z",
+  "type": "research",
+  "contextId": "context-224a521e-e481-464b-be8c-ae7f2964ac8a",
+  "summary": "ADCI: Defer after substantive primary research. Positive cash generation and reconciled EPS do not overcome current cost-gate failure and unresolved audit/action/value uncertainties.",
+  "limitations": [
+    "Selected normal ranked candidate, not research of all62 matches or296 companies. Other three active dossiers and catalog backlog remain unfinished.",
+    "Issuer-linked actual accounts and underlying issuer/auditor archived scans evaluated by content, identity, dates and consistency. Transparent mirror custody is not an invented original-host hash gate.",
+    "Audit date/filename and archive date-only labels are not verified exact first-publication minutes. No intraday availability inference.",
+    "Actual source access times and creation timestamps are October19 after documented Battery sleep; original confirmed market evidence remains October18. No current October19 quote or timely execution claim.",
+    "Relevant pages as documented in primary-review artifact read; generic policies are not claimed comprehensively audited. No numerical fair value, sizing or clean-opinion requirement invented."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView ADCI confirmed October18 market evidence",
+      "url": "https://www.tradingview.com/symbols/EGX-ADCI/",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "accounts",
+      "title": "Actual FY2026 accounts, issuer-linked MIST PDF",
+      "url": "https://mistnews.com/mistsat/companies/mezanyat/2026/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A927-9-226.pdf",
+      "publishedAt": "2026-09-27",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "issuer",
+      "title": "ADCI issuer investor relations and observed financial archive chain",
+      "url": "https://www.adcopharma-eg.com/InvestorRelations.aspx?Lid=6",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "owners",
+      "title": "September30 Article30 actual issuer scan, prepared October5",
+      "url": "https://foudalens.com/disclosures/ADCI.CA/board_agm/2026-10-06_295604_1.pdf",
+      "publishedAt": "2026-10-06",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "cao",
+      "title": "CAO September29 qualified financial opinion",
+      "url": "https://foudalens.com/disclosures/ADCI.CA/other/2026-09-30_295344_1.pdf",
+      "publishedAt": "2026-09-30",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "reply",
+      "title": "October13 company response to CAO, published October14",
+      "url": "https://foudalens.com/disclosures/ADCI.CA/other/2026-10-14_295955_1.pdf",
+      "publishedAt": "2026-10-14",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "agm",
+      "title": "October29 AGM invitation and proposed allocation/wages",
+      "url": "https://foudalens.com/disclosures/ADCI.CA/board_agm/2026-10-04_295525_1.pdf",
+      "publishedAt": "2026-10-04",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "reg",
+      "title": "October4 organizational forms208/210",
+      "url": "https://foudalens.com/disclosures/ADCI.CA/other/2026-10-04_295526_2.pdf",
+      "publishedAt": "2026-10-04",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "budget",
+      "title": "Issuer September13 results and management FY26/27 budget article",
+      "url": "https://www.adcopharma-eg.com/NewsDetails.aspx?ID=30",
+      "publishedAt": "2026-09-13",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "egx",
+      "title": "Official EGX News Center disclosure route; bounded earlier source checks",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    },
+    {
+      "id": "cbe",
+      "title": "CBE policy decision September24 and October29 meeting schedule, authoritative saved record",
+      "url": "https://www.cbe.org.eg/en/monetary-policy/monetary-policy-decisions",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-10-19T10:00:13.827Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ADCI",
+      "candidateId": "candidate-27ebfb08-c6dc-4c6c-9b86-39e141596572",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Recovered accounts and dated majority ownership support profitable cash generation; contested audit findings, action continuity and unsupported normalized forecasts remain. Current measured cost-adjusted reward/risk independently fails the existing2:1 gate.",
+      "sourceIds": [
+        "tv",
+        "accounts",
+        "issuer",
+        "owners",
+        "cao",
+        "reply",
+        "agm",
+        "reg",
+        "budget",
+        "egx",
+        "cbe"
+      ],
+      "fundamentals": "[accounts] Actual standalone July1 2025-June30 2026 accounts, EGP units: revenue1,370,264,736; gross profit524,911,964; net profit264,708,575 versus227,857,702 (+16.17% approximately). Assets1,529,883,110 equal liabilities778,607,101 plus equity751,276,009 exactly; prior equity619,743,182. CFO259,235,864 is97.93% of reported profit. Printed investing-107,739,879 and financing-233,920,479 do not alone bridge opening cash79,278,892 to closing119,729,951: separately printed overdraft proceeds122,875,554 reconcile within EGP1. This is not an inferred FX adjustment. Capex106,292,090 excludes separate machinery letters-of-credit cash. Loans286,474,143 plus overdraft227,111,274 and separate leases5,888,368 create meaningful funding exposure. Inventory366,795,622 versus327,716,226 ties up working capital. [accounts][cao] Kreston Salem September24 unmodified opinion coexists with separate CAO September29 qualified opinion. Tax provision12.3m versus disputed demands110.7m, absent EAS47 study at audit,37.4m unshipped export invoices/returns estimation and omitted4% treasury allocation are substantive uncertainties. They do not by themselves prove fraud or require an automatic clean-audit gate. [reply] Management claims76.6m payments,31m potential deductions and about3m residual exposure; no tax settlement verified. Later ECL study incremental about360k is management deemed immaterial and deferred to a future period, not an adopted FY restatement. Bill-and-hold B79-81 argument and August/October shipment table do not independently prove year-end control-transfer criteria. Do not mechanically subtract gross invoice value from net profit. [accounts][owners] Note17 and actual September30 form corroborate12m shares at10par, paid capital120m. Prior capital60m became120m through retained profits; exact market bonus/ex/listing dates remain unverified. Note40 EPS after employee/board allocations is232,383,244/12m=19.36527, displayed19.37, matching provider19.3653. Raw net profit/share22.059 is not this EPS. Board activity report263.6m transcription is superseded for extraction by actual statement264,708,575; preserved originals remain. [owners] Pharma Holding7,236,238/60.302% is a named majority; employee union1,199,998/10%, Nazih Zaki Badwany Semaan813,000/6.775%; no related-control aggregation assumed. Float28.843% and no treasury holding shown. [tv] Provider PE13.3228 versus4 same-industry peers median22.4344; PB4.12099 versus8 median6.44864; ROE33.899% versus3 median26.0198%; D/E0.74574 versus8 median0.18734. Differing fiscal dates and normalization limit comparisons. Lower multiples can compensate for leverage, governance/control and audit uncertainty. [budget] Management FY26/27 budget291m profit and1.652bn sales assumes56EGP/USD; it is neither actual FX nor a supported three-scenario forecast. Historical audited facts and one budget do not justify a numerical fair value or industrial DCF without sourced normalized margins, reinvestment, discount rate and terminal ROIC.",
+      "technicals": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-224a521e-e481-464b-be8c-ae7f2964ac8a.json contains 506 accepted daily observations through October18, captured at 2026-10-18T20:53:57.631Z after the persisted 15:15 Cairo post-close, 900-second feed-delay and buffer cutoff. Identity EGS38321C013, EGP, EGX_DLY:ADCI. OHLC 260.19/267.33/256/258, volume 2,842. Reproduced SMA20 271.8285, SMA50 286.1524, Wilder ATR14 11.2406464 and challenger simple mean of14 true ranges 11.2628571. RV20 0.4006767 shows weak participation, not accumulation. Price is below both daily means. Completed October11 week closed260.19 with275/250.06 high/low; completed10/30-week means284.5/236.9043. October18 week has one developing observation and is not a completed weekly confirmation. Measured support245-250.06, then230 and211; resistance278,309 and315. Daily Sell and weekly Neutral, moving averages daily Strong Sell/weekly Buy are correlated summaries of the same observations. No current broker consensus target was independently established. July8 2025 history gap is retained. Adjustment flags do not establish action continuity. The actual clock is October19 during its session; these are confirmed October18 observations, not an October19 intraday quote or timely entry signal.",
+      "catalysts": "[agm] October29 2026 at16:00 Cairo, Memphis: FY accounts, audit/governance, proposed distribution and wages. FiveEGP/share is a proposal, about1.94% of258, not an approved dividend or entitlement/ex/payment date. Proposed10% periodic raise plus5% monthly base grant and EGP8,000 minimum fromJuly1 affect future costs if ratified. Management proposes the omitted4% treasury allocation amendment. [reply] October13 management response published October14 is a concrete new counterargument to CAO, not independent cure. [reg] All four organizational forms208/210 pages describe roles and commercial oversight changes; they are not capital-action clearance. [egx] Earlier bounded official checks and actual selected documents do not establish a complete October19 news/legal/suspension sweep. No absence-of-filing inference. [cbe] September24 unchanged overnight deposit19% and October29 MPC are policy facts, not retail cash hurdle. Company debt includes fixed8% GMP and Eurobor-linked funding; imports/exports and regulated prices create offsetting FX/rate channels. No quantified sensitivity or universal bullish sign.",
+      "risks": "High qualitative accounting, funding, event and execution risk; no calibrated probability. HealthTechnology sector has1/11 aboveSMA50, median20-session return-21.0234%; ADCI-8.0771% is relatively resilient but negative and not benchmark alpha. Broad falling regime uses229 fresh aligned EGP stocks of296 catalog, with17 other-currency members excluded from that comparison. Concentrated control can coexist with a listed float. Audit disputes require economic assessment rather than automatic Avoid.",
+      "invalidation": "Confirmed close below245 defeats the current support thesis;239.37 is an unapproved diagnostic boundary. Adverse tax, ECL, revenue-recognition, cash or capital facts can invalidate the business thesis independently of price.",
+      "positionReview": "Final context records no actual positions/fills, but journal completeness is not assumed. Actual capital, cash, broker costs and authorized risk/concentration/participation inputs are null. No quantity, portfolio risk calculation or claim of zero outside exposure. Expired hypothetical paper ledger remains separate and unchanged.",
+      "entryConditions": "No approved riskPlan. Unchanged deterministic pullback0 diagnostic from initial context-a53799a2-f3d2-4a32-a460-1c73ee6df81c: entry zone250.06-252.87, worst entry252.87, stop239.37 below support245 by0.5 Wilder ATR (rounded), first target277.99 below278 resistance. Gross downside13.50/share=5.34%; gross T1 reward/risk1.86074. Illustrative0.5% round-trip cost yields T1RR1.61576;1% stress1.40943, both below required2. These are cost scenarios, not actual fees or guaranteed stop losses. Prototype expiry October22 00:00 Cairo is conservative and would require complete repricing afterward. Current close258 is above zone; weak-volume bearish daily structure does not satisfy subsequent bullish zone acceptance with RV20>=1. Required before reconsideration: current source/action checks, quote/session recapture, confirmed acceptance, measured geometry meeting cost gate and independent final approval. Cancel on confirmed support failure, adverse tax/revenue/capital evidence or expiry. No capital-based quantity supplied.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "accounts",
+            "cao",
+            "reply",
+            "budget"
+          ],
+          "note": "Full actual main statements and relevant notes read, balance exact, full cash bridge within EGP1 after separate overdraft flow; EPS allocation reconciled. Dual assurance and contested management responses preserved. Forward valuation unavailable."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "accounts"
+          ],
+          "note": "Actual dated five-page Article30 form identifies named60.302% majority, other major holders, float and12m shares. Exact later changes not asserted."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "reply",
+            "agm",
+            "reg",
+            "egx"
+          ],
+          "note": "Material management reply and upcoming AGM read. No complete intervening October19 legal/news sweep or independent cure established; source cutoffs remain explicit."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "accounts",
+            "owners",
+            "agm",
+            "reg",
+            "egx"
+          ],
+          "note": "12m shares and120m capital reconcile, prior retained-profit increase acknowledged; exact market bonus/ex/listing dates and later suspension/action clearance unavailable. Proposed5EGP dividend is not approved."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-224a521e-e481-464b-be8c-ae7f2964ac8a.json contains 506 accepted daily observations through October18, captured at 2026-10-18T20:53:57.631Z after the persisted 15:15 Cairo post-close, 900-second feed-delay and buffer cutoff. Identity EGS38321C013, EGP, EGX_DLY:ADCI. OHLC 260.19/267.33/256/258, volume 2,842. Reproduced SMA20 271.8285, SMA50 286.1524, Wilder ATR14 11.2406464 and challenger simple mean of14 true ranges 11.2628571. RV20 0.4006767 shows weak participation, not accumulation. Price is below both daily means. Completed October11 week closed260.19 with275/250.06 high/low; completed10/30-week means284.5/236.9043. October18 week has one developing observation and is not a completed weekly confirmation. Measured support245-250.06, then230 and211; resistance278,309 and315. Daily Sell and weekly Neutral, moving averages daily Strong Sell/weekly Buy are correlated summaries of the same observations. No current broker consensus target was independently established. July8 2025 history gap is retained. Adjustment flags do not establish action continuity. The actual clock is October19 during its session; these are confirmed October18 observations, not an October19 intraday quote or timely entry signal."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv",
+            "owners"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-224a521e-e481-464b-be8c-ae7f2964ac8a.json: latest 2,842 shares; inclusive20-observation median7,093 shares and median close-times-volume turnover proxy EGP1,906,556.05; no missing raw volume in those20. RV20 uses the prior20 median, distinct from this inclusive liquidity measure. [owners] Float3,461,132 shares/28.843% and named60.302% majority can amplify concentration and gaps. Screen liquidity eligibility does not demonstrate live spread, order-book depth, fills or capacity. No quantity or participation assumption is supplied."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "ADCI",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-ec54d2e7bb019875b19b4442",
+            "document-2cd8d25f013816dff2612e55",
+            "document-1229580b17897ead6aa53b9e",
+            "document-f06f4684eee43472ac765aaa",
+            "document-637dc9594b238b1c8c7622e6",
+            "document-d229393a88b9a6be48885782"
+          ],
+          "alternativeTicker": "CPCI",
+          "whyThisStock": "Normal ranked screen combines older momentum, provider valuation and support proximity; actual financials permit independent challenge.",
+          "whyNow": "October18 confirmed close is near measured245-250support before October29 AGM. Weak current participation and failed priced geometry require waiting.",
+          "mispricingMechanism": "Sustained operating cash and credible resolution of contested audit items might support a rerating. No quantified undervaluation is established.",
+          "bullCase": "Revenue1.370bn, net profit264.709m and CFO259.236m show profitable cash-generating operations; named60.302% majority and12m shares are dated. Adjusted EPS reconciles provider data.",
+          "bearCase": "Price below20/50-day means and RV20 about0.40; leverage, inventory growth and audit tax/revenue/ECL disputes complicate normalized profits. Current cost-adjusted T1 reward/risk below2.",
+          "alternativeExplanation": "Lower PE can compensate for control concentration, audit uncertainty and funding costs; older momentum need not imply current accumulation or mispricing.",
+          "pricedIn": "Management budget and headline profit are public; no supported consensus gap or event attribution. FiveEGP proposed distribution is only1.94% of258 before approval.",
+          "invalidation": "Confirmed support failure below245 and diagnostic239.37 undermines rebound; adverse tax/collection/restatement or capital evidence can invalidate business assumptions independently.",
+          "whatWouldChangeMyMind": "Independent audit/tax/control-transfer resolution and sourced forecasts, verified market action dates, later confirmed bullish zone acceptance withRV20>=1 and a priced plan meeting the unchanged cost gate.",
+          "whyBetterThanAlternative": "No superiority overCPCI established. CPCI has higher observed cash/profit scale and different audit issues; both fail current geometry. Compare normalized collection quality rather than universal PE ranking.",
+          "disagreementResolution": "Kreston unmodified and CAO qualified assurance coexist; management counterarguments matter but are not settled cure. Strong historical cash does not remove revenue/tax uncertainty or current timing failure.",
+          "evidenceQuality": "Actual issuer-linked32p accounts and named auditor/register/reply/AGM scans inspected at relevant pages, with custody/dates and explicit cash/EPS reconciliation.",
+          "uncertainties": "No supported three forward cases or current fair value; exact historical bonus market dates, complete intervening news/action clearance and real sizing inputs unavailable.",
+          "asOf": "2026-10-19T09:58:49.460Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-10bc3e8653334955a85a8f37",
+          "recordedAt": "2026-10-19T09:58:49.460Z",
+          "digest": "10bc3e8653334955a85a8f374bdaf935d951849f742fc71c6a1256b035ea0355"
+        },
+        "alternativeCompany": "CPCI",
+        "relativeOpportunity": "No superiority established. Compare collections and normalized earnings; CPCI also has qualified financial/governance and failed cost geometry. AJWA rally after Wait demonstrates opportunity cost, while prior MOIN/HDBK/AMIA support failures challenge setup certainty; those observed paths do not establish forecast accuracy or model validation.",
+        "valuation": "Unavailable: management budget is one assumption set and accounting normalization/three sourced scenarios are absent.",
+        "records": [
+          "statement-9b0112fbb6a9db9df5cfa00e",
+          "catalyst-8987588cd3374a26fcb415d0",
+          "thesis-10bc3e8653334955a85a8f37",
+          "transmission-5011116d2f9e8eb40ed3f51c"
+        ]
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/adci-analyst-primary-review-20261019.json",
+    "data/research/evidence/adci-analyst-analysis-bundle-20261019.json",
+    "data/research/evidence/adci-issuer-ir-provenance-20261019.json",
+    "data/research/evidence/adci-archive-provenance-20261019.json",
+    "data/research/evidence/adci-scout-primary-review-20261019.json",
+    "data/research/evidence/ranked-five-calculations-20261019.json",
+    "data/research/evidence/ranked-five-plan-diagnostics-20261019.json",
+    "data/operations/power-gap-31284c29.json"
+  ]
+}

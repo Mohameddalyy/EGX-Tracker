@@ -1,0 +1,30 @@
+{
+  "version": "scout-1.2",
+  "status": "Research triage only; thresholds are local starting assumptions, not a validated investment-bank strategy",
+  "minConfirmedBars": 148,
+  "maxCaptureAgeHours": 36,
+  "maxLastBarAgeDays": 7,
+  "minMedianTurnoverEGP": 1000000,
+  "minNonzeroVolumeSessions20": 18,
+  "maxAtrPercent": 10,
+  "minPeerCount": 5,
+  "minScore": 3,
+  "maxNewCandidatesPerRun": 5,
+  "reviewCooldownDays": 7,
+  "schedule": {
+    "timezone": "Africa/Cairo",
+    "days": "Sunday through Thursday",
+    "time": "22:00",
+    "reason": "Full-universe research; paper checkpoints may resume ranked unreviewed candidates from the same confirmed session. At most five unfinished handoffs at a time."
+  },
+  "sources": [
+    "https://www.aqr.com/Insights/Research/Journal-Article/Value-and-Momentum-Everywhere",
+    "https://www.aqr.com/Insights/Research/Working-Paper/Trading-Costs-of-Asset-Pricing-Anomalies",
+    "https://www.msci.com/indexes/group/quality-indexes",
+    "https://www.msci.com/indexes/documents/methodology/2_MSCI_Momentum_Indexes_Methodology_20231120.pdf",
+    "https://am.jpmorgan.com/us/en/asset-management/institutional/media/global-equities-research-capabilities/"
+  ],
+  "drainResearchBacklog": true,
+  "includeWatchedInResearch": true,
+  "changeReason": "User clarified that initial six stocks were setup tests; examine the full EGX universe and drain research backlog without changing numerical screening/risk thresholds."
+}

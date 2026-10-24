@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-10-23T17:33:25.971Z",
+  "passed": true,
+  "issues": [],
+  "scope": "Phase3 specification integrity and schema lint only. No runtime engine, full JSON Schema conformance, replay, paper performance or activation claim.",
+  "schemaLint": {
+    "nodes": 383,
+    "localReferences": 4,
+    "fullDraftValidatorRun": false
+  },
+  "policyChecks": [
+    {
+      "file": "source-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "paper-experiment.json",
+      "unchanged": true
+    },
+    {
+      "file": "screening-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "decision-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "profile.json",
+      "unchanged": true
+    },
+    {
+      "file": "scout-schedule.json",
+      "unchanged": true
+    },
+    {
+      "file": "session-policy.json",
+      "unchanged": true
+    }
+  ],
+  "paperLedger": {
+    "expected": "83c35ccdfea627335b778dc06d312284ec984997f5caccdec3fb7d6906ab4003",
+    "actual": "83c35ccdfea627335b778dc06d312284ec984997f5caccdec3fb7d6906ab4003",
+    "unchanged": true
+  },
+  "automations": [
+    {
+      "id": "egx-decision-scout-and-research-analyst",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-close",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-intraday",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-morning",
+      "status": "PAUSED"
+    }
+  ],
+  "links": [
+    {
+      "document": "CHECKPOINT.md",
+      "target": "TRADING-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "RISK-AGENT.md",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "TEST-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "plan.json",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "decision-schema.json",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "freeze-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "validation.json",
+      "exists": true
+    },
+    {
+      "document": "CHECKPOINT.md",
+      "target": "../v5-phase2-20261023/data-dictionary.json",
+      "exists": true
+    },
+    {
+      "document": "TRADING-PLAN.md",
+      "target": "plan.json",
+      "exists": true
+    },
+    {
+      "document": "TRADING-PLAN.md",
+      "target": "RISK-AGENT.md",
+      "exists": true
+    },
+    {
+      "document": "TRADING-PLAN.md",
+      "target": "TEST-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "TRADING-PLAN.md",
+      "target": "RISK-AGENT.md",
+      "exists": true
+    },
+    {
+      "document": "RISK-AGENT.md",
+      "target": "decision-schema.json",
+      "exists": true
+    }
+  ],
+  "manifestCreatedOrVerified": true,
+  "artifacts": [
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "b8bc6bdf6865d8098e6587da79397e1dabc0cef9a50bc13820712bfae85c1c8f"
+    },
+    {
+      "path": "TRADING-PLAN.md",
+      "sha256": "6485fbd4e86ac851bd4f9356828667bbdce7464ecafd918cee16946ace810f75"
+    },
+    {
+      "path": "RISK-AGENT.md",
+      "sha256": "e3e61d6e0a857387b47eacc7e1a497cd9434480a7285c7a1801fabc6fc4e48f1"
+    },
+    {
+      "path": "TEST-PLAN.md",
+      "sha256": "d36169435ac07c468b1cd4a5c33fc745d21abd9c77cb5ae2c6ef26ea746cd5b0"
+    },
+    {
+      "path": "plan.json",
+      "sha256": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e"
+    },
+    {
+      "path": "decision-schema.json",
+      "sha256": "8678334e55aa7877a6f7c2ffc6a36170729386704681e194d001d8429cc61535"
+    },
+    {
+      "path": "validate-freeze.mjs",
+      "sha256": "f251342fccc43be196de94a1d4cdc7d6f277c7b31831d470b27190d6b3907d28"
+    },
+    {
+      "path": "../v5-phase2-20261023/data-dictionary.json",
+      "sha256": "6434fdcd5ab6af6ca2c7e46ef45cfa13f036ce632d4bce3e0eb472e27bc06246"
+    }
+  ]
+}

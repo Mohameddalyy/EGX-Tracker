@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-11T08:32:37.613Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-twsa-universe-01",
+  "queueId": "candidate-96ac2040-ec72-4078-948f-9137abcf4745",
+  "reportId": "report-2026-10-11-twsa-universe-formal-01",
+  "ticker": "TWSA",
+  "rationale": "Wait: extraordinary price/volume expansion is worth investigation, but current factoring financials, ownership and event/action evidence are unavailable. No measured overhead target exists in the frozen plan framework and no analyst-approved plan is supplied.",
+  "thesis": "A durable repricing could follow verified expansion in profitable factoring activity with sound collections, funding and capital; unusually strong turnover is a research lead, not verification of that thesis.",
+  "counterargument": "The confirmed8.62 close at the daily high and RV20=26.13 demonstrate strong trading interest; the provisionalOctober11 quote already exceeds it. Deferral can have opportunity cost, but unexplained volume does not establish informed buying or future excess return.",
+  "invalidation": "Confirmed failure of the6.16-6.30 structural band or verified adverse credit/funding/capital evidence invalidates the broader continuation thesis. A confirmed move back below8.45 prompts breakout review. These levels are monitoring criteria, not approved entry/stop orders.",
+  "reviewConditions": "Obtain current statements/opinion, receivables aging/ECL and concentration, recourse and bank-funding terms, capital adequacy, owners, and verified event/action explanation. Reassess a confirmed acceptance/retest with sustainable liquidity and evidenced target geometry. Review after five observed sessions if unavailable; do not turn an arbitrary upside projection into a target.",
+  "processAssessment": "Read entire report, immutable context and original screen. Independently opened issuer financial archive: visible static documents stopJune2025, with an embedded provider; this does not prove no2026 filing exists. Context has218 confirmed observations and one provisional bar; October7 range7.08-8.62 and14.6m shares is extreme relative to normal20-day turnover. ATR5.95% is a smoothed statistic and understates that individual shock. No overhead pivot is a limitation of this frozen120-observation target rule, not proof there is no possible investment upside. All four company/event checks unavailable, analyst defer, and no priced plan; cannot approve Watch. No claims about insider trading/manipulation. No actual/paper orders or share sizing.",
+  "uncertainties": [
+    "Current credit losses, aging, concentration and related parties",
+    "Funding leverage, maturity and capital adequacy",
+    "Beneficial ownership and current corporate actions",
+    "Economic reason for volume shock and sustainable liquidity",
+    "Target framework applicability during price discovery"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Strong momentum alone cannot distinguish durable repricing from transient event/speculative demand without current evidence; uncertainty is explicit and unscored."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.tawasoa.com/page/financial-statements",
+      "accessedAt": "2026-10-11T08:32:37.613Z",
+      "verification": "Independently inspected visible static statement links throughJune2025 and embedded financial iframe; current2026 statements not established by the wrapper."
+    }
+  ]
+}

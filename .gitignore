@@ -1,0 +1,5 @@
+integrations/
+data/
+*.log
+
+verification/skill-validator-deps/

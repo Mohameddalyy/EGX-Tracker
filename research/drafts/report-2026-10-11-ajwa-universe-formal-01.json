@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-ajwa-universe-formal-01",
+  "createdAt": "2026-10-11T08:40:01.111Z",
+  "type": "research",
+  "contextId": "context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+  "summary": "AJWA: Insufficient evidence; analyst defer. Defer: unusually active confirmed breakout is observable, but current financial statements, dated owners and corporate-action clearance are incomplete. FRA settlement is not an entitlement for a new buyer.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-ajwa",
+      "title": "TradingView AJWA; market observations frozen in context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+      "url": "https://www.tradingview.com/symbols/EGX-AJWA/",
+      "accessedAt": "2026-10-11T08:40:01.101Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "fs",
+      "title": "Issuer financial archive; latest visible standaloneSeptember2025, no current group statements read",
+      "url": "https://ajwa-egypt.com/investor-relation/القوائم-الماليه/",
+      "accessedAt": "2026-10-11T08:40:01.101Z"
+    },
+    {
+      "id": "own",
+      "title": "Issuer ownership page, undated table with2017 attachments",
+      "url": "https://ajwa-egypt.com/investor-relation/هيكل-المساهمين/",
+      "accessedAt": "2026-10-11T08:40:01.101Z"
+    },
+    {
+      "id": "fra",
+      "title": "FRA historical investor settlement announcement dated22July2026, updated26July",
+      "url": "https://fra.gov.eg/en/fra_news/في-إطار-حماية-حقوق-المتعاملين-الرقاب/",
+      "publishedAt": "2026-07-22",
+      "accessedAt": "2026-10-11T08:40:01.101Z"
+    },
+    {
+      "id": "egx",
+      "title": "EGX ownership-form discovery link295611; underlying primary page inaccessible",
+      "url": "https://www.egx.com.eg/ar/NewsDetails.aspx?NewsID=295611",
+      "accessedAt": "2026-10-11T08:40:01.101Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AJWA",
+      "candidateId": "candidate-10c6da0b-e528-4fef-bd5c-1c507ae6fb70",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: unusually active confirmed breakout is observable, but current financial statements, dated owners and corporate-action clearance are incomplete. FRA settlement is not an entitlement for a new buyer.",
+      "sourceIds": [
+        "tv-ajwa",
+        "fs",
+        "own",
+        "fra",
+        "egx"
+      ],
+      "fundamentals": "[fs] Read issuer archive: annual table ends2024, standalone interim reachesSeptember2025,2025 consolidated row blank. Linked35-page scanned statement was not substantively read, so no earnings, cash flow, audit/review or leverage numbers are verified. This bounded archive does not prove later statements do not exist. [own] Table names Mohamed bin Issa bin Jaber Al Jaber61.619%, but has no reliable current date and only2017 attachments; do not label him verified current majority owner. Require current group profitability, working capital, debt, margins and related parties before value assessment.",
+      "technicals": "[tv-ajwa] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:58:00.604Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close196.16, SMA20=182.3605, SMA50=185.0236, ATR14=6.0671, RV20=3.8051. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means185.8910/159.7743, latest weekly high/low201/179. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08, 2025-11-17, 2026-08-02. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[fra] July22 regulator announcement says62,292,683EGP settlement funds cleared with MCDR for5,719 eligible investors who purchased during4–25October2009 or heirs, and disbursement began. This is not a dividend or new2026 buyer entitlement, nor proof every payout or every dispute concluded. Read subsequent company disclosures before connecting settlement to current valuation.",
+      "risks": "High qualitative evidence/event and swing risk. Confirmed196.16 approaches201 weekly high after preceding182.07 close, with RV20 about3.81. Turnover proxy is adequate for research but no spread/fill assurance. Current group accounts/control unverified; possible legal/action effects need dated documents. Unverified secondary filing-delay leads are not asserted as facts.",
+      "invalidation": "A later confirmed close below179 latest weekly low undermines breakout continuation, while adverse primary financial/legal/action evidence may cancel it sooner. Monitoring boundary only; no executable stop.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry, size or priced plan. Obtain current consolidated/standalone statements and opinions, current ownership and complete exchange actions. At196.16 reference,201 observed high leaves4.84 before costs versus17.16 to broad weekly support179; no forced target expansion to manufacture reward/risk.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "fs"
+          ],
+          "note": "Current statements/opinions not verified; scanned older standalone file does not clear group fundamentals."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "own",
+            "egx"
+          ],
+          "note": "Undated61.619% issuer table is historical evidence only; current primary form inaccessible."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "fra",
+            "egx"
+          ],
+          "note": "Regulator settlement verified within stated scope; current broader issuer/exchange sweep incomplete."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "fra",
+            "egx"
+          ],
+          "note": "Settlement separated from dividends; current dividends/capital changes/suspensions and disclosure contents not verified."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-ajwa"
+          ],
+          "note": "[tv-ajwa] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:58:00.604Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close196.16, SMA20=182.3605, SMA50=185.0236, ATR14=6.0671, RV20=3.8051. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means185.8910/159.7743, latest weekly high/low201/179. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08, 2025-11-17, 2026-08-02. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-ajwa"
+          ],
+          "note": "[tv-ajwa] Inspected raw volumes and finality in data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; latest228709 shares,20-observation median61461.5, median close-times-volume turnoverEGP11063070.00;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-ajwa-material-reassessment-01",
+  "createdAt": "2026-10-18T21:27:31.324Z",
+  "type": "research",
+  "contextId": "context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2",
+  "summary": "AJWA: Defer: exact Arabic penalty/grace scope and AGM invitation now verified, but current accounts/cure, invitation contents and action/share-history reconciliation remain unresolved. Stronger price momentum does not supply a measured target.",
+  "limitations": [
+    "Selected two-company material-evidence reassessment; other catalog stocks remain unresearched by this analyst batch. Original decisions and forecasts preserved.",
+    "Official attachment server unavailable through web, PowerShell and Python; browser PDF rendering/download also failed. Failed access is a source gap, not adverse issuer evidence.",
+    "All market observations from TradingView parent collector. Research context is current after collector release; direct read-only chart state succeeded at EGX_DLY:AIFI 1D, analyst made no chart changes. Historical source-policy/session metadata retained unchanged; provider metadata independently supplies session/delay evidence.",
+    "No current audited/interim statement model or justified three-scenario valuation. No calibrated expected return/profit probability, no sizing, orders/fills, paper-week reopening or policy change.",
+    "AccessedAt is report compilation from actual inspected records, not exact per-browser action time; known official publication minutes retained. Default portal coverage and indexing are incomplete."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingViewAJWA frozen daily/weekly calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-AJWA/",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "period": "confirmed2026-10-18"
+    },
+    {
+      "id": "egx",
+      "title": "EGX Arabic295811 penalty/grace text directly inspected",
+      "url": "https://beta.egx.com.eg/ar/media-center?tab=disclosure",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-11T15:45:00+03:00"
+    },
+    {
+      "id": "agm",
+      "title": "EGX296029 invitation wrapper read; PDF345512_1 unread",
+      "url": "https://egx.com.eg/downloads/Bulletins/345512_1.pdf",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-14T15:03:00+03:00",
+      "period": "meeting2026-11-09"
+    },
+    {
+      "id": "owners",
+      "title": "Article30Q3register;5preservedscannedpages independentlyread",
+      "url": "https://egx.com.eg/downloads/Bulletins/345097_1.pdf",
+      "accessedAt": "2026-10-18T21:27:31.324Z",
+      "publishedAt": "2026-10-06T15:06:00+03:00",
+      "period": "2026-09-30"
+    },
+    {
+      "id": "fs",
+      "title": "Issuer financial archive read; current2026statements not visible",
+      "url": "https://ajwa-egypt.com/investor-relation/القوائم-الماليه/",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    },
+    {
+      "id": "own",
+      "title": "Undated issuer ownership table; count unreconciled",
+      "url": "https://ajwa-egypt.com/investor-relation/هيكل-المساهمين/",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    },
+    {
+      "id": "assembly",
+      "title": "Issuer board/assembly archive bounded to displayed historicalitems",
+      "url": "https://ajwa-egypt.com/investor-relation/قرارات-مجلس-الإداره-و-الجمعيات/",
+      "accessedAt": "2026-10-18T21:27:31.324Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AJWA",
+      "candidateId": "candidate-3cd331ca-de6a-4db0-adb0-a9cf7e76db7f",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: exact Arabic penalty/grace scope and AGM invitation now verified, but current accounts/cure, invitation contents and action/share-history reconciliation remain unresolved. Stronger price momentum does not supply a measured target.",
+      "sourceIds": [
+        "tv",
+        "egx",
+        "agm",
+        "owners",
+        "fs",
+        "own",
+        "assembly"
+      ],
+      "fundamentals": "[owners] All5pagesre-read: MohammedbinIssabinJaberAlJaber12,382,589shares/61.61933%; FutureofEgypt1,283,146/6.38530% vs1,090,689previously, up192,457shares/0.95772percentagepoints. Page2total20,095,300listedshares; page3majoritystakepledged; page4notreasuryshares; page5preparedOct6andboardreconstitutionAug2. Formerholderdashes implyneitherpricedisposaldate norproceeds. [own] Website100,476,500total is5×datedform; noadjustmentdate assumed. [fs] ArchiveendsFY2024andstandaloneQ32025, with2025group rowblank. Current audited/interimprofit,cashconversion,debt,relatedparties andopinionunverified. No proof of currentfilingcure. ProviderPE/PB/ROE/revenue/netincome missing. Peerfinancialcoverage1forPEorROE is inadequate;3PBpeersmedian6.459 is not companyvaluation. FoodoperatingDCF requires verifiedannual/TTMbridge, margins, workingcapital,capex,debtandshares. No model or fairvalue supportable. ProviderOct18marketcapEGP4,561,633,253 closelymatchesOct15price227×formshares20,095,300=4,561,633,100 rather thanOct18close218.62: asynchronousmark, not sharechangeproof.",
+      "technicals": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json; 506daily observations, latest 2026-10-18, capture 2026-10-18T20:54:36.249Z; EGP, ISIN EGS30211C014, session10:00-14:30 Africa/Cairo, delay900seconds. Persisted post-close finality true with15:15Cairo cutoff; noOctober19session yet. OHLC 227/229.98/216.01/218.62; change-3.6916%. Reproduced SMA20=192.7115, SMA50=188.06159999999997, WilderATR14=8.312053968127492, RV20=1.7986894365284212. Separate simple14true-range mean=8.995714285714287 for analytical challengers, not interchangeable withWilder planATR. Completed weekOct11 close227, high/low227/196; completed10/30weekmean189.779/163.45666666666662. Oct18week has1session and is developing; weekly aggregation uses same daily data, not independent provider confirmation. Gaps 2025-07-08,2025-11-17,2026-08-02; no gap filling. Raw dividendsAdjustment=false/backAdjustment=false does not reconcile corporate actions. Measured120observation resistance array empty; next-session highs are not retroactive pivots. Current218.62 remainsabovedailyandcompletedweeklymeans, but reversalfrom229.98dayhigh and RSI72.16 challengetiming. Daily/weeklyBuy composites coexist with dailyoscillatorSell; correlated indicators are not independent evidence. PriorOct7close196.16 wasbelow201high; a subsequent price advance cannot rewrite that original observation.",
+      "catalysts": "[egx] Arabic295811Oct11at15:45: Oct7committeeEGP40kpenaltyreferencesFY2025consolidated plusMar31/Jun30 2026standalone/consolidatedfilings. Payment15daysfromcompanynotification isdistinctfromadditional15daysfromexpiryofSep22grantedperiod. Latterclause specificallyJune30quarterlyconsolidatedaccounts. Notificationdate and originalgrant expiryunknown; noexactdeadline orcontinuingbreach/cureasserted. ExactArabic archived. [agm] Oct14at15:03Arabic296029announcesNov9at09:30AGM. InvitationagendaPDF345512_1unread; noaccountsapproval, meetingoutcome orcureread. [assembly] Issuerhistoricalarchive cannotclearcurrentlegal/actions. HistoricalFRAsettlement retainedinoriginalreport, notnewbuyerentitlement. CBE19%policyrecordexists, but currentAJWAprimarydebt/import/FXexposuresunverified: noquantifiedormodelledmacrotransmission.",
+      "risks": "High qualitativeevidence/governance/action/volatilityrisk; pledgedmajoritydoesnotimplyenforcement. Eventuncertaintyandextendedpricescancreatewidegaps; historicalsharechangesmayaltercomparability. Broadanalyticalregime is fallingtrend; freshalignedEGP229/296catalog, othercurrency17. Sectorbreadth 1/12ConsumerNon-DurablesaboveSMA50withmedian20return-12.555%; heterogeneousfood/consumerbasketisnotinvestablebenchmark. Price-onlyreturns lack matchedtotalreturnbenchmark. No calibratedprobability oruniversalPEranking.",
+      "invalidation": "Adverse verifiedaudit,cash/debt,pledge/legal facts couldinvalidatecontinuationthesis. Failedfollow-throughandreversalrequirefreshconfirmedstructure; remote175.15-179supportisnotanapprovedstop. Noexecutioninvalidationwithoutpricedplan.",
+      "positionReview": "Currentfrozencontextcontains0recordedactualpositions/fills; no exits to manage inrecord. Journalcompletenessnotguaranteed. Realcapital,cash,costsandrisklimitsnull; historicalpaperEGP20,000neverusedforrealsizing. WholeportfolioVaR/CVaR,corr/sectorcapacitycannotbeverifiedwithoutcompleteholdingsandlimits. No numericalshares.",
+      "entryConditions": "No approvedentry,riskPlan orRR. Deterministicpullbackindex0attemptfrommarketcontext-3f6a344b-2e28-406b-99a7-6af9c2f93c72, illustrative0.5%roundtripcost, expiry2026-10-26T00:00+03:00, rejectedbecause measuredtargetunavailable. Finalcontextsamebarsandlevels. No arbitrarytargetorstop substituted. Requireallcurrentprimarygapsclosed, measuredsupport/resistance, subsequentaccepteddailyconfirmationandRV20>=1, thenfullpriced-plan1.0andindependentfinalreview. Unknownbrokerfeesrequireexplicit0.5%/highercoststresswhenplanexists; currentlyno validgain/lossratio. Days-to-weeksswingtimingdeferred;20sessionmediumthesishypothesisonly.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "fs",
+            "egx"
+          ],
+          "note": "Currentcompletefinancialsandopinionunread; noauditablevaluation. [owners] All5pagesre-read: MohammedbinIssabinJaberAlJaber12,382,589shares/61.61933%; FutureofEgypt1,283,146/6.38530% vs1,090,689previously, up192,457shares/0.95772percentagepoints. Page2total20,095,300listedshares; page3majoritystakepledged; page4notreasuryshares; page5preparedOct6andboardreconstitutionAug2. Formerholderdashes implyneitherpricedisposaldate norproceeds. [own] Website100,476,500total is5×datedform; noadjustmentdate assumed. [fs] ArchiveendsFY2024andstandaloneQ32025, with2025group rowblank. Current audited/interimprofit,cashconversion,debt,relatedparties andopinionunverified. No proof of currentfilingcure. ProviderPE/PB/ROE/revenue/netincome missing. Peerfinancialcoverage1forPEorROE is inadequate;3PBpeersmedian6.459 is not companyvaluation. FoodoperatingDCF requires verifiedannual/TTMbridge, margins, workingcapital,capex,debtandshares. No model or fairvalue supportable. ProviderOct18marketcapEGP4,561,633,253 closelymatchesOct15price227×formshares20,095,300=4,561,633,100 rather thanOct18close218.62: asynchronousmark, not sharechangeproof."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "own"
+          ],
+          "note": "DatedQ3registerverifiedon5pages; preparedOct6. Currentpost-formchangesnotcleared; stalewebsitecountunreconciled."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "agm",
+            "assembly"
+          ],
+          "note": "Specificnewprimarynoticesread; default/indexingbounded, actualattachmentsunread. No comprehensivenews/legalclearance. [egx] Arabic295811Oct11at15:45: Oct7committeeEGP40kpenaltyreferencesFY2025consolidated plusMar31/Jun30 2026standalone/consolidatedfilings. Payment15daysfromcompanynotification isdistinctfromadditional15daysfromexpiryofSep22grantedperiod. Latterclause specificallyJune30quarterlyconsolidatedaccounts. Notificationdate and originalgrant expiryunknown; noexactdeadline orcontinuingbreach/cureasserted. ExactArabic archived. [agm] Oct14at15:03Arabic296029announcesNov9at09:30AGM. InvitationagendaPDF345512_1unread; noaccountsapproval, meetingoutcome orcureread. [assembly] Issuerhistoricalarchive cannotclearcurrentlegal/actions. HistoricalFRAsettlement retainedinoriginalreport, notnewbuyerentitlement. CBE19%policyrecordexists, but currentAJWAprimarydebt/import/FXexposuresunverified: noquantifiedormodelledmacrotransmission."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "owners",
+            "own",
+            "egx",
+            "agm"
+          ],
+          "note": "5×website/formsharecountdifferenceeffectivechronologyunresolved. No comprehensivecurrentdividend/suspension/pricelimitclearance; invitationnotcure."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json; 506daily observations, latest 2026-10-18, capture 2026-10-18T20:54:36.249Z; EGP, ISIN EGS30211C014, session10:00-14:30 Africa/Cairo, delay900seconds. Persisted post-close finality true with15:15Cairo cutoff; noOctober19session yet. OHLC 227/229.98/216.01/218.62; change-3.6916%. Reproduced SMA20=192.7115, SMA50=188.06159999999997, WilderATR14=8.312053968127492, RV20=1.7986894365284212. Separate simple14true-range mean=8.995714285714287 for analytical challengers, not interchangeable withWilder planATR. Completed weekOct11 close227, high/low227/196; completed10/30weekmean189.779/163.45666666666662. Oct18week has1session and is developing; weekly aggregation uses same daily data, not independent provider confirmation. Gaps 2025-07-08,2025-11-17,2026-08-02; no gap filling. Raw dividendsAdjustment=false/backAdjustment=false does not reconcile corporate actions. Measured120observation resistance array empty; next-session highs are not retroactive pivots. Current218.62 remainsabovedailyandcompletedweeklymeans, but reversalfrom229.98dayhigh and RSI72.16 challengetiming. Daily/weeklyBuy composites coexist with dailyoscillatorSell; correlated indicators are not independent evidence. PriorOct7close196.16 wasbelow201high; a subsequent price advance cannot rewrite that original observation."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-5b30eae0-b2c7-4b8b-a33c-23f8b065c9b2.json; rawlatestvolume152617, inclusive20median122366.5shares, median(close×sharesvolume)EGP24971161.95; last20missingvolumes0. RV20denominator is previous20median, not inclusivemedian; scannerrelative10d is a different series. Positive volume is observed participation, not buyer identity. No spread/depth/auction/market-impact assurance. Action adjustments can affect old volumes; no share-capacity proposal withoutapprovedlimits."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "AJWA",
+          "horizonSessions": 20,
+          "family": "catalyst",
+          "documentIds": [
+            "document-6d07b58e9175e75d79eed554",
+            "document-dc4521506aa966a83f14555a",
+            "document-eb159b4d862d035e41a5866d"
+          ],
+          "alternativeTicker": "JUFO",
+          "whyThisStock": "Selected for specific dated primary evidence connected to the original Wait, not assumed cheapness.",
+          "whyNow": "Newcommittee and AGMnotices require an independent completeness reassessment.",
+          "mispricingMechanism": "Potential confidence recovery if transparent financial/capital facts substantiate operating value. This is an unverified mechanism, not evidence of undervaluation.",
+          "bullCase": "Dated Future of Egypt stake increase and observed momentum can coexist with later operating improvement.",
+          "bearCase": "Unverified filing cure, cash/debt and pledged majority stake; October18reversal challenges extended timing.",
+          "alternativeExplanation": "Price momentum/rerating can arise from speculation or broad liquidity without improved operating cash generation; high volume identifies neither buyer nor seller intent.",
+          "pricedIn": "Recent price advance may incorporate expected improvement; consensus/expectations magnitude unknown. Freshclose alone cannot isolate disclosure effect.",
+          "invalidation": "Adverse verified accounts, action adjustments or failed confirmed structure invalidate prospective continuation; no executable stop until guarded plan approval.",
+          "whatWouldChangeMyMind": "Current complete statements/opinions plus dated action/ownership reconciliation, then suitable confirmed structure and fullpriced-plan gate.",
+          "whyBetterThanAlternative": "No established superiority versus JUFO. Same-sector candidate is a distinct opportunity-cost comparator requiring its own full due diligence; current missing valuation/cash inputs prevent ranking.",
+          "disagreementResolution": "Momentum supports research interest but cannot clear missing economics/actions; defer. No overhead pivot is a framework limitation, not proof of no upside.",
+          "evidenceQuality": "Mixed: primary notices and original scanned documents read; current statements and specific new attachments inaccessible.",
+          "uncertainties": "No current intrinsic value, calibrated probability, expected return, full portfolio or share sizing. Original uncertain20sessionforecast preserved; realized price path is not directional accuracy.",
+          "asOf": "2026-10-18T21:24:48.215Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-19737cfd71c2bc98df62a937",
+          "recordedAt": "2026-10-18T21:24:48.215Z",
+          "digest": "19737cfd71c2bc98df62a937bc009651143415dfcc0415f76fdae4d0e388caaa"
+        },
+        "valuationsStatus": "Unavailable; input/scope/action/model gaps preserved. No inventedsharesorforecasts.",
+        "priorCases": "OriginalAJWAWaitnext-sessionpricepath+9.5565%over5sessionsdespiteincompletereport; thisisthe strongestmissedopportunitycounterexample. LatestcompletenessWait0observedsessions; original20sessionuncertaindirectionisnotascoredhit/miss.",
+        "alternative": "JUFOdistinctfoodalternative; no relativecashflow/valuationrankingestablished."
+      },
+      "cashClassification": {
+        "unresolvedResearchAndData": "Thiscandidateisdeferredforexplicitgaps.",
+        "rejectedSetup": "Currentpriced-planbuilderhasnomeasuredtarget; companynotpermanentlyrejected.",
+        "untriggeredApprovedEntry": "None; noapprovedentry.",
+        "requiredReserve": "Unknown; realcapital/limitsnotconfigured.",
+        "unresearchedUniverse": "Otherqueuedcandidatesareunfinishedwork, notdecisions toretaincash."
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/arab-ajwa-primary-reassessment-20261019.json",
+    "data/research/evidence/arab-ajwa-calculations-20261019.json",
+    "data/research/evidence/arab-ajwa-analysis-bundle-20261019.json"
+  ]
+}

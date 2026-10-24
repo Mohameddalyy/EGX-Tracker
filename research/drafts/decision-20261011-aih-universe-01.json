@@ -1,0 +1,29 @@
+{
+  "createdAt": "2026-10-11T08:42:25.008Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-aih-universe-01",
+  "queueId": "candidate-1fcad200-bf2e-4cef-9674-5e8233bd287b",
+  "reportId": "report-2026-10-11-aih-universe-formal-01",
+  "ticker": "AIH",
+  "rationale": "Wait: current consolidated financials/control and action disclosures are missing. Provider negative ROE and high leverage need primary reconciliation; momentum does not cure those gaps.",
+  "thesis": "Positive price momentum may reflect a prospective improvement in group/subsidiary economics, subject to verified financing and earnings evidence.",
+  "counterargument": "Confirmed price exceeds daily averages with healthy volume; waiting can miss continuation. Yet price0.836 is near actual measured0.848-0.860 supply and structural support is distant0.630. Unreconciled negative ROE is a warning, not proof of permanent impairment.",
+  "invalidation": "A confirmed close below recent weekly low0.743 prompts reassessment; loss of0.630 or adverse primary financing/earnings evidence invalidates continuation. No executable stop is approved.",
+  "reviewConditions": "Read Oct5 board meeting attachment345055_1.pdf and Article29 attachment345127_1.pdf, obtain audited2025/interim2026 group accounts/opinion, ownership and complete current action status. Reassess confirmed0.860 breakout or supported pullback only through a new analyst plan. Review after five observed sessions if unresolved.",
+  "processAssessment": "Read entire report, frozen context and original screen. Independently reopened issuer website without usable content. Frozen ROE-40.36%, debt/equity7.13 and EPS-0.155 are provider snapshots with unresolved scope/periods, not grounds for invented valuation. Actual pivot resistance starts0.848, distinct from analyst recent high0.846. Parent subsequently inspected EGX notice headings295571 Oct6 09:28 (Oct5 board) and295676 Oct7 11:32 (Article29); both attachments unread, so no contents, ownership or action clearance inferred. Four evidence checks unavailable, analyst defer and no priced plan; no Watch or orders. Current-day quotes remain provisional.",
+  "uncertainties": [
+    "Consolidated financial scope and true leverage/earnings",
+    "Contents of recent board and Article29 notices",
+    "Current beneficial control and actions",
+    "Historical gaps/adjustment consistency",
+    "Entry geometry and executable liquidity"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Momentum and adverse unreconciled financial snapshots conflict; no defensible directional forecast."
+  }
+}

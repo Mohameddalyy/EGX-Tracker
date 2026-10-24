@@ -1,0 +1,47 @@
+{
+  "version": "v5-paper-plan-1.0",
+  "frozenAt": "2026-10-23T14:30:49.768Z",
+  "activated": false,
+  "scope": "Phase3 specification integrity and schema lint only. No runtime engine, full JSON Schema conformance, replay, paper performance or activation claim.",
+  "authorizations": {
+    "capital": "EGP 100,000",
+    "risk": "any amount of risk if justified",
+    "context": "Paper-only plan; no real trade or schedule resumption"
+  },
+  "artifacts": [
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "b8bc6bdf6865d8098e6587da79397e1dabc0cef9a50bc13820712bfae85c1c8f"
+    },
+    {
+      "path": "TRADING-PLAN.md",
+      "sha256": "6485fbd4e86ac851bd4f9356828667bbdce7464ecafd918cee16946ace810f75"
+    },
+    {
+      "path": "RISK-AGENT.md",
+      "sha256": "e3e61d6e0a857387b47eacc7e1a497cd9434480a7285c7a1801fabc6fc4e48f1"
+    },
+    {
+      "path": "TEST-PLAN.md",
+      "sha256": "d36169435ac07c468b1cd4a5c33fc745d21abd9c77cb5ae2c6ef26ea746cd5b0"
+    },
+    {
+      "path": "plan.json",
+      "sha256": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e"
+    },
+    {
+      "path": "decision-schema.json",
+      "sha256": "8678334e55aa7877a6f7c2ffc6a36170729386704681e194d001d8429cc61535"
+    },
+    {
+      "path": "validate-freeze.mjs",
+      "sha256": "f251342fccc43be196de94a1d4cdc7d6f277c7b31831d470b27190d6b3907d28"
+    },
+    {
+      "path": "../v5-phase2-20261023/data-dictionary.json",
+      "sha256": "6434fdcd5ab6af6ca2c7e46ef45cfa13f036ce632d4bce3e0eb472e27bc06246"
+    }
+  ],
+  "testExecutionStatus": "NOT_RUN",
+  "requiresNewVersionForAmendment": true
+}

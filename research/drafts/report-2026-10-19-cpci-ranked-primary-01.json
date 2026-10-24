@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-cpci-ranked-primary-01",
+  "createdAt": "2026-10-18T23:32:41.475Z",
+  "type": "research",
+  "contextId": "context-3c4747c0-c47b-443f-90f4-133777ecb3b4",
+  "summary": "CPCI: analyst Defer after substantive primary research; current cost gate fails and accounting/AGM outcomes need follow-up.",
+  "limitations": [
+    "Targeted normal ranked candidate review, not review of all62matches or296stocks.",
+    "Actual issuer-linked financial PDF and copied original issuer/auditor/register scans read as stated; mirror custody transparent. No cryptographic or clean-audit gate invented.",
+    "Publicationdate-only accounts remain date-only; public wrapperminute is not automatically the availability minute of every underlying page. Capture is actual researchtime.",
+    "Finalcontext follows new analytical imports. Initial marketcapture/diagnostics retained; no recollection, chartchange, order/fill/policy/modelmutation.",
+    "Relevant statement/opinion/ownership/AGM and financial notes support facts; remaining generic policy/boardpages not fullyread and not asserted as comprehensiveaudit."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView CPCI immutable confirmed market evidence",
+      "url": "https://www.tradingview.com/symbols/EGX-CPCI/",
+      "accessedAt": "2026-10-18T23:32:41.475Z"
+    },
+    {
+      "id": "fs",
+      "title": "Actual FY2026 issuer-linked58-page accounts with Crowe financial audit",
+      "url": "https://mistnews.com/mistsat/companies/mezanyat/2026/%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%2030-06-2026.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-09-22"
+    },
+    {
+      "id": "issuer",
+      "title": "Issuer IR page links annual2026 accounts through embedded MIST",
+      "url": "https://www.kahira-pharmaeg.com/StaticPage/IR",
+      "accessedAt": "2026-10-18T23:32:41.475Z"
+    },
+    {
+      "id": "egx",
+      "title": "Official English and Arabic current CPCI disclosure list and notices independently inspected",
+      "url": "https://beta.egx.com.eg/ar/media-center?tab=disclosure",
+      "accessedAt": "2026-10-18T23:32:41.475Z"
+    },
+    {
+      "id": "owners",
+      "title": "Actual September30 Article30 register; archived issuer copy",
+      "url": "https://foudalens.com/disclosures/CPCI.CA/board_agm/2026-10-12_295830_1.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-10-12T09:55:00+03:00"
+    },
+    {
+      "id": "agm",
+      "title": "Actual October22 AGM invitation; all four pages inspected",
+      "url": "https://foudalens.com/disclosures/CPCI.CA/board_agm/2026-09-28_295241_1.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-09-28T15:37:00+03:00"
+    },
+    {
+      "id": "cao",
+      "title": "CAO September23 qualified financial opinion; actual scan",
+      "url": "https://foudalens.com/disclosures/CPCI.CA/other/2026-09-24_295111_1.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-09-24T10:11:00+03:00"
+    },
+    {
+      "id": "gov",
+      "title": "Distinct October6 Crowe governance assurance; actual scan",
+      "url": "https://foudalens.com/disclosures/CPCI.CA/other/2026-10-07_295671_1.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-10-07T11:06:00+03:00"
+    },
+    {
+      "id": "board",
+      "title": "Actual September21 board minutes and adjusted financial summary; all5pages inspected",
+      "url": "https://foudalens.com/disclosures/CPCI.CA/board_agm/2026-09-21_294942_1.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-09-21T15:48:00+03:00"
+    },
+    {
+      "id": "esg",
+      "title": "Attachment to financial headline is ESG form, not accounts",
+      "url": "https://egx.com.eg/downloads/Bulletins/344546_2.pdf",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-09-22T15:33:00+03:00"
+    },
+    {
+      "id": "cbe",
+      "title": "Authoritative CBE unchanged policy rates; saved dossier source",
+      "url": "https://www.cbe.org.eg/en/monetary-policy/monetary-policy-decisions",
+      "accessedAt": "2026-10-18T23:32:41.475Z",
+      "publishedAt": "2026-09-24"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "CPCI",
+      "candidateId": "candidate-d70921f8-49ff-4369-8fc5-e6e78fa52e41",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Recovered audited accounts and dated majority ownership substantiate positive earnings/cash, but unresolved qualified accounting/governance and future AGM outcomes need reassessment. The current measured plan independently fails the existing2:1cost gate.",
+      "sourceIds": [
+        "tv",
+        "fs",
+        "issuer",
+        "egx",
+        "owners",
+        "agm",
+        "cao",
+        "gov",
+        "board",
+        "esg",
+        "cbe"
+      ],
+      "fundamentals": "[fs] Actual58-page issuer-linked accounts, EGP units, standalone July1 2025–June30 2026: revenue2,517,819,914, gross profit878,010,814 and net profit552,540,334 versus443,721,265 (+24.5242%). Assets2,255,728,154 equal liabilities961,564,565 plus equity1,294,163,589 exactly. Prior equity1,046,505,469. CFO410,942,376 gives74.3733% cash conversion; investing-33,307,101 and financing-259,472,796 bridge cash171,215,371 to289,377,850 exactly. Capex payments51,625,851. Loans183,333,333 plus separate lease liabilities32,496,107; finance costs19,070,377. Positive cash and lower inventory support financial resilience. The balance sheet cash surplus is not all surplus cash for valuation without operating needs and restrictions. [fs][cao] Crowe September22 FINANCIAL opinion is qualified: recorded ECL80,773,664 after settlements is real, but its study and impairment work do not meet EAS47/EAS31 and alternative assurance was unavailable. CAO September23 separately raises discounted-loss/omitted-balance issues, impaired idle/stalled assets, about4.5m slow-inventory provision shortfall and17.5m old sister-company balances. Net receivables/other debtors830,623,498 and idle-capacity losses43,329,842 versus28,336,668 matter economically. Gross margin about34.87% versus38.3% prior counters headline profit growth. These are qualified audited facts, not clean assurance; neither zero ECL nor a mechanical subtraction of all flagged amounts from profit is defensible. [gov] October6 Crowe GOVERNANCE assurance is separate: committees unformed and unfinished dealing/control policies. No fraud or automatic rejection inferred. [owners] Actual Sep30 form lists14,934,375shares, Pharma Holding8,960,625/60% (a named majority), employees union1,493,437/10%, AMN1,814,445/12.14945% versus1,813,896 previously, freefloat2,375,547/15.90666%; treasury table crossed out. The aggregate82.14945% of listed holders is not an assumed related control group. [fs] Note13 ties shares/capital149,343,750 atEGP10par; historical bonus tradingSeptember10 2020, not a new2026bonus. [tv] Provider PE15.884 versus4 usable peer median21.154, PB6.782 versus8 median5.938, nullROE (4 peers29.96%), margin21.945% versus4median13.842%. Same-industry snapshots have unmatched periods and uncertain earnings normalization. LowerPE alongside higherPB is no universal cheapness conclusion. Actual reported profit/share approximately37 matches provider EPS36.9979; proposal10/share is not reported earnings or an approved yield. No sourced three-scenario margin/reinvestment/discount-rate/terminalROIC assumptions or normalized accounting adjustment supports a DCF or numerical fair value.",
+      "technicals": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-3c4747c0-c47b-443f-90f4-133777ecb3b4.json contains506 accepted daily observations through October18, captured2026-10-18T20:56:22.669Z after the15:15Cairo post-close/feed-delay/buffer cutoff. Identity EGS38391C016, EGP, EGX_DLY:CPCI, Africa/Cairo,900-second feed delay. OHLC606.99/609/586.63/587.68; reproduced SMA20=582.7665,SMA50=556.2728,WilderATR14=18.0057823,RV20=1.2655843. Separate challenger simple14-TR mean=20.4007143. Price remains above both daily means, but closes near the low of a bearish candle and retests586.00–586.02 support. Completed October11 week602 close,610/586.02 high/low;10/30 completed-week means561.317/429.230667. October18 week is one developing session. Weekly aggregation shares the daily source and is not an independent vote. Daily/weekly Buy composites coexist with Sell daily oscillators; no broker consensus target. Historical gap2025-07-08 is not filled. Adjustment flags false require separate action continuity; no corporate-action clearance is inferred.",
+      "catalysts": "[egx] Current English and Arabic CPCI lists each returned7 records: Oct12ownership29583009:55; Oct7auditor29567111:06; Sep28AGM29524115:37; Sep24governance29511410:23/CAO29511110:11; Sep22results29500215:33; Sep21board29494215:48. Dates Cairo. The actual results link344546_2 is ESG; it did not supply the financial statement. Full accounts were recovered separately through [issuer]→MIST. [board] September21 adjusted summary preceded the final opinion and expected a clean report; later qualified opinions supersede that expectation, not the stored document. [agm][fs] October22 14:30Cairo Memphis AGM considers FY accounts/auditors, proposed distribution10EGP/share, remuneration and wage ratification. TenEGP is about1.70% of587.68, not an approved dividend/exdate. Wage agenda10%periodic increase plus5%monthly base grant andEGP8,000minimum fromJuly1 can pressure cash/margins; actual resolution remains future. No verified management cure to the qualifications appeared in this bounded list. Absence here is not proof no response exists. [cbe] September24 overnightdeposit19% unchanged and October29MPC are policy facts, not a retailcashreturn. Export sales205.24m, importedinput exposure and cash/loan/lease repricing create offsetting channels; regulateddrugpricing, inventorylags and fixed-rate debt matter. No sourced sensitivity or universal bullish rate/FX sign.",
+      "risks": "High qualitative accounting, event and execution risk. Qualifications are substantive uncertainties, not an automatic clean-opinion requirement. Idle capacity, receivables and possible wage cost pressure challenge sustainable margins. Current HealthTechnology breadth only1/11 aboveSMA50, median20-session return-21.0234%; CPCI+5.8883%20-session is relative resilience, not benchmark alpha. Broad market classified falling;229fresh alignedEGP/296catalog and17othercurrency. No calibrated loss probability or alleged misconduct.",
+      "invalidation": "A new confirmed close below586support contradicts the current pullback;576.99 is an unapproved diagnostic boundary, not a placed stop. Adverse collection/impairment/capital or AGM/cure facts can defeat the business thesis separately. Original failures in MOIN/HDBK/AMIA show seemingly strong geometry can fail; AJWA rally afterWait shows opportunity cost. These price paths are not directional forecast accuracy or strategy validation.",
+      "positionReview": "Final context shows zero actual recorded positions/fills; journal completeness is not guaranteed. Real capital/cash/broker costs/risk/concentration/participation limits are null. No actual exits in the recorded ledger, numerical size, simultaneouscashallocation, whole-portfolioVaR/CVaR or correlation assessment inferred. Expired paperEGP20,000 remains isolated.",
+      "entryConditions": "No approved riskPlan. Deterministic pullback0 diagnostic from unchanged initial context-a53799a2-f3d2-4a32-a460-1c73ee6df81c, reproduced with shared builder: zone586.02–590.52, worstentry590.52, stop576.99 (supportlower586 minus0.5WilderATR, rounded), T1609.99 one tick below610resistance, T2619.89. Gross loss13.53/share=2.2912%, gross T1RR1.4390. Illustrative0.5% round-trip cost gives loss16.4826/share=2.7912%, T1gain16.5174 andRR1.00211;1%stress loss19.4352 andRR0.69795. These are cost scenarios, not actual fees or guaranteed loss limits. EvenT2RR1.6027 at0.5% fails2:1; do not skipT1 to force approval. Expiry2026-10-22T00:00+03:00 precedes AGM event risk and requires complete repricing/research afterward. Current red candle touching support is not the required subsequent bullish daily zone acceptance withRV20>=1. Require verified current company/actions, suitable measured geometry and next-session quote; cancel below support/stop, targetbeforeentry, adverse financial/action facts or expiry. Per-share scenario only; no order or quantity.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "fs",
+            "cao",
+            "gov",
+            "board"
+          ],
+          "note": "Actual full accounts/opinions/main tables and relevant notes read; exact balance/cash/profit reconciled. Qualified opinions retained as material uncertainty, no clean assurance or normalized value claimed."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "fs",
+            "egx"
+          ],
+          "note": "Dated actual Article30 form names Pharma Holding60%majority and otherholders, float/shares; period identity corroborates official notice. Later unreported changes remain possible."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "agm",
+            "cao",
+            "gov"
+          ],
+          "note": "Specific current notices/primary contents inspected; default English/Arabic7-record search bounded. Full current management reply/cure and wider legal/news clearance not established."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "agm",
+            "fs",
+            "owners",
+            "egx"
+          ],
+          "note": "Shares/old2020bonus reconciled, AGM and proposed10/share verified as proposals. No approvedFY2026distribution, entitlement/ex/payment dates or comprehensive subsequent action/suspension clearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-3c4747c0-c47b-443f-90f4-133777ecb3b4.json contains506 accepted daily observations through October18, captured2026-10-18T20:56:22.669Z after the15:15Cairo post-close/feed-delay/buffer cutoff. Identity EGS38391C016, EGP, EGX_DLY:CPCI, Africa/Cairo,900-second feed delay. OHLC606.99/609/586.63/587.68; reproduced SMA20=582.7665,SMA50=556.2728,WilderATR14=18.0057823,RV20=1.2655843. Separate challenger simple14-TR mean=20.4007143. Price remains above both daily means, but closes near the low of a bearish candle and retests586.00–586.02 support. Completed October11 week602 close,610/586.02 high/low;10/30 completed-week means561.317/429.230667. October18 week is one developing session. Weekly aggregation shares the daily source and is not an independent vote. Daily/weekly Buy composites coexist with Sell daily oscillators; no broker consensus target. Historical gap2025-07-08 is not filled. Adjustment flags false require separate action continuity; no corporate-action clearance is inferred."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv",
+            "owners"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-3c4747c0-c47b-443f-90f4-133777ecb3b4.json: latest8,263shares; inclusive20-observation median6,529shares, median close-times-volume turnover proxyEGP3,765,933.66, no missing raw volume in latest20. RV20 uses prior20median, distinct from inclusive liquidity median or scanner10-day relative volume. Float2,375,547shares is concentrated relative to a60%majority, so gaps/impact remain possible despite screen eligibility. No live spread/depth/auction/fill/capacity evidence. No share quantities or assumed order fills."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "CPCI",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-72338d945855425a69f1b11e",
+            "document-bb87313c8f8717b515100c3c",
+            "document-502d263f8a08862e9f1136a9",
+            "document-c129a56f5da13ec560c0eb0f",
+            "document-6202e2a348126316157ee639"
+          ],
+          "alternativeTicker": "ADCI",
+          "whyThisStock": "Normal ranked scout selection combines positive older momentum and unusual relative resilience in a weak healthcare sector; new full audited accounts allow company-level challenge.",
+          "whyNow": "Confirmed October18 pullback lies near586support and four days before a material AGM. The rejected cost-adjusted geometry and unsettled accounting require waiting.",
+          "mispricingMechanism": "Sustained sales/cash growth and credible remediation could support a rerating; no quantified undervaluation is established at the current price.",
+          "bullCase": "FY profit552.54m grows24.52%, CFO410.94m is positive, balance/cash bridges reconcile and a named majority supports clear control identification. Current close remains aboveSMA50 in a falling sector.",
+          "bearCase": "Gross margin falls, ECL/impairment adequacy remains qualified, idle-capacity losses grow, slow inventory/old balances need cure, governance committees unfinished and current T1costRR is only about1.00 at0.5% costs.",
+          "alternativeExplanation": "Strength can reflect old momentum, expected distribution or concentrated float rather than improved sustainable returns; market decline need not be a company-specific judgment.",
+          "pricedIn": "The price already rose materially over months and the proposed dividend is small against price; no consensus target or isolated event-study is available.",
+          "invalidation": "Confirmed break below586support and576.99 diagnostic stop would defeat this measured rebound; adverse cash/credit/cure evidence could defeat the business thesis independently. No stop order approved.",
+          "whatWouldChangeMyMind": "Read AGM resolutions/company cure, verify later actions and source a defensible normalized forecast or accept explicit value uncertainty; require confirmed bullish zone candle/RV20>=1 and independent priced-plan2:1costgate.",
+          "whyBetterThanAlternative": "No superiority overADCI established. ADCI also has qualified CAO issues and different capital/profit-allocation economics; compare verified normalized margins and collections before allocation.",
+          "disagreementResolution": "Positive cash generation supports business viability; qualified accounting is economic uncertainty rather than an automatic ban. The current trade fails the existing cost gate regardless of financial interpretation.",
+          "evidenceQuality": "Full issuer-linked accounts and actual auditor/register/AGM scans inspected, dates/custody retained; generic earlier archive financial label corrected toESG.",
+          "uncertainties": "No sourced forward three-case revenue/margin/reinvestment/cost-of-capital assumptions or normalized ECL/impairment adjustment; no DCF/fairvalue or calibrated probability.",
+          "asOf": "2026-10-18T23:27:23.194Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-9a3da901da3fa8e210e09f66",
+          "recordedAt": "2026-10-18T23:27:23.194Z",
+          "digest": "9a3da901da3fa8e210e09f6602673063030f183ceda46013f89bdda6b02634e7"
+        },
+        "alternativeCompany": "ADCI",
+        "relativeOpportunity": "No superiority established; both pharma companies need normalized earnings/collection and audit-response comparison. Relative price strength can be priced optimism. No invented cash hurdle.",
+        "valuation": "Unavailable without sourced three forward scenarios and explicit accounting normalization; exact annualhistory alone is insufficient.",
+        "records": [
+          "statement-0d3ec5f6666c762639e76479",
+          "catalyst-9d5df53bca6b7b986c545165",
+          "thesis-9a3da901da3fa8e210e09f66",
+          "transmission-25c9aa3fde27469af5703b9c"
+        ]
+      },
+      "cashClassification": {
+        "unresolvedEvidence": "Current management cure/news/action completeness.",
+        "rejectedTiming": "Current cost-adjusted geometry fails2:1.",
+        "untriggeredApprovedEntry": "None.",
+        "requiredReserve": "Unknown actual profile.",
+        "unresearchedUniverse": "Other4active candidates and retained catalog backlog remain research tasks, not investment conclusions."
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/cpci-analyst-primary-review-20261019.json",
+    "data/research/evidence/cpci-analyst-analysis-bundle-20261019.json",
+    "data/research/evidence/cpci-issuer-ir-provenance-20261019.json",
+    "data/research/evidence/cpci-archive-provenance-20261019.json",
+    "data/research/evidence/cpci-scout-primary-review-20261019.json",
+    "data/research/evidence/ranked-five-calculations-20261019.json",
+    "data/research/evidence/ranked-five-plan-diagnostics-20261019.json"
+  ]
+}

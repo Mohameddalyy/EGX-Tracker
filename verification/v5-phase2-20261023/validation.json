@@ -1,0 +1,179 @@
+{
+  "checkedAt": "2026-10-23T13:30:51.206Z",
+  "scope": "Phase 2 document/evidence integrity only; no production behavior or profitability validation",
+  "passed": true,
+  "issues": [],
+  "scannerFields": 43,
+  "dictionaryFields": 78,
+  "missingScannerFields": [],
+  "policyChecks": [
+    {
+      "file": "source-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "paper-experiment.json",
+      "unchanged": true
+    },
+    {
+      "file": "screening-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "decision-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "profile.json",
+      "unchanged": true
+    },
+    {
+      "file": "scout-schedule.json",
+      "unchanged": true
+    },
+    {
+      "file": "session-policy.json",
+      "unchanged": true
+    }
+  ],
+  "paperLedger": {
+    "expected": "83c35ccdfea627335b778dc06d312284ec984997f5caccdec3fb7d6906ab4003",
+    "actual": "83c35ccdfea627335b778dc06d312284ec984997f5caccdec3fb7d6906ab4003",
+    "unchanged": true
+  },
+  "automations": [
+    {
+      "id": "egx-decision-scout-and-research-analyst",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-close",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-intraday",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-morning",
+      "status": "PAUSED"
+    }
+  ],
+  "localLinks": [
+    {
+      "document": "DESIGN.md",
+      "target": "CAPABILITIES-AND-RULES.md",
+      "exists": true
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "DATA-DICTIONARY.md",
+      "exists": true
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "MODEL-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "data-dictionary.json",
+      "exists": true
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "validation.json",
+      "exists": true
+    },
+    {
+      "document": "DESIGN.md",
+      "target": "../v5-phase1-20261023/POST-MORTEM.md",
+      "exists": true
+    },
+    {
+      "document": "CAPABILITIES-AND-RULES.md",
+      "target": "scanner-evidence.json",
+      "exists": true
+    },
+    {
+      "document": "CAPABILITIES-AND-RULES.md",
+      "target": "probe-scanner.mjs",
+      "exists": true
+    },
+    {
+      "document": "CAPABILITIES-AND-RULES.md",
+      "target": "chart-samples.json",
+      "exists": true
+    },
+    {
+      "document": "CAPABILITIES-AND-RULES.md",
+      "target": "probe-notes.json",
+      "exists": true
+    },
+    {
+      "document": "CAPABILITIES-AND-RULES.md",
+      "target": "../v5-phase1-20261023/local-evidence.json",
+      "exists": true
+    },
+    {
+      "document": "DATA-DICTIONARY.md",
+      "target": "CAPABILITIES-AND-RULES.md",
+      "exists": true
+    },
+    {
+      "document": "MODEL-RESEARCH.md",
+      "target": "CAPABILITIES-AND-RULES.md",
+      "exists": true
+    }
+  ],
+  "externalLinks": [
+    "https://www.tradingview.com/support/solutions/43000614331-technical-ratings/",
+    "https://www.tradingview.com/data-coverage/",
+    "https://beta.egx.com.eg/en",
+    "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+    "https://egx.com.eg/downloads/Bulletins/345933_1.pdf",
+    "https://beta.egx.com.eg/en/news/286153",
+    "https://www.mcsd.com.eg/en/activities-services/clearing-settlement",
+    "https://beta.egx.com.eg/en/news/292436",
+    "https://www.cibeg.com/en/investor-relations/governance/ownership-structure?ty=19",
+    "https://www.tradingview.com/symbols/EGX-COMI/documents/",
+    "https://www.tradingview.com/document/EGX-COMI/urn:report:quartr.com:4330186/",
+    "https://www.cbe.org.eg/en/MonetaryPolicy/Pages/MPCMeetingSchedule.aspx",
+    "https://www.aqr.com/Insights/Research/Journal-Article/Time-Series-Momentum",
+    "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04681.x",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1111/0022-1082.00280",
+    "https://www.aqr.com/Insights/Research/Working-Paper/Trading-Costs-of-Asset-Pricing-Anomalies",
+    "https://www.msci.com/indexes/group/quality-indexes",
+    "https://www.aqr.com/Insights/Research/Journal-Article/Value-and-Momentum-Everywhere",
+    "https://onlinelibrary.wiley.com/doi/full/10.1111/0022-1082.00146",
+    "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf"
+  ],
+  "artifacts": [
+    {
+      "name": "DESIGN.md",
+      "sha256": "cffa1d3d693f1a377687d5d14dbefdc42d935db30ad7f375e3aec60ca9689511",
+      "words": 2935
+    },
+    {
+      "name": "CAPABILITIES-AND-RULES.md",
+      "sha256": "cc781c4cdc68cc2d41ed995232df144c6a7aec9e5ffb587c2c02f8371ee4b03d",
+      "words": 1931
+    },
+    {
+      "name": "DATA-DICTIONARY.md",
+      "sha256": "c79fc516203433724a3ddddb0a3177c74bf43e015840ca83eb0b7dfc06c425d9",
+      "words": 6411
+    },
+    {
+      "name": "MODEL-RESEARCH.md",
+      "sha256": "6516d5cbcdb37b7715cf35414bf061211f409e53177bd6c514709aa319563bd7",
+      "words": 2582
+    }
+  ],
+  "phaseBoundary": "Design only. No new production policy, strategy, approval, order or experiment.",
+  "limitations": [
+    "External links are source references, not asserted universally reachable endpoints. Failed routes are documented.",
+    "Official current rule and account-specific execution gaps remain open.",
+    "This validation does not claim a v5 replay/backtest or live pilot has run."
+  ]
+}

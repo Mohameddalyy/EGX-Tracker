@@ -1,0 +1,10 @@
+// Targeted, append-only identity checks. This never renames a stock or substitutes a price.
+import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';import{dirname,join}from'node:path';import{fileURLToPath}from'node:url';import{openDb}from'./core.mjs';
+const root=dirname(dirname(fileURLToPath(import.meta.url))),db=openDb(join(root,'data','egx.sqlite')),dir=join(root,'data','market','symbol-checks');mkdirSync(dir,{recursive:true});
+const list=[...new Set(['HALN','RMTV',...db.prepare("SELECT ticker FROM preparation_attempts WHERE id IN(SELECT MAX(id) FROM preparation_attempts GROUP BY ticker) AND status='failed'").all().map(x=>x.ticker)])],results=[];
+try{for(const ticker of list){const path=join(dir,ticker+'.json'),previous=existsSync(path)?JSON.parse(readFileSync(path,'utf8')):null;if(previous&&Date.now()-Date.parse(previous.at)<86400000){results.push(previous);continue;}
+ const s=db.prepare('SELECT metadata,name FROM stocks WHERE ticker=?').get(ticker),isin=JSON.parse(s.metadata||'{}')?.symbolInfo?.isin,at=new Date().toISOString(),observations=[];
+ for(const query of [ticker,...(isin?[isin]:[])]){try{const params=new URLSearchParams({text:query,exchange:'EGX',lang:'en',search_type:'stock',domain:'production'}),r=await fetch('https://symbol-search.tradingview.com/symbol_search/v3/?'+params,{headers:{Origin:'https://www.tradingview.com',Referer:'https://www.tradingview.com/'},signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('HTTP '+r.status);const raw=await r.json();observations.push({query,raw});}catch(e){observations.push({query,error:e.message});}}
+ const result={ticker,isin:isin||null,name:s.name,at,observations,status:'IDENTITY_REVIEW_REQUIRED',note:'Search availability is not official listing status or tradability.'};writeFileSync(path,JSON.stringify(result,null,2));writeFileSync(join(dir,ticker+'-'+at.replace(/[:.]/g,'-')+'.json'),JSON.stringify(result,null,2),{flag:'wx'});results.push(result);}
+ console.log(JSON.stringify({checked:results.length,directory:dir,failedRequests:results.reduce((n,x)=>n+x.observations.filter(y=>y.error).length,0)}));
+}finally{db.close();}

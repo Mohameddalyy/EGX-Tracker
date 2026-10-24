@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-10-18T21:32:25.176Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Competing continuation and reversal hypotheses remain unresolved because current economics and corporate-action evidence are incomplete and no validated priced plan exists. No calibrated directional edge or probability; prior forecasts remain immutable."
+  },
+  "id": "decision-20261019-arab-material-reassessment-01",
+  "queueId": "candidate-c369ee02-0ca8-4db2-969b-0f52a7c269a6",
+  "reportId": "report-2026-10-19-arab-material-reassessment-02",
+  "ticker": "ARAB",
+  "supersedes": "decision-20261012-arab-universe-01",
+  "rationale": "Wait after fresh research. The September30 filing wrapper is verified, but its actual shareholder form, current accounts/opinion and rights-adjustment chronology remain unread or unresolved. The analyst defers; the deterministic plan lacks a measured target. Weak October18 timing reinforces caution without establishing an adverse-company Avoid.",
+  "thesis": "Equity funding could accelerate construction and deliveries, improve cash conversion and support a recovery once current group economics and action-adjusted shares are demonstrated. The August EGM corroborates enlarged capital; it does not establish cash deployment, a named controlling owner or intrinsic value.",
+  "counterargument": "A rebound remains possible:0.250 is marginally above SMA20/50 0.249600/0.249780 and above completed30-week mean0.224562; enlarged capital is better evidenced than a proposal alone. Lower provider P/B than peer median could attract demand. However debt/equity and P/B need comparable dated accounts, October18 closed at its low on RV20 2.48945, and net profit above EBIT in the old2025summary requires reconciliation. These observations do not establish a calibrated bullish or bearish edge.",
+  "invalidation": "Preserve original0.238 review boundary and0.200–0.205 structural area. A later confirmed failure or verified adverse collections, funding, financial, ownership or action evidence requires fresh thesis review. October18 broke the prior completed-week0.256 low, weakening timing without moving original invalidation retrospectively. No executable stop is approved.",
+  "reviewConditions": "Read attachment345614_1 from notice296158 and establish dated named owners. Verify actual subscription completion, entitlement/ex-right/listing/effective dates and adjusted price/share history; obtain current complete group statements/opinion, project cash flows, delivery costs, collections, net debt, minorities and related parties. Reconcile provider valuation marks by their actual date before peer/NAV comparisons. Require a new immutable analyst report with all six verified checks and an identical validated priced-plan-1.0 before Watch. Monitor next scheduled run, new primary disclosure and after five observed sessions; no action inferred from the October29 policy checkpoint.",
+  "processAssessment": "Read both complete01/02 reports, every version difference, full frozen two-company analytical dossiers/import records, original screen/assessment and prior decision. Version02 improves readability/condenses notes; same candidate/context/Defer and missing evidence. Independently viewed all4August EGM pages and verified capital2,390,296,339=23,902,963,390×0.10 and51.72426% attendance; attendance is not ownership and formal FRA certification is not business endorsement. Reopened issuer2025rights and9M2025summary: revenue1.191bn, gross391m, EBIT59m, profit159m; cannot annualize or roll into current NAV. Independently recomputed SMA20/50, RV20, median volume/turnover, WilderATR0.01321045 versus simpleTR0.01514286 and completed10/30-week means0.2512/0.22456232. Newweek developing. Builder rejection reproduced on final context; no fabricated targets. Original4-session path-9.4203% is not matured forecast or process proof. Four substantive checks unavailable. Notice15:48 publication followed14:30session close, so same-day selloff attribution is unproven. Broad Finance6/74breadth is not a property benchmark; alternativeTMGH not demonstrably inferior. Provider cap implies prior0.269, a timing consistency question, not share-change evidence. No intraday events in candidate query; real capital/complete holdings unknown. No chart changes/trades/fills/sizing. Evidence:data/research/evidence/arab-ajwa-independent-final-20261019.json.",
+  "uncertainties": [
+    "Actual Q3 named-owner form345614_1 unread",
+    "Current complete audited/interim group economics, opinion and project cash-flow/NAV inputs",
+    "Rights entitlement, subscription, listing/effective dates and adjusted history",
+    "Current news/dividend/suspension/price-limit clearance and execution depth",
+    "No validated priced plan, calibrated expectations or complete real portfolio inputs"
+  ]
+}

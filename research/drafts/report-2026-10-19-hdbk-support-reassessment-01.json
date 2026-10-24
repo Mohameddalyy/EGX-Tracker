@@ -1,0 +1,207 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-hdbk-support-reassessment-01",
+  "createdAt": "2026-10-18T22:14:14.128Z",
+  "type": "research",
+  "contextId": "context-c3e0c5af-7200-413d-8265-0f98601a8e4b",
+  "summary": "HDBK: Defer. Original support has failed. Current issuer accounts substantiate bank earnings and capital, but owner-table continuity, ex/adjustment dates and current action/news clearance remain unresolved; the lower-zone diagnostic is unconfirmed.",
+  "limitations": [
+    "This is a targeted substantive reassessment, not review of all 296 stocks or all numerical matches. Original reports, decisions and uncertain forecasts are preserved.",
+    "Underlying issuer/auditor archive copies were assessed on identity, dates, signatures, corroborating directly read official notices and arithmetic. Archive custody and local hashes are recorded; no original-host retrieval or cryptographic identity is claimed. No editorial archive numbers or excluded-domain data were adopted.",
+    "Only relevant inspected main tables, opinions, capital/ownership pages and identified notes support the stated facts. Full current legal/action completeness and all source-note questions remain explicit. Date-only source evidence cannot establish start-of-day availability.",
+    "Fresh parent collector history and snapshot were used after release; analyst chart health read succeeded and chart was not changed. No new collection or model/policy changes.",
+    "No orders, paper fills, actual share sizing, calibrated probabilities, forward model invention or renewal of the expired experiment."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView HDBK market data frozen in the selected context",
+      "url": "https://www.tradingview.com/symbols/EGX-HDBK/",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "2026-10-18"
+    },
+    {
+      "id": "fs",
+      "title": "Direct issuer H1 consolidated accounts; opinion, tables and capital note inspected",
+      "url": "https://www.hdb-egy.com/uploads/ir/tabs/153ConsolidatedFS-62026.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "H1 2026",
+      "publishedAt": "2026-08-11"
+    },
+    {
+      "id": "release",
+      "title": "Issuer H1 standalone release, separately scoped",
+      "url": "https://www.hdb-egy.com/uploads/ir/tabs/156PR-HDB-H1-2026-English.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "H1 2026",
+      "publishedAt": "2026-08-11"
+    },
+    {
+      "id": "egx",
+      "title": "Official Arabic notices 295745 and 295257 independently read",
+      "url": "https://beta.egx.com.eg/ar/media-center?tab=disclosure",
+      "accessedAt": "2026-10-18T22:14:14.128Z"
+    },
+    {
+      "id": "owners",
+      "title": "Undated issuer ownership table; current date not established",
+      "url": "https://www.hdb-egy.com/IR/en/key-information/#tab_tab3",
+      "accessedAt": "2026-10-18T22:14:14.128Z"
+    },
+    {
+      "id": "board",
+      "title": "Actual September 28 board minutes, explicitly archived copy",
+      "url": "https://foudalens.com/disclosures/HDBK.CA/board_agm/2026-09-29_295257_1.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "2026-09-28",
+      "publishedAt": "2026-09-29T09:43:00+03:00"
+    },
+    {
+      "id": "q3",
+      "title": "Official Q3 register attachment inaccessible",
+      "url": "https://egx.com.eg/downloads/Bulletins/345225_1.pdf",
+      "accessedAt": "2026-10-18T22:14:14.128Z",
+      "period": "2026-09-30",
+      "publishedAt": "2026-10-11T11:07:00+03:00"
+    },
+    {
+      "id": "actions",
+      "title": "Issuer regulatory page returned no readable announcement list",
+      "url": "https://www.hdb-egy.com/IR/en/regulatory-disclosures/",
+      "accessedAt": "2026-10-18T22:14:14.128Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "HDBK",
+      "candidateId": "candidate-d3c0592b-641e-4097-95c0-ca9ac306a8e0",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Original support has failed. Current issuer accounts substantiate bank earnings and capital, but owner-table continuity, ex/adjustment dates and current action/news clearance remain unresolved; the lower-zone diagnostic is unconfirmed.",
+      "sourceIds": [
+        "tv",
+        "fs",
+        "release",
+        "egx",
+        "owners",
+        "board",
+        "q3",
+        "actions"
+      ],
+      "fundamentals": "[fs] Direct issuer 62-page consolidated H1 accounts: limited review with negative assurance, not an annual audit. June assets EGP 277,949,321,631 equal liabilities 231,071,055,504 plus total equity 46,878,266,127 exactly. Owners equity is 46,658,459,400 and NCI 219,806,727. H1 total profit 10,781,423,226 splits owners 10,760,405,784 plus NCI 21,017,442. CFO 13,494,414,055, investing -48,643,404,542 and financing -6,322,895,127 reconcile cash from 59,260,993,478 to 17,789,107,864 with zero residual. Treasury investment deployment is a bank balance-sheet allocation, not generic industrial free cash flow or proof of distress. [release] Standalone H1 profit is EGP 9.924 billion, NIM 15.3% versus 17.2%, impairment EGP 776 million versus 318 million, administrative costs EGP 2.824 billion versus 2.282 billion, CAR 41.7%, NPL 4.2%, coverage 173.2%. Keep these scopes separate. Growing loans and capital are bullish; margin and credit-cost pressure challenge sustainable ROE. [fs] Note 34 states EGP 10.626 billion capital, 1.0626 billion shares at EGP 10 par, one-for-one bonus approved March 25, 2025 and registered June 15, 2026. Its unlabelled owner table NUCA 158,395,608 at 29.81% uses an older 531.3 million denominator; it does not verify current post-bonus quantities. This is a continuity/roll-forward gap, not an allegation of misstatement. Provider PE 5.1515 versus 6 peers at median 4.4306, PB 2.197 versus 7 at 0.9446 and ROE 49.66% versus 6 at 31.60% require sustainable bank returns and matching periods; they do not establish cheapness. No sourced forward ROE/payout/cost-of-equity scenarios or current book roll-forward support a residual-income fair value.",
+      "technicals": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c3e0c5af-7200-413d-8265-0f98601a8e4b.json. 506 daily observations through 2026-10-18; captured 2026-10-18T21:00:47.522Z. EGP, EGX identity EGS60301C016, Africa/Cairo session 10:00-14:30 and 900-second delay. Persisted finality: later-date, confirmed true. October 19 has no trading session yet. OHLC 101.91/101.91/96.1/96.47. Reproduced SMA20 108.519500, SMA50 103.871800, Wilder ATR14 4.803190, RV20 1.428750. Simple mean of 14 true ranges 4.280000 is the distinct challenger measure. Completed October 11 week closed 101.91, high/low 108/98.01; completed 10/30-week means 105.724000/85.117667. The October 18 week has one session and remains developing. Weekly bars use the same daily data, not independent confirmation. Current close is below SMA20, SMA50 and completed 10-week mean; this is failed swing timing despite longer-horizon recovery. Provider Sell daily versus Buy weekly ratings are correlated composites; weekly readings can be forming. Historical gaps: 2025-07-08. Adjustment flags false do not clear actions. The original 102.03 support and illustrative 99.53 stop have been crossed by the confirmed October 18 close of 96.47. This invalidates that old rebound geometry; no fill or realized loss is inferred. New recovery evidence must establish a new higher low and confirm action-comparable prices. Adverse credit/capital facts can invalidate the business thesis independently.",
+      "catalysts": "[egx] Notice 295745, October 11 at 11:07 Cairo, identifies the September 30 Article 30 form; actual attachment 345225_1 remains unread. Notice 295257, September 29 at 09:43, concerns the September 28 board meeting. [board] All five copied pages independently inspected: IR officer nomination Ehab Mohammed Esmail and administrative/legal delegation. These do not clear bonus dates, current owners or new financial economics. [release] Next results should test asset/deposit repricing, credit loss and sustainable loan growth; no unverified earnings date is asserted. The CBE September 24 unchanged overnight deposit policy rate of 19% is sourced in the dossier, with the October 29 meeting a potential checkpoint. Asset/funding repricing and borrower credit effects can offset each other; no automatic bullish sign or numerical sensitivity.",
+      "risks": "Moderate to high qualitative bank, credit, action and timing risk. Strong capital does not negate rising impairment, margin compression, property exposures or market gaps. Current action/news sweep and post-bonus register remain incomplete. Broad regime is falling: fresh aligned EGP 229/296 catalog, with 17 other-currency stocks. Only 6/74 broad Finance members are above SMA50 and their median 20-session return is -16.6354%; this heterogeneous bucket is not an investable bank/insurance/holding index. No matched benchmark alpha or calibrated probability.",
+      "invalidation": "The original 102.03 support and illustrative 99.53 stop have been crossed by the confirmed October 18 close of 96.47. This invalidates that old rebound geometry; no fill or realized loss is inferred. New recovery evidence must establish a new higher low and confirm action-comparable prices. Adverse credit/capital facts can invalidate the business thesis independently.",
+      "positionReview": "The selected context records zero actual positions/fills. No recorded exit requires management, but journal completeness is not guaranteed. Real capital, cash, costs and risk/concentration/participation limits remain null. The expired hypothetical paper EGP 20,000 is isolated. No share quantity, whole-portfolio VaR/CVaR, sector/correlation allocation or live capacity is inferred.",
+      "entryConditions": "No approved entry or assessment riskPlan. Full deterministic diagnostics are saved separately from context-f200d359-7825-4447-b5a7-1b9942b7973b; final context contains the same bars/levels. Pullback index 0 yields zone 89.01-90.21, stop 86.6, T1 112.39, expiry October 26 at 00:00 +03:00. Worst-zone gross loss EGP 3.6100 per share (4.002%), gross RR 6.144; illustrative 0.5% round-trip loss EGP 4.0610 and RR 5.351; 1% cost stress RR 4.716. These are not broker fees or guaranteed loss limits. Geometry qualifies numerically but remains unapproved: original support failed, no subsequent bullish daily zone acceptance is recorded, and company/action checks remain incomplete. Broken former supports can add supply before a measured pivot is confirmed. The diagnostic zone is well below the current price and is a different future hypothesis, not an instruction to buy now. Require all six checks, a new confirmed reversal with RV20 at least 1 and fresh next-session quote review before independent approval; cancel for new adverse evidence, stop/target-before-entry events or expiry.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "fs",
+            "release"
+          ],
+          "note": "Direct H1 reviewed consolidated accounts, full balance/cash reconciliation and separately scoped standalone capital/credit facts inspected. Forward value and post-report action/owner continuity remain unverified."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "owners",
+            "fs",
+            "q3"
+          ],
+          "note": "Names and percentages are visible on an undated issuer table; note 34 quantities use the older denominator. Q3 original unread. No verified current register or individual majority established."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "egx",
+            "board",
+            "actions"
+          ],
+          "note": "Specific official notices and actual recovered primary documents read, but default portal/archive coverage is bounded. No complete current legal/news clearance; source reachability or a wrapper is insufficient."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "fs",
+            "q3",
+            "board"
+          ],
+          "note": "Bonus ratio and registration are now sourced. Ex/market adjustment and unlabelled holder-table roll-forward remain unresolved; September board minutes are administrative, not action clearance."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c3e0c5af-7200-413d-8265-0f98601a8e4b.json. 506 daily observations through 2026-10-18; captured 2026-10-18T21:00:47.522Z. EGP, EGX identity EGS60301C016, Africa/Cairo session 10:00-14:30 and 900-second delay. Persisted finality: later-date, confirmed true. October 19 has no trading session yet. OHLC 101.91/101.91/96.1/96.47. Reproduced SMA20 108.519500, SMA50 103.871800, Wilder ATR14 4.803190, RV20 1.428750. Simple mean of 14 true ranges 4.280000 is the distinct challenger measure. Completed October 11 week closed 101.91, high/low 108/98.01; completed 10/30-week means 105.724000/85.117667. The October 18 week has one session and remains developing. Weekly bars use the same daily data, not independent confirmation. Current close is below SMA20, SMA50 and completed 10-week mean; this is failed swing timing despite longer-horizon recovery. Provider Sell daily versus Buy weekly ratings are correlated composites; weekly readings can be forming. Historical gaps: 2025-07-08. Adjustment flags false do not clear actions. The original 102.03 support and illustrative 99.53 stop have been crossed by the confirmed October 18 close of 96.47. This invalidates that old rebound geometry; no fill or realized loss is inferred. New recovery evidence must establish a new higher low and confirm action-comparable prices. Adverse credit/capital facts can invalidate the business thesis independently."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c3e0c5af-7200-413d-8265-0f98601a8e4b.json: latest raw volume 250567 shares; inclusive last-20 median 175375, median close-times-volume turnover proxy EGP 18908731.01, last-20 missing volumes 0. RV20 uses the previous 20 median, not inclusive liquidity median or scanner relative-10-day volume. No spread, depth, auction, fill or market-impact assurance. Historical action basis affects comparability; no capacity or shares proposed."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "HDBK",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-f2d5a3f4eccfa444ba5cc192",
+            "document-67c8d003010eab0d0efcdb95"
+          ],
+          "alternativeTicker": "COMI",
+          "whyThisStock": "Normal reassessment of the preserved original Wait after a newly confirmed support failure, with substantive primary document recovery.",
+          "whyNow": "October18 confirmed price crossed the original review condition; source recovery permits a deeper challenge of the original economics, not a retrospective trade.",
+          "mispricingMechanism": "A potential rerating requires proof that durable cash/earnings and capital quality outweigh uncertainty. No mispricing magnitude or probability is established.",
+          "bullCase": "Large capital buffer, profit growth and loan expansion support a banking franchise thesis.",
+          "bearCase": "Margin compression, sharply rising credit charges and failed support challenge immediate continuation; current owner/ex-date chain remains unresolved.",
+          "alternativeExplanation": "Earlier gains may have reflected speculation, expected future results or liquidity, rather than recurring cash generation; the later fall may reflect broad market risk, not a company event.",
+          "pricedIn": "Prior appreciation and subsequent correction show expectations changed, but no verified consensus or event-study isolates how much fundamental news is priced.",
+          "invalidation": "Preserve original failed support evidence. Verified adverse capital, reserve, credit, funding or legal facts can defeat a recovery thesis. No execution stop is approved.",
+          "whatWouldChangeMyMind": "Close the explicit company/action gaps, obtain a confirmed new reversal and suitable liquidity, then validate the complete cost-stressed priced plan independently.",
+          "whyBetterThanAlternative": "No superiority over COMI is established. It is a distinct opportunity-cost comparator, requiring its own complete sector-aware assessment.",
+          "disagreementResolution": "Improved primary facts reduce uncertainty but do not offset failed timing or remaining action/quality gaps. Defer despite mechanically attractive lower-zone diagnostic geometry.",
+          "evidenceQuality": "Direct issuer accounts for HDB; actual signed primary scans with explicit mirror custody for MOIN/AMIA, corroborating official notices and arithmetic. Missing evidence stays explicit.",
+          "uncertainties": "Residual income needs supported sustainable ROE, payout and cost-of-equity cases; period ROE and old book cannot simply become a current fair value. No three sourced forward scenarios, calibrated probability, full portfolio or real sizing.",
+          "asOf": "2026-10-18T22:08:34.632Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-470b85ab2e132f1e642917bc",
+          "recordedAt": "2026-10-18T22:08:34.632Z",
+          "digest": "470b85ab2e132f1e642917bc6c45ce978e0411e2ec7b47f0db83e0a3eddee23f"
+        },
+        "priorCases": "Original HDBK Wait has six observed sessions, -10.5019% to October 18; the first five through October 15 were -5.4551%. The new support failure occurred October 18. These are price-only counterfactual observations, not profits, scored directional forecasts or proof the old reasoning was correct.",
+        "alternativeCompany": "COMI",
+        "relativeOpportunity": "No superiority established. Distinct alternative needs its own complete sourced assessment. Cash is not assigned a fabricated return.",
+        "valuation": "Unavailable: three independently sourced forward scenarios and sector-correct operating/ownership boundaries are missing. No invented fair value, annualization or probability."
+      },
+      "cashClassification": {
+        "unresolvedEvidence": "This candidate is deferred for its stated gaps.",
+        "rejectedTiming": "The old rebound/support scenario failed; mechanically attractive lower-zone math is unapproved.",
+        "untriggeredApprovedEntry": "None.",
+        "requiredReserve": "Unknown; real profile limits unset.",
+        "unresearchedUniverse": "Other catalog and queued candidates remain unfinished research, not investment decisions to hold cash."
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/moin-hdbk-amia-primary-review-20261019.json",
+    "data/research/evidence/moin-hdbk-amia-calculations-20261019.json",
+    "data/research/evidence/moin-hdbk-amia-plan-diagnostics-20261019.json",
+    "data/research/evidence/moin-hdbk-amia-analysis-bundle-20261019.json",
+    "data/research/evidence/moin-archive-provenance-20261019.json",
+    "data/research/evidence/amia-hdbk-archive-provenance-20261019.json"
+  ]
+}

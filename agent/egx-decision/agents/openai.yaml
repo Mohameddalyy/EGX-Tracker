@@ -1,0 +1,4 @@
+interface:
+  display_name: "EGX Final Decision Agent"
+  short_description: "Decide after research and track every outcome"
+  default_prompt: "Use $egx-decision to review the analyst inbox, record independent final decisions and monitor every recorded outcome."

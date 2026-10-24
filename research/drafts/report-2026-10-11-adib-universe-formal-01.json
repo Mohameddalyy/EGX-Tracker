@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-adib-universe-formal-01",
+  "createdAt": "2026-10-11T08:39:12.308Z",
+  "type": "research",
+  "contextId": "context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+  "summary": "ADIB: Insufficient evidence; analyst defer. Defer: substantive banking financials and ownership support continued research, but action reconciliation/current disclosure sweep and a valid swing entry remain incomplete. Confirmed price is below both daily moving averages.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-adib",
+      "title": "TradingView ADIB; market observations frozen in context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+      "url": "https://www.tradingview.com/symbols/EGX-ADIB/",
+      "accessedAt": "2026-10-11T08:39:12.298Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "fs",
+      "title": "Issuer consolidated H12026 statements and limited review, approved30July2026",
+      "url": "https://www.adib.eg/media/2757582/ADIBConsalidatedQ22026English.pdf",
+      "period": "2026-06-30",
+      "accessedAt": "2026-10-11T08:39:12.298Z"
+    },
+    {
+      "id": "owners",
+      "title": "Issuer named shareholders and free float as of30June2026",
+      "url": "https://www.adib.eg/investor-relations/shareholders-structure",
+      "period": "2026-06-30",
+      "accessedAt": "2026-10-11T08:39:12.298Z"
+    },
+    {
+      "id": "board",
+      "title": "Issuer major decisions including30July and5February2026",
+      "url": "https://www.adib.eg/investor-relations/major-decisions",
+      "accessedAt": "2026-10-11T08:39:12.298Z"
+    },
+    {
+      "id": "egx",
+      "title": "EGX current disclosure sweep incomplete in analyst runtime",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-11T08:39:12.298Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ADIB",
+      "candidateId": "candidate-9ec8138a-7b90-4558-8401-f46615fd388a",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: substantive banking financials and ownership support continued research, but action reconciliation/current disclosure sweep and a valid swing entry remain incomplete. Confirmed price is below both daily moving averages.",
+      "sourceIds": [
+        "tv-adib",
+        "fs",
+        "owners",
+        "board",
+        "egx"
+      ],
+      "fundamentals": "[fs] Visually read pages2–4,10,17–18; EGP thousands converted to billions. July30 limited review had an unmodified negative-assurance conclusion, not an audit opinion. H1 attributable profit7.537bn versus6.225bn; net funds income12.254bn versus9.561bn. Credit-loss charge only2.176m versus732.193m adds an earnings-quality question. Customer stage2 financing5.390bn versus3.398bn; stage3 4.275bn versus4.126bn. Customer gross financing197.922bn; customer ECL7.495bn. Capital adequacy19.53%, leverage9.08%. Attributable book equity43.558bn and1.5bn shares imply June book value29.04/share;47.80 reference implies1.65x historical book, not fair value. Full annual and contingency reconciliation incomplete. [owners] June30 ADIB PJSC53.20% is an actual majority holder; Emirates International Investment13.44%, free float33.218%. No inference of October stake changes. Banking valuation must consider capital, credit quality and sustainable ROE, not cross-sector PE ranking.",
+      "technicals": "[tv-adib] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:57:43.947Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close47.8, SMA20=51.0330, SMA50=52.4644, ATR14=1.3592, RV20=1.1884. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means52.3020/47.8193, latest weekly high/low50.25/47.45. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[board] July30 board approved June results and independent director Rania Al-Mashat resignation for assembly ratification. February5 approved extension of USD30m parent support to March2033 subject to CBE/assembly. The June statements report issued capital15bn versus12bn at December; exact action record/ex dates need reconciliation before treating per-share history as comparable.",
+      "risks": "Moderate-to-high qualitative swing and banking risk: confirmed close47.80 below SMA20 51.03 and SMA50 52.46; successive weekly closes54,51,49.82,47.80 challenge momentum. Rapid financing growth and rising stage2 balances warrant monitoring, as do rate/FX/sovereign exposure and parent-related financing. Profit growth benefited from lower credit-loss expense. Missing action dates and full notes prevent clearance, without disproving the business.",
+      "invalidation": "Continuation case already lacks daily trend confirmation. Require later confirmed recovery and stabilization; a new confirmed low below latest weekly47.45 further weakens the near-term case. Not an executable stop instruction.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry or sizing. Obtain complete current disclosure/actions including capital-change adjustment; reconcile annual notes and current rates; then construct measured entry/stop/targets. Do not buy solely because screen PE appears low or force a rebound target. Current price below daily averages makes timing distinctly weaker than the medium-term company hypothesis.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "fs"
+          ],
+          "note": "Substantive interim performance, actual limited-review conclusion, credit stages and capital ratios visually verified; full annual, cash-flow/contingency notes and sustainable valuation reconciliation remain incomplete."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "owners"
+          ],
+          "note": "Dated June30 issuer table identifies majority53.20%, other major13.44% and33.218% free float. Verified as of that filing, not a guarantee of unchanged October ownership."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "board",
+            "egx"
+          ],
+          "note": "July/February board decisions read; current exchange sweep incomplete in this runtime."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "fs",
+            "owners",
+            "board",
+            "egx"
+          ],
+          "note": "Capital/share count increased from12bn/1.2bn to15bn/1.5bn; exact entitlement/effective dates and subsequent actions not reconciled."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-adib"
+          ],
+          "note": "[tv-adib] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:57:43.947Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close47.8, SMA20=51.0330, SMA50=52.4644, ATR14=1.3592, RV20=1.1884. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means52.3020/47.8193, latest weekly high/low50.25/47.45. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-adib"
+          ],
+          "note": "[tv-adib] Inspected raw volumes and finality in data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; latest1525188 shares,20-observation median1329550.5, median close-times-volume turnoverEGP66984045.91;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

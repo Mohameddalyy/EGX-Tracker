@@ -1,0 +1,35 @@
+{
+  "createdAt": "2026-10-11T08:42:25.008Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-adib-universe-01",
+  "queueId": "candidate-9ec8138a-7b90-4558-8401-f46615fd388a",
+  "reportId": "report-2026-10-11-adib-universe-formal-01",
+  "ticker": "ADIB",
+  "rationale": "Wait for capital-action reconciliation, remaining financial notes and current disclosures. Banking fundamentals warrant continued attention, but price below both moving averages lacks a confirmed recovery setup and no analyst-approved priced plan exists.",
+  "thesis": "Profitable financing growth and adequate reported capital may support medium-term value if earnings remain resilient after normalizing credit costs and adjusting per-share data for capital changes.",
+  "counterargument": "Provider PE4.65 and ROE42.81% compare favorably with eligible bank peers, and raw structure permits attractive gross reward/risk. However stage2 balances increased and unusually low credit-loss expense boosts reported profit while recent price trend is falling.",
+  "invalidation": "A new confirmed low below47.45 or material worsening of stage2/3 financing, capital or funding requires reassessment. Loss of46 support further weakens recovery. No approved stop order exists.",
+  "reviewConditions": "Reconcile capital increase record/ex dates and historical per-share adjustment, review remaining cash-flow/contingency/annual notes and subsequent exchange notices, and obtain a confirmed stabilization/recovery plus calculated entry plan. Monitor stage2/3 exposure and normalized credit cost in next results. Review after five observed sessions if unresolved.",
+  "processAssessment": "Read full report, original screen and immutable context. Independently verified issuer June30 ownership table: parent53.20%, other major13.44%,1.5bn shares versus1.2bn inMarch. This verifies dated control, not absence of later changes. Analyst correctly states H1 credit-loss expenseEGP2.176m versus732.193m (statement unitEGPthousands), distinct from balance-sheet customer ECL7.495bn; do not conflate them. Stage2 rises5.390bn from3.398bn require interpretation against financing growth and mix. Historical book-value1.65x differs from scanner1.566x: period/attribution/share adjustments need reconciliation. Frozen raw support-stop grossRR2.62 means geometry is not universally impossible, but mathematical upside alone is not a recovery trigger or valid priced plan. Three company/event checks unavailable, analyst defer, no plan. No orders/sizing.",
+  "uncertainties": [
+    "Capital-action dates and per-share comparability",
+    "Sustainable credit-loss charge and migration risk",
+    "Complete financial contingencies and current notices",
+    "Confirmed reversal timing and valid priced plan"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Constructive bank fundamentals and weak current trend create competing hypotheses; no calibrated directional claim until action and financial reconciliation."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.adib.eg/investor-relations/shareholders-structure",
+      "accessedAt": "2026-10-11T08:42:25.008Z",
+      "verification": "Independently read datedJune30 holder table andMarch comparison:53.20% parent,13.44% other major, share count1.5bn versus1.2bn. No October changes inferred."
+    }
+  ]
+}

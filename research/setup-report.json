@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "id": "report-20261008-agent-readiness",
+  "type": "readiness",
+  "createdAt": "2026-10-08T10:25:19.137Z",
+  "contextId": "context-97648760-26cc-4245-819a-af4451253440",
+  "summary": "EGX Research Analyst is configured for swing and medium-term research. It combines TradingView evidence, issuer/EGX disclosures, internet research, existing positions and conditional entry analysis. Research foundations were checked against public J.P. Morgan Asset Management, AQR and BlackRock publications. TradingView MCP connectivity and chart state were verified; the open chart was EURUSD, so every EGX review must explicitly verify symbols. The tracker context contains six active stocks and no recorded positions. Entry setups can include EGP risk per share and percentage downside; share quantities wait for portfolio value and approved risk limits.",
+  "limitations": [
+    "This is an implementation/readiness report, not a completed review or recommendation for the six stocks.",
+    "The reusable agent runs when invoked in Codex; no background schedule or broker order execution is configured.",
+    "The connector exposes 84 tools, but connection success does not prove every tool or account data entitlement works. Full news, fundamentals, screeners, depth and trade counts require per-capability verification.",
+    "Stored TradingView prices need refreshing before timely entry assessments. Current verified EGX feed policy is a 15-minute delay.",
+    "The official EGX homepage could not be opened during this research check; actual financial documents must be obtained through EGX or issuer investor relations before a company conclusion.",
+    "Published institutional research is a methodological foundation, not proprietary bank models or proof of an EGX edge. Existing replay is exploratory.",
+    "Portfolio value, cash, risk limits and realistic costs are still unknown. No real share-size recommendation has been generated."
+  ],
+  "sources": [
+    {"id":"JPM","title":"J.P. Morgan Asset Management — Global Equities Research Capabilities","url":"https://am.jpmorgan.com/us/en/asset-management/institutional/media/global-equities-research-capabilities/","accessedAt":"2026-10-08T10:25:19.137Z"},
+    {"id":"AQR-VM","title":"AQR — Value and Momentum Everywhere","url":"https://www.aqr.com/Insights/Research/Journal-Article/Value-and-Momentum-Everywhere","publishedAt":"2013-06-01","accessedAt":"2026-10-08T10:25:19.137Z"},
+    {"id":"AQR-COST","title":"AQR — Trading Costs of Asset Pricing Anomalies","url":"https://www.aqr.com/Insights/Research/Working-Paper/Trading-Costs-of-Asset-Pricing-Anomalies","publishedAt":"2012-12-05","accessedAt":"2026-10-08T10:25:19.137Z"},
+    {"id":"BLK","title":"BlackRock — Total Portfolio Approach","url":"https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/our-take-on-total-portfolio-approach","accessedAt":"2026-10-08T10:25:19.137Z"},
+    {"id":"TV","title":"TradingView — Market Data Coverage","url":"https://www.tradingview.com/data-coverage/","accessedAt":"2026-10-08T10:25:19.137Z"}
+  ],
+  "assessments": []
+}

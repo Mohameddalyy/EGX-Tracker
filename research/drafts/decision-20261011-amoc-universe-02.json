@@ -1,0 +1,42 @@
+{
+  "createdAt": "2026-10-11T21:32:34.531Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-amoc-universe-02",
+  "queueId": "candidate-5dbac95c-8137-4e0e-b18a-876b76e242b5",
+  "reportId": "report-2026-10-11-amoc-universe-formal-02",
+  "ticker": "AMOC",
+  "rationale": "Wait after reassessment. Recovered September28 operational milestones strengthen the catalyst hypothesis, but expected savings are not realized earnings and current financial/ownership/action checks and approved entry geometry remain incomplete.",
+  "thesis": "Successful GroupII production trials and acid-gas reuse could improve product mix and operating costs alongside positive price momentum if commercial execution and cash benefits are confirmed.",
+  "counterargument": "The board reports a successful production trial without new facilities and completed mechanical work for acid-gas treatment; these are concrete improvements over a bare proposal. However trial operation and USD2.5m estimated annual savings are not demonstrated recurring cash flow, and existing collection/financial-review gaps remain.",
+  "invalidation": "A later confirmed close below the September28 low12.18 or verified material deterioration in collections, cash generation or governance invalidates the continuation hypothesis. These are research conditions, not executable stops.",
+  "reviewConditions": "Obtain actual review conclusion, remaining financial notes, current control and October action sweep; verify commercial GroupII volumes/margins and measured acid-gas savings after trial stabilization. Reassess confirmed breakout above14.74 or supported pullback with fresh analyst-priced plan and all checks. Review after five observed sessions if unresolved.",
+  "processAssessment": "Read entire reassessment report, fresh immutable context and recheck evidence. Independently visually inspected both pages of recovered signed September28 PDF: GroupII trial using existing assets, acid-gas mechanical work complete with trial operation ongoing, estimated USD2.5m yearly savings versus USD250k project cost and28500ton carbon reduction. The implied ten-times annual savings/cost ratio particularly merits operating assumptions and realized-benefit verification; it is not an investment return or guaranteed payback. This project is separate from July CHP term sheet. ConfirmedOctober7 bars and price levels are unchanged, no price-trigger evidence newly established. Old12.81 support was previously breached; fresh structure remains necessary. Four evidence checks unavailable, analyst defer, no priced plan. Supersedes action with new evidence, never rewrites prior forecast. No orders/sizing.",
+  "uncertainties": [
+    "Current beneficial ownership and voting control",
+    "Actual interim limited-review conclusion, contingencies and normalized valuation",
+    "Subsequent corporate actions, suspension/price-limit status and October news",
+    "CHP completion timing and achievable savings",
+    "Execution spreads and future gap risk"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "New operating milestones improve evidence but do not resolve financial/event gaps or justify a calibrated directional return forecast; prior forecast remains preserved."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.amoceg.com/en/media-center/news/186",
+      "accessedAt": "2026-10-11T08:28:20.000Z",
+      "verification": "Independently read July31 issuer term-sheet announcement;16MW scalable30MW, estimated AMOC annual savings49m and government125m. No commissioning confirmed."
+    },
+    {
+      "url": "https://egx.com.eg/downloads/Bulletins/344807_1.pdf",
+      "accessedAt": "2026-10-11T21:32:34.531Z",
+      "verification": "Independently visually inspected both locally rendered pages of recovered signed September28 board release. Trial milestones and estimated savings confirmed as issuer claims, not independently realized benefits."
+    }
+  ],
+  "supersedes": "decision-20261011-amoc-universe-01"
+}

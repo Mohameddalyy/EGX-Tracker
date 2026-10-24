@@ -1,0 +1,1329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:egx:v5:decision:1.0",
+  "title": "Phase3 planned paper decision contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "scope",
+    "runId",
+    "createdAt",
+    "policyHash",
+    "baselineHash",
+    "instrumentId",
+    "positionState",
+    "action",
+    "reasonCodes",
+    "summary",
+    "dataQuality",
+    "sourceEvidence",
+    "research",
+    "execution",
+    "riskCertificate",
+    "nextReview",
+    "variantId",
+    "controlValidation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "decision-v5-1.0"
+    },
+    "scope": {
+      "const": "PAPER_ONLY"
+    },
+    "runId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "policyHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "baselineHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "instrumentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "positionState": {
+      "enum": [
+        "UNOWNED",
+        "HELD",
+        "ENTRY_PENDING",
+        "EXIT_PENDING"
+      ]
+    },
+    "action": {
+      "enum": [
+        "BUY",
+        "SELL",
+        "HOLD",
+        "NO-TRADE"
+      ]
+    },
+    "reasonCodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataQuality": {
+      "type": "object",
+      "required": [
+        "status",
+        "gaps",
+        "coverageWindow",
+        "observedAt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "DEGRADED",
+            "BLOCKED",
+            "UNOBSERVABLE"
+          ]
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/gap"
+          }
+        },
+        "coverageWindow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceEvidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "origin",
+          "capturedAt",
+          "availabilityStatus"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origin": {
+            "type": "string",
+            "minLength": 1
+          },
+          "documentHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "page": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "capturedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "publishedAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "effectiveAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "availabilityStatus": {
+            "enum": [
+              "VERIFIED",
+              "UNKNOWN_PUBLICATION_TIME",
+              "PROXY",
+              "CONFLICTED",
+              "FAILED"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "research": {
+      "type": "object",
+      "required": [
+        "decision",
+        "reportIds",
+        "thesis",
+        "countercase",
+        "confidence",
+        "forecast"
+      ],
+      "properties": {
+        "decision": {
+          "enum": [
+            "Watch",
+            "Wait",
+            "Avoid",
+            "UNREVIEWED"
+          ]
+        },
+        "reportIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "thesis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "countercase": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "UNCERTAIN"
+          ]
+        },
+        "forecast": {
+          "type": "object",
+          "required": [
+            "status",
+            "horizonsSessions",
+            "measurement"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "PRECOMMITTED",
+                "EXPLICIT_UNCERTAINTY"
+              ]
+            },
+            "horizonsSessions": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  5,
+                  20,
+                  60
+                ]
+              },
+              "minItems": 1
+            },
+            "measurement": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "execution": {
+      "type": "object",
+      "required": [
+        "status",
+        "planId",
+        "orderIntentId",
+        "quantity",
+        "calculationArtifactHash",
+        "intentCommittedAt",
+        "fillId",
+        "limitations",
+        "acceptedOrderReceiptHash",
+        "reservationReceiptHash",
+        "revalidationReceiptHashes",
+        "marketWindowEnd",
+        "reconciliationDeadline",
+        "cancelCommittedAt",
+        "marketFillAt",
+        "fillObservedAt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "NOT_APPLICABLE",
+            "BLOCKED",
+            "PROPOSED",
+            "RESERVED",
+            "UNFILLED",
+            "FILLED",
+            "EXIT_PENDING",
+            "EXPIRED_PENDING_RECONCILIATION",
+            "NO_FILL_EVIDENCE"
+          ]
+        },
+        "planId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "orderIntentId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "calculationArtifactHash": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "intentCommittedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "fillId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "acceptedOrderReceiptHash": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reservationReceiptHash": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revalidationReceiptHashes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "marketWindowEnd": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "reconciliationDeadline": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "cancelCommittedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "marketFillAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "fillObservedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "riskCertificate": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/risk"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "nextReview": {
+      "type": "object",
+      "required": [
+        "trigger",
+        "owner",
+        "dueAt"
+      ],
+      "properties": {
+        "trigger": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dueAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "variantId": {
+      "enum": [
+        "B0",
+        "B1",
+        "B2",
+        "B3",
+        "FULL-BOUNDED",
+        "FULL",
+        "FULL-NO-PEER",
+        "FULL-NO-MACRO",
+        "FULL-NO-SECTOR"
+      ]
+    },
+    "controlValidation": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "checks",
+            "calculationArtifactHash",
+            "variantId"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "variantId": {
+              "enum": [
+                "B0",
+                "B1",
+                "B2",
+                "B3",
+                "FULL-BOUNDED",
+                "FULL",
+                "FULL-NO-PEER",
+                "FULL-NO-MACRO",
+                "FULL-NO-SECTOR"
+              ]
+            },
+            "calculationArtifactHash": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "checks": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "passed",
+                  "evidenceId"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "passed": {
+                    "type": "boolean"
+                  },
+                  "evidenceId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "const": "BUY"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "positionState": {
+            "enum": [
+              "UNOWNED",
+              "ENTRY_PENDING"
+            ]
+          },
+          "execution": {
+            "properties": {
+              "quantity": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "calculationArtifactHash": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "planId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "orderIntentId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "PROPOSED",
+                  "RESERVED",
+                  "UNFILLED",
+                  "FILLED",
+                  "EXPIRED_PENDING_RECONCILIATION",
+                  "NO_FILL_EVIDENCE"
+                ]
+              }
+            }
+          },
+          "dataQuality": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "VERIFIED",
+                  "DEGRADED"
+                ]
+              }
+            }
+          },
+          "controlValidation": {
+            "type": "object",
+            "properties": {
+              "checks": {
+                "items": {
+                  "properties": {
+                    "passed": {
+                      "const": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "enum": [
+              "SELL",
+              "HOLD"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "positionState": {
+            "enum": [
+              "HELD",
+              "EXIT_PENDING"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "const": "BUY"
+          },
+          "variantId": {
+            "enum": [
+              "FULL",
+              "FULL-NO-PEER",
+              "FULL-NO-MACRO",
+              "FULL-NO-SECTOR"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "riskCertificate": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/risk"
+              },
+              {
+                "properties": {
+                  "actionSide": {
+                    "const": "BUY"
+                  },
+                  "decision": {
+                    "enum": [
+                      "APPROVE",
+                      "APPROVE_WITH_EXCEPTION"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "const": "BUY"
+          },
+          "variantId": {
+            "enum": [
+              "B3",
+              "FULL-BOUNDED",
+              "FULL",
+              "FULL-NO-PEER",
+              "FULL-NO-MACRO",
+              "FULL-NO-SECTOR"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "research": {
+            "properties": {
+              "decision": {
+                "const": "Watch"
+              },
+              "confidence": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM"
+                ]
+              },
+              "reportIds": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "variantId": {
+            "const": "B0"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "action": {
+            "const": "NO-TRADE"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "reasonCodes": {
+            "contains": {
+              "const": "RISK_EXIT"
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "action": {
+            "const": "SELL"
+          },
+          "variantId": {
+            "enum": [
+              "FULL",
+              "FULL-NO-PEER",
+              "FULL-NO-MACRO",
+              "FULL-NO-SECTOR"
+            ]
+          },
+          "riskCertificate": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/risk"
+              },
+              {
+                "properties": {
+                  "actionSide": {
+                    "const": "SELL"
+                  },
+                  "decision": {
+                    "const": "REDUCE_BY_EXIT"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "gap": {
+      "type": "object",
+      "required": [
+        "field",
+        "criticality",
+        "attempts",
+        "selectedFallback",
+        "consequence",
+        "beforeAfter",
+        "nextAttempt"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "criticality": {
+          "enum": [
+            "CRITICAL",
+            "IMPORTANT",
+            "OPTIONAL",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "source",
+              "at",
+              "result"
+            ],
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "result": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "selectedFallback": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "consequence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "beforeAfter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nextAttempt": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "scope",
+        "policyHash",
+        "portfolioSnapshotHash",
+        "evidenceSnapshotHash",
+        "instrumentId",
+        "orderIntentId",
+        "createdAt",
+        "validUntil",
+        "decision",
+        "equityBasisEGP",
+        "approvedQuantity",
+        "calculationArtifactHash",
+        "cashAfterCommitmentsEGP",
+        "initialRiskEGP",
+        "forwardPortfolioRiskEGP",
+        "alternatives",
+        "lossMechanisms",
+        "scenarioResults",
+        "advisoryDeviations",
+        "rationale",
+        "countercase",
+        "independentChallenge",
+        "hardChecks",
+        "revocationTriggers",
+        "actionSide",
+        "maxPlannedLossEGP",
+        "maxCashAllocationEGP",
+        "actorId",
+        "modelId"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "const": "PAPER_ONLY"
+        },
+        "policyHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "portfolioSnapshotHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "evidenceSnapshotHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "instrumentId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "orderIntentId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "validUntil": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "decision": {
+          "enum": [
+            "BLOCK",
+            "APPROVE",
+            "APPROVE_WITH_EXCEPTION",
+            "REDUCE_BY_EXIT"
+          ]
+        },
+        "equityBasisEGP": {
+          "type": "number",
+          "minimum": 0
+        },
+        "approvedQuantity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "calculationArtifactHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "cashAfterCommitmentsEGP": {
+          "type": "number",
+          "minimum": 0
+        },
+        "initialRiskEGP": {
+          "type": "number",
+          "minimum": 0
+        },
+        "forwardPortfolioRiskEGP": {
+          "type": "number",
+          "minimum": 0
+        },
+        "alternatives": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "quantity",
+              "plannedLossEGP",
+              "rationale"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "quantity": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "plannedLossEGP": {
+                "type": "number",
+                "minimum": 0
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "lossMechanisms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "scenarioResults": {
+          "type": "array",
+          "minItems": 7,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "assumptions",
+              "lossEGP",
+              "status"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assumptions": {
+                "type": "string",
+                "minLength": 1
+              },
+              "lossEGP": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "status": {
+                "enum": [
+                  "CALCULATED",
+                  "UNQUANTIFIABLE"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "advisoryDeviations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "ruleId",
+              "defaultOutcome",
+              "proposedOutcome",
+              "support",
+              "contraryEvidence",
+              "compensatingConditions",
+              "expiresAt"
+            ],
+            "properties": {
+              "ruleId": {
+                "enum": [
+                  "POSITION_RISK",
+                  "AGGREGATE_RISK",
+                  "NAME_GROUP",
+                  "SECTOR_CLUSTER",
+                  "CASH_RESERVE",
+                  "POSITION_COUNT",
+                  "IMPORTANT_GAP",
+                  "DAILY_DRAWDOWN",
+                  "EXPERIMENT_DRAWDOWN",
+                  "ALLOCATION_PRIORITY"
+                ]
+              },
+              "defaultOutcome": {
+                "type": "string",
+                "minLength": 1
+              },
+              "proposedOutcome": {
+                "type": "string",
+                "minLength": 1
+              },
+              "support": {
+                "type": "string",
+                "minLength": 1
+              },
+              "contraryEvidence": {
+                "type": "string",
+                "minLength": 1
+              },
+              "compensatingConditions": {
+                "type": "string",
+                "minLength": 1
+              },
+              "expiresAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "countercase": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independentChallenge": {
+          "type": "object",
+          "required": [
+            "reviewId",
+            "actorId",
+            "modelId",
+            "createdAt",
+            "objections",
+            "response",
+            "unresolvedCriticalDefect",
+            "remainingDissent"
+          ],
+          "properties": {
+            "reviewId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "actorId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "modelId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "objections": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "response": {
+              "type": "string",
+              "minLength": 1
+            },
+            "unresolvedCriticalDefect": {
+              "type": "boolean"
+            },
+            "remainingDissent": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "hardChecks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "passed",
+              "evidenceId"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "passed": {
+                "type": "boolean"
+              },
+              "evidenceId": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "revocationTriggers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "actionSide": {
+          "enum": [
+            "BUY",
+            "SELL"
+          ]
+        },
+        "actorId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "modelId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maxPlannedLossEGP": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxCashAllocationEGP": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "enum": [
+                  "APPROVE",
+                  "APPROVE_WITH_EXCEPTION",
+                  "REDUCE_BY_EXIT"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "approvedQuantity": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "independentChallenge": {
+                "properties": {
+                  "unresolvedCriticalDefect": {
+                    "const": false
+                  }
+                }
+              },
+              "hardChecks": {
+                "items": {
+                  "properties": {
+                    "passed": {
+                      "const": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "APPROVE_WITH_EXCEPTION"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "advisoryDeviations": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "actionSide": {
+                "const": "BUY"
+              },
+              "decision": {
+                "enum": [
+                  "APPROVE",
+                  "APPROVE_WITH_EXCEPTION"
+                ]
+              }
+            }
+          },
+          "then": {
+            "anyOf": [
+              {
+                "properties": {
+                  "maxPlannedLossEGP": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "maxCashAllocationEGP": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "REDUCE_BY_EXIT"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "actionSide": {
+                "const": "SELL"
+              },
+              "alternatives": {
+                "minItems": 2
+              }
+            },
+            "description": "At least continue-held and full-exit alternatives. No partial trims."
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "actionSide": {
+                "const": "BUY"
+              },
+              "decision": {
+                "enum": [
+                  "APPROVE",
+                  "APPROVE_WITH_EXCEPTION"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "alternatives": {
+                "minItems": 4
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "description": "Structural contract only. Phase4 must additionally verify complete mandatory check IDs, evidence and hashes, cross-object identity/quantity/budget equality, actor independence, chronology, valid reservations and arithmetic. A structurally valid record is not execution authorization."
+}

@@ -1,0 +1,13 @@
+{
+  "automationId": "egx-decision-scout-and-research-analyst",
+  "status": "ACTIVE",
+  "timezone": "Africa/Cairo",
+  "description": "22:00 Africa/Cairo, Sunday\u2013Thursday: Scout \u2192 Research Analyst \u2192 Final Decision Agent, then outcome monitoring for every decision. Local computer, Codex and TradingView must be available.",
+  "requires": "Computer, Codex and TradingView Desktop available; approved local/network access.",
+  "notificationPolicy": "New Watch decisions, changed decisions, material risk changes, matured outcome horizons, failures or required input; quiet when unchanged.",
+  "wakeCadence": "Hourly guard check; only one evening research workflow is due at 22:00 Africa/Cairo Sunday\u2013Thursday",
+  "recovery": "Latest due slot within 12 hours; actual timestamps; explicit interrupted-owner recovery; no fabricated market observations",
+  "operationsProtocol": "agent/operations-workflow.md",
+  "deliveryVerification": "Pending first instrumented scheduled run",
+  "startupTask": "EGX Tracker Dashboard Supervisor (dashboard only; current user logon)"
+}

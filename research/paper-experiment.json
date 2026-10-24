@@ -1,0 +1,84 @@
+{
+  "id": "egx-paper-2026-10-11",
+  "version": "paper-1.2",
+  "mode": "PAPER_ONLY",
+  "timezone": "Africa/Cairo",
+  "startDate": "2026-10-11",
+  "endDate": "2026-10-15",
+  "capitalEGP": 20000,
+  "feePerFilledOrderEGP": 5,
+  "riskPerPositionFraction": 0.01,
+  "maxPortfolioRiskFraction": 0.04,
+  "maxPositionFraction": 0.25,
+  "maxSectorFraction": 0.4,
+  "minCashFraction": 0.1,
+  "maxPositions": 6,
+  "maxDailyVolumeParticipation": 0.01,
+  "maxMinuteVolumeParticipation": 0.01,
+  "adverseSlippageFraction": 0.001,
+  "minimumNetRewardRisk": 2,
+  "entryWindowMinutes": 5,
+  "maxCaptureAgeHours": 36,
+  "maxLiveBarLagMinutesBeyondFeedDelay": 5,
+  "strategy": "Long-only swing pullback/breakout setups approved by the independent final decision agent under priced-plan-1.0. Require prior confirmed daily entry conditions; no ADD or averaging down during this pilot. Rank eligible entries by existing scout score descending, then ticker. Stops and first measured target are fixed; no trailing stop or mid-week tuning.",
+  "riskSizing": "Whole shares limited by 1% current equity planned stop risk, 4% aggregate stop risk, 25% stock allocation, 40% sector allocation, 10% cash reserve and 1% median daily share volume. Include both fixed fees and adverse exit slippage. Stops are scenarios, not guaranteed loss limits.",
+  "fillModel": "All-or-none simulated entry at the open of the first eligible completed one-minute TradingView candle strictly after decision completion, plus 0.1% adverse slippage, only within the approved entry zone and at <=1% candle volume. Try at most five eligible minutes in the same session; gaps/missing minutes block a fill. Entry price is never an old delayed quote. Unfilled orders incur no fee. Filled orders incur exactly EGP 5 each; slippage is a separate simulation assumption, not a broker fee.",
+  "exitModel": "After a paper entry, observe fixed stop/T1 on subsequent one-minute candles. If both are touched, flag ambiguity and prioritize the stop. Precommitted exit triggers at that candle end; simulate a full exit at a later minute open less 0.1% adverse slippage, subject to positive raw volume and the same 1% participation cap. A gap may exceed planned risk. Do not assume execution at the stop or target. If unfilled, retain and flag the open risk.",
+  "settlement": "Broker-neutral simulation: sale proceeds become available after a simulated sell fill. No T+2 restriction, withdrawal service or broker-specific order rules are assumed.",
+  "sources": {
+    "marketData": "TradingView",
+    "research": "TradingView plus dated issuer, exchange/regulator and other authoritative primary disclosures; missing evidence blocks approval",
+    "excludedDomains": [
+      "stockanalysis.com",
+      "mubasher.info",
+      "mubasher.com",
+      "thndr.app"
+    ],
+    "notion": "Not required; local experiment SQLite is authoritative"
+  },
+  "scheduleCairo": {
+    "morning": "09:00",
+    "intraday": "10:45",
+    "close": "15:15",
+    "evening": "22:00"
+  },
+  "weekEnd": "No forced Thursday liquidation. Report open holdings separately, with unrealized P&L. Preserve 5/20/60-session observation follow-up in the existing nightly workflow. No new paper entries after 15 October.",
+  "amendments": "Append proposals only. Data-integrity failures suspend affected simulated execution; never rewrite past decisions or silently apply changed rules.",
+  "initialStatus": "Prepared; first open-session freshness test, calendar/corporate-action evidence and experiment preflight remain required. No real-account capital or risk limits are set.",
+  "evaluation": {
+    "version": "evaluation-1.0",
+    "benchmarks": [
+      "Uninvested EGP cash (0%, no interest)",
+      "EGX30 price index",
+      "EGX70EWI price index (secondary size-segment context)"
+    ],
+    "targets": {
+      "checkpointCompletion": "100% of scheduled trading-day checkpoints; independently document holidays",
+      "lateThresholdMinutes": 15,
+      "riskCompliance": "100% of proposed entries within frozen limits",
+      "evidenceCompleteness": "100% of fills traceable to timestamped TradingView bars and an approved plan",
+      "feeReconciliation": "Exactly EGP 5 per filled order; zero for unfilled orders",
+      "profitability": "Measure net return and matched index excess return; no forced profit target or minimum trade count"
+    },
+    "report": "Daily scorecard and immutable JSON/Markdown evidence reports. At Thursday 22:00 produce intensive sourced narrative with trade attribution, rejected-candidate review, failure analysis and prioritized testable improvements. No automatic parameter tuning.",
+    "methodologySource": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-performance-evaluation",
+    "reportingStandard": "GIPS-inspired internal reporting; not a GIPS compliance claim. No annualization of the one-week return.",
+    "riskFreeHurdle": {
+      "status": "unavailable",
+      "currency": "EGP",
+      "requirement": "Dated authoritative short-term EGP rate with maturity, quote convention and period conversion; never substitute 0% cash or invent a rate."
+    },
+    "taxes": {
+      "status": "not modelled; user fee assumption only",
+      "afterTaxClaim": false
+    }
+  },
+  "weeklyDrawdownStopFraction": 0.04,
+  "maxTotalExposureFraction": 0.9,
+  "riskControls": {
+    "weeklyStop": "Latch at 4% observed peak-to-trough equity drawdown for the remainder of the experiment. Cancel pending entries; retain precommitted exits and observation.",
+    "dataFailure": "Block new entries and cancel pending entry orders while preflight or portfolio valuations are unreliable. No automatic liquidation.",
+    "sizing": "Fixed fractional risk; no Kelly.",
+    "observationLimit": "Local checkpoint-based checks; breaches between observations may be missed. No continuous monitoring claim."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "EGX Research Analyst"
+  short_description: "Sourced EGX research, entry reviews and position risk"
+  default_prompt: "Use $egx-research to review my EGX watchlist and holdings using TradingView and current primary sources, then save a sourced report to my tracker."

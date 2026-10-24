@@ -1,0 +1,33 @@
+import {isConfirmedBar} from './finality.mjs';
+import {finite} from './analysis-store.mjs';
+export const mean=a=>a.length?a.reduce((n,x)=>n+x,0)/a.length:null;
+export const median=a=>{const x=a.filter(finite).sort((a,b)=>a-b);return x.length?(x[Math.floor((x.length-1)/2)]+x[Math.ceil((x.length-1)/2)])/2:null;};
+export const deviation=a=>a.length>1?Math.sqrt(a.reduce((n,x)=>n+(x-mean(a))**2,0)/(a.length-1)):null;
+export function priceFeatures(bars){
+ const b=bars.filter(x=>[x.close,x.open,x.high,x.low,x.volume].every(finite)&&x.close>0),last=b.at(-1),ret=n=>b.length>n?last.close/b.at(-n-1).close-1:null;
+ const returns=b.slice(-61).slice(1).map((v,i)=>v.close/b.slice(-61)[i].close-1),sma50=b.length>=50?mean(b.slice(-50).map(x=>x.close)):null;
+ const ranges=b.slice(-15).slice(1).map((v,i)=>Math.max(v.high-v.low,Math.abs(v.high-b.slice(-15)[i].close),Math.abs(v.low-b.slice(-15)[i].close)));
+ const turnover=b.slice(-20).map(x=>x.close*x.volume),volumes=b.slice(-20).map(x=>x.volume),old=b.slice(-60,-20).map(x=>x.close*x.volume);
+ return {asOf:last?.day||null,close:last?.close??null,observations:b.length,return20:ret(20),return60:ret(60),sma50,aboveSma50:sma50===null?null:last.close>sma50,volatility20:deviation(returns.slice(-20)),atr14:ranges.length===14?mean(ranges):null,atrMethod:"Simple mean of 14 true ranges, not Wilder smoothing",medianTurnover20:median(turnover),medianVolume20:median(volumes),turnoverChange:old.length&&median(old)>0?median(turnover)/median(old)-1:null,activeSessions20:volumes.filter(x=>x>0).length};
+}
+export function rankValues(rows,key){const usable=rows.filter(x=>finite(x[key]));return new Map(usable.map(x=>[x.ticker,usable.length>1?100*(usable.filter(y=>y[key]<x[key]).length+.5*(usable.filter(y=>y[key]===x[key]).length-1))/(usable.length-1):null]));}
+function aggregate(rows){const returns=rows.map(x=>x.features.return20).filter(finite),breadth=rows.filter(x=>x.features.aboveSma50!==null);return {members:rows.length,breadthUsable:breadth.length,aboveSma50Fraction:breadth.length?breadth.filter(x=>x.features.aboveSma50).length/breadth.length:null,medianReturn20:median(returns),returnDispersion20:deviation(returns),medianVolatility20:median(rows.map(x=>x.features.volatility20)),medianTurnoverChange:median(rows.map(x=>x.features.turnoverChange))};}
+export function buildMarketContext(stocks,now=new Date()){
+ const rows=stocks.map(s=>{const bars=s.bars.filter(b=>isConfirmedBar(b,now)),features=priceFeatures(bars),age=validAge(s.retrieved_at,now),factsAge=validAge(s.factsCapturedAt,now);return {ticker:s.ticker,name:s.name,currency:s.currency,sector:s.sector||'Unclassified',industry:s.facts?.industry||null,capturedAt:s.retrieved_at,captureAgeHours:age,fresh:age!==null&&age<=36&&features.asOf!==null&&(+now-Date.parse(features.asOf))/86400000<=7,features,facts:s.facts||{},factsFresh:factsAge!==null&&factsAge<=36};});
+ const asOf=rows.filter(x=>x.currency==='EGP'&&x.features.observations>=61).map(x=>x.features.asOf).sort().at(-1)||null;
+ const aligned=rows.filter(x=>x.currency==='EGP'&&x.features.asOf===asOf&&x.features.observations>=61),fresh=aligned.filter(x=>x.fresh),summary=aggregate(aligned);
+ const sectors=[...new Set(rows.map(x=>x.sector))].map(sector=>({sector,...aggregate(aligned.filter(x=>x.sector===sector)),freshMembers:fresh.filter(x=>x.sector===sector).length}));
+ const inputs=aligned.map(x=>({ticker:x.ticker,momentum:x.features.return60,liquidity:x.features.medianTurnover20})),momentum=rankValues(inputs,'momentum'),liquidity=rankValues(inputs,'liquidity');
+ for(const row of rows){const sector=sectors.find(s=>s.sector===row.sector);row.features.sectorRelative20=finite(row.features.return20)&&finite(sector.medianReturn20)&&row.features.asOf===asOf?row.features.return20-sector.medianReturn20:null;row.factors={momentum:{percentile:momentum.get(row.ticker)??null,basis:'60-observation price return; one momentum rank, not votes from correlated indicators'},liquidity:{percentile:liquidity.get(row.ticker)??null,basis:'Median close × shares volume; turnover proxy, not exact traded value'},quality:{value:row.factsFresh&&finite(row.facts.return_on_equity)?row.facts.return_on_equity:null,status:'Provider snapshot; statement reconciliation required'},value:{earningsYield:row.factsFresh&&row.facts.price_earnings_ttm>0?1/row.facts.price_earnings_ttm:null,priceBook:row.factsFresh&&row.facts.price_book_fq>0?row.facts.price_book_fq:null,status:'Separate valuation inputs, not an intrinsic value estimate'}};row.usableForCurrentResearch=row.fresh&&row.currency==='EGP'&&row.features.asOf===asOf&&row.features.observations>=61;}
+ const coverage=rows.length?fresh.length/rows.length:0;
+ const state=coverage<.6?'insufficient fresh coverage':summary.aboveSma50Fraction>=.6&&summary.medianReturn20>0?'broad rising trend':summary.aboveSma50Fraction<=.4&&summary.medianReturn20<0?'broad falling trend':'mixed/range';
+ return {version:'market-context-1.0',generatedAt:now.toISOString(),asOf,coverage:{catalog:rows.length,alignedEGP:aligned.length,freshAlignedEGP:fresh.length,otherCurrency:rows.filter(x=>x.currency!=='EGP').length,freshFraction:coverage},state,statePolicy:'Descriptive prototype: 60% fresh universe coverage; breadth 60%/40% and median 20-return sign. Not a validated entry gate.',historical:summary,sectors,stocks:rows,limitations:['Aggregates use aligned stored closes; dates and freshness remain explicit. Sector figures are constituent medians, not official sector index returns.','No covariance/alpha claim from scanner performance snapshots. No current macro values are inferred.','Price histories are provider-revised, not a pre-existing point-in-time universe archive.']};
+}
+function validAge(at,now){const age=(+now-Date.parse(at))/3600000;return finite(age)&&age>=0?age:null;}
+const cache=new WeakMap();
+export function marketAnalysis(db,now=new Date()){
+ const signature=JSON.stringify([db.prepare('SELECT MAX(retrieved_at) at FROM stocks').get().at,db.prepare('SELECT MAX(captured_at) at FROM market_facts').get().at,now.toISOString()]),prior=cache.get(db);if(prior?.signature===signature)return prior.value;
+ const stocks=db.prepare('SELECT s.*,m.sector,f.captured_at factsCapturedAt,f.payload FROM stocks s JOIN market_catalog m ON m.ticker=s.ticker LEFT JOIN market_facts f ON f.ticker=s.ticker').all().map(s=>({...s,facts:s.payload?JSON.parse(s.payload):{},bars:[]}));
+ const byTicker=new Map(stocks.map(s=>[s.ticker,s]));for(const b of db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON c.ticker=b.ticker AND c.day=b.day ORDER BY b.ticker,b.day').all())byTicker.get(b.ticker)?.bars.push(b);
+ const value=buildMarketContext(stocks,now);cache.set(db,{signature,value});return value;
+}

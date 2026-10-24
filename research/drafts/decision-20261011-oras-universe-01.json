@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-11T08:32:37.613Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-oras-universe-01",
+  "queueId": "candidate-e73b40c6-3a00-41ad-b2f5-0db4dcac4a8e",
+  "reportId": "report-2026-10-11-oras-universe-formal-01",
+  "ticker": "ORAS",
+  "rationale": "Wait for current merger/capital-action and control evidence and a calculated entry plan. Growth and strong confirmed volume are constructive, but H1 operating cash absorption and event dilution need assessment;877.02 sits close to890 historical resistance.",
+  "thesis": "Construction backlog and earnings growth could support medium-term value if contracted work converts into cash and proposed OCI combination terms are accretive on a verified post-transaction basis.",
+  "counterargument": "Reported H1 profit/revenue growth, substantial cash and RV20=4.30 can sustain momentum despite temporary working-capital absorption. Negative operating cash flow alone does not establish business failure; however headline net cash and P/E8.49 cannot demonstrate post-merger fair value.",
+  "invalidation": "A confirmed close below763 September30 low, materially adverse collections/funding or litigation developments, or unfavorable verified combination terms invalidate the continuation hypothesis. A merger revision requires new analyst valuation and price adjustment, not a retrospective forecast edit.",
+  "reviewConditions": "Obtain current OCI approval/closing or amendment notices, post-June ownership changes and full dividend/capital/suspension status; reconcile USD accounts to EGP per-share valuation and potential new-share count. Reassess a confirmed breakout above894 or a better pullback with a newly calculated cost-adjusted plan. Review after five observed sessions if evidence remains unresolved.",
+  "processAssessment": "Read full analyst report, immutable context and original screen. Independently challenged currency, cash conversion and price geometry: USD H1 profit115.3m versus CFO-54.5m requires working-capital explanation; cash may not all be fungible. Current/EPS/ROE scanner observations are not an independently reconciled valuation; sector peer medians unavailable.877.02 to890 is12.98 versus ATR29.97 and114.02 to763 support before a buffer; do not skip supply to invent2:1. October7 high894 exceeded890 but close did not; current-day bar is provisional. Analyst inspected primary reviewed statements and dated holder documents but flags three unavailable checks and no priced plan. Independent web re-open of issuer OCI update failed; it provides no newer completion evidence. Wait reflects actionable gaps, not a negative forecast. No orders/share sizes.",
+  "uncertainties": [
+    "Current status and economic dilution/accretion of OCI combination",
+    "Current beneficial control and complete shareholder changes",
+    "Full current corporate-action/suspension review",
+    "Receivable collection, cash fungibility, litigation and FX conversion",
+    "Defensible dated price plan and future execution liquidity"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Constructive operating/technical evidence is offset by unresolved merger and cash-conversion risks; no calibrated directional hurdle forecast is justified."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://orascom.com/updates/update-on-proposed-combination-with-oci-global/",
+      "accessedAt": "2026-10-11T08:32:37.613Z",
+      "verification": "Independent web attempt failed with unexpected status; no new facts or present merger completion inferred. Dated July terms remain analyst-reported primary evidence."
+    }
+  ]
+}

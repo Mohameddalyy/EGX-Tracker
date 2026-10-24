@@ -1,0 +1,31 @@
+{
+  "id": "decision-20261018-ajwa-completeness-01",
+  "queueId": "candidate-73e4315c-b941-4783-bcb8-fc3637be3119",
+  "reportId": "report-2026-10-15-ajwa-ownership-resume-01",
+  "ticker": "AJWA",
+  "createdAt": "2026-10-18T20:58:50.503Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "supersedes": "decision-20261011-ajwa-universe-01",
+  "rationale": "Non-price-sensitive Wait: the October15 analyst still defers and lacks current financials, news/action clearance and a priced plan. Independent official disclosure search revealed omitted October11 filing-committee and October14 AGM notices requiring fresh analyst review. The October15 technical capture is stale for approval; no current adverse-company conclusion is established.",
+  "thesis": "A prospective continuation thesis is that improving prospects or reduced uncertainty could sustain the recovery and dated Future of Egypt ownership increase. Current consolidated economics, cash generation, debt and related parties must substantiate that interpretation before valuation or conditional exposure is justified.",
+  "counterargument": "The strongest case against Wait is real observed momentum: frozen October15 close227 exceeded SMA20 190.7805 and SMA50 187.5272 with RV20 2.3306; dated Future of Egypt ownership rose192457 shares (0.95772 percentage points). Gains can persist without an overhead pivot and waiting can miss them. The competing explanation is speculative rerating without verified operating improvement; the holder change proves neither informed accumulation nor future earnings.",
+  "invalidation": "Verified adverse audit, cash-flow, debt, related-party or legal evidence could defeat the prospective investment thesis. Failure of the prior175.15-179 support structure would prompt technical reassessment only after current action-adjusted data review; it is not an approved stop. Missing access alone does not demonstrate misconduct, insolvency or an Avoid thesis.",
+  "reviewConditions": "Immediately route notices295811 (October11) and296029 (October14) plus attachment345512_1.pdf to a new analyst candidate/report. Establish exact filing scope/deadlines and subsequent cure, inspect AGM agenda and later decisions, current statements/opinions, ownership/pledge developments and corporate actions. Reconcile20,095,300 form shares against100,476,500 stale website shares and price-history adjustments; reconcile asynchronous provider market-cap mark. Refresh immutable analytical context after collector completion; require all six evidence checks and identical validated priced-plan-1.0 for Watch. Review at next scheduled run and after five observed sessions if unresolved.",
+  "processAssessment": "Complete October15 report, immutable AJWA context/profile, original October11 screen, reassessment trigger, original Wait/forecast and current analytical dossier inspected. Independently inspected all five saved ownership pages, reproducing majority61.61933%, Future6.38530%, total20,095,300, pledged majority stake and no treasury shares. Frozen SMA20/SMA50/RV20/WilderATR7.876827 reproduce; simple14TR8.632857 is distinct. Historical227 to179 support distance21.1454% is broad and measured resistance empty; no plan or fair value is invented. Provider market cap implied221.90 rather than227, a valuation-date consistency question for analyst. Three report checks remain unavailable (financials, news, actions); ownership is dated September30, not current blanket clearance. Official portal AJWA Disclosures query returned5 records and all five modals were read; scope is bounded. New October11 penalty and October14 invitation were omitted from report and are forwarded, not inserted into or used to rewrite it. English grace wording is ambiguous and attachment345512_1 unread. Current dossier has no structured statements, valuation, thesis or verified macro/events; collector remains active and current evolving prices are not used for this disposition. No AJWA intraday events in persisted query. Real portfolio inputs absent; zero recorded positions cannot establish complete exposure. Original uncertain forecast remains unchanged; new20-session forecast uncertain. No chart navigation, trade, fill, share sizing or policy changes. Detailed evidence:data/research/evidence/ajwa-independent-review-20261018.json. Parent coordinates all-decision monitor/export after refresh.",
+  "uncertainties": [
+    "Current audited/interim consolidated and standalone accounts, opinions, cash conversion, leverage, related-party exposure",
+    "Primary filing cure/remaining status and exact grace deadline; Arabic-English scope reconciliation",
+    "AGM attachment345512_1 contents, agenda and actual subsequent decisions",
+    "Current actions, suspensions, price limits, share-count/history-adjustment reconciliation",
+    "Fresh immutable analyst context and plan after collector completion",
+    "Sourced sector valuation, macro transmission, distinct alternative and complete real portfolio inputs"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Report incompleteness and unresolved material disclosures prevent a defensible directional edge. Momentum continuation and reversal remain plausible; this is not a retrospective edit of the original forecast."
+  }
+}

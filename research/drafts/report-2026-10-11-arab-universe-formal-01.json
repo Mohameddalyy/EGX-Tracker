@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-arab-universe-formal-01",
+  "createdAt": "2026-10-11T08:43:14.958Z",
+  "type": "research",
+  "contextId": "context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+  "summary": "ARAB: Insufficient evidence; analyst defer. Defer: recovered August certified minutes corroborate enlarged capital and headquarters change, but financials, current named owners and precise rights/price-adjustment chronology remain incomplete.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-arab",
+      "title": "TradingView ARAB; market observations frozen in context-29ebe717-d2bd-46ff-976b-861b0a45954f",
+      "url": "https://www.tradingview.com/symbols/EGX-ARAB/",
+      "accessedAt": "2026-10-11T08:43:14.948Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "ir",
+      "title": "Issuer investor relations; embedded disclosure portal empty through web extraction",
+      "url": "https://ad-holding.com/investor-relations/",
+      "accessedAt": "2026-10-11T08:43:14.948Z"
+    },
+    {
+      "id": "portal",
+      "title": "Issuer-linked disclosures portal returned no readable content",
+      "url": "https://ir.feedgfm.com/arab/ir/arab/en/disclosures/case/arab",
+      "accessedAt": "2026-10-11T08:43:14.948Z"
+    },
+    {
+      "id": "rights",
+      "title": "Issuer board approval of proposed capital increase,2November2025",
+      "url": "https://ad-holding.com/مجلس-إدارة-المطورون-العرب-القابضة-ي/",
+      "publishedAt": "2025-11-02",
+      "accessedAt": "2026-10-11T08:43:14.948Z"
+    },
+    {
+      "id": "leasing",
+      "title": "Issuer Nyoum October leasing agreement2January2026",
+      "url": "https://ad-holding.com/we-are-proud-to-announce-the-signing-between-arab-developers-holding-and-incomercial-egypt-to-commence-leasing-activities-at-nyoum-october-boulevard-strada/",
+      "publishedAt": "2026-01-02",
+      "accessedAt": "2026-10-11T08:43:14.948Z"
+    },
+    {
+      "id": "egx",
+      "title": "EGX current disclosures pending primary inspection",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-11T08:43:14.948Z"
+    },
+    {
+      "id": "egm",
+      "title": "Certified August13 EGM minutes, EGX294789 publishedSeptember16 at15:02; all4pages visually inspected",
+      "url": "https://egx.com.eg/downloads/Bulletins/344226_1.pdf",
+      "publishedAt": "2026-09-16",
+      "period": "2026-08-13",
+      "accessedAt": "2026-10-11T08:43:14.948Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ARAB",
+      "candidateId": "candidate-ac47af4a-21c7-4ade-a046-d80116c8388f",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: recovered August certified minutes corroborate enlarged capital and headquarters change, but financials, current named owners and precise rights/price-adjustment chronology remain incomplete.",
+      "sourceIds": [
+        "tv-arab",
+        "ir",
+        "portal",
+        "rights",
+        "leasing",
+        "egx",
+        "egm"
+      ],
+      "fundamentals": "[ir][portal] Issuer exposes financial/ownership/disclosure headings through an embedded IR portal; disclosure extraction returned no readable documents. Current consolidated profit, cash collection, delivery obligations, financing, related parties and audit/review conclusion not verified. No auditable real-estate valuation. The frozen provider earnings/ROE fields are missing; absence is not proof of losses or poor operations. [egm]23.903bn issued/subscribed shares are established at August13; attendance51.72% is meeting participation, not a named majority-owner stake.",
+      "technicals": "[tv-arab] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:58:44.066Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close0.273, SMA20=0.2443, SMA50=0.2462, ATR14=0.0119, RV20=1.9779. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means0.2486/0.2216, latest weekly high/low0.278/0.238. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "[rights] November2,2025 issuer board approved proposed issued-capital rise from1.39bn to2.39bnEGP through10bn shares at0.10EGP plus1% issue expense, with separately tradable rights and assembly procedures to follow. This verifies proposal, not subscription completion or effective date. [leasing] January2,2026 issuer announced Incomercial agreement to commence leasing Nyoum October Boulevard Strada, about12,100sqm and207 retail units. No realized rental cash flow inferred. [egm] Recovered certified August13,2026 minutes independently read all4pages. Page1 states issued capital EGP2,390,296,339; page2 states23,902,963,390 issued/subscribed shares. This provides later corroboration of the enlarged capital beyond the2025 proposal, but not exact rights entitlement/effective dates. The assembly approved moving headquarters to Park Mall unitsG411–G413 in New Cairo and amending Article4, plus implementation delegations. Page4 FRA certification expressly concerns procedural/formal review and does not endorse substantive contents.",
+      "risks": "High qualitative evidence/action and swing risk. Proposed rights issue can dilute nonsubscribers and alter comparable per-share history; August minutes corroborate enlarged capital, but exact rights chronology and market adjustment remain unverified. Project execution, collection and finance risks require group statements. Price0.273 has rebounded from September30 low0.202 and is close to latest weekly0.278 high; volume cannot identify institutional accumulation. Website gaps are not misconduct evidence.",
+      "invalidation": "A later confirmed close below latest weekly low0.238 challenges this rebound hypothesis; new adverse financial/action information may cancel it earlier. No executable stop before rights reconciliation.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved trade or size. Require actual rights completion/record/effective-date documents, current owners and group financials, then recalculate technical levels. At0.273 reference,0.278 weekly high leaves0.005 before costs against0.035 to broad weekly support; do not invent higher targets to force minimum reward/risk.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "ir",
+            "portal"
+          ],
+          "note": "Current statements, cash collection/delivery economics and opinion not read; portal headings are not evidence clearance."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "ir",
+            "portal"
+          ],
+          "note": "No dated current named-owner/control document accessible; no owner inferred from float."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "leasing",
+            "egx",
+            "egm"
+          ],
+          "note": "Issuer leasing announcement and all4pages of recovered August13 EGM minutes read; parent directly verified EGX294789 September16 publication. Bounded current news coverage, not a complete disclosure sweep."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "rights",
+            "egx",
+            "egm"
+          ],
+          "note": "November2025 rights proposal and August2026 enlarged issued/subscribed capital corroborated. Exact entitlement/listing/effective dates and adjusted technical comparability remain unresolved; EGM agenda concerns headquarters/Article4, not a fresh rights approval."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-arab"
+          ],
+          "note": "[tv-arab] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:58:44.066Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close0.273, SMA20=0.2443, SMA50=0.2462, ATR14=0.0119, RV20=1.9779. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means0.2486/0.2216, latest weekly high/low0.278/0.238. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-arab"
+          ],
+          "note": "[tv-arab] Inspected raw volumes and finality in data/research/context-29ebe717-d2bd-46ff-976b-861b0a45954f.json; latest464272200 shares,20-observation median234729058.5, median close-times-volume turnoverEGP57584397.27;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

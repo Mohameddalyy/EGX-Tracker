@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-11T08:29:30.072Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-acgc-universe-01",
+  "queueId": "candidate-8233103f-01d6-4ae9-8db6-c322c17cc14d",
+  "reportId": "report-2026-10-11-acgc-universe-formal-01",
+  "ticker": "ACGC",
+  "rationale": "Wait: missing consolidated financial statements/opinion, unresolved filing-delay follow-up, unread bonus-action terms and ownership prevent an evidence-based approval. Latest confirmed RV20 is0.198 despite a positive longer-term trend.",
+  "thesis": "A recovery and momentum continuation could become investable if current consolidated economics and corporate-action-adjusted price structure are verified, and delayed filings are demonstrably cured.",
+  "counterargument": "Above-SMA50 positioning and large trailing momentum could continue before disclosure gaps are resolved. A filing delay alone is not proof of misconduct, insolvency or a negative future return, so Avoid or a bearish forecast would overstate available evidence.",
+  "invalidation": "A later confirmed close below September28 low13.11, or verified materially adverse consolidated financial/governance evidence, invalidates the current continuation hypothesis. Unreconciled bonus adjustments invalidate any price-comparison inference until corrected.",
+  "reviewConditions": "Obtain the subsequent exchange filing-cure announcement and underlying consolidated statements/opinion, current major-owner disclosures, and August bonus terms/effective adjustment. Reassess after those arrive or after a confirmed recovery above14.87 with RV20>=1 and a fresh priced plan. Review after five observed sessions if still unresolved; keep observing Wait outcomes.",
+  "processAssessment": "Read full analyst report, frozen context, original screen and recent OHLCV. Fresh capture supports confirmed October7 close14.33, but current-day data are provisional. Immediate upside to14.87 is0.54 versus1.22 down to13.11 before any stop buffer or costs, hence poor immediate geometry; this does not rule out a future differently priced setup. Independently opened issuer stock-information page and found an embedded IR portal, not readable current consolidated financials. Analyst directly observed September exchange delay/penalty modals; the underlying attachment was unread and absence of a cure in bounded results is not evidence that none exists. Four substantive evidence checks remain unavailable; no analyst approval or calculated plan. Liquidity turnover is close-times-volume proxy, not a fill guarantee. No order, sizing or unsupported current control/valuation claim.",
+  "uncertainties": [
+    "Whether delayed consolidated filings were subsequently cured",
+    "Underlying earnings, cash flow, debt and review/audit conclusions",
+    "Bonus-share terms and historic adjustment consistency",
+    "Current major/beneficial shareholders",
+    "Current suspension/action/news and executable liquidity"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Missing financial and action evidence plus weak recent participation preclude a defensible directional forecast; no bearish conclusion is inferred solely from filing delays."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.arabcot.com/stock_information.aspx?Lid=5",
+      "accessedAt": "2026-10-11T08:28:20.000Z",
+      "verification": "Independently opened issuer stock-information page; observed embedded MIST IR link and historical-data link, no current financial/control facts established from the page."
+    }
+  ]
+}

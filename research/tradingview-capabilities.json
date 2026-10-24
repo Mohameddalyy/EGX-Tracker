@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-10-15",
+  "connector": "bottrading.net TradingView MCP, 84 installed tools; no tool-level restriction on relevant research reads",
+  "dailyOHLCV": {
+    "status": "verified",
+    "route": "app/collect.mjs and TradingView MCP; 262 chart histories imported, 34 unavailable at initial full pass",
+    "limits": "Up to 500 available bars per capture; 15-minute delayed metadata; original chart restored; raw missing volume rejected"
+  },
+  "ratiosAndSnapshots": {
+    "status": "verified_partial_coverage",
+    "route": "app/collect-facts.mjs; TradingView scanner",
+    "fields": "43 captured fields; includes existing valuation fields plus dividend yield, net margin, ROA, current ratio, TTM revenue/net income, technical ratings and analyst consensus",
+    "limits": "Verified 15 October: PE 57/296, PB 161/296, ROE 59/296. Missing remains null. Retrieval time is not fiscal publication date or verified market timestamp."
+  },
+  "marketBenchmarks": {
+    "status": "verified",
+    "symbols": [
+      "EGX:EGX30",
+      "EGX:EGX70EWI"
+    ],
+    "limits": "Snapshot price performance, possibly including current session; not a total-return backtest series"
+  },
+  "financialStatements": {
+    "status": "website_route_available",
+    "route": "TradingView symbol Financials pages, supported financial Pine fields, issuer IR filings",
+    "example": "https://www.tradingview.com/symbols/EGX-COMI/financials-statistics-and-ratios/",
+    "limits": "Per-company/account availability. No dedicated full-statement MCP endpoint verified. Do not save Pine scripts without specific need/authorization."
+  },
+  "news": {
+    "status": "website_route_partial",
+    "route": "TradingView symbol news pages and opened issuer/EGX/credible news sources",
+    "example": "https://www.tradingview.com/symbols/EGX-COMI/news/",
+    "limits": "Page reachable; not proof of complete headline/body access. No dedicated news MCP tool. Follow and read dated articles before claims."
+  },
+  "majorShareholders": {
+    "status": "tradingview_unverified_issuer_fallback",
+    "route": "Issuer ownership/governance disclosures and EGX filings",
+    "example": "https://www.cibeg.com/en/investor-relations/governance/ownership-structure?ty=19",
+    "limits": "TradingView COMI ownership page fetch failed. No verified ownership MCP tool. Free float is not a shareholder register; a majority shareholder may not exist."
+  },
+  "studiesPineAndStrategies": {
+    "status": "tools_available_not_all_exercised",
+    "limits": "Strategy trades/equity are simulation outputs, not exchange trade counts/company equity"
+  },
+  "depthAndExchangeTradeCounts": {
+    "status": "unverified",
+    "limits": "Do not infer availability from tool name; account/exchange entitlements apply"
+  },
+  "technicalRatings": {
+    "status": "verified",
+    "route": "app/collect-facts.mjs -> market_facts -> immutable research context fundamentals.values",
+    "fields": [
+      "Recommend.All",
+      "Recommend.MA",
+      "Recommend.Other",
+      "Recommend.All|1W",
+      "Recommend.MA|1W",
+      "Recommend.Other|1W",
+      "RSI",
+      "MACD.macd",
+      "MACD.signal",
+      "ADX",
+      "relative_volume_10d_calc"
+    ],
+    "coverage": "262/296 daily and weekly ratings at verification; 260 relative volume",
+    "limits": "Provider snapshots may include forming daily/weekly bars. Correlated measures, not independent votes or orders."
+  },
+  "analystConsensus": {
+    "status": "verified_partial_coverage",
+    "fields": [
+      "AnalystRating",
+      "price_target_average"
+    ],
+    "coverage": "49/296",
+    "limits": "Separate broker consensus from technical ratings. NoRating is unavailable; consensus update date, contributor count and target horizon remain unverified. Not an approved execution target."
+  },
+  "latestVerification": "verification/tradingview-research-access-20261015.json"
+}

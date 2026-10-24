@@ -1,0 +1,167 @@
+{
+  "version": "1.0",
+  "id": "report-20261008-scout-amia-review",
+  "createdAt": "2026-10-08T11:28:40.827Z",
+  "type": "research",
+  "contextId": "context-97de619d-fb57-48f2-abcd-e63023735d0a",
+  "summary": "AMIA: independent analyst review deferred; no watchlist promotion. Defer. Strong price momentum is real in the captured series, but the nearest resistance leaves poor reward/risk at the reference close. Current-period cash conversion and corporate actions remain unresolved. The broad Finance peer ranking is not evidence of cheapness for a diversified holding company.",
+  "limitations": [
+    "This is a documented research pass with unresolved checks, not a completed approval-quality due-diligence report. Missing checks remain unavailable.",
+    "TradingView MCP health/state succeeded and chart remained ELWA 60-minute candlesticks. OHLCV and financial snapshots came from the immutable tracker context. Public TradingView news routes returned empty shells or errors; issuer documents supplied the substantive facts. No claim of access to every TradingView entitlement, order book, exchange trade count or proprietary bank research.",
+    "Frozen screen Finance median groups unlike businesses; its valuation signals are not used as analyst evidence. Price momentum is not dividend-adjusted total return.",
+    "Web cache dates and page freshness vary. Some issuer sources required direct public downloads; source financial periods and missing publication/ownership dates are explicitly distinguished. No complete October event clearance or fully reconciled corporate-action ledger.",
+    "Stop/target calculations use deterministic entryRisk; actual spreads, broker costs, taxes and gap/slippage losses are unknown. No orders, alerts or holdings were created."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "AMIA TradingView symbol; local immutable OHLCV capture is authoritative for calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-AMIA/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "tvnews",
+      "title": "AMIA TradingView news route (no complete readable headline feed returned)",
+      "url": "https://www.tradingview.com/symbols/EGX-AMIA/news/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "portfolio",
+      "title": "AMIC investment portfolio",
+      "url": "https://www.amic-eg.com/Investments/Portfolio",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "statement",
+      "title": "AMIC consolidated Q1 2026 statements; visually inspected pages 3–8",
+      "url": "https://www.amic-eg.com/media/Documents/55e7995e-a90f-4a27-aed8-32a3642c9cb3.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "Three months ended 31 March 2026",
+      "publishedAt": "2026-05-19"
+    },
+    {
+      "id": "owners",
+      "title": "AMIC board/shareholder disclosure, December 2025; pages 2–3 visually inspected",
+      "url": "https://www.amic-eg.com/media/Documents/6f4b154a-5482-40f5-995a-b6f67805978d.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "31 December 2025"
+    },
+    {
+      "id": "dividends",
+      "title": "AMIC dividend history",
+      "url": "https://www.amic-eg.com/Investor-Relations/Dividends",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "disclosures",
+      "title": "AMIC disclosure library",
+      "url": "https://www.amic-eg.com/investor-relations/disclosures",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "AMIA",
+      "candidateId": "candidate-86ccd9cf-4de3-4715-8872-c8665f8dc919",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Strong price momentum is real in the captured series, but the nearest resistance leaves poor reward/risk at the reference close. Current-period cash conversion and corporate actions remain unresolved. The broad Finance peer ranking is not evidence of cheapness for a diversified holding company.",
+      "sourceIds": [
+        "tv",
+        "tvnews",
+        "portfolio",
+        "statement",
+        "owners",
+        "dividends",
+        "disclosures"
+      ],
+      "fundamentals": "AMIC combines leasing, poultry, water treatment, distribution and property investments [portfolio]. Visually inspected Q1 2026 consolidated statements show parent-attributable profit about EGP 205.4m versus EGP 31.3m a year earlier, but operating cash flow is negative (approximately EGP 380.3m). Leasing receivables and funding flows complicate interpretation; profit growth alone does not establish distributable holding-company cash [statement]. TradingView snapshot P/E 23.40, P/B 5.64 and ROE 28.66% are provider TTM/FQ metrics, not a reconciled sum-of-parts valuation. Need H1 2026 statements, subsidiary ownership/NAV, related-party exposures, debt maturities and recurring versus disposal/revaluation earnings before a value conclusion. Do not compare AMIA to commercial banks using the frozen Finance median.",
+      "technicals": "Daily close 19.18 exceeds SMA20 18.51 and SMA50 16.97, but 20.15 resistance precedes 21.50 and 22.40. Support 18.03 is the 28 September pivot; 17.12 is the deeper 16 September pivot. Weekly bars aggregated Sunday–Thursday show closes 19.87, 19.17, 18.17, 18.83, 18.43, 19.18 over the latest six weeks: recovery inside consolidation after the August peak, not a confirmed new breakout. ATR14 is 0.794 and RV20 1.57. Calculated from C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-97de619d-fb57-48f2-abcd-e63023735d0a.json, captured 2026-10-08T10:34:03.973Z; latest confirmed daily bar 2026-10-07. Weekly aggregation is derived from these daily bars, not a separately fetched TradingView weekly study. TradingView holiday metadata includes 2026-10-08. Feed delay 900 seconds; dividend adjustment false. Historical gap 2025-07-08 remains unexplained; recent 20 observations contain volume. [tv]",
+      "catalysts": "No verified forthcoming catalyst. The disclosure library exposes 2026 board decisions through May, but the May 19 attachment did not open through web fetch; a title is not event verification [disclosures]. Dividend history lists EGP 0.14 for 2025 [dividends], whereas the opened TradingView overview says latest dividend EGP 0.10; dates/basis need reconciliation. Increased market interest may also be speculative repricing rather than improved recurring earnings.",
+      "risks": "Elevated: large historical appreciation, concentrated ownership, incomplete current cash-flow reconciliation and funding-sensitive subsidiaries. The 31 December 2025 filing identifies Dallah AlBaraka 44.38% and Al-Tawfeek Development House 37.86%, collectively 82.24% with related-group footnote; neither named direct holder individually exceeds 50%. The dated filing free float is about 17.66%, while TradingView float is about 12.79% of issued shares, requiring a date/definition check [owners]. Do not infer insider buying from volume. Prior-20-observation median daily volume 574,232 shares; median close-times-volume turnover proxy EGP 10690533.11. Latest volume 901,545. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]",
+      "invalidation": "For the unapproved technical scenario, 17.63 is about 0.5 ATR below 18.03 support; a break of support or adverse financing/corporate-action disclosure cancels the hypothesis. A gap can bypass that stop. Recalculate after any new bar or capital action.",
+      "positionReview": "No actual holdings or fills appear in this selected immutable context. Portfolio capital, available cash, user risk/concentration/volume limits and actual costs are unset. No numerical share quantity is proposed. Concurrent exposures and bank/financial-sector correlation need a portfolio-level check before any sizing.",
+      "entryConditions": "No executable entry proposed. A future 18.1–18.5 pullback that holds 18.03 and reverses may improve asymmetry; alternatively require a confirmed break/retest above 20.15 and recompute against 21.50 resistance. Neither trigger is established by this snapshot. Recheck filings and adjusted share history first. At the reference close 19.18, an illustrative stop 17.63 and nearest-resistance target 20.15 imply EGP 1.55 per-share downside (8.08%) versus EGP 0.97 upside (5.06%), gross reward/risk 0.63. A hypothetical 0.50% round-trip cost scenario yields EGP 1.6459 loss and 0.53 reward/risk. Costs are a stress assumption, not known broker charges. This is diagnostic math, not an approved entry or guaranteed loss cap.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "statement"
+          ],
+          "note": "Q1 financial and cash-flow pages inspected; H1/current recurring earnings and NAV not reconciled."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2025-12-31",
+          "sourceIds": [
+            "owners"
+          ],
+          "note": "Dated December 2025 owners verified historically; current share-register/free-float discrepancy unresolved."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "disclosures",
+            "tvnews"
+          ],
+          "note": "Issuer disclosure library checked; complete current event/news coverage not established."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "dividends",
+            "tv"
+          ],
+          "note": "Issuer and TradingView dividend figures require date/basis reconciliation; no current complete action ledger."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Inspected validated daily history and derived Sunday–Thursday weekly structure with dated pivots; scenarios are not confirmed entries."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Prior-20-observation median daily volume 574,232 shares; median close-times-volume turnover proxy EGP 10690533.11. Latest volume 901,545. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]"
+        }
+      },
+      "diagnosticRiskScenario": {
+        "notApproved": true,
+        "currency": "EGP",
+        "method": "Existing prototype support minus 0.5 ATR, rounded to tick; nearest confirmed resistance; not an institutional standard",
+        "gross": {
+          "entry": 19.18,
+          "stop": 17.63,
+          "target": 20.15,
+          "roundTripCostFraction": 0,
+          "lossPerShareEGP": 1.5500000000000007,
+          "lossPercent": 8.081334723670494,
+          "gainPerShareEGP": 0.9699999999999989,
+          "rewardRisk": 0.6258064516129022,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        },
+        "costScenario": {
+          "entry": 19.18,
+          "stop": 17.63,
+          "target": 20.15,
+          "roundTripCostFraction": 0.005,
+          "lossPerShareEGP": 1.6459000000000008,
+          "lossPercent": 8.581334723670494,
+          "gainPerShareEGP": 0.8740999999999989,
+          "rewardRisk": 0.5310772221884674,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        }
+      }
+    }
+  ]
+}

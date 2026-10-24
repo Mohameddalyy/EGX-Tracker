@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-11-acgc-universe-formal-01",
+  "createdAt": "2026-10-11T08:26:59.429Z",
+  "type": "research",
+  "contextId": "context-d0144510-26c6-4494-b408-6b54b83848d2",
+  "summary": "ACGC: Insufficient evidence; analyst defer. Defer: directly inspected exchange disclosures identify consolidated filing delays, without a verified later cure. Earnings, ownership and bonus-action documents remain unread. Confirmed trend is not sufficient; current RV20 is only0.20.",
+  "limitations": [
+    "Formal candidate review from full TradingView catalog screen, not approval of all93 matches.",
+    "Source facts collected11 October2026; exact earlier access minutes unavailable for reused primary documents, report source access timestamp records compilation from those inspected local records.",
+    "Historical source records retained unchanged; no excluded-domain new evidence.",
+    "Current-day bars unconfirmed; no real-account capital configured and no real or paper orders/fills made.",
+    "EGX follow-up browser unavailable; no comprehensive October clearance claimed."
+  ],
+  "sources": [
+    {
+      "id": "tv-acgc",
+      "title": "TradingView ACGC; market observations frozen in context-d0144510-26c6-4494-b408-6b54b83848d2",
+      "url": "https://www.tradingview.com/symbols/EGX-ACGC/",
+      "accessedAt": "2026-10-11T08:26:59.426Z",
+      "period": "confirmed2026-10-07"
+    },
+    {
+      "id": "egx",
+      "title": "EGX News Center primary UI disclosures295233 and295056, directly inspected earlier this session",
+      "url": "https://beta.egx.com.eg/en/media-center?tab=disclosure",
+      "accessedAt": "2026-10-11T08:26:59.426Z",
+      "period": "Dec2025 and Mar2026 consolidated statements"
+    },
+    {
+      "id": "issuer",
+      "title": "Issuer stock-information page embedding IR portal",
+      "url": "https://www.arabcot.com/stock_information.aspx?Lid=5",
+      "accessedAt": "2026-10-11T08:26:59.426Z"
+    },
+    {
+      "id": "ir",
+      "title": "Issuer-linked IR portal; indexes accessible, underlying documents not retrieved",
+      "url": "https://www.mistnews.com/allinone_ir/login.aspx?ID=1011050313&lg=ar",
+      "accessedAt": "2026-10-11T08:26:59.426Z"
+    },
+    {
+      "id": "delay-pdf",
+      "title": "EGX delay attachment; contents unread",
+      "url": "https://egx.com.eg/downloads/Bulletins/344784_1.pdf",
+      "accessedAt": "2026-10-11T08:26:59.426Z",
+      "publishedAt": "2026-09-28"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "ACGC",
+      "candidateId": "candidate-8233103f-01d6-4ae9-8db6-c322c17cc14d",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer: directly inspected exchange disclosures identify consolidated filing delays, without a verified later cure. Earnings, ownership and bonus-action documents remain unread. Confirmed trend is not sufficient; current RV20 is only0.20.",
+      "sourceIds": [
+        "tv-acgc",
+        "egx",
+        "issuer",
+        "ir",
+        "delay-pdf"
+      ],
+      "fundamentals": "[egx] Primary UI disclosure295233 (28 September2026 15:08) concerns delayed consolidated statements for31 December2025 and31 March2026. Disclosure295056 (23 September12:04) reports22 September listing-committee EGP40,000 Article47 penalty for those periods. [delay-pdf] Attachment not read; reasons/cure not inferred. [ir] Issuer-linked portal indexes financial statements and June ownership, but underlying documents were not accessible. No verified consolidated cash flow, debt, audit opinion, recurring earnings or current major-owner percentages; no defensible valuation.",
+      "technicals": "[tv-acgc] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:56:59.239Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close14.33, SMA20=14.3250, SMA50=13.2699, ATR14=0.6211, RV20=0.1979. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means13.7066/10.1602, latest weekly high/low14.87/13.55. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge.",
+      "catalysts": "A dated filing cure with usable statements could permit renewed research. [ir] Portal references an August2026 bonus-share event, but terms and effective adjustment are unverified. This is an action-check lead, not a confirmed entitlement.",
+      "risks": "High qualitative evidence/governance and swing risk: verified delay, unverified subsequent cure, missing group financials/control/action reconciliation. Weak latest relative volume undermines breakout hypothesis. No allegation of misconduct or earnings deterioration inferred from inaccessible statements.",
+      "invalidation": "Continuation hypothesis fails on a later confirmed close below13.11 September28 low, or adverse filing/corporate-action evidence. This is a monitoring boundary, not an executable stop.",
+      "positionReview": "Frozen context contains zero actual positions. No actual exposure/exit to manage in this evidence; journal completeness is not guaranteed. Real capital/cash/risk limits null. Paper EGP20,000 is hypothetical and isolated; no sizing proposed while evidence remains incomplete.",
+      "entryConditions": "No approved entry or priced plan. Require dated cure, consolidated statements/opinion, beneficial ownership and verified bonus terms before recalculating any trade.14.87 nearby resistance versus14.33 reference and13.11 support gives inadequate immediate geometry; weak RV20 adds caution.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "egx",
+            "issuer",
+            "ir",
+            "delay-pdf"
+          ],
+          "note": "Current consolidated statements and review/audit conclusions missing; directly observed delay disclosures require subsequent cure verification."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "issuer",
+            "ir"
+          ],
+          "note": "June disclosure indexed but unread; old February2014 website table excluded from current control assessment."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "egx"
+          ],
+          "note": "September23/28 primary detail modals verified in bounded date scope. No newer cure among displayed two records, not proof of global absence; follow-up browser unavailable."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-11",
+          "sourceIds": [
+            "ir"
+          ],
+          "note": "August bonus-share event indexed but full terms/date not read. Historical March2010 issuer agenda not used as current evidence."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-acgc"
+          ],
+          "note": "[tv-acgc] Frozen C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; 500 accepted daily observations through2026-10-07, recaptured2026-10-11T07:56:59.239Z, later-date confirmed. Native EGP, delay900s, Africa/Cairo. October11 is provisional and excluded. Close14.33, SMA20=14.3250, SMA50=13.2699, ATR14=0.6211, RV20=0.1979. Weekly bars locally aggregated Sunday-start from these same daily bars, not independent provider weekly evidence;10/30-week means13.7066/10.1602, latest weekly high/low14.87/13.55. October8 is a provider calendar holiday. Raw metadata dividendsAdjustment=false/backAdjustment=false; split/bonus reconciliation remains separate. Historical gap flags:2025-07-08. Recent window reviewed; gaps are not silently filled. These observations test structure, not exchange certification or a trading edge."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv-acgc"
+          ],
+          "note": "[tv-acgc] Inspected raw volumes and finality in data/research/context-d0144510-26c6-4494-b408-6b54b83848d2.json; latest191178 shares,20-observation median966032.5, median close-times-volume turnoverEGP13787070.17;20 recent observations have positive volume. RV20 denominator is prior20, distinct from this inclusive median. No order-book/spread/auction or fill assurance; turnover is a proxy, not observed exchange value. Short-history/gap and corporate-action limits remain."
+        }
+      }
+    }
+  ]
+}

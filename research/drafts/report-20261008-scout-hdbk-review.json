@@ -1,0 +1,178 @@
+{
+  "version": "1.0",
+  "id": "report-20261008-scout-hdbk-review",
+  "createdAt": "2026-10-08T11:28:40.827Z",
+  "type": "research",
+  "contextId": "context-97de619d-fb57-48f2-abcd-e63023735d0a",
+  "summary": "HDBK: independent analyst review deferred; no watchlist promotion. Defer. Bank fundamentals merit monitoring, but the daily trend is correcting below its 20-day average and immediate resistance gives poor reward/risk. Current ownership dates and the exact capital-action/price-adjustment chain remain incomplete; a low screen P/E does not resolve these questions.",
+  "limitations": [
+    "This is a documented research pass with unresolved checks, not a completed approval-quality due-diligence report. Missing checks remain unavailable.",
+    "TradingView MCP health/state succeeded and chart remained ELWA 60-minute candlesticks. OHLCV and financial snapshots came from the immutable tracker context. Public TradingView news routes returned empty shells or errors; issuer documents supplied the substantive facts. No claim of access to every TradingView entitlement, order book, exchange trade count or proprietary bank research.",
+    "Frozen screen Finance median groups unlike businesses; its valuation signals are not used as analyst evidence. Price momentum is not dividend-adjusted total return.",
+    "Web cache dates and page freshness vary. Some issuer sources required direct public downloads; source financial periods and missing publication/ownership dates are explicitly distinguished. No complete October event clearance or fully reconciled corporate-action ledger.",
+    "Stop/target calculations use deterministic entryRisk; actual spreads, broker costs, taxes and gap/slippage losses are unknown. No orders, alerts or holdings were created."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "HDBK TradingView symbol; local immutable OHLCV capture is authoritative for calculations",
+      "url": "https://www.tradingview.com/symbols/EGX-HDBK/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "tvnews",
+      "title": "HDBK TradingView news route (no complete readable headline feed returned)",
+      "url": "https://www.tradingview.com/symbols/EGX-HDBK/news/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "results",
+      "title": "HDB H1 2026 earnings release; downloaded and read",
+      "url": "https://www.hdb-egy.com/uploads/ir/tabs/156PR-HDB-H1-2026-English.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "H1 2026",
+      "publishedAt": "2026-08-11"
+    },
+    {
+      "id": "statement",
+      "title": "HDB consolidated financial statements",
+      "url": "https://www.hdb-egy.com/uploads/ir/tabs/153ConsolidatedFS-62026.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "30 June 2026"
+    },
+    {
+      "id": "owners",
+      "title": "HDB issuer shareholder structure",
+      "url": "https://www.hdb-egy.com/IR/en/key-information/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "presentation",
+      "title": "HDB Q1 2026 presentation, share information page 35",
+      "url": "https://www.hdb-egy.com/uploads/ir/tabs/151HDB-IRP-Q1-2026.pdf",
+      "accessedAt": "2026-10-08T11:28:40.827Z",
+      "period": "Q1 2026; share information labelled 31 December 2025"
+    },
+    {
+      "id": "actions",
+      "title": "HDB regulatory disclosure page",
+      "url": "https://www.hdb-egy.com/IR/en/regulatory-disclosures",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    },
+    {
+      "id": "dividends",
+      "title": "HDB issuer dividend page",
+      "url": "https://www.hdb-egy.com/IR/en/dividends/",
+      "accessedAt": "2026-10-08T11:28:40.827Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "HDBK",
+      "candidateId": "candidate-bce78da9-0cef-49c4-a03a-66858075f1dc",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Bank fundamentals merit monitoring, but the daily trend is correcting below its 20-day average and immediate resistance gives poor reward/risk. Current ownership dates and the exact capital-action/price-adjustment chain remain incomplete; a low screen P/E does not resolve these questions.",
+      "sourceIds": [
+        "tv",
+        "tvnews",
+        "results",
+        "statement",
+        "owners",
+        "presentation",
+        "actions",
+        "dividends"
+      ],
+      "fundamentals": "HDB is a commercial bank with legacy property activities. H1 2026 standalone net profit was EGP 9.924bn, up 11.2%; NIM declined to 15.3% from 17.2%, while credit-loss impairment rose 144.4%. CAR 41.7%, NPL ratio 4.2% and coverage 173.2% provide stronger evidence than generic debt/equity [results]. Consolidated parent profit was EGP 10.760bn and reported H1 EPS EGP 10.13 on weighted average 1.0626bn shares [statement]. Snapshot P/E 5.76/PB 2.45/ROE 49.66% must be judged against sustainable bank ROE, funding, loan quality and rate sensitivity; do not extrapolate exceptional returns or mix standalone and consolidated EPS. No fair value model is asserted.",
+      "technicals": "Close 107.79 is above SMA50 101.56 but below SMA20 111.25; RV20 0.82 does not validate a volume breakout. ATR14 is 5.00. Support 102.03 (30 September) precedes 89.01; resistance 112.40 (4 October) precedes 121.40 and 124.00. Aggregated weekly closes 120.95, 109.50, 120.40, 109.48, 110.94, 107.79 show correction and failed recovery after the September surge. Calculated from C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-97de619d-fb57-48f2-abcd-e63023735d0a.json, captured 2026-10-08T10:47:17.546Z; latest confirmed daily bar 2026-10-07. Weekly aggregation is derived from these daily bars, not a separately fetched TradingView weekly study. TradingView holiday metadata includes 2026-10-08. Feed delay 900 seconds; dividend adjustment false. Historical gap 2025-07-08 remains unexplained; recent 20 observations contain volume. [tv]",
+      "catalysts": "The 11 August release reports the new CEO appointment and continued banking expansion [results]. Those are disclosed developments, not proof of an imminent rerating. Next results should test margin compression against loan growth and provisioning. The issuer regulatory page returned no readable announcement list, and the dividend page stops at 2021 [actions, dividends]; neither supports a claim that no later actions exist.",
+      "risks": "Moderate-to-high: interest-rate repricing, credit costs, property exposure and a correcting share price. NUCA is listed at 29.81%, RELACO about 10%, REMCO 9.84%, Misr Life 9.09%, Misr Insurance 8.29%, Social Housing Fund 7.41% and Endowment Authority 5.03% [owners]. No individual listed holder has majority ownership. Presentation share data is labelled 31 December 2025 and uses an older 531.3m share count [presentation]; June accounts show EGP 10.626bn capital after a EGP 5.313bn increase [statement]. Exact effective/ex-action dates and current register must be confirmed. Prior-20-observation median daily volume 225,852 shares; median close-times-volume turnover proxy EGP 23856906.35. Latest volume 186,199. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]",
+      "invalidation": "Illustrative stop 99.53 is support 102.03 less about half ATR. Loss of 102.03 weakens the rebound thesis; break below the stop or adverse asset-quality/capital news cancels it. Do not use pre-capital-action prices without checking their adjustment basis.",
+      "positionReview": "No actual holdings or fills appear in this selected immutable context. Portfolio capital, available cash, user risk/concentration/volume limits and actual costs are unset. No numerical share quantity is proposed. Concurrent exposures and bank/financial-sector correlation need a portfolio-level check before any sizing.",
+      "entryConditions": "No entry now. Monitor a new reversal near 102–104 that preserves 102.03 support, or a confirmed reclaim/retest of 112.40 with renewed volume. Those are alternative future hypotheses, not active signals; after either, re-evaluate structural stop, available resistance and adjustment history. Do not chase merely because the screen calls valuation cheap. At the reference close 107.79, an illustrative stop 99.53 and nearest-resistance target 112.40 imply EGP 8.26 per-share downside (7.66%) versus EGP 4.61 upside (4.28%), gross reward/risk 0.56. A hypothetical 0.50% round-trip cost scenario yields EGP 8.7990 loss and 0.46 reward/risk. Costs are a stress assumption, not known broker charges. This is diagnostic math, not an approved entry or guaranteed loss cap.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "results",
+            "statement"
+          ],
+          "note": "Inspected issuer H1 release and consolidated accounts; separated standalone and consolidated metrics, capital and credit quality. Forward earnings remain uncertain."
+        },
+        "ownership": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "owners",
+            "presentation"
+          ],
+          "note": "Named owners available, but the dated presentation is older and current post-capital-change register is not verified."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "results",
+            "actions",
+            "tvnews"
+          ],
+          "note": "H1 release inspected; complete subsequent EGX/company news coverage unavailable."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-08",
+          "sourceIds": [
+            "statement",
+            "dividends"
+          ],
+          "note": "Capital increase found in statements, but exact effective/ex dates and chart adjustment chain need reconciliation."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Inspected validated daily history and derived Sunday–Thursday weekly structure with dated pivots; scenarios are not confirmed entries."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-07",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "Prior-20-observation median daily volume 225,852 shares; median close-times-volume turnover proxy EGP 23856906.35. Latest volume 186,199. These are observed bar statistics, not exchange trade count or true execution VWAP; spread, order-book depth and block trades were not verified. Position capacity cannot be established without user limits. [tv]"
+        }
+      },
+      "diagnosticRiskScenario": {
+        "notApproved": true,
+        "currency": "EGP",
+        "method": "Existing prototype support minus 0.5 ATR, rounded to tick; nearest confirmed resistance; not an institutional standard",
+        "gross": {
+          "entry": 107.79,
+          "stop": 99.53,
+          "target": 112.4,
+          "roundTripCostFraction": 0,
+          "lossPerShareEGP": 8.260000000000005,
+          "lossPercent": 7.663048520270902,
+          "gainPerShareEGP": 4.609999999999999,
+          "rewardRisk": 0.5581113801452781,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        },
+        "costScenario": {
+          "entry": 107.79,
+          "stop": 99.53,
+          "target": 112.4,
+          "roundTripCostFraction": 0.005,
+          "lossPerShareEGP": 8.798950000000005,
+          "lossPercent": 8.163048520270902,
+          "gainPerShareEGP": 4.07105,
+          "rewardRisk": 0.46267452366475514,
+          "assumption": "Stop/target execution scenario; gaps can exceed this loss. Zero cost is a gross scenario, not a broker fee estimate."
+        }
+      }
+    }
+  ]
+}

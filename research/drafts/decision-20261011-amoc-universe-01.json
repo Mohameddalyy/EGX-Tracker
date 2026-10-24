@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-11T08:29:30.072Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "id": "decision-20261011-amoc-universe-01",
+  "queueId": "candidate-87dc7261-b68b-4831-ad6c-6392b0df7338",
+  "reportId": "report-2026-10-11-amoc-universe-formal-01",
+  "ticker": "AMOC",
+  "rationale": "Wait for completion of primary financial, ownership and current event checks and a valid dated entry plan. The confirmed EGP14.48 price is only EGP0.15 below the historical14.63 resistance; trend and liquidity alone do not justify a market entry.",
+  "thesis": "The positive medium-term price trend and strong confirmed volume may reflect sustainable refinery earnings and operational improvements, but this remains a hypothesis requiring cash-flow quality and current disclosure verification.",
+  "counterargument": "Waiting can miss further momentum: confirmed close exceeds SMA20/50 and RV20 is1.884. However a brief move above the September resistance already occurred intraday on October7 (high14.74), without a close above it; this is not a confirmed breakout or proof that resistance is an immutable ceiling.",
+  "invalidation": "A later confirmed close below the September28 low12.18 or verified material deterioration in collections, cash generation or governance invalidates the continuation hypothesis. These are research conditions, not executable stops.",
+  "reviewConditions": "Return to the analyst when the actual interim review conclusion, latest ownership/control evidence and an October exchange action/news sweep are available. Reassess a confirmed close above14.74 with adequate volume, or a pullback with newly confirmed support; require a fresh calculated priced-plan and all six evidence checks before Watch. Review after five observed sessions even if evidence remains unavailable.",
+  "processAssessment": "Read the entire report, immutable context, last25 OHLCV observations and original screen. Independently checked the issuer CHP release: it describes a term sheet and estimated annual AMOC savings49m, not174m company earnings or completed construction. Receivables rose substantially and reported CFO trails profit; fiscal-period change makes casual annual comparisons unsafe. No reliable peer valuation is established; scanner P/E and ROE are null. The older12.81 support was breached September28, so a future pullback must not blindly reuse it. Financial/ownership/news/action checks are unavailable, analyst explicitly defers, and no priced plan exists. Current-day bars are provisional. Historical excluded-source finality provenance is retained but is not new evidence; confirmed October7 data were recaptured on a later date. No orders or share sizes.",
+  "uncertainties": [
+    "Current beneficial ownership and voting control",
+    "Actual interim limited-review conclusion, contingencies and normalized valuation",
+    "Subsequent corporate actions, suspension/price-limit status and October news",
+    "CHP completion timing and achievable savings",
+    "Execution spreads and future gap risk"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Momentum is positive but current evidence and entry geometry do not support a calibrated directional forecast; preserve an unscored uncertainty forecast and monitor forward."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://www.amoceg.com/en/media-center/news/186",
+      "accessedAt": "2026-10-11T08:28:20.000Z",
+      "verification": "Independently read July31 issuer term-sheet announcement;16MW scalable30MW, estimated AMOC annual savings49m and government125m. No commissioning confirmed."
+    }
+  ]
+}

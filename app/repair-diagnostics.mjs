@@ -1,0 +1,8 @@
+import {cairoDate} from './core.mjs';import {historyRefreshState} from './refresh-selection.mjs';
+export function diagnoseHistory(stock,bar,attempt,raw,now=new Date()){
+ const freshness=historyRefreshState(stock,bar,now),capturedBars=raw?.stock?.history?.bars,sourceLast=capturedBars?.at(-1),sourceLastDay=sourceLast?cairoDate(new Date(sourceLast.time*1000)):null,observed=raw?.diagnostic,bare=s=>String(s||'').split(':').at(-1).toUpperCase();
+ let code=freshness.code||'CALENDAR_UNSUPPORTED';
+ if(attempt?.status==='failed')code=observed?(bare(observed.symbol)!==stock.ticker||bare(observed.series)!==stock.ticker?'CHART_IDENTITY_NOT_READY':!observed.count?'CHART_HAS_NO_BARS':observed.loading?'CHART_LOAD_TIMEOUT':'COLLECTOR_REJECTED_CAPTURE'):'CHART_FAILURE_UNDIAGNOSED';
+ const clues=[];if(bar?.volume===0)clues.push('Stored latest bar has zero reported volume; this does not establish suspension or delisting.');if(sourceLastDay&&bar?.day>sourceLastDay)clues.push('Retained database tail is newer than this response; preserve both, reconcile provenance before using tail.');
+ return {ticker:stock.ticker,code,expectedSession:freshness.expectedSession,storedLastDay:bar?.day??null,capturedLastDay:sourceLastDay,capturedLastVolume:sourceLast?.volume??null,clues,observation:observed||null,attemptId:attempt?.id,sourcePath:attempt?.raw_path||null,listingStatus:'UNVERIFIED',executionReady:false,nextAction:code.startsWith('CHART_')?'Verify exact EGX symbol/ISIN and observed chart identity; retry only this component. Absence from search is not delisting.':'Reconcile the dated provider tail with exchange/issuer trading-status evidence; do not synthesize zero-volume sessions.'};
+}

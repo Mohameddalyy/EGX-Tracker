@@ -1,0 +1,36 @@
+{
+  "id": "decision-20261012-arab-universe-01",
+  "queueId": "candidate-ac47af4a-21c7-4ade-a046-d80116c8388f",
+  "reportId": "report-2026-10-11-arab-universe-formal-01",
+  "ticker": "ARAB",
+  "createdAt": "2026-10-11T21:33:23.701Z",
+  "policyVersion": "decision-1.1",
+  "action": "Wait",
+  "horizon": "Medium term",
+  "rationale": "Wait: certified minutes corroborate enlarged capital, but exact rights adjustment, current group financials/control and complete action review remain unresolved. No approved priced plan exists.",
+  "thesis": "A rebound supported by collections and successful leasing/project execution could become investable once post-capital-change economics and per-share comparability are established.",
+  "counterargument": "ConfirmedOctober7 price0.273 exceeds daily means with RV20=1.98. Enlarged capital is better substantiated than a proposal alone; however a leasing agreement is not realized cash and meeting attendance is not beneficial ownership.",
+  "invalidation": "Confirmed loss of0.238 recent weekly low prompts review; failure of0.200-0.205 structural support or adverse collections/financing/action evidence invalidates the rebound hypothesis. No executable stop is approved.",
+  "reviewConditions": "Obtain rights completion, entitlement and effective/listing dates and reconcile historical adjustment; read current financials/opinion and dated named owners. Reassess a supported pullback or confirmed price discovery with an evidenced target and new analyst plan. RefreshOctober11 confirmed history before any price-sensitive action and review after five observed sessions.",
+  "processAssessment": "Read entire report, original screen and frozen context. Independently opened issuer IR page and found embedded sections rather than usable current company statements. Analyst visually inspected four certified EGM pages; formal certification does not endorse commercial economics. Actual frozen resistance array is empty:0.278 weekly high is not a validated target. Structural support0.200-0.205 is much lower than recent weekly0.238 low; do not confuse them. Calendar time advanced toOctober12 Cairo during completion, while frozen context endsOctober7 andOctober11 capture was provisional; no claim of latest-session coverage or retrospectively executed entry. Four checks unavailable, analyst defer, absent priced plan. No orders/share sizing.",
+  "uncertainties": [
+    "Rights chronology and adjusted price comparability",
+    "Current group financials and cash collections",
+    "Current beneficial ownership",
+    "Complete action/news and latest confirmed market data",
+    "Evidenced target structure"
+  ],
+  "prediction": {
+    "horizonSessions": 20,
+    "direction": "uncertain",
+    "hurdlePercent": 0,
+    "rationale": "Incomplete company/action evidence and missing current-session confirmation preclude a defensible directional forecast."
+  },
+  "sourceReferences": [
+    {
+      "url": "https://ad-holding.com/investor-relations/",
+      "accessedAt": "2026-10-11T21:33:23.701Z",
+      "verification": "Independently inspected IR wrapper with embedded sections; current underlying financial/control facts not established."
+    }
+  ]
+}

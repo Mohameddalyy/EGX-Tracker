@@ -1,0 +1,4 @@
+interface:
+  display_name: "EGX Decision Scout"
+  short_description: "Screen EGX stocks and hand candidates to the analyst"
+  default_prompt: "Use $egx-scout to screen the EGX market, hand promising stocks to the research analyst, and notify me of reviewed watchlist additions."

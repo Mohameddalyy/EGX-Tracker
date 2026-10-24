@@ -1,0 +1,212 @@
+{
+  "version": "1.0",
+  "id": "report-2026-10-19-napr-ranked-primary-01",
+  "createdAt": "2026-10-19T10:09:40.321Z",
+  "type": "research",
+  "contextId": "context-c86d8e87-65c5-42d7-b8e6-c5fd96462b69",
+  "summary": "National Printing: Defer after substantive H1/ownership/minutes review; borrowing-funded investment and declining owners earnings challenge strong price momentum, with current cost gate failing.",
+  "limitations": [
+    "Selected normal ranked candidate review, not all 62 matches or 296 catalog companies. ADRI, AIH and retained backlog remain unfinished research tasks.",
+    "Actual underlying issuer, auditor, register and minutes scans read with transparent archive custody. Archive editorial data and non-TradingView prices were not used.",
+    "Document review, meeting and preparation dates differ from archive publication dates. Exact primary publication minutes are unverified. No invented original-host authentication gate.",
+    "Final context follows seven new structured records. Confirmed October18 observations and actual October19 report/source times remain distinct. No current intraday quote or timely entry claim.",
+    "Relevant main, note and legal pages read; generic policies16-22 were not fully read or relied on as comprehensive assurance. Missing model and scenario inputs remain unavailable."
+  ],
+  "sources": [
+    {
+      "id": "tv",
+      "title": "TradingView National Printing, ISIN ticker EGS370O1C013",
+      "url": "https://www.tradingview.com/symbols/EGX-EGS370O1C013/",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "issuer",
+      "title": "National Printing official IR, current accessed archive and group identity",
+      "url": "https://nationalprinting.net/investor-relation/",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "h1",
+      "title": "Actual H1 consolidated English financial statements and Grant Thornton review; archived issuer scan",
+      "url": "https://foudalens.com/disclosures/NAPR.CA/other/2026-08-16_293269_2.pdf",
+      "publishedAt": "2026-08-16",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "owners",
+      "title": "Actual September30 Article30 form, prepared October11",
+      "url": "https://foudalens.com/disclosures/NAPR.CA/board_agm/2026-10-12_295910_1.pdf",
+      "publishedAt": "2026-10-12",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "price",
+      "title": "Signed September22 issuer price movement response",
+      "url": "https://foudalens.com/disclosures/NAPR.CA/other/2026-09-23_295027_1.pdf",
+      "publishedAt": "2026-09-23",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "agm",
+      "title": "Actual notarized June16 AGM minutes and certification",
+      "url": "https://foudalens.com/disclosures/NAPR.CA/board_agm/2026-07-06_290863_1.pdf",
+      "publishedAt": "2026-07-06",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "egx",
+      "title": "Original official financial notice route, content retrieval failed",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=293269",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "egxowners",
+      "title": "Original official ownership notice route, content retrieval failed",
+      "url": "https://www.egx.com.eg/en/NewsDetails.aspx?NewsID=295910",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    },
+    {
+      "id": "cbe",
+      "title": "Authoritative CBE September24 policy and October29 meeting record in dossier",
+      "url": "https://www.cbe.org.eg/en/monetary-policy/monetary-policy-decisions",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-10-19T10:09:40.321Z"
+    }
+  ],
+  "assessments": [
+    {
+      "ticker": "EGS370O1C013",
+      "candidateId": "candidate-91c165d0-87ec-4331-8ce2-22db461fd768",
+      "pipelineDecision": "defer",
+      "horizon": "Medium term",
+      "verdict": "Insufficient evidence",
+      "rationale": "Defer. Recovered H1 financial and September ownership scans substantiate positive operations and concentrated float, but shrinking earnings, debt-funded investment, unresolved land/action/news updates and unsupported forward valuation challenge the rally. Current measured cost-adjusted geometry independently fails2:1.",
+      "sourceIds": [
+        "tv",
+        "issuer",
+        "h1",
+        "owners",
+        "price",
+        "agm",
+        "egx",
+        "egxowners",
+        "cbe"
+      ],
+      "fundamentals": "[h 1] Actual consolidated January 1-June 30 2026 English translation, EGP units. Grant Thornton limited review signedAugust 13 gives an unmodified review conclusion; it is not a full audit and was originally issuedArabic. Revenue 3,358,809,309 versus 3,548,159,699 (-5.34%); group net profit 236,475,137 versus 273,263,987 (-13.46%). Owners profit 179,693,630 plusNCI 56,781,507 equalsgroup exactly; owners prior 200,045,227 (-10.17%). Operating profit 558,541,422 versus 650,307,812; finance cost 299,849,427 versus 381,536,541 andFX gain 33,309,970 versus 5,082,809. Lower interest partly cushions weaker operations. Paper/carton revenue 1,117,497,180 versus 1,551,187,735 declines sharply; printed materials 1,262,764,239 versus 1,150,410,035 and packaging 911,712,554 versus 791,029,049 grow. Group includes 99.37% Shorouk and indirectly 52.212% Uniboard, so group profit/assets/cash are not entirely parent claims. Assets 8,509,907,479 equal liabilities 5,469,204,650 plus total equity 3,040,702,829 exactly. Owners equity 2,411,356,318 andNCI 629,346,511 are separate; prior owners 2,273,056,118. Owners revaluation reserve 650,970,159 reflects historic land/property fair values, not recurring profit or freely distributable cash. CFO 472,419,012 versus 328,269,617 rises, partly due 250,634,087 receivable release, while inventory/LC growth consumes 234,828,787. Inventory 1,808,484,972 versus 1,575,479,587 and net trade receivables 1,516,495,185 with 70,055,594 ECL remain material. CFO is before interest classified financing. Capex 546,347,441 plus project payments 39,711,683 exceedsCFO; investing-573,932,176, financing+201,892,442 includes net loan/facility proceeds 544,879,260, interest paid 296,370,375 and dividends 46,616,443. Cash movement 100,379,278 plus grossopening 430,395,217 equalsgrossclosing 530,774,495; lessclosingECL 246,779 equalsnet 530,527,716 exactly. Alternatively openingnet 430,151,212 plusflows minusincrementalECL 2,774 bridges exactly. No FX effect is invented. Facilities 2,798,335,529 plus loans 604,636,534 totals 3,402,972,063, up from 2,858,092,803 at December. Rough net debt 2.872 bn before land/admin installment liabilities and operatingcash needs is material. [owners][h 1] Current shares 215,338,669 at 1 par reconcile note 20 paid capital and September form. June 16 2025 EGM swap issued 3,628,289 shares for 216,852 Shorouk shares, registeredDecember 21 2025, MCDR notifiedJanuary 2026. Exact market listing/adjustment date remains unverified. EPS 0.83 uses ownersH 1 profit/215,338,669 weighted shares; no doubling to createTTMEPS. [owners] Largest PrintingPressLimited 57,602,440/26.75%; FinancialHoldingInternationalLimited 49,877,330/23.162%; Ibrahim 47,046,750/21.848% main table, DarElShorouk explicitly related 3,628,289/1.685%; Sherif 23,537,490/10.93%; Omran 18,898,410/8.776%. No single majority; aggregate 93.151% is not a proven common-control group. Board table printsIbrahim 32.848% againstsame 47,046,750 shares, conflicting with main 21.848%; denominator arithmetic supports 21.848%. Preserve discrepancy, not misconduct allegation. [tv] Provider PE/PB/ROE/earnings/revenue allmissing and 0 usable peers: missingness is not a poor business result. Current price/book based onJune ownersbook would mix dates and not establish intrinsic value. April 2025 swap adviser 28.27 price is historic, not current fairvalue. No annualTTM bridge or three sourced forward revenue/margin/reinvestment/cost-of-capital/terminalROIC cases; industrial DCF unavailable.",
+      "technicals": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c 86 d 8 e 87-65 c 5-42 d 7-b 8 e 6-c 5 fd 96462 b 69.json contains 294 accepted daily observations through October 18, captured 2026-10-18 T 20:57:46.627 Z after persisted 15:15 Cairo finality cutoff including 900-second feed delay and safety buffer. Identity National Printing, EGS 370 O 1 C 013, native EGP, chart EGX_DLY:EGS 370 O 1 C 013. Archive Reuters alias NAPR.CA is reconciled by company name, official-domain printed ownership form and TradingView ISIN; no substitute ticker price is used. OHLC 49.50/49.88/47.10/47.96, volume 223,788. SMA 20=48.288, SMA 50=38.288, WilderATR 14=4.24367181; challenger simple 14-TR mean 4.215. RV 20=0.312638 shows weak current participation. Close is belowSMA 20 but aboveSMA 50. Completed October 11 week close 49.5/high 53.5/low 47;10/30-week means 39.257/29.633. October 18 week is one developing session. Measured support 47,43.7,29.52-29.70; resistance 53.5-53.9 and 57.8. Daily Neutral/weekly Buy with daily oscillator Sell are correlated indicator summaries, not independent institutional confirmations. No history gaps observed; adjustment flags false do not clear actions. Actual clockOctober 19 during trading: no October 19 intraday quote, confirmation or timely entry claim.",
+      "catalysts": "[h 1] Capex and project conversion can increase productive capacity, but investment completion/utilization, paper demand and returns require subsequent evidence; no dated new contract or future completion is invented. Notes 36 describe Baddar approximately 8,750 sqm land ownership/usufruct dispute and conflicting judgments; company legal adviser argues stable possession and limitedfive-year fees. This is company position, not independent final legal cure; no adverse final judgment is asserted. [price] SignedSeptember 22 bilingual response says management knows no material events explainingSeptember 13-22 price movement. It covers that interval only, notOctober 19 or proof of manipulation. [agm] ActualJune 16 2026 notarizedminutes approveFY 2025 accounts and retention of all 2025 profits, with remuneration and relatedShorouk office leaseEGP 400,000/month forthree years. Subsidiary/NCI/employee dividends in group accounts do not establish shareholder cash dividend by parent. [issuer] Accessed issuerpage containsQ 1 financials andMarchownership; this stale display is not proof noH 1 filing exists. ActualH 1 scan supplies substantive facts. [egx][egxowners] Officiallegacyroutesfailed; currentarticlecontent/completeinterveningOctober 19 news/actionsweep unavailable. [cbe] September 24 overnightdeposit 19% unchanged, next MPCOctober 29 are verifiedpolicyfacts, not a retail hurdle. Juneclosingvariabledebt underissuerstatic 100 bpfull-year assumption implies 34.03 mprofiteffect; this is disclosed sensitivity, notexpectedMPCmove orforecast. NetUSDassets andnet euro liabilities offset; input/equipmentimports, exports, demand andfunding channels have competing effects.",
+      "risks": "High qualitative funding, concentration, legal and execution risk, without calibrated probability. Commercial Services 5/5 fresh members, only 1/5 aboveSMA 50, median 20-sessionreturn-20.4225%, versusNational Printing+12.6880%: strong relative momentum, not investable sectoralpha. Broadfallingregime 229 freshalignedEGP/296 catalog,17 othercurrency. Lowerinterestmayhelpbutdoesnotautomaticallyresolveweakpaperdemandorcapexreturnrisk.",
+      "invalidation": "Confirmed failure below 47 support weakens pullback;44.87 is a diagnostic, not placed stop. Deteriorating collections, funding/covenant facts, adverse land resolution or capital changes can invalidate business assumptions independently.",
+      "positionReview": "No actual positions/fills recorded in final context; journal completeness is not assumed. Real capital/cash/fees and authorized risk/concentration/participation limits remainnull, so no quantity, cash allocation or portfolioVaR/CVaR. Expiredpaperweek remains separate and unchanged.",
+      "entryConditions": "No approved riskPlan. Original deterministic pullback 0 diagnostic: zone 47.00-48.06, worstentry 48.06, stop 44.87 below 47 support by 0.5 WilderATR rounded, T 153.49 below 53.5 resistance. Gross downside 3.19/share=6.6375%, T 1 RR 1.70219. Illustrative 0.5% round-trip cost yieldsRR 1.51290;1% stress 1.34839, failing existing 2:1. Cost scenarios are not brokerfees or guaranteed stoploss. Current bearish low participation candle near support is not subsequent confirmed bullish zone acceptance/RV 20>=1. PrototypeexpiryOctober 22 00:00 Cairo is diagnostic; newtime/quote/actionevidenceandrepricingrequiredafterward. Cancel on supportfailure, adverse funding/legal/capital facts, targetcrossbeforeentry or expiry. No inventedhigherresistance toforceapproval, sizing or orders.",
+      "evidenceChecks": {
+        "financials": {
+          "status": "verified",
+          "asOf": "2026-06-30",
+          "sourceIds": [
+            "h1"
+          ],
+          "note": "Actual limited-reviewed main statements/relevant notes read; assets, owners/NCI profit and both gross/net cash bridges exact. English translation and archived custody explicit; forwardvaluation unavailable."
+        },
+        "ownership": {
+          "status": "verified",
+          "asOf": "2026-09-30",
+          "sourceIds": [
+            "owners",
+            "h1",
+            "tv"
+          ],
+          "note": "Dated actual4p Article30 names major holders, shares, float andno treasury. No individualmajority. InternalIbrahimprintedpercentage discrepancy preserved; quantities/mainpercentage reconciled arithmetically. Laterchangesnotasserted."
+        },
+        "news": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "price",
+            "h1",
+            "issuer",
+            "egx",
+            "egxowners"
+          ],
+          "note": "Selectedactualpriceletterandlegalnotesread, but no complete interveningOctober19news/legal sweep or current independent landresolution. Legacyofficialnoticecontentretrievalfailed."
+        },
+        "corporateActions": {
+          "status": "unavailable",
+          "asOf": "2026-10-19",
+          "sourceIds": [
+            "agm",
+            "h1",
+            "owners",
+            "egx"
+          ],
+          "note": "ActualJuneAGMretainsFY2025profit; share-swapcapitalcount reconciles. Exactmarketlisting/adjustmentdate andlaterdividend/suspension/capitalclearance remain unavailable. Subsidiarydividendsnotparententitlement."
+        },
+        "technicals": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c86d8e87-65c5-42d7-b8e6-c5fd96462b69.json contains294 accepted daily observations through October18, captured2026-10-18T20:57:46.627Z after persisted15:15 Cairo finality cutoff including900-second feed delay and safety buffer. Identity National Printing, EGS370O1C013, native EGP, chart EGX_DLY:EGS370O1C013. Archive Reuters alias NAPR.CA is reconciled by company name, official-domain printed ownership form and TradingView ISIN; no substitute ticker price is used. OHLC49.50/49.88/47.10/47.96, volume223,788. SMA20=48.288, SMA50=38.288, WilderATR14=4.24367181; challenger simple14-TR mean4.215. RV20=0.312638 shows weak current participation. Close is belowSMA20 but aboveSMA50. Completed October11 week close49.5/high53.5/low47;10/30-week means39.257/29.633. October18 week is one developing session. Measured support47,43.7,29.52-29.70; resistance53.5-53.9 and57.8. Daily Neutral/weekly Buy with daily oscillator Sell are correlated indicator summaries, not independent institutional confirmations. No history gaps observed; adjustment flags false do not clear actions. Actual clockOctober19 during trading: no October19 intraday quote, confirmation or timely entry claim."
+        },
+        "liquidity": {
+          "status": "verified",
+          "asOf": "2026-10-18",
+          "sourceIds": [
+            "tv",
+            "owners"
+          ],
+          "note": "[tv] C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/data/research/context-c86d8e87-65c5-42d7-b8e6-c5fd96462b69.json: latest223,788 shares, inclusive20 median544,657 shares and median close-times-volume turnover proxyEGP27,013,838.455, missing raw volume0/20. RV20 uses prior20 median. Turnover proxy is not exact traded value, spread, depth or fills. [owners] Only11,492,592 shares/5.34% labelled freely tradable;94.66% in retention/frozen categories. Six agreement-frozen holders55,445,100 shares plus other frozen148,400,977 are distinct classifications. Limited float and recent large price moves can worsen gaps and impact despite numerical screen liquidity. No quantity or assumed auction execution."
+        }
+      },
+      "analyticalReview": {
+        "thesis": {
+          "ticker": "EGS370O1C013",
+          "horizonSessions": 20,
+          "family": "pullback",
+          "documentIds": [
+            "document-980791c75bab58d20fe052e6",
+            "document-52b81ba1550b7f47025512a6",
+            "document-704e4aa38ff78834120f005c",
+            "document-13a9f66eb7b4f6876a792a54"
+          ],
+          "alternativeTicker": "CPCI",
+          "whyThisStock": "Normal ranked scout finds strong60-session price momentum and support proximity despite missing provider fundamentals. ActualH1 primary evidence replaces scanner gaps.",
+          "whyNow": "October18 pullback near47support follows large appreciation; price momentum conflicts with fallingH1 revenue/profit and weak current volume.",
+          "mispricingMechanism": "If investments lift sustainable operating cash and lower funding burden, market may assign higher value; actual evidence does not establish current undervaluation.",
+          "bullCase": "Positive group profit236.475m andCFO472.419m, receivable release and packaging/printed-material growth support operating resilience; close remains aboveSMA50.",
+          "bearCase": "Owners profit falls10.17%, revenue falls5.34%, capex/projects exceedCFO, borrowing rises and interest burden substantial. Freefloat5.34%, land dispute and ownership percentage typo require care; currentcostRRfails.",
+          "alternativeExplanation": "Strong rally may reflect scarce float, momentum or expected easing rather than improved recurring economics. Septemberissuer denial of known materialpricecatalyst is bounded, not manipulation proof.",
+          "pricedIn": "Price60-session return69.47% versus shrinkingH1 profits means substantial expectations may alreadybeembedded; no verified consensus or eventattribution.",
+          "invalidation": "Confirmed failure below47support and diagnostic44.87 defeats measuredrebound; deterioration in collections/funding or material adverse land/capital evidence defeatsbusinesscase.",
+          "whatWouldChangeMyMind": "Verified subsequentresults showpaper recovery/cash-fundedreturns, resolvedland/updatechecks, supportedforwardDCFcases, actioncontinuity andconfirmedbullishzoneacceptancewithRV20>=1 pluspriced2:1costgate.",
+          "whyBetterThanAlternative": "No superiority overCPCI established. They operate differentmarkets andcapitalintensity; compare normalized returns/cashfunding ratherthanuniversalPE. Bothcurrentplansfailcostgate.",
+          "disagreementResolution": "PositiveCFO is real but classified beforefundinginterest andbelowinvestmentrequirements; itdoesnotcontradict highernetborrowing. NCI/revaluationreserve prevent treatinggroupprofit/bookasunencumberedparentvalue.",
+          "evidenceQuality": "Actual48pcompany/auditorEnglishtranslatedscan,relevantnotes,currentArticle30,priceletterandnotarizedAGMread; transparentarchivecustodyandlimitedoriginalportalaccess.",
+          "uncertainties": "Threeforwardcases,currentlegalresolution,completeOctober19news/actionsandrealportfolioinputsabsent. No calibratedprobabilityorvalue target.",
+          "asOf": "2026-10-19T10:07:40.113Z",
+          "status": "Analytical research; final guarded approval remains separate",
+          "recordId": "thesis-a9cfb7dc6321d064cb6f337c",
+          "recordedAt": "2026-10-19T10:07:40.113Z",
+          "digest": "a9cfb7dc6321d064cb6f337c6d6420baf2c1b5b8e8a25321695889741f08d905"
+        },
+        "alternativeCompany": "CPCI",
+        "relativeOpportunity": "No superiority established across different business and capital intensity; compare sustainable cash returns and funding rather than a universalmultiple. EarlierMOIN/HDBK/AMIAfailedsupports andAJWA rallyafterWait frame bothloss andopportunitycost questions, notproof ofcalibratedaccuracy.",
+        "valuation": "Unavailable withoutverifiedannualTTMbridge andthree sourced forwardcases. H1notannualized; NCI andseparatelyvaluedpropertywouldneedconsistentDCFscope toavoiddoublecount.",
+        "records": [
+          "statement-f464ceaf5dc37f9ff8db8961",
+          "thesis-a9cfb7dc6321d064cb6f337c",
+          "transmission-bef0f34b95e6b45caf513914"
+        ]
+      }
+    }
+  ],
+  "evidencePaths": [
+    "data/research/evidence/napr-analyst-primary-review-20261019.json",
+    "data/research/evidence/napr-analyst-analysis-bundle-20261019.json",
+    "data/research/evidence/napr-analyst-provenance-20261019.json",
+    "data/research/evidence/napr-official-wrapper-retrieval-audit-20261019.json",
+    "data/research/evidence/ranked-five-calculations-20261019.json",
+    "data/research/evidence/ranked-five-plan-diagnostics-20261019.json"
+  ]
+}
