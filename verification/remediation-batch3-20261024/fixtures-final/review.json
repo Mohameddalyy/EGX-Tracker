@@ -1,0 +1,315 @@
+{
+  "version": "v5-research-review-1",
+  "packetHash": "4e702de57277865c8856ff0c5ae03dc3a8b40700ea4a1057358e16b4347ec1bd",
+  "variantId": "FULL",
+  "isin": "EG0000000001",
+  "actorId": "fixture-analyst",
+  "modelId": "synthetic-not-a-model",
+  "createdAt": "2026-10-22T14:21:00.000Z",
+  "decision": "Watch",
+  "confidence": "MEDIUM",
+  "thesis": "Synthetic business thesis",
+  "hypothesis": "Frozen trend confirmation evaluated at 5/20/60 sessions",
+  "invalidation": "Source-backed business deterioration",
+  "strongestCountercase": "False breakout and unobserved supply",
+  "alternativeExplanation": "Broad market beta",
+  "nextReview": "Next session or material event",
+  "pillars": {
+    "fundamental": {
+      "conclusion": "Synthetic fundamental assessment",
+      "evidenceIds": [
+        "financials"
+      ],
+      "uncertainties": [
+        "No demonstrated predictive edge"
+      ]
+    },
+    "technical": {
+      "conclusion": "Synthetic technical assessment",
+      "evidenceIds": [
+        "technicals"
+      ],
+      "uncertainties": [
+        "No demonstrated predictive edge"
+      ]
+    },
+    "quantitative": {
+      "conclusion": "Synthetic quantitative assessment",
+      "evidenceIds": [
+        "liquidity"
+      ],
+      "uncertainties": [
+        "No demonstrated predictive edge"
+      ]
+    }
+  },
+  "forecast": {
+    "status": "EXPLICIT_UNCERTAINTY",
+    "horizonsSessions": [
+      5,
+      20,
+      60
+    ],
+    "measurement": "Aligned observed forward returns; no assumed fills"
+  },
+  "assessment": {
+    "fieldEvidence": {
+      "version": "egx-field-evidence-2",
+      "analyst": "fixture-analyst",
+      "sector": "Industrials",
+      "claims": [
+        "technical"
+      ],
+      "reliedUponFields": [],
+      "cutoffAt": "2026-10-22T14:21:00.000Z",
+      "fields": {
+        "isin_alias_segment": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "currency": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "historical_ohlcv": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "adjustment_basis": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "solvency_bank_metrics": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "news_disclosure_coverage": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "corporate_actions": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "median_turnover20": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        },
+        "ownership_control_events": {
+          "status": "verified",
+          "asOf": "2026-10-22",
+          "checkedAt": "2026-10-22T14:21:00.000Z",
+          "coverageThrough": "2026-10-22T14:21:00.000Z",
+          "sourceIds": [
+            "issuer"
+          ],
+          "note": "Synthetic isolated fixture, not market evidence"
+        }
+      },
+      "gaps": []
+    },
+    "evidenceChecks": {
+      "financials": {
+        "status": "verified",
+        "asOf": "2026-10-22T14:21:00.000Z",
+        "sourceIds": [
+          "issuer"
+        ],
+        "note": "Synthetic verified assertion"
+      },
+      "ownership": {
+        "status": "verified",
+        "asOf": "2026-10-22T14:21:00.000Z",
+        "sourceIds": [
+          "issuer"
+        ],
+        "note": "Synthetic verified assertion"
+      },
+      "news": {
+        "status": "verified",
+        "asOf": "2026-10-22T14:21:00.000Z",
+        "sourceIds": [
+          "issuer"
+        ],
+        "note": "Synthetic verified assertion"
+      },
+      "corporateActions": {
+        "status": "verified",
+        "asOf": "2026-10-22T14:21:00.000Z",
+        "sourceIds": [
+          "issuer"
+        ],
+        "note": "Synthetic verified assertion"
+      },
+      "technicals": {
+        "status": "verified",
+        "asOf": "2026-10-22T14:21:00.000Z",
+        "sourceIds": [
+          "issuer"
+        ],
+        "note": "Synthetic verified assertion"
+      },
+      "liquidity": {
+        "status": "verified",
+        "asOf": "2026-10-22T14:21:00.000Z",
+        "sourceIds": [
+          "issuer"
+        ],
+        "note": "Synthetic verified assertion"
+      }
+    }
+  },
+  "financialModel": {
+    "type": "OPERATING_COMPANY",
+    "earningsQuality": {
+      "conclusion": "Synthetic dated evidence",
+      "evidenceIds": [
+        "financials"
+      ]
+    },
+    "cashConversion": {
+      "conclusion": "Synthetic dated evidence",
+      "evidenceIds": [
+        "financials"
+      ]
+    },
+    "debtRefinancing": {
+      "conclusion": "Synthetic dated evidence",
+      "evidenceIds": [
+        "financials"
+      ]
+    }
+  },
+  "valuation": {
+    "status": "UNAVAILABLE_IMPORTANT",
+    "conclusion": "No defensible valuation model in synthetic case"
+  },
+  "gapTreatments": [
+    {
+      "id": "valuation",
+      "attempts": [
+        "Synthetic attempted fallback"
+      ],
+      "consequence": "Important uncertainty",
+      "nextReview": "Before risk approval",
+      "materiality": "Noncritical to technical thesis",
+      "reviewer": "fixture-independent-reviewer"
+    },
+    {
+      "id": "accounting-coverage",
+      "attempts": [
+        "Synthetic attempted fallback"
+      ],
+      "consequence": "Important uncertainty",
+      "nextReview": "Before risk approval",
+      "materiality": "Noncritical to technical thesis",
+      "reviewer": "fixture-independent-reviewer"
+    }
+  ],
+  "peerComparison": {
+    "status": "COMPARABLE",
+    "period": "2026-H1",
+    "comparability": "Synthetic comparable accounting basis",
+    "peers": [
+      {
+        "isin": "PEER0",
+        "denominator": 10,
+        "period": "2026-H1",
+        "evidenceId": "financials"
+      },
+      {
+        "isin": "PEER1",
+        "denominator": 10,
+        "period": "2026-H1",
+        "evidenceId": "financials"
+      },
+      {
+        "isin": "PEER2",
+        "denominator": 10,
+        "period": "2026-H1",
+        "evidenceId": "financials"
+      },
+      {
+        "isin": "PEER3",
+        "denominator": 10,
+        "period": "2026-H1",
+        "evidenceId": "financials"
+      },
+      {
+        "isin": "PEER4",
+        "denominator": 10,
+        "period": "2026-H1",
+        "evidenceId": "financials"
+      }
+    ]
+  },
+  "macro": {
+    "revenue": "Export-price sensitivity",
+    "costs": "Imported-input sensitivity",
+    "financing": "Floating-rate refinancing exposure",
+    "valuation": "Discount-rate sensitivity",
+    "evidenceIds": [
+      "financials"
+    ]
+  },
+  "challenge": {
+    "actorId": "fixture-independent-reviewer",
+    "modelId": "synthetic-not-a-model",
+    "createdAt": "2026-10-22T14:22:00Z",
+    "reviewHash": "75cb65e7f3939b28cec9003939cb528e6e38daa759959b9f5122d1743c6b2b7a",
+    "objections": [
+      "Synthetic challenge; not actual model work"
+    ],
+    "response": "Engineering contract fixture only",
+    "remainingDissent": [],
+    "unresolvedCriticalDefect": false
+  }
+}

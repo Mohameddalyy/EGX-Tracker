@@ -1,0 +1,1023 @@
+{
+  "version": "v5-signal-research-1.0",
+  "policyHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+  "inputHash": "ad5e6db08f9ffd28a952c99fca5a16c99be2e133e1e88280ea92e381606399d5",
+  "signalDay": "2026-10-22",
+  "cutoffAt": "2026-10-22T14:20:00Z",
+  "cohortCount": 7,
+  "variantCount": 9,
+  "rows": [
+    {
+      "variantId": "B0",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST0",
+      "isin": "EG0000000001",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B0",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST1",
+      "isin": "EG0000000002",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B0",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST2",
+      "isin": "EG0000000003",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B0",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST3",
+      "isin": "EG0000000004",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B0",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST4",
+      "isin": "EG0000000005",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B0",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST5",
+      "isin": "EG0000000006",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B0",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "CASH_CONTROL",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B1",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B2",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "B3",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-BOUNDED",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-PEER",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-MACRO",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    },
+    {
+      "variantId": "FULL-NO-SECTOR",
+      "ticker": "TEST6",
+      "isin": "EG0000000007",
+      "status": "DATA_BLOCKED",
+      "mechanicallyEligible": false,
+      "gates": [
+        {
+          "id": "GLOBAL_DATA_ADMISSION",
+          "status": "BLOCKED",
+          "reason": "Verified exchange session calendar required",
+          "value": null
+        }
+      ],
+      "entryAuthorization": false
+    }
+  ],
+  "noOpportunity": null,
+  "opportunityConclusion": "UNDETERMINED_DATA_GAPS",
+  "globalError": "Verified exchange session calendar required",
+  "entryAuthorization": false
+}

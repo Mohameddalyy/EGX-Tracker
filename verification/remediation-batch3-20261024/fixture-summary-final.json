@@ -1,0 +1,21 @@
+{
+  "observedAt": "2026-10-24T12:31:57.641Z",
+  "version": "v5-signal-research-1.0",
+  "policyHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+  "scope": "Synthetic engineering fixtures, not observed market signals, genuine analyst outputs, performance or an independent-model evaluation.",
+  "inputHash": "deefc2b77efd78582bb3d89cf6e504de626c52dd9399a2617b00fce455f6a7b0",
+  "names": 7,
+  "variants": 9,
+  "waterfallRows": 63,
+  "byStatus": {
+    "CASH_CONTROL": 7,
+    "CONTROL_VALIDATION_PENDING": 14,
+    "RESEARCH_PENDING": 42
+  },
+  "researchDisposition": "AWAITING_RISK_AND_EXECUTION_CONTROLS",
+  "importantGaps": [
+    "accounting-coverage",
+    "valuation"
+  ],
+  "noOrderAuthorization": true
+}

@@ -1,0 +1,4 @@
+# Frozen artifacts are hashed byte-for-byte. Do not transform their line endings.
+/app/v5/plan.json -text
+/app/v5/decision-schema.json -text
+/verification/v5-phase3-20261023/* -text

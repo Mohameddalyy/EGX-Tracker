@@ -1,0 +1,118 @@
+{
+  "sources": [
+    {
+      "id": "issuer",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "availableAt": "2026-10-22T14:15:00Z",
+      "url": "https://example.com/engineering-fixture",
+      "title": "Synthetic only"
+    }
+  ],
+  "items": [
+    {
+      "id": "financials",
+      "area": "financials",
+      "kind": "OBSERVED",
+      "overlay": "core",
+      "critical": true,
+      "statement": "Synthetic financials source passage",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "ownership",
+      "area": "ownership",
+      "kind": "OBSERVED",
+      "overlay": "core",
+      "critical": true,
+      "statement": "Synthetic ownership source passage",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "news",
+      "area": "news",
+      "kind": "OBSERVED",
+      "overlay": "core",
+      "critical": true,
+      "statement": "Synthetic news source passage",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "corporateActions",
+      "area": "corporateActions",
+      "kind": "OBSERVED",
+      "overlay": "core",
+      "critical": true,
+      "statement": "Synthetic corporateActions source passage",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "technicals",
+      "area": "technicals",
+      "kind": "OBSERVED",
+      "overlay": "core",
+      "critical": true,
+      "statement": "Synthetic technicals source passage",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "liquidity",
+      "area": "liquidity",
+      "kind": "OBSERVED",
+      "overlay": "core",
+      "critical": true,
+      "statement": "Synthetic liquidity source passage",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "peer",
+      "area": "financials",
+      "kind": "JUDGMENT",
+      "overlay": "peer",
+      "statement": "Synthetic peer analysis",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "macro",
+      "area": "financials",
+      "kind": "JUDGMENT",
+      "overlay": "macro",
+      "statement": "Synthetic macro analysis",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    },
+    {
+      "id": "sector",
+      "area": "financials",
+      "kind": "JUDGMENT",
+      "overlay": "sector",
+      "statement": "Synthetic sector analysis",
+      "sourceIds": [
+        "issuer"
+      ],
+      "availableAt": "2026-10-22T14:20:00Z"
+    }
+  ]
+}

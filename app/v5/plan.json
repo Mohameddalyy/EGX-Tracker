@@ -1,0 +1,305 @@
+{
+  "schemaVersion": "egx-v5-phase3-1.0",
+  "version": "v5-paper-plan-1.0",
+  "scope": "PAPER_ONLY_PROSPECTIVE",
+  "preparedAt": "2026-10-23",
+  "timezone": "Africa/Cairo",
+  "state": "SPECIFICATION_FROZEN_NOT_ACTIVATED",
+  "activated": false,
+  "allowRealOrders": false,
+  "capitalRisk": {
+    "status": "AUTHORIZED_FOR_PLAN",
+    "capitalEGP": 100000,
+    "authority": "User: any amount of risk if justified",
+    "scope": "Paper only, unlevered funded cash",
+    "percentageCeilings": null,
+    "capitalAuthorization": "User explicitly selected EGP 100,000 in Phase 3"
+  },
+  "sharedRisk": {
+    "importantGapsCompound": false,
+    "maxDailyShareParticipation": 0.01,
+    "maxMinuteShareParticipation": 0.01,
+    "correlationClusterThreshold": 0.8,
+    "correlationMinimumAlignedReturns": 60,
+    "leverage": false,
+    "shorting": false,
+    "averagingDown": false,
+    "pyramiding": false,
+    "wholeSharesOnly": true,
+    "drawdownHandling": "Advisory pause pending a newly justified Risk Agent exception; no automatic liquidation",
+    "correlationHandling": "Measured and stress-tested; advisory default sector cap, overrideable",
+    "sizingBasis": "Current verified paper equity and funded settled cash; no default growth or cut from recent wins/losses alone",
+    "feeReserves": "Entry costs and fixed exit-fee commitments must be funded; no negative cash"
+  },
+  "universe": {
+    "discovery": "Full reconciled EGX catalog, including recorded decisions absent from a scanner response",
+    "trading": "Verified tradable primary ordinary common equity, native EGP; exclude rights, funds, preferred, OTC, derivatives and unresolved special segments",
+    "requiredConsecutiveVerifiedSessions": 261,
+    "minMedianTurnover20EGP": 2000000,
+    "minActiveSessions20": 18,
+    "maxAtr14ToClose": 0.08,
+    "maxTickToClose": 0.01,
+    "unresolvedActionOrSuspension": "BLOCK"
+  },
+  "indicators": {
+    "atr": "Wilder14 seeded by mean first14 of last260 true ranges, requiring261 closes",
+    "sma": [
+      20,
+      50,
+      200
+    ],
+    "breakoutLookback": 20,
+    "momentumSessions": 63,
+    "trendSlopeSessions": 10,
+    "rv20": "signal volume / mean prior20 complete session volumes"
+  },
+  "entry": {
+    "signal": "C >= nextValidTick(max prior20 highs), C>SMA50>SMA200, SMA50>SMA50[t-10], R63>0 and R63>=EGX30 R63, EGX30 C>SMA200",
+    "champion": "FULL",
+    "limit": "floorToValidTick(Csignal + 0.25*ATRsignal)",
+    "lowerZone": "ceilToValidTick(max(prior20 highs))",
+    "stop": "floorToValidTick(Csignal - 2*ATRsignal)",
+    "window": "First30 minutes of verified continuous session immediately following signal; approval and preflight committed before session open",
+    "expiry": "At first30-minute window end enter EXPIRED_PENDING_RECONCILIATION; eligible market-bar starts must remain inside window. Reconcile until window end + declared feed delay +6 minutes; retain cash reservations until resolution.",
+    "reentry": "New breakout signal after exit; no entry in a name already held or with pending entry",
+    "sizingPrice": "entry limit; lower fills cannot increase quantity"
+  },
+  "volume": {
+    "fixedThreshold": 1.5,
+    "tierAware": true,
+    "tierDefinition": "Sort eligible names by prior-session median turnover descending, tie ISIN; rank quantile ceil(3*rank/N), capped3",
+    "percentileByTier": [
+      0.8,
+      0.85,
+      0.9
+    ],
+    "lookbackPriorRV20Observations": 126,
+    "minimumObservations": 126,
+    "quantile": "nearest rank ceil(p*n), exclude signal day",
+    "threshold": "max(1.5, own-stock prior126 RV20 percentile for current liquidity tier)",
+    "missing": "BLOCK tier-aware variant, no automatic fallback"
+  },
+  "exit": {
+    "initialStop": "Frozen entry.stop; actual fill must exceed stop",
+    "takeProfit": "NONE; valuation scenario range is not an executable profit target",
+    "trailing": "After confirmed daily close >= actual entry + initial per-share price risk, latch active. Next session stop=max(previous stop,floorTick(highest completed daily close since entry - 2*current ATR)); never loosen.",
+    "trendFailure": "Confirmed daily close < SMA20 => exit intent for next continuous session",
+    "maxHoldingSessions": 20,
+    "timeExit": "After close of20th session counting entry session as1, exit at next eligible continuous-session observation",
+    "materialInvalidation": "Source-backed thesis-break event independently recorded => cancel entries and exit intent at actual approval time; unavailable facts alone => risk alert, no fabricated liquidation",
+    "weekEnd": "No forced liquidation. End new entries after fifth entry session; manage existing positions and 5/20/60-session outcomes.",
+    "riskLed": "FULL discretionary variants only: earlier full exit with documented changed risk, alternatives and independent challenge. Never delay mandatory exit or widen stop; ordinary mandatory exits need no new risk approval."
+  },
+  "fills": {
+    "mode": "DELAYED_OBSERVATION_MINUTE_PAPER",
+    "decisionClock": "Actual committed UTC wall-clock time",
+    "entryBar": "Completed raw one-minute bar with start strictly later than order commit; in entry window, known session, not auction/halt/limit-locked; positive verified volume",
+    "entryPrice": "ceilTick(open*(1+adverseSlippage)); must lie inside zone, bar[low,high] and daily bands",
+    "exitTriggerClock": "Actual receipt/processing time of first completed bar showing stop breach; never backdate to historical bar end",
+    "exitBar": "Start strictly later than exit-intent commit; completed raw bar, legal/sellable shares, positive volume, 1% participation",
+    "exitPrice": "floorTick(open*(1-adverseSlippage)); must lie inside observed range and daily bands",
+    "partialFills": false,
+    "exitRetry": "Next valid observed minute until filled; pending across sessions, flag unresolved risk",
+    "sameBarAmbiguity": "No entry and exit fill in same minute; entry-minute stop touch may trigger later exit only when observed",
+    "maxCaptureLagBeyondDelayMinutes": 5,
+    "maxProcessLagSeconds": 60,
+    "missingMinute": "No interpolation or assumed fill; retain open/pending status",
+    "reconciliation": "Evaluate authorization at market-bar start using actual committed validity/cancellation timeline; record market event and observation/ledger timestamps separately. After deadline, unresolved entries become NO_FILL_EVIDENCE, release reservation, censor outcome and fail coverage. Later observations are diagnostic only; no retrospective ledger fills. Exits remain pending."
+  },
+  "costs": {
+    "status": "FROZEN_SYNTHETIC_FRICTION_NOT_BROKER_TAX_TARIFF",
+    "base": {
+      "fixedEGPPerFilledOrder": 5,
+      "notionalChargeFractionPerSide": 0.0015,
+      "adverseSlippageFractionPerSide": 0.0025
+    },
+    "stress": {
+      "fixedEGPPerFilledOrder": 10,
+      "notionalChargeFractionPerSide": 0.003,
+      "adverseSlippageFractionPerSide": 0.005
+    },
+    "unfilledCharge": 0,
+    "afterTaxClaim": false,
+    "actualExecutionCostClaim": false
+  },
+  "settlement": {
+    "mode": "CONSERVATIVE_T_PLUS_2_SIMULATION",
+    "sameDaySelling": false,
+    "saleCashReusable": "After second subsequent verified settlement business day",
+    "boughtSharesSellable": "After second subsequent verified settlement business day",
+    "unknownCalendar": "BLOCK new entries and settle nothing by guess",
+    "note": "A frozen simulation constraint, not certification of every account's MCDR/broker eligibility"
+  },
+  "analyticalGate": {
+    "evidenceAreas": [
+      "financials",
+      "ownership",
+      "news",
+      "corporateActions",
+      "technicals",
+      "liquidity"
+    ],
+    "criticalGaps": "BLOCK",
+    "importantGaps": "Default aggregate0.5 quantity haircut; Risk Agent may override for documented noncritical gaps with independent challenge, never reclassify critical gaps.",
+    "optionalGaps": "Omit with no weight redistribution",
+    "sectorStrength": "20-session median peer return minus EGX30 return >=0 when >=5 peers and >=80% eligible sector coverage; negative blocks, unknown important gap",
+    "peerComparison": ">=5 comparable positive-denominator peers or explicit missing-important state; no automatic cheapness claim",
+    "macro": "Official event and company sensitivity review; no universal bullish FX/rate sign",
+    "quality": "Sector-specific solvency and accounting reconciliation; material contradictory evidence blocks",
+    "probabilities": "Only with justified precommitted model; otherwise uncertain",
+    "reviewExpiry": "Each next-session setup; material event invalidates immediately"
+  },
+  "schedule": {
+    "baselineCairo": "08:00",
+    "reportsCairo": [
+      "09:00",
+      "10:45",
+      "14:35"
+    ],
+    "finalReport": "Verified close + actual feed delay +30min",
+    "monitorEveryMinutes": 5,
+    "monitorEnd": "Verified close +actual delay +5min; then final daily capture",
+    "hardMinutes": {
+      "baseline": 30,
+      "screen": 5,
+      "checkpoint": 8
+    },
+    "targetMinutes": {
+      "baseline": 25,
+      "screen": 2,
+      "checkpoint": 5
+    },
+    "reportReserveSeconds": 60,
+    "noTokenBudget": true
+  },
+  "ranking": {
+    "discovery": "Descending R63-EGX30 R63, descending medianTurnover20, ascending ISIN",
+    "allocation": "Default deterministic rank; Risk Agent may choose another eligible candidate or smaller/no allocation with documented portfolio comparison; shared cash reserved atomically.",
+    "researchConcurrency": 5,
+    "noTopNUniverseLimit": true
+  },
+  "variants": [
+    {
+      "id": "B0",
+      "kind": "0% idle cash"
+    },
+    {
+      "id": "B1",
+      "kind": "Technical only; bounded control risk; mandatory integrity/legal/cost/risk gates remain"
+    },
+    {
+      "id": "B2",
+      "kind": "B1 + fixedRV20>=1.5"
+    },
+    {
+      "id": "B3",
+      "kind": "B2 + complete analyst/final peer/macro/sector review"
+    },
+    {
+      "id": "FULL-BOUNDED",
+      "kind": "B3 + tier-aware RV; hard1%/4%/25%/40%/10%/6 risk control"
+    },
+    {
+      "id": "FULL",
+      "kind": "Same eligibility as FULL-BOUNDED; discretionary Risk Agent funded-cash allocation; declared champion"
+    },
+    {
+      "id": "FULL-NO-PEER",
+      "kind": "FULL without peer context/gap haircut; critical financial checks remain"
+    },
+    {
+      "id": "FULL-NO-MACRO",
+      "kind": "FULL without macro overlay; material-event safety checks remain"
+    },
+    {
+      "id": "FULL-NO-SECTOR",
+      "kind": "FULL without sector-strength eligibility gate; concentration analysis retained"
+    }
+  ],
+  "activation": {
+    "phase4ImplementationRequired": true,
+    "phase5TestsRequired": true,
+    "explicitResumeRequired": true,
+    "entryStartDate": null,
+    "entrySessions": 5,
+    "ruleBundleRequired": [
+      "session/auctions/holidays",
+      "instrument ticks",
+      "daily references/bands",
+      "suspension/tradability",
+      "settlement calendar"
+    ],
+    "noAutomaticActivation": true
+  },
+  "riskGovernance": {
+    "mode": "DISCRETIONARY_WITHIN_FUNDED_CASH",
+    "riskAgentRequired": "Only discretionary FULL variants; bounded controls use deterministic validation, not invented Risk Agent certificates",
+    "independentChallengeRequired": true,
+    "advisoryDefaults": {
+      "riskPerPositionFraction": 0.01,
+      "aggregatePlannedRiskFraction": 0.04,
+      "stockFraction": 0.25,
+      "sectorFraction": 0.4,
+      "cashReserveFraction": 0.1,
+      "maxPositions": 6,
+      "dailyDrawdownReviewFraction": 0.02,
+      "experimentDrawdownReviewFraction": 0.04,
+      "importantGapMultiplier": 0.5
+    },
+    "overrideable": [
+      "per-position planned-risk guideline",
+      "aggregate-risk guideline",
+      "stock/issuer-group/sector/correlation concentration guidelines",
+      "cash-reserve guideline",
+      "position-count guideline",
+      "important-noncritical-gap sizing haircut",
+      "drawdown entry-pause guideline",
+      "allocation priority among eligible candidates"
+    ],
+    "hard": [
+      "PAPER_ONLY",
+      "no borrowing, leverage, shorting, pyramiding or averaging down",
+      "funded settled cash and modeled fee reserves",
+      "critical data, identity, chronology and market rules",
+      "1% daily/minute participation and observed-fill validity",
+      "frozen signals and exit/stop rules",
+      "required approvals, independent challenge and audit trail",
+      "new-entry expiry and five-session entry window"
+    ],
+    "overrideProcedure": "Enumerated exception, evidence, alternatives, adverse scenarios, default/proposed portfolio arithmetic, independent challenge and deterministic checks; one snapshot/order only; expire/revoke on changes; no retrospective approval",
+    "wholeCapitalLossPossible": true,
+    "advisoryThresholdsAreNotUserCeilings": true,
+    "drawdownReview": {
+      "dailyReference": "Opening verified marked equity",
+      "experimentReference": "Observed verified equity high-water mark",
+      "additionalReviewAtDrawdownIncrement": 0.02,
+      "exceptionExpiry": "Current verified session close",
+      "unknownMarks": "Block new allocations; never infer no breach",
+      "existingExitsContinue": true
+    },
+    "certificateSchema": "decision-schema.json#/$defs/risk",
+    "sizingOutput": "Deterministic artifact; model-selected monetary budget, never model-edited share count",
+    "scenarios": [
+      "planned stop base/stress costs",
+      "gap through stop",
+      "two-session sale delay",
+      "volume25%",
+      "shared factor shock",
+      "all invested principal lost",
+      "100% current equity loss illustration"
+    ],
+    "budgets": {
+      "maxPlannedLossEGP": "Nullable positive entry planned-loss ceiling chosen by Risk Agent",
+      "maxCashAllocationEGP": "Nullable positive cash allocation including entry costs and fixed exit-fee reserves",
+      "requirement": "At least one positive for approved entry; both constrain when provided"
+    },
+    "certificateLifecycle": "Bind pre-reservation snapshot and order intent; atomic accepted-order receipt links expected reservation. Own reservation does not invalidate approval. Nonmaterial changes require deterministic revalidation; quantity cannot increase. Material changes cancel at actual committed time; no retroactive cancellation of earlier authorized market events.",
+    "appliesToVariants": [
+      "FULL",
+      "FULL-NO-PEER",
+      "FULL-NO-MACRO",
+      "FULL-NO-SECTOR"
+    ]
+  },
+  "testPlan": "TEST-PLAN.md"
+}

@@ -1,0 +1,46 @@
+{
+  "version": "v5-research-disposition-1",
+  "packetHash": "4e702de57277865c8856ff0c5ae03dc3a8b40700ea4a1057358e16b4347ec1bd",
+  "reviewHash": "7df8643d50198a9baae3d7d09cafd2c8e04cdc7f42784f6be49cc788cdd6cad0",
+  "variantId": "FULL",
+  "isin": "EG0000000001",
+  "decision": "Watch",
+  "status": "AWAITING_RISK_AND_EXECUTION_CONTROLS",
+  "confidence": "MEDIUM",
+  "importantGaps": [
+    "accounting-coverage",
+    "valuation"
+  ],
+  "defaultGapMultiplier": 0.5,
+  "independence": "Different recorded actors, same model; no independent-model evidence",
+  "fieldEvidence": {
+    "version": "egx-field-evidence-2",
+    "cutoffAt": "2026-10-22T14:21:00.000Z",
+    "requiredFields": [
+      "isin_alias_segment",
+      "currency",
+      "historical_ohlcv",
+      "adjustment_basis",
+      "solvency_bank_metrics",
+      "news_disclosure_coverage",
+      "corporate_actions",
+      "median_turnover20",
+      "ownership_control_events"
+    ],
+    "gaps": [],
+    "scope": "Research promotion only; no execution or sizing authorization"
+  },
+  "setup": {
+    "lower": 63.2,
+    "limit": 70.22,
+    "stop": 68.22,
+    "takeProfit": null,
+    "mechanism": "NEXT_SESSION_FIRST_30_MINUTE_LIMIT",
+    "expiry": "Next verified session first-30-minute window; W6 must bind actual open/deadline",
+    "quantity": null,
+    "executionState": "AWAITING_W6_CONTROLS",
+    "basis": "RAW_CURRENT_PRICE_UNITS"
+  },
+  "entryAuthorization": false,
+  "limitation": "Research disposition only. Full frozen decision JSON Schema, risk certificate, pre-open checks, sizing, funded reservation and execution validation belong to W6."
+}
