@@ -1,5 +1,7 @@
 integrations/
 data/
+node_modules/
+/verification/remediation-batch4-20261025/*-ledgers/
 *.log
 
 verification/skill-validator-deps/

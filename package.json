@@ -4,9 +4,13 @@
   "type": "module",
   "scripts": {
     "start": "node app/server.mjs",
-    "test": "node --test app/v5.test.mjs app/workflow.test.mjs app/audit-remediation.test.mjs app/analysis.test.mjs app/pipeline-progress.test.mjs app/experiment-review.test.mjs app/tv-deadline.test.mjs app/scout-efficient.test.mjs app/operations.test.mjs app/core.test.mjs app/levels.test.mjs app/validation.test.mjs app/journal.test.mjs app/watchlist.test.mjs app/attention.test.mjs app/positions.test.mjs app/research.test.mjs app/market.test.mjs app/scout.test.mjs app/decision-monitor.test.mjs app/finality.test.mjs app/trade-plans.test.mjs app/decision-execution.test.mjs app/intraday.test.mjs app/alert-relay.test.mjs app/intraday-service.test.mjs app/paper.test.mjs app/paper-performance.test.mjs app/research-card.test.mjs app/paper-workflow.test.mjs app/data-preparation.test.mjs app/repair.test.mjs app/source-repair.test.mjs"
+    "test": "node --test app/v5-execution.test.mjs app/v5.test.mjs app/workflow.test.mjs app/audit-remediation.test.mjs app/analysis.test.mjs app/pipeline-progress.test.mjs app/experiment-review.test.mjs app/tv-deadline.test.mjs app/scout-efficient.test.mjs app/operations.test.mjs app/core.test.mjs app/levels.test.mjs app/validation.test.mjs app/journal.test.mjs app/watchlist.test.mjs app/attention.test.mjs app/positions.test.mjs app/research.test.mjs app/market.test.mjs app/scout.test.mjs app/decision-monitor.test.mjs app/finality.test.mjs app/trade-plans.test.mjs app/decision-execution.test.mjs app/intraday.test.mjs app/alert-relay.test.mjs app/intraday-service.test.mjs app/paper.test.mjs app/paper-performance.test.mjs app/research-card.test.mjs app/paper-workflow.test.mjs app/data-preparation.test.mjs app/repair.test.mjs app/source-repair.test.mjs"
   },
   "engines": {
     "node": ">=24"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
   }
 }

@@ -101,7 +101,7 @@ test('probability is not inferred from qualitative confidence or agent agreement
  const {packet,review}=context();review.forecast.probability=.9;signChallenge(review);assert.throws(()=>validateResearchDisposition(packet,review,now),/Probability/);
 });
 test('manual CLI writes immutable isolated evaluation and never activates the engine',()=>{
- const dir=mkdtempSync(join(tmpdir(),'egx-v5-'));try{const input=join(dir,'input.json'),out=join(dir,'evaluation.json');writeFileSync(input,JSON.stringify(signalFixture(1)));const result=v5Command(['evaluate',input,out]);assert.equal(result.entryAuthorization,false);assert.throws(()=>v5Command(['evaluate',input,out]),/exist/i);assert.equal(v5Command(['status']).executionEngine,'NOT_IMPLEMENTED');}finally{rmSync(dir,{recursive:true,force:true});}
+ const dir=mkdtempSync(join(tmpdir(),'egx-v5-'));try{const input=join(dir,'input.json'),out=join(dir,'evaluation.json');writeFileSync(input,JSON.stringify(signalFixture(1)));const result=v5Command(['evaluate',input,out]);assert.equal(result.entryAuthorization,false);assert.throws(()=>v5Command(['evaluate',input,out]),/exist/i);assert.equal(v5Command(['status']).executionEngine,'ENGINEERING_ONLY_NOT_ACTIVATED');}finally{rmSync(dir,{recursive:true,force:true});}
 });
 
 test('global missing calendar retains every instrument/variant as data-blocked, not a no-opportunity conclusion',()=>{

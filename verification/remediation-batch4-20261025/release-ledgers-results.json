@@ -1,0 +1,145 @@
+{
+  "observedAt": "2026-10-25T17:28:53.962Z",
+  "label": "SYNTHETIC_ENGINEERING_NOT_MARKET_PERFORMANCE",
+  "releaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+  "realOrders": false,
+  "globalSchedulesResumed": false,
+  "cases": [
+    {
+      "name": "complete-lifecycle",
+      "variant": "B1",
+      "scenario": "base",
+      "events": 6,
+      "orders": [
+        {
+          "status": "FILLED",
+          "quantity": 356,
+          "reservationCents": 0,
+          "censored": false
+        }
+      ],
+      "positions": [
+        {
+          "quantity": 356,
+          "status": "CLOSED",
+          "entry": 70.18,
+          "initialRiskCents": 84565,
+          "exit": {
+            "committedAt": "2026-10-25T07:17:10Z",
+            "reason": "STOP_BREACH",
+            "notBefore": null,
+            "status": "FILLED",
+            "attempts": [
+              {
+                "at": "2026-10-27T07:17:10Z",
+                "barStart": "2026-10-27T07:01:00.000Z",
+                "status": "EXIT_FILLED"
+              }
+            ],
+            "fill": {
+              "price": 68.82,
+              "quantity": 356,
+              "marketAt": "2026-10-27T07:01:00.000Z",
+              "observedAt": "2026-10-27T07:17:10Z",
+              "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "settleDay": "2026-10-29"
+            }
+          }
+        }
+      ],
+      "cashCents": 9943161,
+      "feesCents": 8423,
+      "realizedCents": -56839,
+      "settlements": [
+        {
+          "id": "c7e28303902dbf85ef52af16b0583ef53692cf669072a63be4d8917f30aa4b78",
+          "amountCents": 2446317,
+          "dueDay": "2026-10-29",
+          "settled": true,
+          "marketAt": "2026-10-27T07:01:00.000Z",
+          "observedAt": "2026-10-27T07:17:10Z",
+          "settledAt": "2026-10-29T06:40:00Z"
+        }
+      ],
+      "replay": {
+        "events": 6,
+        "stateHash": "92d1aa35b914ac351d186e0dfd4640364383d798aefd3a211d23374c5b815ad3",
+        "cashCents": 9943161,
+        "verified": true
+      },
+      "localEvidence": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\verification\\remediation-batch4-20261025\\release-ledgers\\complete-lifecycle"
+    },
+    {
+      "name": "full-liquidity-deadlock",
+      "variant": "FULL",
+      "scenario": "base",
+      "events": 5,
+      "orders": [
+        {
+          "status": "FILLED",
+          "quantity": 1421,
+          "reservationCents": 0,
+          "censored": false
+        }
+      ],
+      "positions": [
+        {
+          "quantity": 1421,
+          "status": "EXIT_PENDING",
+          "entry": 70.18,
+          "initialRiskCents": 334556,
+          "exit": {
+            "committedAt": "2026-10-25T07:17:10Z",
+            "reason": "STOP_BREACH",
+            "notBefore": null,
+            "status": "EXIT_PENDING",
+            "attempts": [
+              {
+                "at": "2026-10-27T07:17:10Z",
+                "barStart": "2026-10-27T07:01:00.000Z",
+                "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+              }
+            ]
+          }
+        }
+      ],
+      "cashCents": 11963,
+      "feesCents": 15459,
+      "realizedCents": 0,
+      "settlements": [],
+      "replay": {
+        "events": 5,
+        "stateHash": "b99deb4f7e26bb8b6cbae05046469d07bc4828dbcbe024b7fd86e1cbe205cedb",
+        "cashCents": 11963,
+        "verified": true
+      },
+      "localEvidence": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\verification\\remediation-batch4-20261025\\release-ledgers\\full-liquidity-deadlock"
+    },
+    {
+      "name": "stress-zone-no-fill",
+      "variant": "FULL",
+      "scenario": "stress",
+      "events": 5,
+      "orders": [
+        {
+          "status": "NO_FILL_EVIDENCE",
+          "quantity": 1419,
+          "reservationCents": 0,
+          "censored": true
+        }
+      ],
+      "positions": [],
+      "cashCents": 10000000,
+      "feesCents": 0,
+      "realizedCents": 0,
+      "settlements": [],
+      "replay": {
+        "events": 5,
+        "stateHash": "3218b30a54347a66645126c53f44c093021cc377e7d4b9719e35aa687dd19912",
+        "cashCents": 10000000,
+        "verified": true
+      },
+      "localEvidence": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\verification\\remediation-batch4-20261025\\release-ledgers\\stress-zone-no-fill"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import {buildResearchPacket,validateResearchDisposition} from './v5/research.mjs
 const read=path=>JSON.parse(readFileSync(path,'utf8').replace(/^\uFEFF/,''));
 export function v5Command(args=process.argv.slice(2)){
  const [command='status',...a]=args;let result,path;
- if(command==='status')result={version:engineVersion,policyHash:planHash,capitalEGP:plan.capitalRisk.capitalEGP,variants:plan.variants.map(v=>v.id),capability:'Daily trend-confirmation and typed research review',executionEngine:'NOT_IMPLEMENTED',activated:false,realOrders:false,schedules:'Unchanged; no scheduler calls in this command'};
+ if(command==='status')result={version:engineVersion,policyHash:planHash,capitalEGP:plan.capitalRisk.capitalEGP,variants:plan.variants.map(v=>v.id),capability:'Daily trend-confirmation and typed research review',executionEngine:'ENGINEERING_ONLY_NOT_ACTIVATED',activated:false,realOrders:false,schedules:'Unchanged; no scheduler calls in this command'};
  else if(command==='evaluate'){result=evaluateUniverse(read(a[0]));path=a[1];}
  else if(command==='packet'){result=buildResearchPacket(read(a[0]),a[1],a[2],read(a[3]));path=a[4];}
  else if(command==='review'){result=validateResearchDisposition(read(a[0]),read(a[1]));path=a[2];}
