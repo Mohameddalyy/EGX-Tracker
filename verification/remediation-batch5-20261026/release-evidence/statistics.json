@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "kind": "statistics",
+  "createdAt": "2026-10-25T22:48:10.366Z",
+  "payload": {
+    "familySize": 16,
+    "familyAlpha": 0.05,
+    "family": [
+      {
+        "id": "FULL-vs-B0:base",
+        "variant": "B0",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B1:base",
+        "variant": "B1",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B2:base",
+        "variant": "B2",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B3:base",
+        "variant": "B3",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-BOUNDED:base",
+        "variant": "FULL-BOUNDED",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-NO-PEER:base",
+        "variant": "FULL-NO-PEER",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-NO-MACRO:base",
+        "variant": "FULL-NO-MACRO",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-NO-SECTOR:base",
+        "variant": "FULL-NO-SECTOR",
+        "scenario": "base",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B0:stress",
+        "variant": "B0",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B1:stress",
+        "variant": "B1",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B2:stress",
+        "variant": "B2",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-B3:stress",
+        "variant": "B3",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-BOUNDED:stress",
+        "variant": "FULL-BOUNDED",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-NO-PEER:stress",
+        "variant": "FULL-NO-PEER",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-NO-MACRO:stress",
+        "variant": "FULL-NO-MACRO",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      },
+      {
+        "id": "FULL-vs-FULL-NO-SECTOR:stress",
+        "variant": "FULL-NO-SECTOR",
+        "scenario": "stress",
+        "status": "INCONCLUSIVE",
+        "reasons": [
+          "Not registered prospective evidence",
+          "Fewer than 126 prospective sessions",
+          "Unavailable arm retained in family"
+        ],
+        "diagnostic": null,
+        "sensitivity": null,
+        "pValue": 1,
+        "multiplicity": {
+          "adjustedP": 1,
+          "reject": false
+        }
+      }
+    ],
+    "superiorityClaim": "NOT_EMITTED",
+    "reason": "Statistical differences alone do not establish meaningful benefit, acceptable risk, independent provenance, stopping-rule compliance or investability. Those release gates remain separate.",
+    "fullVsBoundedInterpretation": "Combined allocation and discretionary risk-exit mandate; not a pure sizing comparison",
+    "fixedExitAttribution": "BLOCKED_SEPARATE_FUNDED_REPLAY_REQUIRED"
+  },
+  "contentHash": "9c6319d32123b4c6be9c571630f5a6c623a3ecc117126d1a25ce4db91e84d5f8"
+}

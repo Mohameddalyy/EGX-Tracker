@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "kind": "trial",
+  "createdAt": "2026-10-25T22:48:09.686Z",
+  "payload": {
+    "id": "batch5-retained-engineering-ledgers",
+    "registeredAt": "2026-10-25T22:48:09.686Z",
+    "scope": "SYNTHETIC_ENGINEERING",
+    "codeRevision": "bda36a7cfc3cf01ad636e0c8b0ab4e1411f15774 + evaluation source manifest",
+    "codeDigest": "c25eee320f340da51ccde2ee3e5fdffb54bc6b59c0a32b15ee9c13edc0ce05fc",
+    "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+    "admissionManifestHash": "deefc2b77efd78582bb3d89cf6e504de626c52dd9399a2617b00fce455f6a7b0",
+    "dataManifestHash": "fd921d0d31cd9012f7624a26d4f2ee4aac14934b5dc139531482b54a7a1954aa",
+    "arms": [
+      {
+        "id": "B0:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B0:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B1:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B1:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B2:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B2:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B3:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "B3:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-BOUNDED:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-BOUNDED:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-NO-PEER:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-NO-PEER:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-NO-MACRO:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-NO-MACRO:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-NO-SECTOR:base",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      },
+      {
+        "id": "FULL-NO-SECTOR:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No prospective or actual-model experiment run; any supplied ledger is only a synthetic accounting example"
+      }
+    ],
+    "priorTrials": [
+      {
+        "artifactHash": "4c32d88c0a50eff1b250def6346815c247050df03e2c90552d99bb6942a5c573",
+        "disposition": "Prior synthetic engineering cases retained; outcomes already inspected; not OOS"
+      }
+    ],
+    "bindings": {
+      "planHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+      "decisionSchemaHash": "8678334e55aa7877a6f7c2ffc6a36170729386704681e194d001d8429cc61535",
+      "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+      "evaluationReleaseHash": "b252eb98b040261ba08b497c496eb48957d639c1c46501b08cfca5a0a19388e3",
+      "testPlanHash": "d36169435ac07c468b1cd4a5c33fc745d21abd9c77cb5ae2c6ef26ea746cd5b0",
+      "dictionaryHash": "6434fdcd5ab6af6ca2c7e46ef45cfa13f036ce632d4bce3e0eb472e27bc06246",
+      "dependencyLockHash": "c0d056c7dca078f0aac779e40583489975f46495b6087633c7b60de7366cbd6f",
+      "node": "v24.22.1"
+    },
+    "seed": 20261023,
+    "capitalCentsPerArm": 10000000,
+    "statisticalProtocol": {
+      "blockLength": 20,
+      "replicates": 10000,
+      "confidence": 0.95,
+      "familyAlpha": 0.05,
+      "comparisons": 16,
+      "minimumProspectiveSessions": 126,
+      "minimumAppropriateClosedObservations": 100
+    },
+    "activation": "NOT_AUTHORIZED",
+    "analyticalInference": "BLOCKED_UNTIL_REGISTERED_PROSPECTIVE_EVIDENCE",
+    "unresolvedProtocol": [
+      "Meaningful net benefit and acceptable risk outcomes require pre-outcome client approval",
+      "Stopping rule and future cohort authorization remain unset",
+      "Attainable buy-and-hold basket requires a versioned amendment",
+      "Fixed-exit attribution replay is not implemented"
+    ],
+    "priorKnowledge": "No economic claim from this scope"
+  },
+  "contentHash": "bb63a3b9aea97d8b4b28456c04f9ac39c423fd01311bd06cd91160f42e6e96a0"
+}

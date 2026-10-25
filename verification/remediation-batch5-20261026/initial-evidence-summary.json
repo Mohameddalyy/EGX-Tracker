@@ -1,0 +1,96 @@
+{
+  "observedAt": "2026-10-25T22:45:19.313Z",
+  "scope": "SYNTHETIC_ENGINEERING_NOT_PROSPECTIVE_RESULTS",
+  "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+  "evaluationReleaseHash": "4cf447f6819c81ed09aa281967dea901a28ae6b0e3aefc3f5ab2ff77102af4fb",
+  "sourceManifest": [
+    {
+      "path": "app/v5-evaluation-agent.mjs",
+      "sha256": "5ca6e8ea0d0545dd24732e8616452f2b97e7c9313fbdcee8e0307e6ec03193e6"
+    },
+    {
+      "path": "app/v5/evaluation-contract.mjs",
+      "sha256": "bb36e73c9f9d9ba8090311e99971a7fa998746409a1e71fd594b93dd74310890"
+    },
+    {
+      "path": "app/v5/evaluation-ledger.mjs",
+      "sha256": "ce18c1f09b16ed1381d9081ead0b42cc5f256b2e2eb0608eaea9b402c582c15b"
+    },
+    {
+      "path": "app/v5/evaluation-cohorts.mjs",
+      "sha256": "0289439c6a4a210e190fead7f5573e5a62b67d40581195e20a26c87a06c611fb"
+    },
+    {
+      "path": "app/v5/evaluation-statistics.mjs",
+      "sha256": "cd7f358a9c936484d4f970b7a0ee037f4506e1fcbf10952d358630ba7220e770"
+    },
+    {
+      "path": "app/v5/evaluation-models.mjs",
+      "sha256": "5b0e6f3a37e2d18d1729c5f7b72e6fa8348d7c295cd59f0541b192971c023235"
+    },
+    {
+      "path": "app/v5/evaluation-matrix.mjs",
+      "sha256": "b58dc6f579f0d590b1b848e739b775977cec0a04beee70e03b77ab665caefb1b"
+    }
+  ],
+  "dataManifest": [
+    {
+      "path": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\verification\\remediation-batch4-20261025\\release-ledgers\\complete-lifecycle\\engineering.sqlite",
+      "sha256": "3858b67df4aecbb6f4ba39df64198839b278ea1cc8437a70b3990eff22a694cd"
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\verification\\remediation-batch4-20261025\\release-ledgers\\full-liquidity-deadlock\\engineering.sqlite",
+      "sha256": "9e6ea8bc2a649385f87fec9193e325fe87c9c48a1a71d6a4b2d6b98628a7df44"
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\verification\\remediation-batch4-20261025\\release-ledgers\\stress-zone-no-fill\\engineering.sqlite",
+      "sha256": "52311aed81120d09d9053df3d2e50d948610fa801ffb6bd2a28492d036c9037e"
+    }
+  ],
+  "checks": [
+    {
+      "name": "complete-lifecycle",
+      "semanticReplay": "VERIFIED",
+      "sourceUnchanged": true,
+      "netCents": -56839,
+      "feesCents": 8423,
+      "closedTrades": 1,
+      "pendingExits": 0,
+      "unfilled": 0,
+      "profitability": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "name": "full-liquidity-deadlock",
+      "semanticReplay": "VERIFIED",
+      "sourceUnchanged": true,
+      "netCents": -183137,
+      "feesCents": 15459,
+      "closedTrades": 0,
+      "pendingExits": 1,
+      "unfilled": 0,
+      "profitability": "INCONCLUSIVE_NO_CLOSED_TRADES"
+    },
+    {
+      "name": "stress-zone-no-fill",
+      "semanticReplay": "VERIFIED",
+      "sourceUnchanged": true,
+      "netCents": 0,
+      "feesCents": 0,
+      "closedTrades": 0,
+      "pendingExits": 0,
+      "unfilled": 1,
+      "profitability": "INCONCLUSIVE_NO_CLOSED_TRADES"
+    }
+  ],
+  "allSourceLedgersUnchanged": true,
+  "semanticReplays": 3,
+  "matrixArms": 18,
+  "syntheticArmExamples": 3,
+  "unavailableArms": 15,
+  "cohortRows": 63,
+  "unavailableStatisticalHypotheses": 16,
+  "actualModelsEvaluated": 0,
+  "durationMs": 811.4131,
+  "schedulesResumed": false,
+  "activation": false
+}

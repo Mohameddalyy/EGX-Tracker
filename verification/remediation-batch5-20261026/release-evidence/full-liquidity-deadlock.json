@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "kind": "ledger",
+  "createdAt": "2026-10-25T22:48:10.190Z",
+  "payload": {
+    "scope": "SYNTHETIC_OR_ENGINEERING_ONLY_NOT_PROSPECTIVE_PERFORMANCE",
+    "ledgerId": "SYNTHETIC-FULL-base",
+    "variantId": "FULL",
+    "scenario": "base",
+    "releaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+    "chainHead": "c527503c4d5778c2320fdc72f9f88c8998bdf210e934981bf96ebd552d5fd406",
+    "stateHash": "b99deb4f7e26bb8b6cbae05046469d07bc4828dbcbe024b7fd86e1cbe205cedb",
+    "valuation": {
+      "at": "2026-10-27T07:17:10Z",
+      "status": "VALUED",
+      "unavailable": [],
+      "cashCents": 11963,
+      "unsettledCents": 0,
+      "reservedCents": 500,
+      "availableCashCents": 11463,
+      "investedCents": 9804900,
+      "equityCents": 9816863
+    },
+    "counts": {
+      "orders": 1,
+      "filled": 1,
+      "unfilled": 0,
+      "censored": 0,
+      "closedTrades": 0,
+      "held": 1,
+      "pendingExits": 1
+    },
+    "settlements": [],
+    "netCents": -183137,
+    "netReturnFraction": -0.0183137,
+    "realizedCents": 0,
+    "unrealizedCents": -183137,
+    "feesCents": 15459,
+    "grossBeforeFeesCents": -167678,
+    "modeledSlippageCents": 25578,
+    "hitRate": null,
+    "expectancyCents": null,
+    "profitFactor": null,
+    "profitabilityStatus": "INCONCLUSIVE_NO_CLOSED_TRADES",
+    "turnover": {
+      "tradedNotionalCents": 9972578,
+      "fractionOfInitialCapital": 0.9972578,
+      "basis": "Two-sided traded notional / fixed starting capital, not annualized"
+    },
+    "exposureFraction": 0.9987813826066433,
+    "concentrationsCents": {
+      "isin:EG0000000001": 9804900,
+      "sector:Industrials": 9804900,
+      "issuerGroup:GROUP0": 9804900
+    },
+    "drawdown": {
+      "fraction": 0.01831369999999999,
+      "currentFraction": 0.01831369999999999,
+      "recoveryRequiredFraction": 0.018655348455000328,
+      "peakAt": null,
+      "troughAt": "2026-10-27T07:17:10Z",
+      "observations": 5,
+      "gaps": 0,
+      "basis": "Observed event snapshots only; gaps may hide larger losses. Stress loss is separate."
+    },
+    "curve": [
+      {
+        "at": "2026-10-25T06:40:00Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 10000000,
+        "unsettledCents": 0,
+        "reservedCents": 0,
+        "availableCashCents": 10000000,
+        "investedCents": 0,
+        "equityCents": 10000000,
+        "sequence": 1
+      },
+      {
+        "at": "2026-10-25T06:41:00Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 10000000,
+        "unsettledCents": 0,
+        "reservedCents": 0,
+        "availableCashCents": 10000000,
+        "investedCents": 0,
+        "equityCents": 10000000,
+        "sequence": 2
+      },
+      {
+        "at": "2026-10-25T06:51:00.000Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 10000000,
+        "unsettledCents": 0,
+        "reservedCents": 9994229,
+        "availableCashCents": 5771,
+        "investedCents": 0,
+        "equityCents": 10000000,
+        "sequence": 3
+      },
+      {
+        "at": "2026-10-25T07:17:10Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 11963,
+        "unsettledCents": 0,
+        "reservedCents": 500,
+        "availableCashCents": 11463,
+        "investedCents": 9947000,
+        "equityCents": 9958963,
+        "sequence": 4
+      },
+      {
+        "at": "2026-10-27T07:17:10Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 11963,
+        "unsettledCents": 0,
+        "reservedCents": 500,
+        "availableCashCents": 11463,
+        "investedCents": 9804900,
+        "equityCents": 9816863,
+        "sequence": 5
+      }
+    ],
+    "trades": [],
+    "execution": [
+      {
+        "id": "synthetic-order",
+        "isin": "EG0000000001",
+        "side": "BUY",
+        "quantity": 1421,
+        "price": 70.18,
+        "marketAt": "2026-10-25T07:01:00.000Z",
+        "observedAt": "2026-10-25T07:17:10Z",
+        "feeCents": 15459,
+        "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "referencePrice": 70,
+        "referenceBasis": "Matched raw minute open; modeled slippage, not observed broker execution",
+        "adverseSlippageCents": 25578
+      }
+    ],
+    "pendingExits": [
+      {
+        "id": "synthetic-order",
+        "reason": "STOP_BREACH",
+        "committedAt": "2026-10-25T07:17:10Z",
+        "ageHours": 48,
+        "attempts": [
+          {
+            "at": "2026-10-27T07:17:10Z",
+            "barStart": "2026-10-27T07:01:00.000Z",
+            "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+          }
+        ]
+      }
+    ],
+    "orders": [
+      {
+        "id": "synthetic-order",
+        "status": "FILLED",
+        "censored": false,
+        "reason": null
+      }
+    ],
+    "sharpe": {
+      "value": null,
+      "reason": "No registered adequate daily-return/risk-free sample"
+    },
+    "sortino": {
+      "value": null,
+      "reason": "No registered adequate daily-return/downside-hurdle sample"
+    },
+    "dividends": {
+      "value": null,
+      "reason": "Entitlement reconciliation not implemented; action holds make affected valuation unavailable"
+    },
+    "implementationShortfall": {
+      "value": null,
+      "reason": "Decision-price and unfilled-opportunity reference series not registered; minute-open slippage is reported separately"
+    },
+    "fixedExitAttribution": {
+      "status": "BLOCKED",
+      "reason": "Requires separately replayed funded portfolio and entry-budget ceilings; cannot remove discretionary exits from already filled results"
+    },
+    "analyticalValue": "INCONCLUSIVE",
+    "investablePerformance": "NOT_ESTABLISHED"
+  },
+  "contentHash": "e9a395a595fe1758cc582638da8d578c39475f07a178182782a5ed32388d79bb"
+}

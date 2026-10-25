@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "benchmarks",
+  "createdAt": "2026-10-25T22:48:10.370Z",
+  "payload": {
+    "indexes": [
+      {
+        "symbol": "EGX30",
+        "basis": "PRICE_INDEX",
+        "baselineDay": "2026-10-22",
+        "aligned": [
+          {
+            "day": "2026-10-25",
+            "status": "MISSING_OR_INCOMPARABLE",
+            "indexReturnFraction": null,
+            "portfolioReturnFraction": null,
+            "excessReturnFraction": null,
+            "portfolioStateHash": null,
+            "indexEvidenceHash": null
+          }
+        ],
+        "missingDays": [
+          "2026-10-25"
+        ],
+        "status": "INCOMPLETE",
+        "interpretation": "Index context, not an executable fee-free basket or risk-adjusted alpha",
+        "dividendComparability": "UNVERIFIED_ENTITLEMENTS_NO_TOTAL_RETURN_CLAIM"
+      },
+      {
+        "symbol": "EGX70EWI",
+        "basis": "PRICE_INDEX",
+        "baselineDay": "2026-10-22",
+        "aligned": [
+          {
+            "day": "2026-10-25",
+            "status": "MISSING_OR_INCOMPARABLE",
+            "indexReturnFraction": null,
+            "portfolioReturnFraction": null,
+            "excessReturnFraction": null,
+            "portfolioStateHash": null,
+            "indexEvidenceHash": null
+          }
+        ],
+        "missingDays": [
+          "2026-10-25"
+        ],
+        "status": "INCOMPLETE",
+        "interpretation": "Index context, not an executable fee-free basket or risk-adjusted alpha",
+        "dividendComparability": "UNVERIFIED_ENTITLEMENTS_NO_TOTAL_RETURN_CLAIM"
+      }
+    ],
+    "cash": {
+      "returnFraction": 0,
+      "basis": "Idle EGP cash, zero interest; no inflation adjustment"
+    },
+    "buyAndHold": {
+      "status": "BLOCKED_AMENDMENT_REQUIRED",
+      "reason": "No pre-outcome selected attainable basket registered"
+    }
+  },
+  "contentHash": "5eb30a0a8edd570f0feb065f0a823e3e2c9a020c70a40f97587c0c82387c65ac"
+}
