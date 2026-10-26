@@ -1,3 +1,4 @@
+import {saveCheckpoint} from './v5/client-service.mjs';
 import {existsSync,mkdirSync,writeFileSync,renameSync,readFileSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -20,7 +21,7 @@ export async function workflowCommand(args=process.argv.slice(2),root=dirname(di
  if(!workflowLimits[workload])throw Error('Unknown workload');
  const now=new Date(),plannedAt=args.find(x=>x.startsWith('--planned-at='))?.slice(13)||now.toISOString(),run=beginWorkflow(db,{workload,plannedAt,deadlineMs:workflowLimits[workload].hardMs},now);
  const reports=join(dir,'workflow-reports');mkdirSync(reports,{recursive:true});const reportPath=join(reports,run.id+'.json');
- const checkpoint=report=>{writeFileSync(reportPath+'.tmp',JSON.stringify(report,null,2));renameSync(reportPath+'.tmp',reportPath);};
+ const checkpoint=report=>{writeFileSync(reportPath+'.tmp',JSON.stringify(report,null,2));renameSync(reportPath+'.tmp',reportPath);saveCheckpoint(root,report);};
  const makePlan=()=>planWorkflow(readWorkflowInputs(root),{workload,invocationAt:run.startedAt});let report;
  try{report=await executeWorkflow(db,run,makePlan(),{execute:workflowAdapter(db,root),checkpoint,replan:makePlan});}catch(error){const prior=existsSync(reportPath)?JSON.parse(readFileSync(reportPath,'utf8')):{runId:run.id,startedAt:run.startedAt,deadlineAt:run.deadlineAt,counts:null,jobs:[],obligations:[],positionStatus:'UNKNOWN: input failure is not zero holdings'};report={...prior,status:'failed',observedAt:new Date().toISOString(),message:error.message,incident:'DISPATCHER_OR_INPUT_FAILURE',entryAuthorization:false};checkpoint(report);finishWorkflow(db,run,report);}
  console.log(JSON.stringify({runId:run.id,status:report.status,counts:report.counts,durationMs:report.durationMs,obligations:report.obligations.length,pending:report.jobs.filter(j=>j.status!=='succeeded').map(j=>({kind:j.kind,target:j.target,status:j.status,critical:j.critical})),reportPath,activation:false}));return report;

@@ -1,6 +1,6 @@
 # Current v5 implementation status
 
-Updated 26 October 2026 after W7 completion. This is current implementation status; frozen Phase 3 and original-experiment files remain historical, unchanged specifications/evidence.
+Updated 26 October 2026 after W8 engineering implementation. This is current implementation status; frozen Phase 3 and original-experiment files remain historical, unchanged specifications/evidence.
 
 - Batch 1: evidence admission and retained-data corrections.
 - Batch 2: resumable incremental operation and targeted refresh behavior.
@@ -12,4 +12,6 @@ Updated 26 October 2026 after W7 completion. This is current implementation stat
 
 W7 completion: funded fixed-exit attribution, source-bound returns/calendar/release checks, approved comparison amendment, and 26 actual analytical cases with separate review. The corrected development run scored 64/64 requested facts and zero critical errors; two failed prior attempts remain visible. Independent qualitative review found no development-closure blocker; all 309 regression tests pass. Evidence: `verification/w7-completion-20261026/RESULTS.md`. This closes implementation and initial development evaluation, not predictive/economic validation.
 
-Next: W8 client-facing action cards/acceptance, W9 integration and adversarial release tests, W10 separately authorized actual-session rehearsals. W1 official permissions/rules and W3 source/identity/action completeness remain launch dependencies. Corporate-action entitlement and cost-basis reconciliation is not automated; affected holdings are held provisional. There is no automatic promotion from synthetic engineering tests to prospective trading or real capital.
+W8 engineering: action cards, explicit states, risk/source details, auditable pause/cancel controls, operational visibility, checkpoint publication and timed client acceptance capture are implemented. All 328 current regressions pass. Client comprehension acceptance remains pending; the first five submissions were explicitly clarified by Mohamed as placeholder form tests and are excluded without deleting them. See `verification/w8-client-20261026/RESULTS.md`.
+
+Next: finish genuine W8 client acceptance, then W9 integration and adversarial release tests and W10 separately authorized actual-session rehearsals. W1 official permissions/rules and W3 source/identity/action completeness remain launch dependencies. Corporate-action entitlement and cost-basis reconciliation is not automated; affected holdings are held provisional. There is no automatic promotion from synthetic engineering tests to prospective trading or real capital.

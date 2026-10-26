@@ -1,0 +1,26 @@
+✔ W8 five representative cards derive from engine, not invented approvals (36.9716ms)
+✔ W8 expiry uses view clock without mutating ledger or claiming late entry (443.8741ms)
+✔ W8 pause persists actor/reason/effect; rejects stale command; monitoring stays possible (598.0814ms)
+✔ W8 cancellation retains reservation until reconciliation, cannot bypass rules (382.8738ms)
+✔ W8 candidate states cannot manufacture executable orders (0.5675ms)
+✔ W8 rendered evidence escapes hostile markup and unsafe links (0.3303ms)
+✔ W8 checkpoint incomplete reports delivered and duplicates quiet; late delivery visible (24.6716ms)
+✔ W8 original human answers, elapsed time and reviews are append-only; no fabricated pass (54.2654ms)
+✔ W8 notes preserve decisions and retain original reason (15.8938ms)
+✔ W8 no registry means no automatic historic experiment enrollment (4.8394ms)
+✔ W8 client API enforces token/origin and does not expose answer keys (102.8371ms)
+✔ W8 unfilled, open, pending exit and closed states follow actual execution events (558.756ms)
+✔ W8 held cards show active raised stop, scheduled stop, and unknown stale concentration (198.523ms)
+✔ W8 client history detects tampering (19.8671ms)
+✔ W8 all five timed answers and separate reviews required for acceptance (133.3739ms)
+✔ W8 explicit placeholder classification cannot become acceptance (44.222ms)
+✔ W8 registry and candidate publication are explicit and preserve prior versions (296.8748ms)
+✔ W8 input failure is a visible incident with unknown holdings, never an empty success (0.281ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3610.1152

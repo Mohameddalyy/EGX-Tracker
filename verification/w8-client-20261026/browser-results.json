@@ -1,0 +1,9 @@
+{
+  "scope": "AUTOMATED_UI_TEST_NOT_CLIENT_ACCEPTANCE",
+  "desktop": true,
+  "mobile": true,
+  "horizontalOverflow": false,
+  "pageErrors": [],
+  "answerPersistence": true,
+  "acceptanceStillPending": true
+}

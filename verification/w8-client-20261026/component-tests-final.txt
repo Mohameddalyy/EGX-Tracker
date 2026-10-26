@@ -1,0 +1,49 @@
+✔ W8 five representative cards derive from engine, not invented approvals (32.6429ms)
+✔ W8 expiry uses view clock without mutating ledger or claiming late entry (267.5645ms)
+✔ W8 pause persists actor/reason/effect; rejects stale command; monitoring stays possible (373.7911ms)
+✔ W8 cancellation retains reservation until reconciliation, cannot bypass rules (242.9349ms)
+✔ W8 candidate states cannot manufacture executable orders (0.3863ms)
+✔ W8 rendered evidence escapes hostile markup and unsafe links (0.2291ms)
+✔ W8 checkpoint incomplete reports delivered and duplicates quiet; late delivery visible (13.8006ms)
+✔ W8 original human answers, elapsed time and reviews are append-only; no fabricated pass (46.2419ms)
+✔ W8 notes preserve decisions and retain original reason (16.6565ms)
+✔ W8 no registry means no automatic historic experiment enrollment (4.1313ms)
+✔ W8 client API enforces token/origin and does not expose answer keys (73.9413ms)
+✖ W8 unfilled, open, pending exit and closed states follow actual execution events (300.954ms)
+✔ W8 held cards show active raised stop, scheduled stop, and unknown stale concentration (184.8293ms)
+✔ W8 client history detects tampering (20.7096ms)
+✔ W8 all five timed answers and separate reviews required for acceptance (170.6001ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 14
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2212.5111
+
+✖ failing tests:
+
+test at app\v5-client.test.mjs:20:1
+✖ W8 unfilled, open, pending exit and closed states follow actual execution events (300.954ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'WAITING_TRIGGER'
+  - 'UNFILLED'
+  
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-client.test.mjs:22:162)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'WAITING_TRIGGER',
+    expected: 'UNFILLED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

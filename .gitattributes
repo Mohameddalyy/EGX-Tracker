@@ -13,3 +13,6 @@
 /app/v5/evaluation-matrix.mjs -text
 /app/v5-evaluation-agent.mjs -text
 /app/v5-w7.test.mjs -text
+
+# W8 acceptance cases and result evidence retain original hashed bytes.
+/verification/w8-client-20261026/** -text

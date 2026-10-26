@@ -1,0 +1,28 @@
+// Read-only retained evidence verification. No collectors, migrations or decision writes.
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {DatabaseSync} from 'node:sqlite';
+import {paperAudit} from '../../app/paper.mjs';
+import {screenStocks} from '../../app/scout.mjs';
+import {historyRefreshState} from '../../app/refresh-selection.mjs';
+import {exchangeEvidence,routeAnnouncement} from '../../app/exchange-evidence.mjs';
+const hash=x=>createHash('sha256').update(x).digest('hex'),json=p=>JSON.parse(readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const reference=json('verification/v5-phase1-20261023/local-evidence.json'),audit=json('verification/independent-audit-20261024/snapshot.json');
+const db=new DatabaseSync('data/egx.sqlite',{readOnly:true}),paper=new DatabaseSync('data/experiments/egx-paper-2026-10-11/paper.sqlite',{readOnly:true});
+const stocks=db.prepare('SELECT s.*,m.sector FROM stocks s LEFT JOIN market_catalog m ON m.ticker=s.ticker').all().map(s=>{const f=db.prepare('SELECT * FROM market_facts WHERE ticker=?').get(s.ticker);return {...s,facts:f?{capturedAt:f.captured_at,values:JSON.parse(f.payload)}:null,bars:db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON c.ticker=b.ticker AND c.day=b.day WHERE b.ticker=? ORDER BY b.day').all(s.ticker)};});
+const cutoff=new Date('2026-10-23T17:35:00Z'),start=performance.now(),rows=screenStocks(stocks,json('research/screening-policy.json'),[],cutoff),screenMs=performance.now()-start;
+const mismatch=rows.filter(r=>r.eligible&&historyRefreshState(stocks.find(s=>s.ticker===r.ticker),stocks.find(s=>s.ticker===r.ticker).bars.at(-1),cutoff).due);
+const index=json('data/research/evidence/exchange/index.json'),records=Object.values(index.records),routed=records.filter(r=>!r.tickers?.length).map(r=>routeAnnouncement(r,stocks)).filter(r=>r.identityRouting.possibleTickers.length);
+const names=[...new Set(routed.flatMap(r=>r.identityRouting.possibleTickers))].sort(),eventStart=performance.now(),context=exchangeEvidence(process.cwd(),names,stocks),routingMs=performance.now()-eventStart;
+const cases=routed.map(r=>({code:r.code,status:r.identityRouting.status,tickers:r.identityRouting.tickers,possibleTickers:r.identityRouting.possibleTickers,inSelectedContext:context.records.some(x=>x.code===r.code),inIdentityReview:context.identityReview.some(x=>x.code===r.code)}));
+const policyChecks=Object.entries(reference.policies).map(([file,v])=>({file,unchanged:hash(readFileSync('research/'+file))===v.sha256}));
+const phase3=audit.sourceFiles.filter(f=>f.path.startsWith('verification/v5-phase3-20261023/')).map(f=>({path:f.path,unchanged:hash(readFileSync(f.path))===f.sha256}));
+const automations=['egx-decision-scout-and-research-analyst','egx-paper-week-close','egx-paper-week-intraday','egx-paper-week-morning'].map(id=>({id,status:readFileSync('C:/Users/LENOVO/.codex/automations/'+id+'/automation.toml','utf8').match(/^status\s*=\s*"([^"]+)"/m)?.[1]||'UNKNOWN'}));
+const result={observedAt:new Date().toISOString(),scope:'Offline retained-data verification. Historical cutoff explicitly preserved; not a fresh market observation.',screen:{asOf:cutoff.toISOString(),stocks:rows.length,eligible:rows.filter(r=>r.eligible).length,mismatchCount:mismatch.length,suce:rows.find(r=>r.ticker==='SUCE'),durationMs:screenMs},routing:{recordVersions:records.length,recoveredWithoutTicker:cases.length,tickers:names,cases,counts:context.routingCounts,durationMs:routingMs,rawIndexUnchanged:hash(readFileSync('data/research/evidence/exchange/index.json'))===hash(JSON.stringify(index))?true:'Verified below against baseline bytes'},policyChecks,phase3,ledgerUnchanged:hash(JSON.stringify(paperAudit(paper)))===reference.paper.ledgerDigest,automations,orders:paper.prepare('SELECT COUNT(*) n FROM orders').get().n,fills:paper.prepare('SELECT COUNT(*) n FROM fills').get().n};
+const manifest=json('data/backups/remediation-batch1-20261024-verified/manifest.json'),entry=manifest.entries.find(e=>e.path==='data/research/evidence/exchange/index.json');
+result.routing.rawIndexUnchanged=hash(readFileSync(entry.path))===entry.sha256;
+result.dictionaryMatchesFrozenPhase2=hash(readFileSync('app/contracts/evidence-dictionary.json'))===hash(readFileSync('verification/v5-phase2-20261023/data-dictionary.json'));
+result.passed=mismatch.length===0&&cases.length===23&&names.length===11&&cases.every(r=>r.inSelectedContext||r.inIdentityReview)&&result.routing.rawIndexUnchanged&&policyChecks.every(x=>x.unchanged)&&phase3.every(x=>x.unchanged)&&result.ledgerUnchanged&&result.dictionaryMatchesFrozenPhase2&&automations.every(x=>x.status==='PAUSED');
+db.close();paper.close();writeFileSync(new URL('./retained-verification.json',import.meta.url),JSON.stringify(result,null,2));
+console.log(JSON.stringify({passed:result.passed,stocks:rows.length,mismatches:mismatch.length,screenMs,routingMs,recoveredNotices:cases.length,tickers:names.length,policiesUnchanged:policyChecks.every(x=>x.unchanged),phase3Unchanged:phase3.every(x=>x.unchanged),ledgerUnchanged:result.ledgerUnchanged,paused:automations.filter(x=>x.status==='PAUSED').length}));
+if(!result.passed)process.exitCode=1;

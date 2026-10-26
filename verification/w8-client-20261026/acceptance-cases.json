@@ -1,0 +1,1180 @@
+[
+  {
+    "id": "W8-1",
+    "card": {
+      "id": "assessment:blocked",
+      "instrument": "EG0000000001",
+      "label": "Example 1 · fictional EGX company",
+      "status": "BLOCKED",
+      "stateLabel": "Blocked prerequisite",
+      "actionNow": "Do not enter. Resolve the named prerequisite.",
+      "scope": "ENGINEERING_PAPER_ONLY",
+      "variant": "B1",
+      "scenario": "base",
+      "asOf": "2026-10-25T06:50:00.000Z",
+      "recordedAt": "2026-10-25T06:50:00.000Z",
+      "whyStock": "Preparation assessment only; no thesis approval implied.",
+      "whyNow": "Fresh identified preflight and no unresolved critical/material change required",
+      "quantity": null,
+      "indicativeQuantity": 0,
+      "missingEvidence": [
+        {
+          "field": "Fresh identified preflight and no unresolved critical/material change required",
+          "criticality": "UNRESOLVED"
+        }
+      ],
+      "nextReview": {
+        "trigger": "Resolve missing evidence or failed prerequisite; do not backdate approval",
+        "owner": "Research / risk reviewer",
+        "dueAt": null
+      },
+      "sourceBinding": {
+        "stateHash": "391895f1056dd5603f3e455a493276aa82c9cc18efa1bff368278cd1a87ec0fc"
+      },
+      "realOrderAuthorized": false,
+      "entryExecutable": false,
+      "cardHash": "8bded76e30d9ab3b17859d3f1c2932aa70b18138e055d1bd510a00741b57490d",
+      "training": true
+    },
+    "expectedDimensions": {
+      "action": "Do not enter. Resolve the named prerequisite.",
+      "timing": "Resolve prerequisite before entry",
+      "size": "No executable quantity",
+      "invalidation": "Unresolved prerequisite blocks entry",
+      "uncertainty": "Fresh identified preflight and no unresolved critical/material change required"
+    }
+  },
+  {
+    "id": "W8-2",
+    "card": {
+      "id": "synthetic-order",
+      "instrument": "EG0000000001",
+      "label": "Example 2 · fictional EGX company",
+      "status": "WAITING_TRIGGER",
+      "stateLabel": "Waiting for trigger",
+      "actionNow": "Wait for an eligible minute inside the entry zone and window. Do not chase.",
+      "scope": "ENGINEERING_PAPER_ONLY",
+      "variant": "B1",
+      "comparison": "Bounded or mechanical comparison",
+      "scenario": "base",
+      "asOf": "2026-10-25T07:05:00Z",
+      "recordedAt": "2026-10-25T06:51:00.000Z",
+      "observationAt": "2026-10-25T06:50:00.000Z",
+      "observationAgeSeconds": 900,
+      "feedDelaySeconds": 900,
+      "sourceFreshness": "Timestamp and declared delay only; this display does not certify a fresh market preflight.",
+      "whyStock": "Synthetic or mechanical control",
+      "whyNow": "Synthetic decision contract, not a live recommendation",
+      "quantity": 356,
+      "cashCommitmentEGP": 25045.82,
+      "reservedNowEGP": 25045.82,
+      "availablePortfolioCashEGP": 74954.18,
+      "orderType": "Paper limit entry; whole shares, full fill only",
+      "entryZone": {
+        "lower": 63.2,
+        "limit": 70.22
+      },
+      "entryStartsAt": "2026-10-25T07:00:00Z",
+      "expiresAt": "2026-10-25T07:30:00.000Z",
+      "reconcileBy": "2026-10-25T07:51:00.000Z",
+      "stop": 68.22,
+      "initialStop": 68.22,
+      "pendingStop": null,
+      "exitRule": "No fixed profit target. Exit after a confirmed daily close below the 20-session average, or after the 20th held session, at the next eligible continuous-session observation. Once a completed close reaches one initial price-risk unit of profit, trail at the highest close minus twice ATR14 from the next session; never lower the stop. Independently recorded thesis breaks and approved earlier risk exits also trigger exits. Stops are not guaranteed fill prices.",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "mainRisk": "No demonstrated edge",
+      "missingEvidence": [],
+      "limitations": [
+        "Synthetic delayed-minute full-fill simulation, no queue guarantee",
+        "Full-fill capacity and suspension can prevent liquidation.",
+        "Existing exposure and delayed eligible fills must still be reconciled after pause or cancellation."
+      ],
+      "nextReview": {
+        "trigger": "Next eligible minute or material event",
+        "owner": "Engineering simulator",
+        "dueAt": "2026-10-25T07:30:00.000Z"
+      },
+      "exit": null,
+      "fill": null,
+      "risk": {
+        "asOf": "2026-10-25T06:50:00.000Z",
+        "chosen": {
+          "version": "v5-sizing-1",
+          "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab",
+          "releaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+          "proposalHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "quantity": 356,
+          "initialRiskCents": 85991,
+          "reservationCents": 2504582,
+          "exitFeeReserveCents": 500,
+          "gapMultiplier": 1,
+          "bindingConstraints": [
+            "NAME_GROUP"
+          ],
+          "cashAfterCommitmentsCents": 7495418,
+          "forwardPortfolioRiskCents": 85991,
+          "exceptions": [],
+          "calculationHash": "c40e1aa27ce3ae15d140f1c0d3a61112103585cccf13b523d4d5815040977eea"
+        },
+        "alternatives": [
+          {
+            "label": "NO_TRADE",
+            "quantity": 0,
+            "plannedLossEGP": 0,
+            "cashEGP": 0,
+            "concentration": 0
+          },
+          {
+            "label": "REDUCED",
+            "quantity": 178,
+            "plannedLossEGP": 434.96,
+            "cashEGP": 12527.91,
+            "concentration": 0.1249916
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          },
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          }
+        ],
+        "exceptions": [],
+        "bindingControls": [
+          {
+            "id": "PAPER_ONLY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "IDENTITY_RULES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CRITICAL_EVIDENCE",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CHRONOLOGY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SIGNAL_RESEARCH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FUNDED_CASH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "WHOLE_SHARES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "PARTICIPATION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FROZEN_EXITS",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "NO_DUPLICATE_POSITION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SETTLEMENT",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "RELEASE_BINDING",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "STOP_BASE",
+            "assumptions": "Modeled adverse stop, base friction; not guaranteed fill",
+            "lossEGP": 859.91,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "STOP_STRESS",
+            "assumptions": "Modeled adverse stop, stress friction; not guaranteed fill",
+            "lossEGP": 1004.08,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "GAP",
+            "assumptions": "Worse of stop minus two ATR and current lower band; hypothetical, not legal future band",
+            "lossEGP": 7272.52,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "TWO_SESSION_DELAY",
+            "assumptions": "Future references/bands unknown; compare principal-loss case.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "VOLUME_25",
+            "assumptions": "Capacity becomes floor(0.0025 * observed minute volume); all-or-none can deadlock indefinitely. No queue priority.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "SHARED_FACTOR",
+            "assumptions": "FX, rates, sector and refinancing sensitivities unavailable; historical correlation is not causal. Compare all-principal loss.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "ISSUER_WORTHLESS",
+            "assumptions": "New issuer principal lost plus entry charge and reserved exit fee; no mark mutation",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "ALL_INVESTED_PRINCIPAL",
+            "assumptions": "All held/pending issuer principal plus new commitment; funded cash remains cash",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "EQUITY_100",
+            "assumptions": "100 percent equity loss illustration, no estimated probability or ledger mutation",
+            "lossEGP": 100000,
+            "status": "CALCULATED"
+          }
+        ],
+        "concentrationsAtApproval": [],
+        "liquidation": [
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          }
+        ]
+      },
+      "currentExposure": {
+        "asOf": "2026-10-25T07:05:00Z",
+        "valuationStatus": "VALUED",
+        "investedEGP": 0,
+        "equityEGP": 100000,
+        "held": []
+      },
+      "sources": [
+        {
+          "id": "preflight",
+          "origin": "synthetic",
+          "documentHash": "8da5cc8f402e1b66f092869a415e3528db9b29f25927169ba1742a66af21c352",
+          "capturedAt": "2026-10-25T06:50:00.000Z",
+          "availabilityStatus": "VERIFIED"
+        }
+      ],
+      "sourceBinding": {
+        "stateHash": "a05acc03c0f1636bee699f7c89bbd97492e113aab6bac91fa111ac68bdf1639a",
+        "chainHead": "a1391b05e67cc957b432fd99051a30a1718d004e06c8b44e5bacaa6810dd987e",
+        "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+      },
+      "attribution": "POLICY_ONLY",
+      "interventions": [],
+      "realOrderAuthorized": false,
+      "entryExecutable": false,
+      "orderAccepted": true,
+      "cardHash": "90b9b33b81e3342c7b4cbba7d676f20182d62bf4ba9118c0ec465f770b08f62f",
+      "training": true
+    },
+    "expectedDimensions": {
+      "action": "Wait for an eligible minute inside the entry zone and window. Do not chase.",
+      "timing": "2026-10-25T07:30:00.000Z",
+      "size": "356 whole shares",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "uncertainty": "No demonstrated edge"
+    }
+  },
+  {
+    "id": "W8-3",
+    "card": {
+      "id": "synthetic-order",
+      "instrument": "EG0000000001",
+      "label": "Example 3 · fictional EGX company",
+      "status": "EXPIRED",
+      "stateLabel": "Expired intent",
+      "actionNow": "Do not submit a new entry. Reconcile delayed observations; a new opportunity needs a new approval.",
+      "scope": "ENGINEERING_PAPER_ONLY",
+      "variant": "B1",
+      "comparison": "Bounded or mechanical comparison",
+      "scenario": "base",
+      "asOf": "2026-10-25T07:31:00Z",
+      "recordedAt": "2026-10-25T06:51:00.000Z",
+      "observationAt": "2026-10-25T06:50:00.000Z",
+      "observationAgeSeconds": 2460,
+      "feedDelaySeconds": 900,
+      "sourceFreshness": "Timestamp and declared delay only; this display does not certify a fresh market preflight.",
+      "whyStock": "Synthetic or mechanical control",
+      "whyNow": "Synthetic decision contract, not a live recommendation",
+      "quantity": 356,
+      "cashCommitmentEGP": 25045.82,
+      "reservedNowEGP": 25045.82,
+      "availablePortfolioCashEGP": 74954.18,
+      "orderType": "Paper limit entry; whole shares, full fill only",
+      "entryZone": {
+        "lower": 63.2,
+        "limit": 70.22
+      },
+      "entryStartsAt": "2026-10-25T07:00:00Z",
+      "expiresAt": "2026-10-25T07:30:00.000Z",
+      "reconcileBy": "2026-10-25T07:51:00.000Z",
+      "stop": 68.22,
+      "initialStop": 68.22,
+      "pendingStop": null,
+      "exitRule": "No fixed profit target. Exit after a confirmed daily close below the 20-session average, or after the 20th held session, at the next eligible continuous-session observation. Once a completed close reaches one initial price-risk unit of profit, trail at the highest close minus twice ATR14 from the next session; never lower the stop. Independently recorded thesis breaks and approved earlier risk exits also trigger exits. Stops are not guaranteed fill prices.",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "mainRisk": "No demonstrated edge",
+      "missingEvidence": [],
+      "limitations": [
+        "Synthetic delayed-minute full-fill simulation, no queue guarantee",
+        "Full-fill capacity and suspension can prevent liquidation.",
+        "Existing exposure and delayed eligible fills must still be reconciled after pause or cancellation."
+      ],
+      "nextReview": {
+        "trigger": "Next eligible minute or material event",
+        "owner": "Engineering simulator",
+        "dueAt": "2026-10-25T07:30:00.000Z"
+      },
+      "exit": null,
+      "fill": null,
+      "risk": {
+        "asOf": "2026-10-25T06:50:00.000Z",
+        "chosen": {
+          "version": "v5-sizing-1",
+          "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab",
+          "releaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+          "proposalHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "quantity": 356,
+          "initialRiskCents": 85991,
+          "reservationCents": 2504582,
+          "exitFeeReserveCents": 500,
+          "gapMultiplier": 1,
+          "bindingConstraints": [
+            "NAME_GROUP"
+          ],
+          "cashAfterCommitmentsCents": 7495418,
+          "forwardPortfolioRiskCents": 85991,
+          "exceptions": [],
+          "calculationHash": "c40e1aa27ce3ae15d140f1c0d3a61112103585cccf13b523d4d5815040977eea"
+        },
+        "alternatives": [
+          {
+            "label": "NO_TRADE",
+            "quantity": 0,
+            "plannedLossEGP": 0,
+            "cashEGP": 0,
+            "concentration": 0
+          },
+          {
+            "label": "REDUCED",
+            "quantity": 178,
+            "plannedLossEGP": 434.96,
+            "cashEGP": 12527.91,
+            "concentration": 0.1249916
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          },
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          }
+        ],
+        "exceptions": [],
+        "bindingControls": [
+          {
+            "id": "PAPER_ONLY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "IDENTITY_RULES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CRITICAL_EVIDENCE",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CHRONOLOGY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SIGNAL_RESEARCH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FUNDED_CASH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "WHOLE_SHARES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "PARTICIPATION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FROZEN_EXITS",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "NO_DUPLICATE_POSITION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SETTLEMENT",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "RELEASE_BINDING",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "STOP_BASE",
+            "assumptions": "Modeled adverse stop, base friction; not guaranteed fill",
+            "lossEGP": 859.91,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "STOP_STRESS",
+            "assumptions": "Modeled adverse stop, stress friction; not guaranteed fill",
+            "lossEGP": 1004.08,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "GAP",
+            "assumptions": "Worse of stop minus two ATR and current lower band; hypothetical, not legal future band",
+            "lossEGP": 7272.52,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "TWO_SESSION_DELAY",
+            "assumptions": "Future references/bands unknown; compare principal-loss case.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "VOLUME_25",
+            "assumptions": "Capacity becomes floor(0.0025 * observed minute volume); all-or-none can deadlock indefinitely. No queue priority.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "SHARED_FACTOR",
+            "assumptions": "FX, rates, sector and refinancing sensitivities unavailable; historical correlation is not causal. Compare all-principal loss.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "ISSUER_WORTHLESS",
+            "assumptions": "New issuer principal lost plus entry charge and reserved exit fee; no mark mutation",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "ALL_INVESTED_PRINCIPAL",
+            "assumptions": "All held/pending issuer principal plus new commitment; funded cash remains cash",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "EQUITY_100",
+            "assumptions": "100 percent equity loss illustration, no estimated probability or ledger mutation",
+            "lossEGP": 100000,
+            "status": "CALCULATED"
+          }
+        ],
+        "concentrationsAtApproval": [],
+        "liquidation": [
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          }
+        ]
+      },
+      "currentExposure": {
+        "asOf": "2026-10-25T07:31:00Z",
+        "valuationStatus": "VALUED",
+        "investedEGP": 0,
+        "equityEGP": 100000,
+        "held": []
+      },
+      "sources": [
+        {
+          "id": "preflight",
+          "origin": "synthetic",
+          "documentHash": "8da5cc8f402e1b66f092869a415e3528db9b29f25927169ba1742a66af21c352",
+          "capturedAt": "2026-10-25T06:50:00.000Z",
+          "availabilityStatus": "VERIFIED"
+        }
+      ],
+      "sourceBinding": {
+        "stateHash": "a05acc03c0f1636bee699f7c89bbd97492e113aab6bac91fa111ac68bdf1639a",
+        "chainHead": "a1391b05e67cc957b432fd99051a30a1718d004e06c8b44e5bacaa6810dd987e",
+        "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+      },
+      "attribution": "POLICY_ONLY",
+      "interventions": [],
+      "realOrderAuthorized": false,
+      "entryExecutable": false,
+      "orderAccepted": true,
+      "cardHash": "e72fa128c433888c9a695a1a0d9fd5226887cf4492d862cc0f49b23fda6d6976",
+      "training": true
+    },
+    "expectedDimensions": {
+      "action": "Do not submit a new entry. Reconcile delayed observations; a new opportunity needs a new approval.",
+      "timing": "2026-10-25T07:30:00.000Z",
+      "size": "356 whole shares",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "uncertainty": "No demonstrated edge"
+    }
+  },
+  {
+    "id": "W8-4",
+    "card": {
+      "id": "synthetic-order",
+      "instrument": "EG0000000001",
+      "label": "Example 4 · fictional EGX company",
+      "status": "EXIT_PENDING",
+      "stateLabel": "Exit pending",
+      "actionNow": "Keep monitoring the full exit. Exposure remains until a verified fill.",
+      "scope": "ENGINEERING_PAPER_ONLY",
+      "variant": "B1",
+      "comparison": "Bounded or mechanical comparison",
+      "scenario": "base",
+      "asOf": "2026-10-25T07:18:00Z",
+      "recordedAt": "2026-10-25T07:18:00Z",
+      "observationAt": "2026-10-25T07:17:00.000Z",
+      "observationAgeSeconds": 60,
+      "feedDelaySeconds": 900,
+      "sourceFreshness": "Timestamp and declared delay only; this display does not certify a fresh market preflight.",
+      "whyStock": "Synthetic or mechanical control",
+      "whyNow": "Synthetic decision contract, not a live recommendation",
+      "quantity": 356,
+      "cashCommitmentEGP": 25045.82,
+      "reservedNowEGP": 0,
+      "availablePortfolioCashEGP": 74968.44,
+      "orderType": "Paper limit entry; whole shares, full fill only",
+      "entryZone": {
+        "lower": 63.2,
+        "limit": 70.22
+      },
+      "entryStartsAt": "2026-10-25T07:00:00Z",
+      "expiresAt": "2026-10-25T07:30:00.000Z",
+      "reconcileBy": "2026-10-25T07:51:00.000Z",
+      "stop": 68.22,
+      "initialStop": 68.22,
+      "pendingStop": null,
+      "exitRule": "No fixed profit target. Exit after a confirmed daily close below the 20-session average, or after the 20th held session, at the next eligible continuous-session observation. Once a completed close reaches one initial price-risk unit of profit, trail at the highest close minus twice ATR14 from the next session; never lower the stop. Independently recorded thesis breaks and approved earlier risk exits also trigger exits. Stops are not guaranteed fill prices.",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "mainRisk": "No demonstrated edge",
+      "missingEvidence": [],
+      "limitations": [
+        "Synthetic delayed-minute full-fill simulation, no queue guarantee",
+        "Full-fill capacity and suspension can prevent liquidation.",
+        "Existing exposure and delayed eligible fills must still be reconciled after pause or cancellation."
+      ],
+      "nextReview": {
+        "trigger": "Next eligible exit observation; retain unresolved exposure",
+        "owner": "Engineering simulator",
+        "dueAt": "2026-10-25T07:18:00Z"
+      },
+      "exit": {
+        "reason": "THESIS_BREAK",
+        "committedAt": "2026-10-25T07:18:00Z",
+        "fill": null,
+        "attempts": []
+      },
+      "fill": {
+        "id": "a0736df059126502e20c257f355b579b39e1b53cef8b2e60d1f03afd8fbaae5d",
+        "quantity": 356,
+        "price": 70.18,
+        "marketAt": "2026-10-25T07:01:00.000Z",
+        "observedAt": "2026-10-25T07:17:00.000Z",
+        "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "risk": {
+        "asOf": "2026-10-25T06:50:00.000Z",
+        "chosen": {
+          "version": "v5-sizing-1",
+          "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab",
+          "releaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+          "proposalHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "quantity": 356,
+          "initialRiskCents": 85991,
+          "reservationCents": 2504582,
+          "exitFeeReserveCents": 500,
+          "gapMultiplier": 1,
+          "bindingConstraints": [
+            "NAME_GROUP"
+          ],
+          "cashAfterCommitmentsCents": 7495418,
+          "forwardPortfolioRiskCents": 85991,
+          "exceptions": [],
+          "calculationHash": "c40e1aa27ce3ae15d140f1c0d3a61112103585cccf13b523d4d5815040977eea"
+        },
+        "alternatives": [
+          {
+            "label": "NO_TRADE",
+            "quantity": 0,
+            "plannedLossEGP": 0,
+            "cashEGP": 0,
+            "concentration": 0
+          },
+          {
+            "label": "REDUCED",
+            "quantity": 178,
+            "plannedLossEGP": 434.96,
+            "cashEGP": 12527.91,
+            "concentration": 0.1249916
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          },
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          }
+        ],
+        "exceptions": [],
+        "bindingControls": [
+          {
+            "id": "PAPER_ONLY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "IDENTITY_RULES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CRITICAL_EVIDENCE",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CHRONOLOGY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SIGNAL_RESEARCH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FUNDED_CASH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "WHOLE_SHARES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "PARTICIPATION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FROZEN_EXITS",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "NO_DUPLICATE_POSITION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SETTLEMENT",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "RELEASE_BINDING",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "STOP_BASE",
+            "assumptions": "Modeled adverse stop, base friction; not guaranteed fill",
+            "lossEGP": 859.91,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "STOP_STRESS",
+            "assumptions": "Modeled adverse stop, stress friction; not guaranteed fill",
+            "lossEGP": 1004.08,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "GAP",
+            "assumptions": "Worse of stop minus two ATR and current lower band; hypothetical, not legal future band",
+            "lossEGP": 7272.52,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "TWO_SESSION_DELAY",
+            "assumptions": "Future references/bands unknown; compare principal-loss case.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "VOLUME_25",
+            "assumptions": "Capacity becomes floor(0.0025 * observed minute volume); all-or-none can deadlock indefinitely. No queue priority.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "SHARED_FACTOR",
+            "assumptions": "FX, rates, sector and refinancing sensitivities unavailable; historical correlation is not causal. Compare all-principal loss.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "ISSUER_WORTHLESS",
+            "assumptions": "New issuer principal lost plus entry charge and reserved exit fee; no mark mutation",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "ALL_INVESTED_PRINCIPAL",
+            "assumptions": "All held/pending issuer principal plus new commitment; funded cash remains cash",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "EQUITY_100",
+            "assumptions": "100 percent equity loss illustration, no estimated probability or ledger mutation",
+            "lossEGP": 100000,
+            "status": "CALCULATED"
+          }
+        ],
+        "concentrationsAtApproval": [],
+        "liquidation": [
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          }
+        ]
+      },
+      "currentExposure": {
+        "asOf": "2026-10-25T07:18:00Z",
+        "valuationStatus": "VALUED",
+        "investedEGP": 24920,
+        "equityEGP": 99893.44,
+        "held": [
+          {
+            "instrument": "EG0000000001",
+            "quantity": 356,
+            "mark": 70,
+            "markAt": "2026-10-25T07:17:00.000Z",
+            "concentrationFraction": 0.24946583078928908,
+            "actionHold": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "preflight",
+          "origin": "synthetic",
+          "documentHash": "8da5cc8f402e1b66f092869a415e3528db9b29f25927169ba1742a66af21c352",
+          "capturedAt": "2026-10-25T06:50:00.000Z",
+          "availabilityStatus": "VERIFIED"
+        }
+      ],
+      "sourceBinding": {
+        "stateHash": "2b244a37cfe3cf8e8f524d7130eddedd30c9e5964388fd8c9a19964f6b1835c4",
+        "chainHead": "f46172b38bc952cf8649245733244067cd0078c55a211a863747d04de682bf45",
+        "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+      },
+      "attribution": "POLICY_ONLY",
+      "interventions": [],
+      "realOrderAuthorized": false,
+      "entryExecutable": false,
+      "orderAccepted": true,
+      "cardHash": "146cacfc67d311361d1e9a84b7bd22854dee8df40abe9eb47ba3cda71ab9eff4",
+      "training": true
+    },
+    "expectedDimensions": {
+      "action": "Keep monitoring the full exit. Exposure remains until a verified fill.",
+      "timing": "Exit pending now; exposure remains until fill",
+      "size": "356 whole shares",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "uncertainty": "No demonstrated edge"
+    }
+  },
+  {
+    "id": "W8-5",
+    "card": {
+      "id": "synthetic-order",
+      "instrument": "EG0000000001",
+      "label": "Example 5 · fictional EGX company",
+      "status": "APPROVED",
+      "stateLabel": "Approved paper intent",
+      "actionNow": "Keep the accepted paper intent ready for its stated window. No real order is authorized.",
+      "scope": "ENGINEERING_PAPER_ONLY",
+      "variant": "B1",
+      "comparison": "Bounded or mechanical comparison",
+      "scenario": "base",
+      "asOf": "2026-10-25T06:51:00.000Z",
+      "recordedAt": "2026-10-25T06:51:00.000Z",
+      "observationAt": "2026-10-25T06:50:00.000Z",
+      "observationAgeSeconds": 60,
+      "feedDelaySeconds": 900,
+      "sourceFreshness": "Timestamp and declared delay only; this display does not certify a fresh market preflight.",
+      "whyStock": "Synthetic or mechanical control",
+      "whyNow": "Synthetic decision contract, not a live recommendation",
+      "quantity": 356,
+      "cashCommitmentEGP": 25045.82,
+      "reservedNowEGP": 25045.82,
+      "availablePortfolioCashEGP": 74954.18,
+      "orderType": "Paper limit entry; whole shares, full fill only",
+      "entryZone": {
+        "lower": 63.2,
+        "limit": 70.22
+      },
+      "entryStartsAt": "2026-10-25T07:00:00Z",
+      "expiresAt": "2026-10-25T07:30:00.000Z",
+      "reconcileBy": "2026-10-25T07:51:00.000Z",
+      "stop": 68.22,
+      "initialStop": 68.22,
+      "pendingStop": null,
+      "exitRule": "No fixed profit target. Exit after a confirmed daily close below the 20-session average, or after the 20th held session, at the next eligible continuous-session observation. Once a completed close reaches one initial price-risk unit of profit, trail at the highest close minus twice ATR14 from the next session; never lower the stop. Independently recorded thesis breaks and approved earlier risk exits also trigger exits. Stops are not guaranteed fill prices.",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "mainRisk": "No demonstrated edge",
+      "missingEvidence": [],
+      "limitations": [
+        "Synthetic delayed-minute full-fill simulation, no queue guarantee",
+        "Full-fill capacity and suspension can prevent liquidation.",
+        "Existing exposure and delayed eligible fills must still be reconciled after pause or cancellation."
+      ],
+      "nextReview": {
+        "trigger": "Next eligible minute or material event",
+        "owner": "Engineering simulator",
+        "dueAt": "2026-10-25T07:30:00.000Z"
+      },
+      "exit": null,
+      "fill": null,
+      "risk": {
+        "asOf": "2026-10-25T06:50:00.000Z",
+        "chosen": {
+          "version": "v5-sizing-1",
+          "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab",
+          "releaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+          "proposalHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "quantity": 356,
+          "initialRiskCents": 85991,
+          "reservationCents": 2504582,
+          "exitFeeReserveCents": 500,
+          "gapMultiplier": 1,
+          "bindingConstraints": [
+            "NAME_GROUP"
+          ],
+          "cashAfterCommitmentsCents": 7495418,
+          "forwardPortfolioRiskCents": 85991,
+          "exceptions": [],
+          "calculationHash": "c40e1aa27ce3ae15d140f1c0d3a61112103585cccf13b523d4d5815040977eea"
+        },
+        "alternatives": [
+          {
+            "label": "NO_TRADE",
+            "quantity": 0,
+            "plannedLossEGP": 0,
+            "cashEGP": 0,
+            "concentration": 0
+          },
+          {
+            "label": "REDUCED",
+            "quantity": 178,
+            "plannedLossEGP": 434.96,
+            "cashEGP": 12527.91,
+            "concentration": 0.1249916
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          },
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "plannedLossEGP": 859.91,
+            "cashEGP": 25045.82,
+            "concentration": 0.2499832
+          }
+        ],
+        "exceptions": [],
+        "bindingControls": [
+          {
+            "id": "PAPER_ONLY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "IDENTITY_RULES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CRITICAL_EVIDENCE",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "CHRONOLOGY",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SIGNAL_RESEARCH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FUNDED_CASH",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "WHOLE_SHARES",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "PARTICIPATION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "FROZEN_EXITS",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "NO_DUPLICATE_POSITION",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "SETTLEMENT",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          },
+          {
+            "id": "RELEASE_BINDING",
+            "passed": true,
+            "evidenceId": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "STOP_BASE",
+            "assumptions": "Modeled adverse stop, base friction; not guaranteed fill",
+            "lossEGP": 859.91,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "STOP_STRESS",
+            "assumptions": "Modeled adverse stop, stress friction; not guaranteed fill",
+            "lossEGP": 1004.08,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "GAP",
+            "assumptions": "Worse of stop minus two ATR and current lower band; hypothetical, not legal future band",
+            "lossEGP": 7272.52,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "TWO_SESSION_DELAY",
+            "assumptions": "Future references/bands unknown; compare principal-loss case.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "VOLUME_25",
+            "assumptions": "Capacity becomes floor(0.0025 * observed minute volume); all-or-none can deadlock indefinitely. No queue priority.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "SHARED_FACTOR",
+            "assumptions": "FX, rates, sector and refinancing sensitivities unavailable; historical correlation is not causal. Compare all-principal loss.",
+            "lossEGP": null,
+            "status": "UNQUANTIFIABLE"
+          },
+          {
+            "id": "ISSUER_WORTHLESS",
+            "assumptions": "New issuer principal lost plus entry charge and reserved exit fee; no mark mutation",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "ALL_INVESTED_PRINCIPAL",
+            "assumptions": "All held/pending issuer principal plus new commitment; funded cash remains cash",
+            "lossEGP": 25045.82,
+            "status": "CALCULATED"
+          },
+          {
+            "id": "EQUITY_100",
+            "assumptions": "100 percent equity loss illustration, no estimated probability or ledger mutation",
+            "lossEGP": 100000,
+            "status": "CALCULATED"
+          }
+        ],
+        "concentrationsAtApproval": [],
+        "liquidation": [
+          {
+            "label": "PROPOSED",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          },
+          {
+            "label": "ADVISORY_DEFAULT",
+            "quantity": 356,
+            "capacityAt25PercentVolume": null,
+            "fullFillPossibleAtReference": null,
+            "counterfactualPartialIntervals": null,
+            "limitation": "Interval count assumes partial fills, which are prohibited. Full-fill deadlock persists until one eligible minute can absorb the entire quantity."
+          }
+        ]
+      },
+      "currentExposure": {
+        "asOf": "2026-10-25T06:51:00.000Z",
+        "valuationStatus": "VALUED",
+        "investedEGP": 0,
+        "equityEGP": 100000,
+        "held": []
+      },
+      "sources": [
+        {
+          "id": "preflight",
+          "origin": "synthetic",
+          "documentHash": "8da5cc8f402e1b66f092869a415e3528db9b29f25927169ba1742a66af21c352",
+          "capturedAt": "2026-10-25T06:50:00.000Z",
+          "availabilityStatus": "VERIFIED"
+        }
+      ],
+      "sourceBinding": {
+        "stateHash": "a05acc03c0f1636bee699f7c89bbd97492e113aab6bac91fa111ac68bdf1639a",
+        "chainHead": "a1391b05e67cc957b432fd99051a30a1718d004e06c8b44e5bacaa6810dd987e",
+        "contextHash": "399d4c0577197f005aff4e583e3bc4a845c11674f9db4400d4bd5491e7354cab"
+      },
+      "attribution": "POLICY_ONLY",
+      "interventions": [],
+      "realOrderAuthorized": false,
+      "entryExecutable": false,
+      "orderAccepted": true,
+      "cardHash": "f1df6cf0c4776526ce836fd092a477784840d742217d89e89974180f2eaa2a65",
+      "training": true
+    },
+    "expectedDimensions": {
+      "action": "Keep the accepted paper intent ready for its stated window. No real order is authorized.",
+      "timing": "2026-10-25T07:30:00.000Z",
+      "size": "356 whole shares",
+      "invalidation": "Critical evidence change, corporate action, cancellation, pause, expiry or a failed execution control prevents a new entry.",
+      "uncertainty": "No demonstrated edge"
+    }
+  }
+]

@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-26T11:10:34.048Z",
+  "implementation": "COMPLETE",
+  "clientAcceptance": "UNRESOLVED_NOT_CLAIMED",
+  "regressions": {
+    "passed": 328,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": "Desktop and mobile checked in isolated test root; not client acceptance",
+  "placeholderResponses": "Five original submissions explicitly classified as form tests per client clarification; originals retained locally",
+  "schedules": "PAUSED",
+  "prospectivePilot": false,
+  "realOrders": false,
+  "files": [
+    {
+      "path": "app/v5/client-cards.mjs",
+      "sha256": "296901b7df793aa8c18fcae531114f89cb047a34e9956a151e3cb424aaef1132"
+    },
+    {
+      "path": "app/v5/client-service.mjs",
+      "sha256": "08b1d9e4015c4743675be9f0d5041abe333cb39a6348a31478e68aa92d9c5843"
+    },
+    {
+      "path": "app/v5/client-operations.mjs",
+      "sha256": "9a8993ac046a33e9806c17cd0a4bd5feb0326f2a6df7bb50431c08e9e9429c80"
+    },
+    {
+      "path": "app/client-routes.mjs",
+      "sha256": "cf1969eb2ce27601a54943ad1e6fc3be5e9c504c765c83aa22268fcdae507d3f"
+    },
+    {
+      "path": "app/v5-client-agent.mjs",
+      "sha256": "185e59d05eab4b9ab0cd30ecce7cd3c35ffe8fd619c10bd09eb57ff3ecd75bd5"
+    },
+    {
+      "path": "app/v5-client-server.mjs",
+      "sha256": "11bd6632dc49d71e540331b5e2fb36ca81837d80e5b681ef9c1b7ecfc526fcd2"
+    },
+    {
+      "path": "app/v5-client.test.mjs",
+      "sha256": "cb056b94e2b2ac238388971c6503db317a616760caf4a2b1571b05c6cfe8c5af"
+    },
+    {
+      "path": "app/public/client-render.js",
+      "sha256": "b8411536f2ed3a653c4e779f8b84036f500d57e6354c86e1d9d7167ff20cd921"
+    },
+    {
+      "path": "app/public/client.js",
+      "sha256": "4f65a83accb28fa2f2c76e79d1a44cb2bfe31858854269bebbfe1e66c5c45f9e"
+    },
+    {
+      "path": "app/public/client.html",
+      "sha256": "eb52bcddc563e047dc946dad9e1a268f45a4b3d30e414cf7d8e17c32f2b5f4c7"
+    },
+    {
+      "path": "app/public/client.css",
+      "sha256": "d4ab33acb7fe98187f785a36ecd0c97a27b72918a26fa5dc21ecae613231dfd8"
+    },
+    {
+      "path": "app/public/index.html",
+      "sha256": "530b4f3a6420cd3adf9d2ac076a629fd443860201013b3a2501bd4951522364b"
+    },
+    {
+      "path": "app/server.mjs",
+      "sha256": "91fb3c568816087e6d4b2f569f0f1d4be723d96d8967454c0ffebf0d3ac12b1d"
+    },
+    {
+      "path": "app/workflow-agent.mjs",
+      "sha256": "111d5bb43cfe8eefd7535aca5ff1527b12731e3dc006367bc92d74984a6cc54d"
+    },
+    {
+      "path": "app/workflow-runner.mjs",
+      "sha256": "21a1668a806edc841b5e8ed56219bb63095f05e323b59b4ce4aafd74168c0d2c"
+    },
+    {
+      "path": "agent/v5-client-interface.md",
+      "sha256": "cb87ac95433ed7be8cbcea607bf14ca7c85d6b67fde6b80ec68d0ab4159779f7"
+    },
+    {
+      "path": "agent/v5-release-status.md",
+      "sha256": "e95be0efa47285b1e13fdd10f1fef8096da02cc04f5c403070e38922a655777e"
+    },
+    {
+      "path": "verification/w8-client-20261026/acceptance-cases.json",
+      "sha256": "b66e5127722c14d24abdf7315816895192a9af2d0a61479fa1218e6140dba3f2"
+    },
+    {
+      "path": "verification/w8-client-20261026/acceptance-preview.html",
+      "sha256": "d620397a4bfbe61cc8c8980e2cc30adcbc316e693b95b460335561c004b8bd7d"
+    },
+    {
+      "path": "verification/w8-client-20261026/browser-check.mjs",
+      "sha256": "0a27ef48bd89e2cad876f36da99b93d0d890f3e67e7d61b3c6c677cb0ed71887"
+    },
+    {
+      "path": "verification/w8-client-20261026/browser-results.json",
+      "sha256": "393363a3bcfbfdbe3dc0eaa9d14477ed3bc19252d731923bacb8b89e55a0218e"
+    },
+    {
+      "path": "verification/w8-client-20261026/build-fixtures.mjs",
+      "sha256": "6b733ccd431dd0c6edd6b3dcc3464434bcabe03f748128b0f89f8f912140dcdb"
+    },
+    {
+      "path": "verification/w8-client-20261026/component-tests-corrected.txt",
+      "sha256": "ceb3900070037eacc9be97542b72c10dc1fd88fb09f150213c4d7706998a471b"
+    },
+    {
+      "path": "verification/w8-client-20261026/component-tests-final.txt",
+      "sha256": "211c2397a8ca5f569dc7bce82863aee31055e83e754ad74b44992339ad040e96"
+    },
+    {
+      "path": "verification/w8-client-20261026/component-tests-release.txt",
+      "sha256": "3bae4d3cc2707f6987679dd3265825ed14448b2aec08775a5493614e67793d1c"
+    },
+    {
+      "path": "verification/w8-client-20261026/component-tests.txt",
+      "sha256": "30bad0b15661d236713826c6f206fc8ec3c8c6ca37f11b48a9ec496958a96a6b"
+    },
+    {
+      "path": "verification/w8-client-20261026/desktop-card.png",
+      "sha256": "1e185d5f7c156adee9ff5e5f0ed9d39a79ce5d18f59f78d763bdfdff1f9859c8"
+    },
+    {
+      "path": "verification/w8-client-20261026/fixture-events.json",
+      "sha256": "da281402089381fa3842470d2f3d9557be0bd368e3c589804459ca671e6402e3"
+    },
+    {
+      "path": "verification/w8-client-20261026/full-tests-final.txt",
+      "sha256": "b151d41f7a1af7202bdf0c6323043cd9167d45aa6e758347f035ef01fa69aa48"
+    },
+    {
+      "path": "verification/w8-client-20261026/full-tests.txt",
+      "sha256": "336fe217a9dcaf164991539a7dc525e7b5d9876121f9bdbcf4232f5c0a3b94df"
+    },
+    {
+      "path": "verification/w8-client-20261026/mobile-card.png",
+      "sha256": "deda5676cb26e71939d866e9d826a2a5cda327c31901b567f32cdd941364a677"
+    },
+    {
+      "path": "verification/w8-client-20261026/release-preservation.json",
+      "sha256": "bff6bd08507dc7c261cf8fb9afe7f435f20334b3cee74603cd135553b50cb9b0"
+    },
+    {
+      "path": "verification/w8-client-20261026/release-tests.txt",
+      "sha256": "81c381f119adf15db7f830640e1695a2a2afda612e8027df955235d00118bb81"
+    },
+    {
+      "path": "verification/w8-client-20261026/RESULTS.md",
+      "sha256": "3843d8b6bda9868ab527b2288777616961907d42507210f60c2707f175e871fb"
+    },
+    {
+      "path": "verification/w8-client-20261026/retained-verification.json",
+      "sha256": "8541d24e397f58af292ec2ccab47f60daeefe9054e19bd497d795a5798041e72"
+    },
+    {
+      "path": "verification/w8-client-20261026/server-error.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/w8-client-20261026/server-output.txt",
+      "sha256": "5888416bfd2a4e9084356899ada4c8ff567695c8f4b8d74f088b23f0f8eb434b"
+    },
+    {
+      "path": "verification/w8-client-20261026/verify-retained.mjs",
+      "sha256": "05bad8db12b05bcfa25b0e9a872fce050e7a7579160782d31d2b0428d5794fc8"
+    }
+  ]
+}
