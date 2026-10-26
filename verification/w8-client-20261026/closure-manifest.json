@@ -15,155 +15,193 @@
   "files": [
     {
       "path": "app/v5/client-cards.mjs",
-      "sha256": "296901b7df793aa8c18fcae531114f89cb047a34e9956a151e3cb424aaef1132"
+      "sha256": "a78e534eab69fe9ae415ece3664c1e6a801cb02225d15e6c5f9c758bbf448c70",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/v5/client-service.mjs",
-      "sha256": "08b1d9e4015c4743675be9f0d5041abe333cb39a6348a31478e68aa92d9c5843"
+      "sha256": "b4a9053f8af83f57199391001e946753385035911a579aa66ce92300fa94939b",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/v5/client-operations.mjs",
-      "sha256": "9a8993ac046a33e9806c17cd0a4bd5feb0326f2a6df7bb50431c08e9e9429c80"
+      "sha256": "bbec78c014a6da28b00727edb488e4ac8142cbf55d2d876a08debf0a8e225973",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/client-routes.mjs",
-      "sha256": "cf1969eb2ce27601a54943ad1e6fc3be5e9c504c765c83aa22268fcdae507d3f"
+      "sha256": "0553ca3d20359a667c269e74c710f898ca030054db34a054562971d37c6ec864",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/v5-client-agent.mjs",
-      "sha256": "185e59d05eab4b9ab0cd30ecce7cd3c35ffe8fd619c10bd09eb57ff3ecd75bd5"
+      "sha256": "223e47e95b112befcc08c491defb0c0adab964edb5c8ff1018c0dd73b12528f1",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/v5-client-server.mjs",
-      "sha256": "11bd6632dc49d71e540331b5e2fb36ca81837d80e5b681ef9c1b7ecfc526fcd2"
+      "sha256": "f7924d3129e9faf7cc9785f0622035656b556470a9be2626a23cc4677b25ec37",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/v5-client.test.mjs",
-      "sha256": "cb056b94e2b2ac238388971c6503db317a616760caf4a2b1571b05c6cfe8c5af"
+      "sha256": "7a92b6183196f1d84e56105ac5a1c684995b27979641af6275b957b29bccb0e1",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/public/client-render.js",
-      "sha256": "b8411536f2ed3a653c4e779f8b84036f500d57e6354c86e1d9d7167ff20cd921"
+      "sha256": "20208d53c64dd85f27303b2807f47ec1f0a336ba595930170cc2432b79d5f074",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/public/client.js",
-      "sha256": "4f65a83accb28fa2f2c76e79d1a44cb2bfe31858854269bebbfe1e66c5c45f9e"
+      "sha256": "b5b9c5317ea19debb2e08c4a6433326f794c41e44be6c1f491b14b5c2f0d4567",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/public/client.html",
-      "sha256": "eb52bcddc563e047dc946dad9e1a268f45a4b3d30e414cf7d8e17c32f2b5f4c7"
+      "sha256": "8c19229679815437e1814c7b3fbbe221b51de97a884554ac86b3712f74fc8567",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/public/client.css",
-      "sha256": "d4ab33acb7fe98187f785a36ecd0c97a27b72918a26fa5dc21ecae613231dfd8"
+      "sha256": "06e965da5334f695f59d7204a154de4dfeb5653cb3e86cae243519518e346442",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/public/index.html",
-      "sha256": "530b4f3a6420cd3adf9d2ac076a629fd443860201013b3a2501bd4951522364b"
+      "sha256": "4b7179c5466e79f1d678b7dc380dd94add3f18617d5cc9c884cc415340e3efe0",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/server.mjs",
-      "sha256": "91fb3c568816087e6d4b2f569f0f1d4be723d96d8967454c0ffebf0d3ac12b1d"
+      "sha256": "afb59709335f6b400b1563a286d2a9fa6174eb5f73572138e7af760374c5fa95",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/workflow-agent.mjs",
-      "sha256": "111d5bb43cfe8eefd7535aca5ff1527b12731e3dc006367bc92d74984a6cc54d"
+      "sha256": "cd72691e0d39df328c4581247411949de9f44b882433a5e6ea164b1ac1214387",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "app/workflow-runner.mjs",
-      "sha256": "21a1668a806edc841b5e8ed56219bb63095f05e323b59b4ce4aafd74168c0d2c"
+      "sha256": "9cbbb985433338584ccc275f17a2cde56ab3d93b77f3f3cd714f3d0710f859cd",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "agent/v5-client-interface.md",
-      "sha256": "cb87ac95433ed7be8cbcea607bf14ca7c85d6b67fde6b80ec68d0ab4159779f7"
+      "sha256": "e71a33df0e3d458b6d09910ca8cd21198fa502e26742a0c4ac3da70e90a708ed",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "agent/v5-release-status.md",
-      "sha256": "e95be0efa47285b1e13fdd10f1fef8096da02cc04f5c403070e38922a655777e"
+      "sha256": "e95be0efa47285b1e13fdd10f1fef8096da02cc04f5c403070e38922a655777e",
+      "hashMode": "UTF8_LF_NORMALIZED"
     },
     {
       "path": "verification/w8-client-20261026/acceptance-cases.json",
-      "sha256": "b66e5127722c14d24abdf7315816895192a9af2d0a61479fa1218e6140dba3f2"
+      "sha256": "b66e5127722c14d24abdf7315816895192a9af2d0a61479fa1218e6140dba3f2",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/acceptance-preview.html",
-      "sha256": "d620397a4bfbe61cc8c8980e2cc30adcbc316e693b95b460335561c004b8bd7d"
+      "sha256": "d620397a4bfbe61cc8c8980e2cc30adcbc316e693b95b460335561c004b8bd7d",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/browser-check.mjs",
-      "sha256": "0a27ef48bd89e2cad876f36da99b93d0d890f3e67e7d61b3c6c677cb0ed71887"
+      "sha256": "0a27ef48bd89e2cad876f36da99b93d0d890f3e67e7d61b3c6c677cb0ed71887",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/browser-results.json",
-      "sha256": "393363a3bcfbfdbe3dc0eaa9d14477ed3bc19252d731923bacb8b89e55a0218e"
+      "sha256": "393363a3bcfbfdbe3dc0eaa9d14477ed3bc19252d731923bacb8b89e55a0218e",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/build-fixtures.mjs",
-      "sha256": "6b733ccd431dd0c6edd6b3dcc3464434bcabe03f748128b0f89f8f912140dcdb"
+      "sha256": "6b733ccd431dd0c6edd6b3dcc3464434bcabe03f748128b0f89f8f912140dcdb",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/component-tests-corrected.txt",
-      "sha256": "ceb3900070037eacc9be97542b72c10dc1fd88fb09f150213c4d7706998a471b"
+      "sha256": "ceb3900070037eacc9be97542b72c10dc1fd88fb09f150213c4d7706998a471b",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/component-tests-final.txt",
-      "sha256": "211c2397a8ca5f569dc7bce82863aee31055e83e754ad74b44992339ad040e96"
+      "sha256": "211c2397a8ca5f569dc7bce82863aee31055e83e754ad74b44992339ad040e96",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/component-tests-release.txt",
-      "sha256": "3bae4d3cc2707f6987679dd3265825ed14448b2aec08775a5493614e67793d1c"
+      "sha256": "3bae4d3cc2707f6987679dd3265825ed14448b2aec08775a5493614e67793d1c",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/component-tests.txt",
-      "sha256": "30bad0b15661d236713826c6f206fc8ec3c8c6ca37f11b48a9ec496958a96a6b"
+      "sha256": "30bad0b15661d236713826c6f206fc8ec3c8c6ca37f11b48a9ec496958a96a6b",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/desktop-card.png",
-      "sha256": "1e185d5f7c156adee9ff5e5f0ed9d39a79ce5d18f59f78d763bdfdff1f9859c8"
+      "sha256": "1e185d5f7c156adee9ff5e5f0ed9d39a79ce5d18f59f78d763bdfdff1f9859c8",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/fixture-events.json",
-      "sha256": "da281402089381fa3842470d2f3d9557be0bd368e3c589804459ca671e6402e3"
+      "sha256": "da281402089381fa3842470d2f3d9557be0bd368e3c589804459ca671e6402e3",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/full-tests-final.txt",
-      "sha256": "b151d41f7a1af7202bdf0c6323043cd9167d45aa6e758347f035ef01fa69aa48"
+      "sha256": "b151d41f7a1af7202bdf0c6323043cd9167d45aa6e758347f035ef01fa69aa48",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/full-tests.txt",
-      "sha256": "336fe217a9dcaf164991539a7dc525e7b5d9876121f9bdbcf4232f5c0a3b94df"
+      "sha256": "336fe217a9dcaf164991539a7dc525e7b5d9876121f9bdbcf4232f5c0a3b94df",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/mobile-card.png",
-      "sha256": "deda5676cb26e71939d866e9d826a2a5cda327c31901b567f32cdd941364a677"
+      "sha256": "deda5676cb26e71939d866e9d826a2a5cda327c31901b567f32cdd941364a677",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/release-preservation.json",
-      "sha256": "bff6bd08507dc7c261cf8fb9afe7f435f20334b3cee74603cd135553b50cb9b0"
+      "sha256": "bff6bd08507dc7c261cf8fb9afe7f435f20334b3cee74603cd135553b50cb9b0",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/release-tests.txt",
-      "sha256": "81c381f119adf15db7f830640e1695a2a2afda612e8027df955235d00118bb81"
+      "sha256": "81c381f119adf15db7f830640e1695a2a2afda612e8027df955235d00118bb81",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/RESULTS.md",
-      "sha256": "3843d8b6bda9868ab527b2288777616961907d42507210f60c2707f175e871fb"
+      "sha256": "3843d8b6bda9868ab527b2288777616961907d42507210f60c2707f175e871fb",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/retained-verification.json",
-      "sha256": "8541d24e397f58af292ec2ccab47f60daeefe9054e19bd497d795a5798041e72"
+      "sha256": "8541d24e397f58af292ec2ccab47f60daeefe9054e19bd497d795a5798041e72",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/server-error.txt",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/server-output.txt",
-      "sha256": "5888416bfd2a4e9084356899ada4c8ff567695c8f4b8d74f088b23f0f8eb434b"
+      "sha256": "5888416bfd2a4e9084356899ada4c8ff567695c8f4b8d74f088b23f0f8eb434b",
+      "hashMode": "EXACT_BYTES"
     },
     {
       "path": "verification/w8-client-20261026/verify-retained.mjs",
-      "sha256": "05bad8db12b05bcfa25b0e9a872fce050e7a7579160782d31d2b0428d5794fc8"
+      "sha256": "05bad8db12b05bcfa25b0e9a872fce050e7a7579160782d31d2b0428d5794fc8",
+      "hashMode": "EXACT_BYTES"
     }
   ]
 }
