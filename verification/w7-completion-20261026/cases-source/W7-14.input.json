@@ -1,0 +1,59 @@
+{
+  "id": "W7-14",
+  "categories": [
+    "thinLiquidity"
+  ],
+  "task": "Calculate minute capacity, daily capacity and effective capacity. Decide whether the whole order passes; do not partially fill it under the given rule or claim these fixture volumes are market observations. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"minute_capacity\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-A\",\"evidenceId\":\"scenario-liquidity\"},{\"id\":\"daily_capacity\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-A\",\"evidenceId\":\"scenario-liquidity\"},{\"id\":\"effective_capacity\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-A\",\"evidenceId\":\"scenario-liquidity\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "evidence": [
+    {
+      "id": "scenario-liquidity",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-A, one decision event. Whole proposed order 1,000 shares. Verified-for-this-fixture minute volume 30,000 shares and daily reference volume 20,000 shares. Fixture minute participation ceiling 2%; daily ceiling 5%; whole-order execution requires quantity <= both ceilings. Ignore fees and price limits for this capacity calculation. These fixture ceilings do not amend production policy.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "frozenAt": "2026-10-25T22:55:55.225Z",
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T22:55:55.225Z",
+    "numbers": [
+      {
+        "id": "minute_capacity",
+        "value": 600,
+        "absoluteTolerance": 0,
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity"
+      },
+      {
+        "id": "daily_capacity",
+        "value": 1000,
+        "absoluteTolerance": 0,
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity"
+      },
+      {
+        "id": "effective_capacity",
+        "value": 600,
+        "absoluteTolerance": 0,
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+    "notes": [],
+    "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+    "syntheticContext": true,
+    "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+  }
+}

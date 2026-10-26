@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.935Z",
+  "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+  "runHash": "525d17e1697aed216fd5805fcbfbed1fa6dc9a79d5bfc2b82c5c9fb095b5ab28",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Clearly contrasts bank spread/capital/credit economics with construction project/cash economics."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Recognizes both positive profits while rejecting quality ranking by absolute size."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct thousand-to-million scaling and unchanged currencies/scopes."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Requires period-appropriate FX, compatible owner attribution and valuation before allocation ranking."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not invent FX, cash realization, or universal comparability."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

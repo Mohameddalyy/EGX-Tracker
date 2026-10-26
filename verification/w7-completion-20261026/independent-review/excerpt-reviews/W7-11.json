@@ -1,0 +1,43 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.918Z",
+  "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+  "runHash": "b407cd0940bcac39bca81fdc6b46c3b7205b325e577ec2d3f78320a7e5ec8181",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Correctly distinguishes stock dividend from split and notes no new earnings or capital strength is proved."
+    },
+    "counterevidence": {
+      "score": 2,
+      "reason": "Useful warning against free economic gain is mixed with a false temporal-admissibility objection."
+    },
+    "numericalInterpretation": {
+      "score": 2,
+      "reason": "Requested multiplier/share arithmetic is correct, but the asserted cutoff and 17.761-second late-capture comparison use the wrong case timestamp."
+    },
+    "decisionUsefulness": {
+      "score": 2,
+      "reason": "Requests an unnecessary cutoff repair and falsely withholds an as-of claim despite valid packet timing."
+    },
+    "uncertainty": {
+      "score": 2,
+      "reason": "Appropriate price/adjustment uncertainty is undermined by asserting a nonexistent timing defect."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 1,
+  "disagreements": [
+    {
+      "type": "CRITICAL_CASE_TEMPORAL_IDENTITY_ERROR",
+      "claimedCutoffAt": "2026-10-25T22:55:55.225Z",
+      "actualCutoffAt": "2026-10-25T22:56:32.892Z",
+      "sourceAvailableAt": "2026-10-25T22:56:12.986Z",
+      "actualSecondsBeforeCutoff": 19.906,
+      "impact": "Wrong case cutoff reverses evidence admissibility; source is available before the actual cutoff. Count once as critical case temporal/period identity error, not also as fabrication."
+    }
+  ],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

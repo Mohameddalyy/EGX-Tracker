@@ -2,3 +2,14 @@
 /app/v5/plan.json -text
 /app/v5/decision-schema.json -text
 /verification/v5-phase3-20261023/* -text
+
+# W7 source/evidence hashes bind original bytes, including captured whitespace.
+/verification/w7-completion-20261026/** -text
+/app/v5/fixed-exit-attribution.mjs -text
+/app/v5/evaluation-provenance.mjs -text
+/app/v5/evaluation-contract.mjs -text
+/app/v5/evaluation-models.mjs -text
+/app/v5/evaluation-ledger.mjs -text
+/app/v5/evaluation-matrix.mjs -text
+/app/v5-evaluation-agent.mjs -text
+/app/v5-w7.test.mjs -text

@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.796Z",
+  "payload": {
+    "caseId": "W7-21",
+    "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "21840b8e18ecd4f6e6b17fd0fb802200e508fb41ee4f0bb135a9c24e13d040cd",
+    "reviewHash": "8eb30272475bc7807af0f05cef9228683771dfa5ff23ab03567879c7e2a54e24",
+    "categories": [
+      "riskExceptions"
+    ],
+    "numbers": [
+      {
+        "id": "post_addition_name_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "remaining_cash",
+        "status": "CORRECT"
+      },
+      {
+        "id": "common_factor_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "joint_adverse_equity",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 4,
+    "denominator": 4,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects shared construction demand and customer concentration to funding and liquidity downside."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Substantively challenges contract termination, collection slippage, customer dependence and unknown exit liquidity despite supportive premises."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct full allocation, 20.5% stress and independently verified smaller/abstention alternatives."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Conditionally defends funded concentration with explicit deeper-loss/illiquidity acceptance and a concrete smaller alternative; preserves no later top-up."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Stress is not a probability, maximum loss, optimality proof or guaranteed exit; valuation sensitivity remains missing."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity.",
+      "Permitted original source contained a preFreezeCorrection review-history cue; see qualitative disposition."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.441,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "e865af22143a4c6e56c22496bea73dcd93b0bcd513171b9d15d473b9e1606fcd"
+}

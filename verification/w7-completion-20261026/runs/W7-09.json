@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.828Z",
+  "payload": {
+    "caseId": "W7-09",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:37.4295243Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "There are 44 elapsed calendar days from 30 September 2025 to 13 November 2025: 31 days through 31 October plus 13 days in November (phdc-highlights). This uses ordinary date subtraction, not inclusive counting of both endpoints.\n\nThe hypothetical original decision date is 1 November 2025 (scenario-timing). The document is dated 13 November, twelve days later. It cannot be retroactively treated as known at that decision. Its financial measurement period ending earlier does not make the later publication available earlier. The actual retained capture is 25 October 2026 at 22:52:57.067Z. That is evidence of capture then; the printed release date is a document claim, and neither proves a verified first public availability timestamp. The supplied official-results-link provenance supports origin, not archival availability on 1 November.\n\nDeveloper sales, backlog and collection data may materially inform demand and cash-conversion judgments, so importing these figures into the historical decision would create look-ahead bias even if the figures are accurate. Counterevidence to treating all information as unknowable is that some earlier information could theoretically have existed, but none is supplied and I cannot assume its content matched this release. Conversely, the release can be examined in the present audit because it is captured before the current evaluation cutoff.\n\nBounded decision: exclude this later-dated release from the original November 1 information set. Label it later evidence when analyzing what was learned afterward. Seek independently archived, timestamped contemporaneous disclosures for any historical reassessment; do not rewrite the original decision using hindsight. The 44-day publication lag calculation says nothing by itself about current investability, trade clearance or future outcomes.",
+    "extractedNumbers": [
+      {
+        "id": "period_end_to_release_days",
+        "unit": "calendar days",
+        "period": "2025-09-30 to 2025-11-13",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights",
+        "value": 44
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "052c330a0771bf1feee8c5d7e670de33fd69a2f8f7a6941e5be9b77093490752",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+    "packetHash": "74945aa7411f7c2cd52d489186da451d1f36020b8ad5a5e5607439ec2fc0feca",
+    "outputHash": "9b12b784d56c7ad856d8cb55b8980efb99f3680bda288f5d632ff2f89746dfa7",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-09.json",
+    "originalFileHash": "ad9e1e304c3e8c67b434d1c078fa700beb74f7ec0fd34b58bac46bf0e03b7055",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "56e9ac9baf6ab27998dcd9976c0e11fa26c35574988c65390bf84ad4e3b6a316"
+}

@@ -1,0 +1,441 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "reviewedAt": "2026-10-26T09:09:34.137Z",
+  "scope": "POST_FAILURE_26_CASE_DEVELOPMENT_VALIDATION",
+  "disposition": "ADEQUATE_DEVELOPMENT_DEMONSTRATION_WITH_STATED_LIMITATIONS",
+  "factual": {
+    "correct": 64,
+    "denominator": 64,
+    "accuracy": 1,
+    "criticalErrors": 0,
+    "gate": "PASS"
+  },
+  "qualitativeAcceptanceBlocker": false,
+  "aggregateRubricThreshold": "NONE_FROZEN; no aggregate qualitative pass threshold invented",
+  "rubricMeans": {
+    "sectorReasoning": 3.6538461538461537,
+    "counterevidence": 4,
+    "numericalInterpretation": 4,
+    "decisionUsefulness": 3.9615384615384617,
+    "uncertainty": 4
+  },
+  "method": {
+    "fullOutputReview": "Read all 26 original complete prose outputs and extracted arrays; no answer rewrite or selection.",
+    "binding": "Verified every original output byte hash, exact echoed context and source bytes; scoring enforces packet/case/config/reviewer/timestamp bindings.",
+    "sourceReview": "Read temporal and full-discretion original JSON and case evidence. Visually inspected retained page images: ADIB 4; ORAS 8,10,41,68; CIRA 4; PHDC 4. Prior independent reviewer records cover the original 22 truth items and remaining source-page checks; that earlier work remains attributed to its original actor.",
+    "additionalClaims": "Checked supplemental source values, date labels, arithmetic and qualitative temporal distinctions; 30 extra derived arithmetic claims are recorded below. All context elapsed times separately match deterministic per-case context."
+  },
+  "concentration": {
+    "caseId": "W7-21",
+    "judgment": "ADEQUATELY_DEMONSTRATED_WITHIN_FICTIONAL_PREMISES",
+    "reason": "Response defends a funded initial 70% A allocation with collected receipts, no debt, cash cost cover and signed contract; challenges 45% customer reliance, performance termination, delayed collection, shared demand and future exit liquidity. Quantifies 20.5% joint stress, an 11.75% smaller-allocation stress and B-only abstention equity. Explicitly accepts possible deeper/prolonged losses and preserves no later top-up. It does not infer optimal size or a calibrated expected return.",
+    "limit": "Acceptance of downside alone is not evidence of attractive expected return; the response also acknowledges absent valuation sensitivity and probabilities. This supports conditional reasoning quality, not a real recommendation."
+  },
+  "abstention": {
+    "caseId": "W7-22",
+    "judgment": "ADEQUATELY_DEMONSTRATED_WITHIN_FICTIONAL_PREMISES",
+    "reason": "Response refuses on unresolved customer renewal/receivable collection and 10% versus 40% scenario asymmetry despite fully funded, mechanically cleared entry. It recognizes positive EBITDA and funding as counterevidence, explains why smaller size does not repair evidence, retains one mechanical opportunity, and does not invent a cap, funding failure, fraud or guaranteed exit."
+  },
+  "noncriticalGaps": [
+    {
+      "caseId": "W7-16",
+      "dimension": "decisionUsefulness",
+      "score": 3,
+      "detail": "Conditional monetary ceilings are correctly separated from an order, but the answer could explicitly restate the frozen no-pyramiding control when the scenario already has a position. This is not scored as an authorized addition or a critical policy override."
+    }
+  ],
+  "blindnessCaveat": {
+    "source": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+    "field": "preFreezeCorrection",
+    "finding": "Permitted full-source access exposed a prior reviewer-correction cue and statement that numerical truth values were preserved. The field contains no numerical answer list or prior analyst response. First-purchase and no-pyramiding requirements already appear in the legitimate scenario passage.",
+    "effect": "Perfect blindness cannot be claimed. The clue is retained and disclosed; it does not invalidate the observed arithmetic or developmental reasoning review. No independent evidence of access to prior answer/review/truth files was established; access assertions are analyst-reported, not a complete security audit."
+  },
+  "limitations": [
+    "22 reused cases and four post-failure authored temporal cases are development validation, not untouched generalization, predictive performance, operational readiness, trading edge or universal model superiority.",
+    "CASE_CONTEXT_1 directly supplies deterministic capture-age metadata; correct echoes alone would not establish reasoning. Full prose was reviewed separately.",
+    "Several fixtures explicitly cue distinctions and decision considerations; they measure performance on prompted cases.",
+    "Separate AI actors do not establish independent-human adjudication or uncorrelated errors. Model identity uses local configuration, not independent provider attestation.",
+    "Original-source access and supplemental claims are limited to selected source pages; CIRA issuer-link provenance remains unresolved.",
+    "Telemetry is a shared batch interval and 28 shared calls, not 26 isolated latencies, zero total tool use, provider inference latency or measured per-case cost.",
+    "Prior failed excerpt/source attempts and immutable registration clarification remain visible; this success does not erase them."
+  ],
+  "supplementalArithmetic": [
+    {
+      "caseId": "W7-03",
+      "quantity": "noncash/finance/tax adjustments",
+      "independentValue": 72.80000000000001,
+      "statedValue": 72.8,
+      "unit": "USD million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-03",
+      "quantity": "profit plus adjustments",
+      "independentValue": 200.6,
+      "statedValue": 200.6,
+      "unit": "USD million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-03",
+      "quantity": "working-capital movements",
+      "independentValue": -249.6,
+      "statedValue": -249.6,
+      "unit": "USD million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-03",
+      "quantity": "net cash interest/dividends/tax",
+      "independentValue": -5.5000000000000036,
+      "statedValue": -5.5,
+      "unit": "USD million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-03",
+      "quantity": "full operating cash bridge",
+      "independentValue": -54.5,
+      "statedValue": -54.5,
+      "unit": "USD million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-04",
+      "quantity": "higher education offset",
+      "independentValue": 370.79999999999995,
+      "statedValue": 370.8,
+      "unit": "EGP million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-04",
+      "quantity": "allocation components",
+      "independentValue": 370.8,
+      "statedValue": 370.8,
+      "unit": "EGP million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-04",
+      "quantity": "pre-allocation group total",
+      "independentValue": 1183.5,
+      "statedValue": 1183.5,
+      "unit": "EGP million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-04",
+      "quantity": "post-allocation group total",
+      "independentValue": 1183.5,
+      "statedValue": 1183.5,
+      "unit": "EGP million",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-05",
+      "quantity": "operating cash conversion to billions",
+      "independentValue": 0.748335,
+      "statedValue": 0.748335,
+      "unit": "EGP billion",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-11",
+      "quantity": "bonus shares",
+      "independentValue": 100,
+      "statedValue": 100,
+      "unit": "shares",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-15",
+      "quantity": "daily capacity",
+      "independentValue": 1500,
+      "statedValue": 1500,
+      "unit": "shares",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-16",
+      "quantity": "name cap",
+      "independentValue": 15000,
+      "statedValue": 15000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-18",
+      "quantity": "free-cash shortfall",
+      "independentValue": 9000,
+      "statedValue": 9000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "adverse A value",
+      "independentValue": 52500,
+      "statedValue": 52500,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "adverse B value",
+      "independentValue": 12000,
+      "statedValue": 12000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "full allocation stress loss",
+      "independentValue": 20500,
+      "statedValue": 20500,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "full allocation stress loss percent",
+      "independentValue": 20.5,
+      "statedValue": 20.5,
+      "unit": "percent",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "smaller allocation cash",
+      "independentValue": 50000,
+      "statedValue": 50000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "smaller allocation A exposure",
+      "independentValue": 35,
+      "statedValue": 35,
+      "unit": "percent",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "smaller common-factor exposure",
+      "independentValue": 50,
+      "statedValue": 50,
+      "unit": "percent",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "smaller allocation adverse equity",
+      "independentValue": 88250,
+      "statedValue": 88250,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "smaller allocation adverse loss percent",
+      "independentValue": 11.75,
+      "statedValue": 11.75,
+      "unit": "percent",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-21",
+      "quantity": "abstention B-only adverse equity",
+      "independentValue": 97000,
+      "statedValue": 97000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-22",
+      "quantity": "remaining cash",
+      "independentValue": 40000,
+      "statedValue": 40000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-22",
+      "quantity": "adverse loss percent",
+      "independentValue": 24,
+      "statedValue": 24,
+      "unit": "percent",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-22",
+      "quantity": "target scenario profit",
+      "independentValue": 6000,
+      "statedValue": 6000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-22",
+      "quantity": "adverse scenario loss",
+      "independentValue": 24000,
+      "statedValue": 24000,
+      "unit": "EGP",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-24",
+      "quantity": "period-to-publication hours",
+      "independentValue": 21,
+      "statedValue": 21,
+      "unit": "hours",
+      "status": "CORRECT"
+    },
+    {
+      "caseId": "W7-25",
+      "quantity": "announcement age seconds",
+      "independentValue": 901.108,
+      "statedValue": 901.108,
+      "unit": "seconds",
+      "status": "CORRECT"
+    }
+  ],
+  "bindings": {
+    "scoreCheckHash": "28a4d684a766d49adab7cbed1ebec1a7b4acb99a4ff13f5ba8fe3232876a8d9a",
+    "sourceInspectionHash": "bbe098320d370b0e168caa524eaf5ded861ca72baf3218b4f1dc4061b27170bd",
+    "telemetryHash": "9316140a19c3d7bef87fcfd81a5f646099608704979794366a5b2214f1d1696a",
+    "reviewPaths": [
+      {
+        "caseId": "W7-01",
+        "path": "independent-review/context-reviews/W7-01.json",
+        "reviewHash": "ab66f377abc72b2b9da459b78f6b84e6bd76c934c4a813d17b11fdc11540fa5d"
+      },
+      {
+        "caseId": "W7-02",
+        "path": "independent-review/context-reviews/W7-02.json",
+        "reviewHash": "853a466de0648f06b2cea027386e6670d78adb95287406f7fbcfa5f24ea70380"
+      },
+      {
+        "caseId": "W7-03",
+        "path": "independent-review/context-reviews/W7-03.json",
+        "reviewHash": "905b64e840ce2002e62557a11289cb2b8a27abb7c71b97617adf18d0bc3159b6"
+      },
+      {
+        "caseId": "W7-04",
+        "path": "independent-review/context-reviews/W7-04.json",
+        "reviewHash": "0843cb8342ab908521cab384b6f27f8a6ab00781856ef0c2a41c3da262e05455"
+      },
+      {
+        "caseId": "W7-05",
+        "path": "independent-review/context-reviews/W7-05.json",
+        "reviewHash": "3dd2714dc28b49e42e9e52a03880cb8c1351a59703d0d3ea66d364b3ed7f2ebd"
+      },
+      {
+        "caseId": "W7-06",
+        "path": "independent-review/context-reviews/W7-06.json",
+        "reviewHash": "9468abef0338a0d0344d4ae0edcc6d8fab1a656e3b115210116432d984585750"
+      },
+      {
+        "caseId": "W7-07",
+        "path": "independent-review/context-reviews/W7-07.json",
+        "reviewHash": "710ea242a5003483c02e57c9f43fba8f66f9f1d394f516df21d4a2179707d14a"
+      },
+      {
+        "caseId": "W7-08",
+        "path": "independent-review/context-reviews/W7-08.json",
+        "reviewHash": "8faa9a191e6211adb8308902d47027ab8c4ca32f1321c3ce0a8b8177b6826a29"
+      },
+      {
+        "caseId": "W7-09",
+        "path": "independent-review/context-reviews/W7-09.json",
+        "reviewHash": "945e403e349a3381e4870bd3a769c39e290675d7ebc69007f8818b12767526e4"
+      },
+      {
+        "caseId": "W7-10",
+        "path": "independent-review/context-reviews/W7-10.json",
+        "reviewHash": "aace141ee6e48621147583a146c4f576d2d08081e7143b450a4493fa19ec91b9"
+      },
+      {
+        "caseId": "W7-11",
+        "path": "independent-review/context-reviews/W7-11.json",
+        "reviewHash": "8be87b609624cf8ead9616b4409c830bdaeeccd2b615e2253bee17624e9c8d1b"
+      },
+      {
+        "caseId": "W7-12",
+        "path": "independent-review/context-reviews/W7-12.json",
+        "reviewHash": "8a6c8c2e63ed9222f2172c1f9bab6baa45f82f01a68d74ffae904e0464baf99d"
+      },
+      {
+        "caseId": "W7-13",
+        "path": "independent-review/context-reviews/W7-13.json",
+        "reviewHash": "c934aeba9d86d3ba3cc01730028e7f5bb89e6b410b8e0e97d20a3a0a3b4c49e5"
+      },
+      {
+        "caseId": "W7-14",
+        "path": "independent-review/context-reviews/W7-14.json",
+        "reviewHash": "7953809387a5bd95d22ced06aea73b5715f9f88476c54409ada8a7b09d41fb4b"
+      },
+      {
+        "caseId": "W7-15",
+        "path": "independent-review/context-reviews/W7-15.json",
+        "reviewHash": "7e510813bd62fc20ba1e5c88b92239edd81c2fd435f70112b9be20516307a7e8"
+      },
+      {
+        "caseId": "W7-16",
+        "path": "independent-review/context-reviews/W7-16.json",
+        "reviewHash": "3a310a3ca4325928db1a8d936131d0603b27f462bf9087b4449dc522c3906594"
+      },
+      {
+        "caseId": "W7-17",
+        "path": "independent-review/context-reviews/W7-17.json",
+        "reviewHash": "85de74b4fdb9100d7213186bee5b4a7fbacff32b169ca3a771d986f403dbf073"
+      },
+      {
+        "caseId": "W7-18",
+        "path": "independent-review/context-reviews/W7-18.json",
+        "reviewHash": "90686234a01a9ce84369b883cae1b95dc4663e932941355d4c55752875af9c24"
+      },
+      {
+        "caseId": "W7-19",
+        "path": "independent-review/context-reviews/W7-19.json",
+        "reviewHash": "787194b4614751d17a79a916ddce06913b08b71f99c793ce86e9a150ec85fc1d"
+      },
+      {
+        "caseId": "W7-20",
+        "path": "independent-review/context-reviews/W7-20.json",
+        "reviewHash": "0440974c819559f0cc10e68385c8b65f6115715252ff5c19f971049be04c398e"
+      },
+      {
+        "caseId": "W7-21",
+        "path": "independent-review/context-reviews/W7-21.json",
+        "reviewHash": "8eb30272475bc7807af0f05cef9228683771dfa5ff23ab03567879c7e2a54e24"
+      },
+      {
+        "caseId": "W7-22",
+        "path": "independent-review/context-reviews/W7-22.json",
+        "reviewHash": "53449ea7a430a8f6a05150db992fab514585479d4fd4212d3b2dbd6dbb7511f3"
+      },
+      {
+        "caseId": "W7-23",
+        "path": "independent-review/context-reviews/W7-23.json",
+        "reviewHash": "a2f7764072439cfd590cf78599c0aa8e3721be3dadb405ac9cadd6080a88144e"
+      },
+      {
+        "caseId": "W7-24",
+        "path": "independent-review/context-reviews/W7-24.json",
+        "reviewHash": "a9cc543cd9dd1c42f5a1d20ffe0b6e1f247eedef70b9c82113ec2c3ab8fbc4d3"
+      },
+      {
+        "caseId": "W7-25",
+        "path": "independent-review/context-reviews/W7-25.json",
+        "reviewHash": "5030eeaad314b0d5226eb121e8d81be8b42c912c2841a5f86a8c455a40a195ad"
+      },
+      {
+        "caseId": "W7-26",
+        "path": "independent-review/context-reviews/W7-26.json",
+        "reviewHash": "fbca3e5ab7aa6a38147819e21bba5296463d1de937a86d27f176fc4730c33250"
+      }
+    ]
+  }
+}

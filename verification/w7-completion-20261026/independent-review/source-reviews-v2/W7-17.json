@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.965Z",
+  "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+  "runHash": "9682597124a7b058db622e649daf6e3835d0785d2f40b6baa3fc1e8363d2079a",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains common FX/input-cost and working-capital channels with inventory/pass-through/hedge contingencies, without assigning an invented sector."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Explains why common exposures do not imply identical firm or equity-return behavior."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct exposure totals and percentages without inventing correlations/covariance."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Specifies hedging and sensitivity evidence before more common-factor exposure."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Distinguishes missing correlation from zero and gross exposure from predicted loss."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

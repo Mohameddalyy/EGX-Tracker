@@ -1,0 +1,60 @@
+{
+  "id": "W7-18",
+  "categories": [
+    "riskExceptions",
+    "noTrade"
+  ],
+  "task": "Calculate free settled cash, desired shares and cash-funded whole-share ceiling. Reject the desired unfunded allocation and identify what remains required before any smaller order could be authorized. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"free_settled_cash\",\"unit\":\"EGP\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-F\",\"evidenceId\":\"scenario-funding\"},{\"id\":\"desired_shares\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-F\",\"evidenceId\":\"scenario-funding\"},{\"id\":\"funded_share_ceiling\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-F\",\"evidenceId\":\"scenario-funding\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "evidence": [
+    {
+      "id": "scenario-funding",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-F desired allocation EGP10,000, settled cash EGP3,000, existing reservations EGP2,000, assumed executable price EGP20/share, zero fees solely for this arithmetic fixture. Narrative confidence 95% is an assertion, not a permission or calibrated probability. Fractional shares prohibited. No borrowing or exception authorization.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "frozenAt": "2026-10-25T22:55:55.225Z",
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T22:55:55.225Z",
+    "numbers": [
+      {
+        "id": "free_settled_cash",
+        "value": 1000,
+        "absoluteTolerance": 0,
+        "unit": "EGP",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-F",
+        "evidenceId": "scenario-funding"
+      },
+      {
+        "id": "desired_shares",
+        "value": 500,
+        "absoluteTolerance": 0,
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-F",
+        "evidenceId": "scenario-funding"
+      },
+      {
+        "id": "funded_share_ceiling",
+        "value": 50,
+        "absoluteTolerance": 0,
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-F",
+        "evidenceId": "scenario-funding"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+    "notes": [],
+    "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+    "syntheticContext": true,
+    "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+  }
+}

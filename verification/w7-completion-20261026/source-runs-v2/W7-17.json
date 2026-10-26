@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:19:02.311Z",
+  "payload": {
+    "caseId": "W7-17",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "The synthetic exposures sum to EGP30,000 + EGP20,000 = EGP50,000, or 50% of EGP100,000 portfolio equity. This is the amount invested in two businesses described as sharing USD-priced input costs and EGP sales, not an estimate that 50% of equity will be lost if FX changes.\n\nEGP weakening against USD could squeeze both businesses' margins and raise working-capital needs if customer prices cannot adjust promptly. Two names therefore need not deliver independent risk diversification. No return histories or hedge evidence are supplied: correlation is unknown, not zero, and neither the exposure sum nor the common description estimates a covariance matrix or a coefficient of one. Counterevidence to a deterministic joint-loss claim is that pass-through, inventories bought at earlier rates, supplier terms or hedging could differ; none is demonstrated in the fixture. Their magnitudes and timing matter as much as nominal currency labels. Need input import shares, repricing contracts, currency cash/debt, hedging and contemporaneous return history to quantify risk. Decision: treat 50% as a shared-factor exposure flag, stress plausible cost/pass-through scenarios before adding risk, and do not present an invented statistical risk estimate or real-market clearance.",
+    "extractedNumbers": [
+      {
+        "id": "combined_exposure",
+        "unit": "EGP",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-D and ENGINEERING-E",
+        "evidenceId": "scenario-correlation",
+        "value": 50000
+      },
+      {
+        "id": "shared_exposure_percent",
+        "unit": "percent of equity",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-D and ENGINEERING-E",
+        "evidenceId": "scenario-correlation",
+        "value": 50
+      }
+    ],
+    "toolCalls": 0,
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "originalToolCalls": [],
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "4bfa4f15961160a396336bbd1e440c513da32e9ed12665bded8e453e69df53ba",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+    "packetHash": "a264b73d132cd87a173238cbd2f0099e0e8755e0eeb937cb20d56141d16e00a8",
+    "outputHash": "f0db90b11177cda4eb964a37f9780eb3a426fd45ee67e5fc9ac0ed3fbac9cee9",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-17.json",
+    "originalFileHash": "55954714f4e7a0c5472f4ab23c56bb972f9540dc60d2f520619b0759a2da598c",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "440378be116baf45c3bfaafecc62d02caae5b04d2c24797b723f749b2ade37eb"
+}

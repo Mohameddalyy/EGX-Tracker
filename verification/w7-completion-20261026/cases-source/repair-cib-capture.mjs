@@ -1,0 +1,8 @@
+import{readFileSync,writeFileSync}from'node:fs';
+import{createHash}from'node:crypto';
+import{freezeCase}from'../../../app/v5/evaluation-models.mjs';
+const dir='verification/w7-completion-20261026/cases-source/',rawPath='data/research/evidence/w7-evaluation/cib-dividends-web-capture.json';
+const raw=readFileSync(rawPath),capture=JSON.parse(raw),sha=createHash('sha256').update(raw).digest('hex'),now=new Date().toISOString();
+for(const id of ['W7-11','W7-12']){const p=dir+id+'.input.json',old=readFileSync(p);writeFileSync(dir+id+'.pre-capture-repair.json',old,{flag:'wx'});const c=JSON.parse(old);const e=c.evidence.find(e=>e.id==='cib-dividends');e.contentHash=sha;e.availableAt=capture.capturedAt;e.localPath=rawPath;e.availabilityBasis='Actual web-tool capture of official issuer page; direct HTTP HTML download was an Incapsula challenge and is retained only as a failed attempt, not as evidence.';c.cutoffAt=now;c.frozenAt=now;c.truth.checkedAt=now;c.curation.notes.push('Pre-freeze source binding repair: issuer page content is retained in raw web-tool response; direct HTML challenge cannot support dividend facts.');freezeCase(c);writeFileSync(p,JSON.stringify(c,null,2)+'\n');}
+const m=JSON.parse(readFileSync(dir+'case-manifest.json'));m.sources.cib={...m.sources.cib,file:'cib-dividends-web-capture.json',at:capture.capturedAt,contentHash:sha,captureType:'WEB_TOOL_RENDERED_PRIMARY_PAGE',failedDirectCapture:'cib-dividends.html'};m.captureRepairAt=now;writeFileSync(dir+'case-manifest.json',JSON.stringify(m,null,2)+'\n');
+console.log(JSON.stringify({repaired:['W7-11','W7-12'],at:now,sourceHash:sha}));

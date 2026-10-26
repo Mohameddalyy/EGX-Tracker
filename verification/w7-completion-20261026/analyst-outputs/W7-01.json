@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-01",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:36.0450362Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "Net income from funds reconciles exactly: EGP29,117,908 thousand of financing income minus EGP16,863,967 thousand of deposit and similar costs equals EGP12,253,941 thousand. The six-month release/(charge) ECL entry is negative EGP2,176 thousand: a net charge, not a release. The separate three-month release of EGP78,142 thousand must not replace that cumulative six-month number (adib-income).\n\nFor an Islamic bank, this spread in monetary amounts is a useful source-of-earnings measure: financing returns must cover depositor funding costs before the remaining costs and risks. It is not itself a net financing margin percentage, which would require an appropriate average earning-asset denominator. Similarly, cost of risk requires the relevant ECL charge definition and average financing/loan exposure over a matching period, with an explicitly specified annualization convention if desired. Neither the average balance nor the ECL scope is supplied. Dividing by funds income, deposit cost or net profit would not produce a valid loan cost-of-risk ratio.\n\nPositive funds income and profit are supportive evidence, but a small net charge can conceal releases offsetting new provisions. The second-quarter release is direct counterevidence to interpreting the cumulative charge as a stable quarterly loss rate. No staging, impaired-financing, coverage, write-off, collateral or concentration schedule is available. A low charge therefore establishes neither clean credit quality nor durable earnings. Bounded decision: retain this as a profitable-bank research lead and request those credit schedules plus funding mix, capital, valuation and current security/action evidence before any investment conclusion. The retained capture establishes what was in the packet by its capture time, not the document's verified first public availability; no future outcome or market clearance is inferred.",
+  "extractedNumbers": [
+    {
+      "id": "net_funds",
+      "unit": "EGP thousand",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 12253941
+    },
+    {
+      "id": "ecl_signed",
+      "unit": "EGP thousand",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": -2176
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

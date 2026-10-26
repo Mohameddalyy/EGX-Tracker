@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.946Z",
+  "payload": {
+    "caseId": "W7-08",
+    "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "c3bbf4bb19f2a49ee2ffb34312e9cb4656d8fba77b30de8df8ef9815609103f6",
+    "reviewHash": "ddccd638d8ae2164dba357cb308d02d6994b530c416318d47d4282dc4c600f88",
+    "categories": [
+      "conflictingDocuments"
+    ],
+    "numbers": [
+      {
+        "id": "adib_profit_millions",
+        "status": "CORRECT"
+      },
+      {
+        "id": "oras_profit_millions",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Distinguishes bank capital/credit economics from construction collection and project risk."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Acknowledges both profits while rejecting simplistic cross-sector quality ranking."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct unit scaling with currencies preserved; no guessed FX rate."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Gives a clear native-currency comparison and specifies missing common valuation inputs."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Separates scope, currency, economic meaning and missing capital/cash evidence."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 401.648,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "e41028e1db317c490d981c9999fbe0b03e8376aaa39b67fe230e6543d1274063"
+}

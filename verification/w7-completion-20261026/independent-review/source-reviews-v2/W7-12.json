@@ -1,0 +1,43 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.935Z",
+  "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+  "runHash": "091dbaef58a0b6bd760ebcb6b5384085b98b6f643f0818c64ed0fc007a7fb8c2",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Connects dividend capacity to earnings, losses and capital; does not confuse payout with shareholder return."
+    },
+    "counterevidence": {
+      "score": 2,
+      "reason": "Gross entitlement is conditioned correctly but counterevidence includes a false late-capture claim."
+    },
+    "numericalInterpretation": {
+      "score": 2,
+      "reason": "Correct per-share dividend, gross entitlement and record/payment labels; wrong case cutoff reverses capture eligibility."
+    },
+    "decisionUsefulness": {
+      "score": 2,
+      "reason": "Requests temporal resolution despite available source evidence, although total-return withholding remains appropriate."
+    },
+    "uncertainty": {
+      "score": 2,
+      "reason": "Preserves price/tax/ownership uncertainties but adds a false source timing mismatch."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 1,
+  "disagreements": [
+    {
+      "type": "CRITICAL_CASE_TEMPORAL_IDENTITY_ERROR",
+      "claimedCutoffAt": "2026-10-25T22:55:55.225Z",
+      "actualCutoffAt": "2026-10-25T22:56:32.892Z",
+      "sourceAvailableAt": "2026-10-25T22:56:12.986Z",
+      "actualSecondsBeforeCutoff": 19.906,
+      "impact": "Wrong case cutoff reverses evidence admissibility despite original-source access. Count once as critical temporal/period identity error, not also as fabrication."
+    }
+  ],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

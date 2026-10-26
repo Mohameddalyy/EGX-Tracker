@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.955Z",
+  "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+  "runHash": "4ce5aa7ea90325931ac072b3048f2b7e8e6ba9f046cf56aab514a2ae48238914",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects customer demand and payment concentration without inventing sector or other holdings."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Positive EBITDA and full funding are weighed against overdue receivables, rumor and negative operating cash."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct shares, upside/downside, portfolio stress and opportunity denominator."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Justifies abstention substantively; smaller sizing does not repair weak evidence."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Separates stated levels from expected return, probability and guaranteed stop execution."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

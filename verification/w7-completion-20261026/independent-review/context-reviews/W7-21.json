@@ -1,0 +1,35 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.993Z",
+  "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+  "runHash": "21840b8e18ecd4f6e6b17fd0fb802200e508fb41ee4f0bb135a9c24e13d040cd",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects shared construction demand and customer concentration to funding and liquidity downside."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Substantively challenges contract termination, collection slippage, customer dependence and unknown exit liquidity despite supportive premises."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct full allocation, 20.5% stress and independently verified smaller/abstention alternatives."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Conditionally defends funded concentration with explicit deeper-loss/illiquidity acceptance and a concrete smaller alternative; preserves no later top-up."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Stress is not a probability, maximum loss, optimality proof or guaranteed exit; valuation sensitivity remains missing."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity.",
+    "Permitted original source contained a preFreezeCorrection review-history cue; see qualitative disposition."
+  ]
+}

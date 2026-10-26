@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.969Z",
+  "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+  "runHash": "eccfb2b64d3c69296b71c602c4a23ae5b9c26176d92c306f35297f886e1a752c",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Avoids issuer-sector inference from identifier and explains funding/implementation risk."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Recognizes50 shares are arithmetically payable without calling them suitable or authorized."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct free cash, desired shares, funded ceiling and shortfall."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Rejects unfunded demand and lists concrete evidence required for a smaller order."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Explicitly separates narrative confidence, funded arithmetic and actual approval; no borrowing permission is inferred."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

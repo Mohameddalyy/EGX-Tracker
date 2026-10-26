@@ -1,0 +1,595 @@
+{
+  "version": 1,
+  "kind": "fixed-exit",
+  "createdAt": "2026-10-25T23:09:16.704Z",
+  "payload": {
+    "scope": "FIXED-EXIT-ATTRIBUTION",
+    "conditional": true,
+    "notACompetingStrategy": true,
+    "entryAuthorization": false,
+    "originalScope": "ENGINEERING_PAPER_ONLY",
+    "variantId": "FULL",
+    "scenario": "base",
+    "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+    "originalInputHash": "4b556c64f40bf87abea8ab7c2b40e13162abb9e528088cda9d1523ae2a1c7eaf",
+    "supplementHash": "ce63f9392bbeb5d52e0f28913477ba9a0df6f9b7d2c4d3da8817d7134bcfc3df",
+    "originalFinalStateHash": "b99deb4f7e26bb8b6cbae05046469d07bc4828dbcbe024b7fd86e1cbe205cedb",
+    "actual": {
+      "valuation": {
+        "at": "2026-10-27T07:17:10Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 11963,
+        "unsettledCents": 0,
+        "reservedCents": 500,
+        "availableCashCents": 11463,
+        "investedCents": 9804900,
+        "equityCents": 9816863
+      },
+      "cashCents": 11963,
+      "feesCents": 15459,
+      "realizedCents": 0,
+      "orders": [
+        {
+          "id": "synthetic-order",
+          "quantity": 1421,
+          "status": "FILLED",
+          "reservationCents": 0,
+          "fill": {
+            "id": "54c77e2cae178a0b5a50052b516161d1476f55b23e1283ba8003bb80733eb175",
+            "quantity": 1421,
+            "price": 70.18,
+            "marketAt": "2026-10-25T07:01:00.000Z",
+            "observedAt": "2026-10-25T07:17:10Z",
+            "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          },
+          "cancelAt": null,
+          "censored": false
+        }
+      ],
+      "positions": [
+        {
+          "id": "synthetic-order",
+          "isin": "EG0000000001",
+          "quantity": 1421,
+          "status": "EXIT_PENDING",
+          "entry": 70.18,
+          "stop": 68.22,
+          "initialRiskCents": 334556,
+          "exit": {
+            "committedAt": "2026-10-25T07:17:10Z",
+            "reason": "STOP_BREACH",
+            "notBefore": null,
+            "status": "EXIT_PENDING",
+            "attempts": [
+              {
+                "at": "2026-10-27T07:17:10Z",
+                "barStart": "2026-10-27T07:01:00.000Z",
+                "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+              }
+            ]
+          },
+          "actionHold": null
+        }
+      ],
+      "settlements": []
+    },
+    "counterfactual": {
+      "valuation": {
+        "at": "2026-10-27T07:17:10Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 11963,
+        "unsettledCents": 0,
+        "reservedCents": 500,
+        "availableCashCents": 11463,
+        "investedCents": 9804900,
+        "equityCents": 9816863
+      },
+      "cashCents": 11963,
+      "feesCents": 15459,
+      "realizedCents": 0,
+      "orders": [
+        {
+          "id": "synthetic-order",
+          "quantity": 1421,
+          "status": "FILLED",
+          "reservationCents": 0,
+          "fill": {
+            "id": "54c77e2cae178a0b5a50052b516161d1476f55b23e1283ba8003bb80733eb175",
+            "quantity": 1421,
+            "price": 70.18,
+            "marketAt": "2026-10-25T07:01:00.000Z",
+            "observedAt": "2026-10-25T07:17:10Z",
+            "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          },
+          "cancelAt": null,
+          "censored": false
+        }
+      ],
+      "positions": [
+        {
+          "id": "synthetic-order",
+          "isin": "EG0000000001",
+          "quantity": 1421,
+          "status": "EXIT_PENDING",
+          "entry": 70.18,
+          "stop": 68.22,
+          "initialRiskCents": 334556,
+          "exit": {
+            "committedAt": "2026-10-25T07:17:10Z",
+            "reason": "STOP_BREACH",
+            "notBefore": null,
+            "status": "EXIT_PENDING",
+            "attempts": [
+              {
+                "at": "2026-10-27T07:17:10Z",
+                "barStart": "2026-10-27T07:01:00.000Z",
+                "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+              }
+            ]
+          },
+          "actionHold": null
+        }
+      ],
+      "settlements": []
+    },
+    "actualMinusFixedExitEquityCents": 0,
+    "drawdown": {
+      "fraction": 0.01831369999999999,
+      "currentFraction": 0.01831369999999999,
+      "recoveryRequiredFraction": 0.018655348455000328,
+      "peakAt": null,
+      "troughAt": "2026-10-27T07:17:10Z",
+      "observations": 5,
+      "gaps": 0,
+      "basis": "Observed event snapshots only; gaps may hide larger losses. Stress loss is separate."
+    },
+    "suppressedRiskExits": 0,
+    "blockedEvents": 0,
+    "divergences": [],
+    "trace": [
+      {
+        "eventId": "full-liquidity-deadlock-1",
+        "at": "2026-10-25T06:40:00Z",
+        "type": "OPEN_DAY",
+        "supplemental": false,
+        "result": {
+          "status": "OPENING_VALUATION_RECORDED",
+          "equityCents": 10000000
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T06:40:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T06:40:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "full-liquidity-deadlock-2",
+        "at": "2026-10-25T06:41:00Z",
+        "type": "SET_PAUSE",
+        "supplemental": false,
+        "result": {
+          "paused": false
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T06:41:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T06:41:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "full-liquidity-deadlock-3",
+        "at": "2026-10-25T06:51:00.000Z",
+        "type": "SUBMIT",
+        "supplemental": false,
+        "result": {
+          "status": "CONDITIONAL_RESERVATION",
+          "originalQuantity": 1421,
+          "quantity": 1421,
+          "originalIntentHash": "4855755f809e53bd977d3a21f5b110a64a57fe293b2dd72a385f85c6aab16ecb",
+          "desiredBudget": {
+            "maxCashAllocationEGP": 100000,
+            "maxPlannedLossEGP": null,
+            "exceptionIds": [
+              "POSITION_RISK",
+              "AGGREGATE_RISK",
+              "NAME_GROUP",
+              "SECTOR_CLUSTER",
+              "CASH_RESERVE",
+              "POSITION_COUNT",
+              "IMPORTANT_GAP"
+            ]
+          }
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T06:51:00.000Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 9994229,
+            "availableCashCents": 5771,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1421,
+              "status": "RESERVED",
+              "reservationCents": 9994229,
+              "fill": null,
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T06:51:00.000Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 9994229,
+            "availableCashCents": 5771,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1421,
+              "status": "RESERVED",
+              "reservationCents": 9994229,
+              "fill": null,
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "full-liquidity-deadlock-4",
+        "at": "2026-10-25T07:17:10Z",
+        "type": "MINUTE",
+        "supplemental": false,
+        "result": {
+          "results": [
+            {
+              "order": "synthetic-order",
+              "status": "FILLED"
+            }
+          ]
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T07:17:10Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 11963,
+            "unsettledCents": 0,
+            "reservedCents": 500,
+            "availableCashCents": 11463,
+            "investedCents": 9947000,
+            "equityCents": 9958963
+          },
+          "cashCents": 11963,
+          "feesCents": 15459,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1421,
+              "status": "FILLED",
+              "reservationCents": 0,
+              "fill": {
+                "id": "54c77e2cae178a0b5a50052b516161d1476f55b23e1283ba8003bb80733eb175",
+                "quantity": 1421,
+                "price": 70.18,
+                "marketAt": "2026-10-25T07:01:00.000Z",
+                "observedAt": "2026-10-25T07:17:10Z",
+                "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              },
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [
+            {
+              "id": "synthetic-order",
+              "isin": "EG0000000001",
+              "quantity": 1421,
+              "status": "EXIT_PENDING",
+              "entry": 70.18,
+              "stop": 68.22,
+              "initialRiskCents": 334556,
+              "exit": {
+                "committedAt": "2026-10-25T07:17:10Z",
+                "reason": "STOP_BREACH",
+                "notBefore": null,
+                "status": "EXIT_PENDING",
+                "attempts": []
+              },
+              "actionHold": null
+            }
+          ],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T07:17:10Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 11963,
+            "unsettledCents": 0,
+            "reservedCents": 500,
+            "availableCashCents": 11463,
+            "investedCents": 9947000,
+            "equityCents": 9958963
+          },
+          "cashCents": 11963,
+          "feesCents": 15459,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1421,
+              "status": "FILLED",
+              "reservationCents": 0,
+              "fill": {
+                "id": "54c77e2cae178a0b5a50052b516161d1476f55b23e1283ba8003bb80733eb175",
+                "quantity": 1421,
+                "price": 70.18,
+                "marketAt": "2026-10-25T07:01:00.000Z",
+                "observedAt": "2026-10-25T07:17:10Z",
+                "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              },
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [
+            {
+              "id": "synthetic-order",
+              "isin": "EG0000000001",
+              "quantity": 1421,
+              "status": "EXIT_PENDING",
+              "entry": 70.18,
+              "stop": 68.22,
+              "initialRiskCents": 334556,
+              "exit": {
+                "committedAt": "2026-10-25T07:17:10Z",
+                "reason": "STOP_BREACH",
+                "notBefore": null,
+                "status": "EXIT_PENDING",
+                "attempts": []
+              },
+              "actionHold": null
+            }
+          ],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "full-liquidity-deadlock-5",
+        "at": "2026-10-27T07:17:10Z",
+        "type": "MINUTE",
+        "supplemental": false,
+        "result": {
+          "results": [
+            {
+              "position": "synthetic-order",
+              "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+            }
+          ]
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-27T07:17:10Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 11963,
+            "unsettledCents": 0,
+            "reservedCents": 500,
+            "availableCashCents": 11463,
+            "investedCents": 9804900,
+            "equityCents": 9816863
+          },
+          "cashCents": 11963,
+          "feesCents": 15459,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1421,
+              "status": "FILLED",
+              "reservationCents": 0,
+              "fill": {
+                "id": "54c77e2cae178a0b5a50052b516161d1476f55b23e1283ba8003bb80733eb175",
+                "quantity": 1421,
+                "price": 70.18,
+                "marketAt": "2026-10-25T07:01:00.000Z",
+                "observedAt": "2026-10-25T07:17:10Z",
+                "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              },
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [
+            {
+              "id": "synthetic-order",
+              "isin": "EG0000000001",
+              "quantity": 1421,
+              "status": "EXIT_PENDING",
+              "entry": 70.18,
+              "stop": 68.22,
+              "initialRiskCents": 334556,
+              "exit": {
+                "committedAt": "2026-10-25T07:17:10Z",
+                "reason": "STOP_BREACH",
+                "notBefore": null,
+                "status": "EXIT_PENDING",
+                "attempts": [
+                  {
+                    "at": "2026-10-27T07:17:10Z",
+                    "barStart": "2026-10-27T07:01:00.000Z",
+                    "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+                  }
+                ]
+              },
+              "actionHold": null
+            }
+          ],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-27T07:17:10Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 11963,
+            "unsettledCents": 0,
+            "reservedCents": 500,
+            "availableCashCents": 11463,
+            "investedCents": 9804900,
+            "equityCents": 9816863
+          },
+          "cashCents": 11963,
+          "feesCents": 15459,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1421,
+              "status": "FILLED",
+              "reservationCents": 0,
+              "fill": {
+                "id": "54c77e2cae178a0b5a50052b516161d1476f55b23e1283ba8003bb80733eb175",
+                "quantity": 1421,
+                "price": 70.18,
+                "marketAt": "2026-10-25T07:01:00.000Z",
+                "observedAt": "2026-10-25T07:17:10Z",
+                "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              },
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [
+            {
+              "id": "synthetic-order",
+              "isin": "EG0000000001",
+              "quantity": 1421,
+              "status": "EXIT_PENDING",
+              "entry": 70.18,
+              "stop": 68.22,
+              "initialRiskCents": 334556,
+              "exit": {
+                "committedAt": "2026-10-25T07:17:10Z",
+                "reason": "STOP_BREACH",
+                "notBefore": null,
+                "status": "EXIT_PENDING",
+                "attempts": [
+                  {
+                    "at": "2026-10-27T07:17:10Z",
+                    "barStart": "2026-10-27T07:01:00.000Z",
+                    "status": "FULL_QUANTITY_MINUTE_CAPACITY"
+                  }
+                ]
+              },
+              "actionHold": null
+            }
+          ],
+          "settlements": []
+        },
+        "diverged": false
+      }
+    ],
+    "limitation": "Recorded desired accepted intents only. No new research/risk decision is inferred for altered states. Missing market coverage, marks and corporate-action entitlements remain gaps. Counterfactual reservations are calculations, not broker orders or new Risk Agent approvals."
+  },
+  "contentHash": "17868c53dbb494b4b795ca41efcb5f829687ee2d17ff466d452189673908c247"
+}

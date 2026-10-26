@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-04",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "CIRA physical page 4, checked in extracted text and rendering, presents two simultaneous allocation views for 9M FY2025/26. K-12 normalized profit changes from -EGP321.5 million to +EGP49.3 million, an uplift of EGP370.8 million. Higher education falls by exactly that amount, from EGP1,505.0 million to EGP1,134.2 million; the combined EGP1,183.5 million is unchanged. The footnote splits the reclassification into EGP25.5 million of G&A and EGP345.3 million of finance cost. Only the G&A component affects EBITDA; the finance-cost allocation acts below EBITDA. It would be misleading to call the entire EGP370.8 million an EBITDA improvement.\n\nThe adjusted view may help analyze platform economics when central funding costs sit unevenly across legal/segment structures. It does not create group cash or establish a later statutory restatement. Counterevidence against a simple K-12 turnaround narrative includes normalized EBITDA falling in both presentation bases, teacher growth exceeding student growth, and utilization declining from 94.3% to 93.6% on this page. Revenue and student growth are supportive, but do not settle cost allocation fairness or cash conversion. The normalization excludes specified development revenues/costs/G&A, so normalized profit is not automatically statutory cash earnings. Need allocation drivers, normalization reconciliation and cash-flow/debt schedules. The retained branded IR-service PDF still has an unresolved issuer-to-service link; inspecting its content does not clear that provenance. Decision: use both views provisionally for research, with no trading clearance or inferred turnaround.",
+  "extractedNumbers": [
+    {
+      "id": "k12_before",
+      "unit": "EGP million",
+      "period": "9M FY2025/26",
+      "entity": "CIRA K-12 segment",
+      "evidenceId": "cira-segments",
+      "value": -321.5
+    },
+    {
+      "id": "k12_after",
+      "unit": "EGP million",
+      "period": "9M FY2025/26",
+      "entity": "CIRA K-12 segment",
+      "evidenceId": "cira-segments",
+      "value": 49.3
+    },
+    {
+      "id": "allocation_uplift",
+      "unit": "EGP million",
+      "period": "9M FY2025/26",
+      "entity": "CIRA K-12 segment",
+      "evidenceId": "cira-segments",
+      "value": 370.8
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

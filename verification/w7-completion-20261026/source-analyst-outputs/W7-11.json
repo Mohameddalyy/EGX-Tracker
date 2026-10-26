@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-11",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The retained CIB issuer-page capture identifies a 2025 stock dividend of one new share per ten existing shares. The multiplier is 1 + 1/10 = 1.1. Under the synthetic 1,000-share holding assumption, 100 bonus shares produce 1,100 total shares, with no fractional issue in this example. The capture labels record date 16 December 2025 and payment date 17 December 2025; neither is an identified ex-date.\n\nA stock dividend issues additional shares to holders, while a split subdivides existing units; the issuer's stock-dividend label should be retained even though both can require per-share historical adjustments. More shares alone do not create a 10% economic return. All else equal, value per share would adjust by the reciprocal multiplier, but no observed price path is supplied. For a bank, distribution capacity and capital retention matter; this share-count event alone shows neither capital strength nor a cash payout. Need before/after prices, adjustment methodology and vintage, entitlement verification and other distributions to calculate shareholder return.\n\nThere is an evidence-timing inconsistency: the CIB capture is timestamped 2026-10-25T22:56:12.986Z, later than this packet's 22:55:55.225Z cutoff. I report requested arithmetic from the supplied retained artifact, but do not represent that capture as cutoff-eligible evidence. Decision: retain the conditional share reconciliation for research and flag timing; no performance measurement or trading clearance.",
+  "extractedNumbers": [
+    {
+      "id": "share_multiplier",
+      "unit": "multiple",
+      "period": "2025 stock dividend",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "cib-dividends",
+      "value": 1.1
+    },
+    {
+      "id": "post_bonus_shares",
+      "unit": "shares",
+      "period": "2025 stock dividend hypothetical position",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "scenario-bonus",
+      "value": 1100
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "kind": "fixed-exit",
+  "createdAt": "2026-10-25T23:09:17.016Z",
+  "payload": {
+    "scope": "FIXED-EXIT-ATTRIBUTION",
+    "conditional": true,
+    "notACompetingStrategy": true,
+    "entryAuthorization": false,
+    "originalScope": "ENGINEERING_PAPER_ONLY",
+    "variantId": "FULL",
+    "scenario": "stress",
+    "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+    "originalInputHash": "32a544d32d101bd67e57d3b540be058358a7f2b2c5418f1bd00f08699836a962",
+    "supplementHash": "ce63f9392bbeb5d52e0f28913477ba9a0df6f9b7d2c4d3da8817d7134bcfc3df",
+    "originalFinalStateHash": "3218b30a54347a66645126c53f44c093021cc377e7d4b9719e35aa687dd19912",
+    "actual": {
+      "valuation": {
+        "at": "2026-10-25T07:51:01Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 10000000,
+        "unsettledCents": 0,
+        "reservedCents": 0,
+        "availableCashCents": 10000000,
+        "investedCents": 0,
+        "equityCents": 10000000
+      },
+      "cashCents": 10000000,
+      "feesCents": 0,
+      "realizedCents": 0,
+      "orders": [
+        {
+          "id": "synthetic-order",
+          "quantity": 1419,
+          "status": "NO_FILL_EVIDENCE",
+          "reservationCents": 0,
+          "fill": null,
+          "cancelAt": null,
+          "censored": true
+        }
+      ],
+      "positions": [],
+      "settlements": []
+    },
+    "counterfactual": {
+      "valuation": {
+        "at": "2026-10-25T07:51:01Z",
+        "status": "VALUED",
+        "unavailable": [],
+        "cashCents": 10000000,
+        "unsettledCents": 0,
+        "reservedCents": 0,
+        "availableCashCents": 10000000,
+        "investedCents": 0,
+        "equityCents": 10000000
+      },
+      "cashCents": 10000000,
+      "feesCents": 0,
+      "realizedCents": 0,
+      "orders": [
+        {
+          "id": "synthetic-order",
+          "quantity": 1419,
+          "status": "NO_FILL_EVIDENCE",
+          "reservationCents": 0,
+          "fill": null,
+          "cancelAt": null,
+          "censored": true
+        }
+      ],
+      "positions": [],
+      "settlements": []
+    },
+    "actualMinusFixedExitEquityCents": 0,
+    "drawdown": {
+      "fraction": 0,
+      "currentFraction": 0,
+      "recoveryRequiredFraction": 0,
+      "peakAt": null,
+      "troughAt": null,
+      "observations": 5,
+      "gaps": 0,
+      "basis": "Observed event snapshots only; gaps may hide larger losses. Stress loss is separate."
+    },
+    "suppressedRiskExits": 0,
+    "blockedEvents": 0,
+    "divergences": [],
+    "trace": [
+      {
+        "eventId": "stress-zone-no-fill-1",
+        "at": "2026-10-25T06:40:00Z",
+        "type": "OPEN_DAY",
+        "supplemental": false,
+        "result": {
+          "status": "OPENING_VALUATION_RECORDED",
+          "equityCents": 10000000
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T06:40:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T06:40:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "stress-zone-no-fill-2",
+        "at": "2026-10-25T06:41:00Z",
+        "type": "SET_PAUSE",
+        "supplemental": false,
+        "result": {
+          "paused": false
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T06:41:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T06:41:00Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "stress-zone-no-fill-3",
+        "at": "2026-10-25T06:51:00.000Z",
+        "type": "SUBMIT",
+        "supplemental": false,
+        "result": {
+          "status": "CONDITIONAL_RESERVATION",
+          "originalQuantity": 1419,
+          "quantity": 1419,
+          "originalIntentHash": "0b261970965c1d4acf43ec446f3692ff268a78cc3aa23e30974fc9f97b96d088",
+          "desiredBudget": {
+            "maxCashAllocationEGP": 100000,
+            "maxPlannedLossEGP": null,
+            "exceptionIds": [
+              "POSITION_RISK",
+              "AGGREGATE_RISK",
+              "NAME_GROUP",
+              "SECTOR_CLUSTER",
+              "CASH_RESERVE",
+              "POSITION_COUNT",
+              "IMPORTANT_GAP"
+            ]
+          }
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T06:51:00.000Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 9996111,
+            "availableCashCents": 3889,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1419,
+              "status": "RESERVED",
+              "reservationCents": 9996111,
+              "fill": null,
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T06:51:00.000Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 9996111,
+            "availableCashCents": 3889,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1419,
+              "status": "RESERVED",
+              "reservationCents": 9996111,
+              "fill": null,
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "stress-zone-no-fill-4",
+        "at": "2026-10-25T07:17:10Z",
+        "type": "MINUTE",
+        "supplemental": false,
+        "result": {
+          "results": [
+            {
+              "order": "synthetic-order",
+              "status": "PRICE_RANGE_ZONE"
+            }
+          ]
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T07:17:10Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 9996111,
+            "availableCashCents": 3889,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1419,
+              "status": "RESERVED",
+              "reservationCents": 9996111,
+              "fill": null,
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T07:17:10Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 9996111,
+            "availableCashCents": 3889,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1419,
+              "status": "RESERVED",
+              "reservationCents": 9996111,
+              "fill": null,
+              "cancelAt": null,
+              "censored": false
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      },
+      {
+        "eventId": "stress-zone-no-fill-5",
+        "at": "2026-10-25T07:51:01Z",
+        "type": "TICK",
+        "supplemental": false,
+        "result": {
+          "status": "CLOCK_RECONCILED"
+        },
+        "actual": {
+          "valuation": {
+            "at": "2026-10-25T07:51:01Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1419,
+              "status": "NO_FILL_EVIDENCE",
+              "reservationCents": 0,
+              "fill": null,
+              "cancelAt": null,
+              "censored": true
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "counterfactual": {
+          "valuation": {
+            "at": "2026-10-25T07:51:01Z",
+            "status": "VALUED",
+            "unavailable": [],
+            "cashCents": 10000000,
+            "unsettledCents": 0,
+            "reservedCents": 0,
+            "availableCashCents": 10000000,
+            "investedCents": 0,
+            "equityCents": 10000000
+          },
+          "cashCents": 10000000,
+          "feesCents": 0,
+          "realizedCents": 0,
+          "orders": [
+            {
+              "id": "synthetic-order",
+              "quantity": 1419,
+              "status": "NO_FILL_EVIDENCE",
+              "reservationCents": 0,
+              "fill": null,
+              "cancelAt": null,
+              "censored": true
+            }
+          ],
+          "positions": [],
+          "settlements": []
+        },
+        "diverged": false
+      }
+    ],
+    "limitation": "Recorded desired accepted intents only. No new research/risk decision is inferred for altered states. Missing market coverage, marks and corporate-action entitlements remain gaps. Counterfactual reservations are calculations, not broker orders or new Risk Agent approvals."
+  },
+  "contentHash": "7997bc266321adb948bb797eccead8b29b0fb422618c84ce623000c373df744e"
+}

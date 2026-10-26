@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-13",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The original ORAS physical page 68, Note 21, gives a proposed exchange ratio of 0.4634 newly issued Orascom Construction shares per OCI share. A synthetic holding of 1,000 OCI shares maps arithmetically to 463.4 ORAS shares before fractional settlement rules. It is not a claim that 463 whole shares plus a cash amount will actually be delivered.\n\nThe note states that ORAS shareholders approved resolutions on 22 January 2026, but the combination remained conditional on OCI shareholder and regulatory approvals and was uncompleted at reporting. The long-stop date was extended to 30 December 2026. It is described as a non-adjusting subsequent event, not a completed issuance. This is an acquisition share exchange, not a rights issue or subscription entitlement. Total dilution cannot be calculated without eligible OCI shares, the current ORAS share base, final terms and completion facts.\n\nThe approved ORAS resolutions are supportive evidence of progress, but they do not eliminate execution/approval risk. A construction investor would need to evaluate how the proposed assets, liabilities and capital structure affect the group's risk and earning power; no synergy or post-combination value is established here. The note is reporting-date evidence, not a refreshed corporate-action status at the assessment date. Decision: use the ratio only as conditional arithmetic, obtain current action/identity and settlement clearance before sizing, and do not treat a hypothetical exchange as an executed investment.",
+  "extractedNumbers": [
+    {
+      "id": "exchange_ratio",
+      "unit": "ORAS shares per OCI share",
+      "period": "proposed combination at H1 2026 reporting",
+      "entity": "Orascom Construction PLC",
+      "evidenceId": "oras-combination",
+      "value": 0.4634
+    },
+    {
+      "id": "arithmetic_new_shares",
+      "unit": "ORAS shares",
+      "period": "hypothetical 1000 OCI share exchange",
+      "entity": "Hypothetical OCI shareholder",
+      "evidenceId": "scenario-combination",
+      "value": 463.4
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

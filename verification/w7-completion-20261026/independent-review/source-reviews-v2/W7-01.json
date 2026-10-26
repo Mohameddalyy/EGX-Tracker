@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.882Z",
+  "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+  "runHash": "71273dab6b346ec1207088c6e3aed3c1eb625f535148067bfb5fd83b315504ae",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains financing income/deposit costs and missing cost-of-risk denominator after visually inspecting the source table."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Contrasts positive profit with netting/release risk and absent staging evidence."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct income reconciliation and signed half-year ECL; the additionally derived first-quarter charge80,318 thousand is correct and clearly distinguished from the quarter-two release."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Names specific credit, capital and valuation work needed before an investment conclusion."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Separates missing loan denominator and first-publication timing from known statement facts."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

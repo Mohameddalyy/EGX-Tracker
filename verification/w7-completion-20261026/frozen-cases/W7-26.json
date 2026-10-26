@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "case",
+  "createdAt": "2026-10-26T08:51:35.882Z",
+  "payload": {
+    "id": "W7-26",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "task": "Identify this case ID and quote its exact cutoffAt. Calculate seconds from hypothetical original decision to incoming evidence capture and seconds from that incoming capture to this case cutoff. State whether the newly captured document may be used for the current retrospective assessment, whether it belongs in the original decision information set on the supplied archive, and what remains unknown about first public availability. Do not backdate receipt from issuerDocumentDate. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"decision_to_capture_seconds\",\"unit\":\"seconds\",\"period\":\"hypothetical original decision to incoming capture\",\"entity\":\"SYNTHETIC-TEMPORAL-26\",\"evidenceId\":\"temporal-facts-26\"},{\"id\":\"incoming_capture_age_seconds\",\"unit\":\"seconds\",\"period\":\"relative to W7-26 cutoffAt\",\"entity\":\"SYNTHETIC-TEMPORAL-26\",\"evidenceId\":\"temporal-facts-26\"}]. Treat this as a paper-only synthetic temporal reasoning task, give bounded conclusions and state missing evidence. No trades, market claims or rule changes follow.",
+    "cutoffAt": "2026-10-25T23:20:04.330Z",
+    "frozenAt": "2026-10-26T08:51:35.882Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-26",
+        "source": "local:authored-synthetic-temporal-facts",
+        "contentHash": "b94046e1f427010b031bf66326f0ac4015114257c9a18e957a4224919e8f2cab",
+        "availableAt": "2026-10-25T23:20:03.223Z",
+        "passage": "{\n  \"scope\": \"AUTHORED_SYNTHETIC_TEMPORAL_FACTS_NOT_MARKET_OR_ISSUER_OBSERVATIONS\",\n  \"recordedAt\": \"2026-10-25T23:20:03.223Z\",\n  \"recordedBy\": \"/root/w7_case_curator\",\n  \"facts\": {\n    \"entity\": \"SYNTHETIC-TEMPORAL-26\",\n    \"hypotheticalOriginalDecisionAt\": \"2026-10-25T23:18:03.223Z\",\n    \"issuerDocumentDate\": \"2026-10-25\",\n    \"incomingEvidenceCapturedAt\": \"2026-10-25T23:19:33.223Z\",\n    \"evaluationRecordCapturedAt\": \"2026-10-25T23:20:03.223Z\",\n    \"firstPublicAvailabilityAt\": null,\n    \"record\": \"The hypothetical original decision archive contains no receipt of this document before incomingEvidenceCapturedAt.\"\n  }\n}",
+        "localPath": "data/research/evidence/w7-evaluation/temporal-case-26.json",
+        "availabilityBasis": "Actual capture of this newly authored synthetic fixture; timestamps inside facts are expressly synthetic scenario events."
+      }
+    ],
+    "truth": {
+      "checkedBy": "/root/w7_case_curator",
+      "checkedAt": "2026-10-25T23:20:04.331Z",
+      "numbers": [
+        {
+          "id": "decision_to_capture_seconds",
+          "value": 90,
+          "absoluteTolerance": 0,
+          "unit": "seconds",
+          "period": "hypothetical original decision to incoming capture",
+          "entity": "SYNTHETIC-TEMPORAL-26",
+          "evidenceId": "temporal-facts-26"
+        },
+        {
+          "id": "incoming_capture_age_seconds",
+          "value": 31.107,
+          "absoluteTolerance": 0.000001,
+          "unit": "seconds",
+          "period": "relative to W7-26 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-26",
+          "evidenceId": "temporal-facts-26"
+        }
+      ]
+    },
+    "curation": {
+      "scope": "POST_FAILURE_DEVELOPMENT_VALIDATION",
+      "syntheticContext": true,
+      "notes": [
+        "Newly authored after an observed case-cutoff reuse failure; not an untouched generalization holdout.",
+        "All scenario event dates are synthetic; actual record creation, evaluation cutoff and checking clocks are honestly recorded.",
+        "Raw source contains timestamp facts and labels only, without expected extraction values or case-correction annotations.",
+        "Existing 22 input cases and frozen artifacts are unchanged."
+      ],
+      "independence": "Independent source/number review required before freezing new CLI artifacts."
+    },
+    "caseHash": "c307c2363cd338a4b9011d7d7c32c0c8a5de1ab5b2c0364d3629d22f76c766e7",
+    "groundTruthStatus": "SUPPLIED_ADJUDICATION_REQUIRES_INDEPENDENT_REVIEW"
+  },
+  "contentHash": "8d3ea9a313d2a7841b957207f38b906bad98f91a5f41e016e8f0c0016daf288d"
+}

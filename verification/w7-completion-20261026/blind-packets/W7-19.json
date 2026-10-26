@@ -1,0 +1,37 @@
+{
+  "id": "W7-19",
+  "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+  "task": "For the hypothetical technical pass, extract issuer operating cash flow and compute net profit minus operating cash flow. Discuss the counterevidence and missing clearance supporting no trade or further research, while retaining the mechanical opportunity denominator. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"profit_cash_gap\",\"unit\":\"USD million\",\"period\":\"six months ended 2026-06-30\",\"entity\":\"Orascom Construction consolidated\",\"evidenceId\":\"oras-cash\"},{\"id\":\"mechanical_opportunities\",\"unit\":\"opportunities\",\"period\":\"fixture decision event\",\"entity\":\"Orascom Construction consolidated\",\"evidenceId\":\"scenario-trigger\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "oras-profit",
+      "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "source": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "availableAt": "2026-10-23T16:27:45.520Z",
+      "passage": "Physical page 8. Reviewed consolidated statement; USD millions. Six months ended 30 June 2026: revenue 2,978.0; gross profit 289.5; operating profit 179.5; net profit 127.8; owners 115.3; non-controlling interests 12.5; basic/diluted EPS USD1.05. Three months ended 30 June 2026: revenue 1,509.6; net profit 69.8; owners 61.9.",
+      "localPath": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+      "page": 8,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    },
+    {
+      "id": "oras-cash",
+      "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "source": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "availableAt": "2026-10-23T16:27:45.520Z",
+      "passage": "Physical page 10. Reviewed consolidated cash flows; USD millions, six months ended 30 June 2026: net profit 127.8; changes in inventories (12.9), trade and other receivables (329.2), contract work in progress 43.4, trade and other payables (1.8), advance payments construction contracts 40.0, billing in excess of construction contracts 24.4, provisions (13.5); operating cash flow (54.5). Investing cash flow (240.9), financing cash flow 180.9, net cash change (114.5); beginning cash 1,369.7; currency translation (25.1); ending cash 1,230.1.",
+      "localPath": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+      "page": 10,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    },
+    {
+      "id": "scenario-trigger",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. An ORAS technical gate is assumed to pass for one mechanical opportunity. It is not a market observation or actual signal. The genuine issuer pages supplied are the only fundamental evidence. No refreshed action, liquidity, valuation or macro clearance is supplied. A discretionary refusal must not erase this one mechanical opportunity.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

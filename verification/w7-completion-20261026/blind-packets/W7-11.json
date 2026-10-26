@@ -1,0 +1,27 @@
+{
+  "id": "W7-11",
+  "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+  "task": "Compute share-count multiplier and post-bonus shares for the hypothetical holding. Explain the distinction between stock dividend and split, and why no return is measurable from an unadjusted price change without prices/adjustment vintage. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"share_multiplier\",\"unit\":\"multiple\",\"period\":\"2025 stock dividend\",\"entity\":\"Commercial International Bank Egypt\",\"evidenceId\":\"cib-dividends\"},{\"id\":\"post_bonus_shares\",\"unit\":\"shares\",\"period\":\"2025 stock dividend hypothetical position\",\"entity\":\"Commercial International Bank Egypt\",\"evidenceId\":\"scenario-bonus\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:56:32.892Z",
+  "evidence": [
+    {
+      "id": "cib-dividends",
+      "contentHash": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+      "source": "https://www.cibeg.com/en/investor-relations/governance/dividends",
+      "availableAt": "2026-10-25T22:56:12.986Z",
+      "passage": "Physical page HTML dividend table. Official issuer dividend table: 2026 cash dividend EGP6 per share; record date 06 April 2026; payment 09 April 2026. 2025 stock dividend 1 for 10; record date 16 December 2025; payment date 17 December 2025. Table does not label an ex-date.",
+      "localPath": "data/research/evidence/w7-evaluation/cib-dividends-web-capture.json",
+      "page": "HTML dividend table",
+      "availabilityBasis": "Actual web-tool capture of official issuer page; direct HTTP HTML download was an Incapsula challenge and is retained only as a failed attempt, not as evidence."
+    },
+    {
+      "id": "scenario-bonus",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_POSITION_ASSUMPTION. Hypothetical holder owns 1,000 CIB shares before the issuer-described 2025 one-for-ten stock dividend. Ignore fractional handling because this holding is divisible by ten. No observed market prices are supplied.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

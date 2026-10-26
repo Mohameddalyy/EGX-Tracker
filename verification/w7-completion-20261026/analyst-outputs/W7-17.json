@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-17",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:38.6905307Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "The two described exposures sum to EGP30,000 + EGP20,000 = EGP50,000. Relative to EGP100,000 equity, 50% is invested in holdings with the stated shared USD-input/EGP-revenue risk (scenario-correlation). This is a gross allocation measure for the two names, not a predicted 50% portfolio loss and not a measurement of their precise currency sensitivity.\n\nIf EGP weakens against USD or USD input costs rise, both businesses could face input-cost and working-capital pressure while revenues remain denominated in EGP. That is a plausible shared economic channel from the supplied exposure descriptions. It makes the two names less diversifying against that particular shock than their separate labels might suggest. The actual impact depends on imported-input intensity, inventory timing, pricing power, contractual pass-through, hedges and any natural offsetting revenues or assets; none is supplied.\n\nCounterevidence to assuming identical behavior is that common inputs do not establish identical products, customers, hedging, margins or equity-return responses. Missing return histories do not imply zero correlation, while the qualitative common channel does not justify assigning correlation of one or any other coefficient. Covariance requires paired returns, an observation horizon and variability estimation; adding portfolio values supplies none of these. There is no statistical covariance or calibrated stress-loss estimate here.\n\nBounded decision: flag the EGP50,000 shared-factor allocation, request hedging and pass-through evidence, and evaluate explicitly labeled common-factor stresses before increasing this exposure. Consider diversification into independently evidenced economic drivers, but do not claim an alternative is uncorrelated without data. These are authored exposures, not real holdings or market observations, and no issuer-specific valuation or trade clearance follows.",
+  "extractedNumbers": [
+    {
+      "id": "combined_exposure",
+      "unit": "EGP",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-D and ENGINEERING-E",
+      "evidenceId": "scenario-correlation",
+      "value": 50000
+    },
+    {
+      "id": "shared_exposure_percent",
+      "unit": "percent of equity",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-D and ENGINEERING-E",
+      "evidenceId": "scenario-correlation",
+      "value": 50
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

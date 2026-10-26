@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-16",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The synthetic fixture's name ceiling is 15% x EGP100,000 = EGP15,000. Against EGP14,000 existing exposure, additional name headroom is EGP1,000. In scenario A, min(EGP6,000 desired, EGP1,000 headroom, EGP8,000 free cash) = EGP1,000. In scenario B, free settled cash is EGP8,000 - EGP7,500 reservations = EGP500, so the arithmetic maximum is EGP500. These are conditional arithmetic limits under this fixture, not executable share quantities or approvals.\n\nThe desired EGP6,000 would take name exposure to 20% of unchanged equity, above the stated 15% fixture cap. Available cash is supportive of funding in A but does not confer authority to exceed concentration limits; reservations also cannot be double-spent in B. No business sector is established by the ENGINEERING-C label, so issuer quality cannot justify an invented exception. Need prices, fees, whole-share effects, liquidity, other portfolio constraints and entry controls before an actual proposal. In particular, this calculation cannot override any independent prohibition on adding to an existing holding. Decision: reject the desired addition; retain EGP1,000/EGP500 solely as arithmetic headroom under the assumptions. No exception approval or policy amendment is present.",
+  "extractedNumbers": [
+    {
+      "id": "name_headroom",
+      "unit": "EGP",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-C",
+      "evidenceId": "scenario-concentration",
+      "value": 1000
+    },
+    {
+      "id": "scenario_a_addition",
+      "unit": "EGP",
+      "period": "fixture scenario A",
+      "entity": "ENGINEERING-C",
+      "evidenceId": "scenario-concentration",
+      "value": 1000
+    },
+    {
+      "id": "scenario_b_addition",
+      "unit": "EGP",
+      "period": "fixture scenario B",
+      "entity": "ENGINEERING-C",
+      "evidenceId": "scenario-concentration",
+      "value": 500
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

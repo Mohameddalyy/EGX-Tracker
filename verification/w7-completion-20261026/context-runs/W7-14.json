@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.095Z",
+  "payload": {
+    "caseId": "W7-14",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-14",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "scenario-liquidity",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0.019
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.436Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-14\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"scenario-liquidity\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe synthetic minute capacity is 30,000 x 2% = 600 shares. Daily capacity is 20,000 x 5% = 1,000 shares. Effective capacity is the smaller, 600 shares. The proposed whole 1,000-share order meets the daily ceiling exactly but exceeds the minute ceiling, so it fails the conjunctive whole-order rule. It must not be partially executed for 600 shares under this fixture.\n\nThe daily pass is relevant counterevidence to a claim that every liquidity check fails, but cannot override the binding minute constraint. These are authored volumes and participation rules, not observed market liquidity or a production-policy amendment. They supply no spread, price-depth, market-impact, identity/action or funding evidence. The entity's sector is unspecified, so no issuer-specific sector thesis can be invented; generally, common-demand or liquidity shocks could shrink executable capacity across related holdings, which remains unquantified here. My bounded decision is zero execution of this proposed order at this event, retaining it as failed capacity rather than fabricating a fill. A later separately assessed executable observation or a permitted new proposal would require a fresh decision, not assumed clearance. The volume arithmetic does not establish a good investment or an assured future exit.",
+    "extractedNumbers": [
+      {
+        "id": "minute_capacity",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity",
+        "value": 600
+      },
+      {
+        "id": "daily_capacity",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity",
+        "value": 1000
+      },
+      {
+        "id": "effective_capacity",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity",
+        "value": 600
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "41b3e156c3460eed8024121397e530a263f1ebd59bfcaa7005008afd863394bd",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+    "packetHash": "ce96c1cbd093f8444832dc114bd5885444e859d81cdc759005ad31da54ccd10b",
+    "outputHash": "b83792afd603d51f0e66c850c2ffe33c9f624fea47afe5408a9703da37146696",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-14.json",
+    "originalFileHash": "5dc74199940480f520e8e991346d87ce450932b1f081efa1bb4df20896f9738f",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "20979580e283fe894d5d852156dd486c341b873efad4cb7b0ae21f2b68008248"
+}

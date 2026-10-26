@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-17",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The synthetic exposures sum to EGP30,000 + EGP20,000 = EGP50,000, or 50% of EGP100,000 portfolio equity. This is the amount invested in two businesses described as sharing USD-priced input costs and EGP sales, not an estimate that 50% of equity will be lost if FX changes.\n\nEGP weakening against USD could squeeze both businesses' margins and raise working-capital needs if customer prices cannot adjust promptly. Two names therefore need not deliver independent risk diversification. No return histories or hedge evidence are supplied: correlation is unknown, not zero, and neither the exposure sum nor the common description estimates a covariance matrix or a coefficient of one. Counterevidence to a deterministic joint-loss claim is that pass-through, inventories bought at earlier rates, supplier terms or hedging could differ; none is demonstrated in the fixture. Their magnitudes and timing matter as much as nominal currency labels. Need input import shares, repricing contracts, currency cash/debt, hedging and contemporaneous return history to quantify risk. Decision: treat 50% as a shared-factor exposure flag, stress plausible cost/pass-through scenarios before adding risk, and do not present an invented statistical risk estimate or real-market clearance.",
+  "extractedNumbers": [
+    {
+      "id": "combined_exposure",
+      "unit": "EGP",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-D and ENGINEERING-E",
+      "evidenceId": "scenario-correlation",
+      "value": 50000
+    },
+    {
+      "id": "shared_exposure_percent",
+      "unit": "percent of equity",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-D and ENGINEERING-E",
+      "evidenceId": "scenario-correlation",
+      "value": 50
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

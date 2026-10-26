@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.884Z",
+  "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+  "runHash": "f60b578e26b40b66ebbc36a91c91dea7955a434bd6d8e2d7c40271e84adca9a3",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains bank credit quality, funding repricing and capital usage as earnings durability drivers."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Positive earnings and small NCI are weighed against provision netting and missing credit schedules."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correctly separates group and attributable profit and reconciles NCI."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Specifies credit-quality follow-up and uses attributable profit for shareholder analysis."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Neither equates low charges with clean assets nor infers fraud from omissions."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

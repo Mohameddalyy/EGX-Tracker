@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.839Z",
+  "payload": {
+    "caseId": "W7-15",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:37.5662574Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Minute capacity is 10,000 x 2% = 200 shares and daily capacity is 30,000 x 5% = 1,500 shares, so effective exit capacity is 200 shares (scenario-exit). The holding is 800 shares and the exit is all-or-none. Because 800 exceeds the effective capacity, actually executed exit quantity is zero and all 800 shares remain held. Capacity is a ceiling, not an executed trade; reporting a 200-share sale would violate the rule.\n\nThe daily volume would accommodate the full holding under its own ceiling, which is counterevidence to a blanket assertion that the security has no liquidity. But the minute limit binds at this event, and no later executable observation exists. An intention or trigger to exit does not remove the position, realize cash or cap its losses. The exit remains pending, with continuing market exposure and potential gap/illiquidity risk.\n\nThere is no execution price, current mark, cost basis or later fill in the evidence. Therefore sale proceeds, realized gain/loss, retained monetary exposure and liquidation value cannot be calculated. If a portfolio display needs a mark, its source and timestamp would have to be separately evidenced; I do not substitute the desired exit price for a realized value.\n\nNo issuer or sector fundamentals are supplied, so the ENGINEERING-B identifier cannot justify a business-quality claim. The decision-useful finding is liquidity mismatch between position size and the permitted exit mechanism. Bounded decision: keep the 800 shares in holdings and the exit pending, and seek a later valid event through the authorized process. Do not fabricate proceeds, partial liquidation, later recovery or a production-policy change from this synthetic fixture.",
+    "extractedNumbers": [
+      {
+        "id": "exit_capacity",
+        "unit": "shares",
+        "period": "fixture exit event",
+        "entity": "ENGINEERING-B",
+        "evidenceId": "scenario-exit",
+        "value": 200
+      },
+      {
+        "id": "executed_exit",
+        "unit": "shares",
+        "period": "fixture exit event",
+        "entity": "ENGINEERING-B",
+        "evidenceId": "scenario-exit",
+        "value": 0
+      },
+      {
+        "id": "retained_shares",
+        "unit": "shares",
+        "period": "fixture exit event",
+        "entity": "ENGINEERING-B",
+        "evidenceId": "scenario-exit",
+        "value": 800
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "c815f07d9bb8ef1eebc6dbea4693b39052bc199ee67dffdedefde6aafcdec737",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+    "packetHash": "73becb5c5159f51ee5afa35b7b5db175a40b4e71b15c243a1f016ffc4a5f5e60",
+    "outputHash": "63d1cb71ad82a007bee7cba95698b47a9b2f71b62c4a1632daff657d198604f8",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-15.json",
+    "originalFileHash": "7eac4b758ad7acabcfa0b3296f6de7d586c5c9e96a27b805ec580bdd564df077",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "aa91487bf2321c169f1b5da466d08a8784e6808dd35292bf8a61fa11d14ea5fa"
+}

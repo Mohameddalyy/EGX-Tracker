@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.971Z",
+  "payload": {
+    "caseId": "W7-19",
+    "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "878555ced8d347221721c4ffff66b9648d6b2f2b043f6d43df602f33976d59d5",
+    "reviewHash": "b5f016610ba3541529c4a30cbf97a97f270e2a6a81c65e4d772f27030ede09ae",
+    "categories": [
+      "nonfinancials",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "profit_cash_gap",
+        "status": "CORRECT"
+      },
+      {
+        "id": "mechanical_opportunities",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Explains construction working-capital risks without asserting the unverified cause."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Positive profit, cash and advance movements are weighed against receivable absorption."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct cash-profit gap and preserves one mechanical opportunity."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Separates discretionary refusal from technical failure and prioritizes collection/clearance work."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No fraud/distress inevitability or actual signal/fill is fabricated."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 404.185,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "4fe356d191bebb74351262dce496af37a7f4a4e9be768f16d927f43ce2c0b663"
+}

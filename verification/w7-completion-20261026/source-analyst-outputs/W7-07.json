@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-07",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "ORAS physical page 8 uses USD millions: consolidated total profit of USD127.8 million converts to USD127,800,000. The separate parent statement on physical page 41 uses individual USD and reports USD5,155,743. Consolidated minus separate profit is therefore USD122,644,257 at the consolidated statement's rounded precision. This is a scope difference, not a reconciliation that can be assigned wholly to subsidiaries: consolidation removes intragroup items and includes non-controlling interests, while the parent's dividend and management-fee income have separate recognition mechanics.\n\nPage 41 explicitly says its displayed USD1.05 basic EPS is computed from consolidated statements including subsidiaries. Dividing parent-only profit by this group EPS would mix incompatible scopes and cannot estimate the share count. Group total profit is itself different from group profit attributable to owners, USD115.3 million. Even a scope-matched division by rounded EPS would be an approximation to weighted-average shares, not proof of current shares outstanding.\n\nFor a construction holding company, operating subsidiaries' earnings can be substantial without matching parent distributable cash. The parent's positive profit and dividend income are supportive, but the contrast does not prove cash can freely be upstreamed. Need consolidation reconciliation, distribution restrictions, EPS/share-count note and corporate-action status. Decision: use group earnings for operating analysis and separate statements for parent obligations, avoiding a fabricated share count or valuation clearance.",
+  "extractedNumbers": [
+    {
+      "id": "group_profit",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 127800000
+    },
+    {
+      "id": "parent_profit",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction separate parent",
+      "evidenceId": "oras-parent",
+      "value": 5155743
+    },
+    {
+      "id": "scope_difference",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom consolidated minus separate",
+      "evidenceId": "oras-parent",
+      "value": 122644257
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

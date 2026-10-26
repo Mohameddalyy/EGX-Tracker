@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.141Z",
+  "payload": {
+    "caseId": "W7-18",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-18",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "scenario-funding",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0.019
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.439Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-18\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"scenario-funding\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nFree settled cash is EGP3,000 - EGP2,000 reservations = EGP1,000. Desired allocation EGP10,000 at assumed EGP20 per share is 500 shares. With fractional shares prohibited and zero fees only for this fixture, the cash-funded ceiling is floor(1,000/20) = 50 shares. The desired order requires EGP9,000 more free cash than available; no borrowing or exception authorization exists, so it is rejected.\n\nThe claimed 95% confidence is an uncalibrated assertion. It does not create money, release reservations or authorize execution. The available EGP1,000 is counterevidence to saying no smaller allocation could ever be funded, but 50 shares is only an arithmetic maximum. A smaller proposal still needs permitted sizing, applicable exposure constraints, security identity and corporate-action checks, execution/liquidity and a substantive investment thesis; actual fees and reservation updates matter outside the zero-fee assumption. No business sector or cash-flow evidence is supplied, so sector resilience and correlated portfolio risks remain unknown. I would retain the rejection of 500 shares and send any separately proposed smaller quantity for those checks, not automatically execute it. The fixture price is assumed, not an observed market quote, and this calculation gives no trading authorization.",
+    "extractedNumbers": [
+      {
+        "id": "free_settled_cash",
+        "unit": "EGP",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-F",
+        "evidenceId": "scenario-funding",
+        "value": 1000
+      },
+      {
+        "id": "desired_shares",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-F",
+        "evidenceId": "scenario-funding",
+        "value": 500
+      },
+      {
+        "id": "funded_share_ceiling",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-F",
+        "evidenceId": "scenario-funding",
+        "value": 50
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "fd36b6cc7a26cc55fb49552efef89a47e315771b5ed04a3c1bd3ea68eb27529a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+    "packetHash": "c088019b6b4bc0d3226d419c9cfe3d8633ccee0f242a32c83b1c47e6c115bab1",
+    "outputHash": "100df275eb52877602d75307069e7f6ef52ca5570e105fc7598e9ff55eea114e",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-18.json",
+    "originalFileHash": "46f249d0fc3f02096abeec3afa8dfe6ab6d5fed829ee8492e069cd58a986200c",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "a534d8b8f58dd3b3253d7a2232c89348da3fa909759455828f04a977e75a66bf"
+}

@@ -1,0 +1,176 @@
+{
+  "reviewerActorId": "/root/w7_independent_review",
+  "reviewedAt": "2026-10-25T23:06:28.218Z",
+  "status": "VERIFIED",
+  "caseIds": [
+    "W7-13",
+    "W7-21",
+    "W7-22"
+  ],
+  "numbersVerified": 11,
+  "checks": [
+    {
+      "caseId": "W7-13",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-13.input.json",
+      "inputByteHash": "e000ef60153b461001e016573cb8bc6ff8c34173fc0d37ec1bcaa2e242f110bf",
+      "numbers": [
+        {
+          "id": "exchange_ratio",
+          "independentValue": 0.4634,
+          "recordedValue": 0.4634,
+          "unit": "ORAS shares per OCI share",
+          "period": "proposed combination at H1 2026 reporting",
+          "entity": "Orascom Construction PLC",
+          "evidenceId": "oras-combination",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "arithmetic_new_shares",
+          "independentValue": 463.4,
+          "recordedValue": 463.4,
+          "unit": "ORAS shares",
+          "period": "hypothetical 1000 OCI share exchange",
+          "entity": "Hypothetical OCI shareholder",
+          "evidenceId": "scenario-combination",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "oras-combination",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-combination",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-21",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-21.input.json",
+      "inputByteHash": "f5201b00977fd6b6267e2c94ce3420914e5348989e0dc294c2c6fa39ade1dd96",
+      "numbers": [
+        {
+          "id": "post_addition_name_percent",
+          "independentValue": 70,
+          "recordedValue": 70,
+          "unit": "percent of equity",
+          "period": "fixture after proposed addition",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "remaining_cash",
+          "independentValue": 15000,
+          "recordedValue": 15000,
+          "unit": "EGP",
+          "period": "fixture after proposed addition",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "common_factor_percent",
+          "independentValue": 85,
+          "recordedValue": 85,
+          "unit": "percent of equity",
+          "period": "fixture after proposed addition",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "joint_adverse_equity",
+          "independentValue": 79500,
+          "recordedValue": 79500,
+          "unit": "EGP",
+          "period": "fixture joint adverse valuation",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "full-concentration",
+          "path": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+          "contentHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-22",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-22.input.json",
+      "inputByteHash": "1bd51233170775e84b7319b62c388cf878e3dfbc60e4b93790108879ce21524a",
+      "numbers": [
+        {
+          "id": "desired_shares",
+          "independentValue": 3000,
+          "recordedValue": 3000,
+          "unit": "shares",
+          "period": "fixture proposed allocation",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "stated_upside_percent",
+          "independentValue": 10.000000000000009,
+          "recordedValue": 10,
+          "unit": "percent price return",
+          "period": "fixture target versus entry",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "adverse_price_return_percent",
+          "independentValue": -40,
+          "recordedValue": -40,
+          "unit": "percent price return",
+          "period": "fixture adverse value versus entry",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "adverse_portfolio_equity",
+          "independentValue": 76000,
+          "recordedValue": 76000,
+          "unit": "EGP",
+          "period": "fixture adverse valuation after allocation",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "retained_mechanical_opportunities",
+          "independentValue": 1,
+          "recordedValue": 1,
+          "unit": "opportunities",
+          "period": "fixture decision event",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "full-abstention",
+          "path": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+          "contentHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    }
+  ],
+  "qualitativeFraming": "W7-13 now neutral Orascom Construction PLC entity. W7-21 now first A purchase70k from85k cash plus existing B15k, explicitly preserves immutable no-pyramiding, permits funded concentration reasoning without a fixed cap. W7-22 distinguishes discretionary abstention from funding/mechanical rejection, preserves one opportunity and uncalibrated scenario status.",
+  "independence": "Separate AI actor; no independent-human or trading-performance validation."
+}

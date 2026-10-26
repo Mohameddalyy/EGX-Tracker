@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:19:02.302Z",
+  "payload": {
+    "caseId": "W7-13",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "The original ORAS physical page 68, Note 21, gives a proposed exchange ratio of 0.4634 newly issued Orascom Construction shares per OCI share. A synthetic holding of 1,000 OCI shares maps arithmetically to 463.4 ORAS shares before fractional settlement rules. It is not a claim that 463 whole shares plus a cash amount will actually be delivered.\n\nThe note states that ORAS shareholders approved resolutions on 22 January 2026, but the combination remained conditional on OCI shareholder and regulatory approvals and was uncompleted at reporting. The long-stop date was extended to 30 December 2026. It is described as a non-adjusting subsequent event, not a completed issuance. This is an acquisition share exchange, not a rights issue or subscription entitlement. Total dilution cannot be calculated without eligible OCI shares, the current ORAS share base, final terms and completion facts.\n\nThe approved ORAS resolutions are supportive evidence of progress, but they do not eliminate execution/approval risk. A construction investor would need to evaluate how the proposed assets, liabilities and capital structure affect the group's risk and earning power; no synergy or post-combination value is established here. The note is reporting-date evidence, not a refreshed corporate-action status at the assessment date. Decision: use the ratio only as conditional arithmetic, obtain current action/identity and settlement clearance before sizing, and do not treat a hypothetical exchange as an executed investment.",
+    "extractedNumbers": [
+      {
+        "id": "exchange_ratio",
+        "unit": "ORAS shares per OCI share",
+        "period": "proposed combination at H1 2026 reporting",
+        "entity": "Orascom Construction PLC",
+        "evidenceId": "oras-combination",
+        "value": 0.4634
+      },
+      {
+        "id": "arithmetic_new_shares",
+        "unit": "ORAS shares",
+        "period": "hypothetical 1000 OCI share exchange",
+        "entity": "Hypothetical OCI shareholder",
+        "evidenceId": "scenario-combination",
+        "value": 463.4
+      }
+    ],
+    "toolCalls": 0,
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "originalToolCalls": [],
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "f3a38e546464620e2331f4725c33d0876e5ed564f8c29d7cf7b9572e505baf61",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+    "packetHash": "203ae86cd49d7799735936a9e4a83d9b24e9115f1deee720fd5342fa0d84bf6e",
+    "outputHash": "08c76438b525f701b629bbe571c457d1d4c77ed902d5e806c841347ad15dcfb9",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-13.json",
+    "originalFileHash": "bf45c38a980906ee083d01af9e89935ef6714c425a12139c9d9a8cf13fac9b3f",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "d6d4db86272450cc853cfce40ee709434287e6db05d9d3276a72c91eefb4f8cd"
+}

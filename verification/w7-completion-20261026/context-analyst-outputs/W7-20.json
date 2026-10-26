@@ -1,0 +1,45 @@
+{
+  "caseId": "W7-20",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-20",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "oras-profit",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      },
+      {
+        "id": "cira-segments",
+        "availableAt": "2026-10-23T16:29:09.072Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196006.153
+      },
+      {
+        "id": "scenario-missing",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.441Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-20\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"cira-segments\",\"availableAt\":\"2026-10-23T16:29:09.072Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196006.153},{\"id\":\"scenario-missing\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nFrom ORAS page 8, simple disclosed arithmetic gross margin is 289.5 / 2,978.0 x 100 = 9.721289456010746%, approximately 9.72%. Both inputs are consolidated USD millions for the same six-month period, so the units cancel. This is a transparent computed fallback, not a separately published adjusted performance metric. It should not be confused with operating margin, EBITDA margin or cash conversion.\n\nA missing noncritical display ratio can be reconstructed from reliable compatible inputs. Missing current security identity and corporate-action clearance cannot: they determine what instrument, share basis and entitlements would actually be traded. Similarly, CIRA's branded IR-service PDF has an unresolved issuer-to-service link; correct table arithmetic and visual branding cannot authenticate that chain. Its simultaneous cost allocation can explain segment profit differences, but does not repair provenance. ORAS positive gross profit supports profitable project activity, while construction collection risk and the absence of cash details in this case prevent extrapolating margin into distributable cash. I would retain the labeled 9.72% research metric and continue analysis, while withholding trade clearance pending identity/actions, provenance where applicable, current liquidity and valuation. Unknown critical inputs are not zero risk, and the ease of computing a margin provides no permission to bypass them.",
+  "extractedNumbers": [
+    {
+      "id": "computed_gross_margin",
+      "unit": "percent",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 9.721289456010746
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

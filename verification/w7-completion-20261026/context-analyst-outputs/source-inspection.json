@@ -1,0 +1,223 @@
+{
+  "inspectedAt": "2026-10-26T09:03:37.446Z",
+  "sources": [
+    {
+      "localPath": "data/research/evidence/w7-evaluation/adib-h1-2026.pdf",
+      "sha256": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+      "referencedByCases": [
+        "W7-01",
+        "W7-02",
+        "W7-08"
+      ],
+      "evidenceIds": [
+        "adib-income"
+      ],
+      "inspectedPages": [
+        4
+      ],
+      "inspectionMethod": "Complete referenced physical pages extracted with pypdf and rendered with pdftoppm; every rendered page visually inspected."
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+      "sha256": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "referencedByCases": [
+        "W7-03",
+        "W7-07",
+        "W7-08",
+        "W7-13",
+        "W7-19",
+        "W7-20"
+      ],
+      "evidenceIds": [
+        "oras-profit",
+        "oras-cash",
+        "oras-parent",
+        "oras-combination"
+      ],
+      "inspectedPages": [
+        8,
+        10,
+        41,
+        68
+      ],
+      "inspectionMethod": "Complete referenced physical pages extracted with pypdf and rendered with pdftoppm; every rendered page visually inspected."
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/cira-9m-2026.pdf",
+      "sha256": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e",
+      "referencedByCases": [
+        "W7-04",
+        "W7-20"
+      ],
+      "evidenceIds": [
+        "cira-segments"
+      ],
+      "inspectedPages": [
+        4
+      ],
+      "inspectionMethod": "Complete referenced physical pages extracted with pypdf and rendered with pdftoppm; every rendered page visually inspected."
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+      "sha256": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "referencedByCases": [
+        "W7-05",
+        "W7-06",
+        "W7-09",
+        "W7-10"
+      ],
+      "evidenceIds": [
+        "phdc-highlights",
+        "phdc-statements",
+        "phdc-summary"
+      ],
+      "inspectedPages": [
+        1,
+        4,
+        2
+      ],
+      "inspectionMethod": "Complete referenced physical pages extracted with pypdf and rendered with pdftoppm; every rendered page visually inspected."
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+      "sha256": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "referencedByCases": [
+        "W7-09",
+        "W7-10",
+        "W7-11",
+        "W7-12",
+        "W7-13",
+        "W7-14",
+        "W7-15",
+        "W7-16",
+        "W7-17",
+        "W7-18",
+        "W7-19",
+        "W7-20"
+      ],
+      "evidenceIds": [
+        "scenario-timing",
+        "scenario-stale",
+        "scenario-bonus",
+        "scenario-dividend",
+        "scenario-combination",
+        "scenario-liquidity",
+        "scenario-exit",
+        "scenario-concentration",
+        "scenario-correlation",
+        "scenario-funding",
+        "scenario-trigger",
+        "scenario-missing"
+      ],
+      "inspectedPages": [
+        "full JSON"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/cib-dividends-web-capture.json",
+      "sha256": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+      "referencedByCases": [
+        "W7-11",
+        "W7-12"
+      ],
+      "evidenceIds": [
+        "cib-dividends"
+      ],
+      "inspectedPages": [
+        "HTML dividend table"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+      "sha256": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+      "referencedByCases": [
+        "W7-21",
+        "W7-22"
+      ],
+      "evidenceIds": [
+        "full-concentration",
+        "full-abstention"
+      ],
+      "inspectedPages": [
+        "full JSON"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/temporal-case-23.json",
+      "sha256": "45d20121d8ab43c81c72842f9e02c6c16628fd4437eeb35da27105b2ee36699d",
+      "referencedByCases": [
+        "W7-23"
+      ],
+      "evidenceIds": [
+        "temporal-facts-23"
+      ],
+      "inspectedPages": [
+        "full JSON"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/temporal-case-24.json",
+      "sha256": "2d2451f0dc8f13393e4e1236352dcf911f0698a267fdbba7553851c338b8bf4c",
+      "referencedByCases": [
+        "W7-24"
+      ],
+      "evidenceIds": [
+        "temporal-facts-24"
+      ],
+      "inspectedPages": [
+        "full JSON"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/temporal-case-25.json",
+      "sha256": "8abba0023c0ba7b2ff77eb8a3a9f93bfc34f37ec993ea971e7f8280b96bcd376",
+      "referencedByCases": [
+        "W7-25"
+      ],
+      "evidenceIds": [
+        "temporal-facts-25"
+      ],
+      "inspectedPages": [
+        "full JSON"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/temporal-case-26.json",
+      "sha256": "b94046e1f427010b031bf66326f0ac4015114257c9a18e957a4224919e8f2cab",
+      "referencedByCases": [
+        "W7-26"
+      ],
+      "evidenceIds": [
+        "temporal-facts-26"
+      ],
+      "inspectedPages": [
+        "full JSON"
+      ],
+      "inspectionMethod": "full retained JSON read"
+    }
+  ],
+  "scope": "Only the 26 permitted context packets and their referenced original localPath sources were read for evaluation. PDF skill and bundled dependencies were used. No truth, frozen-case, test, prior-answer or review paths were read. No external browsing.",
+  "visualInspection": {
+    "pdfPhysicalPages": 9,
+    "allRenderedPagesViewed": true,
+    "adibImageTable": "pypdf text lacks the table; extracted embedded image and full-page Poppler render were both visually inspected.",
+    "renderDirectory": "C:/Users/LENOVO/.codex/visualizations/2026/10/05/01a10e4e-8900-7600-86f3-b9024bcb2a3a",
+    "renderPrefix": "w7-analyst-"
+  },
+  "sourceCaveats": [
+    {
+      "localPath": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+      "note": "Reading this expressly permitted original JSON in full exposed its top-level preFreezeCorrection field mentioning a prior reviewer correction and preservation of numerical truth values. No prior review/answer/truth file was opened. The field was not used as substantive evidence; original scenario passages themselves define the first purchase and no-pyramiding control. Parent notified before output writing."
+    },
+    {
+      "localPath": "data/research/evidence/w7-evaluation/cira-9m-2026.pdf",
+      "note": "Issuer-to-service provenance remains unresolved as required by the packet."
+    }
+  ]
+}

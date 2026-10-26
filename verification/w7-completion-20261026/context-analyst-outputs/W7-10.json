@@ -1,0 +1,47 @@
+{
+  "caseId": "W7-10",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-10",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "phdc-statements",
+        "availableAt": "2026-10-25T22:52:57.067Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 178.158
+      },
+      {
+        "id": "scenario-stale",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.432Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-10\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-statements\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"scenario-stale\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe scenario assessment date is 26 October 2026. From financial period end 30 September 2025 to that date is 391 whole calendar days. The historical selected-statement revenue remains EGP25,549,856 thousand for nine months ended 30 September 2025. The scenario's EGP15 quote is explicitly hypothetical and unverified; it is not evidence of an observed transaction or executable market price. The scenario assessment date is separate from this packet's capture cutoff, so its future-labeled hypothetical assessment does not make the already captured scenario unavailable.\n\nA newly supplied quote would not refresh revenue, balance-sheet quality, share count or corporate-action status. Real-estate backlog conversion, cancellations, construction cost inflation, financing and collections can change substantially over 391 days. The historical revenue and profit growth are useful favorable baseline evidence, but page 4's weak operating conversion and the absence of subsequent statements prevent assuming that growth persists. Price divided by total company revenue would also be a unit/scope mismatch, not a valid equity valuation. I would wait for intervening financials, actions, verified security/share data, current quote/liquidity and a cash-based valuation. The retained report can support historical analysis at this cutoff; it cannot establish a present investable bargain.",
+  "extractedNumbers": [
+    {
+      "id": "financial_period_age",
+      "unit": "calendar days",
+      "period": "2025-09-30 to 2026-10-26",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "scenario-stale",
+      "value": 391
+    },
+    {
+      "id": "historical_revenue",
+      "unit": "EGP thousand",
+      "period": "nine months ended 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-statements",
+      "value": 25549856
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

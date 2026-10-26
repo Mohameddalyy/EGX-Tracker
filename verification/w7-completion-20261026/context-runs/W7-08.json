@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.028Z",
+  "payload": {
+    "caseId": "W7-08",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-08",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "adib-income",
+          "availableAt": "2026-10-23T16:27:23.557Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196111.668
+        },
+        {
+          "id": "oras-profit",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.431Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-08\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"adib-income\",\"availableAt\":\"2026-10-23T16:27:23.557Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196111.668},{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nADIB's EGP7,550,833 thousand consolidated total profit converts by dividing by 1,000 to EGP7,550.833 million. ORAS reports USD127.8 million consolidated total profit directly. Both concern six months ended 30 June 2026; matching dates and the word million do not make the currencies or economic scopes interchangeable. Neither a direct numeric ranking nor a raw sum is meaningful.\n\nA common-currency comparison needs a disclosed, period-appropriate FX translation basis. Even after translation, total group profit includes NCI; investor comparisons require consistent owner attribution, capital employed, risk and market valuation. Bank profits depend on deposit/financing spreads, provisioning and regulatory capital. Construction profits depend on project margins, billing/collections and working capital. The positive profits are supportive observations, but the ADIB page lacks loan-quality detail and the ORAS profit page alone cannot demonstrate cash realization. I would not declare either company cheaper or superior from absolute profit size. Obtain FX inputs, comparable owner earnings, balance-sheet/cash-quality information and current corporate-action-adjusted valuations. The bounded conclusion is two correctly labeled historical earnings observations, suitable for separate sector analysis, with no allocation ranking or trade clearance.",
+    "extractedNumbers": [
+      {
+        "id": "adib_profit_millions",
+        "unit": "EGP million",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 7550.833
+      },
+      {
+        "id": "oras_profit_millions",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 127.8
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "3f5fd676afd2423516f027861ffde420ea0e7bbccc3b58445e3ff8988b3c4222",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+    "packetHash": "3ecd3d8f85d266a7803440ff8e76cde0b08bdd1ffc3ddd64c987972fa15175f7",
+    "outputHash": "96eef07b5357022643b34f3363d185710129351efccf77492ea719ca99b8286e",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-08.json",
+    "originalFileHash": "99df69566281b9496f7936f72367e9aebd174230915a76c0a2fd61acb12cc8b6",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "a58e1013efdba192d6654f7343d2b32d4d2ceb3dcde195b65f5278af159b0033"
+}

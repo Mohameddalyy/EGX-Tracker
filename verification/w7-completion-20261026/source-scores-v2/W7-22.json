@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:19:49.996Z",
+  "payload": {
+    "caseId": "W7-22",
+    "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "actorId": "/root/w7_source_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "69888b1063f4aac3f5ba51d1fd478391f39d9ddac9cee7847032c265f1f67d2e",
+    "reviewHash": "b2530321b8a9a6c756e2104ca9a34f20d1f08e75b88d1bbfc84aefcd8301caf3",
+    "categories": [
+      "riskExceptions",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "desired_shares",
+        "status": "CORRECT"
+      },
+      {
+        "id": "stated_upside_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "adverse_price_return_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "adverse_portfolio_equity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "retained_mechanical_opportunities",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 5,
+    "denominator": 5,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects customer demand and payment concentration without inventing sector or other holdings."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Positive EBITDA, funding and possible timing explanation are weighed against rumor, overdue receivables and concentrated renewal risk."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct shares, returns, adverse equity and opportunity count; extra80% two-outcome breakeven probability is mathematically correct and explicitly hypothetical, not a supplied likelihood."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Justifies abstention substantively; smaller sizing does not repair weak evidence."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Separates stated levels from expected return, probability and guaranteed stop execution."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 226.135,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "8053b736090c4d022bc13edae00c4e8547a31a7a82f9939bb4c5a05f27f42537"
+}

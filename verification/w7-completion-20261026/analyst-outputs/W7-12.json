@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-12",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:37.5162302Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "Conditionally using the supplied issuer dividend table, the 2026 cash dividend is EGP6 per share (cib-dividends). Given the fixture's explicit assumption that a 1,000-share holder meets the entitlement condition, gross entitlement is 1,000 x EGP6 = EGP6,000 before taxes and fees (scenario-dividend). The record date is 6 April 2026 and the payment date is 9 April 2026. Neither is labeled an ex-date; I do not relabel either or infer an ex-date.\n\nThe evidence capture timestamp for cib-dividends, 2026-10-25T22:56:12.986Z, is 17.761 seconds later than the case cutoff of 22:55:55.225Z. Consequently these numbers describe the conditional arithmetic requested from the supplied passage, but this capture cannot establish availability at the strict cutoff. This needs explicit resolution in any point-in-time evaluation; the document's subject year is not a substitute for its availability timestamp.\n\nCash distribution is supportive evidence of a stated shareholder payout, not proof of total shareholder profit or sustainable future dividends. For a bank, dividend capacity depends on future earnings, credit losses and capital requirements, none of which is analyzed by this table. The explicit entitlement assumption supports the gross amount within the fiction, but actual receipt, net tax treatment and reinvestment are not evidenced.\n\nNo before/after market prices, purchase cost, complete cash-flow history or adjustment data are supplied. Shareholder total return and dividend yield therefore remain unavailable; the dividend cannot be treated as a free gain ignoring possible price adjustment. Bounded decision: record only the conditional gross entitlement and named dates, resolve temporal admissibility and actual action details before portfolio accounting or trading, and infer no real market clearance.",
+  "extractedNumbers": [
+    {
+      "id": "cash_dividend_per_share",
+      "unit": "EGP per share",
+      "period": "2026 cash dividend",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "cib-dividends",
+      "value": 6
+    },
+    {
+      "id": "gross_cash_entitlement",
+      "unit": "EGP",
+      "period": "2026 cash dividend hypothetical position",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "scenario-dividend",
+      "value": 6000
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

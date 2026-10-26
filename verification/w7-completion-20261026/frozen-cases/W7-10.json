@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "kind": "case",
+  "createdAt": "2026-10-25T23:06:44.912Z",
+  "payload": {
+    "id": "W7-10",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "task": "Calculate age in whole calendar days of the financial period end at the scenario assessment date and extract the historical selected-statement revenue. Explain why a hypothetical new quote does not refresh stale fundamentals or establish an investable valuation. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"financial_period_age\",\"unit\":\"calendar days\",\"period\":\"2025-09-30 to 2026-10-26\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"scenario-stale\"},{\"id\":\"historical_revenue\",\"unit\":\"EGP thousand\",\"period\":\"nine months ended 2025-09-30\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-statements\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+    "evidence": [
+      {
+        "id": "phdc-statements",
+        "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+        "source": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+        "availableAt": "2026-10-25T22:52:57.067Z",
+        "passage": "Physical page 4. Selected consolidated statements in EGP thousand, 9M ended 30 September 2025: revenue 25,549,856; EBITDA 6,690,062; operating profit 6,449,386; net profit after tax 3,700,433; non-controlling interest deduction (158,326); profit after tax and minority 3,542,107. Comparative 9M2024 EBITDA 4,144,677. At 30 September 2025: current assets 99,982,419; current liabilities 98,786,344; total liabilities 144,999,591; total equity 18,175,839; cash and equivalents 9,204,446. Operating cash flow 748,335. These are selected statements, not the full footnotes.",
+        "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+        "page": 4,
+        "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability",
+        "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html"
+      },
+      {
+        "id": "scenario-stale",
+        "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+        "source": "local:authored-synthetic-engineering-scenarios",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Assessment date is 2026-10-26. A hypothetical unverified new Palm Hills price quote is EGP15 per share. It is not an observed trade or verified market price. Only the supplied 9M2025 issuer release is admitted; no subsequent financial or corporate-action clearance is supplied.",
+        "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+      }
+    ],
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "frozenAt": "2026-10-25T23:06:44.912Z",
+    "truth": {
+      "checkedBy": "/root/w7_case_curator",
+      "checkedAt": "2026-10-25T22:55:55.225Z",
+      "numbers": [
+        {
+          "id": "financial_period_age",
+          "value": 391,
+          "absoluteTolerance": 0,
+          "unit": "calendar days",
+          "period": "2025-09-30 to 2026-10-26",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "scenario-stale"
+        },
+        {
+          "id": "historical_revenue",
+          "value": 25549856,
+          "absoluteTolerance": 0,
+          "unit": "EGP thousand",
+          "period": "nine months ended 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-statements"
+        }
+      ]
+    },
+    "curation": {
+      "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+      "notes": [],
+      "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+      "syntheticContext": true,
+      "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+    },
+    "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+    "groundTruthStatus": "SUPPLIED_ADJUDICATION_REQUIRES_INDEPENDENT_REVIEW"
+  },
+  "contentHash": "36d5d0f91f82b22ae7be728f383a71ce8a7c844a51e9d249d40f17a7750eb3ec"
+}

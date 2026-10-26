@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:08.986Z",
+  "payload": {
+    "caseId": "W7-04",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-04",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "cira-segments",
+          "availableAt": "2026-10-23T16:29:09.072Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196006.153
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.427Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-04\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"cira-segments\",\"availableAt\":\"2026-10-23T16:29:09.072Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196006.153}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe two tables coexist on original CIRA page 4 for 9M FY2025/26. K-12 normalized net profit is initially -EGP321.5 million and becomes +49.3 million under management's weighted allocation: 49.3 - (-321.5) = 370.8 million uplift. Higher Education moves from 1,505.0 to 1,134.2, an equal 370.8 reduction, leaving total normalized net profit at 1,183.5 in both views. The footnote identifies 25.5 million G&A and 345.3 million finance cost reclassification. Only the overhead component changes EBITDA allocation; it would be wrong to infer the entire financing reclassification is EBITDA improvement.\n\nThis is a simultaneous management segmentation alternative, not a later statutory restatement or new group cash earnings. Allocation can help interpret school economics, but the positive adjusted K-12 bottom line is allocation-sensitive. Education's recurring tuition and enrollment growth are supportive; counterevidence on the page includes K-12 normalized EBITDA declining in both presentations and utilization easing despite expansion. Teacher/staff growth and financing burden need scrutiny. Cash collection, development capex, debt terms, normalization reconciliation and allocation drivers remain missing. The retained branded IR-service PDF's issuer-to-service link is unresolved; visual consistency does not clear provenance. I would use these figures only as provisional comparative research and wait for issuer-link reconciliation and cash/debt diligence before an investment decision.",
+    "extractedNumbers": [
+      {
+        "id": "k12_before",
+        "unit": "EGP million",
+        "period": "9M FY2025/26",
+        "entity": "CIRA K-12 segment",
+        "evidenceId": "cira-segments",
+        "value": -321.5
+      },
+      {
+        "id": "k12_after",
+        "unit": "EGP million",
+        "period": "9M FY2025/26",
+        "entity": "CIRA K-12 segment",
+        "evidenceId": "cira-segments",
+        "value": 49.3
+      },
+      {
+        "id": "allocation_uplift",
+        "unit": "EGP million",
+        "period": "9M FY2025/26",
+        "entity": "CIRA K-12 segment",
+        "evidenceId": "cira-segments",
+        "value": 370.8
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "f3c3e66dbeea23a5e85f278d1839b291810ce7ef042083dfec1c4f357fcbff28",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+    "packetHash": "ef7d569f8494c193c98299e0a2553ea08deca90b39efbc87ae854b20026e1693",
+    "outputHash": "b13d726cd6e2d5348d41a054e1a21d2cc9b70e98935b50edaf4c74dc7720ebf8",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-04.json",
+    "originalFileHash": "2da6d475d682ee1e53ab5e56af1d5661c6c10d3071a01fee73c5405a12927fb0",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "50904a20920887940876935cff0172a21bfea94672f56eb48c31b5bec63c2193"
+}

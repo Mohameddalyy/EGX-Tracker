@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:19:02.318Z",
+  "payload": {
+    "caseId": "W7-20",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "Using ORAS physical page 8's consolidated gross profit of USD289.5 million and revenue of USD2,978.0 million, the simple gross margin is 289.5 / 2,978.0 x 100 = 9.721289456%, or about 9.72%. This is a transparent arithmetic fallback from rounded published inputs, not a newly reported management KPI or a cash margin. Positive gross profit is supportive of project economics, but gross margin excludes overheads, financing and working-capital demands; it cannot prove cash generation or attractive valuation.\n\nA missing display percentage is noncritical when the correctly scoped numerator and denominator are present. It is categorically different from missing current security identity or corporate-action clearance, which arithmetic cannot reconstruct, and from CIRA's unresolved issuer-to-service provenance. CIRA's original page visibly contains both statutory/weighted segment views, but branded formatting and internally reconciling figures do not independently establish issuer linkage. Its allocation rearranges segment results while keeping the total unchanged; this is useful content, not provenance clearance.\n\nIn the explicitly synthetic missing-data scenario, using the computed ORAS margin is permissible for research; missing action/identity clearance remains unknown risk, never zero risk. Need verified identifiers/actions and a reconciled CIRA source link, alongside valuation and execution inputs, before investment decisions. Decision: disclose the formula and precision for analysis, retain the provenance caveat, and grant no trading clearance.",
+    "extractedNumbers": [
+      {
+        "id": "computed_gross_margin",
+        "unit": "percent",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 9.721289456010746
+      }
+    ],
+    "toolCalls": 0,
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "originalToolCalls": [],
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "b4f4e407450567cd95e78968b4a72ed1893fda1f76884f073136f6dff9446d75",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+    "packetHash": "445b5e162d26de38687b5a1628c1c2e3b6e71c1b29c33b3e098e3e1fdac458fe",
+    "outputHash": "043efbed190f687c6b58155e32db0c99bbc3515afd7cd465c4431a0539c921dc",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-20.json",
+    "originalFileHash": "a986fc456416262e59fd8082f341d50abeb74810f796817b761614712efa5814",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "625eb4edc6a9169240451fff3acff2093bc3f9162be97c9e89e2863cba951310"
+}

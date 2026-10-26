@@ -1,0 +1,35 @@
+{
+  "caseId": "W7-04",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:36.1460569Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "The first K-12 normalized net-profit presentation is negative EGP321.5 million. The weighted allocation presentation is positive EGP49.3 million. The uplift is 49.3 - (-321.5) = EGP370.8 million (cira-segments). Higher education falls by the same EGP370.8 million, from EGP1,505.0 million to EGP1,134.2 million. The total stays EGP1,183.5 million in both tables. The footnote components reconcile: EGP25.5 million G&A plus EGP345.3 million finance cost equals EGP370.8 million.\n\nThis is a simultaneous allocation presentation, not evidence of later statutory restatement, new cash income or an improvement in group earnings. Calling K-12 newly profitable without naming the allocation basis would confuse cost attribution with operating change. In education, where campuses may share central overhead and financing, the chosen cost allocation can materially alter apparent segment economics. The unchanged total is decisive counterevidence to a claim that this reclassification created group value.\n\nThe positive allocated K-12 result and strong higher-education contribution are useful descriptive information, but neither establishes standalone cash generation or a sustainable return on invested capital. I would need the allocation rationale, statutory-to-normalized reconciliation, segment cash flows, enrollment/tuition and collection trends, campus capital spending, debt attribution and shared-service economics. They are absent.\n\nSource provenance also remains unresolved: this is a branded retained IR-service PDF whose issuer-to-service link has not been reconciled. I can interpret its stated arithmetic conditionally but cannot promote it to cleared issuer provenance. Bounded decision: keep both presentations side by side and request provenance and segment reconciliation before valuation or investment approval. No improvement in actual cash earnings, later restatement or market clearance is inferred.",
+  "extractedNumbers": [
+    {
+      "id": "k12_before",
+      "unit": "EGP million",
+      "period": "9M FY2025/26",
+      "entity": "CIRA K-12 segment",
+      "evidenceId": "cira-segments",
+      "value": -321.5
+    },
+    {
+      "id": "k12_after",
+      "unit": "EGP million",
+      "period": "9M FY2025/26",
+      "entity": "CIRA K-12 segment",
+      "evidenceId": "cira-segments",
+      "value": 49.3
+    },
+    {
+      "id": "allocation_uplift",
+      "unit": "EGP million",
+      "period": "9M FY2025/26",
+      "entity": "CIRA K-12 segment",
+      "evidenceId": "cira-segments",
+      "value": 370.8
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

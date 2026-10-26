@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.914Z",
+  "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+  "runHash": "862a5736d02c30f86aebf7915b433821e11b550101824a8decb0c8fddffbf8ee",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Separates developer bookings, recognition and collection cycles."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Balances backlog/sales support against cancellations, construction costs and weak operating cash conversion."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct billion scaling, statement anchor and direct rounding; additional 0.748335 billion OCF is correct."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Requests backlog aging, cost-to-complete, collection and current valuation evidence."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Labels rounding-convention explanation as possible and rejects collections as free cash."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.977Z",
+  "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+  "runHash": "153475a24a4bb8b0e107d88b845d9c91e3c79989af5c282443bacf8f0369677e",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains contractor gross margin limits and CIRA allocation without overstating economic quality."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Positive gross profit and unchanged CIRA total balance missing cash/provenance."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct source gross-margin ratio with rounded-input precision and KPI/cash-margin distinctions."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Uses available arithmetic while withholding identity/action clearance."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Original CIRA page inspection does not clear issuer-link provenance; identity/actions remain critical rather than arithmetically recoverable."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

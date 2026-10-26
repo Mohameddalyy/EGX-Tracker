@@ -1,0 +1,1424 @@
+{
+  "reviewedAt": "2026-10-25T23:16:19.956Z",
+  "actorId": "/root/w7_independent_review",
+  "cases": 22,
+  "correct": 55,
+  "denominator": 55,
+  "criticalErrors": 2,
+  "scores": [
+    {
+      "caseId": "W7-01",
+      "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "e1385262946aac70c339a13fe0c20d4076ec915a505d4930d821f6df8961220d",
+      "reviewHash": "fa016881e941a325dc6d049d82b80ac77509423a30280e164254a32a23f237b3",
+      "categories": [
+        "banks"
+      ],
+      "numbers": [
+        {
+          "id": "net_funds",
+          "status": "CORRECT"
+        },
+        {
+          "id": "ecl_signed",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Connects Islamic financing spread, deposit funding and credit costs without inventing a margin denominator."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Contrasts positive profit with netting/release risk and absent staging evidence."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Reconciles financing income and costs; preserves signed six-month ECL versus quarterly release."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Names specific credit, capital and valuation work needed before an investment conclusion."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Separates missing loan denominator and first-publication timing from known statement facts."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.479,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-02",
+      "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "f60b578e26b40b66ebbc36a91c91dea7955a434bd6d8e2d7c40271e84adca9a3",
+      "reviewHash": "7f5db13c6bd365c05303edddb658d0217aeabb8456c15124d73194fae9b4f321",
+      "categories": [
+        "banks",
+        "incompleteFinancials"
+      ],
+      "numbers": [
+        {
+          "id": "shareholder_profit",
+          "status": "CORRECT"
+        },
+        {
+          "id": "nci_difference",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Explains bank credit quality, funding repricing and capital usage as earnings durability drivers."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Positive earnings and small NCI are weighed against provision netting and missing credit schedules."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correctly separates group and attributable profit and reconciles NCI."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Specifies credit-quality follow-up and uses attributable profit for shareholder analysis."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Neither equates low charges with clean assets nor infers fraud from omissions."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.544,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-03",
+      "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "c10bda73911436d078f72be4d88f8f330a74920475ab5f5e54e220e9329d724e",
+      "reviewHash": "377b52bcfd2ffe268205ea35c2ba9e3c25243fdbe5922f7aa2dd8bc9afb9c9b0",
+      "categories": [
+        "nonfinancials"
+      ],
+      "numbers": [
+        {
+          "id": "operating_profit",
+          "status": "CORRECT"
+        },
+        {
+          "id": "operating_cash_flow",
+          "status": "CORRECT"
+        },
+        {
+          "id": "receivables_cash_movement",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Explains construction billing, retention and working-capital timing as possible mechanisms, not proven causes."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Positive advances, billings and ending cash offset the one-sided distress narrative."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Preserves cash-flow movement signs; independently correct partial bridge and residual are explicitly labeled."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Targets aging, subsequent collections, restrictions and debt maturities before sizing."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Does not assign unexplained residual to a particular adjustment or assert unrestricted cash."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.563,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-04",
+      "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "8bb980a9bfd00ea5413c1ea83deea9180c4eec91cdc6180bea067fc95b24ef14",
+      "reviewHash": "2a3266ce1468616dc5809350a738bea8e88cf688c1d565b27f3ad10d5d584349",
+      "categories": [
+        "nonfinancials",
+        "conflictingDocuments"
+      ],
+      "numbers": [
+        {
+          "id": "k12_before",
+          "status": "CORRECT"
+        },
+        {
+          "id": "k12_after",
+          "status": "CORRECT"
+        },
+        {
+          "id": "allocation_uplift",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Explains shared campus overhead and financing allocations and standalone economics."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Uses unchanged group total as direct counterevidence to newly created earnings."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correctly reconciles the segment uplift and two allocation components."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Retains both presentations and requests provenance and segment cash reconciliation."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Separates management allocation from statutory revision and preserves unresolved IR-service provenance."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.58,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-05",
+      "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "fbee99fb0fc37f397394089469835aba8c7c71eb6ebf791b5c203918dad327be",
+      "reviewHash": "8ec2c1075bd86f8c864a5ddcd69f3840ac2b1d0fc00e9a7d53873846fe0ef568",
+      "categories": [
+        "property"
+      ],
+      "numbers": [
+        {
+          "id": "rounded_new_sales",
+          "status": "CORRECT"
+        },
+        {
+          "id": "recognized_revenue",
+          "status": "CORRECT"
+        },
+        {
+          "id": "rounded_collections",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Distinguishes developer contracting, recognition, collections and construction cash obligations."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Uses low operating cash flow and construction obligations against optimistic gross-collections inference."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct conversion to billions and source-specific rounding disagreement retained."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Calls for cancellation, cost-to-complete and maturity schedules before funding assessment."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Does not promote cash receipts to free cash or infer current clearance from document origin."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.598,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-06",
+      "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "70f47e432769b5ce6969418026e323c0db66ac43bef0b85ef878fc69669ebafe",
+      "reviewHash": "761bb02fc31e2801c188960a6d81d76896383728344ccd361f465b1471a95649",
+      "categories": [
+        "property",
+        "incompleteFinancials"
+      ],
+      "numbers": [
+        {
+          "id": "net_current_assets",
+          "status": "CORRECT"
+        },
+        {
+          "id": "rounded_net_debt",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Interprets developer inventories, installment receivables and customer advances with timing discipline."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Balances positive current assets/cash with narrow buffer, net debt and obligations."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Computes net current assets correctly without confusing classification surplus with cash."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Declines unsupported runway and liquidation values and identifies required timed schedules."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Preserves uncertainty over restrictions, collectability, covenants and off-balance-sheet claims."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.618,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-07",
+      "caseHash": "3c95003675ec12eb881a074e53a7de6fc2ba39583eed09e079ffab1bd979dc1c",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "f733d0b047c1d72e703f9e21c76bc08fc78fb14a91dfdf2c55299c08f84f226e",
+      "reviewHash": "3f648b2bd6026e0caa73debd259f2466b4712b6d9b3e51dcb869d2230abadc33",
+      "categories": [
+        "conflictingDocuments"
+      ],
+      "numbers": [
+        {
+          "id": "group_profit",
+          "status": "CORRECT"
+        },
+        {
+          "id": "parent_profit",
+          "status": "CORRECT"
+        },
+        {
+          "id": "scope_difference",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Connects group project entities to parent distributable cash and guarantees."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Strong group profit is balanced against smaller parent result without claiming trapped cash."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Aligns dollars and millions and recognizes consolidated EPS footnote prevents parent share-count inference."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Requires EPS numerator/share reconciliation and distribution/accessibility data."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Treats scope difference as reconciliation, not additional profit or proof of poor quality."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.635,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-08",
+      "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "c3bbf4bb19f2a49ee2ffb34312e9cb4656d8fba77b30de8df8ef9815609103f6",
+      "reviewHash": "ddccd638d8ae2164dba357cb308d02d6994b530c416318d47d4282dc4c600f88",
+      "categories": [
+        "conflictingDocuments"
+      ],
+      "numbers": [
+        {
+          "id": "adib_profit_millions",
+          "status": "CORRECT"
+        },
+        {
+          "id": "oras_profit_millions",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Distinguishes bank capital/credit economics from construction collection and project risk."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Acknowledges both profits while rejecting simplistic cross-sector quality ranking."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct unit scaling with currencies preserved; no guessed FX rate."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Gives a clear native-currency comparison and specifies missing common valuation inputs."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Separates scope, currency, economic meaning and missing capital/cash evidence."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 401.648,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-09",
+      "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "b8d4c3174c1badd84fad5cb02bc537ebce38964daa18891e67f3345db7d5c2ed",
+      "reviewHash": "d19891d719c75b50f0741b35830d7099cc9c69e98ecc2b47c399820872c99b0a",
+      "categories": [
+        "delayedEvents"
+      ],
+      "numbers": [
+        {
+          "id": "period_end_to_release_days",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 1,
+      "denominator": 1,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Explains why developer sales/backlog evidence would materially contaminate historical demand judgment."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Allows that earlier information might exist while declining to assume its contents."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct elapsed-day calculation and explicit date-versus-availability distinction."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Excludes later evidence from original decision and specifies contemporaneous archival requirement."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Does not transform document date or capture date into proven first public availability."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 402.863,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-10",
+      "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "aae59372561906134ba5fbbf00c946720ed1e04475076f873d1b0db376f48152",
+      "reviewHash": "72069036b28c3406504b3b54f078a7f166fd3ca1544d68c65cee3c7783ee1dd5",
+      "categories": [
+        "delayedEvents",
+        "noTrade"
+      ],
+      "numbers": [
+        {
+          "id": "financial_period_age",
+          "status": "CORRECT"
+        },
+        {
+          "id": "historical_revenue",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Connects stale developer figures to potentially changed delivery, costs, collections and financing."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Retains historical positive results without assuming either continuation or deterioration."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct period age and historical revenue; refuses quote/aggregate-revenue valuation mismatch."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Names refreshed financial, action, share and quote evidence needed for a current decision."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Keeps hypothetical quote, period age and publication age distinct."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 402.913,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-11",
+      "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "b407cd0940bcac39bca81fdc6b46c3b7205b325e577ec2d3f78320a7e5ec8181",
+      "reviewHash": "34b112f14cb9e24f4ff3c75a0892b5e9edaf795d79f4c02260dd3dfd9e15497a",
+      "categories": [
+        "corporateActions"
+      ],
+      "numbers": [
+        {
+          "id": "share_multiplier",
+          "status": "CORRECT"
+        },
+        {
+          "id": "post_bonus_shares",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 1,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Correctly distinguishes stock dividend from split and notes no new earnings or capital strength is proved."
+        },
+        "counterevidence": {
+          "score": 2,
+          "reason": "Useful warning against free economic gain is mixed with a false temporal-admissibility objection."
+        },
+        "numericalInterpretation": {
+          "score": 2,
+          "reason": "Requested multiplier/share arithmetic is correct, but the asserted cutoff and 17.761-second late-capture comparison use the wrong case timestamp."
+        },
+        "decisionUsefulness": {
+          "score": 2,
+          "reason": "Requests an unnecessary cutoff repair and falsely withholds an as-of claim despite valid packet timing."
+        },
+        "uncertainty": {
+          "score": 2,
+          "reason": "Appropriate price/adjustment uncertainty is undermined by asserting a nonexistent timing defect."
+        }
+      },
+      "disagreements": [
+        {
+          "type": "CRITICAL_CASE_TEMPORAL_IDENTITY_ERROR",
+          "claimedCutoffAt": "2026-10-25T22:55:55.225Z",
+          "actualCutoffAt": "2026-10-25T22:56:32.892Z",
+          "sourceAvailableAt": "2026-10-25T22:56:12.986Z",
+          "actualSecondsBeforeCutoff": 19.906,
+          "impact": "Wrong case cutoff reverses evidence admissibility; source is available before the actual cutoff. Count once as critical case temporal/period identity error, not also as fabrication."
+        }
+      ],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "CASE_FAIL",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 402.932,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-12",
+      "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "066e773d9622c2ac7884b9718c5f155cf63efac8e955bf9bae1ccfa3080df2d6",
+      "reviewHash": "f5e3afd8586ecac870c20f7f40ff3f78169eb3dfa84dc573a6623e0f6ab076e4",
+      "categories": [
+        "corporateActions"
+      ],
+      "numbers": [
+        {
+          "id": "cash_dividend_per_share",
+          "status": "CORRECT"
+        },
+        {
+          "id": "gross_cash_entitlement",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 1,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Connects dividend capacity to earnings, losses and capital; does not confuse payout with shareholder return."
+        },
+        "counterevidence": {
+          "score": 2,
+          "reason": "Gross entitlement is conditioned correctly but counterevidence includes a false late-capture claim."
+        },
+        "numericalInterpretation": {
+          "score": 2,
+          "reason": "Dividend arithmetic/dates are correct; case cutoff comparison is wrong and reverses admissibility."
+        },
+        "decisionUsefulness": {
+          "score": 2,
+          "reason": "False temporal block adds unnecessary resolution work to otherwise appropriate accounting cautions."
+        },
+        "uncertainty": {
+          "score": 2,
+          "reason": "Missing tax/price/return data are handled honestly, but temporal certainty is based on a wrong cutoff."
+        }
+      },
+      "disagreements": [
+        {
+          "type": "CRITICAL_CASE_TEMPORAL_IDENTITY_ERROR",
+          "claimedCutoffAt": "2026-10-25T22:55:55.225Z",
+          "actualCutoffAt": "2026-10-25T22:56:32.892Z",
+          "sourceAvailableAt": "2026-10-25T22:56:12.986Z",
+          "actualSecondsBeforeCutoff": 19.906,
+          "impact": "Wrong case cutoff reverses evidence admissibility; source is available before the actual cutoff. Count once as critical case temporal/period identity error, not also as fabrication."
+        }
+      ],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "CASE_FAIL",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 402.95,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-13",
+      "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "eb6546f992fd5e7c69984c416c4de3c4b4f838160f9a95a439bf7064efb671d9",
+      "reviewHash": "22c1b995dfff9742e0a2bb3c4511f59024436d1abb84005ae04f6788dfb93ac7",
+      "categories": [
+        "corporateActions",
+        "riskExceptions"
+      ],
+      "numbers": [
+        {
+          "id": "exchange_ratio",
+          "status": "CORRECT"
+        },
+        {
+          "id": "arithmetic_new_shares",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Explains plausible business mix, leverage and governance implications with limited supplied pro-forma evidence."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Approved resolutions and defined ratio are balanced against outstanding approvals and extended deadline."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct exchange ratio and hypothetical shares; no fabricated fractional settlement."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Requests current completion, capitalization and pro-forma economics before action."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Explicitly preserves contingent status and distinguishes dilution arithmetic from economic loss."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 402.967,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-14",
+      "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "c985b98d0ba45930c4e373a184b7e2a8b9cc300a53a0c868dacc653fbf06d034",
+      "reviewHash": "dae36e90f6e33de3e8f44493fc49c86cd634311f4eb9f10c737df8a42a69d0be",
+      "categories": [
+        "thinLiquidity"
+      ],
+      "numbers": [
+        {
+          "id": "minute_capacity",
+          "status": "CORRECT"
+        },
+        {
+          "id": "daily_capacity",
+          "status": "CORRECT"
+        },
+        {
+          "id": "effective_capacity",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Appropriately declines invented issuer/sector fundamentals and focuses on supported liquidity economics."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Acknowledges daily pass while explaining the independent binding minute failure."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct capacities and zero whole-order execution; no implicit partial fill."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Records failed gate and requires a new authorized evaluation for any smaller/later order."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Keeps fixture ceilings distinct from production rules and real market observations."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 402.985,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-15",
+      "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "66a1f5e0d4d9e99d1b4cb8bd39a31679521cd2f660fd91a0265aa15adbb5d2ed",
+      "reviewHash": "97b65703df39f5405516bf4890075d397b8aae28308d0e08444292197a1bb723",
+      "categories": [
+        "thinLiquidity",
+        "noTrade"
+      ],
+      "numbers": [
+        {
+          "id": "exit_capacity",
+          "status": "CORRECT"
+        },
+        {
+          "id": "executed_exit",
+          "status": "CORRECT"
+        },
+        {
+          "id": "retained_shares",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Addresses liquidity/exit-risk mechanism and explicitly marks absent issuer/sector facts."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Daily capacity is recognized without ignoring the binding minute constraint."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correctly retains all800 shares and zero execution; does not infer proceeds or P&L."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Keeps exit pending and holdings exposure visible until a valid later event."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "No imagined stop fill, mark, liquidity recovery or realized value."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 403,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-16",
+      "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "8835b8fbb7ac7f6e0e11a25a4cdf68895b34a6240b5b37dcb0465d5d52e7a7f8",
+      "reviewHash": "5cf03ab0e6258e2864a06a8f76264c10d3bee8e622a1dbc067e447cbf8dd68ee",
+      "categories": [
+        "riskExceptions"
+      ],
+      "numbers": [
+        {
+          "id": "name_headroom",
+          "status": "CORRECT"
+        },
+        {
+          "id": "scenario_a_addition",
+          "status": "CORRECT"
+        },
+        {
+          "id": "scenario_b_addition",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Explains name risk and missing common-factor evidence while declining fake sector facts."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Acknowledges positive feasible arithmetic sizes without treating them as approval."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct headroom and scenario funding ceilings, including reserved cash."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Rejects desired amount under the fixture and explicitly preserves other/no-addition controls."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Clearly bounds arithmetic exclusions and does not amend production policy."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 403.017,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-17",
+      "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "ace297b0d3dfb7b18f3bb975a8f79704d3986f9f3717481300222bb5118a3231",
+      "reviewHash": "adef7eb90443f4840a6b5e87c40759996d1c15a90eac569af886fe5ba8a2dcb4",
+      "categories": [
+        "riskExceptions"
+      ],
+      "numbers": [
+        {
+          "id": "combined_exposure",
+          "status": "CORRECT"
+        },
+        {
+          "id": "shared_exposure_percent",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Develops the shared USD-input/EGP-sales channel and pass-through/hedge contingencies."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Explains why common exposures do not imply identical firm or equity-return behavior."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct exposure totals and percentages without inventing correlations/covariance."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Specifies hedging and sensitivity evidence before more common-factor exposure."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Distinguishes missing correlation from zero and gross exposure from predicted loss."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 404.124,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-18",
+      "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "5a2c149c5c4b5ccf0552bd5879f3d47be553fa5aed3d12e9b9da057c9be3ede4",
+      "reviewHash": "c831d3dd240fe3ef1fff6a1de7f37b693ed97fcf88b6a86e3328d383100b1249",
+      "categories": [
+        "riskExceptions",
+        "noTrade"
+      ],
+      "numbers": [
+        {
+          "id": "free_settled_cash",
+          "status": "CORRECT"
+        },
+        {
+          "id": "desired_shares",
+          "status": "CORRECT"
+        },
+        {
+          "id": "funded_share_ceiling",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 3,
+      "denominator": 3,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 3,
+          "reason": "Avoids issuer-sector inference from identifier and explains funding/implementation risk."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Recognizes50 shares are arithmetically payable without calling them suitable or authorized."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct free cash, desired shares, funded ceiling and shortfall."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Rejects unfunded demand and lists concrete evidence required for a smaller order."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Treats95% confidence as uncalibrated and preserves fee/price uncertainty."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 404.167,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-19",
+      "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "878555ced8d347221721c4ffff66b9648d6b2f2b043f6d43df602f33976d59d5",
+      "reviewHash": "b5f016610ba3541529c4a30cbf97a97f270e2a6a81c65e4d772f27030ede09ae",
+      "categories": [
+        "nonfinancials",
+        "noTrade"
+      ],
+      "numbers": [
+        {
+          "id": "profit_cash_gap",
+          "status": "CORRECT"
+        },
+        {
+          "id": "mechanical_opportunities",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 2,
+      "denominator": 2,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Explains construction working-capital risks without asserting the unverified cause."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Positive profit, cash and advance movements are weighed against receivable absorption."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct cash-profit gap and preserves one mechanical opportunity."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Separates discretionary refusal from technical failure and prioritizes collection/clearance work."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "No fraud/distress inevitability or actual signal/fill is fabricated."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 404.185,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-20",
+      "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "071f5b1c2852e0ddeab4d891c228c57405e8f18709ffaa7698bad75c5d85c9ca",
+      "reviewHash": "369721fde801b1c01f9398a1f5041d7987e392b7ee526e427b4487edc4d6da1a",
+      "categories": [
+        "incompleteFinancials",
+        "noTrade"
+      ],
+      "numbers": [
+        {
+          "id": "computed_gross_margin",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 1,
+      "denominator": 1,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Explains contractor gross margin limits and CIRA allocation without overstating economic quality."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Positive gross profit and unchanged CIRA total balance missing cash/provenance."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct ratio with rounded-input precision caveat and compatible scopes."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Uses available arithmetic while withholding identity/action clearance."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Differentiates optional display missingness from critical identity/action uncertainty."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 404.2,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-21",
+      "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "d599b73af984232060e934d968657918e0654c7ee29a75868ba721058d5ba215",
+      "reviewHash": "926534705ac734a62a0673fd01f01642beb2586ada0ffc0a73cb5a1c36c30ff9",
+      "categories": [
+        "riskExceptions"
+      ],
+      "numbers": [
+        {
+          "id": "post_addition_name_percent",
+          "status": "CORRECT"
+        },
+        {
+          "id": "remaining_cash",
+          "status": "CORRECT"
+        },
+        {
+          "id": "common_factor_percent",
+          "status": "CORRECT"
+        },
+        {
+          "id": "joint_adverse_equity",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 4,
+      "denominator": 4,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Connects customer concentration and shared construction demand to liquidity-constrained downside."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Supportive debt-free/collected receipts/contract evidence receives a substantive customer/termination challenge."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct funding, exposures, joint stress and independently correct smaller-allocation illustration."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Conditionally defends funded concentration, offers smaller/zero alternatives, and preserves no-pyramiding."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "No unsupported probability, maximum-loss claim or optimality; explicit downside acceptance is not alone proof of value."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 404.217,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    },
+    {
+      "caseId": "W7-22",
+      "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+      "modelId": "gpt-6-astra",
+      "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+      "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+      "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+      "actorId": "/root/w7_blind_analyst",
+      "reviewer": "/root/w7_independent_review",
+      "runHash": "4ce5aa7ea90325931ac072b3048f2b7e8e6ba9f046cf56aab514a2ae48238914",
+      "reviewHash": "f8bdc4727f5089f9e0983bc0f68e5fa71283f6ac34c2d89f81e967035aae9fc3",
+      "categories": [
+        "riskExceptions",
+        "noTrade"
+      ],
+      "numbers": [
+        {
+          "id": "desired_shares",
+          "status": "CORRECT"
+        },
+        {
+          "id": "stated_upside_percent",
+          "status": "CORRECT"
+        },
+        {
+          "id": "adverse_price_return_percent",
+          "status": "CORRECT"
+        },
+        {
+          "id": "adverse_portfolio_equity",
+          "status": "CORRECT"
+        },
+        {
+          "id": "retained_mechanical_opportunities",
+          "status": "CORRECT"
+        }
+      ],
+      "correct": 5,
+      "denominator": 5,
+      "accuracy": 1,
+      "criticalFabrications": 0,
+      "criticalUnitPeriodIdentityErrors": 0,
+      "rubric": {
+        "sectorReasoning": {
+          "score": 4,
+          "reason": "Connects customer demand and payment concentration without inventing sector or other holdings."
+        },
+        "counterevidence": {
+          "score": 4,
+          "reason": "Positive EBITDA and full funding are weighed against overdue receivables, rumor and negative operating cash."
+        },
+        "numericalInterpretation": {
+          "score": 4,
+          "reason": "Correct shares, upside/downside, portfolio stress and opportunity denominator."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "reason": "Justifies abstention substantively; smaller sizing does not repair weak evidence."
+        },
+        "uncertainty": {
+          "score": 4,
+          "reason": "Separates stated levels from expected return, probability and guaranteed stop execution."
+        }
+      },
+      "disagreements": [],
+      "missingEvidence": [
+        "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+      ],
+      "status": "FACTUAL_GATE_PASS",
+      "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+      "durationSeconds": 404.235,
+      "toolCalls": 0,
+      "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+    }
+  ]
+}

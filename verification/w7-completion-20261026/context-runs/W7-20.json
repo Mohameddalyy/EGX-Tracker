@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.165Z",
+  "payload": {
+    "caseId": "W7-20",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-20",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "oras-profit",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        },
+        {
+          "id": "cira-segments",
+          "availableAt": "2026-10-23T16:29:09.072Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196006.153
+        },
+        {
+          "id": "scenario-missing",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0.019
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.441Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-20\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"cira-segments\",\"availableAt\":\"2026-10-23T16:29:09.072Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196006.153},{\"id\":\"scenario-missing\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nFrom ORAS page 8, simple disclosed arithmetic gross margin is 289.5 / 2,978.0 x 100 = 9.721289456010746%, approximately 9.72%. Both inputs are consolidated USD millions for the same six-month period, so the units cancel. This is a transparent computed fallback, not a separately published adjusted performance metric. It should not be confused with operating margin, EBITDA margin or cash conversion.\n\nA missing noncritical display ratio can be reconstructed from reliable compatible inputs. Missing current security identity and corporate-action clearance cannot: they determine what instrument, share basis and entitlements would actually be traded. Similarly, CIRA's branded IR-service PDF has an unresolved issuer-to-service link; correct table arithmetic and visual branding cannot authenticate that chain. Its simultaneous cost allocation can explain segment profit differences, but does not repair provenance. ORAS positive gross profit supports profitable project activity, while construction collection risk and the absence of cash details in this case prevent extrapolating margin into distributable cash. I would retain the labeled 9.72% research metric and continue analysis, while withholding trade clearance pending identity/actions, provenance where applicable, current liquidity and valuation. Unknown critical inputs are not zero risk, and the ease of computing a margin provides no permission to bypass them.",
+    "extractedNumbers": [
+      {
+        "id": "computed_gross_margin",
+        "unit": "percent",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 9.721289456010746
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "fee3dc89cca6c7638caf7481f9891c41c2779112b92563ba90057b281690a596",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+    "packetHash": "4a7491d6ef1712281c5e3a2d7e5166faf60b14c9684d6d777e733a6b5d96b830",
+    "outputHash": "c4b3cafaa6410b4978949b59da5c5fe6200e694080b3fb7ca6451c193d8eb2c1",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-20.json",
+    "originalFileHash": "7696a2653371f33077b734c9bee259cd5d21257c676d198a49e77926217a16d1",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "fc07469944acb116e06a0ca4236231565992634b835b8653871ac4fbd2f36c40"
+}

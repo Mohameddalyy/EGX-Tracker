@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.961Z",
+  "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+  "runHash": "0e09fcef7daeff407eecd4262ff526a95144fe660428dade3e9d747f8e2a98fa",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Explains continuing liquidity exposure while declining invented issuer distress or sector."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Daily allowance cannot negate minute failure and absent later observation."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct 200 minute, 1500 daily, zero sale and 800 retained shares."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Keeps pending exit and position visible without booking proceeds."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "No price, stop fill, current monetary value or future capacity is invented."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

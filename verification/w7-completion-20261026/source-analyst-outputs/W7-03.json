@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-03",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "ORAS physical pages 8 and 10 confirm six-month consolidated operating profit of USD179.5 million alongside operating cash flow of -USD54.5 million. Trade and other receivables absorbed USD329.2 million. Accrual profitability therefore did not translate into positive operating cash in this period. Operating profit is before finance and tax; the cash statement instead begins at net profit of USD127.8 million. Its noncash/finance/tax adjustments add USD72.8 million, working-capital and provision movements total -USD249.6 million, and the separately displayed interest/dividend/tax cash lines net to -USD5.5 million: 127.8 + 72.8 - 249.6 - 5.5 = -54.5.\n\nConstruction can recognize project earnings before customers settle invoices, creating funding pressure even on profitable contracts. Receivable aging, disputed claims, retention terms and project milestones are needed to distinguish ordinary timing from deterioration. Counterevidence is material: contract work in progress released USD43.4 million, advances added USD40.0 million and excess billings USD24.4 million; ending cash was USD1,230.1 million. Cash nevertheless fell after USD240.9 million investing outflow despite USD180.9 million financing inflow. These facts do not establish fraud or inevitable distress, and the aggregate cash balance may include restrictions not identified here. Decision: further research collection conversion, debt maturities and unrestricted liquidity before investing; the earnings result alone is insufficient clearance.",
+  "extractedNumbers": [
+    {
+      "id": "operating_profit",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 179.5
+    },
+    {
+      "id": "operating_cash_flow",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": -54.5
+    },
+    {
+      "id": "receivables_cash_movement",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": -329.2
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

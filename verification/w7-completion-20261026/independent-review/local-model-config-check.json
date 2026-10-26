@@ -1,0 +1,9 @@
+{
+  "reviewedAt": "2026-10-25T23:10:44.121Z",
+  "reviewerActorId": "/root/w7_independent_review",
+  "recordTimestamp": "2026-10-25T23:01:00.707Z",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "verification": "Independently read only matching turn_context metadata from retained local root session; fields match parent sanitized provenance file.",
+  "limitation": "Local root configuration evidence, not provider attestation. Subagent inheritance follows no-override tool behavior; no cross-model comparison."
+}

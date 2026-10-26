@@ -1,0 +1,93 @@
+{
+  "sources": [
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\adib-h1-2026.pdf",
+      "sha256": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+      "pagesInspected": [
+        4
+      ],
+      "method": "pypdf full-page text extraction"
+    },
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\oras-h1-2026.pdf",
+      "sha256": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "pagesInspected": [
+        8,
+        10,
+        41,
+        68
+      ],
+      "method": "pypdf full-page text extraction"
+    },
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\cira-9m-2026.pdf",
+      "sha256": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e",
+      "pagesInspected": [
+        4
+      ],
+      "method": "pypdf full-page text extraction"
+    },
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\phdc-9m-2025.pdf",
+      "sha256": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "pagesInspected": [
+        1,
+        2,
+        4
+      ],
+      "method": "pypdf full-page text extraction"
+    },
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\cib-dividends-web-capture.json",
+      "sha256": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+      "method": "complete JSON content read"
+    },
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\recorded-engineering-scenarios.json",
+      "sha256": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "method": "complete JSON content read"
+    },
+    {
+      "localPath": "data\\research\\evidence\\w7-evaluation\\full-discretion-scenarios.json",
+      "sha256": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+      "method": "complete JSON content read"
+    }
+  ],
+  "scope": "Only permitted retained original PDFs and JSON sources; no outside or later evidence. Full relevant physical pages extracted.",
+  "tools": [
+    "Python bundled runtime",
+    "pypdf",
+    "Poppler pdftoppm",
+    "view_image"
+  ],
+  "inspectionFinishedBeforeAuthoringAt": "2026-10-25T23:12:21Z",
+  "visualInspection": [
+    {
+      "source": "adib-h1-2026.pdf",
+      "physicalPages": [
+        4
+      ],
+      "result": "Image-based table absent from pypdf text; all required values, units, period columns and signed ECL visually confirmed."
+    },
+    {
+      "source": "cira-9m-2026.pdf",
+      "physicalPages": [
+        4
+      ],
+      "result": "Both tables, operational data and allocation footnotes visually checked."
+    },
+    {
+      "source": "phdc-9m-2025.pdf",
+      "physicalPages": [
+        4
+      ],
+      "result": "Selected income, balance and cash-flow tables and units visually checked."
+    }
+  ],
+  "limitations": [
+    "No current market checks or external browsing; cutoff retained artifacts only.",
+    "ADIB rendering emitted a Symbol-font warning; required table text and numbers were visibly legible.",
+    "Full relevant PDF pages were read, not full reports.",
+    "Original full-discretion JSON includes a preFreezeCorrection annotation; it was encountered incidentally in the required complete source read and was not used as reviewer feedback or to modify answers."
+  ]
+}

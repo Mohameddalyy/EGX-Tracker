@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "kind": "engineering-summary",
+  "createdAt": "2026-10-25T23:15:55.039Z",
+  "payload": {
+    "createdAt": "2026-10-25T23:15:55.008Z",
+    "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+    "evaluationReleaseHash": "015b9b8deb5208e68ca66abef8e54a639d4eb25ba8b575b9cb43909dad441316",
+    "sources": [
+      {
+        "path": "app/v5/fixed-exit-attribution.mjs",
+        "hash": "5025ddeaf83801b8ed949143a68271521476792579be695475daa69d196eff8d"
+      },
+      {
+        "path": "app/v5/evaluation-provenance.mjs",
+        "hash": "e0a5bc1d9c0f13c94c40c575ffc7d5692be9fc3b167026d57c2ec4a946931375"
+      },
+      {
+        "path": "app/v5/evaluation-contract.mjs",
+        "hash": "3c0b2df206767a5f89bbad4080629bd480ecf612a4a6ec2cdd43b0b6b19470cc"
+      },
+      {
+        "path": "app/v5/evaluation-models.mjs",
+        "hash": "501d8a3b4fb226cbb431bb5524bef554b79f405fae1214ddf2de65ca4e1ff9d7"
+      },
+      {
+        "path": "app/v5/evaluation-ledger.mjs",
+        "hash": "11796c64384e7bcbd9f39e2be99c6e331d5017bb38d21efb19d7eea34d2a064f"
+      },
+      {
+        "path": "app/v5/evaluation-matrix.mjs",
+        "hash": "d34bb7f97f24d627f93a86b8cd3da395946aa80b972459a98ad49d9cb80ec012"
+      },
+      {
+        "path": "app/v5-evaluation-agent.mjs",
+        "hash": "f5226e86525bc0b6eeead177b5719f01507e25dfd2845817d8a48b25ce994985"
+      },
+      {
+        "path": "app/v5-w7.test.mjs",
+        "hash": "ad003cd0bd3cfb8da387e485b7354ca44bec56c4ebceed2ceff9297f7ec84788"
+      }
+    ],
+    "summary": [
+      {
+        "name": "complete-lifecycle",
+        "path": "verification/remediation-batch4-20261025/release-ledgers/complete-lifecycle/engineering.sqlite",
+        "ledgerBytesUnchanged": true,
+        "stateHash": "92d1aa35b914ac351d186e0dfd4640364383d798aefd3a211d23374c5b815ad3",
+        "transitionReplay": "VERIFIED",
+        "blockedEvents": 0,
+        "suppressedRiskExits": 0,
+        "equityDeltaCents": 0,
+        "reportHash": "2032d8ad9d820eb5ca3a141c66a9a2a0e686096271dff7430bcdf63c5d71388d",
+        "attributionHash": "938fef473d262f328739600b586e8983efa975c706bc58169f68e1076cdfae73"
+      },
+      {
+        "name": "full-liquidity-deadlock",
+        "path": "verification/remediation-batch4-20261025/release-ledgers/full-liquidity-deadlock/engineering.sqlite",
+        "ledgerBytesUnchanged": true,
+        "stateHash": "b99deb4f7e26bb8b6cbae05046469d07bc4828dbcbe024b7fd86e1cbe205cedb",
+        "transitionReplay": "VERIFIED",
+        "blockedEvents": 0,
+        "suppressedRiskExits": 0,
+        "equityDeltaCents": 0,
+        "reportHash": "c6d0e245bf474c7f501248885882433221cba0a521e29afab7cc84b1208cd2fc",
+        "attributionHash": "e7a599e398d09c7d60b45867ea9d78a83da9596f751c135d367a8f27d3ae2a6d"
+      },
+      {
+        "name": "stress-zone-no-fill",
+        "path": "verification/remediation-batch4-20261025/release-ledgers/stress-zone-no-fill/engineering.sqlite",
+        "ledgerBytesUnchanged": true,
+        "stateHash": "3218b30a54347a66645126c53f44c093021cc377e7d4b9719e35aa687dd19912",
+        "transitionReplay": "VERIFIED",
+        "blockedEvents": 0,
+        "suppressedRiskExits": 0,
+        "equityDeltaCents": 0,
+        "reportHash": "bcd6071edb63255c15494ef53a4a67599d7d0347118e8412fe9965e06acdafa8",
+        "attributionHash": "2cf91d5c6cef01c8445b00c46953222c32fdc0f922659f0d19cb5af914555a00"
+      }
+    ],
+    "claim": "Independent accounting replay of retained engineering fixtures, not prospective observations. Additional discretionary exit and changed funded entry tests are in v5-w7.test.mjs."
+  },
+  "contentHash": "5f6589147d92db49e317a8896bcdefabb3142cba5f3f8da6f53e6715002b0511"
+}

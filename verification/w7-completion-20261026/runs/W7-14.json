@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.837Z",
+  "payload": {
+    "caseId": "W7-14",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:37.5511967Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Fixture minute capacity is 30,000 x 2% = 600 shares. Daily capacity is 20,000 x 5% = 1,000 shares. Both conditions must hold, so effective capacity is min(600, 1,000) = 600 shares (scenario-liquidity). The proposed whole order is 1,000 shares: it meets the daily limit exactly but fails the minute limit. The whole order therefore does not pass. Execution is zero under this event's rule; filling 600 shares would impermissibly turn an all-whole-order decision into a partial fill.\n\nThe daily pass is meaningful counterevidence to saying all capacity tests fail, but it cannot override the binding minute constraint. Participation limits restrict assumed market impact; volume alone does not demonstrate an executable price, spread, depth, absence of halts or availability of counterparties. The fixture explicitly ignores fees and price limits for this calculation, not for a real trade.\n\nNo actual issuer business or sector evidence is supplied. The label ENGINEERING-A is an identifier, not evidence that it belongs to an engineering sector or has a particular business model. The business implication that can be assessed is execution liquidity: a thesis may be attractive yet impossible to implement at the requested size at this decision event. I cannot infer fundamental quality from these synthetic volumes.\n\nBounded decision: record a failed whole-order capacity gate and retain no invented fill or proceeds. A newly specified smaller order or a later verified executable event would require its own authorized evaluation; neither is supplied here. These authored scenario volumes and ceilings are not market observations and do not amend production policy. Funding, current identity/actions, valuation and other applicable entry conditions remain outside the supplied evidence.",
+    "extractedNumbers": [
+      {
+        "id": "minute_capacity",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity",
+        "value": 600
+      },
+      {
+        "id": "daily_capacity",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity",
+        "value": 1000
+      },
+      {
+        "id": "effective_capacity",
+        "unit": "shares",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-A",
+        "evidenceId": "scenario-liquidity",
+        "value": 600
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "aff35a2ed3df4273c5c6fb78efaebc3c1ee0e58b877beeaee207650305b8ceac",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+    "packetHash": "cd16f321782f4595c47dd412821e858933ef2156f5db1aa5f465de88b93a5910",
+    "outputHash": "bec214cbdffce9d333df6184bead52cf823958924534100c81bbc6113394baf5",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-14.json",
+    "originalFileHash": "29a07ec5f9140069dea2bf007e5ebe739fa0661ea96a4602dc53c10695b52368",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "94e7ae449b17d5343e9ca0455166dc4c51245132c50eb39ea896150221b58b0e"
+}

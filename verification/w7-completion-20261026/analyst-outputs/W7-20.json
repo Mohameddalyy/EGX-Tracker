@@ -1,0 +1,19 @@
+{
+  "caseId": "W7-20",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:38.7669892Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "A simple consolidated gross margin can be calculated directly from the compatible printed amounts: USD289.5 million gross profit / USD2,978.0 million revenue x 100 = approximately 9.721289456%, or 9.72% (oras-profit). Both are for the six months ended 30 June 2026 and share the same currency, unit and consolidated scope. This is a disclosed arithmetic fallback, not a sourced management margin definition or a more precise measurement than the rounded underlying figures permit.\n\nFor a contractor, this indicates how much reported revenue remains after the costs classified in gross profit, before further expenses. Positive gross profit and operating profit support the existence of accounting earnings. But the margin alone does not establish contract quality, cash collection, future cost overruns or sustainable returns. No prior-period comparison, project mix or cash-conversion schedule is supplied here, so I cannot assert improvement or cash realization.\n\nA missing display percentage is noncritical when its compatible inputs are present and the formula is explicit. Security identity and corporate-action clearance are fundamentally different missing inputs: there is no arithmetic substitute for verifying what instrument and adjusted terms an order would trade. Missingness is not zero risk. The CIRA passage has an additional unresolved issuer-to-service link: computing or reconciling its tables does not authenticate their issuer provenance. Its unchanged total under segment allocation is also counterevidence to interpreting that reallocation as new group earnings.\n\nBounded decision: publish the labeled computed ORAS margin for research, while withholding all trade clearance. Obtain current identity/action evidence and resolve CIRA provenance before relying on those matters operationally. The synthetic missingness scenario is not a real execution validation, and the captured statements do not provide current valuation or future outcomes.",
+  "extractedNumbers": [
+    {
+      "id": "computed_gross_margin",
+      "unit": "percent",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 9.721289456010746
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

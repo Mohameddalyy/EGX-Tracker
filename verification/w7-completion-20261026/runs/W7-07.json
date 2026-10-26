@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.825Z",
+  "payload": {
+    "caseId": "W7-07",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:36.2011092Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Consolidated total net profit is USD127.8 million, or USD127,800,000 (oras-profit). Separate-parent profit is USD5,155,743, already stated in USD and not in millions (oras-parent). Consolidated minus separate-parent profit is therefore USD122,644,257. This is a scope difference, not an incremental profit pool to add to consolidated earnings. Consolidation includes subsidiaries and consolidation adjustments; parent-only income can have a very different composition and timing.\n\nThe separate statement shows six-month EPS of USD1.05, but expressly says EPS is computed from consolidated statements. Dividing separate-parent profit by that EPS mixes a parent-only numerator with a group-based per-share statistic and cannot estimate a valid share count. Even using total group net profit is not necessarily correct: the consolidated statement separately identifies USD115.3 million attributable to owners and USD12.5 million to non-controlling interests. A share-count reconstruction would need the actual EPS numerator adjustments, weighted-average share methodology and rounding details.\n\nConstruction businesses often operate through subsidiaries and project entities. Group profit helps describe consolidated operations, while parent cash available for dividends or obligations may depend on distributions and restrictions elsewhere in the group. Strong consolidated profit is supportive; the much smaller parent result is counterevidence to assuming all group earnings are immediately parent-distributable cash. It is not proof of trapped cash or poor earnings quality by itself.\n\nRequest intercompany distributions, cash accessibility, debt guarantees and the EPS note/share reconciliation. Bounded decision: preserve the two scopes separately and decline valuation or sizing based on the invalid quotient. The packet supplies neither current corporate-action clearance nor market valuation, and the captured document does not establish later outcomes.",
+    "extractedNumbers": [
+      {
+        "id": "group_profit",
+        "unit": "USD",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 127800000
+      },
+      {
+        "id": "parent_profit",
+        "unit": "USD",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction separate parent",
+        "evidenceId": "oras-parent",
+        "value": 5155743
+      },
+      {
+        "id": "scope_difference",
+        "unit": "USD",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom consolidated minus separate",
+        "evidenceId": "oras-parent",
+        "value": 122644257
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "fd098c4baa24537cb472bdeb9be354461577082d95349f790ecb9688de9a2d92",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "3c95003675ec12eb881a074e53a7de6fc2ba39583eed09e079ffab1bd979dc1c",
+    "packetHash": "f12b707840d94a3e52690390ba4531be414027d0a41475f85bdce7e4e8deac3d",
+    "outputHash": "311fcf43ffc7c3eedba075eb9bf9d202eaa0e7fe7d90571d080953032bf7d3f6",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-07.json",
+    "originalFileHash": "d2d329fa7d68659b5b5ba99a254922f59396f850777c7ec5c5c731bd11c058fb",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "38c5986e510349a73d28f23b78c9ff67d7570daed9ae9d89e459d7118dc0f925"
+}

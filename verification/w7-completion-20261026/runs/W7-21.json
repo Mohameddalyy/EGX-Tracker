@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.853Z",
+  "payload": {
+    "caseId": "W7-21",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:38.7832651Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "The first A purchase is EGP70,000 / EGP10 = 7,000 shares. Immediately afterward, A is 70% of unchanged EGP100,000 starting equity, B remains EGP15,000, and settled unreserved cash falls from EGP85,000 to EGP15,000. A and B together put EGP85,000, or 85% of equity, into the stated common domestic construction-demand exposure (full-concentration). Under the stipulated simultaneous marks, A becomes EGP52,500 and B EGP12,000. With EGP15,000 cash unchanged, portfolio equity becomes EGP79,500: a loss of EGP20,500, or 20.5%. This is a stress valuation, not a maximum loss, probability or guaranteed exit value.\n\nWithin this fictional FULL exercise, the full purchase can be defended conditionally if the decision maker explicitly accepts that quantified drawdown, a potentially worse outcome and inability to exit promptly. It is fully funded; the evidence assumed verified inside the fiction includes recurring collected service receipts, no financial debt, twelve months of contracted operating-cost cash coverage and a signed three-year customer contract. These reduce some immediate operating/funding concerns and give a substantive basis for a concentrated thesis. The purchase is an initial position, so it does not violate the mandatory no-pyramiding/no-averaging rule. Nothing here permits later additions, and no fixed name, sector or cash cap should be invented.\n\nThe strongest challenge is that 70% depends on one business and 85% shares demand sensitivity. A's largest customer provides 45% of receipts; contract termination for performance failures, slower collections and weaker construction demand could act together. Debt-free does not mean loss-free, twelve-month cost coverage is not a perpetual runway, and a signed contract does not guarantee collection. Exit liquidity is unknown. No calibrated return probabilities or valuation-based expected return are supplied, so willingness to bear loss alone cannot prove an attractive investment.\n\nA smaller initial allocation is a defensible alternative. For illustration only, EGP35,000 in A would leave EGP50,000 cash and EGP50,000 total common-factor exposure; the same stipulated stress would yield EGP88,250 equity, an EGP11,750 loss. It reduces monetary concentration without proving better business quality, and the no-addition control means it is not a starter position intended for topping up. Abstention preserves flexibility if the valuation and customer risks cannot be accepted.\n\nMy bounded judgment is conditional support for the full amount as an internally coherent discretionary choice only with explicit acceptance of the 20.5% illustrated portfolio drawdown and potentially greater/liquidity-constrained loss, backed by the scenario's assumed diligence. I would prefer the smaller initial allocation if that acceptance is absent or fragile; I cannot establish that FULL is optimal. The fixture clears initial identity/actions/execution only by assumption. This reasoning authorizes no real trade or production-policy change.",
+    "extractedNumbers": [
+      {
+        "id": "post_addition_name_percent",
+        "unit": "percent of equity",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 70
+      },
+      {
+        "id": "remaining_cash",
+        "unit": "EGP",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 15000
+      },
+      {
+        "id": "common_factor_percent",
+        "unit": "percent of equity",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 85
+      },
+      {
+        "id": "joint_adverse_equity",
+        "unit": "EGP",
+        "period": "fixture joint adverse valuation",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 79500
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "efa19cfe140fb770aaa5add25fa08bec04810f9916c2ffcfad2a490ad95a50be",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+    "packetHash": "9ef24a11e5b2de20d237521d0427967e80cd6ae174edf40622c9f0312c77865b",
+    "outputHash": "15925ebcc8d10942cc907255a5da4905a135b3d0b79c746dd093c4fb10151fbf",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-21.json",
+    "originalFileHash": "a714c4991861df5936104459e9a52c437fb054483300a6579a2a64695d5e050a",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "ce66cc914c563cea69ef9acb7382c53ce99111793a252e32d2a48af306d34a88"
+}

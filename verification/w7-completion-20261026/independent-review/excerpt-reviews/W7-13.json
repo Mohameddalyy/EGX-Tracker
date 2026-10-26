@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.925Z",
+  "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+  "runHash": "eb6546f992fd5e7c69984c416c4de3c4b4f838160f9a95a439bf7064efb671d9",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Explains plausible business mix, leverage and governance implications with limited supplied pro-forma evidence."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Approved resolutions and defined ratio are balanced against outstanding approvals and extended deadline."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct exchange ratio and hypothetical shares; no fabricated fractional settlement."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Requests current completion, capitalization and pro-forma economics before action."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Explicitly preserves contingent status and distinguishes dilution arithmetic from economic loss."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

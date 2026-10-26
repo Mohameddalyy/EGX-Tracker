@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-12",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The retained official CIB dividend-table capture prints a 2026 cash dividend of EGP6 per share. The synthetic eligible holding of 1,000 shares therefore has EGP6,000 gross entitlement, before any tax or fees. The stated record date is 6 April 2026 and payment date 9 April 2026. The table does not label an ex-date, and I do not infer one from either date or from presumed settlement conventions.\n\nA cash distribution can contribute to bank shareholder return but is not itself the total return or dividend yield. No entry price, final price, price-adjustment basis, reinvestment convention or net tax/fee outcome is provided. Positive payout is counterevidence to a claim that holders received no cash benefit; it is not proof of sustainable future distributions or safe bank capital. Need earnings quality, regulatory capital/distribution constraints and verified ownership/entitlement for a real holding. The fixture assumes entitlement only for its hypothetical holder.\n\nThe retained capture time, 25 October 2026 at 22:56:12.986Z, falls after the packet cutoff of 22:55:55.225Z. Its numerical content can be read for this requested exercise, but the record cannot establish availability by that earlier cutoff. Decision: record the conditional gross entitlement and exact date labels, flag the timestamp mismatch, and withhold any total-return or trading conclusion.",
+  "extractedNumbers": [
+    {
+      "id": "cash_dividend_per_share",
+      "unit": "EGP per share",
+      "period": "2026 cash dividend",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "cib-dividends",
+      "value": 6
+    },
+    {
+      "id": "gross_cash_entitlement",
+      "unit": "EGP",
+      "period": "2026 cash dividend hypothetical position",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "scenario-dividend",
+      "value": 6000
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:19:49.979Z",
+  "payload": {
+    "caseId": "W7-15",
+    "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "actorId": "/root/w7_source_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "cb579463feadd0a745a976931f2849295db25ffa05efe3a08bf0e257166a9571",
+    "reviewHash": "7d068935814cf8a838975c6071ba54a4ec5d329354ed29097c72a657e78415b7",
+    "categories": [
+      "thinLiquidity",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "exit_capacity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "executed_exit",
+        "status": "CORRECT"
+      },
+      {
+        "id": "retained_shares",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Addresses liquidity/exit-risk mechanism and explicitly marks absent issuer/sector facts."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Daily capacity is recognized without ignoring the binding minute constraint."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correctly retains all800 shares and zero execution; does not infer proceeds or P&L."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Retains all800 shares and pending exit with no fabricated proceeds, monetary marks or rule relaxation."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No imagined stop fill, mark, liquidity recovery or realized value."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 226.135,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "eb89e4dd532e10e18a7c75c4a2a8c5d431c403986148e606ed816b609e2e6de1"
+}

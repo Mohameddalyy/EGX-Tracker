@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:16:37.635Z",
+  "payload": {
+    "caseId": "W7-15",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "In the synthetic exit fixture, the minute limit is 10,000 x 2% = 200 shares and the daily limit is 30,000 x 5% = 1,500 shares. Effective exit capacity is 200 shares. The holding and all-or-none exit order are 800 shares, so executable whole-order exit quantity at this event is zero, leaving all 800 shares held. Capacity is not an actual execution and cannot be booked as a partial sale.\n\nThe daily capacity is supportive of potential liquidity at a broader horizon, but the minute limit is binding and no later executable observation exists. An intention to exit does not extinguish market exposure. There are no prices from which to calculate retained market value, sale proceeds, realized loss or cash released; those must remain unknown, with the exit pending. These authored engineering inputs reveal a liquidity-control issue rather than an observed issuer-specific sector event. A prompt whole-position exit is not guaranteed, and changing valuation does not create executable liquidity. Decision: preserve the entire holding and pending exit state, seek a fresh permissible executable observation, and neither fabricate proceeds nor silently relax all-or-none rules. Fixture percentages do not amend production policy.",
+    "extractedNumbers": [
+      {
+        "id": "exit_capacity",
+        "unit": "shares",
+        "period": "fixture exit event",
+        "entity": "ENGINEERING-B",
+        "evidenceId": "scenario-exit",
+        "value": 200
+      },
+      {
+        "id": "executed_exit",
+        "unit": "shares",
+        "period": "fixture exit event",
+        "entity": "ENGINEERING-B",
+        "evidenceId": "scenario-exit",
+        "value": 0
+      },
+      {
+        "id": "retained_shares",
+        "unit": "shares",
+        "period": "fixture exit event",
+        "entity": "ENGINEERING-B",
+        "evidenceId": "scenario-exit",
+        "value": 800
+      }
+    ],
+    "toolCalls": [],
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "615072cd63558045e5b56e100a693762e165b63795cfd605dd86773e115f435f",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+    "packetHash": "73becb5c5159f51ee5afa35b7b5db175a40b4e71b15c243a1f016ffc4a5f5e60",
+    "outputHash": "e2736e38f9c5fe1d0089f3aebff327f6684e8bf8f559d8614d8c3ffe8281f6d7",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-15.json",
+    "originalFileHash": "b7b987a58ab1aad9b325b555aed02d5a7f62e2a1a1538d2ae9ee392926a546b5",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "231ba87503f2747f14206161cebd3939855ce192d7ed2c3c3b289c21b5843b1e"
+}

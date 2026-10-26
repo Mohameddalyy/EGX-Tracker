@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.977Z",
+  "payload": {
+    "caseId": "W7-21",
+    "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "d599b73af984232060e934d968657918e0654c7ee29a75868ba721058d5ba215",
+    "reviewHash": "926534705ac734a62a0673fd01f01642beb2586ada0ffc0a73cb5a1c36c30ff9",
+    "categories": [
+      "riskExceptions"
+    ],
+    "numbers": [
+      {
+        "id": "post_addition_name_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "remaining_cash",
+        "status": "CORRECT"
+      },
+      {
+        "id": "common_factor_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "joint_adverse_equity",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 4,
+    "denominator": 4,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects customer concentration and shared construction demand to liquidity-constrained downside."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Supportive debt-free/collected receipts/contract evidence receives a substantive customer/termination challenge."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct funding, exposures, joint stress and independently correct smaller-allocation illustration."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Conditionally defends funded concentration, offers smaller/zero alternatives, and preserves no-pyramiding."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No unsupported probability, maximum-loss claim or optimality; explicit downside acceptance is not alone proof of value."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 404.217,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "da166faec568f075a8941f30c0e84aa8dab55d8a008e76bef8f7d6972955dd08"
+}

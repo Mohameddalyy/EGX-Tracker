@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.193Z",
+  "payload": {
+    "caseId": "W7-22",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-22",
+      "cutoffAt": "2026-10-25T23:06:08.457Z",
+      "evidence": [
+        {
+          "id": "full-abstention",
+          "availableAt": "2026-10-25T23:06:08.457Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.443Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-22\",\"cutoffAt\":\"2026-10-25T23:06:08.457Z\",\"evidence\":[{\"id\":\"full-abstention\",\"availableAt\":\"2026-10-25T23:06:08.457Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nEGP60,000 at EGP20 buys 3,000 whole shares and leaves EGP40,000 cash. The asserted EGP22 target implies (22/20 - 1) x 100 = +10% price return. The EGP12 adverse value implies -40%; after allocation the adverse portfolio is 3,000 x 12 + 40,000 = EGP76,000, a 24% portfolio loss. The target scenario would earn only EGP6,000, versus EGP24,000 loss in the adverse scenario. These are stipulated levels, not calibrated probabilities, guaranteed stop fills or a complete outcome distribution.\n\nI would abstain on investment merit despite full funding and fixture-cleared identity, actions and initial execution. A renewal rumor involving 60% of sales is weak support, while overdue receivables and EGP8 million operating cash outflow challenge conversion of EGP12 million positive EBITDA into usable cash. A failure of the concentrated customer relationship can affect both revenue and collections. The sector is unspecified; I cannot invent a construction exposure or correlation estimate, but customer/demand dependence is a clear common operating risk. Positive EBITDA, available cash and a technical pass are meaningful counterevidence to saying the business has no value, is certainly insolvent, or the order is mechanically impossible.\n\nA smaller allocation reduces monetary loss without verifying renewal, improving collectability or fixing the 10% versus 40% asymmetry. Full size needs stronger verified contract/collection evidence and a valuation sensitivity analysis; waiting preserves the option to reconsider. No fixed concentration cap or cash shortage causes this refusal. Retain exactly one mechanical opportunity and record zero discretionary executions, without deleting the denominator. This is paper-only abstention, not a fraud finding, market prediction or trading instruction.",
+    "extractedNumbers": [
+      {
+        "id": "desired_shares",
+        "unit": "shares",
+        "period": "fixture proposed allocation",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention",
+        "value": 3000
+      },
+      {
+        "id": "stated_upside_percent",
+        "unit": "percent price return",
+        "period": "fixture target versus entry",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention",
+        "value": 10
+      },
+      {
+        "id": "adverse_price_return_percent",
+        "unit": "percent price return",
+        "period": "fixture adverse value versus entry",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention",
+        "value": -40
+      },
+      {
+        "id": "adverse_portfolio_equity",
+        "unit": "EGP",
+        "period": "fixture adverse valuation after allocation",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention",
+        "value": 76000
+      },
+      {
+        "id": "retained_mechanical_opportunities",
+        "unit": "opportunities",
+        "period": "fixture decision event",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention",
+        "value": 1
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "da55e31c8ad5a3bcaf18680f8c72cfe3d86113a9d3717ed6a97032f54428e51a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+    "packetHash": "c0859a95b006d7cda5b7a2c482c81a9e0d2ff0598d85deec895d949c66baf63c",
+    "outputHash": "836f8db3bc0fc3df9338a3f2aa2950f75a2eead296a95673ec128de1c832846e",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-22.json",
+    "originalFileHash": "b74ba5bf3a36630006136e13ac0bf4d84e6a8d477db4f089467d51a6accc275b",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "b0417a1f3fcdde0726536552b6f92627d28f33ff992177a66dd283e50b00369a"
+}

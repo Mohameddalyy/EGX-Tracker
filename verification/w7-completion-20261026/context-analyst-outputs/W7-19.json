@@ -1,0 +1,53 @@
+{
+  "caseId": "W7-19",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-19",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "oras-profit",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      },
+      {
+        "id": "oras-cash",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      },
+      {
+        "id": "scenario-trigger",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.439Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-19\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"oras-cash\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"scenario-trigger\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe ORAS operating cash-flow figure is -USD54.5 million. Six-month total net profit 127.8 minus operating cash flow -54.5 gives a USD182.3 million profit-to-cash gap. The original cash statement identifies a 329.2 million receivables cash absorption, partly offset by positive work-in-progress, advances and excess-billing movements. Construction accrual profits therefore need collection and project-cycle diligence.\n\nCounterevidence to a blanket negative conclusion is positive operating profit of 179.5, positive net profit and ending cash of 1,230.1 million. A working-capital outflow can reflect timing or expansion, not fraud or permanent cash loss. Yet cash restrictions, maturity commitments, receivable aging and later collections are not shown by the admitted pages. The synthetic technical pass cannot supply the missing refreshed corporate-action, liquidity, valuation or macro clearance, nor can it establish that price compensates for the cash risk. I would decline a trade and continue research, documenting exactly one mechanical opportunity in the denominator with zero discretionary executions. Removing that opportunity after abstention would bias evaluation. The pass is fictional and no actual signal, market clearance or future recovery is claimed; the fundamental evidence supports a cautious cash-conversion question, not a certainty of distress.",
+  "extractedNumbers": [
+    {
+      "id": "profit_cash_gap",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": 182.3
+    },
+    {
+      "id": "mechanical_opportunities",
+      "unit": "opportunities",
+      "period": "fixture decision event",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "scenario-trigger",
+      "value": 1
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

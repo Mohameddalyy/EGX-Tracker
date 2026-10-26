@@ -1,0 +1,32 @@
+{
+  "id": "W7-25",
+  "caseHash": "d5d8aaa4d1ab4b6f9962aa3427dcb44061dcb93842b8c6517088dd48c10a9b04",
+  "task": "Identify this case ID and quote its exact cutoffAt. Calculate minutes from announcement publication to this case cutoff, and seconds from this case cutoff to the scheduled meeting. Explain which announcement facts are already knowable and which future proceedings remain unknown. An announced future event is not inherently an unavailable announcement, and announcement is not completion. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"announcement_age_minutes\",\"unit\":\"minutes\",\"period\":\"relative to W7-25 cutoffAt\",\"entity\":\"SYNTHETIC-TEMPORAL-25\",\"evidenceId\":\"temporal-facts-25\"},{\"id\":\"seconds_until_meeting\",\"unit\":\"seconds\",\"period\":\"relative to W7-25 cutoffAt\",\"entity\":\"SYNTHETIC-TEMPORAL-25\",\"evidenceId\":\"temporal-facts-25\"}]. Treat this as a paper-only synthetic temporal reasoning task, give bounded conclusions and state missing evidence. No trades, market claims or rule changes follow.",
+  "cutoffAt": "2026-10-25T23:20:03.220Z",
+  "evidence": [
+    {
+      "id": "temporal-facts-25",
+      "source": "local:authored-synthetic-temporal-facts",
+      "contentHash": "8abba0023c0ba7b2ff77eb8a3a9f93bfc34f37ec993ea971e7f8280b96bcd376",
+      "availableAt": "2026-10-25T23:20:02.112Z",
+      "passage": "{\n  \"scope\": \"AUTHORED_SYNTHETIC_TEMPORAL_FACTS_NOT_MARKET_OR_ISSUER_OBSERVATIONS\",\n  \"recordedAt\": \"2026-10-25T23:20:02.112Z\",\n  \"recordedBy\": \"/root/w7_case_curator\",\n  \"facts\": {\n    \"entity\": \"SYNTHETIC-TEMPORAL-25\",\n    \"announcementPublishedAt\": \"2026-10-25T23:05:02.112Z\",\n    \"announcementCapturedAt\": \"2026-10-25T23:20:02.112Z\",\n    \"scheduledMeetingAt\": \"2026-11-04T23:20:02.112Z\",\n    \"notice\": \"The meeting is announced and scheduled. No meeting proceedings, approval or completion record is present.\"\n  }\n}",
+      "localPath": "data/research/evidence/w7-evaluation/temporal-case-25.json",
+      "availabilityBasis": "Actual capture of this newly authored synthetic fixture; timestamps inside facts are expressly synthetic scenario events."
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld.",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-25",
+    "cutoffAt": "2026-10-25T23:20:03.220Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-25",
+        "availableAt": "2026-10-25T23:20:02.112Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 1.108
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  }
+}

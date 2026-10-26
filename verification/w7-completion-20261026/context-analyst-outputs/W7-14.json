@@ -1,0 +1,49 @@
+{
+  "caseId": "W7-14",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-14",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "scenario-liquidity",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.436Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-14\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"scenario-liquidity\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe synthetic minute capacity is 30,000 x 2% = 600 shares. Daily capacity is 20,000 x 5% = 1,000 shares. Effective capacity is the smaller, 600 shares. The proposed whole 1,000-share order meets the daily ceiling exactly but exceeds the minute ceiling, so it fails the conjunctive whole-order rule. It must not be partially executed for 600 shares under this fixture.\n\nThe daily pass is relevant counterevidence to a claim that every liquidity check fails, but cannot override the binding minute constraint. These are authored volumes and participation rules, not observed market liquidity or a production-policy amendment. They supply no spread, price-depth, market-impact, identity/action or funding evidence. The entity's sector is unspecified, so no issuer-specific sector thesis can be invented; generally, common-demand or liquidity shocks could shrink executable capacity across related holdings, which remains unquantified here. My bounded decision is zero execution of this proposed order at this event, retaining it as failed capacity rather than fabricating a fill. A later separately assessed executable observation or a permitted new proposal would require a fresh decision, not assumed clearance. The volume arithmetic does not establish a good investment or an assured future exit.",
+  "extractedNumbers": [
+    {
+      "id": "minute_capacity",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-A",
+      "evidenceId": "scenario-liquidity",
+      "value": 600
+    },
+    {
+      "id": "daily_capacity",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-A",
+      "evidenceId": "scenario-liquidity",
+      "value": 1000
+    },
+    {
+      "id": "effective_capacity",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-A",
+      "evidenceId": "scenario-liquidity",
+      "value": 600
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

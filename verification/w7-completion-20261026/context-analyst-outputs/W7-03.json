@@ -1,0 +1,55 @@
+{
+  "caseId": "W7-03",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-03",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "oras-profit",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      },
+      {
+        "id": "oras-cash",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.425Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-03\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"oras-cash\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nOn original ORAS physical page 8, six-month operating profit is USD179.5 million. Page 10 reports operating cash flow of -54.5 million and a -329.2 million trade-and-other-receivables movement. Positive accrual profit can coexist with negative cash flow when work is recognized before cash collection. The full printed bridge starts at net profit 127.8, adds net noncash/finance/tax adjustments of 72.8 to reach 200.6, then applies working-capital movements totaling -249.6 and net cash interest/dividend/tax flows of -5.5, arriving at -54.5. Operating profit is not the cash-flow statement's starting line.\n\nConstruction entails milestone billing, receivables and retention timing. The large receivables absorption is material collection and funding risk, not proof of fraud or inevitable distress. Counterevidence includes positive profit, cash releases from contract work in progress of 43.4, advances of 40.0 and excess billings of 24.4. Ending cash of 1,230.1 is a buffer, but its restrictions and commitments are not established here, and financing inflow does not cure weak operating conversion. I would wait for receivable aging, subsequent receipts, customer exposure, project claims, cash restrictions and debt maturities before underwriting the cash-conversion thesis. This supports further research, not a predicted recovery or a trade.",
+  "extractedNumbers": [
+    {
+      "id": "operating_profit",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 179.5
+    },
+    {
+      "id": "operating_cash_flow",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": -54.5
+    },
+    {
+      "id": "receivables_cash_movement",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": -329.2
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

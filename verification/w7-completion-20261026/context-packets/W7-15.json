@@ -1,0 +1,31 @@
+{
+  "id": "W7-15",
+  "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+  "task": "Calculate effective exit capacity, actually executable whole-order exit quantity and retained exposure. Explain pending exit and valuation uncertainty without fabricating sale proceeds. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"exit_capacity\",\"unit\":\"shares\",\"period\":\"fixture exit event\",\"entity\":\"ENGINEERING-B\",\"evidenceId\":\"scenario-exit\"},{\"id\":\"executed_exit\",\"unit\":\"shares\",\"period\":\"fixture exit event\",\"entity\":\"ENGINEERING-B\",\"evidenceId\":\"scenario-exit\"},{\"id\":\"retained_shares\",\"unit\":\"shares\",\"period\":\"fixture exit event\",\"entity\":\"ENGINEERING-B\",\"evidenceId\":\"scenario-exit\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "scenario-exit",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-B holds 800 shares. Exit is all-or-none. Fixture minute volume 10,000 shares, daily reference volume 30,000 shares; minute ceiling 2%, daily ceiling 5%. No later executable observation exists. Unfilled quantity remains held. These fixture ceilings do not amend production policy.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld.",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-15",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "scenario-exit",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  }
+}

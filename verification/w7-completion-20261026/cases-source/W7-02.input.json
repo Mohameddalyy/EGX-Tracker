@@ -1,0 +1,53 @@
+{
+  "id": "W7-02",
+  "categories": [
+    "banks",
+    "incompleteFinancials"
+  ],
+  "task": "Distinguish bank shareholder profit from total group profit and compute non-controlling interest as their difference. Assess whether low net ECL charge proves clean loan quality when the loan-quality schedule is withheld. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"shareholder_profit\",\"unit\":\"EGP thousand\",\"period\":\"six months ended 2026-06-30\",\"entity\":\"ADIB Egypt consolidated\",\"evidenceId\":\"adib-income\"},{\"id\":\"nci_difference\",\"unit\":\"EGP thousand\",\"period\":\"six months ended 2026-06-30\",\"entity\":\"ADIB Egypt consolidated\",\"evidenceId\":\"adib-income\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "evidence": [
+    {
+      "id": "adib-income",
+      "contentHash": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+      "source": "https://www.adib.eg/media/2757582/ADIBConsalidatedQ22026English.pdf",
+      "availableAt": "2026-10-23T16:27:23.557Z",
+      "passage": "Physical page 4. Condensed interim consolidated income statement. Six months ended 30 June 2026, EGP in thousands: income from Murabaha, Musharaka, Mudaraba and similar income 29,117,908; cost of deposits and similar costs (16,863,967); net income from funds 12,253,941; release/(charge) expected credit losses (2,176); net profit 7,550,833; attributable to shareholders of the bank 7,536,797; non-controlling interests 14,036. Three-month 2026 ECL line is a release of 78,142. No loan-quality or average-loan schedule is in this selected passage.",
+      "localPath": "data/research/evidence/w7-evaluation/adib-h1-2026.pdf",
+      "page": 4,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    }
+  ],
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "frozenAt": "2026-10-25T22:55:55.225Z",
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T22:55:55.225Z",
+    "numbers": [
+      {
+        "id": "shareholder_profit",
+        "value": 7536797,
+        "absoluteTolerance": 0,
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income"
+      },
+      {
+        "id": "nci_difference",
+        "value": 14036,
+        "absoluteTolerance": 0,
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+    "notes": [],
+    "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+    "syntheticContext": false,
+    "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+  }
+}

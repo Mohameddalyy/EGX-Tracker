@@ -1,0 +1,1005 @@
+{
+  "reviewerActorId": "/root/w7_independent_review",
+  "reviewedAt": "2026-10-25T23:06:20.703Z",
+  "independence": "Separate AI actor; not human-independent verification or a named-model comparison.",
+  "cases": 22,
+  "numericalItems": 55,
+  "sourceReview": {
+    "method": "Full selected page PNGs visually inspected against passages; raw retained CIB web capture and all synthetic scenario passages read; every source byte hash recomputed.",
+    "physicalPdfPages": {
+      "adib": [
+        4
+      ],
+      "oras": [
+        8,
+        10,
+        41,
+        68
+      ],
+      "cira": [
+        4
+      ],
+      "phdc": [
+        1,
+        2,
+        4
+      ]
+    },
+    "cibLines": "71-76",
+    "scope": "Selected-source extraction fidelity, not authentic first-publication timing or complete issuer due diligence."
+  },
+  "caveats": [
+    "CIRA issuer-to-service provenance remains unresolved and stated in packet.",
+    "Palm Hills internal EBITDA/headline inconsistencies are present in source and retained in packet.",
+    "Five wholly synthetic operational cases are not market observations.",
+    "Calendar-age calculations use explicit scenario dates, not inferred publication availability.",
+    "Specific replaced backlog subtopics remain untested; see CURATION-REPORT.md.",
+    "W7-13 exchange-ratio source is the separate-parent note; use neutral company entity metadata rather than consolidated if not yet corrected."
+  ],
+  "checks": [
+    {
+      "caseId": "W7-01",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-01.input.json",
+      "inputByteHash": "1448c4e6616758d3c28ff41de66021337a576d94afd76c12f23b938893c26183",
+      "numbers": [
+        {
+          "id": "net_funds",
+          "independentValue": 12253941,
+          "recordedValue": 12253941,
+          "unit": "EGP thousand",
+          "period": "six months ended 2026-06-30",
+          "entity": "ADIB Egypt consolidated",
+          "evidenceId": "adib-income",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "ecl_signed",
+          "independentValue": -2176,
+          "recordedValue": -2176,
+          "unit": "EGP thousand",
+          "period": "six months ended 2026-06-30",
+          "entity": "ADIB Egypt consolidated",
+          "evidenceId": "adib-income",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "adib-income",
+          "path": "data/research/evidence/w7-evaluation/adib-h1-2026.pdf",
+          "contentHash": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-02",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-02.input.json",
+      "inputByteHash": "fe9ca5c9ebdd07f9f724f85afff6d4e7171040049e4296c39c0fe19b39796e41",
+      "numbers": [
+        {
+          "id": "shareholder_profit",
+          "independentValue": 7536797,
+          "recordedValue": 7536797,
+          "unit": "EGP thousand",
+          "period": "six months ended 2026-06-30",
+          "entity": "ADIB Egypt consolidated",
+          "evidenceId": "adib-income",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "nci_difference",
+          "independentValue": 14036,
+          "recordedValue": 14036,
+          "unit": "EGP thousand",
+          "period": "six months ended 2026-06-30",
+          "entity": "ADIB Egypt consolidated",
+          "evidenceId": "adib-income",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "adib-income",
+          "path": "data/research/evidence/w7-evaluation/adib-h1-2026.pdf",
+          "contentHash": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-03",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-03.input.json",
+      "inputByteHash": "3d747e97ffd49a43de5b172bc1f3845dd692c7ef620c28505aff4c7825fa8651",
+      "numbers": [
+        {
+          "id": "operating_profit",
+          "independentValue": 179.5,
+          "recordedValue": 179.5,
+          "unit": "USD million",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-profit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "operating_cash_flow",
+          "independentValue": -54.5,
+          "recordedValue": -54.5,
+          "unit": "USD million",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-cash",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "receivables_cash_movement",
+          "independentValue": -329.2,
+          "recordedValue": -329.2,
+          "unit": "USD million",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-cash",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "oras-profit",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "oras-cash",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-04",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-04.input.json",
+      "inputByteHash": "e12efc41f58107165f724b29fd6d2408816108eb0f2d14d79f4772cb378db01b",
+      "numbers": [
+        {
+          "id": "k12_before",
+          "independentValue": -321.5,
+          "recordedValue": -321.5,
+          "unit": "EGP million",
+          "period": "9M FY2025/26",
+          "entity": "CIRA K-12 segment",
+          "evidenceId": "cira-segments",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "k12_after",
+          "independentValue": 49.3,
+          "recordedValue": 49.3,
+          "unit": "EGP million",
+          "period": "9M FY2025/26",
+          "entity": "CIRA K-12 segment",
+          "evidenceId": "cira-segments",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "allocation_uplift",
+          "independentValue": 370.8,
+          "recordedValue": 370.8,
+          "unit": "EGP million",
+          "period": "9M FY2025/26",
+          "entity": "CIRA K-12 segment",
+          "evidenceId": "cira-segments",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "cira-segments",
+          "path": "data/research/evidence/w7-evaluation/cira-9m-2026.pdf",
+          "contentHash": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-05",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-05.input.json",
+      "inputByteHash": "d84b75b6effa8e4ad0046fc4e33bcf004bbffb4a6e0fb4836a872089a8e1808f",
+      "numbers": [
+        {
+          "id": "rounded_new_sales",
+          "independentValue": 182,
+          "recordedValue": 182,
+          "unit": "EGP billion",
+          "period": "nine months ended 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-highlights",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "recognized_revenue",
+          "independentValue": 25.549856,
+          "recordedValue": 25.549856,
+          "unit": "EGP billion",
+          "period": "nine months ended 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-statements",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "rounded_collections",
+          "independentValue": 26,
+          "recordedValue": 26,
+          "unit": "EGP billion",
+          "period": "nine months ended 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-highlights",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "phdc-highlights",
+          "path": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+          "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "phdc-statements",
+          "path": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+          "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-06",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-06.input.json",
+      "inputByteHash": "633cc316e36f7f6e2bd53dead1a48beb03371501b09459ae3ecaea510227a46d",
+      "numbers": [
+        {
+          "id": "net_current_assets",
+          "independentValue": 1196075,
+          "recordedValue": 1196075,
+          "unit": "EGP thousand",
+          "period": "as at 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-statements",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "rounded_net_debt",
+          "independentValue": 4.2,
+          "recordedValue": 4.2,
+          "unit": "EGP billion",
+          "period": "as at 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-summary",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "phdc-summary",
+          "path": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+          "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "phdc-statements",
+          "path": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+          "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-07",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-07.input.json",
+      "inputByteHash": "745e02a47f49285ee22dde95672b13476d9d20984a00a3370c5a9bbbb110d607",
+      "numbers": [
+        {
+          "id": "group_profit",
+          "independentValue": 127800000,
+          "recordedValue": 127800000,
+          "unit": "USD",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-profit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "parent_profit",
+          "independentValue": 5155743,
+          "recordedValue": 5155743,
+          "unit": "USD",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction separate parent",
+          "evidenceId": "oras-parent",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "scope_difference",
+          "independentValue": 122644257,
+          "recordedValue": 122644257,
+          "unit": "USD",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom consolidated minus separate",
+          "evidenceId": "oras-parent",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "oras-profit",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "oras-parent",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-08",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-08.input.json",
+      "inputByteHash": "f0115241eedbe2333a1fb70dea8cc4ea85721b9cbdf612b96527ba79f3161a75",
+      "numbers": [
+        {
+          "id": "adib_profit_millions",
+          "independentValue": 7550.833,
+          "recordedValue": 7550.833,
+          "unit": "EGP million",
+          "period": "six months ended 2026-06-30",
+          "entity": "ADIB Egypt consolidated",
+          "evidenceId": "adib-income",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "oras_profit_millions",
+          "independentValue": 127.8,
+          "recordedValue": 127.8,
+          "unit": "USD million",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-profit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "adib-income",
+          "path": "data/research/evidence/w7-evaluation/adib-h1-2026.pdf",
+          "contentHash": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "oras-profit",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-09",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-09.input.json",
+      "inputByteHash": "5f26b36d17bb573d2b623c98a5da577ad6c53e330073ad16c3dd9f77690823ad",
+      "numbers": [
+        {
+          "id": "period_end_to_release_days",
+          "independentValue": 44,
+          "recordedValue": 44,
+          "unit": "calendar days",
+          "period": "2025-09-30 to 2025-11-13",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-highlights",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "phdc-highlights",
+          "path": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+          "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-timing",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-10",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-10.input.json",
+      "inputByteHash": "910ba0869030c4345dfc4b0307acfee6b9b3d34046424bf292d591d37db2b394",
+      "numbers": [
+        {
+          "id": "financial_period_age",
+          "independentValue": 391,
+          "recordedValue": 391,
+          "unit": "calendar days",
+          "period": "2025-09-30 to 2026-10-26",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "scenario-stale",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "historical_revenue",
+          "independentValue": 25549856,
+          "recordedValue": 25549856,
+          "unit": "EGP thousand",
+          "period": "nine months ended 2025-09-30",
+          "entity": "Palm Hills Developments consolidated",
+          "evidenceId": "phdc-statements",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "phdc-statements",
+          "path": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+          "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-stale",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-11",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-11.input.json",
+      "inputByteHash": "7b97761e582b26cfb465891ba191f2ae2f355160ab8bf26d1636641b64cfb1cc",
+      "numbers": [
+        {
+          "id": "share_multiplier",
+          "independentValue": 1.1,
+          "recordedValue": 1.1,
+          "unit": "multiple",
+          "period": "2025 stock dividend",
+          "entity": "Commercial International Bank Egypt",
+          "evidenceId": "cib-dividends",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "post_bonus_shares",
+          "independentValue": 1100,
+          "recordedValue": 1100,
+          "unit": "shares",
+          "period": "2025 stock dividend hypothetical position",
+          "entity": "Commercial International Bank Egypt",
+          "evidenceId": "scenario-bonus",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "cib-dividends",
+          "path": "data/research/evidence/w7-evaluation/cib-dividends-web-capture.json",
+          "contentHash": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-bonus",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-12",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-12.input.json",
+      "inputByteHash": "fa2ef7dc3f10ebab54c8173ff7fed08c8e31fb6bec6056864ee7b0e829e60c0b",
+      "numbers": [
+        {
+          "id": "cash_dividend_per_share",
+          "independentValue": 6,
+          "recordedValue": 6,
+          "unit": "EGP per share",
+          "period": "2026 cash dividend",
+          "entity": "Commercial International Bank Egypt",
+          "evidenceId": "cib-dividends",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "gross_cash_entitlement",
+          "independentValue": 6000,
+          "recordedValue": 6000,
+          "unit": "EGP",
+          "period": "2026 cash dividend hypothetical position",
+          "entity": "Commercial International Bank Egypt",
+          "evidenceId": "scenario-dividend",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "cib-dividends",
+          "path": "data/research/evidence/w7-evaluation/cib-dividends-web-capture.json",
+          "contentHash": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-dividend",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-13",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-13.input.json",
+      "inputByteHash": "e000ef60153b461001e016573cb8bc6ff8c34173fc0d37ec1bcaa2e242f110bf",
+      "numbers": [
+        {
+          "id": "exchange_ratio",
+          "independentValue": 0.4634,
+          "recordedValue": 0.4634,
+          "unit": "ORAS shares per OCI share",
+          "period": "proposed combination at H1 2026 reporting",
+          "entity": "Orascom Construction PLC",
+          "evidenceId": "oras-combination",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "arithmetic_new_shares",
+          "independentValue": 463.4,
+          "recordedValue": 463.4,
+          "unit": "ORAS shares",
+          "period": "hypothetical 1000 OCI share exchange",
+          "entity": "Hypothetical OCI shareholder",
+          "evidenceId": "scenario-combination",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "oras-combination",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-combination",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-14",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-14.input.json",
+      "inputByteHash": "cb405da154dab36327dba82017318387ff686f907459fc49db3af5efe4927fd8",
+      "numbers": [
+        {
+          "id": "minute_capacity",
+          "independentValue": 600,
+          "recordedValue": 600,
+          "unit": "shares",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-A",
+          "evidenceId": "scenario-liquidity",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "daily_capacity",
+          "independentValue": 1000,
+          "recordedValue": 1000,
+          "unit": "shares",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-A",
+          "evidenceId": "scenario-liquidity",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "effective_capacity",
+          "independentValue": 600,
+          "recordedValue": 600,
+          "unit": "shares",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-A",
+          "evidenceId": "scenario-liquidity",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scenario-liquidity",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-15",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-15.input.json",
+      "inputByteHash": "592d939efc22fc3a70f5bcbcc6735ee65093de61b3362ebbf4259f882c93d736",
+      "numbers": [
+        {
+          "id": "exit_capacity",
+          "independentValue": 200,
+          "recordedValue": 200,
+          "unit": "shares",
+          "period": "fixture exit event",
+          "entity": "ENGINEERING-B",
+          "evidenceId": "scenario-exit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "executed_exit",
+          "independentValue": 0,
+          "recordedValue": 0,
+          "unit": "shares",
+          "period": "fixture exit event",
+          "entity": "ENGINEERING-B",
+          "evidenceId": "scenario-exit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "retained_shares",
+          "independentValue": 800,
+          "recordedValue": 800,
+          "unit": "shares",
+          "period": "fixture exit event",
+          "entity": "ENGINEERING-B",
+          "evidenceId": "scenario-exit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scenario-exit",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-16",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-16.input.json",
+      "inputByteHash": "106c30d519353b3e49abfba237442e0ef675e10a83ac1aafa6c2be09dc6744f0",
+      "numbers": [
+        {
+          "id": "name_headroom",
+          "independentValue": 1000,
+          "recordedValue": 1000,
+          "unit": "EGP",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-C",
+          "evidenceId": "scenario-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "scenario_a_addition",
+          "independentValue": 1000,
+          "recordedValue": 1000,
+          "unit": "EGP",
+          "period": "fixture scenario A",
+          "entity": "ENGINEERING-C",
+          "evidenceId": "scenario-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "scenario_b_addition",
+          "independentValue": 500,
+          "recordedValue": 500,
+          "unit": "EGP",
+          "period": "fixture scenario B",
+          "entity": "ENGINEERING-C",
+          "evidenceId": "scenario-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scenario-concentration",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-17",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-17.input.json",
+      "inputByteHash": "1492fc2ab68580c3f4c869bee789239bfc2c4c34f80809f807007a25ea316bb8",
+      "numbers": [
+        {
+          "id": "combined_exposure",
+          "independentValue": 50000,
+          "recordedValue": 50000,
+          "unit": "EGP",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-D and ENGINEERING-E",
+          "evidenceId": "scenario-correlation",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "shared_exposure_percent",
+          "independentValue": 50,
+          "recordedValue": 50,
+          "unit": "percent of equity",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-D and ENGINEERING-E",
+          "evidenceId": "scenario-correlation",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scenario-correlation",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-18",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-18.input.json",
+      "inputByteHash": "0b172051e42fb61df5d9a1516e419f1c39c01d11b2f837724c04fc23aab7a78e",
+      "numbers": [
+        {
+          "id": "free_settled_cash",
+          "independentValue": 1000,
+          "recordedValue": 1000,
+          "unit": "EGP",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-F",
+          "evidenceId": "scenario-funding",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "desired_shares",
+          "independentValue": 500,
+          "recordedValue": 500,
+          "unit": "shares",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-F",
+          "evidenceId": "scenario-funding",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "funded_share_ceiling",
+          "independentValue": 50,
+          "recordedValue": 50,
+          "unit": "shares",
+          "period": "fixture decision event",
+          "entity": "ENGINEERING-F",
+          "evidenceId": "scenario-funding",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scenario-funding",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-19",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-19.input.json",
+      "inputByteHash": "5dfdde769df38eb44012f71f6176c392d09d2b70987cb8fd426d6852bce93295",
+      "numbers": [
+        {
+          "id": "profit_cash_gap",
+          "independentValue": 182.3,
+          "recordedValue": 182.3,
+          "unit": "USD million",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-cash",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "mechanical_opportunities",
+          "independentValue": 1,
+          "recordedValue": 1,
+          "unit": "opportunities",
+          "period": "fixture decision event",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "scenario-trigger",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "oras-profit",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "oras-cash",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-trigger",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-20",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-20.input.json",
+      "inputByteHash": "a32393eb17cc3ccfc039988578231afd6593aaea3799787676c1b4bfabffd50e",
+      "numbers": [
+        {
+          "id": "computed_gross_margin",
+          "independentValue": 9.721289456010746,
+          "recordedValue": 9.721289456010746,
+          "unit": "percent",
+          "period": "six months ended 2026-06-30",
+          "entity": "Orascom Construction consolidated",
+          "evidenceId": "oras-profit",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "oras-profit",
+          "path": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+          "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "cira-segments",
+          "path": "data/research/evidence/w7-evaluation/cira-9m-2026.pdf",
+          "contentHash": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e",
+          "status": "RETAINED_BYTES_MATCH"
+        },
+        {
+          "id": "scenario-missing",
+          "path": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json",
+          "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-21",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-21.input.json",
+      "inputByteHash": "f5201b00977fd6b6267e2c94ce3420914e5348989e0dc294c2c6fa39ade1dd96",
+      "numbers": [
+        {
+          "id": "post_addition_name_percent",
+          "independentValue": 70,
+          "recordedValue": 70,
+          "unit": "percent of equity",
+          "period": "fixture after proposed addition",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "remaining_cash",
+          "independentValue": 15000,
+          "recordedValue": 15000,
+          "unit": "EGP",
+          "period": "fixture after proposed addition",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "common_factor_percent",
+          "independentValue": 85,
+          "recordedValue": 85,
+          "unit": "percent of equity",
+          "period": "fixture after proposed addition",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "joint_adverse_equity",
+          "independentValue": 79500,
+          "recordedValue": 79500,
+          "unit": "EGP",
+          "period": "fixture joint adverse valuation",
+          "entity": "SYNTHETIC-FULL-CONCENTRATION",
+          "evidenceId": "full-concentration",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "full-concentration",
+          "path": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+          "contentHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    },
+    {
+      "caseId": "W7-22",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-22.input.json",
+      "inputByteHash": "1bd51233170775e84b7319b62c388cf878e3dfbc60e4b93790108879ce21524a",
+      "numbers": [
+        {
+          "id": "desired_shares",
+          "independentValue": 3000,
+          "recordedValue": 3000,
+          "unit": "shares",
+          "period": "fixture proposed allocation",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "stated_upside_percent",
+          "independentValue": 10.000000000000009,
+          "recordedValue": 10,
+          "unit": "percent price return",
+          "period": "fixture target versus entry",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "adverse_price_return_percent",
+          "independentValue": -40,
+          "recordedValue": -40,
+          "unit": "percent price return",
+          "period": "fixture adverse value versus entry",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "adverse_portfolio_equity",
+          "independentValue": 76000,
+          "recordedValue": 76000,
+          "unit": "EGP",
+          "period": "fixture adverse valuation after allocation",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        },
+        {
+          "id": "retained_mechanical_opportunities",
+          "independentValue": 1,
+          "recordedValue": 1,
+          "unit": "opportunities",
+          "period": "fixture decision event",
+          "entity": "SYNTHETIC-FULL-ABSTENTION",
+          "evidenceId": "full-abstention",
+          "status": "VERIFIED_AGAINST_SOURCE_OR_EXPLICIT_FIXTURE"
+        }
+      ],
+      "sources": [
+        {
+          "id": "full-abstention",
+          "path": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+          "contentHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+          "status": "RETAINED_BYTES_MATCH"
+        }
+      ]
+    }
+  ]
+}

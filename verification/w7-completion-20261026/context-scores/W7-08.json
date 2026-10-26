@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.758Z",
+  "payload": {
+    "caseId": "W7-08",
+    "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "525d17e1697aed216fd5805fcbfbed1fa6dc9a79d5bfc2b82c5c9fb095b5ab28",
+    "reviewHash": "8faa9a191e6211adb8308902d47027ab8c4ca32f1321c3ce0a8b8177b6826a29",
+    "categories": [
+      "conflictingDocuments"
+    ],
+    "numbers": [
+      {
+        "id": "adib_profit_millions",
+        "status": "CORRECT"
+      },
+      {
+        "id": "oras_profit_millions",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Clearly contrasts bank spread/capital/credit economics with construction project/cash economics."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Recognizes both positive profits while rejecting quality ranking by absolute size."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct thousand-to-million scaling and unchanged currencies/scopes."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Requires period-appropriate FX, compatible owner attribution and valuation before allocation ranking."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Does not invent FX, cash realization, or universal comparability."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.431,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "c0f9b65e60d0aad927e452f77e4f6c179ae53a832eb20ca613f312742386108f"
+}

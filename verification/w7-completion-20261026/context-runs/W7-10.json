@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.050Z",
+  "payload": {
+    "caseId": "W7-10",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-10",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "phdc-statements",
+          "availableAt": "2026-10-25T22:52:57.067Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 178.158
+        },
+        {
+          "id": "scenario-stale",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0.019
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.432Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-10\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-statements\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"scenario-stale\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe scenario assessment date is 26 October 2026. From financial period end 30 September 2025 to that date is 391 whole calendar days. The historical selected-statement revenue remains EGP25,549,856 thousand for nine months ended 30 September 2025. The scenario's EGP15 quote is explicitly hypothetical and unverified; it is not evidence of an observed transaction or executable market price. The scenario assessment date is separate from this packet's capture cutoff, so its future-labeled hypothetical assessment does not make the already captured scenario unavailable.\n\nA newly supplied quote would not refresh revenue, balance-sheet quality, share count or corporate-action status. Real-estate backlog conversion, cancellations, construction cost inflation, financing and collections can change substantially over 391 days. The historical revenue and profit growth are useful favorable baseline evidence, but page 4's weak operating conversion and the absence of subsequent statements prevent assuming that growth persists. Price divided by total company revenue would also be a unit/scope mismatch, not a valid equity valuation. I would wait for intervening financials, actions, verified security/share data, current quote/liquidity and a cash-based valuation. The retained report can support historical analysis at this cutoff; it cannot establish a present investable bargain.",
+    "extractedNumbers": [
+      {
+        "id": "financial_period_age",
+        "unit": "calendar days",
+        "period": "2025-09-30 to 2026-10-26",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "scenario-stale",
+        "value": 391
+      },
+      {
+        "id": "historical_revenue",
+        "unit": "EGP thousand",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 25549856
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "8990836dbba98a7063686e6d7fc87ca1f0c1859f31893ca051c9d977fa6cb2bc",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+    "packetHash": "f1c9a60a752c7a9ee689d1f58811bb1d5ce3f0a7349533ee3f1043d0e87e6e63",
+    "outputHash": "eab16a4f033cb369169fae2ae4405f55bdc1df06cdd61a8e9cdc40113eddde72",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-10.json",
+    "originalFileHash": "cb2a4f87106981e5e699e8ccbd1902a804c81f03ffc5cf5a56a814b82da80d07",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "2eb3daa799ec2c429f383679ae951dee7476c9f1244a06cdf39c79f00e72ffbf"
+}

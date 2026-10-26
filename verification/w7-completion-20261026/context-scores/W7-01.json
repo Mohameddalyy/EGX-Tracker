@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.737Z",
+  "payload": {
+    "caseId": "W7-01",
+    "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "a4d2af93b865738e277c7ff6708b8ffe1d42766d89c2f91f722f825b240ccb46",
+    "reviewHash": "ab66f377abc72b2b9da459b78f6b84e6bd76c934c4a813d17b11fdc11540fa5d",
+    "categories": [
+      "banks"
+    ],
+    "numbers": [
+      {
+        "id": "net_funds",
+        "status": "CORRECT"
+      },
+      {
+        "id": "ecl_signed",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects Islamic financing spread and deposit repricing to bank earnings."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Weighs positive funds income against net provisioning and quarter-release extrapolation risk."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Reconciles funds income and signed six-month ECL without using the quarterly release instead."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Names the missing average-exposure denominator and credit/capital work before investment clearance."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Separates reliable page arithmetic from unknown credit sustainability and valuation."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.421,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "e5f9a3f131e1ec1f2362ebd65bc8d2b2bd156730ce957736ba80c1e975f69356"
+}

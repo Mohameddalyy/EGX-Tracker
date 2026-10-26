@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "case",
+  "createdAt": "2026-10-26T08:51:35.882Z",
+  "payload": {
+    "id": "W7-23",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "task": "Identify this case ID and quote its exact cutoffAt from the current packet. At that cutoff distinguish the already published/captured notice from the scheduled action and state whether completion is established. Calculate elapsed seconds from notice capture to this case cutoff and remaining seconds from this case cutoff to scheduled action. Do not reuse any earlier case cutoff. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"capture_age_seconds\",\"unit\":\"seconds\",\"period\":\"relative to W7-23 cutoffAt\",\"entity\":\"SYNTHETIC-TEMPORAL-23\",\"evidenceId\":\"temporal-facts-23\"},{\"id\":\"seconds_until_scheduled_action\",\"unit\":\"seconds\",\"period\":\"relative to W7-23 cutoffAt\",\"entity\":\"SYNTHETIC-TEMPORAL-23\",\"evidenceId\":\"temporal-facts-23\"}]. Treat this as a paper-only synthetic temporal reasoning task, give bounded conclusions and state missing evidence. No trades, market claims or rule changes follow.",
+    "cutoffAt": "2026-10-25T23:20:01.003Z",
+    "frozenAt": "2026-10-26T08:51:35.882Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-23",
+        "source": "local:authored-synthetic-temporal-facts",
+        "contentHash": "45d20121d8ab43c81c72842f9e02c6c16628fd4437eeb35da27105b2ee36699d",
+        "availableAt": "2026-10-25T23:19:59.892Z",
+        "passage": "{\n  \"scope\": \"AUTHORED_SYNTHETIC_TEMPORAL_FACTS_NOT_MARKET_OR_ISSUER_OBSERVATIONS\",\n  \"recordedAt\": \"2026-10-25T23:19:59.892Z\",\n  \"recordedBy\": \"/root/w7_case_curator\",\n  \"facts\": {\n    \"entity\": \"SYNTHETIC-TEMPORAL-23\",\n    \"noticePublishedAt\": \"2026-10-25T23:19:55.892Z\",\n    \"noticeCapturedAt\": \"2026-10-25T23:19:58.892Z\",\n    \"scheduledActionAt\": \"2026-10-25T23:20:14.892Z\",\n    \"notice\": \"Action is scheduled; this record contains no completion observation.\"\n  }\n}",
+        "localPath": "data/research/evidence/w7-evaluation/temporal-case-23.json",
+        "availabilityBasis": "Actual capture of this newly authored synthetic fixture; timestamps inside facts are expressly synthetic scenario events."
+      }
+    ],
+    "truth": {
+      "checkedBy": "/root/w7_case_curator",
+      "checkedAt": "2026-10-25T23:20:01.003Z",
+      "numbers": [
+        {
+          "id": "capture_age_seconds",
+          "value": 2.111,
+          "absoluteTolerance": 0.000001,
+          "unit": "seconds",
+          "period": "relative to W7-23 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-23",
+          "evidenceId": "temporal-facts-23"
+        },
+        {
+          "id": "seconds_until_scheduled_action",
+          "value": 13.889,
+          "absoluteTolerance": 0.000001,
+          "unit": "seconds",
+          "period": "relative to W7-23 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-23",
+          "evidenceId": "temporal-facts-23"
+        }
+      ]
+    },
+    "curation": {
+      "scope": "POST_FAILURE_DEVELOPMENT_VALIDATION",
+      "syntheticContext": true,
+      "notes": [
+        "Newly authored after an observed case-cutoff reuse failure; not an untouched generalization holdout.",
+        "All scenario event dates are synthetic; actual record creation, evaluation cutoff and checking clocks are honestly recorded.",
+        "Raw source contains timestamp facts and labels only, without expected extraction values or case-correction annotations.",
+        "Existing 22 input cases and frozen artifacts are unchanged."
+      ],
+      "independence": "Independent source/number review required before freezing new CLI artifacts."
+    },
+    "caseHash": "a819c2fbe01e22d24427f820972e223e55e3c0b583347cbf8c310f9d290d869c",
+    "groundTruthStatus": "SUPPLIED_ADJUDICATION_REQUIRES_INDEPENDENT_REVIEW"
+  },
+  "contentHash": "f2292bf23e29c058c0411291140148edfc56e90a44fe143d7d85611db60b0cff"
+}

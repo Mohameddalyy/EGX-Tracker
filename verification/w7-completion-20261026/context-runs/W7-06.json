@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.007Z",
+  "payload": {
+    "caseId": "W7-06",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-06",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "phdc-summary",
+          "availableAt": "2026-10-25T22:52:57.067Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 178.158
+        },
+        {
+          "id": "phdc-statements",
+          "availableAt": "2026-10-25T22:52:57.067Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 178.158
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.429Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-06\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-summary\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"phdc-statements\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nAt 30 September 2025, Palm Hills current assets of EGP99,982,419 thousand minus current liabilities of 98,786,344 thousand equal positive net current assets of 1,196,075 thousand. Page 2's reported net debt is rounded EGP4.2 billion. Net current assets are an accounting residual, not spendable cash; the narrow positive difference does not prove either solvency or insolvency.\n\nReal-estate current assets may include development inventories and long collection schedules. Current liabilities may include customer advances whose economic settlement requires delivering units, not merely repaying financial debt. Missing composition prevents treating every liability as equivalent borrowing. Page 4's cash of 9,204,446 thousand and positive operating cash flow are supportive, but cash restrictions, pledged funds, debt maturities and committed construction/land payments are absent. The 248 billion receivables figure expressly includes off-balance-sheet amounts and must not be added to balance-sheet assets or assumed immediately collectible. Net-debt definitions, off-balance obligations, guarantees and recoverability haircuts need reconciliation. I would wait for full footnotes and a dated sources-and-uses schedule; neither cash runway nor liquidation value can be calculated credibly from these selected totals. The favorable net-current-assets sign merits follow-up, not unconditional investment clearance.",
+    "extractedNumbers": [
+      {
+        "id": "net_current_assets",
+        "unit": "EGP thousand",
+        "period": "as at 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 1196075
+      },
+      {
+        "id": "rounded_net_debt",
+        "unit": "EGP billion",
+        "period": "as at 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-summary",
+        "value": 4.2
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "3f8f8ad8910c5ebab1d392fec189772fc6d88a53c5614a4be45434cbab131485",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+    "packetHash": "efe853589fc263d90ba47401e172f33cb8ae3894e2fa8e650647b687288441f8",
+    "outputHash": "b9bfac3faf00b82863daeae3f900af10f87d01831edb12a5a5c8b3068ad650b6",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-06.json",
+    "originalFileHash": "7f7f57f34d32c060d9b6e9e1be26732f8463b15faebbffda2fe7379f0b862da4",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "4f79221aa0a35e7615edb4254899bd56a22caece7e8143a72f78c2b7e2f820cc"
+}

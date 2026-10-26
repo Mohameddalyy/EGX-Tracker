@@ -1,0 +1,29 @@
+{
+  "id": "W7-08",
+  "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+  "task": "Normalize the ADIB total profit from EGP thousands to EGP millions and extract ORAS total profit in USD millions. Explain why these cannot be directly ranked or combined without FX conversion and sector/scope analysis. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"adib_profit_millions\",\"unit\":\"EGP million\",\"period\":\"six months ended 2026-06-30\",\"entity\":\"ADIB Egypt consolidated\",\"evidenceId\":\"adib-income\"},{\"id\":\"oras_profit_millions\",\"unit\":\"USD million\",\"period\":\"six months ended 2026-06-30\",\"entity\":\"Orascom Construction consolidated\",\"evidenceId\":\"oras-profit\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "adib-income",
+      "contentHash": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc",
+      "source": "https://www.adib.eg/media/2757582/ADIBConsalidatedQ22026English.pdf",
+      "availableAt": "2026-10-23T16:27:23.557Z",
+      "passage": "Physical page 4. Condensed interim consolidated income statement. Six months ended 30 June 2026, EGP in thousands: income from Murabaha, Musharaka, Mudaraba and similar income 29,117,908; cost of deposits and similar costs (16,863,967); net income from funds 12,253,941; release/(charge) expected credit losses (2,176); net profit 7,550,833; attributable to shareholders of the bank 7,536,797; non-controlling interests 14,036. Three-month 2026 ECL line is a release of 78,142. No loan-quality or average-loan schedule is in this selected passage.",
+      "localPath": "data/research/evidence/w7-evaluation/adib-h1-2026.pdf",
+      "page": 4,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    },
+    {
+      "id": "oras-profit",
+      "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "source": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "availableAt": "2026-10-23T16:27:45.520Z",
+      "passage": "Physical page 8. Reviewed consolidated statement; USD millions. Six months ended 30 June 2026: revenue 2,978.0; gross profit 289.5; operating profit 179.5; net profit 127.8; owners 115.3; non-controlling interests 12.5; basic/diluted EPS USD1.05. Three months ended 30 June 2026: revenue 1,509.6; net profit 69.8; owners 61.9.",
+      "localPath": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+      "page": 8,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

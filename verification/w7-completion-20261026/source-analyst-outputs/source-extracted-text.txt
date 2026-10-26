@@ -1,0 +1,733 @@
+=== adib-h1-2026.pdf physical page 4 ===
+  Abu Dhabi Islamic Bank (ADIB) – Egypt – S.A.E 
+Condensed interim consolidated income statement for the period ended 30 June 2026 
+- 4 - 
+C0 - Public Finance 
+ 
+ 
+ 
+ 
+The accompanying notes from (1) to (27) are integral part of these financial statements. 
+
+=== oras-h1-2026.pdf physical page 8 ===
+6   Orascom Construction PLC Second Quarter Report 2026
+Orascom Construction PLC
+CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND 
+OTHER COMPREHENSIVE INCOME 
+for the six month period ended
+$ millions Note
+the six 
+months ended 
+30 June 2026 
+(reviewed)
+the three 
+months ended 
+30 June 2026 
+(reviewed)
+the six 
+months ended 
+30 June 2025 
+(reviewed)
+the three 
+months ended 
+30 June 2025 
+(reviewed)
+Revenue (25) 2,978.0 1,509.6 1,955.9 1,108.3
+Cost of sales (21) (2,688.5) (1,367.3) (1,753.3) (997.5)
+Gross profit 289.5 142.3 202.6 110.8
+Other income (net) (22) 9.2 4.4 5.6 2.8
+Selling, general and administrative expenses (21) (119.2) (65.3) (85.1) (36.1)
+Operating profit 179.5 81.4 123.1 77.5
+Finance income (23) 31.2 (22.0) 15.2 8.8
+Finance cost (23) (47.4) 19.3 (52.8) (27.0)
+Net finance cost (16.2) (2.7) (37.6) (18.2)
+Income from equity accounted investees (9) 2.9 2.3 22.6 14.6
+Profit before income tax 166.2 81.0 108.1 73.9
+Income tax (10) (38.4) (11.2) (18.8) (11.7)
+Net profit 127.8 69.8 89.3 62.2
+Other comprehensive (loss) / income:
+Items that are or may be reclassified to profit or loss
+Foreign currency translation differences (0.7) 29.6 20.7 15.9
+Other comprehensive (loss) / income, net of tax (0.7) 29.6 20.7 15.9
+Total comprehensive  income 127.1 99.4 110.0 78.1
+Profit attributable to:
+Owners of the Company 115.3 61.9 82.7 57.6
+Non-controlling interests (17) 12.5 7.9 6.6 4.6
+Net profit 127.8 69.8 89.3 62.2
+Total comprehensive income attributable to:
+Owners of the Company 115.1 90.0 103.1 73.3
+Non-controlling interests (17) 12.0 9.4 6.9 4.8
+Total comprehensive income 127.1 99.4 110.0 78.1
+Earnings per share (in USD)
+Basic and diluted earnings per share (24) 1.05 0.56 0.75 0.52
+The notes on pages 9 to 32 are an integral part of these interim consolidated financial statements.
+
+=== oras-h1-2026.pdf physical page 10 ===
+8   Orascom Construction PLC Second Quarter Report 2026
+Orascom Construction PLC
+CONSOLIDATED STATEMENT OF CASH FLOWS 
+for the six month period ended
+$ millions Note
+30 June
+2026 
+(reviewed)
+30 June
+2025 
+(reviewed)
+Net profit 127.8 89.3
+Adjustments for:
+Depreciation (6) 21.4 16.3
+Interest income (23) (21.4) (11.4)
+Interest expense (23) 35.1 46.7
+Net foreign exchange loss  (23) 2.5 2.3
+Share in income of equity accounted investees (9) (2.9) (22.6)
+Gain on sale of property, plant and equipment  (22) (0.3) (0.2)
+Income tax expense (10) 38.4 18.8
+Changes in:
+Inventories (11) (12.9) (21.0)
+Trade and other receivables (8) (329.2) (653.5)
+Contract work in progress (12) 43.4 61.8
+Trade and other payables (19) (1.8) 362.4
+Advanced payments construction contracts 40.0 1.1
+Billing in excess of construction contracts (12) 24.4 153.7
+Provisions (20) (13.5) 23.4
+Cash flows:
+Interest paid (23) (35.1) (46.7)
+Interest received (23) 21.4 11.4
+Dividend from equity accounted investees 16.7 1.9
+Income taxes paid (8.5) (7.5)
+Cash flow (used in) / generated from operating activities  (54.5) 26.2
+Contribution / Investment in associate (28 and 9) (53.1) (35.1)
+Proceed from sale of property, plant and equipment 3.1 2.9
+Investments in property, plant and equipment (6) (50.9) (28.3)
+Investment in financial assets at FVTPL (13) (140.0) -
+Cash flow used in investing activities  (240.9) (60.5)
+Proceeds from borrowings (18) 213.0 93.5
+Repayment of borrowings (18) (23.6) (20.0)
+Lease payments (19.1) (4.6) (3.3)
+Dividends paid to shareholders (31) - (24.2)
+Dividends paid to non-controlling interest (3.9) (3.3)
+Cash flow generated from financing activities  180.9 42.7
+Net change in cash and cash equivalents (114.5) 8.4
+Cash and cash equivalents at 1 January (14) 1,369.7 1,041.3
+Currency translation adjustments (25.1) 18.5
+Cash and cash equivalents at 30 June (14) 1,230.1 1,068.2
+The notes on pages 9 to 32 are an integral part of these interim consolidated financial statements.
+
+=== oras-h1-2026.pdf physical page 41 ===
+ 
+5 
+ 
+Orascom Construction PLC 
+ 
+Separate statement of profit or loss and other comprehensive income 
+For the six-month and three-month periods ended 30 June 2026 
+ 
+                                                                   Six month period ended                   Three month period ended 
+                                                                                        30 June                                                 30 June 
+ Note 2026 2025 2026 2025 
+  USD USD USD USD 
+   (Unaudited)  (Unaudited)  (Unaudited)  (Unaudited) 
+      
+Dividend income 9 21,907,145 - 21,907,145 - 
+      
+General and  
+administrative expenses 
+ 
+5 
+ 
+(14,646,287) 
+ 
+(19,056,624) 
+ 
+(10,217,190) 
+ 
+(16,080,710) 
+      
+Support and 
+management fees 
+ 
+13 
+ 
+5,700,000 
+ 
+2,200,000 
+ 
+2,850,000 
+ 
+1,100,000 
+      
+Reversal of impairment 
+loss on other receivables, 
+net 
+ 
+ 
+11(i) 
+ 
+ 
+896,106 
+ 
+ 
+- 
+ 
+ 
+(822,951) 
+ 
+ 
+- 
+      
+Reversal of impairment 
+loss on related party 
+loans and balances, net 
+ 
+ 
+13(iii) 
+ 
+ 
+- 
+ 
+ 
+3,972,054 
+ 
+ 
+- 
+ 
+ 
+4,022,462 
+      
+Finance income  6 2,387,232 188,767 2,347,222 96,190 
+      
+Finance expense 7 (11,088,453) (16,485,823) 24,896,101 (9,620,040) 
+ 
+Profit/(loss) before 
+income tax 
+ 
+ -------------- 
+ 
+5,155,743 
+------------ 
+-------------- 
+ 
+(29,181,626) 
+-------------- 
+------------- 
+ 
+40,960,327 
+-------------- 
+-------------- 
+ 
+       (20,482,098) 
+--------------- 
+Income tax 8 - - - - 
+ 
+Profit/(loss) for the 
+period 
+ ------------ 
+5,155,743 
+-------------- 
+(29,181,626) 
+-------------- 
+40,960,327 
+      --------------- 
+(20,482,098) 
+      
+Other comprehensive         
+income for the period 
+  
+- 
+ 
+- 
+ 
+- 
+ 
+- 
+ 
+Total comprehensive 
+income/(loss) for the 
+period 
+ ------------ 
+ 
+5,155,743 
+-------------- 
+ 
+(29,181,626) 
+-------------- 
+ 
+40,960,327 
+-------------- 
+ 
+(20,482,098) 
+  ======= ======== ======== ======== 
+ 
+Earnings per share (in USD) 
+ 
+Basic earnings per share **  1.05 0.75 0.56 0.52 
+  === === === === 
+ 
+**Basic earning per share are computed based on the amount of the consolidated financial statements which 
+includes the earning of the Company and its subsidiaries. 
+ 
+The notes on pages 8 to 33 form an integral part of these separate interim financial statements. 
+ 
+The independent auditors’ report on review of separate interim financial statements is set out on pages 2 and 
+3. 
+
+=== oras-h1-2026.pdf physical page 68 ===
+Orascom Construction PLC 
+ 
+32 
+Notes (continued) 
+ 
+20 Significant accounting estimates and judgements (continued) 
+ 
+Impairment losses on financial assets (continued) 
+ 
+The Company may assume that the credit risk on a financial instrument has not increased 
+significantly since initial recognition if the financial instrument is determined to have low credit 
+risk at the reporting date. 
+ 
+If reasonable and supportable forward-looking information is available without undue cost or effort, 
+the Company cannot rely solely on past due information when determining whether credit risk has 
+increased significantly since initial recognition. However, when information that is more forward-
+looking than past due status (either on an individual or a collective basis) is not available without 
+undue cost or effort, the Company may use past due information to determine whether there have 
+been significant increases in credit risk since initial recognition. 
+ 
+Regardless of the way in which the Company assesses significant increases in credit risk, there is 
+a rebuttable presumption that the credit risk on a financial asset has increased significantly since 
+initial recognition when contractual payments are more t han 30 days past due. The Company can 
+rebut this presumption if it has reasonable and supportable information that is available without 
+undue cost or effort, that demonstrates that the credit risk has not increased significantly since initial 
+recognition e ven though the contractual payments are more than 30 days past due. When the 
+Company determines that there have been significant increases in credit risk before contractual 
+payments are more than 30 days past due, the rebuttable presumption does not apply. 
+ 
+ 
+21  Potential Strategic Combination 
+ 
+On 22 September 2025, Orascom Construction PLC and OCI Global N.V. (listed on Euronext 
+Amsterdam) announced that they are pursuing a potential combination (the “Combination”). 
+ 
+At the General Assembly Meeting held on 22 January 2026, the shareholders of Orascom 
+Construction PLC approved all special resolutions relating to the proposed Combination, in 
+accordance with the terms and conditions set out in the Shareholders’ Circular a nd Notice of 
+General Meeting published on 11 December 2025, and the applicable rules and regulations. 
+ 
+Under the agreed terms, Orascom Construction PLC would be the acquiring entity, and 
+shareholders of OCI Global would receive newly issued shares in Orascom Construction PLC based 
+on an exchange ratio of 0.4634 Orascom Construction shares per OCI share. 
+ 
+The long-stop date for meeting certain conditions in connection with the Combination was extended 
+to 30 December 2026. OCI Global is progressing towards meeting these conditions, including the 
+convocation of an Extraordinary General Meeting ("EGM") of OCI Global shareholders to vote on 
+the Combination. 
+ 
+The Combination remains subject to, among other matters, approval by the shareholders of OCI 
+Global and the receipt of required regulatory approvals. As the transaction had not been completed 
+as at the reporting date, it has no impact on these separate financial statements and is considered a 
+non-adjusting subsequent event.  
+
+=== cira-9m-2026.pdf physical page 4 ===
+ 
+4   |   CIRA Education 
+9M 2025/2026 EARNINGS RELEASE 
+Cairo | 20 July 2026 
+ 
+Revenue by Segment 
+(9M 25/26) 
+ 
+ 
+Revenue Progression 
+(EGP mn) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+K-12 | Key Operational Highlights 
+ 9M 24/25 9M 25/26 % Change 
+Number of Schools 27 30 11% 
+Number of Teachers 3,060 3,596 18% 
+Admin Staff Size 2,562 2,982 16% 
+Capacity (No. Students) 37,800 40,000 6% 
+Number of Students 35,636 37,434 5.0% 
+Pupil Teacher Ratio (PTR) 11.6x 10.4x -1.2x 
+Pupil Admin Ratio (PAR) 13.9x 12.6x -1.3x 
+Utilization 94.3% 93.6% -0.7% 
+ 
+Financial Performance 
+The statutory segment disclosure is presented first, in line with the reviewed financial 
+statements. CIRA also provides a second view in which shared overheads and financing costs are 
+allocated between Higher Education and K -12 using management’s weighting  methodology. 
+Management believes this adjusted presentation offers a clearer view of the economics and 
+profitability of each platform. 
+ 
+ 
+Breakdown as per audited results: 
+(EGP million) Higher Education K-12 Education Total 
+ 9M 
+24/25 
+9M 
+25/26 Chg.     9M 
+24/25 
+       9M 
+  25/26 Chg. 9M 
+24/25 
+   9M 
+  25/26 Chg. 
+Tuition Revenue 2,083.4  2,925.4  40% 998.5  1,247.7  25% 3,081.8  4,173.0  35% 
+% of Revenue 94.4% 94.5%   89.1% 88.5%   92.7% 92.6%   
+Other Revenue 122.6  170.9  39% 121.8  161.5  33% 244.3  332.3  36% 
+% of Revenue 5.6% 5.5%   10.9% 11.5%   7.3% 7.4%   
+Total Revenue1/2 2,205.9  3,096.3  40% 1,120.2  1,409.1  26% 3,326.2  4,505.4  35% 
+Normalized EBITDA1/2 1,557.0  2,168.9  39% 253.1  234.2  -7% 1,810.1  2,403.1  33% 
+Normalized EBITDA Mgn. 70.6% 70.0%   22.6% 16.6%   54.4% 53.3%   
+Normalized Net Profit1/2 1,086.1  1,505.0  39% (465.3) (321.5) -31% 620.8  1,183.5  91% 
+Normalized NPM 49.2% 48.6%   -41.5% -22.8%   18.7% 26.3%   
+ 
+Breakdown with Weighted Segmentation Adjustment: 
+ 
+(EGP million) Higher Education K-12 Education Total 
+ 9M 
+24/25 
+9M 
+25/26 Chg.     9M 
+24/25 
+       9M 
+  25/26 Chg. 9M 
+24/25 
+   9M 
+  25/26 Chg. 
+Tuition Revenue 2,083.4  2,925.4  40% 998.5  1,247.7  25% 3,081.8  4,173.0  35% 
+% of Revenue 94.4% 94.5%   89.1% 88.5%   92.7% 92.6%   
+Other Revenue 122.6  170.9  39% 121.8  161.5  33% 244.3  332.3  36% 
+% of Revenue 5.6% 5.5%   10.9% 11.5%   7.3% 7.4%   
+Total Revenue1/2 2,205.9  3,096.3  40% 1,120.2  1,409.1  26% 3,326.2  4,505.4  35% 
+Normalized EBITDA1/2/3 1,534.5  2,143.4  40% 275.6  259.7  -6% 1,810.1  2,403.1  33% 
+Normalized EBITDA Mgn. 69.6% 69.2%   24.6% 18.4%   54.4% 53.3%   
+Normalized Net Profit1/2/3 613.6  1,134.2  85% 7.2  49.3  584% 620.8  1,183.5  91% 
+Normalized NPM 27.8% 36.6%   0.6% 3.5%   18.7% 26.3%   
+ 
+1 Results include  share of losses from investing in associates amounting to EGP 8.3mn in 9M 2024/25 Vs. EGP 11.7mn in 9M 2025/26 
+2 Results exclude construction revenues, costs and G&A related to new developments of EGP 407.0 mn, EGP 346.4 mn and EGP 5.2 mn, respectively. 
+3 EBITDA & Net Profit were reclassed between the K-12 & Higher-Ed segments by EGP 370.8 mn (EGP 25.5 mn G&A & EGP 345.3 mn finance cost) to 
+reflect the appropriate distribution for Senior Management and Finance Cost between the two segments. 
+ 
+Revenues 
+Revenue reached EGP 4,505.4 million in 9M 2025/26, representing a robust 35% increase 
+from the comparative period. Growth accelerated during the third quarter, lifting the 
+cumulative rate above the level recorded at H1 and reinforcing the strength of the 
+Group’s underlying momentum. Higher Education remained the principal contributor to 
+incremental revenue, while the broader K-12 footprint added a second layer of growth.  
+Tuition income increased 35% YoY to EGP 4,173.0 million and accounted for 92.6% of 
+consolidated revenue, broadly unchanged from the prior-year period. Other revenue rose 
+69%
+31%
+Higher Education K-12
+3,326
+4,505
+9M 24/25 9M 25/26
+EGP 4,505.4 mn 
+
+=== phdc-9m-2025.pdf physical page 1 ===
+                       
+ 9M2025 Earning Release 
+ 
+ 
+Palm Hills Developments 
+1 
+  
+Palm Hills Developments delivers 42% revenue growth in 9M2025 to record 
+EGP25.5 billion, net profit after tax stands at EGP3.5 billion a growth of 50% 
+YoY 
+ 
+ 
+Cairo on November 13, 2025 - Palm Hills Developments S.A.E. ("Palm Hills" or "the Company"), 
+a leading real estate developer in Egypt, announce s its consolidated financial and operating 
+results for the financial period ended September 30, 2025. 
+ 
+9M2025 Key Highlights: 
+ 
+• New sales amounted to EGP182 billion in 9M2025, up by 40% YoY, driven by solid sales 
+across all regions.  
+ 
+• Revenue increased by 42% YoY to  record EGP25.5 billion in 9M2025, driven by successful 
+strong new sales, and ongoing recognition of development revenue backlog. 
+ 
+• Gross Profit grew by 63% YoY to reach EGP 10.4 billion during the period, implying margin 
+expansion to 41% compared to 36% in 9M2024. 
+ 
+• EBITDA expanded 61% to EGP6.6 billion compared to EGP4.1 billion in 9M2024, implying an 
+EBITDA margin of 26% versus 23% a year earlier.  
+ 
+• Cash collection from receivables and new sales grew by 40% YoY to EGP26 billion in 9M2025.  
+ 
+• Construction spending increased by 71% YoY to record EGP 10.5 billion in 9M2025.  
+ 
+• Nine-month net profit before tax and minority up 56% YoY to EGP5.1 billion, while net profit 
+after tax reached EGP3.5 billion, an increase of 50% YoY, with a Net Profit margin of 14% 
+compared to 13% in 9M2024.  
+ 
+• As of September 30, 2025, the company’s backlog of units sold and not yet delivered reached 
+EGP225 billion compared to EGP110 billion in 9M2024.  
+ 
+ 
+Yasseen Mansour, Executive Chairman , comments: “Palm Hills Developments 
+demonstrated exceptional growth momentum in 2025, maintain its highest-ever figures across 
+all fronts. This impressive performance was largely driven by strong performance across all 
+regions, with a growth in sales of 40% which demonstrates the strength of Palm Hills.  Building 
+on sales strength  and company’s strong backlog, the company delivered another robust 
+financial performance, with revenues and net profit for the nine-month EGP25.6 billion and 
+EGP3.5 billion, respectively, a year-on-year growth of 42.2% and 50.6%. Palm Hills not only 
+surpassed its full year performance but also reinforced its ability to sustain growth and deliver 
+consistent results.  
+ 
+For the remainder of the year and into early 2026, we remain confident in Egypt's real estate 
+market's durability and resilience. The company’s strategy focus is directed toward expanding 
+and developing existing portfolio and our newly acquired land in  Egypt and UAE, which will 
+further enhance the projects' portfolio and long-term value”.  
+ 
+ 
+
+=== phdc-9m-2025.pdf physical page 2 ===
+                       
+ 9M2025 Earning Release 
+ 
+ 
+Palm Hills Developments 
+2 
+ 
+     
+EGP Million 9M2025 9M2024 Change 3Q2025 3Q2024 Change 
+Revenues 25,549 17,964 42% 9,970 7,026 42% 
+Gross Profit 10,423 6,390 63% 3,759 2,173 73% 
+Gross Profit margin 41% 36% 5pp 38% 31% 7pp 
+EBITDA 6,690 4,132 61% 2,231 1,180 87% 
+EBITDA margin 26% 23% 3pp 22% 17%       5pp 
+Net Profit before Tax & Minority Interest 5,080 3,253 56% 1,493 883 67% 
+Net Profit after Tax & Minority Interest 3,542 2,352 50% 1,098 570       93% 
+Net Profit margin 14% 13% 1pp 11% 9% 2pp  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Revenues stood at EGP 25.5 billion in 9M2025, an increase of 42% YoY, supported by strong 
+new sales growth and backlog recognition across all projects. 
+Gross Profit grew by 63% YoY to reach EGP 10.4 billion during  9M2025, implying margin 
+expansion of 41% compared to 36% in 9M2024.  
+EBITDA increased to EGP6.7 billion in 9M2025, up by 61% YoY, with an EBITDA margin of 26% 
+in 9M2025 compared to 26% in 9M2024. 
+Nine-month net profit before tax and minority went up 56% YoY to EGP 5.1 billion, while net 
+profit after tax and minority interests rose 50% YoY to EGP3.5 billion, with a Net Profit margin 
+of 14% compared to 13% in 9M2024. 
+Net Debt stood at EGP4.2 billion by the end of 9M2025, reflecting the increase in construction 
+spending pace in 9M2025, while receivables including off -balance sheet stood at EGP 248 
+billion in 9M2025 compared to EGP175 billion in FY2024.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Revenues 
+(EGP mn) 
+EBITDA & EBITDA Margin 
+ (EGP mn) 
+Net Profit after Tax & Minority Interest 
+ (EGP mn) 
+Financial Review 
+ 
+13,600 17,455 
+27,167 
+17,964 
+25,549 
+2022 2023 2024 9M2024 9M2025
+2,394 
+3,440 
+5,894 
+4,144 
+6,690 
+2022 2023 2024 9M24 9M25
+1,256 1,581 
+3,254 
+2,352 
+3,542 
+2022 2023 2024 9M24 9M25
+
+=== phdc-9m-2025.pdf physical page 4 ===
+                       
+ 9M2025 Earning Release 
+ 
+ 
+Palm Hills Developments 
+4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  EGP Thousand    September 30, 2025 September 30, 2024 Change 
+  Revenue 25,549,856 17,964,696 42.2% 
+  Cost of Revenue (15,125,947) (11,573,919) 30.7% 
+  Gross Profit 10,423,908 6,390,777 63.1% 
+  Gross Profit margin  40.80% 35.57% 14.7% 
+  EBITDA 6,690,062 4,144,677 61.4% 
+  EBITDA margin  26.2% 23% 13.8% 
+  Operating Profit 6,449,386 3,976,716 62.2% 
+  Operating Profit Margin 25.24% 22.14% 14% 
+  Net Profit Before Income Tax & Minority Interest 5,080,810 3,264,990 55.6% 
+  Net Profit After Tax 3,700,433 2,460,583 50.4% 
+  Non-Controlling Interest (158,326) (107,972) 46.6% 
+  Net Profit After Tax & Minority Interest 3,542,107 2,352,611 50.6% 
+  Net Profit After Tax & Minority Interest margin  13% 13.9% 0% 
+  EGP Thousand    September 30, 2025       December 31, 2024 
+  Total long - Term Assets 63,193,012 54,166,409 
+  Total Current Assets 99,982,419 69,270,914 
+  Total Assets 163,175,430 123,437,324 
+  Total Current Liabilities 98,786,344 74,496,941 
+  Total Long-Term Liabilities  46,213,247 34,315,700 
+  Total Liabilities 144,999,591 108,812,642 
+  Total Equity  18,175,839 13,922,621 
+  Non-Controlling Interest 1,289,541 702,060 
+  Total Shareholders' Equity 16,886,298 14,624,982 
+EGP Thousand September 30, 2025 September 30, 2024 
+Cash Flows from Operating Activities 748,335 2,465,635 
+Cash Flows from Investing Activities (2,476,888) (3,758,937) 
+Cash Flows from Financing Activities 4,560,614 2,449,519 
+Cash & Cash Equivalents as of September 30, 2025 9,204,446 4,345,460 
+Consolidated Income Statement 2 
+ 
+Consolidated Balance Sheet Items2 
+2- Selected Company’s Consolidated Financial Statements for the period ended September 30, 202 5, prepared in accordance with Egyptian Accounting Standards ( “EAS”), 
+can be downloaded from our Company’s website: www.palmhillsdevelopments.com 
+ 
+Consolidated Cash Flow Statement2 
+
+=== cib-dividends-web-capture.json ===
+{
+  "capturedAt": "2026-10-25T22:56:12.986Z",
+  "source": "https://www.cibeg.com/en/investor-relations/governance/dividends",
+  "captureType": "WEB_TOOL_RENDERED_PRIMARY_PAGE",
+  "rawToolResponse": "Dividends (https://www.cibeg.com/en/investor-relations/governance/dividends)\nciteturn331view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://www.cibeg.com/en/investor-relations/governance/dividends\",\"lineno\":null}); Total lines: 139\nL0: 【0†iframe†www.googletagmanager.com】\nL1: \nL2: 【1†Home】\nL3: \nL4:   * 【2†Home】\nL5:   * 【3†Personal Banking】\nL6:   * 【4†Business Banking】\nL7:   * 【5†Institutional Banking】\nL8:   * 【6†CIB Private】\nL9: \nL10: 【7†العربية】\nL11: \nL12:   * 【8†Currency converter Currency converter】\nL13: \nL14:   * 【9†Branch & ATM Finder】\nL15:   * 【10†Contact Us】\nL16: \nL17: 【1†Log in】\nL18: \nL19:   * 【11†Online Banking†digitalinternetbanking.cibeg.com】\nL20:   * 【12†Bonus loyalty†bonus.cibeg.com】\nL21:   * 【13†CIB Business Online†businessonline.cibeg.com】\nL22:   * 【14†ACH Credit/Debit†cibcorpay.egyptianbanks.net】\nL23:   * 【15†Corporate Online Hub†coh.cibeg.com】\nL24:   * 【16†Epayroll†epayroll.cibeg.com】\nL25:   * 【17†Government ePayment (CPS)†cps-web.efinance.com.eg】\nL26:   * 【18†Corporate Download Portal†downloadportal.cibeg.com】\nL27: \nL28: 【1†Home】\nL29: \nL30:   * 【2†Home】\nL31:   * 【3†Personal Banking】\nL32:   * 【4†Business Banking】\nL33:   * 【5†Institutional Banking】\nL34:   * 【6†CIB Private】\nL35: \nL36: 【9†Branch & ATM finder】 【10†Contact us】\nL37: \nL38: 【7†العربية】\nL39:   * 【19†Investor Relations】\nL40: \nL41:     * 【20†IR Home】\nL42:     * 【21†About CIB】\nL43:     * 【22†IR Library】\nL44:     * 【23†Governance】\nL45: \nL46: 【19†Investor Relations】\nL47: \nL48: 【24†Overview】\nL49: \nL50: 【25†Investment Case】\nL51: \nL52: 【26†Environmental and Social Responsibility】\nL53: \nL54: 【27†View All】\nL55: \nL56: 【28†Investor toolkit】\nL57: \nL58: 【29†Financial Highlights】\nL59: \nL60: 【30†Financials Statements】\nL61: \nL62: 【31†View All】\nL63: \nL64: 【32†Board Resolutions】\nL65: \nL66: 【33†Board Reports】\nL67: \nL68: 【34†Ownership Structure】\nL69: \nL70: 【35†View All】\nL71: Period (Year)  | Type  | Dividend Value  | Record Date  | Payment Date\nL72: --- | --- | --- | --- | ---\nL73: 2026*  | Cash Dividend  | EGP 6\nL74:  | 06 April 2026  | 09 April 2026\nL75: 2025  | Stock Dividend  | 1 for 10\nL76:  | 16 December 2025  | 17 December 2025\nL77: 2025  | Cash Dividend  | EGP 2.50  | 07 April 2025  | 10 April 2025\nL78: 2024  | Cash Dividend  | EGP 0.55  | 21 April 2024  | 24 April 2024\nL79: 2023  | Cash Dividend  | EGP 0.5378  | 03 April 2023  | 06 April 2023\nL80: 2022  | Stock Dividend  | 1 for 2  | 21 September 2022  | 22 September 2022\nL81: 2022  | Cash Dividend  | EGP 1.35  | 04 April 2022  | 07 April 2022\nL82: 2021  | Stock Dividend  | 1 for 3  | 15 August 2021  | 16 August 2021\nL83: 2020  | Cash Dividend  | EGP 1.25  | 04 June 2020  | 09 June 2020\nL84: 2019  | Stock Dividend  | 1 for 4  | 13 February 2019  | 14 February 2019\nL85: 2019  | Cash Dividend  | EGP 1  | 25 March 2019  | 28 March 2019\nL86: 2018  | Cash Dividend  | EGP 1  | 19 March 2018  | 22 March 2018\nL87: 2017  | Cash Dividend  | EGP 0.5  | 03 April 2017  | 06 April 2017\nL88: 2016  | Cash Dividend  | EGP 0.75  | 21 March 2016  | 24 March 2016\nL89: 2015  | Stock Dividend  | 1 for 4  | 09 December 2015  | 10 December 2015\nL90: 2015  | Cash Dividend  | EGP 1.2  | 30 March 2015  | 02 April 2015\nL91: 2014  | Cash Dividend  | EGP 1  | 17 March 2014  | 10 March 2014\nL92: 2013  | Stock Dividend  | 1 for 2  | 04 December 2013  | 05 December 2013\nL93: 2013  | Cash Dividend  | EGP 1.25  | 01 April 2013  | 04 April 2013\nL94: 2012  | Cash Dividend  | EGP 1  | 02 April 2012  | 05 April 2012\nL95: 2011  | Cash Dividend  | EGP 1  | 04 April 2011  | 07 April 2011\nL96: 2010  | Cash Dividend  | EGP 1.5  | 29 March 2010  | 01 April 2010\nL97: 2010  | Stock Dividend  | 1 for 1  | 14 July 2010  | 15 July 2010\nL98: 2009  | Cash Dividend  | EGP 1  | 16 March 2009  | 19 March 2009\nL99: 2008  | Cash Dividend  | EGP 1  | 31 March 2009  | 03 April 2009\nL100: 2008  | Stock Dividend  | 1 for 2  | 30 July 2008  | 31 July 2008\nL101: 2007  | Cash Dividend  | EGP 1  | 26 March 2007  | 29 March 2007\nL102: ## *Cash Dividend Details\nL103: \nL104: 【36†Cash Dividend Details.pdf 304.0 KB】\nL105: ###### We care Our dedicated team is committed to meeting your needs\nL106: \nL107: 【10†Online Chat with 'Zaki' our digital assistant to guide you through our products and services, or reach out on social media.】\nL108: \nL109: 【10†On the phone For support, including emergencies such as cards closure or immediate critical feedback.】\nL110: \nL111: 【9†In branch Our trained team of tellers and relationship managers are here to help you get the service you need. 】\nL112:   * 【37†FAQs】\nL113:   * 【38†Learning Center】\nL114:   * 【39†Fees & Charges】\nL115:   * 【40†Terms & Conditions】\nL116:   * 【3†Local】\nL117:   * 【41†Abroad】\nL118:   * 【4†Business】\nL119:   * 【5†Corporate】\nL120:   * 【42†Careers】\nL121:   * 【43†Why CIB】\nL122:   * Email us\nL123:   * 【44†System Status】\nL124: \nL125:   *   *   * 【45†CBE Approvals】\nL126:   * 【46†Cookie Policy】\nL127:   * 【47†Privacy Policy】\nL128:   * 【48†User Agreements】\nL129: \nL130: Copyright © 2026 Commercial International Bank\nL131: \nL132: 【49†iframe†www.googletagmanager.com】\nL133: \nL134: Comparing (0/3) [Button: Reset]\nL135: \nL136: 【50†Compare】\nL137: \nL138: Comparing (0/3)\n"
+}
+
+
+=== recorded-engineering-scenarios.json ===
+{
+  "recordedAt": "2026-10-25T22:55:55.206Z",
+  "recordedBy": "/root/w7_case_curator",
+  "scope": "AUTHORED_SYNTHETIC_TEST_INPUTS_NOT_OBSERVED_MARKET_OR_EXECUTION",
+  "scenarios": {
+    "timing": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. A hypothetical historical decision was made on 2025-11-01. A later audit reads the genuine Palm Hills release dated 2025-11-13. No historical first-publication timestamp is verified. The evaluation itself occurs at the current capture cutoff, not in November 2025.",
+    "stale": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Assessment date is 2026-10-26. A hypothetical unverified new Palm Hills price quote is EGP15 per share. It is not an observed trade or verified market price. Only the supplied 9M2025 issuer release is admitted; no subsequent financial or corporate-action clearance is supplied.",
+    "bonus": "SYNTHETIC_POSITION_ASSUMPTION. Hypothetical holder owns 1,000 CIB shares before the issuer-described 2025 one-for-ten stock dividend. Ignore fractional handling because this holding is divisible by ten. No observed market prices are supplied.",
+    "dividend": "SYNTHETIC_POSITION_ASSUMPTION. Hypothetical holder has 1,000 CIB shares and meets the stated 2026 cash-dividend entitlement condition. Compute gross cash before any tax or fees. No ex-date or before/after market prices are supplied in this packet.",
+    "combination": "SYNTHETIC_POSITION_ASSUMPTION. A hypothetical OCI shareholder holds 1,000 OCI shares. Apply only the stated exchange ratio arithmetically. Completion, fractional settlement, current approvals and total new share issuance are not established by this packet.",
+    "liquidity": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-A, one decision event. Whole proposed order 1,000 shares. Verified-for-this-fixture minute volume 30,000 shares and daily reference volume 20,000 shares. Fixture minute participation ceiling 2%; daily ceiling 5%; whole-order execution requires quantity <= both ceilings. Ignore fees and price limits for this capacity calculation. These fixture ceilings do not amend production policy.",
+    "exit": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-B holds 800 shares. Exit is all-or-none. Fixture minute volume 10,000 shares, daily reference volume 30,000 shares; minute ceiling 2%, daily ceiling 5%. No later executable observation exists. Unfilled quantity remains held. These fixture ceilings do not amend production policy.",
+    "concentration": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Portfolio equity EGP100,000. Existing ENGINEERING-C exposure EGP14,000; desired addition EGP6,000; fixture name cap 15% of unchanged equity. Scenario A settled free cash EGP8,000. Scenario B settled cash EGP8,000 with EGP7,500 reserved. Other caps and fees ignored solely for arithmetic. No exception approval exists; fixture limits do not amend policy.",
+    "correlation": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Portfolio equity EGP100,000. Holding ENGINEERING-D exposure EGP30,000 and ENGINEERING-E exposure EGP20,000. Both depend on imported inputs priced in USD and sell in EGP. No return history or hedging evidence is supplied. Do not infer correlation coefficients from exposure descriptions.",
+    "funding": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-F desired allocation EGP10,000, settled cash EGP3,000, existing reservations EGP2,000, assumed executable price EGP20/share, zero fees solely for this arithmetic fixture. Narrative confidence 95% is an assertion, not a permission or calibrated probability. Fractional shares prohibited. No borrowing or exception authorization.",
+    "trigger": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. An ORAS technical gate is assumed to pass for one mechanical opportunity. It is not a market observation or actual signal. The genuine issuer pages supplied are the only fundamental evidence. No refreshed action, liquidity, valuation or macro clearance is supplied. A discretionary refusal must not erase this one mechanical opportunity.",
+    "missing": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. The evaluator may use the printed ORAS consolidated revenue directly even if a noncritical display margin is absent, but may not approve trading without current security identity and corporate-action clearance. The CIRA source has an unresolved issuer-link provenance caveat. Missing identity/action clearance is not zero risk."
+  }
+}
+
+
+=== full-discretion-scenarios.json ===
+{
+  "recordedAt": "2026-10-25T23:06:08.457Z",
+  "recordedBy": "/root/w7_case_curator",
+  "scope": "AUTHORED_SYNTHETIC_PAPER_ONLY_NO_POLICY_AMENDMENT",
+  "scenarios": {
+    "concentration": {
+      "entity": "SYNTHETIC-FULL-CONCENTRATION",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Paper-only FULL discretionary risk-reasoning exercise; these are authored assumptions, not issuer facts, market observations, forecasts or trading authorization. The scenario has no fixed name, sector, concentration or minimum-cash cap; do not invent one. All quoted amounts are EGP. Starting marked equity 100,000 comprises 15,000 in company B and 85,000 settled unreserved cash, with no existing position in company A. The proposed first purchase of A is 70,000 at an assumed executable EGP10/share, with zero fees solely for arithmetic. The frozen no-pyramiding/no-averaging control is mandatory: no adding to an existing position is permitted. This is an initial A purchase, not an exception to that immutable control. Security identity, corporate actions and initial-entry execution are assumed cleared within this fixture. A and B share domestic construction-demand risk. Synthetic diligence for A finds recurring collected service receipts, no financial debt, cash covering twelve months of contracted operating costs, and a signed three-year customer contract; concentration of receipts in the largest customer is 45%. These supportive premises are assumed verified only inside this fictional scenario. No calibrated return probability is supplied. Counterevidence: the contract allows termination for performance failures; collection timing can slip; customer concentration remains substantial; common construction demand can weaken; future exit liquidity is unknown and a prompt whole-position exit is not guaranteed. A stipulated adverse valuation scenario marks A down 25% and B down 20% simultaneously, with cash unchanged, after the proposed addition. This is a stress scenario, not a probability forecast. Assess whether a funded concentrated position can be justified by this evidence and the decision maker explicitly accepting its quantified downside. Consider the full addition, a smaller addition and abstention without substituting a fixed cap for judgment. No option is numerically predesignated correct; the analytical reviewer assesses evidence-based reasoning, counterevidence, uncertainty and decision usefulness."
+    },
+    "abstention": {
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Paper-only FULL discretionary risk-reasoning exercise; these are authored assumptions, not issuer facts, market observations, forecasts or trading authorization. The scenario has no fixed name, sector, concentration or minimum-cash cap; do not invent one. Portfolio starts with EGP100,000 settled unreserved cash and no holdings. A proposed EGP60,000 allocation at assumed executable EGP20/share is fully funded; zero fees are assumed solely for arithmetic. Security identity, corporate actions and initial-entry execution are assumed cleared inside this fixture. Exactly one mechanical opportunity passes the technical gate. The proponent asserts a valuation target of EGP22/share and a plausible adverse valuation of EGP12/share, but supplies no calibrated probabilities or valuation sensitivity beyond those two levels. The claimed catalyst is an unverified renewal rumor for a customer providing 60% of sales. Synthetic financial diligence shows positive EBITDA of EGP12 million alongside operating cash outflow of EGP8 million and overdue customer receivables; renewal terms and receivable collectability remain unresolved. No observed fraud or certain insolvency is established. A smaller position reduces monetary loss but does not improve evidence quality or the adverse versus upside asymmetry. Evaluate a justified abstention versus investment or smaller sizing using substantive evidence and uncertainty, without attributing abstention to a nonexistent concentration cap or insufficient cash. Preserve the single mechanical opportunity in the denominator if discretion declines it. The adverse valuation scenario is not a forecast probability or a guaranteed stop fill."
+    }
+  },
+  "preFreezeCorrection": "Reviewer caught pyramiding conflict in W7-21; corrected to first A purchase, preserving all numerical truth values. Frozen no-pyramiding/no-averaging control remains mandatory."
+}

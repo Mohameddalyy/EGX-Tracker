@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "kind": "actual-model-run-manifest",
+  "createdAt": "2026-10-25T23:13:58.856Z",
+  "payload": {
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "runs": [
+      {
+        "caseId": "W7-01",
+        "runPath": "verification/w7-completion-20261026/runs/W7-01.json",
+        "runHash": "e1385262946aac70c339a13fe0c20d4076ec915a505d4930d821f6df8961220d",
+        "artifactHash": "1e4f4ab9db860b6596586c4df231ebf50d6a0a35fb2d4ebbbceade7323419c41"
+      },
+      {
+        "caseId": "W7-02",
+        "runPath": "verification/w7-completion-20261026/runs/W7-02.json",
+        "runHash": "f60b578e26b40b66ebbc36a91c91dea7955a434bd6d8e2d7c40271e84adca9a3",
+        "artifactHash": "6229242eb92527fc6265582a706fc7fba36ef09e31da47cc00a488f0ad0267d8"
+      },
+      {
+        "caseId": "W7-03",
+        "runPath": "verification/w7-completion-20261026/runs/W7-03.json",
+        "runHash": "c10bda73911436d078f72be4d88f8f330a74920475ab5f5e54e220e9329d724e",
+        "artifactHash": "2a73893c35f5fc02b928c2e8ce971e47476d65f21a17d85b7c0f327e66994b8d"
+      },
+      {
+        "caseId": "W7-04",
+        "runPath": "verification/w7-completion-20261026/runs/W7-04.json",
+        "runHash": "8bb980a9bfd00ea5413c1ea83deea9180c4eec91cdc6180bea067fc95b24ef14",
+        "artifactHash": "192ff8760ad4404a3beb44e9b2136ce0846205fb71b20267c8a3fb4e3dee1c25"
+      },
+      {
+        "caseId": "W7-05",
+        "runPath": "verification/w7-completion-20261026/runs/W7-05.json",
+        "runHash": "fbee99fb0fc37f397394089469835aba8c7c71eb6ebf791b5c203918dad327be",
+        "artifactHash": "0c5ec579de3a28a016e0499972f169d94119d2b691ec244acbf3b23fbe569ec0"
+      },
+      {
+        "caseId": "W7-06",
+        "runPath": "verification/w7-completion-20261026/runs/W7-06.json",
+        "runHash": "70f47e432769b5ce6969418026e323c0db66ac43bef0b85ef878fc69669ebafe",
+        "artifactHash": "c079f593b67373ee4b23492c5aa9b679cfdf303b04000d766b124df5330d4aa5"
+      },
+      {
+        "caseId": "W7-07",
+        "runPath": "verification/w7-completion-20261026/runs/W7-07.json",
+        "runHash": "f733d0b047c1d72e703f9e21c76bc08fc78fb14a91dfdf2c55299c08f84f226e",
+        "artifactHash": "38c5986e510349a73d28f23b78c9ff67d7570daed9ae9d89e459d7118dc0f925"
+      },
+      {
+        "caseId": "W7-08",
+        "runPath": "verification/w7-completion-20261026/runs/W7-08.json",
+        "runHash": "c3bbf4bb19f2a49ee2ffb34312e9cb4656d8fba77b30de8df8ef9815609103f6",
+        "artifactHash": "9a558821003522622805ee93c0c6c77c2c9aaa8333f0ceeebbc54629a5296cfb"
+      },
+      {
+        "caseId": "W7-09",
+        "runPath": "verification/w7-completion-20261026/runs/W7-09.json",
+        "runHash": "b8d4c3174c1badd84fad5cb02bc537ebce38964daa18891e67f3345db7d5c2ed",
+        "artifactHash": "56e9ac9baf6ab27998dcd9976c0e11fa26c35574988c65390bf84ad4e3b6a316"
+      },
+      {
+        "caseId": "W7-10",
+        "runPath": "verification/w7-completion-20261026/runs/W7-10.json",
+        "runHash": "aae59372561906134ba5fbbf00c946720ed1e04475076f873d1b0db376f48152",
+        "artifactHash": "4e1555628872942db97bb638842a8484eedc874feffd8e6cd974d3a4469bc615"
+      },
+      {
+        "caseId": "W7-11",
+        "runPath": "verification/w7-completion-20261026/runs/W7-11.json",
+        "runHash": "b407cd0940bcac39bca81fdc6b46c3b7205b325e577ec2d3f78320a7e5ec8181",
+        "artifactHash": "0706d0fd21c7cbdb91174596febb1fe6ce11c95572d41588bb5055e19f9b8401"
+      },
+      {
+        "caseId": "W7-12",
+        "runPath": "verification/w7-completion-20261026/runs/W7-12.json",
+        "runHash": "066e773d9622c2ac7884b9718c5f155cf63efac8e955bf9bae1ccfa3080df2d6",
+        "artifactHash": "db5977d0bb72fa2fb662a8f6b38b54fe43c6db8cb4c3f9927b0d10bb52c281ba"
+      },
+      {
+        "caseId": "W7-13",
+        "runPath": "verification/w7-completion-20261026/runs/W7-13.json",
+        "runHash": "eb6546f992fd5e7c69984c416c4de3c4b4f838160f9a95a439bf7064efb671d9",
+        "artifactHash": "74c345a359fa1e60e81faae82b0583d54dd894c1b5040f2be7658422c584f9a7"
+      },
+      {
+        "caseId": "W7-14",
+        "runPath": "verification/w7-completion-20261026/runs/W7-14.json",
+        "runHash": "c985b98d0ba45930c4e373a184b7e2a8b9cc300a53a0c868dacc653fbf06d034",
+        "artifactHash": "94e7ae449b17d5343e9ca0455166dc4c51245132c50eb39ea896150221b58b0e"
+      },
+      {
+        "caseId": "W7-15",
+        "runPath": "verification/w7-completion-20261026/runs/W7-15.json",
+        "runHash": "66a1f5e0d4d9e99d1b4cb8bd39a31679521cd2f660fd91a0265aa15adbb5d2ed",
+        "artifactHash": "aa91487bf2321c169f1b5da466d08a8784e6808dd35292bf8a61fa11d14ea5fa"
+      },
+      {
+        "caseId": "W7-16",
+        "runPath": "verification/w7-completion-20261026/runs/W7-16.json",
+        "runHash": "8835b8fbb7ac7f6e0e11a25a4cdf68895b34a6240b5b37dcb0465d5d52e7a7f8",
+        "artifactHash": "5496811a25a9ad7272cc68e842c0a261496d792ec82ed4f0331c6652daeb7b9f"
+      },
+      {
+        "caseId": "W7-17",
+        "runPath": "verification/w7-completion-20261026/runs/W7-17.json",
+        "runHash": "ace297b0d3dfb7b18f3bb975a8f79704d3986f9f3717481300222bb5118a3231",
+        "artifactHash": "33faa78fa9377110d37618665f58d7c6ee4c1e854432b443c3f5e066f83a9d89"
+      },
+      {
+        "caseId": "W7-18",
+        "runPath": "verification/w7-completion-20261026/runs/W7-18.json",
+        "runHash": "5a2c149c5c4b5ccf0552bd5879f3d47be553fa5aed3d12e9b9da057c9be3ede4",
+        "artifactHash": "1a5b98bcf62adbc7f0f2f67db0ebdc3669dc6f418554e6430e354e1e96c00a29"
+      },
+      {
+        "caseId": "W7-19",
+        "runPath": "verification/w7-completion-20261026/runs/W7-19.json",
+        "runHash": "878555ced8d347221721c4ffff66b9648d6b2f2b043f6d43df602f33976d59d5",
+        "artifactHash": "0a3fcee700c319e388a12ebbd619ad546537d175357cb78b28c62b7bb284ccee"
+      },
+      {
+        "caseId": "W7-20",
+        "runPath": "verification/w7-completion-20261026/runs/W7-20.json",
+        "runHash": "071f5b1c2852e0ddeab4d891c228c57405e8f18709ffaa7698bad75c5d85c9ca",
+        "artifactHash": "96acfd8303e48f6a4c20678a5b0191c56a6dbde9c4c0570d99edcbffeef716fb"
+      },
+      {
+        "caseId": "W7-21",
+        "runPath": "verification/w7-completion-20261026/runs/W7-21.json",
+        "runHash": "d599b73af984232060e934d968657918e0654c7ee29a75868ba721058d5ba215",
+        "artifactHash": "ce66cc914c563cea69ef9acb7382c53ce99111793a252e32d2a48af306d34a88"
+      },
+      {
+        "caseId": "W7-22",
+        "runPath": "verification/w7-completion-20261026/runs/W7-22.json",
+        "runHash": "4ce5aa7ea90325931ac072b3048f2b7e8e6ba9f046cf56aab514a2ae48238914",
+        "artifactHash": "a9968de18eef594aa1f1eeefae57bac29b7d3a53b0036e2c078443af98b151b9"
+      }
+    ],
+    "originalAnswersUnmodified": true,
+    "scope": "EXCERPT_ONLY_PROTOCOL_DEVIATION"
+  },
+  "contentHash": "e5f177c84b86058e4b767dae8bad2111f7b696273eb318ee7f2ebe07b711a2ca"
+}

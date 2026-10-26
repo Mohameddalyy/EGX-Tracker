@@ -1,0 +1,47 @@
+{
+  "caseId": "W7-06",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-06",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "phdc-summary",
+        "availableAt": "2026-10-25T22:52:57.067Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 178.158
+      },
+      {
+        "id": "phdc-statements",
+        "availableAt": "2026-10-25T22:52:57.067Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 178.158
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.429Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-06\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-summary\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"phdc-statements\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nAt 30 September 2025, Palm Hills current assets of EGP99,982,419 thousand minus current liabilities of 98,786,344 thousand equal positive net current assets of 1,196,075 thousand. Page 2's reported net debt is rounded EGP4.2 billion. Net current assets are an accounting residual, not spendable cash; the narrow positive difference does not prove either solvency or insolvency.\n\nReal-estate current assets may include development inventories and long collection schedules. Current liabilities may include customer advances whose economic settlement requires delivering units, not merely repaying financial debt. Missing composition prevents treating every liability as equivalent borrowing. Page 4's cash of 9,204,446 thousand and positive operating cash flow are supportive, but cash restrictions, pledged funds, debt maturities and committed construction/land payments are absent. The 248 billion receivables figure expressly includes off-balance-sheet amounts and must not be added to balance-sheet assets or assumed immediately collectible. Net-debt definitions, off-balance obligations, guarantees and recoverability haircuts need reconciliation. I would wait for full footnotes and a dated sources-and-uses schedule; neither cash runway nor liquidation value can be calculated credibly from these selected totals. The favorable net-current-assets sign merits follow-up, not unconditional investment clearance.",
+  "extractedNumbers": [
+    {
+      "id": "net_current_assets",
+      "unit": "EGP thousand",
+      "period": "as at 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-statements",
+      "value": 1196075
+    },
+    {
+      "id": "rounded_net_debt",
+      "unit": "EGP billion",
+      "period": "as at 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-summary",
+      "value": 4.2
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

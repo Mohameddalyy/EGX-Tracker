@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:09.003Z",
+  "caseHash": "a819c2fbe01e22d24427f820972e223e55e3c0b583347cbf8c310f9d290d869c",
+  "runHash": "1ba52863f3e2b239e3843844c5c766cd7a978aff1b8e2263db99a0db7de7e603",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Appropriately states this timing-only fixture supplies no sector/issuer economics; no unsupported thesis."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Balances available notice with absence of completion, without inferring failure."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct distinct 1.111 record age, 2.111 notice age and 13.889 seconds to action."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Keeps schedule knowable and completion unconfirmed, specifying evidence needed to change status."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Correct exact cutoff; synthetic timestamps and lack of proceedings remain explicit."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

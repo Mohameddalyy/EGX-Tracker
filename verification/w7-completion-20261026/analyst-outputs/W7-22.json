@@ -1,0 +1,51 @@
+{
+  "caseId": "W7-22",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:38.8013941Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "The fully funded EGP60,000 allocation at EGP20 per share buys 3,000 whole shares and leaves EGP40,000 cash. The stated EGP22 target implies (22/20 - 1) x 100 = +10% price upside. The stipulated EGP12 adverse value implies (12/20 - 1) x 100 = -40%. Under that adverse mark, holdings are EGP36,000 and portfolio equity is EGP76,000 including unchanged cash, a loss of EGP24,000 or 24% of initial equity (full-abstention). At the stated target, the position would gain only EGP6,000 before any real-world costs. Exactly one mechanical opportunity remains in the denominator regardless of discretionary abstention.\n\nAbstention is justified on evidence and payoff quality despite full funding and assumed-cleared entry prerequisites. A customer accounts for 60% of sales, its renewal catalyst is an unverified rumor, and renewal terms remain unresolved. Positive EBITDA of EGP12 million is substantive supportive operating evidence, but negative EGP8 million operating cash flow and overdue receivables challenge conversion of earnings into cash. A key customer's demand or payment shock could damage both revenue and collections at once. The packet does not identify an actual sector or other holdings; I do not invent portfolio sector correlation. No fraud or certain insolvency is established.\n\nThe two price levels give downside four times the stated upside in percentage terms, but supply no probabilities, valuation derivation or sensitivities. They cannot establish expected return or a calibrated probability of loss. Funding means the order can be paid for, not that the rumor is true or the investment attractive; an adverse mark is not a stop-fill guarantee. Mechanical clearance does not replace discretionary assessment of these risks.\n\nA smaller allocation would reduce monetary loss while retaining the same 10%/-40% price asymmetry and evidentiary weakness. Investing the full amount could be defended only with materially stronger evidence or an explicit thesis that compensates for these risks; neither is present. Waiting for verified renewal terms, receivable aging and collections, cash-flow reconciliation and defensible valuation sensitivities is more useful than treating size alone as the remedy.\n\nBounded decision: abstain from this fictional opportunity on unresolved customer/collection risk and weak supported reward relative to the stipulated adverse scenario. Do not attribute the refusal to insufficient cash, failed technical entry or a nonexistent concentration cap. Retain one mechanical opportunity and separately label the discretionary decline. This is paper reasoning, not real-market validation or execution authorization.",
+  "extractedNumbers": [
+    {
+      "id": "desired_shares",
+      "unit": "shares",
+      "period": "fixture proposed allocation",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 3000
+    },
+    {
+      "id": "stated_upside_percent",
+      "unit": "percent price return",
+      "period": "fixture target versus entry",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 10
+    },
+    {
+      "id": "adverse_price_return_percent",
+      "unit": "percent price return",
+      "period": "fixture adverse value versus entry",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": -40
+    },
+    {
+      "id": "adverse_portfolio_equity",
+      "unit": "EGP",
+      "period": "fixture adverse valuation after allocation",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 76000
+    },
+    {
+      "id": "retained_mechanical_opportunities",
+      "unit": "opportunities",
+      "period": "fixture decision event",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 1
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

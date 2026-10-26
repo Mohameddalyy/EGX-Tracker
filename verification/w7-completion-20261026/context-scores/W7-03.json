@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.744Z",
+  "payload": {
+    "caseId": "W7-03",
+    "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "b1021019d93f0bee9ae2de3bfeed0bcf1b8df3ba18b4a3d2c477f2468917fecc",
+    "reviewHash": "905b64e840ce2002e62557a11289cb2b8a27abb7c71b97617adf18d0bc3159b6",
+    "categories": [
+      "nonfinancials"
+    ],
+    "numbers": [
+      {
+        "id": "operating_profit",
+        "status": "CORRECT"
+      },
+      {
+        "id": "operating_cash_flow",
+        "status": "CORRECT"
+      },
+      {
+        "id": "receivables_cash_movement",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Explains construction milestone billing and receivables/retention timing."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Balances receivables absorption with work-in-progress, advances, excess billings and cash."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Full source bridge independently checked: 127.8+72.8-249.6-5.5=-54.5; operating profit and signed movements correctly distinguished."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Identifies aging, subsequent receipts, claims, cash restrictions and debt maturities as decision inputs."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Treats timing mechanisms as possible and avoids fraud, guaranteed recovery or unrestricted-cash claims."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.425,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "05bc3f74e61ba453216d85fd57ab8275e26c65b6f84a65ddac712c07b62783da"
+}

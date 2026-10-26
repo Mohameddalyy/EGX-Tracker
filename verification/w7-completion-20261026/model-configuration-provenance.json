@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-10-25T23:06:39.473Z",
+  "sourcePath": "C:/Users/LENOVO/.codex/sessions/2026/10/06/rollout-2026-10-06T02-03-10-01a10e4e-8900-7600-86f3-b9024bcb2a3a.jsonl",
+  "recordType": "turn_context",
+  "recordTimestamp": "2026-10-25T23:01:00.707Z",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "recordHash": "78ee66c354ffe9a4535dbff1af952c135b9ba7b189626e74d1f273786eb8f968",
+  "inheritance": "Subagents spawned without model/effort override; default tool inheritance. This records local configuration, not server attestation.",
+  "privacy": "Only model configuration fields retained; original conversation record not copied."
+}

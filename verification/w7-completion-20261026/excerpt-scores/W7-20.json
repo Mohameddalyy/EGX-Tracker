@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.973Z",
+  "payload": {
+    "caseId": "W7-20",
+    "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "071f5b1c2852e0ddeab4d891c228c57405e8f18709ffaa7698bad75c5d85c9ca",
+    "reviewHash": "369721fde801b1c01f9398a1f5041d7987e392b7ee526e427b4487edc4d6da1a",
+    "categories": [
+      "incompleteFinancials",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "computed_gross_margin",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 1,
+    "denominator": 1,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Explains contractor gross margin limits and CIRA allocation without overstating economic quality."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Positive gross profit and unchanged CIRA total balance missing cash/provenance."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct ratio with rounded-input precision caveat and compatible scopes."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Uses available arithmetic while withholding identity/action clearance."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Differentiates optional display missingness from critical identity/action uncertainty."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 404.2,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "98e4d3a154f85826d4417f3f012556f83defc6212ae7986b0ae00d3329f01b01"
+}

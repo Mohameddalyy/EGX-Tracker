@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "kind": "trial",
+  "createdAt": "2026-10-25T23:15:55.028Z",
+  "payload": {
+    "id": "w7-completion-engineering",
+    "scope": "SYNTHETIC_ENGINEERING",
+    "registeredAt": "2026-10-25T23:15:55.008Z",
+    "codeRevision": "d0a1256 plus exact source manifest in this evidence pack",
+    "codeDigest": "8323a71320b30a76a426278375f683d9336e0469531754f76d3340739d0ad5c8",
+    "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+    "admissionManifestHash": "ba1108a127fe546020c83e32434a85eab37b7eee9616aa987d9c087bfc64399d",
+    "dataManifestHash": "ba1108a127fe546020c83e32434a85eab37b7eee9616aa987d9c087bfc64399d",
+    "arms": [
+      {
+        "id": "B0:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B0:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B1:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B1:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B2:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B2:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B3:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "B3:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-BOUNDED:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-BOUNDED:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-NO-PEER:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-NO-PEER:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-NO-MACRO:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-NO-MACRO:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-NO-SECTOR:base",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      },
+      {
+        "id": "FULL-NO-SECTOR:stress",
+        "status": "UNAVAILABLE",
+        "reason": "No authorized prospective arm observations; retained ledger fixtures are accounting evidence only"
+      }
+    ],
+    "priorTrials": [
+      {
+        "artifactHash": "d37ee3df391e032570d36b4d2b8b9b3cdcc1ad2b0054f21fb0929cfc61c31c98",
+        "disposition": "Earlier partial W7 implementation retained, not economic evidence"
+      }
+    ],
+    "amendmentPath": "verification/w7-completion-20261026/approved-comparison-amendment.json",
+    "bindings": {
+      "planHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+      "decisionSchemaHash": "8678334e55aa7877a6f7c2ffc6a36170729386704681e194d001d8429cc61535",
+      "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+      "evaluationReleaseHash": "015b9b8deb5208e68ca66abef8e54a639d4eb25ba8b575b9cb43909dad441316",
+      "comparisonAmendmentHash": "b011fc50380405f76ba0339251da4151099711e19e1e59e9f3e186e7b8eda911",
+      "testPlanHash": "d36169435ac07c468b1cd4a5c33fc745d21abd9c77cb5ae2c6ef26ea746cd5b0",
+      "dictionaryHash": "6434fdcd5ab6af6ca2c7e46ef45cfa13f036ce632d4bce3e0eb472e27bc06246",
+      "dependencyLockHash": "c0d056c7dca078f0aac779e40583489975f46495b6087633c7b60de7366cbd6f",
+      "node": "v24.22.1"
+    },
+    "seed": 20261023,
+    "capitalCentsPerArm": 10000000,
+    "statisticalProtocol": {
+      "blockLength": 20,
+      "replicates": 10000,
+      "confidence": 0.95,
+      "familyAlpha": 0.05,
+      "comparisons": 16,
+      "minimumProspectiveSessions": 126,
+      "minimumAppropriateClosedObservations": 100,
+      "endpointSessions": 126,
+      "minimumAdditionalNetWealthCents": 100000,
+      "stoppingRule": "Fixed endpoint; insufficient or interrupted evidence INCONCLUSIVE, no selective extension",
+      "riskAcceptance": "Separate human judgment; no added FULL cap or automatic promotion",
+      "amendment": "b011fc50380405f76ba0339251da4151099711e19e1e59e9f3e186e7b8eda911"
+    },
+    "activation": "NOT_AUTHORIZED",
+    "analyticalInference": "BLOCKED_UNTIL_REGISTERED_PROSPECTIVE_EVIDENCE",
+    "unresolvedProtocol": [
+      "Future entry cohorts need separate authorization",
+      "Attainable basket observations require subsequent integrated release; absent evidence stays unavailable",
+      "Adequate prospective evidence and independent risk/precision review remain required"
+    ],
+    "priorKnowledge": "No economic claim from this scope"
+  },
+  "contentHash": "b5fce2292f34b83c72999773ad3d2c1a19769679ce945341300494f3dbf81687"
+}

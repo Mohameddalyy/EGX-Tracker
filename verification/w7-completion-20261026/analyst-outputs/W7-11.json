@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-11",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:37.4988619Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "Conditionally reading the supplied issuer table, a one-for-ten stock dividend adds one share for every ten held: the share-count multiplier is 1 + 1/10 = 1.1 (cib-dividends). An eligible hypothetical 1,000-share holding would receive 100 additional shares and become 1,100 shares, with no fractional issue in this fixture (scenario-bonus). The table labels this a stock dividend, not a split. A stock dividend distributes additional shares; a split subdivides existing shares under its own terms. Both can require per-share-price/history adjustments, but they are not interchangeable corporate-action descriptions.\n\nThere is a timing defect in the packet: cib-dividends has an actual capture timestamp of 2026-10-25T22:56:12.986Z, which is 17.761 seconds after this case's cutoff of 22:55:55.225Z. Thus the numerical extraction is explicitly conditional interpretation of the supplied text, not proof that this evidence was available at the strict cutoff. A new earlier verified source or a prospectively changed cutoff would be needed for an admissible as-of claim.\n\nThe table gives record and payment dates of 16 and 17 December 2025, respectively; it provides no ex-date. More shares alone do not establish an economic gain, bank earnings growth or stronger capital. Per-share prices may adjust, but no price path or adjustment vintage is supplied, so neither a raw-price change nor shareholder return can be calculated. Missing data include eligibility verification beyond the fixture, adjusted/unadjusted prices, other distributions, fees/taxes and action details. Bounded decision: retain the conditional 1,100-share scenario arithmetic, flag the cutoff issue, and withhold return and trade-clearance conclusions.",
+  "extractedNumbers": [
+    {
+      "id": "share_multiplier",
+      "unit": "multiple",
+      "period": "2025 stock dividend",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "cib-dividends",
+      "value": 1.1
+    },
+    {
+      "id": "post_bonus_shares",
+      "unit": "shares",
+      "period": "2025 stock dividend hypothetical position",
+      "entity": "Commercial International Bank Egypt",
+      "evidenceId": "scenario-bonus",
+      "value": 1100
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

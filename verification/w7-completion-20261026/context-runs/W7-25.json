@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.228Z",
+  "payload": {
+    "caseId": "W7-25",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-25",
+      "cutoffAt": "2026-10-25T23:20:03.220Z",
+      "evidence": [
+        {
+          "id": "temporal-facts-25",
+          "availableAt": "2026-10-25T23:20:02.112Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 1.108
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.445Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-25\",\"cutoffAt\":\"2026-10-25T23:20:03.220Z\",\"evidence\":[{\"id\":\"temporal-facts-25\",\"availableAt\":\"2026-10-25T23:20:02.112Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.108}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-25, cutoffAt \"2026-10-25T23:20:03.220Z\". Its announcement record was captured at 23:20:02.112Z and is available 1.108 seconds before this cutoff. Fictional announcement publication at 23:05:02.112Z is 901.108 seconds earlier, or 15.018466666666667 minutes. The scheduled meeting at 2026-11-04T23:20:02.112Z remains 863,998.892 seconds after this case's exact cutoff.\n\nAlready knowable facts are the announcement's existence, its stated publication/capture times and the scheduled meeting time. The future date does not make the existing announcement unavailable. What is not established is whether the meeting will occur, be postponed or canceled, what proceedings will take place, or whether any resolution will be approved or completed. The notice explicitly supplies no proceedings or completion record; treating announcement as approval would overstate the evidence. Conversely, it is unwarranted to label the announcement itself unusable simply because its subject is future. I would preserve the schedule in the paper record and leave outcome and completion unknown pending contemporaneous proceedings or an updated notice. No sector, security or real market inference is supported by these authored timestamps.",
+    "extractedNumbers": [
+      {
+        "id": "announcement_age_minutes",
+        "unit": "minutes",
+        "period": "relative to W7-25 cutoffAt",
+        "entity": "SYNTHETIC-TEMPORAL-25",
+        "evidenceId": "temporal-facts-25",
+        "value": 15.018466666666665
+      },
+      {
+        "id": "seconds_until_meeting",
+        "unit": "seconds",
+        "period": "relative to W7-25 cutoffAt",
+        "entity": "SYNTHETIC-TEMPORAL-25",
+        "evidenceId": "temporal-facts-25",
+        "value": 863998.892
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "29641b8fbedb569c839d1ea3e6c23eb31112a81d6cb787ebf2888062d8dab3c8",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "d5d8aaa4d1ab4b6f9962aa3427dcb44061dcb93842b8c6517088dd48c10a9b04",
+    "packetHash": "ac94705c1876128e9f3747a4b87c7d6d82fb6d3503d11fcfcaee1afc7c3f6697",
+    "outputHash": "8eb16b28935a830b18d9ae2c79a2cd31590058dfd1f6e39971394baf16143e31",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-25.json",
+    "originalFileHash": "00081fa6cbabc11404b4c15c6dc476d658511f95ef1c59208cdeac395c310a4c",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "86c1094f726891eb7f37d3c65bb7c5b8e15b27986975abce04e7d154b4824567"
+}

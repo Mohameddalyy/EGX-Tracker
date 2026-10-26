@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.841Z",
+  "payload": {
+    "caseId": "W7-16",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:37.5833222Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "The fixture name cap is 15% x EGP100,000 unchanged equity = EGP15,000. Existing exposure is EGP14,000, leaving EGP1,000 additional name headroom (scenario-concentration). In scenario A, free settled cash is EGP8,000, so the maximum arithmetic addition is min(EGP6,000 desired, EGP1,000 headroom, EGP8,000 free cash) = EGP1,000. In scenario B, free cash is EGP8,000 - EGP7,500 reserved = EGP500; the corresponding maximum is EGP500. Scenario A would reach 15% name exposure; scenario B would reach 14.5%, holding equity unchanged as stipulated.\n\nThe desired EGP6,000 addition would raise exposure to EGP20,000, or 20%, and fails the fixture cap despite scenario A's sufficient cash to pay for it. Cash sufficiency and concentration permission are different conditions. Reservations also represent unavailable buying power in B, rather than cash that can be counted twice. No exception approval exists.\n\nCounterevidence to a complete arithmetic funding prohibition is that a positive amount remains within both displayed constraints in each scenario. Those ceilings are not authorizations to add: this exercise ignores other caps and fees solely for arithmetic, and provides no actual price, shares, identity/action status or investment case. Any separate no-addition or execution control would still require evaluation; these calculations cannot amend such controls.\n\nThe packet supplies no real sector or issuer fundamentals. A name concentration cap limits single-name loss exposure but says nothing about whether other holdings share the same economic driver. Bounded decision: reject the desired amount under the stated fixture, report EGP1,000 and EGP500 only as conditional maxima, and require the other applicable controls and evidence before any action. These are synthetic scenario calculations, not production-policy exceptions or executed allocations.",
+    "extractedNumbers": [
+      {
+        "id": "name_headroom",
+        "unit": "EGP",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-C",
+        "evidenceId": "scenario-concentration",
+        "value": 1000
+      },
+      {
+        "id": "scenario_a_addition",
+        "unit": "EGP",
+        "period": "fixture scenario A",
+        "entity": "ENGINEERING-C",
+        "evidenceId": "scenario-concentration",
+        "value": 1000
+      },
+      {
+        "id": "scenario_b_addition",
+        "unit": "EGP",
+        "period": "fixture scenario B",
+        "entity": "ENGINEERING-C",
+        "evidenceId": "scenario-concentration",
+        "value": 500
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "c06bcf10c3b0e869c1c18390553d2a96e9dd4576cf46741c91ce9023cdd9987f",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+    "packetHash": "c56c8c9295083d2f79789cc9c655bc234345e8eb5ee260496450e93cacbf756a",
+    "outputHash": "26f997fbe394fe22d7d44180fda9e51992e4d0d0564d5058ddcc38d7ede63c30",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-16.json",
+    "originalFileHash": "30a75420b366ee0275926b7990f989ee9a5bf72b8aa74bf77d82d088f64e1274",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "5496811a25a9ad7272cc68e842c0a261496d792ec82ed4f0331c6652daeb7b9f"
+}

@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.962Z",
+  "payload": {
+    "caseId": "W7-15",
+    "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "66a1f5e0d4d9e99d1b4cb8bd39a31679521cd2f660fd91a0265aa15adbb5d2ed",
+    "reviewHash": "97b65703df39f5405516bf4890075d397b8aae28308d0e08444292197a1bb723",
+    "categories": [
+      "thinLiquidity",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "exit_capacity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "executed_exit",
+        "status": "CORRECT"
+      },
+      {
+        "id": "retained_shares",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Addresses liquidity/exit-risk mechanism and explicitly marks absent issuer/sector facts."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Daily capacity is recognized without ignoring the binding minute constraint."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correctly retains all800 shares and zero execution; does not infer proceeds or P&L."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Keeps exit pending and holdings exposure visible until a valid later event."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No imagined stop fill, mark, liquidity recovery or realized value."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 403,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "9d7cf686f75c1a9096511310f6c50c193702a825a25ca321ce4617cdf8dfb05f"
+}

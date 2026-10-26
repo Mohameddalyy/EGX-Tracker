@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-18",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "In the synthetic funding fixture, free settled cash is EGP3,000 - EGP2,000 already reserved = EGP1,000. The desired EGP10,000 at assumed EGP20 per share is 500 shares. With zero fees solely for this arithmetic and whole shares required, floor(1,000/20) = 50 shares is the cash-funded ceiling. The desired order is short of funding by EGP9,000 and must be rejected; no borrowing or exception authority exists.\n\nThe asserted 95% confidence is neither a calibrated probability nor spending permission. An assumed executable price and some positive free cash are supportive of computing a smaller quantity, but 50 shares is only an upper funding bound, not authorization to place it. Before a smaller order could be authorized, verify current settled cash/reservations, actual price and fees, security identity/actions, liquidity, investment rationale, portfolio constraints and applicable entry approvals. The ENGINEERING-F name supplies no sector financial evidence, so no business-quality case can be inferred. Decision: refuse the unfunded allocation and retain the conditional 50-share ceiling for review; do not consume reserved cash, infer leverage approval or execute any trade.",
+  "extractedNumbers": [
+    {
+      "id": "free_settled_cash",
+      "unit": "EGP",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-F",
+      "evidenceId": "scenario-funding",
+      "value": 1000
+    },
+    {
+      "id": "desired_shares",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-F",
+      "evidenceId": "scenario-funding",
+      "value": 500
+    },
+    {
+      "id": "funded_share_ceiling",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-F",
+      "evidenceId": "scenario-funding",
+      "value": 50
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

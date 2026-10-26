@@ -1,0 +1,70 @@
+{
+  "id": "W7-21",
+  "categories": [
+    "riskExceptions"
+  ],
+  "task": "Calculate post-addition A exposure as percent of unchanged starting equity, remaining settled cash, common-factor exposure percent and equity under the stipulated joint adverse mark. Judge whether FULL can defend the funded concentration under explicit downside acceptance while presenting a substantive challenge and alternatives. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"post_addition_name_percent\",\"unit\":\"percent of equity\",\"period\":\"fixture after proposed addition\",\"entity\":\"SYNTHETIC-FULL-CONCENTRATION\",\"evidenceId\":\"full-concentration\"},{\"id\":\"remaining_cash\",\"unit\":\"EGP\",\"period\":\"fixture after proposed addition\",\"entity\":\"SYNTHETIC-FULL-CONCENTRATION\",\"evidenceId\":\"full-concentration\"},{\"id\":\"common_factor_percent\",\"unit\":\"percent of equity\",\"period\":\"fixture after proposed addition\",\"entity\":\"SYNTHETIC-FULL-CONCENTRATION\",\"evidenceId\":\"full-concentration\"},{\"id\":\"joint_adverse_equity\",\"unit\":\"EGP\",\"period\":\"fixture joint adverse valuation\",\"entity\":\"SYNTHETIC-FULL-CONCENTRATION\",\"evidenceId\":\"full-concentration\"}]. Explain sector/common-factor risk, material counterevidence, uncertainty, alternatives, funding and a bounded decision. Do not claim real market or trading validation.",
+  "cutoffAt": "2026-10-25T23:04:24.080Z",
+  "frozenAt": "2026-10-25T23:04:24.080Z",
+  "evidence": [
+    {
+      "id": "full-concentration",
+      "source": "local:authored-synthetic-full-discretion-scenarios",
+      "contentHash": "2f21fbc0628735dc06a284f1029c763d210294b8bbbf368fbda4f371da71fdc9",
+      "availableAt": "2026-10-25T23:04:24.080Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Paper-only FULL discretionary risk-reasoning exercise; these are authored assumptions, not issuer facts, market observations, forecasts or trading authorization. The scenario has no fixed name, sector, concentration or minimum-cash cap; do not invent one. All quoted amounts are EGP. Starting marked equity 100,000 comprises 20,000 in company A, 15,000 in company B and 65,000 settled unreserved cash. Proposed addition to A is 50,000 at an assumed executable EGP10/share, with zero fees solely for arithmetic. Security identity, corporate actions and initial-entry execution are assumed cleared within this fixture. A and B share domestic construction-demand risk. Synthetic diligence for A finds recurring collected service receipts, no financial debt, cash covering twelve months of contracted operating costs, and a signed three-year customer contract; concentration of receipts in the largest customer is 45%. These supportive premises are assumed verified only inside this fictional scenario. No calibrated return probability is supplied. Counterevidence: the contract allows termination for performance failures; collection timing can slip; customer concentration remains substantial; common construction demand can weaken; future exit liquidity is unknown and a prompt whole-position exit is not guaranteed. A stipulated adverse valuation scenario marks A down 25% and B down 20% simultaneously, with cash unchanged, after the proposed addition. This is a stress scenario, not a probability forecast. Assess whether a funded concentrated position can be justified by this evidence and the decision maker explicitly accepting its quantified downside. Consider the full addition, a smaller addition and abstention without substituting a fixed cap for judgment. No option is numerically predesignated correct; the analytical reviewer assesses evidence-based reasoning, counterevidence, uncertainty and decision usefulness.",
+      "localPath": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json"
+    }
+  ],
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T23:04:24.080Z",
+    "numbers": [
+      {
+        "id": "post_addition_name_percent",
+        "value": 70,
+        "absoluteTolerance": 0,
+        "unit": "percent of equity",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration"
+      },
+      {
+        "id": "remaining_cash",
+        "value": 15000,
+        "absoluteTolerance": 0,
+        "unit": "EGP",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration"
+      },
+      {
+        "id": "common_factor_percent",
+        "value": 85,
+        "absoluteTolerance": 0,
+        "unit": "percent of equity",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration"
+      },
+      {
+        "id": "joint_adverse_equity",
+        "value": 79500,
+        "absoluteTolerance": 0,
+        "unit": "EGP",
+        "period": "fixture joint adverse valuation",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_AND_SYNTHETIC_REASONING_ONLY",
+    "syntheticContext": true,
+    "notes": [
+      "Supplemental FULL discretionary case; no fixed cap, policy amendment, observed execution or prospective-performance claim.",
+      "Arithmetic has adjudicated truth; the chosen allocation does not have a predetermined numerical correct answer."
+    ],
+    "independence": "Separate curator numerical truth; independent reviewer must verify calculations and assess reasoning."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.041Z",
+  "payload": {
+    "caseId": "W7-09",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-09",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "phdc-highlights",
+          "availableAt": "2026-10-25T22:52:57.067Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 178.158
+        },
+        {
+          "id": "scenario-timing",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0.019
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.431Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-09\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-highlights\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"scenario-timing\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe genuine Palm Hills release is dated 13 November 2025, and its financial period ends 30 September 2025: the elapsed calendar-day difference is 44 days. The original scenario asks about a hypothetical decision on 1 November 2025. This later-dated release cannot be retrospectively inserted into that decision's information set on the supplied record. The archive gives an actual retained capture on 25 October 2026, which is before this case's current evaluation cutoff; it is therefore inspectable now for the audit.\n\nThese are three distinct concepts: period end describes the measured business interval, the document states a release date, and retained capture proves receipt by the archive. No verified first-publication timestamp is supplied. I cannot prove that no related fact was public earlier, but cannot assume earlier availability either. For a developer, later reported bookings, backlog and collections might look supportive; using them as if known on 1 November would introduce hindsight. Any contemporaneous decision should be judged against evidence actually available then, with later outcomes separately labeled. I would request dated earlier announcements or archived publication evidence to expand that historical information set. Current availability is not a temporal defect in this evaluation, and historical timing alone provides no current investment conclusion.",
+    "extractedNumbers": [
+      {
+        "id": "period_end_to_release_days",
+        "unit": "calendar days",
+        "period": "2025-09-30 to 2025-11-13",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights",
+        "value": 44
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "2bbde0b6c3d55aaace7219bf8f6cbe04187401496a28a36ca09090bf108e1d36",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+    "packetHash": "78eba50b71a5b6f9f12dc7eb00646d401cf90932aa9f4fbca50ac6a8d0a0a560",
+    "outputHash": "51c6fccf9cba72bebbc8dac5a58371786ff49ea640a7ccbee5bd6e4eb2de58c9",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-09.json",
+    "originalFileHash": "9485d5d76ecf7b494ca07256f13cbd7a99464c2d378bede1a923c927944eb528",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "aee999f6278f78ee345c4f078fa7cde419eb1305c6b33280397336f9426e1a42"
+}

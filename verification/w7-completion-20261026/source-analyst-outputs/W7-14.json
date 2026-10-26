@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-14",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "In this synthetic engineering fixture, minute capacity is 30,000 x 2% = 600 shares, daily capacity is 20,000 x 5% = 1,000 shares, and effective capacity is the lower limit, 600 shares. The proposed whole 1,000-share order fails the minute ceiling even though it exactly meets the daily ceiling. Under the stated whole-order rule it must not execute; I do not substitute a 600-share partial fill.\n\nThe two horizons constrain different risks: a day may support a quantity while a particular minute cannot absorb it without excessive participation. The daily pass is meaningful counterevidence against describing the order as failing every liquidity measure, but does not override the binding minute check. The ticker is an authored engineering entity, not evidence of an actual industrial business; no sector earnings or issuer credit conclusion can be drawn from its name. Volumes and ceilings are fixture assumptions, not observed EGX liquidity or production policy changes. Missing spread, depth, price limits, fees, current corporate actions, funding and later observations preclude any real execution clearance. Decision: reject this whole order at this event, retain the failed capacity result, and reconsider only on a new valid observation or a separately authorized proposal consistent with the rules.",
+  "extractedNumbers": [
+    {
+      "id": "minute_capacity",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-A",
+      "evidenceId": "scenario-liquidity",
+      "value": 600
+    },
+    {
+      "id": "daily_capacity",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-A",
+      "evidenceId": "scenario-liquidity",
+      "value": 1000
+    },
+    {
+      "id": "effective_capacity",
+      "unit": "shares",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-A",
+      "evidenceId": "scenario-liquidity",
+      "value": 600
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

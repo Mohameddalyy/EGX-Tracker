@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.922Z",
+  "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+  "runHash": "a9cb1b8d4e751ed3f2134eebff24d97bd2d121b0314b470f245c51e0813c6e52",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains why developer sales/backlog evidence would materially contaminate historical demand judgment."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Allows that earlier information might exist while declining to assume its contents."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct elapsed-day calculation and explicit date-versus-availability distinction."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Excludes the later release from the original historical decision while retaining it as later audit evidence; archival contemporaneous proof is specified."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not transform document date or capture date into proven first public availability."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

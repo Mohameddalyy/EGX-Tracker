@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.950Z",
+  "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+  "runHash": "0aeccdd2c0299965241c9697f11dfc2a56b1e74765be43c7c730490ac6cad145",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains bank payout sustainability through capital, credit and recurring profit."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Distinguishes payout from total return and price adjustment from additional wealth."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct EGP6 and EGP6000 gross entitlement, date labels and current evidence availability."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Defers yield/performance until compatible price/action/holding inputs exist."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Preserves tax, fee, reinvestment, adjustment and actual-receipt uncertainty."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

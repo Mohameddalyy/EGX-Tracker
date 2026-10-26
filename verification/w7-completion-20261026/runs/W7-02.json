@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.819Z",
+  "payload": {
+    "caseId": "W7-02",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:36.1108901Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Bank shareholder profit is EGP7,536,797 thousand, whereas total consolidated net profit is EGP7,550,833 thousand. Their difference is EGP14,036 thousand, exactly the stated non-controlling interest allocation (adib-income). Total group profit includes earnings attributable to other owners of consolidated subsidiaries. A shareholder valuation or per-share analysis must use the appropriate attributable-profit numerator and compatible share count; total group profit must not simply be substituted.\n\nThe group is profitable on this selected statement, and NCI is a relatively small part of total profit. Those are supportive facts, but they do not resolve lending quality. The cumulative ECL entry is a net charge of EGP2,176 thousand, while the three-month entry is a release of EGP78,142 thousand. Netting and provision releases mean that a low reported net charge is compatible with both improved recoveries and continuing weakness elsewhere; the packet does not distinguish these explanations.\n\nFor a bank, credit deterioration, concentrations, funding repricing and capital usage can matter more for the durability of shareholder earnings than this isolated net provision number. Missing evidence includes impaired and stage-2 financing, migration, gross charges and releases, write-offs, provisioning coverage, collateral and average loan balances. There is also no valuation or current security/action clearance. Bounded decision: acknowledge positive attributable earnings, but wait for credit-quality and balance-sheet evidence before treating them as a repeatable return stream. Do not claim bad loans are absent, estimate cost of risk from profit, or infer fraud from missing schedules. The passage is a captured interim statement excerpt; its period date is not a verified first-publication timestamp.",
+    "extractedNumbers": [
+      {
+        "id": "shareholder_profit",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 7536797
+      },
+      {
+        "id": "nci_difference",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 14036
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "79e2a5201275ae774a37d36f274051718cf27b70ab837bfae9ee31d31cbc0228",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+    "packetHash": "0fa3f6d3a75c67b5b8a6df0800d36fec5da0c420fa93908840115e444347f8d8",
+    "outputHash": "d216175ebb9245701b56de508e563e95917fbf4f9ed1d544fab0e660ce840d00",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-02.json",
+    "originalFileHash": "b008530dd50f1c706b98b6680ff2fb53031a6f945ee91a03e6760b8907ff2dfc",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "6229242eb92527fc6265582a706fc7fba36ef09e31da47cc00a488f0ad0267d8"
+}

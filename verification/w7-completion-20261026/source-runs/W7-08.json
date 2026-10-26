@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:16:37.539Z",
+  "payload": {
+    "caseId": "W7-08",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "ADIB page 4 reports consolidated total profit of EGP7,550,833 thousand; dividing by 1,000 gives EGP7,550.833 million. ORAS page 8 reports consolidated total profit of USD127.8 million. These figures refer to the same six-month end date but remain in different currencies. Their raw magnitudes cannot support a ranking or sum; no appropriate FX rate or translation convention is supplied. An income-flow comparison normally needs a consistent period translation basis, not an arbitrary current spot quote.\n\nEven after currency normalization, bank funding margins, leverage, credit losses and capital needs differ from construction project margins, working-capital conversion and contract risks. Absolute profit can reflect scale rather than attractiveness. Both are positive earnings observations, a useful counterweight to an automatically bearish view, but neither proves sustainable returns on equity or cheapness. Both requested figures include non-controlling interests; attributable profit would be needed for an ordinary shareholder comparison. Need comparable capital employed/equity, sustainable earnings adjustments, cash conversion, FX basis, share counts and contemporaneous valuations. Decision: preserve the normalized numbers separately, investigate sector-specific quality, and refuse a cross-currency investment ranking or aggregate profit calculation until the missing basis is explicit.",
+    "extractedNumbers": [
+      {
+        "id": "adib_profit_millions",
+        "unit": "EGP million",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 7550.833
+      },
+      {
+        "id": "oras_profit_millions",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 127.8
+      }
+    ],
+    "toolCalls": [],
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "e6258293422e5d25f343d65ddff845912e058c0d5879649f569f209a1baded64",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+    "packetHash": "06ad95078b72f1c73a2348a220c838649facbcccf8b5f93fbefb55486e9f1566",
+    "outputHash": "cb13abe143c8a543d458ba893cda6e5e3498ad1c173f0153ca551e40da18b914",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-08.json",
+    "originalFileHash": "3d5e2d21c25bd81f3d6c9c7690ffe5538e1dbe0e67f671a1d21b44fc65b80a96",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "b036ed8214a11465ef1e9a158cc9cb8f2d9e4bdd9b8ace2fdd67f93822d1f9b8"
+}

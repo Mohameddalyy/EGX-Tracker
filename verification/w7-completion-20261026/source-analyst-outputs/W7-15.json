@@ -1,0 +1,39 @@
+{
+  "caseId": "W7-15",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "In the synthetic exit fixture, the minute limit is 10,000 x 2% = 200 shares and the daily limit is 30,000 x 5% = 1,500 shares. Effective exit capacity is 200 shares. The holding and all-or-none exit order are 800 shares, so executable whole-order exit quantity at this event is zero, leaving all 800 shares held. Capacity is not an actual execution and cannot be booked as a partial sale.\n\nThe daily capacity is supportive of potential liquidity at a broader horizon, but the minute limit is binding and no later executable observation exists. An intention to exit does not extinguish market exposure. There are no prices from which to calculate retained market value, sale proceeds, realized loss or cash released; those must remain unknown, with the exit pending. These authored engineering inputs reveal a liquidity-control issue rather than an observed issuer-specific sector event. A prompt whole-position exit is not guaranteed, and changing valuation does not create executable liquidity. Decision: preserve the entire holding and pending exit state, seek a fresh permissible executable observation, and neither fabricate proceeds nor silently relax all-or-none rules. Fixture percentages do not amend production policy.",
+  "extractedNumbers": [
+    {
+      "id": "exit_capacity",
+      "unit": "shares",
+      "period": "fixture exit event",
+      "entity": "ENGINEERING-B",
+      "evidenceId": "scenario-exit",
+      "value": 200
+    },
+    {
+      "id": "executed_exit",
+      "unit": "shares",
+      "period": "fixture exit event",
+      "entity": "ENGINEERING-B",
+      "evidenceId": "scenario-exit",
+      "value": 0
+    },
+    {
+      "id": "retained_shares",
+      "unit": "shares",
+      "period": "fixture exit event",
+      "entity": "ENGINEERING-B",
+      "evidenceId": "scenario-exit",
+      "value": 800
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

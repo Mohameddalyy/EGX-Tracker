@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.782Z",
+  "payload": {
+    "caseId": "W7-16",
+    "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "6a2d241795c0f9e33f3f2d4166b809c707a653160398d267e9bb1deeb8a06ee8",
+    "reviewHash": "3a310a3ca4325928db1a8d936131d0603b27f462bf9087b4449dc522c3906594",
+    "categories": [
+      "riskExceptions"
+    ],
+    "numbers": [
+      {
+        "id": "name_headroom",
+        "status": "CORRECT"
+      },
+      {
+        "id": "scenario_a_addition",
+        "status": "CORRECT"
+      },
+      {
+        "id": "scenario_b_addition",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Addresses name concentration and absent sector/common-factor information."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Separates funding sufficiency from the independent cap and reserved cash."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct EGP15000 cap, EGP1000 headroom and EGP1000/500 conditional ceilings."
+      },
+      "decisionUsefulness": {
+        "score": 3,
+        "reason": "Rejects full proposal and grants no order permission, but omits an explicit reminder that an existing-position addition also faces the frozen no-pyramiding control; a noncritical completeness gap."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Correctly restricts fixture caps to this exercise and calls ceilings conditional, with execution inputs missing."
+      }
+    },
+    "disagreements": [
+      {
+        "type": "NONCRITICAL_COMPLETENESS_GAP",
+        "detail": "The conditional addition ceilings are not execution permission; an explicit no-pyramiding reminder for the existing position would improve the response. No actual addition or production-rule override is authorized in the answer."
+      }
+    ],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.437,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "42ec0dde120c9030751fe5ed123d08dd6fefee4c06596a372a61a0336e16d589"
+}

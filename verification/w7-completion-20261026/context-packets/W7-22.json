@@ -1,0 +1,31 @@
+{
+  "id": "W7-22",
+  "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+  "task": "Calculate desired whole shares, the stated upside percentage, the stipulated adverse price return percentage, adverse portfolio equity after the proposed allocation and retained mechanical opportunity count. Assess a justified discretionary abstention despite full funding and cleared mechanical entry prerequisites, with no invented fixed cap. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"desired_shares\",\"unit\":\"shares\",\"period\":\"fixture proposed allocation\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"stated_upside_percent\",\"unit\":\"percent price return\",\"period\":\"fixture target versus entry\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"adverse_price_return_percent\",\"unit\":\"percent price return\",\"period\":\"fixture adverse value versus entry\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"adverse_portfolio_equity\",\"unit\":\"EGP\",\"period\":\"fixture adverse valuation after allocation\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"retained_mechanical_opportunities\",\"unit\":\"opportunities\",\"period\":\"fixture decision event\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"}]. Explain sector/common-factor risk, material counterevidence, uncertainty, alternatives, funding and a bounded decision. Do not claim real market or trading validation.",
+  "cutoffAt": "2026-10-25T23:06:08.457Z",
+  "evidence": [
+    {
+      "id": "full-abstention",
+      "source": "local:authored-synthetic-full-discretion-scenarios",
+      "contentHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+      "availableAt": "2026-10-25T23:06:08.457Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Paper-only FULL discretionary risk-reasoning exercise; these are authored assumptions, not issuer facts, market observations, forecasts or trading authorization. The scenario has no fixed name, sector, concentration or minimum-cash cap; do not invent one. Portfolio starts with EGP100,000 settled unreserved cash and no holdings. A proposed EGP60,000 allocation at assumed executable EGP20/share is fully funded; zero fees are assumed solely for arithmetic. Security identity, corporate actions and initial-entry execution are assumed cleared inside this fixture. Exactly one mechanical opportunity passes the technical gate. The proponent asserts a valuation target of EGP22/share and a plausible adverse valuation of EGP12/share, but supplies no calibrated probabilities or valuation sensitivity beyond those two levels. The claimed catalyst is an unverified renewal rumor for a customer providing 60% of sales. Synthetic financial diligence shows positive EBITDA of EGP12 million alongside operating cash outflow of EGP8 million and overdue customer receivables; renewal terms and receivable collectability remain unresolved. No observed fraud or certain insolvency is established. A smaller position reduces monetary loss but does not improve evidence quality or the adverse versus upside asymmetry. Evaluate a justified abstention versus investment or smaller sizing using substantive evidence and uncertainty, without attributing abstention to a nonexistent concentration cap or insufficient cash. Preserve the single mechanical opportunity in the denominator if discretion declines it. The adverse valuation scenario is not a forecast probability or a guaranteed stop fill.",
+      "localPath": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld.",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-22",
+    "cutoffAt": "2026-10-25T23:06:08.457Z",
+    "evidence": [
+      {
+        "id": "full-abstention",
+        "availableAt": "2026-10-25T23:06:08.457Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  }
+}

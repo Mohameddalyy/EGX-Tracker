@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.082Z",
+  "payload": {
+    "caseId": "W7-13",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-13",
+      "cutoffAt": "2026-10-25T23:04:24.080Z",
+      "evidence": [
+        {
+          "id": "oras-combination",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196598.56
+        },
+        {
+          "id": "scenario-combination",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 508.874
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.435Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-13\",\"cutoffAt\":\"2026-10-25T23:04:24.080Z\",\"evidence\":[{\"id\":\"oras-combination\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196598.56},{\"id\":\"scenario-combination\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":508.874}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nOriginal ORAS page 68 states the proposed exchange ratio is 0.4634 newly issued ORAS shares for each OCI share. The hypothetical 1,000 OCI shares therefore correspond arithmetically to 463.4 ORAS shares, before any fractional settlement rule. I do not round this to a deliverable whole-share entitlement or invent cash compensation.\n\nThis is a proposed business combination, not a rights subscription. The source records Orascom shareholder approval on 22 January 2026, which supports transaction progress, but also says OCI shareholder and required regulatory approvals remained conditions and completion had not occurred at reporting date. The long-stop date was extended to 30 December 2026; a scheduled condition deadline is not completion. The note treats the transaction as non-adjusting. It is available at this evaluation cutoff, while its report-date status is not a fresh confirmation of today's transaction state. Construction exposure, acquired business mix, financing and integration could change the investment thesis; the exchange ratio alone establishes none of the expected synergies or returns. Current approvals, effective date, total issuance, pro forma ownership/debt and fractional terms are missing. I would keep the exchange arithmetic as a conditional scenario and wait for effective corporate-action documentation before dilution calculations, valuation or sizing. No trade is authorized.",
+    "extractedNumbers": [
+      {
+        "id": "exchange_ratio",
+        "unit": "ORAS shares per OCI share",
+        "period": "proposed combination at H1 2026 reporting",
+        "entity": "Orascom Construction PLC",
+        "evidenceId": "oras-combination",
+        "value": 0.4634
+      },
+      {
+        "id": "arithmetic_new_shares",
+        "unit": "ORAS shares",
+        "period": "hypothetical 1000 OCI share exchange",
+        "entity": "Hypothetical OCI shareholder",
+        "evidenceId": "scenario-combination",
+        "value": 463.4
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "c677ee9ce89d35795bb21f92a406c9b9018962e91a0a502c67caf65d0af64757",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+    "packetHash": "d9f761e685f3b31c3faa6a892f4ab5e0ef25e8ead5e3b03c4a3ae848837b3403",
+    "outputHash": "0815438f1763c6812de08fc374838097c924e81ffcdd69a5ae100df6740c48f7",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-13.json",
+    "originalFileHash": "32491ccdf66284beb18f4c3e1c81f1612be853b5fced2f5d1e0387e76bfad3ba",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "2f342c07b4ae949640281a8d9ab2779b006480aedd200e16a6db2d0d49d18a69"
+}

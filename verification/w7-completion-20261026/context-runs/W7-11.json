@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.062Z",
+  "payload": {
+    "caseId": "W7-11",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-11",
+      "cutoffAt": "2026-10-25T22:56:32.892Z",
+      "evidence": [
+        {
+          "id": "cib-dividends",
+          "availableAt": "2026-10-25T22:56:12.986Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 19.906
+        },
+        {
+          "id": "scenario-bonus",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 37.686
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.433Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-11\",\"cutoffAt\":\"2026-10-25T22:56:32.892Z\",\"evidence\":[{\"id\":\"cib-dividends\",\"availableAt\":\"2026-10-25T22:56:12.986Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":19.906},{\"id\":\"scenario-bonus\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":37.686}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe retained official CIB dividend table labels the 2025 event a stock dividend of one share for ten existing shares. The share-count multiplier is 1 + 1/10 = 1.1. Applied to the fixture's 1,000 qualifying pre-event shares, the holding becomes 1,100 shares, including 100 bonus shares. The table gives record date 16 December 2025 and payment date 17 December 2025, without an ex-date. These labels must be preserved.\n\nA stock dividend distributes additional shares; a split subdivides existing shares. Both can change share count and mechanically alter comparable per-share prices, but they are distinct corporate actions and the issuer identifies this one as a stock dividend. Extra shares alone are not a 10% economic return or extra bank cash earnings. Neither before/after prices nor the adjustment vintage is supplied, so total return and price return cannot be measured. Counterevidence to a windfall interpretation is that proportional owners may retain the same ownership fraction while prices adjust. Bank dividend policy also does not establish asset quality or capital adequacy. My decision is to adjust the hypothetical share inventory only, subject to the stated entitlement assumption, and require action-adjusted prices and capitalization data before performance or valuation analysis. No actual portfolio receipt or trade is asserted.",
+    "extractedNumbers": [
+      {
+        "id": "share_multiplier",
+        "unit": "multiple",
+        "period": "2025 stock dividend",
+        "entity": "Commercial International Bank Egypt",
+        "evidenceId": "cib-dividends",
+        "value": 1.1
+      },
+      {
+        "id": "post_bonus_shares",
+        "unit": "shares",
+        "period": "2025 stock dividend hypothetical position",
+        "entity": "Commercial International Bank Egypt",
+        "evidenceId": "scenario-bonus",
+        "value": 1100
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "9a670305ee649ceb4d9784d80b098b886fb6d58d20a1652293f4b04bd0743af8",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+    "packetHash": "a1d483784e04ac4383e06e363ae7bca8b44de264a15bb37edc547a465fbe883f",
+    "outputHash": "76ff2deeecdff93532c1706a2bf0189543b27fab49a6eeee822be1a70d81aba6",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-11.json",
+    "originalFileHash": "8fcc8596bf0345c21769d72c05653171bf8330456a7f4d957d882178efb1eefa",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "251113974da7cfe0f60a6f03b769d4567d54bcd104fcf3e5f593498750b67409"
+}

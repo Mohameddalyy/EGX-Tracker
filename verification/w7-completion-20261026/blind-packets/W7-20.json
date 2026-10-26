@@ -1,0 +1,37 @@
+{
+  "id": "W7-20",
+  "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+  "task": "Using printed consolidated gross profit and revenue, compute a simple gross margin as a disclosed arithmetic fallback. Explain why that noncritical missing display metric differs from missing security identity/action clearance and unresolved CIRA issuer-link provenance; give no trade clearance. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"computed_gross_margin\",\"unit\":\"percent\",\"period\":\"six months ended 2026-06-30\",\"entity\":\"Orascom Construction consolidated\",\"evidenceId\":\"oras-profit\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "oras-profit",
+      "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "source": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "availableAt": "2026-10-23T16:27:45.520Z",
+      "passage": "Physical page 8. Reviewed consolidated statement; USD millions. Six months ended 30 June 2026: revenue 2,978.0; gross profit 289.5; operating profit 179.5; net profit 127.8; owners 115.3; non-controlling interests 12.5; basic/diluted EPS USD1.05. Three months ended 30 June 2026: revenue 1,509.6; net profit 69.8; owners 61.9.",
+      "localPath": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+      "page": 8,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    },
+    {
+      "id": "cira-segments",
+      "contentHash": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e",
+      "source": "https://irfiles.technologyverse.com/cira/CIRA-Earnings-9M26-E-vf.pdf",
+      "availableAt": "2026-10-23T16:29:09.072Z",
+      "passage": "Physical page 4. 9M25/26 EGP million, printed first segment table: higher-education normalized net profit 1,505.0; K-12 normalized net profit (321.5); total 1,183.5. Weighted segmentation adjustment table: higher-education normalized net profit 1,134.2; K-12 normalized net profit 49.3; total 1,183.5. Footnote: EBITDA and net profit reclassed between K-12 and Higher-Ed by EGP370.8m (EGP25.5m G&A and EGP345.3m finance cost). These are simultaneous presentations, not evidence of a later statutory restatement. Source limitation: Branded retained IR-service PDF; issuer-to-service link is not yet reconciled. This is evidence-reading evaluation, not cleared issuer provenance.",
+      "localPath": "data/research/evidence/w7-evaluation/cira-9m-2026.pdf",
+      "page": 4,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    },
+    {
+      "id": "scenario-missing",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. The evaluator may use the printed ORAS consolidated revenue directly even if a noncritical display margin is absent, but may not approve trading without current security identity and corporate-action clearance. The CIRA source has an unresolved issuer-link provenance caveat. Missing identity/action clearance is not zero risk.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:19:02.309Z",
+  "payload": {
+    "caseId": "W7-16",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "The synthetic fixture's name ceiling is 15% x EGP100,000 = EGP15,000. Against EGP14,000 existing exposure, additional name headroom is EGP1,000. In scenario A, min(EGP6,000 desired, EGP1,000 headroom, EGP8,000 free cash) = EGP1,000. In scenario B, free settled cash is EGP8,000 - EGP7,500 reservations = EGP500, so the arithmetic maximum is EGP500. These are conditional arithmetic limits under this fixture, not executable share quantities or approvals.\n\nThe desired EGP6,000 would take name exposure to 20% of unchanged equity, above the stated 15% fixture cap. Available cash is supportive of funding in A but does not confer authority to exceed concentration limits; reservations also cannot be double-spent in B. No business sector is established by the ENGINEERING-C label, so issuer quality cannot justify an invented exception. Need prices, fees, whole-share effects, liquidity, other portfolio constraints and entry controls before an actual proposal. In particular, this calculation cannot override any independent prohibition on adding to an existing holding. Decision: reject the desired addition; retain EGP1,000/EGP500 solely as arithmetic headroom under the assumptions. No exception approval or policy amendment is present.",
+    "extractedNumbers": [
+      {
+        "id": "name_headroom",
+        "unit": "EGP",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-C",
+        "evidenceId": "scenario-concentration",
+        "value": 1000
+      },
+      {
+        "id": "scenario_a_addition",
+        "unit": "EGP",
+        "period": "fixture scenario A",
+        "entity": "ENGINEERING-C",
+        "evidenceId": "scenario-concentration",
+        "value": 1000
+      },
+      {
+        "id": "scenario_b_addition",
+        "unit": "EGP",
+        "period": "fixture scenario B",
+        "entity": "ENGINEERING-C",
+        "evidenceId": "scenario-concentration",
+        "value": 500
+      }
+    ],
+    "toolCalls": 0,
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "originalToolCalls": [],
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "03bcea16231a5ca44d5519a7967a91242e367fb6d389e113b90592ff2eb59477",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+    "packetHash": "c56c8c9295083d2f79789cc9c655bc234345e8eb5ee260496450e93cacbf756a",
+    "outputHash": "2ef3e945abc6fe6ed39d89c9761ddb9bb6bf908601cb83cfa308be062d5b97cf",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-16.json",
+    "originalFileHash": "316c5b88ea381ab42831f3554297a06353dc1738003e8d786ee37241ffc43ab4",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "14b522794fb20852fa608cd6dfdd68cd37749ff065c88c9c9b510f867a5ad12d"
+}

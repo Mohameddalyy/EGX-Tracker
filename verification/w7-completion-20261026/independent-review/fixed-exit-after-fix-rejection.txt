@@ -1,0 +1,13 @@
+file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/contract.mjs:4
+export const required=(condition,message)=>{if(!condition)throw Error(message);};
+                                                                ^
+
+Error: Supplement may cover only additionally-held counterfactual exposure; asymmetric original-path evidence prohibited
+    at required (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/contract.mjs:4:65)
+    at fixedExitAttributionFromEvents (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/fixed-exit-attribution.mjs:242:7)
+    at file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/verification/w7-completion-20261026/independent-review/fixed-exit-repro.mjs:15:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.22.1

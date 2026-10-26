@@ -1,0 +1,73 @@
+{
+  "id": "W7-05",
+  "categories": [
+    "property"
+  ],
+  "task": "Extract rounded contract sales, exact recognized revenue, and rounded collections in EGP billion. Explain why they cannot be added into revenue or treated as interchangeable cash generation. Resolve the headline rounding difference using the selected statement. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"rounded_new_sales\",\"unit\":\"EGP billion\",\"period\":\"nine months ended 2025-09-30\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-highlights\"},{\"id\":\"recognized_revenue\",\"unit\":\"EGP billion\",\"period\":\"nine months ended 2025-09-30\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-statements\"},{\"id\":\"rounded_collections\",\"unit\":\"EGP billion\",\"period\":\"nine months ended 2025-09-30\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-highlights\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "evidence": [
+    {
+      "id": "phdc-highlights",
+      "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "source": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+      "availableAt": "2026-10-25T22:52:57.067Z",
+      "passage": "Physical page 1. Release dated Cairo November 13, 2025, financial period ended September 30, 2025. Highlights: new sales EGP182 billion (rounded); recognized revenue EGP25.5 billion (rounded); cash collections from receivables and new sales EGP26 billion; construction spending EGP10.5 billion; undelivered sales backlog EGP225 billion. The chairman narrative says revenue EGP25.6 billion, whereas the headline says EGP25.5 billion.",
+      "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+      "page": 1,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability",
+      "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html"
+    },
+    {
+      "id": "phdc-statements",
+      "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "source": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+      "availableAt": "2026-10-25T22:52:57.067Z",
+      "passage": "Physical page 4. Selected consolidated statements in EGP thousand, 9M ended 30 September 2025: revenue 25,549,856; EBITDA 6,690,062; operating profit 6,449,386; net profit after tax 3,700,433; non-controlling interest deduction (158,326); profit after tax and minority 3,542,107. Comparative 9M2024 EBITDA 4,144,677. At 30 September 2025: current assets 99,982,419; current liabilities 98,786,344; total liabilities 144,999,591; total equity 18,175,839; cash and equivalents 9,204,446. Operating cash flow 748,335. These are selected statements, not the full footnotes.",
+      "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+      "page": 4,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability",
+      "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html"
+    }
+  ],
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "frozenAt": "2026-10-25T22:55:55.225Z",
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T22:55:55.225Z",
+    "numbers": [
+      {
+        "id": "rounded_new_sales",
+        "value": 182,
+        "absoluteTolerance": 0,
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights"
+      },
+      {
+        "id": "recognized_revenue",
+        "value": 25.549856,
+        "absoluteTolerance": 1e-7,
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements"
+      },
+      {
+        "id": "rounded_collections",
+        "value": 26,
+        "absoluteTolerance": 0,
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+    "notes": [],
+    "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+    "syntheticContext": false,
+    "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+  }
+}

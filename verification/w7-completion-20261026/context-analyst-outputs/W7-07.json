@@ -1,0 +1,55 @@
+{
+  "caseId": "W7-07",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-07",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "oras-profit",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      },
+      {
+        "id": "oras-parent",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.430Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-07\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"oras-parent\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe ORAS consolidated statement is in USD millions, so its six-month total profit 127.8 becomes USD127,800,000. The separate parent's physical page 41 uses USD, giving USD5,155,743. Consolidated minus separate profit is 127,800,000 - 5,155,743 = USD122,644,257, subject to the consolidated figure's displayed million-unit precision. This is a scope difference, not an independently audited exact measure of subsidiary contribution: consolidation eliminations and non-controlling interests also matter. The parent's three-month profit 40,960,327 must not be substituted for its six-month result.\n\nThe page 41 footnote explicitly bases USD1.05 EPS on consolidated company-and-subsidiary earnings. Dividing separate-parent profit by that EPS mixes scopes and gives a spurious share count. Even consolidated total profit includes NCI, while ordinary EPS generally needs owner-attributable earnings and the actual weighted share denominator; rounding further limits reverse inference. Construction project profits can sit in subsidiaries while the holding company receives dividends and fees, explaining why separate and consolidated accounts answer different questions. Positive group profit is supportive, but parent cash availability, distribution restrictions and debt service cannot be inferred from it. I would use properly scoped earnings for research and obtain the EPS/share note and parent funding data before valuation or sizing.",
+  "extractedNumbers": [
+    {
+      "id": "group_profit",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 127800000
+    },
+    {
+      "id": "parent_profit",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction separate parent",
+      "evidenceId": "oras-parent",
+      "value": 5155743
+    },
+    {
+      "id": "scope_difference",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom consolidated minus separate",
+      "evidenceId": "oras-parent",
+      "value": 122644257
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

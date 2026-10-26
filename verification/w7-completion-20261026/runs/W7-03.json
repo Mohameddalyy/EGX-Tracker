@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.820Z",
+  "payload": {
+    "caseId": "W7-03",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:36.1298387Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Operating profit is positive USD179.5 million (oras-profit), but operating cash flow is negative USD54.5 million and the trade/other receivables cash movement is negative USD329.2 million (oras-cash), all for the six months ended 30 June 2026. The receivables number is a cash-flow movement, not a receivables balance or a proven credit loss. Accrual recognition of construction profit can precede billing and collection, so profitable work can still absorb cash.\n\nThe printed cash-flow starting profit is USD127.8 million, not operating profit. The listed working-capital/provision movements sum to negative USD249.6 million. Together those would give negative USD121.8 million, leaving USD67.3 million of net other bridge items to reach reported operating cash flow. Their composition is not supplied; I cannot label that residual depreciation, tax or another specific adjustment. A full reconciliation directly from operating profit would also need the omitted non-operating and cash-flow adjustments.\n\nCounterevidence to a one-sided distress claim includes positive contract-work-in-progress movement USD43.4 million, construction advances USD40.0 million, excess billings USD24.4 million, and ending cash USD1,230.1 million. These help offset the drain but do not prove cash is unrestricted or available where needed. Investing outflow and financing inflow further show why ending liquidity cannot be judged from profit alone.\n\nThe construction-specific concern is delayed project collections and the funding gap between labor/material payments and customer receipts, potentially compounded by disputed claims or retentions; none of those causes is established here. Request receivable aging, customer concentration, milestone terms, subsequent collections, cash restrictions and debt maturities. Bounded decision: further research or no trade pending cash-conversion and liquidity verification, not a claim of fraud or inevitable distress. There is no fresh market, valuation or action clearance in this packet.",
+    "extractedNumbers": [
+      {
+        "id": "operating_profit",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 179.5
+      },
+      {
+        "id": "operating_cash_flow",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-cash",
+        "value": -54.5
+      },
+      {
+        "id": "receivables_cash_movement",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-cash",
+        "value": -329.2
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "426ef094e238e663d02d46316fb188000b9d49203056229f0a6d7a3b8bba03b7",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+    "packetHash": "49c98fbd33eb4be8fb6c1a42ae904f4519674c56110a141c0fa42e20dd42b4fd",
+    "outputHash": "4927e4a56c3090286112c93c55397559f2da4d5f36337e62933b00abac3b4b32",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-03.json",
+    "originalFileHash": "c45daf7b0b9aef3ce25e5e4ae08806e731960efa0e13a352821c376139f2e428",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "2a73893c35f5fc02b928c2e8ce971e47476d65f21a17d85b7c0f327e66994b8d"
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.816Z",
+  "payload": {
+    "caseId": "W7-01",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:36.0450362Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Net income from funds reconciles exactly: EGP29,117,908 thousand of financing income minus EGP16,863,967 thousand of deposit and similar costs equals EGP12,253,941 thousand. The six-month release/(charge) ECL entry is negative EGP2,176 thousand: a net charge, not a release. The separate three-month release of EGP78,142 thousand must not replace that cumulative six-month number (adib-income).\n\nFor an Islamic bank, this spread in monetary amounts is a useful source-of-earnings measure: financing returns must cover depositor funding costs before the remaining costs and risks. It is not itself a net financing margin percentage, which would require an appropriate average earning-asset denominator. Similarly, cost of risk requires the relevant ECL charge definition and average financing/loan exposure over a matching period, with an explicitly specified annualization convention if desired. Neither the average balance nor the ECL scope is supplied. Dividing by funds income, deposit cost or net profit would not produce a valid loan cost-of-risk ratio.\n\nPositive funds income and profit are supportive evidence, but a small net charge can conceal releases offsetting new provisions. The second-quarter release is direct counterevidence to interpreting the cumulative charge as a stable quarterly loss rate. No staging, impaired-financing, coverage, write-off, collateral or concentration schedule is available. A low charge therefore establishes neither clean credit quality nor durable earnings. Bounded decision: retain this as a profitable-bank research lead and request those credit schedules plus funding mix, capital, valuation and current security/action evidence before any investment conclusion. The retained capture establishes what was in the packet by its capture time, not the document's verified first public availability; no future outcome or market clearance is inferred.",
+    "extractedNumbers": [
+      {
+        "id": "net_funds",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 12253941
+      },
+      {
+        "id": "ecl_signed",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": -2176
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "c9757756fe0ba570506b267cee31a02960aae34f17403ba7cc0f17ff71b907a1",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+    "packetHash": "063ae70bbf565531a18a3bc7c79b19acd975b32eb005934a1653783e017d0cc3",
+    "outputHash": "2aa60d6bd46345416f40854ce2c0a933b7002c241610b342244aab2324a5a5b8",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-01.json",
+    "originalFileHash": "c560dbf32285e0331cef20c718b47e46a777fbb32a1200c73641a56e54299ddf",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "1e4f4ab9db860b6596586c4df231ebf50d6a0a35fb2d4ebbbceade7323419c41"
+}

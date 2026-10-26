@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.893Z",
+  "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+  "runHash": "47fb92246d9bbe5df610d1626a5469af49e8138e3ed28b0b728214cb48ded3f4",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Addresses bank capital, funding and credit-quality mechanisms."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Does not infer clean loans from small net ECL or small NCI; recognizes stronger funds income."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct total/owner profit difference and attribution, with period preserved."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Uses owner-attributable earnings and requests specific loan-quality schedules."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Neither claims clean credit nor fraud from missing schedules."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

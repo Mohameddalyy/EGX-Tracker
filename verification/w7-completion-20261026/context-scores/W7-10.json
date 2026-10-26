@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.765Z",
+  "payload": {
+    "caseId": "W7-10",
+    "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "618273eff12b24cc9c36c13c022ff925523d63b210a0ee50549d6de64db94485",
+    "reviewHash": "aace141ee6e48621147583a146c4f576d2d08081e7143b450a4493fa19ec91b9",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "financial_period_age",
+        "status": "CORRECT"
+      },
+      {
+        "id": "historical_revenue",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects stale developer figures to changing costs, delivery, collections and finance."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Preserves favorable historical growth while noting weak cash conversion and missing updates."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct 391-day period age and revenue; hypothetical quote and aggregate/per-share mismatch handled correctly."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Names refreshed statements/actions/identity/liquidity and cash valuation requirements."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Does not confuse hypothetical assessment date with packet capture availability."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.432,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "c6cc1a6e44e5d6f243f3d4b9dda0475020b221f7b44edf578f9a28e28f93bbb8"
+}

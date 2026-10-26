@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-01",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "ADIB's consolidated six-month income table on physical page 4 is an embedded image; I rendered and read it. Income from Islamic financing of EGP29,117,908 thousand less deposit and similar costs of EGP16,863,967 thousand equals net income from funds of EGP12,253,941 thousand. The signed expected-credit-loss income-statement effect is -EGP2,176 thousand: a net charge, not a release. This is distinct from the three-month release of EGP78,142 thousand. Combining the latter with the half-year charge implies a first-quarter net charge of EGP80,318 thousand, illustrating how a small net half-year amount can mask offsetting movements.\n\nFor an Islamic bank, funding income and deposit costs describe the earnings engine, but net funds income is an amount, not a financing margin or credit-risk denominator. Positive earnings and the quarter's release are supportive counterevidence against assuming uniformly worsening credit costs; neither proves clean financing assets. Cost of risk needs a defined credit-loss numerator and matching average gross financing exposure, period/annualization convention, and ECL reconciliation. Stage migration, nonperforming financing, coverage, recoveries and write-offs are missing from the admitted page. I would retain ADIB for credit-quality research, withhold a cost-of-risk ratio, and make no investment or trade clearance from this statement alone. The document period and retained capture do not establish first public availability.",
+  "extractedNumbers": [
+    {
+      "id": "net_funds",
+      "unit": "EGP thousand",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 12253941
+    },
+    {
+      "id": "ecl_signed",
+      "unit": "EGP thousand",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": -2176
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.913Z",
+  "caseHash": "3c95003675ec12eb881a074e53a7de6fc2ba39583eed09e079ffab1bd979dc1c",
+  "runHash": "de8595779a33fba020e300125aba3ff7a5385f6f99bdf5591d8a682b670d7b9d",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects group project entities to parent distributable cash and guarantees."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Strong group profit is balanced against smaller parent result without claiming trapped cash."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct scale/scope arithmetic with consolidated rounding caveat; warns against assigning entire group-parent difference to subsidiaries and against parent/group EPS mixing."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Requires EPS numerator/share reconciliation and distribution/accessibility data."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Treats scope difference as reconciliation, not additional profit or proof of poor quality."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

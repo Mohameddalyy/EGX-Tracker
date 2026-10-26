@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.894Z",
+  "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+  "runHash": "fbee99fb0fc37f397394089469835aba8c7c71eb6ebf791b5c203918dad327be",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Distinguishes developer contracting, recognition, collections and construction cash obligations."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Uses low operating cash flow and construction obligations against optimistic gross-collections inference."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct conversion to billions and source-specific rounding disagreement retained."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Calls for cancellation, cost-to-complete and maturity schedules before funding assessment."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not promote cash receipts to free cash or infer current clearance from document origin."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

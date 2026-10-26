@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.959Z",
+  "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+  "runHash": "05153576fff716b865356a257d9a014ec8f7ef2737b6453aab85245f3881a4ff",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Appropriately limits discussion to liquidity mechanism and notes absent issuer/sector information."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Recognizes daily pass but treats minute failure as binding."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct 600/1000/600 capacities and zero whole-order execution."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Rejects partial fill and requires fresh permitted observation/proposal."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Retains synthetic-volume and fixture-policy limits; no future liquidity assurance."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

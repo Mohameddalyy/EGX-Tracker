@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.979Z",
+  "payload": {
+    "caseId": "W7-22",
+    "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "4ce5aa7ea90325931ac072b3048f2b7e8e6ba9f046cf56aab514a2ae48238914",
+    "reviewHash": "f8bdc4727f5089f9e0983bc0f68e5fa71283f6ac34c2d89f81e967035aae9fc3",
+    "categories": [
+      "riskExceptions",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "desired_shares",
+        "status": "CORRECT"
+      },
+      {
+        "id": "stated_upside_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "adverse_price_return_percent",
+        "status": "CORRECT"
+      },
+      {
+        "id": "adverse_portfolio_equity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "retained_mechanical_opportunities",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 5,
+    "denominator": 5,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects customer demand and payment concentration without inventing sector or other holdings."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Positive EBITDA and full funding are weighed against overdue receivables, rumor and negative operating cash."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct shares, upside/downside, portfolio stress and opportunity denominator."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Justifies abstention substantively; smaller sizing does not repair weak evidence."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Separates stated levels from expected return, probability and guaranteed stop execution."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 404.235,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "846de3732dc50c5c512df412efdf2e6cc7e975b60bf507a387442e842adf5b64"
+}

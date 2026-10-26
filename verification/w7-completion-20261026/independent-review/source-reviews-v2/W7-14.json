@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.945Z",
+  "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+  "runHash": "4f5ed210bb62c1f0bdd910b2c0ec922bdaca6f608cdc0a080160fdbd6ce865a2",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Appropriately declines invented issuer/sector fundamentals and focuses on supported liquidity economics."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Acknowledges daily pass while explaining the independent binding minute failure."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct capacities and zero whole-order execution; no implicit partial fill."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Rejects the whole order at the binding minute limit and calls for a new permitted observation/proposal, not partial execution."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Keeps fixture ceilings distinct from production rules and real market observations."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

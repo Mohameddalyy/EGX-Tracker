@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.936Z",
+  "payload": {
+    "caseId": "W7-04",
+    "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "8bb980a9bfd00ea5413c1ea83deea9180c4eec91cdc6180bea067fc95b24ef14",
+    "reviewHash": "2a3266ce1468616dc5809350a738bea8e88cf688c1d565b27f3ad10d5d584349",
+    "categories": [
+      "nonfinancials",
+      "conflictingDocuments"
+    ],
+    "numbers": [
+      {
+        "id": "k12_before",
+        "status": "CORRECT"
+      },
+      {
+        "id": "k12_after",
+        "status": "CORRECT"
+      },
+      {
+        "id": "allocation_uplift",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Explains shared campus overhead and financing allocations and standalone economics."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Uses unchanged group total as direct counterevidence to newly created earnings."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correctly reconciles the segment uplift and two allocation components."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Retains both presentations and requests provenance and segment cash reconciliation."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Separates management allocation from statutory revision and preserves unresolved IR-service provenance."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 401.58,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "cefe8a1508e78b57cd97eb55580ccf8710105430d67903f963da6a8c312f8119"
+}

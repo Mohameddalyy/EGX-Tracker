@@ -1,0 +1,28 @@
+{
+  "id": "W7-09",
+  "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+  "task": "Calculate calendar days from the financial period end to the document-stated release date. In the hypothetical original November 1 decision audit, determine whether this later-dated release can be retroactively used. Distinguish document date, actual retained capture and verified first public availability. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"period_end_to_release_days\",\"unit\":\"calendar days\",\"period\":\"2025-09-30 to 2025-11-13\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-highlights\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "phdc-highlights",
+      "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "source": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+      "availableAt": "2026-10-25T22:52:57.067Z",
+      "passage": "Physical page 1. Release dated Cairo November 13, 2025, financial period ended September 30, 2025. Highlights: new sales EGP182 billion (rounded); recognized revenue EGP25.5 billion (rounded); cash collections from receivables and new sales EGP26 billion; construction spending EGP10.5 billion; undelivered sales backlog EGP225 billion. The chairman narrative says revenue EGP25.6 billion, whereas the headline says EGP25.5 billion.",
+      "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+      "page": 1,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability",
+      "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html"
+    },
+    {
+      "id": "scenario-timing",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. A hypothetical historical decision was made on 2025-11-01. A later audit reads the genuine Palm Hills release dated 2025-11-13. No historical first-publication timestamp is verified. The evaluation itself occurs at the current capture cutoff, not in November 2025.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

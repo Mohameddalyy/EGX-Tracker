@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.951Z",
+  "payload": {
+    "caseId": "W7-10",
+    "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "aae59372561906134ba5fbbf00c946720ed1e04475076f873d1b0db376f48152",
+    "reviewHash": "72069036b28c3406504b3b54f078a7f166fd3ca1544d68c65cee3c7783ee1dd5",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "financial_period_age",
+        "status": "CORRECT"
+      },
+      {
+        "id": "historical_revenue",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Connects stale developer figures to potentially changed delivery, costs, collections and financing."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Retains historical positive results without assuming either continuation or deterioration."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct period age and historical revenue; refuses quote/aggregate-revenue valuation mismatch."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Names refreshed financial, action, share and quote evidence needed for a current decision."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Keeps hypothetical quote, period age and publication age distinct."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 402.913,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "5f297d8515cd99ad526c0968d4dbf311133fd7f2bffb0d97cebd481cbdf13871"
+}

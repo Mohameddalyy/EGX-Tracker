@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.151Z",
+  "payload": {
+    "caseId": "W7-19",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-19",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "oras-profit",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        },
+        {
+          "id": "oras-cash",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        },
+        {
+          "id": "scenario-trigger",
+          "availableAt": "2026-10-25T22:55:55.206Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0.019
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.439Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-19\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"oras-cash\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"scenario-trigger\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe ORAS operating cash-flow figure is -USD54.5 million. Six-month total net profit 127.8 minus operating cash flow -54.5 gives a USD182.3 million profit-to-cash gap. The original cash statement identifies a 329.2 million receivables cash absorption, partly offset by positive work-in-progress, advances and excess-billing movements. Construction accrual profits therefore need collection and project-cycle diligence.\n\nCounterevidence to a blanket negative conclusion is positive operating profit of 179.5, positive net profit and ending cash of 1,230.1 million. A working-capital outflow can reflect timing or expansion, not fraud or permanent cash loss. Yet cash restrictions, maturity commitments, receivable aging and later collections are not shown by the admitted pages. The synthetic technical pass cannot supply the missing refreshed corporate-action, liquidity, valuation or macro clearance, nor can it establish that price compensates for the cash risk. I would decline a trade and continue research, documenting exactly one mechanical opportunity in the denominator with zero discretionary executions. Removing that opportunity after abstention would bias evaluation. The pass is fictional and no actual signal, market clearance or future recovery is claimed; the fundamental evidence supports a cautious cash-conversion question, not a certainty of distress.",
+    "extractedNumbers": [
+      {
+        "id": "profit_cash_gap",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-cash",
+        "value": 182.3
+      },
+      {
+        "id": "mechanical_opportunities",
+        "unit": "opportunities",
+        "period": "fixture decision event",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "scenario-trigger",
+        "value": 1
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "d3dc0d8ab72733a63d9993eee93d15e7d7fe9e9fc3833038b9af5a280ddfe837",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+    "packetHash": "9679422f8af09da5dfdee71351b1747f65163d29909a63ddf952183c2fa3d572",
+    "outputHash": "7457530de0d431d72fc9bbe22776111b337b2089123b21a338df165a2a0a50ff",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-19.json",
+    "originalFileHash": "4dbbac833507ecd938fce1c1f16fb133ded68903043d329d8025a961c548b6fb",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "d96222a647f977b7944ad9dd6eb92c1df87604027c6b658031c6575a5919254f"
+}

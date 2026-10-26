@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "kind": "model-evaluation-registration",
+  "createdAt": "2026-10-25T23:06:44.912Z",
+  "payload": {
+    "frozenAt": "2026-10-25T23:06:44.912Z",
+    "caseCount": 22,
+    "cases": [
+      {
+        "id": "W7-01",
+        "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+        "packetHash": "063ae70bbf565531a18a3bc7c79b19acd975b32eb005934a1653783e017d0cc3",
+        "fullPromptHash": "c9757756fe0ba570506b267cee31a02960aae34f17403ba7cc0f17ff71b907a1"
+      },
+      {
+        "id": "W7-02",
+        "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+        "packetHash": "0fa3f6d3a75c67b5b8a6df0800d36fec5da0c420fa93908840115e444347f8d8",
+        "fullPromptHash": "79e2a5201275ae774a37d36f274051718cf27b70ab837bfae9ee31d31cbc0228"
+      },
+      {
+        "id": "W7-03",
+        "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+        "packetHash": "49c98fbd33eb4be8fb6c1a42ae904f4519674c56110a141c0fa42e20dd42b4fd",
+        "fullPromptHash": "426ef094e238e663d02d46316fb188000b9d49203056229f0a6d7a3b8bba03b7"
+      },
+      {
+        "id": "W7-04",
+        "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+        "packetHash": "0183ab9d94de7c7baa7ced8c4f8352baca19a862f42ec86beaf4ff551252a365",
+        "fullPromptHash": "6f483e12073550cc2aa0c62b4c818f7a1704248e287319bede028b9df09b67aa"
+      },
+      {
+        "id": "W7-05",
+        "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+        "packetHash": "2685c14460264271542e6a2e7afe8779b8effd31d17a03971396ed74fa78bc41",
+        "fullPromptHash": "83148764651498addd978945ddfe4a8097b99006f1f7b947dcc8d22c909d22c2"
+      },
+      {
+        "id": "W7-06",
+        "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+        "packetHash": "6485300efbc7256d83ebfe45ec583e7e5e2dbd174192a5954c1d08c87cd64ad6",
+        "fullPromptHash": "7dd02cc47f76ae756a86ae0446576829baafd5d0fe7fd5c3564c4cba67b183dd"
+      },
+      {
+        "id": "W7-07",
+        "caseHash": "3c95003675ec12eb881a074e53a7de6fc2ba39583eed09e079ffab1bd979dc1c",
+        "packetHash": "f12b707840d94a3e52690390ba4531be414027d0a41475f85bdce7e4e8deac3d",
+        "fullPromptHash": "fd098c4baa24537cb472bdeb9be354461577082d95349f790ecb9688de9a2d92"
+      },
+      {
+        "id": "W7-08",
+        "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+        "packetHash": "06ad95078b72f1c73a2348a220c838649facbcccf8b5f93fbefb55486e9f1566",
+        "fullPromptHash": "559be259a9f105ebcad94173b0f697b7154b2b08bbbfbe1e560f08e64b099256"
+      },
+      {
+        "id": "W7-09",
+        "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+        "packetHash": "74945aa7411f7c2cd52d489186da451d1f36020b8ad5a5e5607439ec2fc0feca",
+        "fullPromptHash": "052c330a0771bf1feee8c5d7e670de33fd69a2f8f7a6941e5be9b77093490752"
+      },
+      {
+        "id": "W7-10",
+        "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+        "packetHash": "e51b2f5952a9e7a778872197865fc7f631664c5512eaeae9dceb95a51c7b110d",
+        "fullPromptHash": "6149bbc9c063b49e57fed17968cfb7e8962500bca7131bb0cdd2a9196ecea8fc"
+      },
+      {
+        "id": "W7-11",
+        "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+        "packetHash": "f189999482d008a84ec0b20d9da6702282ae9631b1aac315cc8f24a9cb64ae97",
+        "fullPromptHash": "032f13b113f7e631901ad9441ec326f358a881969b6d9b9de2df00f15d2372b4"
+      },
+      {
+        "id": "W7-12",
+        "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+        "packetHash": "b0e90b0dc13be20863e6da7f16e654fd9d9f3813331fd13d0917308f0fbeb9c6",
+        "fullPromptHash": "b0057ea3450be336150314c6abba3133bab6ee79ccd94b69ed77b1504bb3fa84"
+      },
+      {
+        "id": "W7-13",
+        "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+        "packetHash": "203ae86cd49d7799735936a9e4a83d9b24e9115f1deee720fd5342fa0d84bf6e",
+        "fullPromptHash": "d4d48510654ea8d0c51bdd799e8543001c86a3a403932b37238184a70c5b602b"
+      },
+      {
+        "id": "W7-14",
+        "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+        "packetHash": "cd16f321782f4595c47dd412821e858933ef2156f5db1aa5f465de88b93a5910",
+        "fullPromptHash": "aff35a2ed3df4273c5c6fb78efaebc3c1ee0e58b877beeaee207650305b8ceac"
+      },
+      {
+        "id": "W7-15",
+        "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+        "packetHash": "73becb5c5159f51ee5afa35b7b5db175a40b4e71b15c243a1f016ffc4a5f5e60",
+        "fullPromptHash": "c815f07d9bb8ef1eebc6dbea4693b39052bc199ee67dffdedefde6aafcdec737"
+      },
+      {
+        "id": "W7-16",
+        "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+        "packetHash": "c56c8c9295083d2f79789cc9c655bc234345e8eb5ee260496450e93cacbf756a",
+        "fullPromptHash": "c06bcf10c3b0e869c1c18390553d2a96e9dd4576cf46741c91ce9023cdd9987f"
+      },
+      {
+        "id": "W7-17",
+        "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+        "packetHash": "a264b73d132cd87a173238cbd2f0099e0e8755e0eeb937cb20d56141d16e00a8",
+        "fullPromptHash": "ebab98c2fb29bf8bedde056d39f492d869e6c68440dac67f50d838d822913614"
+      },
+      {
+        "id": "W7-18",
+        "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+        "packetHash": "09c6529acbc091ac2959a1c1b1ded817c57596a13dfffbc7bdf5b5daabed72f9",
+        "fullPromptHash": "88b2b886949ef4dea200f30ac2c259d5e5fed580f59fb31171732bec1db52f2b"
+      },
+      {
+        "id": "W7-19",
+        "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+        "packetHash": "92c1c488c1db14e1bce3b7d665a58767ab2dde7ad72ae4c5f12b2524b4c4ff5e",
+        "fullPromptHash": "9cd5851e83b1228111dbb5cee3f94d7be183513d5fee3e2ec969176819ff80c6"
+      },
+      {
+        "id": "W7-20",
+        "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+        "packetHash": "445b5e162d26de38687b5a1628c1c2e3b6e71c1b29c33b3e098e3e1fdac458fe",
+        "fullPromptHash": "1a6ebccb404ffd72d76386825a3f7bd906b6dca1c3585c3fb80e71c05309608d"
+      },
+      {
+        "id": "W7-21",
+        "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+        "packetHash": "9ef24a11e5b2de20d237521d0427967e80cd6ae174edf40622c9f0312c77865b",
+        "fullPromptHash": "efa19cfe140fb770aaa5add25fa08bec04810f9916c2ffcfad2a490ad95a50be"
+      },
+      {
+        "id": "W7-22",
+        "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+        "packetHash": "ca667ac3bd595dd26de690ed06bbe407feacc02e6b189d8b4989f63c4a14eb25",
+        "fullPromptHash": "ac293de67dc75a2ede27586e2661360341d2e1f5a1101b7c01564719da57ba4f"
+      }
+    ],
+    "configuration": {
+      "modelId": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "actorId": "/root/w7_blind_analyst",
+      "configurationEvidence": "Local root turn_context; subagent inherited configuration with no override. Not provider attestation.",
+      "modelComparison": "One configured model only; no other-model performance claim"
+    },
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "instruction": "Read only supplied blind packets. Give substantive sector reasoning, counterevidence, numerical interpretation, decision usefulness and uncertainty. Return original output and exact requested numerical metadata. Do not browse, read truth files, other agents outputs or edit prior answers. Record actual start/end and tool calls; synthetic scenarios are not observations. No execution authorization.",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "promptHashMeaning": "Shared instruction template; full per-case instruction+packet separately hashed",
+    "toolPermissions": {
+      "permitted": "Read supplied packet JSON and write own output JSON; local clock and arithmetic allowed",
+      "prohibited": "Browsing, other evidence paths, truth, reviewer output, external messages other than parent coordination"
+    },
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3"
+  },
+  "contentHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c"
+}

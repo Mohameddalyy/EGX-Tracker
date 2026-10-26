@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.753Z",
+  "payload": {
+    "caseId": "W7-06",
+    "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "ad8e1eab65d6718e9912b42ed4017d089c5241ce386a03a89b19118924694c2f",
+    "reviewHash": "9468abef0338a0d0344d4ae0edcc6d8fab1a656e3b115210116432d984585750",
+    "categories": [
+      "property",
+      "incompleteFinancials"
+    ],
+    "numbers": [
+      {
+        "id": "net_current_assets",
+        "status": "CORRECT"
+      },
+      {
+        "id": "rounded_net_debt",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Distinguishes real-estate inventories, installment receivables, advances and financing liabilities."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Balances positive current assets/cash with restrictions, commitments and maturity gaps."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct net current assets and rounded net debt; does not add off-balance receivables to assets."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Requires full footnotes and a dated sources-and-uses schedule before runway/liquidation claims."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Avoids insolvency/solvency conclusions from the residual and preserves recovery uncertainty."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.429,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "8cbf1d840282f675632808ce29d2a26273679f32b342edd06e6dac3820146ffa"
+}

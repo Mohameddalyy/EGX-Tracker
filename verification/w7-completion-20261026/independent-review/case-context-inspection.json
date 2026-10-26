@@ -1,0 +1,28 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "reviewedAt": "2026-10-26T08:52:09.326Z",
+  "status": "VERIFIED_WITH_RETAINED_LIMITATIONS",
+  "codePath": "app/v5/evaluation-models.mjs",
+  "codeHash": "f46c88b77ba3acd052e45c53f94d3e43aec9db391b938dbc773cd926a17e67e1",
+  "testPath": "app/v5-w7.test.mjs",
+  "testHash": "e0111e2f135d97ab9539637336b935a6de003eb35a906673e90a0ce9a7a3a80e",
+  "checks": [
+    "Legacy blind packet default retains original format and bindings.",
+    "CASE_CONTEXT_1 adds only case identity, actual case cutoff and deterministic source capture availability; no numerical truth array or other-model answers.",
+    "Scoring requires exact context equality as well as exact packet binding.",
+    "Original frozen-case hash check remains active.",
+    "Independent prose review still catches contradictions even where echoed context is correct.",
+    "Aggregate factual gate remains >=95% with zero critical errors and complete registered coverage; no invented aggregate qualitative threshold."
+  ],
+  "tests": {
+    "command": "node --test --test-name-pattern 'case context|suite uses registered' app/v5-w7.test.mjs",
+    "passed": 2,
+    "failed": 0
+  },
+  "limitations": [
+    "A model can echo context mechanically yet reason incorrectly; exact metadata is not substantive validation.",
+    "This is a new development configuration after observed failures; earlier attempts remain retained.",
+    "New temporal cases are post-failure development validation, not untouched generalization data."
+  ],
+  "registrationWordingFinding": "At inspection, register-context-run.mjs used NEW_TEMPORAL_HOLDOUT and temporal holdout wording. Parent notified to correct development labels before registration. No analyst feedback supplied."
+}

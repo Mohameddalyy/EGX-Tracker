@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.970Z",
+  "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+  "runHash": "4abdfa9dc0751735077a200d1d9fccd67ea89c007bd9985b1173d6ad774b9071",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Focuses on funding/implementation risk while clearly flagging absent issuer-sector evidence."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Acknowledges smaller arithmetic capacity without authorizing it."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct free cash, 500 desired shares, 50 ceiling and EGP9000 shortfall."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Rejects unfunded allocation and requires independently permitted sizing and substantive thesis."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Confidence is uncalibrated; fees, quote, actions and execution are not assumed."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.774Z",
+  "payload": {
+    "caseId": "W7-13",
+    "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "154da6093d3082f8265c4be24c4d65b100c19f628813372d9b4329da4441c204",
+    "reviewHash": "c934aeba9d86d3ba3cc01730028e7f5bb89e6b410b8e0e97d20a3a0a3b4c49e5",
+    "categories": [
+      "corporateActions",
+      "riskExceptions"
+    ],
+    "numbers": [
+      {
+        "id": "exchange_ratio",
+        "status": "CORRECT"
+      },
+      {
+        "id": "arithmetic_new_shares",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Identifies business mix, financing and integration implications, but remains high-level because pro-forma evidence is absent."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Balances Orascom resolutions with remaining OCI/regulatory conditions and deadline."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct exchange ratio and 463.4 arithmetic; source dates and contingent status match retained note."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Requires current effective documentation, issuance and ownership before valuation/sizing."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No invented fractional settlement, completion, dilution loss or synergy."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.435,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "69cc14ea3914dd86abaf14d91f35cc827080473abd6a70b047af38dbee4dc2a1"
+}

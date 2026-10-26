@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.843Z",
+  "payload": {
+    "caseId": "W7-17",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:38.6905307Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "The two described exposures sum to EGP30,000 + EGP20,000 = EGP50,000. Relative to EGP100,000 equity, 50% is invested in holdings with the stated shared USD-input/EGP-revenue risk (scenario-correlation). This is a gross allocation measure for the two names, not a predicted 50% portfolio loss and not a measurement of their precise currency sensitivity.\n\nIf EGP weakens against USD or USD input costs rise, both businesses could face input-cost and working-capital pressure while revenues remain denominated in EGP. That is a plausible shared economic channel from the supplied exposure descriptions. It makes the two names less diversifying against that particular shock than their separate labels might suggest. The actual impact depends on imported-input intensity, inventory timing, pricing power, contractual pass-through, hedges and any natural offsetting revenues or assets; none is supplied.\n\nCounterevidence to assuming identical behavior is that common inputs do not establish identical products, customers, hedging, margins or equity-return responses. Missing return histories do not imply zero correlation, while the qualitative common channel does not justify assigning correlation of one or any other coefficient. Covariance requires paired returns, an observation horizon and variability estimation; adding portfolio values supplies none of these. There is no statistical covariance or calibrated stress-loss estimate here.\n\nBounded decision: flag the EGP50,000 shared-factor allocation, request hedging and pass-through evidence, and evaluate explicitly labeled common-factor stresses before increasing this exposure. Consider diversification into independently evidenced economic drivers, but do not claim an alternative is uncorrelated without data. These are authored exposures, not real holdings or market observations, and no issuer-specific valuation or trade clearance follows.",
+    "extractedNumbers": [
+      {
+        "id": "combined_exposure",
+        "unit": "EGP",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-D and ENGINEERING-E",
+        "evidenceId": "scenario-correlation",
+        "value": 50000
+      },
+      {
+        "id": "shared_exposure_percent",
+        "unit": "percent of equity",
+        "period": "fixture decision event",
+        "entity": "ENGINEERING-D and ENGINEERING-E",
+        "evidenceId": "scenario-correlation",
+        "value": 50
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "ebab98c2fb29bf8bedde056d39f492d869e6c68440dac67f50d838d822913614",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+    "packetHash": "a264b73d132cd87a173238cbd2f0099e0e8755e0eeb937cb20d56141d16e00a8",
+    "outputHash": "4903775afa2927113be1b7ab2113469444ec7123dd6a3ea6d31454602c044c4f",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-17.json",
+    "originalFileHash": "de73396f4eb616869b89a0d046e930bfa533d0cf33934eca50b588df6e7e0a35",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "33faa78fa9377110d37618665f58d7c6ee4c1e854432b443c3f5e066f83a9d89"
+}

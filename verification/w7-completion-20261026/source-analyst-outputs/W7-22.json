@@ -1,0 +1,55 @@
+{
+  "caseId": "W7-22",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "This paper-only synthetic FULL scenario proposes EGP60,000 / EGP20 = 3,000 whole shares, leaving EGP40,000 cash. The asserted EGP22 target implies (22/20 - 1) x 100 = +10%; the stipulated EGP12 adverse value implies (12/20 - 1) x 100 = -40%. At that adverse mark the shares are worth EGP36,000 and total equity is EGP76,000, a 24% portfolio decline. At the asserted target, the allocation earns only EGP6,000 before the fixture's zero fees, versus EGP24,000 loss in the adverse scenario. Neither endpoint is a probability forecast or a guaranteed executable price. Exactly one mechanical opportunity remains counted even if discretion abstains.\n\nFunding and mechanical entry prerequisites are cleared inside the fixture. Abstention therefore cannot be justified by insufficient cash, a missing identity check or an invented fixed cap. The substantive objection is that the upside claim depends on an unverified renewal rumor for a customer supplying 60% of sales, while overdue receivables and EGP8 million operating cash outflow challenge the quality of positive EGP12 million EBITDA. For any customer-dependent operating business, loss or delay of the major account can affect revenue, collections and fixed-cost absorption simultaneously; the precise industry is not specified and should not be invented.\n\nPositive EBITDA and full funding are material counterevidence: the business may have viable operations, and cash-flow weakness may reflect timing. No fraud or certain insolvency is established. Yet neither resolves collectability, renewal terms, valuation sensitivity or the unfavorable 4-to-1 monetary adverse/upside comparison. With no calibrated probabilities, expected return is unavailable; even an illustrative two-outcome model would require an 80% favorable-outcome probability merely to break even, and the fixture supplies no basis for that assumption. Smaller sizing reduces money at risk but does not improve evidence or per-share asymmetry. Decision: discretionary abstention is justified pending verified renewal/collection evidence and a better-supported valuation. Keep all EGP100,000 cash in this paper choice and retain one mechanical opportunity with zero accepted trades; no real-market validation is claimed.",
+  "extractedNumbers": [
+    {
+      "id": "desired_shares",
+      "unit": "shares",
+      "period": "fixture proposed allocation",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 3000
+    },
+    {
+      "id": "stated_upside_percent",
+      "unit": "percent price return",
+      "period": "fixture target versus entry",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 10
+    },
+    {
+      "id": "adverse_price_return_percent",
+      "unit": "percent price return",
+      "period": "fixture adverse value versus entry",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": -40
+    },
+    {
+      "id": "adverse_portfolio_equity",
+      "unit": "EGP",
+      "period": "fixture adverse valuation after allocation",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 76000
+    },
+    {
+      "id": "retained_mechanical_opportunities",
+      "unit": "opportunities",
+      "period": "fixture decision event",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 1
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

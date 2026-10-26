@@ -1,0 +1,23 @@
+{
+  "caseId": "W7-20",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "Using ORAS physical page 8's consolidated gross profit of USD289.5 million and revenue of USD2,978.0 million, the simple gross margin is 289.5 / 2,978.0 x 100 = 9.721289456%, or about 9.72%. This is a transparent arithmetic fallback from rounded published inputs, not a newly reported management KPI or a cash margin. Positive gross profit is supportive of project economics, but gross margin excludes overheads, financing and working-capital demands; it cannot prove cash generation or attractive valuation.\n\nA missing display percentage is noncritical when the correctly scoped numerator and denominator are present. It is categorically different from missing current security identity or corporate-action clearance, which arithmetic cannot reconstruct, and from CIRA's unresolved issuer-to-service provenance. CIRA's original page visibly contains both statutory/weighted segment views, but branded formatting and internally reconciling figures do not independently establish issuer linkage. Its allocation rearranges segment results while keeping the total unchanged; this is useful content, not provenance clearance.\n\nIn the explicitly synthetic missing-data scenario, using the computed ORAS margin is permissible for research; missing action/identity clearance remains unknown risk, never zero risk. Need verified identifiers/actions and a reconciled CIRA source link, alongside valuation and execution inputs, before investment decisions. Decision: disclose the formula and precision for analysis, retain the provenance caveat, and grant no trading clearance.",
+  "extractedNumbers": [
+    {
+      "id": "computed_gross_margin",
+      "unit": "percent",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 9.721289456010746
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "caseId": "W7-22",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-22",
+    "cutoffAt": "2026-10-25T23:06:08.457Z",
+    "evidence": [
+      {
+        "id": "full-abstention",
+        "availableAt": "2026-10-25T23:06:08.457Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.443Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-22\",\"cutoffAt\":\"2026-10-25T23:06:08.457Z\",\"evidence\":[{\"id\":\"full-abstention\",\"availableAt\":\"2026-10-25T23:06:08.457Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nEGP60,000 at EGP20 buys 3,000 whole shares and leaves EGP40,000 cash. The asserted EGP22 target implies (22/20 - 1) x 100 = +10% price return. The EGP12 adverse value implies -40%; after allocation the adverse portfolio is 3,000 x 12 + 40,000 = EGP76,000, a 24% portfolio loss. The target scenario would earn only EGP6,000, versus EGP24,000 loss in the adverse scenario. These are stipulated levels, not calibrated probabilities, guaranteed stop fills or a complete outcome distribution.\n\nI would abstain on investment merit despite full funding and fixture-cleared identity, actions and initial execution. A renewal rumor involving 60% of sales is weak support, while overdue receivables and EGP8 million operating cash outflow challenge conversion of EGP12 million positive EBITDA into usable cash. A failure of the concentrated customer relationship can affect both revenue and collections. The sector is unspecified; I cannot invent a construction exposure or correlation estimate, but customer/demand dependence is a clear common operating risk. Positive EBITDA, available cash and a technical pass are meaningful counterevidence to saying the business has no value, is certainly insolvent, or the order is mechanically impossible.\n\nA smaller allocation reduces monetary loss without verifying renewal, improving collectability or fixing the 10% versus 40% asymmetry. Full size needs stronger verified contract/collection evidence and a valuation sensitivity analysis; waiting preserves the option to reconsider. No fixed concentration cap or cash shortage causes this refusal. Retain exactly one mechanical opportunity and record zero discretionary executions, without deleting the denominator. This is paper-only abstention, not a fraud finding, market prediction or trading instruction.",
+  "extractedNumbers": [
+    {
+      "id": "desired_shares",
+      "unit": "shares",
+      "period": "fixture proposed allocation",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 3000
+    },
+    {
+      "id": "stated_upside_percent",
+      "unit": "percent price return",
+      "period": "fixture target versus entry",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 10
+    },
+    {
+      "id": "adverse_price_return_percent",
+      "unit": "percent price return",
+      "period": "fixture adverse value versus entry",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": -40
+    },
+    {
+      "id": "adverse_portfolio_equity",
+      "unit": "EGP",
+      "period": "fixture adverse valuation after allocation",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 76000
+    },
+    {
+      "id": "retained_mechanical_opportunities",
+      "unit": "opportunities",
+      "period": "fixture decision event",
+      "entity": "SYNTHETIC-FULL-ABSTENTION",
+      "evidenceId": "full-abstention",
+      "value": 1
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

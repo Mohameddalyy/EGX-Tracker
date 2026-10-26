@@ -1,0 +1,47 @@
+{
+  "caseId": "W7-08",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-08",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "adib-income",
+        "availableAt": "2026-10-23T16:27:23.557Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196111.668
+      },
+      {
+        "id": "oras-profit",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196089.705
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.431Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-08\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"adib-income\",\"availableAt\":\"2026-10-23T16:27:23.557Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196111.668},{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nADIB's EGP7,550,833 thousand consolidated total profit converts by dividing by 1,000 to EGP7,550.833 million. ORAS reports USD127.8 million consolidated total profit directly. Both concern six months ended 30 June 2026; matching dates and the word million do not make the currencies or economic scopes interchangeable. Neither a direct numeric ranking nor a raw sum is meaningful.\n\nA common-currency comparison needs a disclosed, period-appropriate FX translation basis. Even after translation, total group profit includes NCI; investor comparisons require consistent owner attribution, capital employed, risk and market valuation. Bank profits depend on deposit/financing spreads, provisioning and regulatory capital. Construction profits depend on project margins, billing/collections and working capital. The positive profits are supportive observations, but the ADIB page lacks loan-quality detail and the ORAS profit page alone cannot demonstrate cash realization. I would not declare either company cheaper or superior from absolute profit size. Obtain FX inputs, comparable owner earnings, balance-sheet/cash-quality information and current corporate-action-adjusted valuations. The bounded conclusion is two correctly labeled historical earnings observations, suitable for separate sector analysis, with no allocation ranking or trade clearance.",
+  "extractedNumbers": [
+    {
+      "id": "adib_profit_millions",
+      "unit": "EGP million",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 7550.833
+    },
+    {
+      "id": "oras_profit_millions",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 127.8
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

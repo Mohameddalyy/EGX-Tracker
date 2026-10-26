@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.890Z",
+  "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+  "runHash": "8bb980a9bfd00ea5413c1ea83deea9180c4eec91cdc6180bea067fc95b24ef14",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains shared campus overhead and financing allocations and standalone economics."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Uses unchanged group total as direct counterevidence to newly created earnings."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correctly reconciles the segment uplift and two allocation components."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Retains both presentations and requests provenance and segment cash reconciliation."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Separates management allocation from statutory revision and preserves unresolved IR-service provenance."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

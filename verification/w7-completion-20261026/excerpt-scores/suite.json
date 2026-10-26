@@ -1,0 +1,828 @@
+{
+  "version": 1,
+  "kind": "model-suite",
+  "createdAt": "2026-10-25T23:16:36.991Z",
+  "payload": {
+    "registeredCases": 22,
+    "coverageGaps": [],
+    "models": [
+      {
+        "configurationKey": "312e764b9434ace33ee15bde5874a1696b8fadbc8fa34dac0e5eadda8ab2e41b",
+        "modelId": "gpt-6-astra",
+        "casesScored": 22,
+        "missing": [],
+        "accuracy": 1,
+        "correct": 55,
+        "denominator": 55,
+        "criticalErrors": 2,
+        "caseFailures": [
+          "W7-11",
+          "W7-12"
+        ],
+        "status": "FAIL",
+        "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+        "rubricMeans": {
+          "sectorReasoning": 3.6818181818181817,
+          "counterevidence": 3.8181818181818183,
+          "numericalInterpretation": 3.8181818181818183,
+          "decisionUsefulness": 3.8181818181818183,
+          "uncertainty": 3.8181818181818183
+        }
+      }
+    ],
+    "status": "NOT_PASSED",
+    "claim": "Case-suite factual accuracy only; low qualitative rubric scores cannot become analytical validation. No trading edge or universal model superiority. Unavailable models remain unavailable.",
+    "evaluationReleaseHash": "015b9b8deb5208e68ca66abef8e54a639d4eb25ba8b575b9cb43909dad441316",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "attemptScope": "EXCERPT_ONLY_PROTOCOL_DEVIATION",
+    "sourceAccessConformity": "DEVIATION_EXCERPT_ONLY",
+    "perCase": [
+      {
+        "caseId": "W7-01",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Connects Islamic financing spread, deposit funding and credit costs without inventing a margin denominator."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Contrasts positive profit with netting/release risk and absent staging evidence."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Reconciles financing income and costs; preserves signed six-month ECL versus quarterly release."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Names specific credit, capital and valuation work needed before an investment conclusion."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Separates missing loan denominator and first-publication timing from known statement facts."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-02",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Explains bank credit quality, funding repricing and capital usage as earnings durability drivers."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Positive earnings and small NCI are weighed against provision netting and missing credit schedules."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correctly separates group and attributable profit and reconciles NCI."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Specifies credit-quality follow-up and uses attributable profit for shareholder analysis."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Neither equates low charges with clean assets nor infers fraud from omissions."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-03",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Explains construction billing, retention and working-capital timing as possible mechanisms, not proven causes."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Positive advances, billings and ending cash offset the one-sided distress narrative."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Preserves cash-flow movement signs; independently correct partial bridge and residual are explicitly labeled."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Targets aging, subsequent collections, restrictions and debt maturities before sizing."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Does not assign unexplained residual to a particular adjustment or assert unrestricted cash."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-04",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Explains shared campus overhead and financing allocations and standalone economics."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Uses unchanged group total as direct counterevidence to newly created earnings."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correctly reconciles the segment uplift and two allocation components."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Retains both presentations and requests provenance and segment cash reconciliation."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Separates management allocation from statutory revision and preserves unresolved IR-service provenance."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-05",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Distinguishes developer contracting, recognition, collections and construction cash obligations."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Uses low operating cash flow and construction obligations against optimistic gross-collections inference."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct conversion to billions and source-specific rounding disagreement retained."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Calls for cancellation, cost-to-complete and maturity schedules before funding assessment."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Does not promote cash receipts to free cash or infer current clearance from document origin."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-06",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Interprets developer inventories, installment receivables and customer advances with timing discipline."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Balances positive current assets/cash with narrow buffer, net debt and obligations."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Computes net current assets correctly without confusing classification surplus with cash."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Declines unsupported runway and liquidation values and identifies required timed schedules."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Preserves uncertainty over restrictions, collectability, covenants and off-balance-sheet claims."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-07",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Connects group project entities to parent distributable cash and guarantees."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Strong group profit is balanced against smaller parent result without claiming trapped cash."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Aligns dollars and millions and recognizes consolidated EPS footnote prevents parent share-count inference."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Requires EPS numerator/share reconciliation and distribution/accessibility data."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Treats scope difference as reconciliation, not additional profit or proof of poor quality."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-08",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Distinguishes bank capital/credit economics from construction collection and project risk."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Acknowledges both profits while rejecting simplistic cross-sector quality ranking."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct unit scaling with currencies preserved; no guessed FX rate."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Gives a clear native-currency comparison and specifies missing common valuation inputs."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Separates scope, currency, economic meaning and missing capital/cash evidence."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-09",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Explains why developer sales/backlog evidence would materially contaminate historical demand judgment."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Allows that earlier information might exist while declining to assume its contents."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct elapsed-day calculation and explicit date-versus-availability distinction."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Excludes later evidence from original decision and specifies contemporaneous archival requirement."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Does not transform document date or capture date into proven first public availability."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-10",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Connects stale developer figures to potentially changed delivery, costs, collections and financing."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Retains historical positive results without assuming either continuation or deterioration."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct period age and historical revenue; refuses quote/aggregate-revenue valuation mismatch."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Names refreshed financial, action, share and quote evidence needed for a current decision."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Keeps hypothetical quote, period age and publication age distinct."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-11",
+        "status": "CASE_FAIL",
+        "accuracy": 1,
+        "critical": 1,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Correctly distinguishes stock dividend from split and notes no new earnings or capital strength is proved."
+          },
+          "counterevidence": {
+            "score": 2,
+            "reason": "Useful warning against free economic gain is mixed with a false temporal-admissibility objection."
+          },
+          "numericalInterpretation": {
+            "score": 2,
+            "reason": "Requested multiplier/share arithmetic is correct, but the asserted cutoff and 17.761-second late-capture comparison use the wrong case timestamp."
+          },
+          "decisionUsefulness": {
+            "score": 2,
+            "reason": "Requests an unnecessary cutoff repair and falsely withholds an as-of claim despite valid packet timing."
+          },
+          "uncertainty": {
+            "score": 2,
+            "reason": "Appropriate price/adjustment uncertainty is undermined by asserting a nonexistent timing defect."
+          }
+        },
+        "disagreements": [
+          {
+            "type": "CRITICAL_CASE_TEMPORAL_IDENTITY_ERROR",
+            "claimedCutoffAt": "2026-10-25T22:55:55.225Z",
+            "actualCutoffAt": "2026-10-25T22:56:32.892Z",
+            "sourceAvailableAt": "2026-10-25T22:56:12.986Z",
+            "actualSecondsBeforeCutoff": 19.906,
+            "impact": "Wrong case cutoff reverses evidence admissibility; source is available before the actual cutoff. Count once as critical case temporal/period identity error, not also as fabrication."
+          }
+        ],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-12",
+        "status": "CASE_FAIL",
+        "accuracy": 1,
+        "critical": 1,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Connects dividend capacity to earnings, losses and capital; does not confuse payout with shareholder return."
+          },
+          "counterevidence": {
+            "score": 2,
+            "reason": "Gross entitlement is conditioned correctly but counterevidence includes a false late-capture claim."
+          },
+          "numericalInterpretation": {
+            "score": 2,
+            "reason": "Dividend arithmetic/dates are correct; case cutoff comparison is wrong and reverses admissibility."
+          },
+          "decisionUsefulness": {
+            "score": 2,
+            "reason": "False temporal block adds unnecessary resolution work to otherwise appropriate accounting cautions."
+          },
+          "uncertainty": {
+            "score": 2,
+            "reason": "Missing tax/price/return data are handled honestly, but temporal certainty is based on a wrong cutoff."
+          }
+        },
+        "disagreements": [
+          {
+            "type": "CRITICAL_CASE_TEMPORAL_IDENTITY_ERROR",
+            "claimedCutoffAt": "2026-10-25T22:55:55.225Z",
+            "actualCutoffAt": "2026-10-25T22:56:32.892Z",
+            "sourceAvailableAt": "2026-10-25T22:56:12.986Z",
+            "actualSecondsBeforeCutoff": 19.906,
+            "impact": "Wrong case cutoff reverses evidence admissibility; source is available before the actual cutoff. Count once as critical case temporal/period identity error, not also as fabrication."
+          }
+        ],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-13",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Explains plausible business mix, leverage and governance implications with limited supplied pro-forma evidence."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Approved resolutions and defined ratio are balanced against outstanding approvals and extended deadline."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct exchange ratio and hypothetical shares; no fabricated fractional settlement."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Requests current completion, capitalization and pro-forma economics before action."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Explicitly preserves contingent status and distinguishes dilution arithmetic from economic loss."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-14",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Appropriately declines invented issuer/sector fundamentals and focuses on supported liquidity economics."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Acknowledges daily pass while explaining the independent binding minute failure."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct capacities and zero whole-order execution; no implicit partial fill."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Records failed gate and requires a new authorized evaluation for any smaller/later order."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Keeps fixture ceilings distinct from production rules and real market observations."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-15",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Addresses liquidity/exit-risk mechanism and explicitly marks absent issuer/sector facts."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Daily capacity is recognized without ignoring the binding minute constraint."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correctly retains all800 shares and zero execution; does not infer proceeds or P&L."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Keeps exit pending and holdings exposure visible until a valid later event."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "No imagined stop fill, mark, liquidity recovery or realized value."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-16",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Explains name risk and missing common-factor evidence while declining fake sector facts."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Acknowledges positive feasible arithmetic sizes without treating them as approval."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct headroom and scenario funding ceilings, including reserved cash."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Rejects desired amount under the fixture and explicitly preserves other/no-addition controls."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Clearly bounds arithmetic exclusions and does not amend production policy."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-17",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Develops the shared USD-input/EGP-sales channel and pass-through/hedge contingencies."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Explains why common exposures do not imply identical firm or equity-return behavior."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct exposure totals and percentages without inventing correlations/covariance."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Specifies hedging and sensitivity evidence before more common-factor exposure."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Distinguishes missing correlation from zero and gross exposure from predicted loss."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-18",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 3,
+            "reason": "Avoids issuer-sector inference from identifier and explains funding/implementation risk."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Recognizes50 shares are arithmetically payable without calling them suitable or authorized."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct free cash, desired shares, funded ceiling and shortfall."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Rejects unfunded demand and lists concrete evidence required for a smaller order."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Treats95% confidence as uncalibrated and preserves fee/price uncertainty."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-19",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Explains construction working-capital risks without asserting the unverified cause."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Positive profit, cash and advance movements are weighed against receivable absorption."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct cash-profit gap and preserves one mechanical opportunity."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Separates discretionary refusal from technical failure and prioritizes collection/clearance work."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "No fraud/distress inevitability or actual signal/fill is fabricated."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-20",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Explains contractor gross margin limits and CIRA allocation without overstating economic quality."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Positive gross profit and unchanged CIRA total balance missing cash/provenance."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct ratio with rounded-input precision caveat and compatible scopes."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Uses available arithmetic while withholding identity/action clearance."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Differentiates optional display missingness from critical identity/action uncertainty."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-21",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Connects customer concentration and shared construction demand to liquidity-constrained downside."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Supportive debt-free/collected receipts/contract evidence receives a substantive customer/termination challenge."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct funding, exposures, joint stress and independently correct smaller-allocation illustration."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Conditionally defends funded concentration, offers smaller/zero alternatives, and preserves no-pyramiding."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "No unsupported probability, maximum-loss claim or optimality; explicit downside acceptance is not alone proof of value."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      },
+      {
+        "caseId": "W7-22",
+        "status": "FACTUAL_GATE_PASS",
+        "accuracy": 1,
+        "critical": 0,
+        "rubric": {
+          "sectorReasoning": {
+            "score": 4,
+            "reason": "Connects customer demand and payment concentration without inventing sector or other holdings."
+          },
+          "counterevidence": {
+            "score": 4,
+            "reason": "Positive EBITDA and full funding are weighed against overdue receivables, rumor and negative operating cash."
+          },
+          "numericalInterpretation": {
+            "score": 4,
+            "reason": "Correct shares, upside/downside, portfolio stress and opportunity denominator."
+          },
+          "decisionUsefulness": {
+            "score": 4,
+            "reason": "Justifies abstention substantively; smaller sizing does not repair weak evidence."
+          },
+          "uncertainty": {
+            "score": 4,
+            "reason": "Separates stated levels from expected return, probability and guaranteed stop execution."
+          }
+        },
+        "disagreements": [],
+        "missingEvidence": [
+          "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+        ]
+      }
+    ],
+    "telemetry": {
+      "schemaVersion": 1,
+      "agentId": "/root/w7_blind_analyst",
+      "caseCount": 22,
+      "startedAt": "2026-10-25T23:06:54.5661685Z",
+      "latencyBasis": "Shared batch begins at the actual pre-read clock capture in the first command. Per-case finishedAt is actual serialization time; intervals overlap and are not isolated per-case latency or latency divided by 22.",
+      "modelIdentity": {
+        "exactRuntimeIdExposed": false,
+        "reasoningConfigurationExposed": false,
+        "parentReportedLocalConfiguration": {
+          "model": "gpt-6-astra",
+          "reasoningEffort": "high",
+          "inheritance": "Parent reported inheritance without override",
+          "verification": "Parent report of local configuration only; not independent provider attestation."
+        }
+      },
+      "toolCalls": {
+        "scope": "Entire analyst agent through and including telemetry save; shared calls counted once.",
+        "functionsExec": 5,
+        "execCommand": 7,
+        "collaborationSendMessage": 5,
+        "collaborationWaitAgent": 10,
+        "totalAllInvocations": 27,
+        "dataExecutionToolInvocations": 7,
+        "caseAttributableInvocations": 0,
+        "accounting": "functions.exec orchestration calls are reported separately from nested exec_command invocations. The fourth functions.exec only stored drafts in session memory; the fifth performed three sequential output-write commands and this telemetry-write command. Collaboration includes readiness/wait messages before evidence work. No per-case cost allocation."
+      },
+      "reads": [
+        {
+          "call": "exec_command 1",
+          "scope": "W7-01 full packet plus actual start clock"
+        },
+        {
+          "call": "exec_command 2",
+          "scope": "W7-02 through W7-22; response truncated the middle"
+        },
+        {
+          "call": "exec_command 3",
+          "scope": "W7-08 through W7-17 reread to recover complete tasks/evidence"
+        },
+        {
+          "call": "exec_command 4 through 6",
+          "scope": "The same 22 allowed packets reread only for exact requested extraction metadata during output serialization; hashes computed on own new output files."
+        }
+      ],
+      "restrictions": {
+        "externalBrowsing": false,
+        "externalSources": false,
+        "truthCaseSourceReviewTestPriorAnswerReads": false,
+        "otherAgentOutputsRead": false,
+        "subagentsSpawned": false,
+        "executionAuthorizationClaimed": false,
+        "writesOutsideAnalystOutputs": false
+      },
+      "unknownTelemetry": {
+        "tokens": null,
+        "providerLatency": null,
+        "cost": null,
+        "reason": "Not available from exposed analyst runtime; not inferred."
+      },
+      "notes": "Synthetic scenarios are treated as authored assumptions, not market observations. Own outputs are original and were written once without rewriting after reviewer hints. Data files referenced inside packets were not opened. Timing inconsistencies were evaluated from packet contents.",
+      "finishedAt": "2026-10-25T23:13:39.7565412Z"
+    }
+  },
+  "contentHash": "a07a762c6723fdd1e856707c05585d562f6fadd2e649bf167bca8635572519f1"
+}

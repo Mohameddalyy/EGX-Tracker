@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "agentId": "/root/w7_blind_analyst",
+  "caseCount": 22,
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "latencyBasis": "Shared batch begins at the actual pre-read clock capture in the first command. Per-case finishedAt is actual serialization time; intervals overlap and are not isolated per-case latency or latency divided by 22.",
+  "modelIdentity": {
+    "exactRuntimeIdExposed": false,
+    "reasoningConfigurationExposed": false,
+    "parentReportedLocalConfiguration": {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "inheritance": "Parent reported inheritance without override",
+      "verification": "Parent report of local configuration only; not independent provider attestation."
+    }
+  },
+  "toolCalls": {
+    "scope": "Entire analyst agent through and including telemetry save; shared calls counted once.",
+    "functionsExec": 5,
+    "execCommand": 7,
+    "collaborationSendMessage": 5,
+    "collaborationWaitAgent": 10,
+    "totalAllInvocations": 27,
+    "dataExecutionToolInvocations": 7,
+    "caseAttributableInvocations": 0,
+    "accounting": "functions.exec orchestration calls are reported separately from nested exec_command invocations. The fourth functions.exec only stored drafts in session memory; the fifth performed three sequential output-write commands and this telemetry-write command. Collaboration includes readiness/wait messages before evidence work. No per-case cost allocation."
+  },
+  "reads": [
+    {
+      "call": "exec_command 1",
+      "scope": "W7-01 full packet plus actual start clock"
+    },
+    {
+      "call": "exec_command 2",
+      "scope": "W7-02 through W7-22; response truncated the middle"
+    },
+    {
+      "call": "exec_command 3",
+      "scope": "W7-08 through W7-17 reread to recover complete tasks/evidence"
+    },
+    {
+      "call": "exec_command 4 through 6",
+      "scope": "The same 22 allowed packets reread only for exact requested extraction metadata during output serialization; hashes computed on own new output files."
+    }
+  ],
+  "restrictions": {
+    "externalBrowsing": false,
+    "externalSources": false,
+    "truthCaseSourceReviewTestPriorAnswerReads": false,
+    "otherAgentOutputsRead": false,
+    "subagentsSpawned": false,
+    "executionAuthorizationClaimed": false,
+    "writesOutsideAnalystOutputs": false
+  },
+  "unknownTelemetry": {
+    "tokens": null,
+    "providerLatency": null,
+    "cost": null,
+    "reason": "Not available from exposed analyst runtime; not inferred."
+  },
+  "notes": "Synthetic scenarios are treated as authored assumptions, not market observations. Own outputs are original and were written once without rewriting after reviewer hints. Data files referenced inside packets were not opened. Timing inconsistencies were evaluated from packet contents.",
+  "finishedAt": "2026-10-25T23:13:39.7565412Z"
+}

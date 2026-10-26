@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.830Z",
+  "payload": {
+    "caseId": "W7-10",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:37.4796541Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "The financial period end is 391 elapsed calendar days before the scenario assessment date: 365 days from 30 September 2025 to 30 September 2026, then 26 days to 26 October 2026 (scenario-stale). This measures age of the period end, not time since publication or capture. Historical nine-month revenue remains EGP25,549,856 thousand (phdc-statements).\n\nThe assumed EGP15 quote is hypothetical and unverified. Even a genuinely current quote would update only the price side of an analysis, not revenue, earnings, balance-sheet exposures or share-count/corporate-action adjustments. It cannot make a 391-day-old period current. No investable valuation multiple can be established merely by dividing this quote by an incompatible aggregate revenue number; outstanding shares, attributable earnings, current debt/cash and an appropriate valuation framework are missing.\n\nThe selected historical results show positive revenue, profit and operating cash flow, which provide a useful baseline and counterevidence to discarding the historical business entirely. But property-development earnings and cash depend on new sales, cancellations, delivery schedules, collections, land/construction costs and financing terms, all of which may have changed. The packet supplies no subsequent accounts or action clearance, so no direction or magnitude of change can be asserted.\n\nBounded decision: keep the historical figures clearly dated and wait for refreshed issuer financials, project cash-conversion evidence, reconciled share/corporate-action history and a verified executable market quote before valuation or trading. Do not manufacture a current price, extrapolate nine-month revenue into later realized results, or treat missing updates as evidence of deterioration. The synthetic quote is a scenario input only; this is neither a real market observation nor an authorization.",
+    "extractedNumbers": [
+      {
+        "id": "financial_period_age",
+        "unit": "calendar days",
+        "period": "2025-09-30 to 2026-10-26",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "scenario-stale",
+        "value": 391
+      },
+      {
+        "id": "historical_revenue",
+        "unit": "EGP thousand",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 25549856
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "6149bbc9c063b49e57fed17968cfb7e8962500bca7131bb0cdd2a9196ecea8fc",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+    "packetHash": "e51b2f5952a9e7a778872197865fc7f631664c5512eaeae9dceb95a51c7b110d",
+    "outputHash": "703daf7c829bca72704ebfa9099a3650a028b5779740e2e78ae4a8a224eafdec",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-10.json",
+    "originalFileHash": "141dc39862f78a34536a00f1bdcd18cc7f06d3203ff2d732f3e33c1912943c0f",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "4e1555628872942db97bb638842a8484eedc874feffd8e6cd974d3a4469bc615"
+}

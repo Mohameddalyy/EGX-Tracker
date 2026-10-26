@@ -1,0 +1,502 @@
+{
+  "observedAt": "2026-10-25T23:08:18.788Z",
+  "scope": "Offline retained-data verification. Historical cutoff explicitly preserved; not a fresh market observation.",
+  "screen": {
+    "asOf": "2026-10-23T17:35:00.000Z",
+    "stocks": 296,
+    "eligible": 183,
+    "mismatchCount": 0,
+    "suce": {
+      "ticker": "SUCE",
+      "name": "Suez Cement Co.",
+      "currency": "EGP",
+      "sector": "Non-Energy Minerals",
+      "industry": "Construction Materials",
+      "watched": false,
+      "asOf": "2026-10-21",
+      "priceCapture": "2026-10-23T16:50:23.323Z",
+      "historyReadiness": {
+        "due": true,
+        "code": "EXPECTED_SESSION_ABSENT",
+        "expectedSession": "2026-10-22",
+        "latestDay": "2026-10-21",
+        "observationCapturedAt": "2026-10-23T16:50:23.323Z",
+        "reason": "Latest bar 2026-10-21 precedes expected session 2026-10-22; no-trade/suspension/provider cause unverified",
+        "calendar": {
+          "day": "2026-10-22",
+          "reason": "Provider calendar and delayed-close cutoff; preparation only",
+          "source": "Saved TradingView symbol metadata",
+          "executionCertified": false
+        },
+        "executionCertified": false
+      },
+      "eligible": false,
+      "exclusions": [
+        "History readiness: Latest bar 2026-10-21 precedes expected session 2026-10-22; no-trade/suspension/provider cause unverified"
+      ],
+      "flags": [
+        "Positive P/E unavailable; verify earnings",
+        "ROE unavailable",
+        "Financial periods, majority/major shareholders, filings, news and corporate actions require analyst verification"
+      ],
+      "score": 0,
+      "signals": [],
+      "metrics": {
+        "close": 127.35,
+        "sma50": 47.9458,
+        "momentum6mExLastMonth": 36.12565445026177,
+        "atrPercent": 9.348381615677663,
+        "medianTurnoverEGP": 1660487.5,
+        "activeDays20": 20,
+        "rv20": 0.03268583478648769,
+        "pe": null,
+        "roe": null,
+        "debtEquity": null
+      },
+      "facts": {
+        "capturedAt": "2026-10-23T16:21:42.159Z",
+        "values": {
+          "symbol": "EGX:SUCE",
+          "name": "SUCE",
+          "type": "stock",
+          "exchange": "EGX",
+          "currency": "EGP",
+          "sector": "Non-Energy Minerals",
+          "industry": "Construction Materials",
+          "open": 132,
+          "high": 132,
+          "low": 126.02,
+          "close": 127.35,
+          "volume": 806,
+          "price_earnings_ttm": null,
+          "price_book_fq": null,
+          "return_on_equity": null,
+          "debt_to_equity": null,
+          "market_cap_basic": 6364978256,
+          "earnings_per_share_diluted_ttm": null,
+          "total_revenue_yoy_growth_ttm": null,
+          "float_shares_outstanding": null,
+          "average_volume_30d_calc": 75026.63333333333,
+          "Perf.1M": -14.196199973049449,
+          "Perf.3M": 536.75,
+          "Perf.6M": 809.6428571428571,
+          "Perf.Y": 918.8,
+          "Recommend.All": 0.17575757575757575,
+          "Recommend.MA": 0.5333333333333333,
+          "Recommend.Other": -0.18181818181818182,
+          "Recommend.All|1W": 0.4,
+          "Recommend.MA|1W": 0.8,
+          "Recommend.Other|1W": 0,
+          "RSI": 67.96593884553289,
+          "MACD.macd": 30.3757634443037,
+          "MACD.signal": 30.739868711700503,
+          "ADX": 48.03857881562929,
+          "relative_volume_10d_calc": 0.12653855815121828,
+          "dividends_yield_current": 0,
+          "net_margin": null,
+          "return_on_assets": null,
+          "current_ratio": null,
+          "total_revenue_ttm": null,
+          "net_income_ttm": null,
+          "price_target_average": null,
+          "AnalystRating": "NoRating"
+        }
+      }
+    },
+    "durationMs": 535.9821999999999
+  },
+  "routing": {
+    "recordVersions": 980,
+    "recoveredWithoutTicker": 23,
+    "tickers": [
+      "ACAMD",
+      "AFDI",
+      "CSAG",
+      "EAST",
+      "GPPL",
+      "MIPH",
+      "MOIN",
+      "OIH",
+      "QNBE",
+      "UEFM",
+      "WKOL"
+    ],
+    "cases": [
+      {
+        "code": 296324,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "OIH"
+        ],
+        "possibleTickers": [
+          "OIH"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 296321,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "OIH"
+        ],
+        "possibleTickers": [
+          "OIH"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 296110,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "ACAMD"
+        ],
+        "possibleTickers": [
+          "ACAMD"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 296072,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "GPPL"
+        ],
+        "possibleTickers": [
+          "GPPL"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295977,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "UEFM"
+        ],
+        "possibleTickers": [
+          "UEFM"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295975,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "UEFM"
+        ],
+        "possibleTickers": [
+          "UEFM"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295950,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "WKOL"
+        ],
+        "possibleTickers": [
+          "WKOL"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295949,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "WKOL"
+        ],
+        "possibleTickers": [
+          "WKOL"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295733,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "QNBE"
+        ],
+        "possibleTickers": [
+          "QNBE"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295731,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "QNBE"
+        ],
+        "possibleTickers": [
+          "QNBE"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295533,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "MOIN"
+        ],
+        "possibleTickers": [
+          "MOIN"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295507,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "MIPH"
+        ],
+        "possibleTickers": [
+          "MIPH"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295469,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "EAST"
+        ],
+        "possibleTickers": [
+          "EAST"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295467,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "EAST"
+        ],
+        "possibleTickers": [
+          "EAST"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295458,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "CSAG"
+        ],
+        "possibleTickers": [
+          "CSAG"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295457,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "CSAG"
+        ],
+        "possibleTickers": [
+          "CSAG"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295446,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "AFDI"
+        ],
+        "possibleTickers": [
+          "AFDI"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295444,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "AFDI"
+        ],
+        "possibleTickers": [
+          "AFDI"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295435,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "AFDI"
+        ],
+        "possibleTickers": [
+          "AFDI"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 295432,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "AFDI"
+        ],
+        "possibleTickers": [
+          "AFDI"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 296323,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "OIH"
+        ],
+        "possibleTickers": [
+          "OIH"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 296320,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "OIH"
+        ],
+        "possibleTickers": [
+          "OIH"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      },
+      {
+        "code": 296109,
+        "status": "RETAINED_ISIN_MATCH_REQUIRES_REVIEW",
+        "tickers": [
+          "ACAMD"
+        ],
+        "possibleTickers": [
+          "ACAMD"
+        ],
+        "inSelectedContext": true,
+        "inIdentityReview": false
+      }
+    ],
+    "counts": {
+      "EXACT_TICKER": 603,
+      "UNMAPPED": 347,
+      "RETAINED_ISIN_MATCH_REQUIRES_REVIEW": 23,
+      "IDENTITY_REVIEW_REQUIRED": 7
+    },
+    "durationMs": 6.663499999999658,
+    "rawIndexUnchanged": true
+  },
+  "policyChecks": [
+    {
+      "file": "source-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "paper-experiment.json",
+      "unchanged": true
+    },
+    {
+      "file": "screening-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "decision-policy.json",
+      "unchanged": true
+    },
+    {
+      "file": "profile.json",
+      "unchanged": true
+    },
+    {
+      "file": "scout-schedule.json",
+      "unchanged": true
+    },
+    {
+      "file": "session-policy.json",
+      "unchanged": true
+    }
+  ],
+  "phase3": [
+    {
+      "path": "verification/v5-phase3-20261023/CHECKPOINT.md",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/decision-schema.json",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/freeze-manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/plan.json",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/RISK-AGENT.md",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/TEST-PLAN.md",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/TRADING-PLAN.md",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/validate-freeze.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "verification/v5-phase3-20261023/validation.json",
+      "unchanged": true
+    }
+  ],
+  "ledgerUnchanged": true,
+  "automations": [
+    {
+      "id": "egx-decision-scout-and-research-analyst",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-close",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-intraday",
+      "status": "PAUSED"
+    },
+    {
+      "id": "egx-paper-week-morning",
+      "status": "PAUSED"
+    }
+  ],
+  "orders": 0,
+  "fills": 0,
+  "dictionaryMatchesFrozenPhase2": true,
+  "passed": true
+}

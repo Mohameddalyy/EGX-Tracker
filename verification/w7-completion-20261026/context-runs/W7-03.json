@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:08.976Z",
+  "payload": {
+    "caseId": "W7-03",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-03",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "oras-profit",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        },
+        {
+          "id": "oras-cash",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.425Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-03\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"oras-cash\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nOn original ORAS physical page 8, six-month operating profit is USD179.5 million. Page 10 reports operating cash flow of -54.5 million and a -329.2 million trade-and-other-receivables movement. Positive accrual profit can coexist with negative cash flow when work is recognized before cash collection. The full printed bridge starts at net profit 127.8, adds net noncash/finance/tax adjustments of 72.8 to reach 200.6, then applies working-capital movements totaling -249.6 and net cash interest/dividend/tax flows of -5.5, arriving at -54.5. Operating profit is not the cash-flow statement's starting line.\n\nConstruction entails milestone billing, receivables and retention timing. The large receivables absorption is material collection and funding risk, not proof of fraud or inevitable distress. Counterevidence includes positive profit, cash releases from contract work in progress of 43.4, advances of 40.0 and excess billings of 24.4. Ending cash of 1,230.1 is a buffer, but its restrictions and commitments are not established here, and financing inflow does not cure weak operating conversion. I would wait for receivable aging, subsequent receipts, customer exposure, project claims, cash restrictions and debt maturities before underwriting the cash-conversion thesis. This supports further research, not a predicted recovery or a trade.",
+    "extractedNumbers": [
+      {
+        "id": "operating_profit",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 179.5
+      },
+      {
+        "id": "operating_cash_flow",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-cash",
+        "value": -54.5
+      },
+      {
+        "id": "receivables_cash_movement",
+        "unit": "USD million",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-cash",
+        "value": -329.2
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "e05652a6dccc8022fed94654539d66571d4f2fbb89c13de8bc09adca9e03d29b",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+    "packetHash": "de724659af3a4ce42f2ff73e9e7ae5451fae431598d2805e116840fc233e6c9d",
+    "outputHash": "65e02ed2e2620ef30802ed2f37f8c8aa0fb48740297501d456a162fd088d60fa",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-03.json",
+    "originalFileHash": "1fd036f02501190bbd35dba6e0369d30833b755a42b906a638baff7a6139a83b",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "40ce8a9475b993b47bed9c962e12414892e78bc1b6bff4bcff99332808f4c34e"
+}

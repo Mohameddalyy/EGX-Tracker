@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:16:36.934Z",
+  "payload": {
+    "caseId": "W7-03",
+    "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "actorId": "/root/w7_blind_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "c10bda73911436d078f72be4d88f8f330a74920475ab5f5e54e220e9329d724e",
+    "reviewHash": "377b52bcfd2ffe268205ea35c2ba9e3c25243fdbe5922f7aa2dd8bc9afb9c9b0",
+    "categories": [
+      "nonfinancials"
+    ],
+    "numbers": [
+      {
+        "id": "operating_profit",
+        "status": "CORRECT"
+      },
+      {
+        "id": "operating_cash_flow",
+        "status": "CORRECT"
+      },
+      {
+        "id": "receivables_cash_movement",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Explains construction billing, retention and working-capital timing as possible mechanisms, not proven causes."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Positive advances, billings and ending cash offset the one-sided distress narrative."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Preserves cash-flow movement signs; independently correct partial bridge and residual are explicitly labeled."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Targets aging, subsequent collections, restrictions and debt maturities before sizing."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Does not assign unexplained residual to a particular adjustment or assert unrestricted cash."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 401.563,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "a9171d85b806d60ee412d4fc8996f4f991ba787ec7f2edce035e8416e23f1b56"
+}

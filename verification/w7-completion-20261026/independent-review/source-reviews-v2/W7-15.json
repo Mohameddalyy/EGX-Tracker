@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.953Z",
+  "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+  "runHash": "cb579463feadd0a745a976931f2849295db25ffa05efe3a08bf0e257166a9571",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Addresses liquidity/exit-risk mechanism and explicitly marks absent issuer/sector facts."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Daily capacity is recognized without ignoring the binding minute constraint."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correctly retains all800 shares and zero execution; does not infer proceeds or P&L."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Retains all800 shares and pending exit with no fabricated proceeds, monetary marks or rule relaxation."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "No imagined stop fill, mark, liquidity recovery or realized value."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

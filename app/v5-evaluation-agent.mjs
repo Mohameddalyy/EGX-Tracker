@@ -9,6 +9,8 @@ import {opportunityCohort,forecastOutcomes,benchmarkComparison,operationalCovera
 import {comparisonFamily} from './v5/evaluation-statistics.mjs';
 import {freezeCase,blindPacket,scoreModelCase,modelSuite} from './v5/evaluation-models.mjs';
 import {comparisonMatrix} from './v5/evaluation-matrix.mjs';
+import {fixedExitAttribution} from './v5/fixed-exit-attribution.mjs';
+import {boundStatisticalReport} from './v5/evaluation-provenance.mjs';
 
 const json=path=>JSON.parse(readFileSync(path,'utf8').replace(/^\uFEFF/,''));
 export function execute(command,inputPath) {
@@ -18,21 +20,24 @@ export function execute(command,inputPath) {
   }
   const input=json(inputPath);
   if(command==='daily')return dailyEquity(readEvaluationLedger(input.ledgerPath),input.sessions);
+  if(command==='fixed-exit')return fixedExitAttribution(input.ledgerPath,input.options||{});
   if(command==='trial')return registerTrial(input);
-  if(command==='matrix')return comparisonMatrix(readArtifact(input.trialPath,'trial').payload,input.reportPaths.map(p=>readArtifact(p,'ledger')));
+  if(command==='matrix')return comparisonMatrix(readArtifact(input.trialPath,'trial').payload,input.reportPaths.map(p=>readArtifact(p,'ledger')),(input.attributionPaths||[]).map(p=>readArtifact(p,'fixed-exit')));
   if(command==='cohort')return opportunityCohort(input.signalInput,input.dispositions);
   if(command==='forecast')return forecastOutcomes(input);
   if(command==='benchmarks')return benchmarkComparison(input);
   if(command==='operations')return operationalCoverage(input.expected,input.observed);
-  if(command==='statistics')return comparisonFamily(input);
+  if(command==='statistics')return boundStatisticalReport(input);
+  if(command==='diagnostic-statistics')return {...comparisonFamily({...input,scope:'SYNTHETIC_ENGINEERING'}),scope:'UNVERIFIED_DIAGNOSTIC_INPUT_ONLY'};
   if(command==='case')return freezeCase(input);
   if(command==='blind')return blindPacket(readArtifact(inputPath,'case').payload);
+  if(command==='blind-context')return blindPacket(readArtifact(inputPath,'case').payload,'CASE_CONTEXT_1');
   if(command==='score')return scoreModelCase(readArtifact(input.casePath,'case').payload,input.run,input.review);
   if(command==='suite') {
     const cases=input.casePaths.map(p=>readArtifact(p,'case').payload),scores=input.attempts.map(a=>scoreModelCase(cases.find(c=>c.id===a.caseId),a.run,a.review));
     return modelSuite(cases,scores);
   }
-  throw Error('Commands: ledger, daily, trial, matrix, cohort, forecast, benchmarks, operations, statistics, case, blind, score, suite');
+  throw Error('Commands: ledger, daily, fixed-exit, trial, matrix, cohort, forecast, benchmarks, operations, statistics, diagnostic-statistics, case, blind, blind-context, score, suite');
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   try {

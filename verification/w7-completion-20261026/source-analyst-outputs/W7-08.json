@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-08",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "ADIB page 4 reports consolidated total profit of EGP7,550,833 thousand; dividing by 1,000 gives EGP7,550.833 million. ORAS page 8 reports consolidated total profit of USD127.8 million. These figures refer to the same six-month end date but remain in different currencies. Their raw magnitudes cannot support a ranking or sum; no appropriate FX rate or translation convention is supplied. An income-flow comparison normally needs a consistent period translation basis, not an arbitrary current spot quote.\n\nEven after currency normalization, bank funding margins, leverage, credit losses and capital needs differ from construction project margins, working-capital conversion and contract risks. Absolute profit can reflect scale rather than attractiveness. Both are positive earnings observations, a useful counterweight to an automatically bearish view, but neither proves sustainable returns on equity or cheapness. Both requested figures include non-controlling interests; attributable profit would be needed for an ordinary shareholder comparison. Need comparable capital employed/equity, sustainable earnings adjustments, cash conversion, FX basis, share counts and contemporaneous valuations. Decision: preserve the normalized numbers separately, investigate sector-specific quality, and refuse a cross-currency investment ranking or aggregate profit calculation until the missing basis is explicit.",
+  "extractedNumbers": [
+    {
+      "id": "adib_profit_millions",
+      "unit": "EGP million",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 7550.833
+    },
+    {
+      "id": "oras_profit_millions",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 127.8
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

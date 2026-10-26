@@ -1,0 +1,32 @@
+{
+  "id": "W7-26",
+  "caseHash": "c307c2363cd338a4b9011d7d7c32c0c8a5de1ab5b2c0364d3629d22f76c766e7",
+  "task": "Identify this case ID and quote its exact cutoffAt. Calculate seconds from hypothetical original decision to incoming evidence capture and seconds from that incoming capture to this case cutoff. State whether the newly captured document may be used for the current retrospective assessment, whether it belongs in the original decision information set on the supplied archive, and what remains unknown about first public availability. Do not backdate receipt from issuerDocumentDate. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"decision_to_capture_seconds\",\"unit\":\"seconds\",\"period\":\"hypothetical original decision to incoming capture\",\"entity\":\"SYNTHETIC-TEMPORAL-26\",\"evidenceId\":\"temporal-facts-26\"},{\"id\":\"incoming_capture_age_seconds\",\"unit\":\"seconds\",\"period\":\"relative to W7-26 cutoffAt\",\"entity\":\"SYNTHETIC-TEMPORAL-26\",\"evidenceId\":\"temporal-facts-26\"}]. Treat this as a paper-only synthetic temporal reasoning task, give bounded conclusions and state missing evidence. No trades, market claims or rule changes follow.",
+  "cutoffAt": "2026-10-25T23:20:04.330Z",
+  "evidence": [
+    {
+      "id": "temporal-facts-26",
+      "source": "local:authored-synthetic-temporal-facts",
+      "contentHash": "b94046e1f427010b031bf66326f0ac4015114257c9a18e957a4224919e8f2cab",
+      "availableAt": "2026-10-25T23:20:03.223Z",
+      "passage": "{\n  \"scope\": \"AUTHORED_SYNTHETIC_TEMPORAL_FACTS_NOT_MARKET_OR_ISSUER_OBSERVATIONS\",\n  \"recordedAt\": \"2026-10-25T23:20:03.223Z\",\n  \"recordedBy\": \"/root/w7_case_curator\",\n  \"facts\": {\n    \"entity\": \"SYNTHETIC-TEMPORAL-26\",\n    \"hypotheticalOriginalDecisionAt\": \"2026-10-25T23:18:03.223Z\",\n    \"issuerDocumentDate\": \"2026-10-25\",\n    \"incomingEvidenceCapturedAt\": \"2026-10-25T23:19:33.223Z\",\n    \"evaluationRecordCapturedAt\": \"2026-10-25T23:20:03.223Z\",\n    \"firstPublicAvailabilityAt\": null,\n    \"record\": \"The hypothetical original decision archive contains no receipt of this document before incomingEvidenceCapturedAt.\"\n  }\n}",
+      "localPath": "data/research/evidence/w7-evaluation/temporal-case-26.json",
+      "availabilityBasis": "Actual capture of this newly authored synthetic fixture; timestamps inside facts are expressly synthetic scenario events."
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld.",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-26",
+    "cutoffAt": "2026-10-25T23:20:04.330Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-26",
+        "availableAt": "2026-10-25T23:20:03.223Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 1.107
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  }
+}

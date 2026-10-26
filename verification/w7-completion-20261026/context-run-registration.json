@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "kind": "model-evaluation-registration",
+  "createdAt": "2026-10-26T08:51:35.882Z",
+  "payload": {
+    "frozenAt": "2026-10-26T08:51:35.882Z",
+    "caseCount": 26,
+    "cases": [
+      {
+        "id": "W7-01",
+        "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+        "packetHash": "16be56e167231d2e9db3ff520fa692d055de0414e80b90db46e4c3ffd03a4673",
+        "fullPromptHash": "ecff246d14bdecb348f88f7afa487defd7babaeb082911fd4143ffcd82ccb3c4",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-02",
+        "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+        "packetHash": "540e8ef8645a57ba147ac52804f172caab033ced2ac8ee6eb4034c3f8cf0f935",
+        "fullPromptHash": "910b041e2025d92bf8c2b71124419bd49f8b242a6f10de5784e5ec51aea6115c",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-03",
+        "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+        "packetHash": "de724659af3a4ce42f2ff73e9e7ae5451fae431598d2805e116840fc233e6c9d",
+        "fullPromptHash": "e05652a6dccc8022fed94654539d66571d4f2fbb89c13de8bc09adca9e03d29b",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-04",
+        "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+        "packetHash": "ef7d569f8494c193c98299e0a2553ea08deca90b39efbc87ae854b20026e1693",
+        "fullPromptHash": "f3c3e66dbeea23a5e85f278d1839b291810ce7ef042083dfec1c4f357fcbff28",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-05",
+        "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+        "packetHash": "2f163c86fbbfa5ab6327da44b0796dae563b004e108446b35aed2f4043289b43",
+        "fullPromptHash": "00070155b6e5a22b39506fbd626297d66266f9a38810574705c6e4000ca721c1",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-06",
+        "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+        "packetHash": "efe853589fc263d90ba47401e172f33cb8ae3894e2fa8e650647b687288441f8",
+        "fullPromptHash": "3f8f8ad8910c5ebab1d392fec189772fc6d88a53c5614a4be45434cbab131485",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-07",
+        "caseHash": "3c95003675ec12eb881a074e53a7de6fc2ba39583eed09e079ffab1bd979dc1c",
+        "packetHash": "8460314b33a133b7233a45dbcb5b475b7616e6739ad888fd0876a0d7eb117bd0",
+        "fullPromptHash": "ca458c48c4f305b1005b11ebbefbd6bbf50aa1a630be5e17c3b05c212ab2a59b",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-08",
+        "caseHash": "8014e7e525e9d271e5530c128ce652dbccc43be774ebc111e21e37095d60db86",
+        "packetHash": "3ecd3d8f85d266a7803440ff8e76cde0b08bdd1ffc3ddd64c987972fa15175f7",
+        "fullPromptHash": "3f5fd676afd2423516f027861ffde420ea0e7bbccc3b58445e3ff8988b3c4222",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-09",
+        "caseHash": "fec3e45e8047103aa36fb421c63df8c283731701c42ad80ca95ece7474300e93",
+        "packetHash": "78eba50b71a5b6f9f12dc7eb00646d401cf90932aa9f4fbca50ac6a8d0a0a560",
+        "fullPromptHash": "2bbde0b6c3d55aaace7219bf8f6cbe04187401496a28a36ca09090bf108e1d36",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-10",
+        "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+        "packetHash": "f1c9a60a752c7a9ee689d1f58811bb1d5ce3f0a7349533ee3f1043d0e87e6e63",
+        "fullPromptHash": "8990836dbba98a7063686e6d7fc87ca1f0c1859f31893ca051c9d977fa6cb2bc",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-11",
+        "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+        "packetHash": "a1d483784e04ac4383e06e363ae7bca8b44de264a15bb37edc547a465fbe883f",
+        "fullPromptHash": "9a670305ee649ceb4d9784d80b098b886fb6d58d20a1652293f4b04bd0743af8",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-12",
+        "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+        "packetHash": "c9290cb34e74f8bd079381069afa801bb53c19a7d67bd58cef8114c39ac0f905",
+        "fullPromptHash": "946a14ce7153508e8f0e20bd7927f8c4451412c50f34e8793dd0cd347b6d4b37",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-13",
+        "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+        "packetHash": "d9f761e685f3b31c3faa6a892f4ab5e0ef25e8ead5e3b03c4a3ae848837b3403",
+        "fullPromptHash": "c677ee9ce89d35795bb21f92a406c9b9018962e91a0a502c67caf65d0af64757",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-14",
+        "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+        "packetHash": "ce96c1cbd093f8444832dc114bd5885444e859d81cdc759005ad31da54ccd10b",
+        "fullPromptHash": "41b3e156c3460eed8024121397e530a263f1ebd59bfcaa7005008afd863394bd",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-15",
+        "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+        "packetHash": "8b7347d4230a8f6469ce3a8ed7c6ea989c8300a4a366e5ba375c0f9cfb9c8dcb",
+        "fullPromptHash": "e4f69f52dcbb4bc1e5feae5b2c87b9f92889a6c09f221b2115a2d51bf8131308",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-16",
+        "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+        "packetHash": "09fec9cf6eafb960575c9751bb85bd0efcc3813ed4d51ce5097bf93333ec7ad3",
+        "fullPromptHash": "bcf14ea92ce5748b3353a4e4b8f13bb2031cf2e1f7100ef391a2fcc0d9ac06bf",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-17",
+        "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+        "packetHash": "6209841fef850da7865d5d7a863b299be3b917a5c53ed81ff2fdae2bc66c51c9",
+        "fullPromptHash": "90b903cd83768cd18dbf5ef29c702b45328da5ee880d8bbc5cb15ad4492ad81f",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-18",
+        "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+        "packetHash": "c088019b6b4bc0d3226d419c9cfe3d8633ccee0f242a32c83b1c47e6c115bab1",
+        "fullPromptHash": "fd36b6cc7a26cc55fb49552efef89a47e315771b5ed04a3c1bd3ea68eb27529a",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-19",
+        "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+        "packetHash": "9679422f8af09da5dfdee71351b1747f65163d29909a63ddf952183c2fa3d572",
+        "fullPromptHash": "d3dc0d8ab72733a63d9993eee93d15e7d7fe9e9fc3833038b9af5a280ddfe837",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-20",
+        "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+        "packetHash": "4a7491d6ef1712281c5e3a2d7e5166faf60b14c9684d6d777e733a6b5d96b830",
+        "fullPromptHash": "fee3dc89cca6c7638caf7481f9891c41c2779112b92563ba90057b281690a596",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-21",
+        "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+        "packetHash": "4092ec4ef9e6efc9db4efb5ac2b63ae11f1a7612b7c6ff5a70cca96c9cc5e9df",
+        "fullPromptHash": "f1e023431aefa5214b3bfa0c656b906c751a59a56c38d6f7ca31ebc184f482c8",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-22",
+        "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+        "packetHash": "c0859a95b006d7cda5b7a2c482c81a9e0d2ff0598d85deec895d949c66baf63c",
+        "fullPromptHash": "da55e31c8ad5a3bcaf18680f8c72cfe3d86113a9d3717ed6a97032f54428e51a",
+        "developmentRole": "KNOWN_CASE_DEVELOPMENT_RETEST"
+      },
+      {
+        "id": "W7-23",
+        "caseHash": "a819c2fbe01e22d24427f820972e223e55e3c0b583347cbf8c310f9d290d869c",
+        "packetHash": "5f507525d274a2c04187b0e8c965c2bf1a132587f1f370cfa514ca9c2c82c1b3",
+        "fullPromptHash": "3fb6651420c69125d683218e2a57c6b1f63daab9ef3e4e0c785c079154379f1b",
+        "developmentRole": "NEW_TEMPORAL_HOLDOUT"
+      },
+      {
+        "id": "W7-24",
+        "caseHash": "054ca63eb57e632996fb639ef372dc9b37f68d885c2de7401e0af3b05c11b4d0",
+        "packetHash": "2a9316269167fc76a9e995e194f2b97227a91e5b93067a66097ebd24dc779f5e",
+        "fullPromptHash": "307ee2c8c31e45cf9009a9d14114f756719c9af0a3b24eb785e3a8a5ea87c8d8",
+        "developmentRole": "NEW_TEMPORAL_HOLDOUT"
+      },
+      {
+        "id": "W7-25",
+        "caseHash": "d5d8aaa4d1ab4b6f9962aa3427dcb44061dcb93842b8c6517088dd48c10a9b04",
+        "packetHash": "ac94705c1876128e9f3747a4b87c7d6d82fb6d3503d11fcfcaee1afc7c3f6697",
+        "fullPromptHash": "29641b8fbedb569c839d1ea3e6c23eb31112a81d6cb787ebf2888062d8dab3c8",
+        "developmentRole": "NEW_TEMPORAL_HOLDOUT"
+      },
+      {
+        "id": "W7-26",
+        "caseHash": "c307c2363cd338a4b9011d7d7c32c0c8a5de1ab5b2c0364d3629d22f76c766e7",
+        "packetHash": "05d41d1f9e3c084b4f60ab79a2f150210496ab7c501f9309be9b962f6ecb6838",
+        "fullPromptHash": "8992f285fa6b1d2f5d603590bd74bbcdfe01d3da7cf5c64ff28e4eda6116011a",
+        "developmentRole": "NEW_TEMPORAL_HOLDOUT"
+      }
+    ],
+    "configuration": {
+      "modelId": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "actorId": "/root/w7_context_analyst",
+      "configurationEvidence": "Local root turn_context; subagent inherited configuration with no override. Not provider attestation.",
+      "modelComparison": "One configured model only; no other-model performance claim",
+      "sourceAccess": "Original files named in each blind packet available and inspection required",
+      "packetFormat": "CASE_CONTEXT_1"
+    },
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "instruction": "Inspect each case and its original retained sources. Before reasoning, verify and echo that caseContext exactly: caseId, cutoffAt and evidence availability. Never carry a cutoff or identity from another case. Distinguish capture/publication availability, financial period, event date and hypothetical decision time; do not invent a temporal defect. Assess sector reasoning, counterevidence, numerical interpretation, decision usefulness and uncertainty. Context checks do not replace substantive prose review. Return packetFormat CASE_CONTEXT_1 and your caseContext in each original output. No other answers, truth or reviewer feedback. No trading authorization.",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "promptHashMeaning": "Shared instruction template; full per-case instruction+packet separately hashed",
+    "toolPermissions": {
+      "permitted": "Context packet files, referenced original retained sources, PDF skill/extraction/render dependencies, clock and arithmetic, own writing and parent coordination",
+      "prohibited": "Truth, curator scripts, other agent answers/reviews, outside market evidence after cutoff, trading or scheduling"
+    },
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "priorAttempt": {
+      "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+      "disposition": "Separate excerpt-only attempt retained; not source-access-conforming. Fresh actor receives no outputs, truth or feedback. Both results reported; no best-answer selection."
+    },
+    "priorAttempts": [
+      {
+        "registrationPath": "verification/w7-completion-20261026/run-registration.json",
+        "disposition": "Retained failed excerpt-only attempt"
+      },
+      {
+        "registrationPath": "verification/w7-completion-20261026/source-run-registration.json",
+        "disposition": "Retained failed source-access attempt; generic metadata-context correction, no original answers changed"
+      }
+    ],
+    "claim": "22 development retests plus4 newly frozen temporal holdouts. Fresh analyst sees no prior answers/truth/feedback. No untouched26-case or universal reliability claim."
+  },
+  "contentHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7"
+}

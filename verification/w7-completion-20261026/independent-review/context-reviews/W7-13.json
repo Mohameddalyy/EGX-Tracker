@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.956Z",
+  "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+  "runHash": "154da6093d3082f8265c4be24c4d65b100c19f628813372d9b4329da4441c204",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Identifies business mix, financing and integration implications, but remains high-level because pro-forma evidence is absent."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Balances Orascom resolutions with remaining OCI/regulatory conditions and deadline."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct exchange ratio and 463.4 arithmetic; source dates and contingent status match retained note."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Requires current effective documentation, issuance and ownership before valuation/sizing."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "No invented fractional settlement, completion, dilution loss or synergy."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

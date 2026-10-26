@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.988Z",
+  "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+  "runHash": "cfa6657e50734d951e86fc2589dc7857d80448b2109a93a8327d0411e5b8c204",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Separates construction gross profitability from collection/cash quality and CIRA allocation."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Positive gross profit does not resolve cash or source provenance."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct 9.721289456010746% ratio with compatible inputs and approximate display."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Distinguishes computable display ratio from critical identity/actions and issuer-link clearance."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "No authentication or investment permission inferred from branding/arithmetic."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-02",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The visually inspected ADIB consolidated income statement, physical page 4, reports total six-month profit of EGP7,550,833 thousand, of which EGP7,536,797 thousand belongs to bank shareholders. Their difference is EGP14,036 thousand, agreeing with the non-controlling-interest line. The shareholder amount is the relevant earnings scope when assessing the bank's ordinary equity; total group profit includes earnings attributable to other owners. It is not the separate bank-only profit.\n\nThe small net ECL charge of EGP2,176 thousand is helpful to current reported earnings, but it is a flow after releases and charges, not a stock measure of asset quality. The same page's EGP78,142 thousand second-quarter release demonstrates netting across time. Strong positive funding income is supportive, while missing stage balances, impaired-financing ratios, collateral, coverage, write-offs and provision assumptions prevent a clean-loan conclusion. Recoveries or model changes could influence net ECL, but the page does not establish that either occurred. A bank valuation needs sustainable attributable earnings, capital adequacy, distributions and valuation inputs as well as credit quality. Decision: keep the earnings scope correct, request the financing-quality and capital schedules, and wait on any investment recommendation; do not interpret a low charge as evidence of no risk.",
+  "extractedNumbers": [
+    {
+      "id": "shareholder_profit",
+      "unit": "EGP thousand",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 7536797
+    },
+    {
+      "id": "nci_difference",
+      "unit": "EGP thousand",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 14036
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

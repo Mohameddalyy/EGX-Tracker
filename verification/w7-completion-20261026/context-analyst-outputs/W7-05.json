@@ -1,0 +1,55 @@
+{
+  "caseId": "W7-05",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-05",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "phdc-highlights",
+        "availableAt": "2026-10-25T22:52:57.067Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 178.158
+      },
+      {
+        "id": "phdc-statements",
+        "availableAt": "2026-10-25T22:52:57.067Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 178.158
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.427Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-05\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-highlights\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"phdc-statements\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nPalm Hills page 1 reports rounded new contract sales of EGP182 billion and collections of EGP26 billion for 9M ended 30 September 2025. The selected statement on page 4 gives recognized revenue of EGP25,549,856 thousand, exactly 25.549856 billion at its disclosed precision. This is the quantitative anchor. Direct one-decimal rounding gives 25.5 billion; the chairman's 25.6 billion is a conflicting approximate narrative, potentially a rounding convention difference, not a second revenue stream. I do not average the headlines or silently elevate either over the detailed statement.\n\nDeveloper contract sales reflect bookings; revenue reflects accounting recognition; collections include receipts on older receivables and new bookings. Adding them double-counts overlapping economic activity. Collections are gross inflows, not operating cash flow after land, construction and other payments. Sales and the 225 billion undelivered backlog support demand visibility, but cancellation risk, installment duration and future construction costs limit conversion to distributable cash. Page 4's operating cash flow of only 0.748335 billion is material counterevidence to treating 26 billion collections as free cash. I would keep a watch/research stance pending backlog aging, cancellations, delivery assumptions, cost-to-complete, receivable quality and current financing/valuation. These historical selected statements cannot establish present trade readiness.",
+  "extractedNumbers": [
+    {
+      "id": "rounded_new_sales",
+      "unit": "EGP billion",
+      "period": "nine months ended 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-highlights",
+      "value": 182
+    },
+    {
+      "id": "recognized_revenue",
+      "unit": "EGP billion",
+      "period": "nine months ended 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-statements",
+      "value": 25.549856
+    },
+    {
+      "id": "rounded_collections",
+      "unit": "EGP billion",
+      "period": "nine months ended 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-highlights",
+      "value": 26
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

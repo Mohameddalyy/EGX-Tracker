@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.793Z",
+  "payload": {
+    "caseId": "W7-20",
+    "caseHash": "29e70f6833a826461cb541e9db9b8a09d2fadd6513b7d7de105021df13cb982d",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "cfa6657e50734d951e86fc2589dc7857d80448b2109a93a8327d0411e5b8c204",
+    "reviewHash": "0440974c819559f0cc10e68385c8b65f6115715252ff5c19f971049be04c398e",
+    "categories": [
+      "incompleteFinancials",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "computed_gross_margin",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 1,
+    "denominator": 1,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Separates construction gross profitability from collection/cash quality and CIRA allocation."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Positive gross profit does not resolve cash or source provenance."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct 9.721289456010746% ratio with compatible inputs and approximate display."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Distinguishes computable display ratio from critical identity/actions and issuer-link clearance."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No authentication or investment permission inferred from branding/arithmetic."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.441,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "f1eb180f40e0964a319813a60daefd0aa346bc05d9fea773ca6039de01527154"
+}

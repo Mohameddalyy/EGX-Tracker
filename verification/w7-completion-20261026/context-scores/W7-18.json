@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.787Z",
+  "payload": {
+    "caseId": "W7-18",
+    "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "4abdfa9dc0751735077a200d1d9fccd67ea89c007bd9985b1173d6ad774b9071",
+    "reviewHash": "90686234a01a9ce84369b883cae1b95dc4663e932941355d4c55752875af9c24",
+    "categories": [
+      "riskExceptions",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "free_settled_cash",
+        "status": "CORRECT"
+      },
+      {
+        "id": "desired_shares",
+        "status": "CORRECT"
+      },
+      {
+        "id": "funded_share_ceiling",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Focuses on funding/implementation risk while clearly flagging absent issuer-sector evidence."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Acknowledges smaller arithmetic capacity without authorizing it."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct free cash, 500 desired shares, 50 ceiling and EGP9000 shortfall."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Rejects unfunded allocation and requires independently permitted sizing and substantive thesis."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Confidence is uncalibrated; fees, quote, actions and execution are not assumed."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.439,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "c85a8e8b5b245a152157c242251a98a319005e1c398a83b969b05a546c3b5f83"
+}

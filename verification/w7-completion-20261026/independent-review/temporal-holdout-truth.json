@@ -1,0 +1,187 @@
+{
+  "reviewerActorId": "/root/w7_completion_reviewer",
+  "reviewedAt": "2026-10-26T08:51:06.405Z",
+  "status": "VERIFIED",
+  "scope": "POST_FAILURE_DEVELOPMENT_VALIDATION",
+  "filenameCaveat": "The requested temporal-holdout-truth filename is retained, but these four cases were authored after a failure and are not untouched generalization data.",
+  "cases": 4,
+  "numericalItems": 9,
+  "independence": "Separate AI reviewer; no truth values or feedback sent to analyst. Arithmetic derived from retained source timestamps, not copied from truth values. Not human-independent validation.",
+  "checks": [
+    {
+      "caseId": "W7-23",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-23.input.json",
+      "inputByteHash": "24a9ee91c4b0bd490b84df619ff3efc26e9a7bb4e19e8b88be5e2620674632e5",
+      "cutoffAt": "2026-10-25T23:20:01.003Z",
+      "sources": [
+        {
+          "id": "temporal-facts-23",
+          "path": "data/research/evidence/w7-evaluation/temporal-case-23.json",
+          "sourceByteHash": "45d20121d8ab43c81c72842f9e02c6c16628fd4437eeb35da27105b2ee36699d",
+          "passageMatchesParsedSource": true,
+          "availableAt": "2026-10-25T23:19:59.892Z",
+          "availableAtCutoff": true
+        }
+      ],
+      "numbers": [
+        {
+          "id": "capture_age_seconds",
+          "independentValue": 2.111,
+          "recordedValue": 2.111,
+          "formula": "cutoffAt - facts.noticeCapturedAt",
+          "unit": "seconds",
+          "period": "relative to W7-23 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-23",
+          "evidenceId": "temporal-facts-23",
+          "status": "VERIFIED"
+        },
+        {
+          "id": "seconds_until_scheduled_action",
+          "independentValue": 13.889,
+          "recordedValue": 13.889,
+          "formula": "facts.scheduledActionAt - cutoffAt",
+          "unit": "seconds",
+          "period": "relative to W7-23 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-23",
+          "evidenceId": "temporal-facts-23",
+          "status": "VERIFIED"
+        }
+      ],
+      "reasoning": "Notice publication and capture precede this cutoff; scheduled action follows it. No observation establishes completion."
+    },
+    {
+      "caseId": "W7-24",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-24.input.json",
+      "inputByteHash": "d8e15d670b5cd6cbf510bf2d3a71148ec4b508beb47b4d87340e93ba1e007b98",
+      "cutoffAt": "2026-10-25T23:20:02.110Z",
+      "sources": [
+        {
+          "id": "temporal-facts-24",
+          "path": "data/research/evidence/w7-evaluation/temporal-case-24.json",
+          "sourceByteHash": "2d2451f0dc8f13393e4e1236352dcf911f0698a267fdbba7553851c338b8bf4c",
+          "passageMatchesParsedSource": true,
+          "availableAt": "2026-10-25T23:20:01.006Z",
+          "availableAtCutoff": true
+        }
+      ],
+      "numbers": [
+        {
+          "id": "period_to_publication_minutes",
+          "independentValue": 1260,
+          "recordedValue": 1260,
+          "formula": "facts.documentPublishedAt - facts.financialPeriodEndedAt",
+          "unit": "minutes",
+          "period": "financial period end to document publication",
+          "entity": "SYNTHETIC-TEMPORAL-24",
+          "evidenceId": "temporal-facts-24",
+          "status": "VERIFIED"
+        },
+        {
+          "id": "decision_to_publication_seconds",
+          "independentValue": 30,
+          "recordedValue": 30,
+          "formula": "facts.documentPublishedAt - facts.hypotheticalDecisionAt",
+          "unit": "seconds",
+          "period": "hypothetical original decision to publication",
+          "entity": "SYNTHETIC-TEMPORAL-24",
+          "evidenceId": "temporal-facts-24",
+          "status": "VERIFIED"
+        },
+        {
+          "id": "capture_age_seconds",
+          "independentValue": 1.104,
+          "recordedValue": 1.104,
+          "formula": "cutoffAt - facts.documentCapturedAt",
+          "unit": "seconds",
+          "period": "relative to W7-24 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-24",
+          "evidenceId": "temporal-facts-24",
+          "status": "VERIFIED"
+        }
+      ],
+      "reasoning": "Publication is 21 hours after period end and 30 seconds after hypothetical decision. Period date does not establish publication; document capture precedes current evaluation cutoff."
+    },
+    {
+      "caseId": "W7-25",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-25.input.json",
+      "inputByteHash": "204c1295a8393a615f6d7d6ce99a48d53530a390cd512eb17edf89ba35bb982f",
+      "cutoffAt": "2026-10-25T23:20:03.220Z",
+      "sources": [
+        {
+          "id": "temporal-facts-25",
+          "path": "data/research/evidence/w7-evaluation/temporal-case-25.json",
+          "sourceByteHash": "8abba0023c0ba7b2ff77eb8a3a9f93bfc34f37ec993ea971e7f8280b96bcd376",
+          "passageMatchesParsedSource": true,
+          "availableAt": "2026-10-25T23:20:02.112Z",
+          "availableAtCutoff": true
+        }
+      ],
+      "numbers": [
+        {
+          "id": "announcement_age_minutes",
+          "independentValue": 15.018466666666667,
+          "recordedValue": 15.018466666666667,
+          "formula": "cutoffAt - facts.announcementPublishedAt",
+          "unit": "minutes",
+          "period": "relative to W7-25 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-25",
+          "evidenceId": "temporal-facts-25",
+          "status": "VERIFIED"
+        },
+        {
+          "id": "seconds_until_meeting",
+          "independentValue": 863998.892,
+          "recordedValue": 863998.892,
+          "formula": "facts.scheduledMeetingAt - cutoffAt",
+          "unit": "seconds",
+          "period": "relative to W7-25 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-25",
+          "evidenceId": "temporal-facts-25",
+          "status": "VERIFIED"
+        }
+      ],
+      "reasoning": "Announcement is already available at cutoff, but the meeting is future and proceedings/approval/completion remain unknown."
+    },
+    {
+      "caseId": "W7-26",
+      "inputPath": "verification/w7-completion-20261026/cases-source/W7-26.input.json",
+      "inputByteHash": "6a3337df4abeab7de99a63d2184efebe7d88cbb4624e69a4bd246c0c075494d9",
+      "cutoffAt": "2026-10-25T23:20:04.330Z",
+      "sources": [
+        {
+          "id": "temporal-facts-26",
+          "path": "data/research/evidence/w7-evaluation/temporal-case-26.json",
+          "sourceByteHash": "b94046e1f427010b031bf66326f0ac4015114257c9a18e957a4224919e8f2cab",
+          "passageMatchesParsedSource": true,
+          "availableAt": "2026-10-25T23:20:03.223Z",
+          "availableAtCutoff": true
+        }
+      ],
+      "numbers": [
+        {
+          "id": "decision_to_capture_seconds",
+          "independentValue": 90,
+          "recordedValue": 90,
+          "formula": "facts.incomingEvidenceCapturedAt - facts.hypotheticalOriginalDecisionAt",
+          "unit": "seconds",
+          "period": "hypothetical original decision to incoming capture",
+          "entity": "SYNTHETIC-TEMPORAL-26",
+          "evidenceId": "temporal-facts-26",
+          "status": "VERIFIED"
+        },
+        {
+          "id": "incoming_capture_age_seconds",
+          "independentValue": 31.107,
+          "recordedValue": 31.107,
+          "formula": "cutoffAt - facts.incomingEvidenceCapturedAt",
+          "unit": "seconds",
+          "period": "relative to W7-26 cutoffAt",
+          "entity": "SYNTHETIC-TEMPORAL-26",
+          "evidenceId": "temporal-facts-26",
+          "status": "VERIFIED"
+        }
+      ],
+      "reasoning": "Incoming capture is after original decision and before current retrospective cutoff. Original archive lacks receipt; document date does not prove first public availability, which is explicitly null."
+    }
+  ]
+}

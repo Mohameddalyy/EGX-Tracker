@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:08.997Z",
+  "payload": {
+    "caseId": "W7-05",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-05",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "phdc-highlights",
+          "availableAt": "2026-10-25T22:52:57.067Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 178.158
+        },
+        {
+          "id": "phdc-statements",
+          "availableAt": "2026-10-25T22:52:57.067Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 178.158
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.427Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-05\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"phdc-highlights\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158},{\"id\":\"phdc-statements\",\"availableAt\":\"2026-10-25T22:52:57.067Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":178.158}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nPalm Hills page 1 reports rounded new contract sales of EGP182 billion and collections of EGP26 billion for 9M ended 30 September 2025. The selected statement on page 4 gives recognized revenue of EGP25,549,856 thousand, exactly 25.549856 billion at its disclosed precision. This is the quantitative anchor. Direct one-decimal rounding gives 25.5 billion; the chairman's 25.6 billion is a conflicting approximate narrative, potentially a rounding convention difference, not a second revenue stream. I do not average the headlines or silently elevate either over the detailed statement.\n\nDeveloper contract sales reflect bookings; revenue reflects accounting recognition; collections include receipts on older receivables and new bookings. Adding them double-counts overlapping economic activity. Collections are gross inflows, not operating cash flow after land, construction and other payments. Sales and the 225 billion undelivered backlog support demand visibility, but cancellation risk, installment duration and future construction costs limit conversion to distributable cash. Page 4's operating cash flow of only 0.748335 billion is material counterevidence to treating 26 billion collections as free cash. I would keep a watch/research stance pending backlog aging, cancellations, delivery assumptions, cost-to-complete, receivable quality and current financing/valuation. These historical selected statements cannot establish present trade readiness.",
+    "extractedNumbers": [
+      {
+        "id": "rounded_new_sales",
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights",
+        "value": 182
+      },
+      {
+        "id": "recognized_revenue",
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 25.549856
+      },
+      {
+        "id": "rounded_collections",
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights",
+        "value": 26
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "00070155b6e5a22b39506fbd626297d66266f9a38810574705c6e4000ca721c1",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+    "packetHash": "2f163c86fbbfa5ab6327da44b0796dae563b004e108446b35aed2f4043289b43",
+    "outputHash": "5cdc5f6e2d397c7e14d133df289a58be547a4549d93df3e25b0d128d11b5f86f",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-05.json",
+    "originalFileHash": "382c93da1e9aa27bd5adeb641bfdd462e75ebd50bc0dca4a70038c20243fd282",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "1955d419c3b4beada85eb743cfc2bdc9e5dc6bc7f3052056cee7efa72bdc2758"
+}

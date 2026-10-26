@@ -1,0 +1,19 @@
+{
+  "id": "W7-04",
+  "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+  "task": "Reconcile the two simultaneous segment presentations. Extract K-12 normalized profit before and after allocation and calculate the uplift. Explain why the allocation is not evidence of improved total cash earnings or a later statutory restatement; retain the source provenance caveat. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"k12_before\",\"unit\":\"EGP million\",\"period\":\"9M FY2025/26\",\"entity\":\"CIRA K-12 segment\",\"evidenceId\":\"cira-segments\"},{\"id\":\"k12_after\",\"unit\":\"EGP million\",\"period\":\"9M FY2025/26\",\"entity\":\"CIRA K-12 segment\",\"evidenceId\":\"cira-segments\"},{\"id\":\"allocation_uplift\",\"unit\":\"EGP million\",\"period\":\"9M FY2025/26\",\"entity\":\"CIRA K-12 segment\",\"evidenceId\":\"cira-segments\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "cira-segments",
+      "contentHash": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e",
+      "source": "https://irfiles.technologyverse.com/cira/CIRA-Earnings-9M26-E-vf.pdf",
+      "availableAt": "2026-10-23T16:29:09.072Z",
+      "passage": "Physical page 4. 9M25/26 EGP million, printed first segment table: higher-education normalized net profit 1,505.0; K-12 normalized net profit (321.5); total 1,183.5. Weighted segmentation adjustment table: higher-education normalized net profit 1,134.2; K-12 normalized net profit 49.3; total 1,183.5. Footnote: EBITDA and net profit reclassed between K-12 and Higher-Ed by EGP370.8m (EGP25.5m G&A and EGP345.3m finance cost). These are simultaneous presentations, not evidence of a later statutory restatement. Source limitation: Branded retained IR-service PDF; issuer-to-service link is not yet reconciled. This is evidence-reading evaluation, not cleared issuer provenance.",
+      "localPath": "data/research/evidence/w7-evaluation/cira-9m-2026.pdf",
+      "page": 4,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

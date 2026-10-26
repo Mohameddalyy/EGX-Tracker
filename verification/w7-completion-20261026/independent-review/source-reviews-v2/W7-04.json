@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.898Z",
+  "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+  "runHash": "057a371084036760dbd0e60b17ec952eeccb206a96c9f62cf4cd32bf2e8896b5",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains shared campus overhead and financing allocations and standalone economics."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Uses original operational tables: falling normalized EBITDA, teacher growth exceeding student growth, and lower utilization challenge a simple turnaround."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct segment reallocation and unchanged total; correctly separates25.5 million G&A effect on EBITDA from345.3 million finance cost below EBITDA."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Retains both presentations and requests provenance and segment cash reconciliation."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Separates management allocation from statutory revision and preserves unresolved IR-service provenance."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

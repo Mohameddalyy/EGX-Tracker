@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-19",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "ORAS original consolidated statements show six-month net profit USD127.8 million and operating cash flow -USD54.5 million, so profit minus operating cash flow is USD182.3 million. The profit/cash gap matters for a contractor that finances work before customer collections: receivables consumed USD329.2 million, requiring investigation of collection timing, retention and disputed claims. The gap is not itself a fraud finding or a forecast of loss.\n\nCounterevidence is substantial: operating profit was USD179.5 million, contract advances and excess billings generated cash, and reported ending cash was USD1,230.1 million. These provide reasons to research rather than assume inevitable distress. However, unrestricted liquidity, debt commitments, receivable collectability, current valuation and project risks remain unresolved. Cash can be large yet committed to projects.\n\nThe technical pass is explicitly a synthetic assumption, not an observed signal. Exactly one mechanical opportunity remains in the denominator even if discretionary research declines it; the result is one mechanical opportunity and no authorized trade. No refreshed action, liquidity, valuation or macro clearance is supplied. Decision: wait for research on cash conversion and the missing entry checks. Do not erase the opportunity to improve apparent selection statistics, and do not convert either technical compliance or positive accounting earnings into investment certainty.",
+  "extractedNumbers": [
+    {
+      "id": "profit_cash_gap",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": 182.3
+    },
+    {
+      "id": "mechanical_opportunities",
+      "unit": "opportunities",
+      "period": "fixture decision event",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "scenario-trigger",
+      "value": 1
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

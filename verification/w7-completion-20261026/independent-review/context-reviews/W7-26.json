@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:09.024Z",
+  "caseHash": "c307c2363cd338a4b9011d7d7c32c0c8a5de1ab5b2c0364d3629d22f76c766e7",
+  "runHash": "1cc1d56479a8ed3fdcef5637b449f940b82b24cb4db96f5f6c55461579967c1d",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Limits conclusion to temporal archive evidence rather than issuer/sector inference."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Distinguishes absence of earlier archive receipt from proof of global nonpublication."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct 90-second delay, 31.107 incoming age and 1.107 evaluation-record age."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Permits retrospective inspection and excludes document from demonstrated original decision inputs."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Keeps first public availability null and refuses backdating from calendar document date."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

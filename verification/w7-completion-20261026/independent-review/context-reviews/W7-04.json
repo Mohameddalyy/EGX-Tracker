@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.909Z",
+  "caseHash": "06d4a6ba3286eed22fc4f7d32fdd1b9508450127a6d98477a39ac97cfaec343b",
+  "runHash": "ea946fa9ae07db4ae4b442ee822f822b18126ea06603a65159ad0c21917295b7",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains tuition/enrollment economics, shared overhead, staffing and financing burden."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Uses falling K-12 EBITDA and easing utilization to challenge allocation-driven apparent improvement."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct 370.8 uplift, equal offset and unchanged total; G&A versus below-EBITDA finance allocation is correctly distinguished."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Retains both presentations and requests allocation, cash/debt and issuer-link reconciliation."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not infer statutory restatement, group cash improvement or cleared provenance."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

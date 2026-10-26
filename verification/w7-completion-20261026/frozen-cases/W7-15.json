@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "case",
+  "createdAt": "2026-10-25T23:06:44.912Z",
+  "payload": {
+    "id": "W7-15",
+    "categories": [
+      "thinLiquidity",
+      "noTrade"
+    ],
+    "task": "Calculate effective exit capacity, actually executable whole-order exit quantity and retained exposure. Explain pending exit and valuation uncertainty without fabricating sale proceeds. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"exit_capacity\",\"unit\":\"shares\",\"period\":\"fixture exit event\",\"entity\":\"ENGINEERING-B\",\"evidenceId\":\"scenario-exit\"},{\"id\":\"executed_exit\",\"unit\":\"shares\",\"period\":\"fixture exit event\",\"entity\":\"ENGINEERING-B\",\"evidenceId\":\"scenario-exit\"},{\"id\":\"retained_shares\",\"unit\":\"shares\",\"period\":\"fixture exit event\",\"entity\":\"ENGINEERING-B\",\"evidenceId\":\"scenario-exit\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+    "evidence": [
+      {
+        "id": "scenario-exit",
+        "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+        "source": "local:authored-synthetic-engineering-scenarios",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-B holds 800 shares. Exit is all-or-none. Fixture minute volume 10,000 shares, daily reference volume 30,000 shares; minute ceiling 2%, daily ceiling 5%. No later executable observation exists. Unfilled quantity remains held. These fixture ceilings do not amend production policy.",
+        "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+      }
+    ],
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "frozenAt": "2026-10-25T23:06:44.912Z",
+    "truth": {
+      "checkedBy": "/root/w7_case_curator",
+      "checkedAt": "2026-10-25T22:55:55.225Z",
+      "numbers": [
+        {
+          "id": "exit_capacity",
+          "value": 200,
+          "absoluteTolerance": 0,
+          "unit": "shares",
+          "period": "fixture exit event",
+          "entity": "ENGINEERING-B",
+          "evidenceId": "scenario-exit"
+        },
+        {
+          "id": "executed_exit",
+          "value": 0,
+          "absoluteTolerance": 0,
+          "unit": "shares",
+          "period": "fixture exit event",
+          "entity": "ENGINEERING-B",
+          "evidenceId": "scenario-exit"
+        },
+        {
+          "id": "retained_shares",
+          "value": 800,
+          "absoluteTolerance": 0,
+          "unit": "shares",
+          "period": "fixture exit event",
+          "entity": "ENGINEERING-B",
+          "evidenceId": "scenario-exit"
+        }
+      ]
+    },
+    "curation": {
+      "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+      "notes": [],
+      "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+      "syntheticContext": true,
+      "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+    },
+    "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+    "groundTruthStatus": "SUPPLIED_ADJUDICATION_REQUIRES_INDEPENDENT_REVIEW"
+  },
+  "contentHash": "699afef6012fb899efb6f1e9102059e62a6a0768a3d2d258e098a8f27646d51e"
+}

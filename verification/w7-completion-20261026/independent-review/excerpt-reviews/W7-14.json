@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.928Z",
+  "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+  "runHash": "c985b98d0ba45930c4e373a184b7e2a8b9cc300a53a0c868dacc653fbf06d034",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Appropriately declines invented issuer/sector fundamentals and focuses on supported liquidity economics."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Acknowledges daily pass while explaining the independent binding minute failure."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct capacities and zero whole-order execution; no implicit partial fill."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Records failed gate and requires a new authorized evaluation for any smaller/later order."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Keeps fixture ceilings distinct from production rules and real market observations."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

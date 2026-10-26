@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.985Z",
+  "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+  "runHash": "69888b1063f4aac3f5ba51d1fd478391f39d9ddac9cee7847032c265f1f67d2e",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects customer demand and payment concentration without inventing sector or other holdings."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Positive EBITDA, funding and possible timing explanation are weighed against rumor, overdue receivables and concentrated renewal risk."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct shares, returns, adverse equity and opportunity count; extra80% two-outcome breakeven probability is mathematically correct and explicitly hypothetical, not a supplied likelihood."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Justifies abstention substantively; smaller sizing does not repair weak evidence."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Separates stated levels from expected return, probability and guaranteed stop execution."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

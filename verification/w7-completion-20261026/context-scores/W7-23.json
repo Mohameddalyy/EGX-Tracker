@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.801Z",
+  "payload": {
+    "caseId": "W7-23",
+    "caseHash": "a819c2fbe01e22d24427f820972e223e55e3c0b583347cbf8c310f9d290d869c",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "1ba52863f3e2b239e3843844c5c766cd7a978aff1b8e2263db99a0db7de7e603",
+    "reviewHash": "a2f7764072439cfd590cf78599c0aa8e3721be3dadb405ac9cadd6080a88144e",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "capture_age_seconds",
+        "status": "CORRECT"
+      },
+      {
+        "id": "seconds_until_scheduled_action",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Appropriately states this timing-only fixture supplies no sector/issuer economics; no unsupported thesis."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Balances available notice with absence of completion, without inferring failure."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct distinct 1.111 record age, 2.111 notice age and 13.889 seconds to action."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Keeps schedule knowable and completion unconfirmed, specifying evidence needed to change status."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Correct exact cutoff; synthetic timestamps and lack of proceedings remain explicit."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.443,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "b500e3f0fca8532d418385fc534cec549cc477703bddec7b89e0a7cb6fa382ef"
+}

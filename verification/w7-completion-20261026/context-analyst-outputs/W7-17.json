@@ -1,0 +1,41 @@
+{
+  "caseId": "W7-17",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-17",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "scenario-correlation",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.438Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-17\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"scenario-correlation\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe combined ENGINEERING-D and ENGINEERING-E exposure is EGP30,000 + EGP20,000 = EGP50,000, which is 50% of EGP100,000 portfolio equity. This quantifies the amount allocated to businesses sharing USD-priced imported-input dependence and EGP sales. It is not a measured covariance, correlation coefficient or estimated portfolio loss.\n\nAn adverse FX move could raise local input costs for both and pressure margins if repricing lags, so different security names do not automatically diversify that common factor. Conversely, contract pass-through, inventory timing, hedging, pricing power and differing demand might mitigate or separate outcomes; none is supplied, so perfect correlation would be as unjustified as zero correlation. Missing return history means correlation is unknown, not absent. Nor does lack of hedging evidence prove no hedges exist. I would flag the 50% common-factor allocation for stress review and defer any claim of adequate diversification or permission to add. Needed inputs include contractual cost pass-through, currency cash flows, hedges, operating sensitivity and appropriate return observations. One could compare a smaller combined exposure or cash alternative, but no fixed cap, expected return, or actual market loss is established by this synthetic packet.",
+  "extractedNumbers": [
+    {
+      "id": "combined_exposure",
+      "unit": "EGP",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-D and ENGINEERING-E",
+      "evidenceId": "scenario-correlation",
+      "value": 50000
+    },
+    {
+      "id": "shared_exposure_percent",
+      "unit": "percent of equity",
+      "period": "fixture decision event",
+      "entity": "ENGINEERING-D and ENGINEERING-E",
+      "evidenceId": "scenario-correlation",
+      "value": 50
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

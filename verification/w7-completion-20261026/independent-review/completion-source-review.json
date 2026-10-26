@@ -1,0 +1,50 @@
+{
+  "reviewedAt": "2026-10-26T08:53:44.335Z",
+  "reviewerActorId": "/root/w7_completion_reviewer",
+  "evaluationReleaseHash": "850196437ac563d3659696491bfdf8e4f55bf923c75c9617fa70ce16293f07db",
+  "sourceDisposition": "NO_NEW_ACTIONABLE_DEFECT_ESTABLISHED_IN_REVIEWED_SOURCES",
+  "sourceHashes": [
+    {
+      "path": "app/v5/fixed-exit-attribution.mjs",
+      "sha256": "5025ddeaf83801b8ed949143a68271521476792579be695475daa69d196eff8d"
+    },
+    {
+      "path": "app/v5/evaluation-provenance.mjs",
+      "sha256": "e0a5bc1d9c0f13c94c40c575ffc7d5692be9fc3b167026d57c2ec4a946931375"
+    },
+    {
+      "path": "app/v5/evaluation-matrix.mjs",
+      "sha256": "d34bb7f97f24d627f93a86b8cd3da395946aa80b972459a98ad49d9cb80ec012"
+    },
+    {
+      "path": "app/v5-w7.test.mjs",
+      "sha256": "e0111e2f135d97ab9539637336b935a6de003eb35a906673e90a0ce9a7a3a80e"
+    }
+  ],
+  "method": "Read current fixed-exit, provenance and matrix source plus prior separate-actor review/fix records; independently reran all current W7 regressions.",
+  "tests": {
+    "command": "node --test app/v5-w7.test.mjs",
+    "passed": 23,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 18083.19
+  },
+  "verifiedSafeguards": [
+    "Original ledger is replayed before the conditional counterfactual; wrapper cannot substitute events/config.",
+    "Supplemental events are restricted to additionally held counterfactual exposure within original observation period, without original exposure/pending order.",
+    "Later desired entry reuses original proposal and caps quantity by original accepted quantity and recomputed funded limits.",
+    "Mandatory exits and action holds remain; missing marks produce explicit blocked/provisional results.",
+    "Reporting binds execution/evaluation releases, full admitted calendar and pre-activity baseline.",
+    "Matrix binds attribution to exact original ledger state and release; no promotion or prospective interpretation."
+  ],
+  "priorRecords": [
+    "independent-review/fixed-exit-review.md",
+    "independent-review/fix-verification.md",
+    "independent-review/final-source-review.json"
+  ],
+  "limits": [
+    "Separate AI source review plus synthetic regressions; not a full correctness proof, market-data authentication, trading edge or operational readiness.",
+    "Earlier reproduced failures and fixes remain attributed to their original reviewer; this record does not claim to have authored or rerun those original standalone reproductions."
+  ],
+  "registrationClarification": "Read appended context-registration-clarification.json; correctly retains original immutable registration and explicitly limits new temporal cases to post-failure development validation."
+}

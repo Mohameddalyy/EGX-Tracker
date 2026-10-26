@@ -1,0 +1,39 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.964Z",
+  "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+  "runHash": "6a2d241795c0f9e33f3f2d4166b809c707a653160398d267e9bb1deeb8a06ee8",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 3,
+      "reason": "Addresses name concentration and absent sector/common-factor information."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Separates funding sufficiency from the independent cap and reserved cash."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct EGP15000 cap, EGP1000 headroom and EGP1000/500 conditional ceilings."
+    },
+    "decisionUsefulness": {
+      "score": 3,
+      "reason": "Rejects full proposal and grants no order permission, but omits an explicit reminder that an existing-position addition also faces the frozen no-pyramiding control; a noncritical completeness gap."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Correctly restricts fixture caps to this exercise and calls ceilings conditional, with execution inputs missing."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [
+    {
+      "type": "NONCRITICAL_COMPLETENESS_GAP",
+      "detail": "The conditional addition ceilings are not execution permission; an explicit no-pyramiding reminder for the existing position would improve the response. No actual addition or production-rule override is authorized in the answer."
+    }
+  ],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

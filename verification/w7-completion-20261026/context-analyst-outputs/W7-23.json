@@ -1,0 +1,41 @@
+{
+  "caseId": "W7-23",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-23",
+    "cutoffAt": "2026-10-25T23:20:01.003Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-23",
+        "availableAt": "2026-10-25T23:19:59.892Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 1.111
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.443Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-23\",\"cutoffAt\":\"2026-10-25T23:20:01.003Z\",\"evidence\":[{\"id\":\"temporal-facts-23\",\"availableAt\":\"2026-10-25T23:19:59.892Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.111}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-23, cutoffAt \"2026-10-25T23:20:01.003Z\". The fixture record is available at 23:19:59.892Z, 1.111 seconds before this exact cutoff. Within the fictional facts, publication at 23:19:55.892Z and notice capture at 23:19:58.892Z are already past. Elapsed time from notice capture to this cutoff is 2.111 seconds; scheduled action at 23:20:14.892Z is 13.889 seconds after it. Notice capture is not the later evaluation-record capture.\n\nThe existence of an announced schedule is knowable at this cutoff, even though the scheduled action is future. That does not establish completed action. The record expressly has no completion observation, so I retain status as scheduled, completion unconfirmed; I do not infer failure either. A later completion record, cancellation, postponement or other verified event observation would be required to change that status. The dates are synthetic scenario events, not issuer observations. No financial period, security valuation, sector effect or trading implication is supplied, so none is invented. The bounded paper conclusion is to accept the available notice as a notice and withhold any conclusion about actual proceedings or completion.",
+  "extractedNumbers": [
+    {
+      "id": "capture_age_seconds",
+      "unit": "seconds",
+      "period": "relative to W7-23 cutoffAt",
+      "entity": "SYNTHETIC-TEMPORAL-23",
+      "evidenceId": "temporal-facts-23",
+      "value": 2.111
+    },
+    {
+      "id": "seconds_until_scheduled_action",
+      "unit": "seconds",
+      "period": "relative to W7-23 cutoffAt",
+      "entity": "SYNTHETIC-TEMPORAL-23",
+      "evidenceId": "temporal-facts-23",
+      "value": 13.889
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

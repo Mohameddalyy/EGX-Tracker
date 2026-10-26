@@ -1,0 +1,157 @@
+{
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.447Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "toolCalls": 28,
+  "toolCallsBasis": "Underlying execution/data tools counted once for this shared analyst batch through the original-output creation command: 15 exec_command calls (including the final creation command), 10 view_image calls, 1 load_workspace_dependencies call, 1 clock curr_time call, 1 apply_patch call. functions.exec wrappers, coordination messages, and waiting for READY are excluded. No per-case costs or provider token counts available.",
+  "byTool": {
+    "exec_command": 15,
+    "view_image": 10,
+    "load_workspace_dependencies": 1,
+    "clock_curr_time": 1,
+    "apply_patch": 1
+  },
+  "failedToolOperations": [
+    {
+      "tool": "exec_command",
+      "detail": "After successful PHDC text extraction, attempted optional fitz import failed because fitz was not installed; recovered with installed Poppler and pypdf embedded image extraction."
+    }
+  ],
+  "caseCount": 26,
+  "perCaseToolCallsAssigned": 0,
+  "sharedSources": 11,
+  "originalOutputs": [
+    {
+      "caseId": "W7-01",
+      "sha256": "f980a052fa769fc7301b15584752c3116652386228581fcd3571c52897b6e511",
+      "finishedAt": "2026-10-26T09:03:37.421Z"
+    },
+    {
+      "caseId": "W7-02",
+      "sha256": "4d63174a9bf408c2ff3e3e08c6d4e3b8b3fb2b36cf429979ce5b1640f94b0c14",
+      "finishedAt": "2026-10-26T09:03:37.424Z"
+    },
+    {
+      "caseId": "W7-03",
+      "sha256": "1fd036f02501190bbd35dba6e0369d30833b755a42b906a638baff7a6139a83b",
+      "finishedAt": "2026-10-26T09:03:37.425Z"
+    },
+    {
+      "caseId": "W7-04",
+      "sha256": "2da6d475d682ee1e53ab5e56af1d5661c6c10d3071a01fee73c5405a12927fb0",
+      "finishedAt": "2026-10-26T09:03:37.427Z"
+    },
+    {
+      "caseId": "W7-05",
+      "sha256": "382c93da1e9aa27bd5adeb641bfdd462e75ebd50bc0dca4a70038c20243fd282",
+      "finishedAt": "2026-10-26T09:03:37.427Z"
+    },
+    {
+      "caseId": "W7-06",
+      "sha256": "7f7f57f34d32c060d9b6e9e1be26732f8463b15faebbffda2fe7379f0b862da4",
+      "finishedAt": "2026-10-26T09:03:37.429Z"
+    },
+    {
+      "caseId": "W7-07",
+      "sha256": "4204472f3410edf37454a8f7a26dbe098c19a430a94e62136148938835bfc163",
+      "finishedAt": "2026-10-26T09:03:37.430Z"
+    },
+    {
+      "caseId": "W7-08",
+      "sha256": "99df69566281b9496f7936f72367e9aebd174230915a76c0a2fd61acb12cc8b6",
+      "finishedAt": "2026-10-26T09:03:37.431Z"
+    },
+    {
+      "caseId": "W7-09",
+      "sha256": "9485d5d76ecf7b494ca07256f13cbd7a99464c2d378bede1a923c927944eb528",
+      "finishedAt": "2026-10-26T09:03:37.431Z"
+    },
+    {
+      "caseId": "W7-10",
+      "sha256": "cb2a4f87106981e5e699e8ccbd1902a804c81f03ffc5cf5a56a814b82da80d07",
+      "finishedAt": "2026-10-26T09:03:37.432Z"
+    },
+    {
+      "caseId": "W7-11",
+      "sha256": "8fcc8596bf0345c21769d72c05653171bf8330456a7f4d957d882178efb1eefa",
+      "finishedAt": "2026-10-26T09:03:37.433Z"
+    },
+    {
+      "caseId": "W7-12",
+      "sha256": "985a3a0d45b3e04eab617661b0b4eae5c905b8438e64b3994bf88cee99b96088",
+      "finishedAt": "2026-10-26T09:03:37.434Z"
+    },
+    {
+      "caseId": "W7-13",
+      "sha256": "32491ccdf66284beb18f4c3e1c81f1612be853b5fced2f5d1e0387e76bfad3ba",
+      "finishedAt": "2026-10-26T09:03:37.435Z"
+    },
+    {
+      "caseId": "W7-14",
+      "sha256": "5dc74199940480f520e8e991346d87ce450932b1f081efa1bb4df20896f9738f",
+      "finishedAt": "2026-10-26T09:03:37.436Z"
+    },
+    {
+      "caseId": "W7-15",
+      "sha256": "8b30bd5faa20c1d255b65a1d623342d6a410805904f603111544786d58a6c595",
+      "finishedAt": "2026-10-26T09:03:37.436Z"
+    },
+    {
+      "caseId": "W7-16",
+      "sha256": "7b44753bdc4e266ab22fae1299ab946fcddb286376fc34e2fd7d4ec365f67c16",
+      "finishedAt": "2026-10-26T09:03:37.437Z"
+    },
+    {
+      "caseId": "W7-17",
+      "sha256": "9c6fa15937e40d0c89e0ab1e9d167c62504d85094ef17705293ce92364e63fdf",
+      "finishedAt": "2026-10-26T09:03:37.438Z"
+    },
+    {
+      "caseId": "W7-18",
+      "sha256": "46f249d0fc3f02096abeec3afa8dfe6ab6d5fed829ee8492e069cd58a986200c",
+      "finishedAt": "2026-10-26T09:03:37.439Z"
+    },
+    {
+      "caseId": "W7-19",
+      "sha256": "4dbbac833507ecd938fce1c1f16fb133ded68903043d329d8025a961c548b6fb",
+      "finishedAt": "2026-10-26T09:03:37.439Z"
+    },
+    {
+      "caseId": "W7-20",
+      "sha256": "7696a2653371f33077b734c9bee259cd5d21257c676d198a49e77926217a16d1",
+      "finishedAt": "2026-10-26T09:03:37.441Z"
+    },
+    {
+      "caseId": "W7-21",
+      "sha256": "15cd1d64032bd1b8c9d8d30c1bcf91a330fed296d401acf56d8351fe5101c44c",
+      "finishedAt": "2026-10-26T09:03:37.441Z"
+    },
+    {
+      "caseId": "W7-22",
+      "sha256": "b74ba5bf3a36630006136e13ac0bf4d84e6a8d477db4f089467d51a6accc275b",
+      "finishedAt": "2026-10-26T09:03:37.443Z"
+    },
+    {
+      "caseId": "W7-23",
+      "sha256": "61a0abc5da29637a00a9b44f1067dced20d6c562240413fbc18285900e12edc1",
+      "finishedAt": "2026-10-26T09:03:37.443Z"
+    },
+    {
+      "caseId": "W7-24",
+      "sha256": "fb66993d01353d069330f96af6544368493e1b50192ce475a85778c291611a4a",
+      "finishedAt": "2026-10-26T09:03:37.444Z"
+    },
+    {
+      "caseId": "W7-25",
+      "sha256": "00081fa6cbabc11404b4c15c6dc476d658511f95ef1c59208cdeac395c310a4c",
+      "finishedAt": "2026-10-26T09:03:37.445Z"
+    },
+    {
+      "caseId": "W7-26",
+      "sha256": "5548829d330306a6d6afc2c9b0ca3f1b016df72873761e3b1f9507a92f6d651c",
+      "finishedAt": "2026-10-26T09:03:37.446Z"
+    }
+  ],
+  "writeMode": "exclusive create; never rewritten after review/scoring",
+  "blindnessCaveat": "See source-inspection.json for incidental preFreezeCorrection metadata in one expressly permitted original source."
+}

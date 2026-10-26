@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.831Z",
+  "payload": {
+    "caseId": "W7-11",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:37.4988619Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Conditionally reading the supplied issuer table, a one-for-ten stock dividend adds one share for every ten held: the share-count multiplier is 1 + 1/10 = 1.1 (cib-dividends). An eligible hypothetical 1,000-share holding would receive 100 additional shares and become 1,100 shares, with no fractional issue in this fixture (scenario-bonus). The table labels this a stock dividend, not a split. A stock dividend distributes additional shares; a split subdivides existing shares under its own terms. Both can require per-share-price/history adjustments, but they are not interchangeable corporate-action descriptions.\n\nThere is a timing defect in the packet: cib-dividends has an actual capture timestamp of 2026-10-25T22:56:12.986Z, which is 17.761 seconds after this case's cutoff of 22:55:55.225Z. Thus the numerical extraction is explicitly conditional interpretation of the supplied text, not proof that this evidence was available at the strict cutoff. A new earlier verified source or a prospectively changed cutoff would be needed for an admissible as-of claim.\n\nThe table gives record and payment dates of 16 and 17 December 2025, respectively; it provides no ex-date. More shares alone do not establish an economic gain, bank earnings growth or stronger capital. Per-share prices may adjust, but no price path or adjustment vintage is supplied, so neither a raw-price change nor shareholder return can be calculated. Missing data include eligibility verification beyond the fixture, adjusted/unadjusted prices, other distributions, fees/taxes and action details. Bounded decision: retain the conditional 1,100-share scenario arithmetic, flag the cutoff issue, and withhold return and trade-clearance conclusions.",
+    "extractedNumbers": [
+      {
+        "id": "share_multiplier",
+        "unit": "multiple",
+        "period": "2025 stock dividend",
+        "entity": "Commercial International Bank Egypt",
+        "evidenceId": "cib-dividends",
+        "value": 1.1
+      },
+      {
+        "id": "post_bonus_shares",
+        "unit": "shares",
+        "period": "2025 stock dividend hypothetical position",
+        "entity": "Commercial International Bank Egypt",
+        "evidenceId": "scenario-bonus",
+        "value": 1100
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "032f13b113f7e631901ad9441ec326f358a881969b6d9b9de2df00f15d2372b4",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "60aaaabbd811d5a77b6b2de7f452414e7bea7ecdabaa47d7a60d5f2219574046",
+    "packetHash": "f189999482d008a84ec0b20d9da6702282ae9631b1aac315cc8f24a9cb64ae97",
+    "outputHash": "bc8433b3b48f9fdc86dd586c5ac634a69dc45877a9e6b2fd32770151519aebdd",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-11.json",
+    "originalFileHash": "006457772527ebf3a95df8cffede41c519b56e118f21769cb51b3a955d466cf0",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "0706d0fd21c7cbdb91174596febb1fe6ce11c95572d41588bb5055e19f9b8401"
+}

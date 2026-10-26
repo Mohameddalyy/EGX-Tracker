@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-06",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:36.1848970Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "Net current assets are EGP99,982,419 thousand minus EGP98,786,344 thousand = EGP1,196,075 thousand, or EGP1.196075 billion (phdc-statements). The summary separately reports rounded net debt of EGP4.2 billion at the same date (phdc-summary). The small positive current-asset surplus is a balance-sheet classification result, not a cash reserve or liquidation surplus. Reported cash and equivalents are EGP9,204,446 thousand; neither that amount nor reported net debt establishes unrestricted cash accessible to meet every obligation.\n\nFor a developer, current assets can include inventories and long-dated installment receivables, while current liabilities may include customer advances linked to construction/delivery obligations. Their economic timing and realizability differ. Missing customer-advance detail prevents interpreting all current liabilities as immediately cash-payable debt, and equally prevents treating customer-funded construction obligations as harmless. Receivables including off-balance-sheet amounts of EGP248 billion cannot simply be added to recognized assets or assumed collectible immediately.\n\nPositive net current assets, reported cash and positive operating cash flow are counterevidence to an automatic insolvency conclusion. Conversely, net debt and the narrow current-asset buffer do not establish comfortable liquidity. We lack debt maturities, interest and covenant terms, restricted balances, collection aging, project commitments, guarantees and the composition and enforceability of off-balance-sheet receivables. A cash-runway estimate needs timed cash inflows/outflows and accessible funding; liquidation value needs asset realizability, claim priorities and disposal costs. Neither can be derived here.\n\nBounded decision: maintain a liquidity diligence question, not a numerical runway or liquidation target. Request those schedules before sizing an investment; no actual payment failure, market clearance or current trade authorization is evidenced.",
+  "extractedNumbers": [
+    {
+      "id": "net_current_assets",
+      "unit": "EGP thousand",
+      "period": "as at 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-statements",
+      "value": 1196075
+    },
+    {
+      "id": "rounded_net_debt",
+      "unit": "EGP billion",
+      "period": "as at 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-summary",
+      "value": 4.2
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "W7-16",
+  "caseHash": "c2f97b9832278d62fa1b98843941a848a9224cb2ae76b1bd88b387c6870c38af",
+  "task": "Calculate additional name headroom and maximum funded addition in each cash scenario under the fixture cap. Discuss why a desired allocation and available cash do not authorize concentration exceptions. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"name_headroom\",\"unit\":\"EGP\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-C\",\"evidenceId\":\"scenario-concentration\"},{\"id\":\"scenario_a_addition\",\"unit\":\"EGP\",\"period\":\"fixture scenario A\",\"entity\":\"ENGINEERING-C\",\"evidenceId\":\"scenario-concentration\"},{\"id\":\"scenario_b_addition\",\"unit\":\"EGP\",\"period\":\"fixture scenario B\",\"entity\":\"ENGINEERING-C\",\"evidenceId\":\"scenario-concentration\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "scenario-concentration",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Portfolio equity EGP100,000. Existing ENGINEERING-C exposure EGP14,000; desired addition EGP6,000; fixture name cap 15% of unchanged equity. Scenario A settled free cash EGP8,000. Scenario B settled cash EGP8,000 with EGP7,500 reserved. Other caps and fees ignored solely for arithmetic. No exception approval exists; fixture limits do not amend policy.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld.",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-16",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "scenario-concentration",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  }
+}

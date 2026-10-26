@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:16:37.590Z",
+  "payload": {
+    "caseId": "W7-12",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "The retained official CIB dividend-table capture prints a 2026 cash dividend of EGP6 per share. The synthetic eligible holding of 1,000 shares therefore has EGP6,000 gross entitlement, before any tax or fees. The stated record date is 6 April 2026 and payment date 9 April 2026. The table does not label an ex-date, and I do not infer one from either date or from presumed settlement conventions.\n\nA cash distribution can contribute to bank shareholder return but is not itself the total return or dividend yield. No entry price, final price, price-adjustment basis, reinvestment convention or net tax/fee outcome is provided. Positive payout is counterevidence to a claim that holders received no cash benefit; it is not proof of sustainable future distributions or safe bank capital. Need earnings quality, regulatory capital/distribution constraints and verified ownership/entitlement for a real holding. The fixture assumes entitlement only for its hypothetical holder.\n\nThe retained capture time, 25 October 2026 at 22:56:12.986Z, falls after the packet cutoff of 22:55:55.225Z. Its numerical content can be read for this requested exercise, but the record cannot establish availability by that earlier cutoff. Decision: record the conditional gross entitlement and exact date labels, flag the timestamp mismatch, and withhold any total-return or trading conclusion.",
+    "extractedNumbers": [
+      {
+        "id": "cash_dividend_per_share",
+        "unit": "EGP per share",
+        "period": "2026 cash dividend",
+        "entity": "Commercial International Bank Egypt",
+        "evidenceId": "cib-dividends",
+        "value": 6
+      },
+      {
+        "id": "gross_cash_entitlement",
+        "unit": "EGP",
+        "period": "2026 cash dividend hypothetical position",
+        "entity": "Commercial International Bank Egypt",
+        "evidenceId": "scenario-dividend",
+        "value": 6000
+      }
+    ],
+    "toolCalls": [],
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "7eb57cae7e2db655d2f6fdf651452a8693b43b79ddeac5b861827b0745b5ff46",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+    "packetHash": "b0e90b0dc13be20863e6da7f16e654fd9d9f3813331fd13d0917308f0fbeb9c6",
+    "outputHash": "e3f9d3e5a70860e009f7c7011bcd4d1b76ceb8f93f4e7e89878f3dc1fdad01cc",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-12.json",
+    "originalFileHash": "eb8b83b88d253f18f6c786cec039a467ca61bbac85fb898ffe428a3d055f7407",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "ec3fa70ca924a46793741b736c6d601f71222f7c2ba91885d3882af247863e15"
+}

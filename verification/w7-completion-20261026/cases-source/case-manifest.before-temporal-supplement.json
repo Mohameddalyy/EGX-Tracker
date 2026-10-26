@@ -1,0 +1,280 @@
+{
+  "createdAt": "2026-10-25T22:55:55.225Z",
+  "createdBy": "/root/w7_case_curator",
+  "count": 22,
+  "manifest": [
+    {
+      "id": "W7-01",
+      "path": "verification/w7-completion-20261026/cases-source/W7-01.input.json",
+      "categories": [
+        "banks"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-02",
+      "path": "verification/w7-completion-20261026/cases-source/W7-02.input.json",
+      "categories": [
+        "banks",
+        "incompleteFinancials"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-03",
+      "path": "verification/w7-completion-20261026/cases-source/W7-03.input.json",
+      "categories": [
+        "nonfinancials"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-04",
+      "path": "verification/w7-completion-20261026/cases-source/W7-04.input.json",
+      "categories": [
+        "nonfinancials",
+        "conflictingDocuments"
+      ],
+      "truthItems": 3,
+      "notes": [
+        "Backlog 04 substitution: actual simultaneous management-allocation conflict, not restatement-vintage test."
+      ]
+    },
+    {
+      "id": "W7-05",
+      "path": "verification/w7-completion-20261026/cases-source/W7-05.input.json",
+      "categories": [
+        "property"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-06",
+      "path": "verification/w7-completion-20261026/cases-source/W7-06.input.json",
+      "categories": [
+        "property",
+        "incompleteFinancials"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-07",
+      "path": "verification/w7-completion-20261026/cases-source/W7-07.input.json",
+      "categories": [
+        "conflictingDocuments"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-08",
+      "path": "verification/w7-completion-20261026/cases-source/W7-08.input.json",
+      "categories": [
+        "conflictingDocuments"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-09",
+      "path": "verification/w7-completion-20261026/cases-source/W7-09.input.json",
+      "categories": [
+        "delayedEvents"
+      ],
+      "truthItems": 1,
+      "notes": []
+    },
+    {
+      "id": "W7-10",
+      "path": "verification/w7-completion-20261026/cases-source/W7-10.input.json",
+      "categories": [
+        "delayedEvents",
+        "noTrade"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-11",
+      "path": "verification/w7-completion-20261026/cases-source/W7-11.input.json",
+      "categories": [
+        "corporateActions"
+      ],
+      "truthItems": 2,
+      "notes": [
+        "Backlog 11 substitution: real one-for-ten stock dividend, not a split."
+      ]
+    },
+    {
+      "id": "W7-12",
+      "path": "verification/w7-completion-20261026/cases-source/W7-12.input.json",
+      "categories": [
+        "corporateActions"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-13",
+      "path": "verification/w7-completion-20261026/cases-source/W7-13.input.json",
+      "categories": [
+        "corporateActions",
+        "riskExceptions"
+      ],
+      "truthItems": 2,
+      "notes": [
+        "Backlog 13 substitution: real conditional share-exchange combination, not rights issue."
+      ]
+    },
+    {
+      "id": "W7-14",
+      "path": "verification/w7-completion-20261026/cases-source/W7-14.input.json",
+      "categories": [
+        "thinLiquidity"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-15",
+      "path": "verification/w7-completion-20261026/cases-source/W7-15.input.json",
+      "categories": [
+        "thinLiquidity",
+        "noTrade"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-16",
+      "path": "verification/w7-completion-20261026/cases-source/W7-16.input.json",
+      "categories": [
+        "riskExceptions"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-17",
+      "path": "verification/w7-completion-20261026/cases-source/W7-17.input.json",
+      "categories": [
+        "riskExceptions"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-18",
+      "path": "verification/w7-completion-20261026/cases-source/W7-18.input.json",
+      "categories": [
+        "riskExceptions",
+        "noTrade"
+      ],
+      "truthItems": 3,
+      "notes": []
+    },
+    {
+      "id": "W7-19",
+      "path": "verification/w7-completion-20261026/cases-source/W7-19.input.json",
+      "categories": [
+        "nonfinancials",
+        "noTrade"
+      ],
+      "truthItems": 2,
+      "notes": []
+    },
+    {
+      "id": "W7-20",
+      "path": "verification/w7-completion-20261026/cases-source/W7-20.input.json",
+      "categories": [
+        "incompleteFinancials",
+        "noTrade"
+      ],
+      "truthItems": 1,
+      "notes": []
+    },
+    {
+      "id": "W7-21",
+      "path": "verification/w7-completion-20261026/cases-source/W7-21.input.json",
+      "categories": [
+        "riskExceptions"
+      ],
+      "truthItems": 4,
+      "notes": [
+        "Supplemental FULL discretionary case; no fixed cap, policy amendment, observed execution or prospective-performance claim.",
+        "Arithmetic has adjudicated truth; the chosen allocation does not have a predetermined numerical correct answer."
+      ]
+    },
+    {
+      "id": "W7-22",
+      "path": "verification/w7-completion-20261026/cases-source/W7-22.input.json",
+      "categories": [
+        "riskExceptions",
+        "noTrade"
+      ],
+      "truthItems": 5,
+      "notes": [
+        "Supplemental FULL discretionary case; no fixed cap, policy amendment, observed execution or prospective-performance claim.",
+        "Arithmetic has adjudicated truth; the chosen allocation does not have a predetermined numerical correct answer."
+      ]
+    }
+  ],
+  "sources": {
+    "adib": {
+      "file": "adib-h1-2026.pdf",
+      "url": "https://www.adib.eg/media/2757582/ADIBConsalidatedQ22026English.pdf",
+      "at": "2026-10-23T16:27:23.557Z",
+      "contentHash": "81ab810f9c38f68a84782589c7b010ec114d03c982ec8860bc4553b3225ef5cc"
+    },
+    "oras": {
+      "file": "oras-h1-2026.pdf",
+      "url": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "at": "2026-10-23T16:27:45.520Z",
+      "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533"
+    },
+    "cira": {
+      "file": "cira-9m-2026.pdf",
+      "url": "https://irfiles.technologyverse.com/cira/CIRA-Earnings-9M26-E-vf.pdf",
+      "at": "2026-10-23T16:29:09.072Z",
+      "limitation": "Branded retained IR-service PDF; issuer-to-service link is not yet reconciled. This is evidence-reading evaluation, not cleared issuer provenance.",
+      "contentHash": "aac74e7ffdb2195cf01f5ef4566bb272bfed60497d4b873dd640faeff0f1365e"
+    },
+    "phdc": {
+      "file": "phdc-9m-2025.pdf",
+      "url": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+      "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html",
+      "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "at": "2026-10-25T22:52:57.067Z"
+    },
+    "cib": {
+      "file": "cib-dividends-web-capture.json",
+      "url": "https://www.cibeg.com/en/investor-relations/governance/dividends",
+      "contentHash": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+      "at": "2026-10-25T22:56:12.986Z",
+      "captureType": "WEB_TOOL_RENDERED_PRIMARY_PAGE",
+      "failedDirectCapture": "cib-dividends.html"
+    }
+  },
+  "captureRepairAt": "2026-10-25T22:56:32.892Z",
+  "fullDiscretionSupplement": {
+    "at": "2026-10-25T23:04:24.080Z",
+    "addedCases": [
+      "W7-21",
+      "W7-22"
+    ],
+    "sourcePath": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json",
+    "sourceHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+    "policyAmendment": false,
+    "noPyramidingRepairAt": "2026-10-25T23:06:08.457Z"
+  },
+  "entityCorrection": {
+    "id": "W7-13",
+    "at": "2026-10-25T23:04:24.080Z",
+    "reviewerRequested": true
+  }
+}

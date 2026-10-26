@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-25T23:19:49.957Z",
+  "payload": {
+    "caseId": "W7-06",
+    "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "actorId": "/root/w7_source_analyst",
+    "reviewer": "/root/w7_independent_review",
+    "runHash": "9ff02b537f7472fa432d11a33eff91291c49573e26fdb48402afaf1bb4550e69",
+    "reviewHash": "e3dc451f7d4e4a222932680bb3fc6ffd4c13696c38d9a34f716ef00296021f31",
+    "categories": [
+      "property",
+      "incompleteFinancials"
+    ],
+    "numbers": [
+      {
+        "id": "net_current_assets",
+        "status": "CORRECT"
+      },
+      {
+        "id": "rounded_net_debt",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Interprets developer inventories, installment receivables and customer advances with timing discipline."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Balances positive current assets/cash with narrow buffer, net debt and obligations."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct source-page current-asset subtraction and net-debt distinction; positive accounting working capital is not free cash."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Declines unsupported runway and liquidation values and identifies required timed schedules."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Preserves uncertainty over restrictions, collectability, covenants and off-balance-sheet claims."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 226.135,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "bb7b019c28182c9d6dba088f0e9b06ed2c7f8c20aad618b24d8a28cadd252ddd"
+}

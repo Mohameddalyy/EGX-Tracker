@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-19",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:38.7514055Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "Issuer operating cash flow is negative USD54.5 million, while net profit is positive USD127.8 million for the same six-month period (oras-cash, consistent with oras-profit). Net profit minus operating cash flow is 127.8 - (-54.5) = USD182.3 million. This is an earnings-to-cash gap, not an additional loss to subtract from profit or proof that profit is false. The hypothetical technical gate supplies exactly one mechanical opportunity, which remains one even if discretion refuses investment (scenario-trigger).\n\nThe main adverse fundamental evidence is the USD329.2 million receivables cash absorption. Construction earnings can precede collection, and project timing, claims, retentions and customer funding can produce material working-capital strain. The packet does not establish which mechanism caused this movement. Positive operating profit and net profit, positive advances/billing movements, and ending cash of USD1,230.1 million are substantive counterevidence to an automatic distress conclusion. They also do not prove collections are healthy, cash unrestricted or future refinancing unnecessary.\n\nA full judgment needs receivable aging and collectability, subsequent collections, contract/payment terms, cash restrictions, debt maturities and sustained cash conversion. There is also no refreshed corporate-action, liquidity, valuation or macro clearance. The assumed technical pass neither supplies these data nor certifies a current real signal.\n\nBounded decision: decline a trade at this evidence state and prioritize cash-conversion and current clearance research. That is a discretionary response to unresolved risk, not a claim of fraud or inevitable insolvency and not a technical-gate failure. Preserve the one opportunity in the mechanical denominator and separately record the discretionary refusal. No later outcome, actual fill or return is available.",
+  "extractedNumbers": [
+    {
+      "id": "profit_cash_gap",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-cash",
+      "value": 182.3
+    },
+    {
+      "id": "mechanical_opportunities",
+      "unit": "opportunities",
+      "period": "fixture decision event",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "scenario-trigger",
+      "value": 1
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

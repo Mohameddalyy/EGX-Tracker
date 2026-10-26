@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:08.965Z",
+  "payload": {
+    "caseId": "W7-02",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-02",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "adib-income",
+          "availableAt": "2026-10-23T16:27:23.557Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196111.668
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.424Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-02\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"adib-income\",\"availableAt\":\"2026-10-23T16:27:23.557Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196111.668}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nPhysical page 4 distinguishes total consolidated net profit of EGP7,550,833 thousand from EGP7,536,797 thousand attributable to bank shareholders. Their difference, 7,550,833 - 7,536,797 = 14,036 thousand, agrees with the non-controlling-interest line. Shareholder valuation should use the owner-attributable earnings and a compatible share denominator, not award the whole group's earnings to the parent's ordinary shareholders.\n\nThe six-month net ECL charge is only EGP2,176 thousand, whereas the three-month column contains a release. This is favorable for the reported period's profit but cannot prove clean asset quality: a net flow can combine charges and reversals, and says little about the stock of troubled assets. The stronger net funds income is a separate supportive operating fact; neither it nor a small NCI amount resolves provisioning adequacy. The withheld loan-quality schedule leaves stage 2/3 exposure, nonperforming financing, coverage, restructuring, write-offs and concentration unknown. Average financing is missing for cost of risk; capital and funding resilience also matter for banks. I would retain the shareholder-profit attribution for research, but wait on an investment conclusion until those schedules, sustainable earnings and a current valuation are available. No fraud, impairment crisis, or clean-credit finding follows from the limited page.",
+    "extractedNumbers": [
+      {
+        "id": "shareholder_profit",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 7536797
+      },
+      {
+        "id": "nci_difference",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 14036
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "910b041e2025d92bf8c2b71124419bd49f8b242a6f10de5784e5ec51aea6115c",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+    "packetHash": "540e8ef8645a57ba147ac52804f172caab033ced2ac8ee6eb4034c3f8cf0f935",
+    "outputHash": "abb1c53aaebef34593a3ee298f4711739c8efa4623aa08dfcc7462a884ec61f4",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-02.json",
+    "originalFileHash": "4d63174a9bf408c2ff3e3e08c6d4e3b8b3fb2b36cf429979ce5b1640f94b0c14",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "54b46bea4fadfb0b50defbc37a5ace1878ea98f1b6181c25a167877153a32bd9"
+}

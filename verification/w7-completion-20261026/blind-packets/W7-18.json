@@ -1,0 +1,17 @@
+{
+  "id": "W7-18",
+  "caseHash": "fcc1eea4572be5c0aecdc9cab0dfac5bb646b3d739db772e5436d165b009f1a1",
+  "task": "Calculate free settled cash, desired shares and cash-funded whole-share ceiling. Reject the desired unfunded allocation and identify what remains required before any smaller order could be authorized. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"free_settled_cash\",\"unit\":\"EGP\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-F\",\"evidenceId\":\"scenario-funding\"},{\"id\":\"desired_shares\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-F\",\"evidenceId\":\"scenario-funding\"},{\"id\":\"funded_share_ceiling\",\"unit\":\"shares\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-F\",\"evidenceId\":\"scenario-funding\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "scenario-funding",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Entity ENGINEERING-F desired allocation EGP10,000, settled cash EGP3,000, existing reservations EGP2,000, assumed executable price EGP20/share, zero fees solely for this arithmetic fixture. Narrative confidence 95% is an assertion, not a permission or calibrated probability. Fractional shares prohibited. No borrowing or exception authorization.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

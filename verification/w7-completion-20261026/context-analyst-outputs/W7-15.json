@@ -1,0 +1,49 @@
+{
+  "caseId": "W7-15",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-15",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "scenario-exit",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.436Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-15\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"scenario-exit\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0.019}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nFor ENGINEERING-B, minute exit capacity is 10,000 x 2% = 200 shares and daily capacity is 30,000 x 5% = 1,500 shares. The effective exit capacity is 200. The actual exit is all-or-none for the 800-share holding, so executable whole-order quantity is zero and all 800 shares remain held. Capacity is not the quantity actually sold.\n\nThe daily allowance could accommodate the holding, but the minute constraint prevents execution and there is no later executable observation. I would retain the pending exit and exposure; I would not book sale proceeds, remove the position or treat 200 shares as sold. No price is supplied, so neither cash proceeds nor a reliable current monetary valuation can be computed. Market movement and future exit slippage remain unresolved; an intended exit is not a guaranteed stop fill. The fixture identifies no business sector or fundamentals, so specific corporate distress cannot be inferred. Common liquidity stress could make several exits difficult at once, but no covariance or scenario magnitude is supplied. The bounded outcome is an unexecuted exit with continuing risk, requiring a fresh permitted observation and valuation evidence before changing the ledger. These are paper assumptions, not an observed market failure.",
+  "extractedNumbers": [
+    {
+      "id": "exit_capacity",
+      "unit": "shares",
+      "period": "fixture exit event",
+      "entity": "ENGINEERING-B",
+      "evidenceId": "scenario-exit",
+      "value": 200
+    },
+    {
+      "id": "executed_exit",
+      "unit": "shares",
+      "period": "fixture exit event",
+      "entity": "ENGINEERING-B",
+      "evidenceId": "scenario-exit",
+      "value": 0
+    },
+    {
+      "id": "retained_shares",
+      "unit": "shares",
+      "period": "fixture exit event",
+      "entity": "ENGINEERING-B",
+      "evidenceId": "scenario-exit",
+      "value": 800
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

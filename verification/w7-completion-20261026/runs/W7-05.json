@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.822Z",
+  "payload": {
+    "caseId": "W7-05",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:36.1645076Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "The packet reports rounded new contract sales of EGP182 billion and rounded cash collections of EGP26 billion (phdc-highlights). The selected statement reports revenue of EGP25,549,856 thousand, which is EGP25.549856 billion (phdc-statements). One billion EGP is one million EGP thousand. At one decimal place, that exact statement amount rounds to EGP25.5 billion. The narrative's EGP25.6 billion is inconsistent with conventional one-decimal rounding of this exact number; I use the selected statement anchor and flag the narrative discrepancy rather than averaging the two or inventing a revised revenue figure.\n\nContract sales represent signed business whose recognition and collection may span future periods. Recognized revenue follows the relevant accounting recognition conditions; collections can relate both to current contracts and receivables from earlier sales. These measures describe different stages of a developer's cash and earnings cycle. Adding them would double count related activity, and EGP26 billion collected is a gross receipt measure, not operating cash generated after costs and working-capital movements.\n\nStrong sales, collections and backlog provide supportive indicators of demand and future activity, but cancellation risk, installment timing, construction obligations and cost inflation can weaken conversion into shareholder cash. Direct counterevidence to equating receipts with free cash is the selected operating cash flow of only EGP748,335 thousand despite the EGP26 billion collections headline; construction spending is also substantial. No cancellation schedule, backlog margin/cost-to-complete analysis, maturity detail or full accounting notes is supplied.\n\nBounded decision: use the three measures separately in a conversion model and request those missing schedules before judging valuation or financing capacity. The official-results-link provenance supports document origin but does not establish first public availability, current fundamentals, market liquidity or trade clearance.",
+    "extractedNumbers": [
+      {
+        "id": "rounded_new_sales",
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights",
+        "value": 182
+      },
+      {
+        "id": "recognized_revenue",
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 25.549856
+      },
+      {
+        "id": "rounded_collections",
+        "unit": "EGP billion",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-highlights",
+        "value": 26
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "83148764651498addd978945ddfe4a8097b99006f1f7b947dcc8d22c909d22c2",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+    "packetHash": "2685c14460264271542e6a2e7afe8779b8effd31d17a03971396ed74fa78bc41",
+    "outputHash": "489dcdeeb2beee1fba86eb527cb02ac6ede34dce1fdd40e954e5e5e53c76eeaa",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-05.json",
+    "originalFileHash": "157b8283cfd4a0207567afb8abc5f14e1a07050137af2b0802e30be49dd79abd",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "0c5ec579de3a28a016e0499972f169d94119d2b691ec244acbf3b23fbe569ec0"
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:13:58.823Z",
+  "payload": {
+    "caseId": "W7-06",
+    "startedAt": "2026-10-25T23:06:54.5661685Z",
+    "finishedAt": "2026-10-25T23:13:36.1848970Z",
+    "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+    "output": "Net current assets are EGP99,982,419 thousand minus EGP98,786,344 thousand = EGP1,196,075 thousand, or EGP1.196075 billion (phdc-statements). The summary separately reports rounded net debt of EGP4.2 billion at the same date (phdc-summary). The small positive current-asset surplus is a balance-sheet classification result, not a cash reserve or liquidation surplus. Reported cash and equivalents are EGP9,204,446 thousand; neither that amount nor reported net debt establishes unrestricted cash accessible to meet every obligation.\n\nFor a developer, current assets can include inventories and long-dated installment receivables, while current liabilities may include customer advances linked to construction/delivery obligations. Their economic timing and realizability differ. Missing customer-advance detail prevents interpreting all current liabilities as immediately cash-payable debt, and equally prevents treating customer-funded construction obligations as harmless. Receivables including off-balance-sheet amounts of EGP248 billion cannot simply be added to recognized assets or assumed collectible immediately.\n\nPositive net current assets, reported cash and positive operating cash flow are counterevidence to an automatic insolvency conclusion. Conversely, net debt and the narrow current-asset buffer do not establish comfortable liquidity. We lack debt maturities, interest and covenant terms, restricted balances, collection aging, project commitments, guarantees and the composition and enforceability of off-balance-sheet receivables. A cash-runway estimate needs timed cash inflows/outflows and accessible funding; liquidation value needs asset realizability, claim priorities and disposal costs. Neither can be derived here.\n\nBounded decision: maintain a liquidity diligence question, not a numerical runway or liquidation target. Request those schedules before sizing an investment; no actual payment failure, market clearance or current trade authorization is evidenced.",
+    "extractedNumbers": [
+      {
+        "id": "net_current_assets",
+        "unit": "EGP thousand",
+        "period": "as at 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 1196075
+      },
+      {
+        "id": "rounded_net_debt",
+        "unit": "EGP billion",
+        "period": "as at 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-summary",
+        "value": 4.2
+      }
+    ],
+    "toolCalls": 0,
+    "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available.",
+    "actorId": "/root/w7_blind_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "ac481cba3b7888be55e5394f6d980e1244da982052e6d295110021901c650750",
+    "promptHash": "d5993a72b38ad7b910d66f8d5232012dccd9a279cc346cdacfd9ee90edfe5e63",
+    "fullPromptHash": "7dd02cc47f76ae756a86ae0446576829baafd5d0fe7fd5c3564c4cba67b183dd",
+    "toolPermissionsHash": "68054a580f330b61b04722c8a5d3b4a9d7997557116e4abe352e35c53fe713e3",
+    "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+    "packetHash": "6485300efbc7256d83ebfe45ec583e7e5e2dbd174192a5954c1d08c87cd64ad6",
+    "outputHash": "6a3d77be8f11a05869f730736067ca0ce976bffd8e1f264b3c56080fdbee493c",
+    "originalFilePath": "verification/w7-completion-20261026/analyst-outputs/W7-06.json",
+    "originalFileHash": "4746a7fb5ea4e37e83b3749b35eb57be92eec35a98be870e5353a87c2b002e5b",
+    "registrationHash": "63c0c50ee1686e8f81a6b81cdf05a3b987afbeba8bc88df2eb6339d6aef37d7c",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "c079f593b67373ee4b23492c5aa9b679cfdf303b04000d766b124df5330d4aa5"
+}

@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.952Z",
+  "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+  "runHash": "d599b73af984232060e934d968657918e0654c7ee29a75868ba721058d5ba215",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects customer concentration and shared construction demand to liquidity-constrained downside."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Supportive debt-free/collected receipts/contract evidence receives a substantive customer/termination challenge."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct funding, exposures, joint stress and independently correct smaller-allocation illustration."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Conditionally defends funded concentration, offers smaller/zero alternatives, and preserves no-pyramiding."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "No unsupported probability, maximum-loss claim or optimality; explicit downside acceptance is not alone proof of value."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

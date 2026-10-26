@@ -1,0 +1,31 @@
+{
+  "caseId": "W7-06",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "Palm Hills selected balance-sheet figures on physical page 4 yield net current assets of EGP99,982,419 thousand minus EGP98,786,344 thousand = EGP1,196,075 thousand (EGP1.196075 billion). Physical page 2 reports rounded net debt of EGP4.2 billion. These are different measures: accounting working capital includes noncash assets and operational liabilities; net debt depends on the issuer's debt/cash definition. Neither is free cash available to investors.\n\nFor a developer, inventory and installments may convert over long construction and collection cycles, while customer advances create delivery obligations rather than ordinary borrowing. A thin positive current-asset cushion is a reason to inspect timing, not proof of insolvency. Counterevidence includes positive equity, EGP9.204446 billion cash/equivalents and positive historical operating cash flow; these do not establish cash availability or a runway. The EGP248 billion receivables figure includes off-balance-sheet amounts and must not simply be added to reported assets. Missing customer-advance composition, restrictions/escrow, debt maturities, contractual construction outlays, collectability, collateral and contingencies prevent a liquidation-value or cash-runway calculation. Total liabilities are not all financial debt. Decision: wait for a maturity and committed-cash bridge, retaining net current assets only as an accounting diagnostic; do not infer that EGP4.2 billion net debt is all debt due now or that receivables can fund it immediately.",
+  "extractedNumbers": [
+    {
+      "id": "net_current_assets",
+      "unit": "EGP thousand",
+      "period": "as at 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-statements",
+      "value": 1196075
+    },
+    {
+      "id": "rounded_net_debt",
+      "unit": "EGP billion",
+      "period": "as at 2025-09-30",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-summary",
+      "value": 4.2
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

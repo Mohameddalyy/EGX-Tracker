@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "kind": "registration-clarification",
+  "createdAt": "2026-10-26T08:52:14.905Z",
+  "payload": {
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "meaning": "The new four temporal cases were authored after the observed failure. The original registration word holdout means new to this analyst, not untouched generalization, statistical independence, or out-of-sample proof. Correct description is post-failure development validation.",
+    "originalRegistrationPreserved": true,
+    "casePacketsOrScoringChanged": false
+  },
+  "contentHash": "2a2501fb936f50129e87bded798065ea12aa7490a94c2ff155143e31f537e20b"
+}

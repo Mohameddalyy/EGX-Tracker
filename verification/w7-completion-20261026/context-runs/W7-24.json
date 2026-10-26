@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.216Z",
+  "payload": {
+    "caseId": "W7-24",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-24",
+      "cutoffAt": "2026-10-25T23:20:02.110Z",
+      "evidence": [
+        {
+          "id": "temporal-facts-24",
+          "availableAt": "2026-10-25T23:20:01.006Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 1.104
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.444Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-24\",\"cutoffAt\":\"2026-10-25T23:20:02.110Z\",\"evidence\":[{\"id\":\"temporal-facts-24\",\"availableAt\":\"2026-10-25T23:20:01.006Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.104}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-24, cutoffAt \"2026-10-25T23:20:02.110Z\". Its own evidence is captured at 23:20:01.006Z, 1.104 seconds before this cutoff and is available for this evaluation. The fictional financial period ends at 2026-10-25T00:00:00.000Z; publication is at 21:00:00.000Z, 21 hours or 1,260 minutes later. The hypothetical original decision at 20:59:30.000Z precedes publication by 30 seconds.\n\nSharing a calendar date does not make the period-end timestamp a publication timestamp. On the stated facts this document was not yet published at the hypothetical decision, so it cannot be treated as then-public evidence merely because the measured period had ended. At the current evaluation cutoff, both publication and capture are past, permitting retrospective inspection with the correct temporal label. This is not contradictory availability: the relevant information sets differ. The fixture does not establish earlier disclosure of equivalent facts or the contents of any other decision archive. Such evidence would be needed to expand that archive, and later publication cannot prove what was knowable beforehand. My bounded conclusion is current inspectability with exclusion as a published document from the earlier decision's stated set. No issuer quality, sector conclusion or trade follows from this synthetic timing exercise.",
+    "extractedNumbers": [
+      {
+        "id": "period_to_publication_minutes",
+        "unit": "minutes",
+        "period": "financial period end to document publication",
+        "entity": "SYNTHETIC-TEMPORAL-24",
+        "evidenceId": "temporal-facts-24",
+        "value": 1260
+      },
+      {
+        "id": "decision_to_publication_seconds",
+        "unit": "seconds",
+        "period": "hypothetical original decision to publication",
+        "entity": "SYNTHETIC-TEMPORAL-24",
+        "evidenceId": "temporal-facts-24",
+        "value": 30
+      },
+      {
+        "id": "capture_age_seconds",
+        "unit": "seconds",
+        "period": "relative to W7-24 cutoffAt",
+        "entity": "SYNTHETIC-TEMPORAL-24",
+        "evidenceId": "temporal-facts-24",
+        "value": 1.104
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "307ee2c8c31e45cf9009a9d14114f756719c9af0a3b24eb785e3a8a5ea87c8d8",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "054ca63eb57e632996fb639ef372dc9b37f68d885c2de7401e0af3b05c11b4d0",
+    "packetHash": "2a9316269167fc76a9e995e194f2b97227a91e5b93067a66097ebd24dc779f5e",
+    "outputHash": "439aeee6825f952d56500650ee0281a497283b40b68c96df5998dd2d7cf258b2",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-24.json",
+    "originalFileHash": "fb66993d01353d069330f96af6544368493e1b50192ce475a85778c291611a4a",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "5977c1e7e790ac124aada91fcf0dcb11ed5384edab4eef9779a28b48947e3856"
+}

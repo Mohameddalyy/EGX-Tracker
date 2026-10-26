@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.967Z",
+  "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+  "runHash": "e4f5be3885d2ceb6f45da1edce6c685c03dec90bb8a1354899f4316465da1921",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Develops USD-input/EGP-sales FX and margin mechanism."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Pass-through, inventory and hedge contingencies challenge a simple perfect-correlation story."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct EGP50000/50% gross exposure without covariance or loss inference."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Specifies currency/contract/hedging/sensitivity evidence before diversification claims."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Missing return/hedge evidence remains unknown rather than zero or nonexistent."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

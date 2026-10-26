@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.770Z",
+  "payload": {
+    "caseId": "W7-12",
+    "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "0aeccdd2c0299965241c9697f11dfc2a56b1e74765be43c7c730490ac6cad145",
+    "reviewHash": "8a6c8c2e63ed9222f2172c1f9bab6baa45f82f01a68d74ffae904e0464baf99d",
+    "categories": [
+      "corporateActions"
+    ],
+    "numbers": [
+      {
+        "id": "cash_dividend_per_share",
+        "status": "CORRECT"
+      },
+      {
+        "id": "gross_cash_entitlement",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Explains bank payout sustainability through capital, credit and recurring profit."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Distinguishes payout from total return and price adjustment from additional wealth."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct EGP6 and EGP6000 gross entitlement, date labels and current evidence availability."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Defers yield/performance until compatible price/action/holding inputs exist."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Preserves tax, fee, reinvestment, adjustment and actual-receipt uncertainty."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.434,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "2341d2b2896bad813ca1210d91074f5850c66b25a87b96fe258cb37671ef3f17"
+}

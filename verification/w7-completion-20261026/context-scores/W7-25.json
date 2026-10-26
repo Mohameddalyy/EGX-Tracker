@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.806Z",
+  "payload": {
+    "caseId": "W7-25",
+    "caseHash": "d5d8aaa4d1ab4b6f9962aa3427dcb44061dcb93842b8c6517088dd48c10a9b04",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "d0ee3d62d8b4395474f3a5937ba3c37a15b92d914cbda813aad324702da058b1",
+    "reviewHash": "5030eeaad314b0d5226eb121e8d81be8b42c912c2841a5f86a8c455a40a195ad",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "announcement_age_minutes",
+        "status": "CORRECT"
+      },
+      {
+        "id": "seconds_until_meeting",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "No sector/security claim is inferred from synthetic timing alone."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Balances available announcement with unknown future proceedings and possible postponement/cancellation."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct 901.108 seconds, minute conversion and 863998.892 remaining seconds; record age distinct."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Preserves announced schedule while withholding approval/completion."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Does not treat future event as unavailable announcement or an announced meeting as completed."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.445,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "f314e4447c79d62783fbd10aa5f6ae596ece61c4fb1e1bd5c5bda9b04fee401c"
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.742Z",
+  "payload": {
+    "caseId": "W7-02",
+    "caseHash": "58738b277f0a369c786df192ff3bce5712844718f5ce42c08f2fd3dc0c4b8600",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "47fb92246d9bbe5df610d1626a5469af49e8138e3ed28b0b728214cb48ded3f4",
+    "reviewHash": "853a466de0648f06b2cea027386e6670d78adb95287406f7fbcfa5f24ea70380",
+    "categories": [
+      "banks",
+      "incompleteFinancials"
+    ],
+    "numbers": [
+      {
+        "id": "shareholder_profit",
+        "status": "CORRECT"
+      },
+      {
+        "id": "nci_difference",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 4,
+        "reason": "Addresses bank capital, funding and credit-quality mechanisms."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Does not infer clean loans from small net ECL or small NCI; recognizes stronger funds income."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct total/owner profit difference and attribution, with period preserved."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Uses owner-attributable earnings and requests specific loan-quality schedules."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Neither claims clean credit nor fraud from missing schedules."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.424,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "3c8c6a25351caf1d329243f16b281d9712890e725b147124f395152e01f09138"
+}

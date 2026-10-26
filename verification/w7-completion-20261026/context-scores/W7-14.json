@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.776Z",
+  "payload": {
+    "caseId": "W7-14",
+    "caseHash": "e872b5217b1874048e780b33ca4bf2993290788d617609309807c50215b2f219",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "05153576fff716b865356a257d9a014ec8f7ef2737b6453aab85245f3881a4ff",
+    "reviewHash": "7953809387a5bd95d22ced06aea73b5715f9f88476c54409ada8a7b09d41fb4b",
+    "categories": [
+      "thinLiquidity"
+    ],
+    "numbers": [
+      {
+        "id": "minute_capacity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "daily_capacity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "effective_capacity",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Appropriately limits discussion to liquidity mechanism and notes absent issuer/sector information."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Recognizes daily pass but treats minute failure as binding."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct 600/1000/600 capacities and zero whole-order execution."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Rejects partial fill and requires fresh permitted observation/proposal."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Retains synthetic-volume and fixture-policy limits; no future liquidity assurance."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.436,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "608f2a9060713dc9c403231009ebfff0b65ca70330e869033f6e5d3648710621"
+}

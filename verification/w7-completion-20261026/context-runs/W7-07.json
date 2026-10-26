@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.016Z",
+  "payload": {
+    "caseId": "W7-07",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-07",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "oras-profit",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        },
+        {
+          "id": "oras-parent",
+          "availableAt": "2026-10-23T16:27:45.520Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196089.705
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.430Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-07\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"oras-profit\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705},{\"id\":\"oras-parent\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196089.705}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe ORAS consolidated statement is in USD millions, so its six-month total profit 127.8 becomes USD127,800,000. The separate parent's physical page 41 uses USD, giving USD5,155,743. Consolidated minus separate profit is 127,800,000 - 5,155,743 = USD122,644,257, subject to the consolidated figure's displayed million-unit precision. This is a scope difference, not an independently audited exact measure of subsidiary contribution: consolidation eliminations and non-controlling interests also matter. The parent's three-month profit 40,960,327 must not be substituted for its six-month result.\n\nThe page 41 footnote explicitly bases USD1.05 EPS on consolidated company-and-subsidiary earnings. Dividing separate-parent profit by that EPS mixes scopes and gives a spurious share count. Even consolidated total profit includes NCI, while ordinary EPS generally needs owner-attributable earnings and the actual weighted share denominator; rounding further limits reverse inference. Construction project profits can sit in subsidiaries while the holding company receives dividends and fees, explaining why separate and consolidated accounts answer different questions. Positive group profit is supportive, but parent cash availability, distribution restrictions and debt service cannot be inferred from it. I would use properly scoped earnings for research and obtain the EPS/share note and parent funding data before valuation or sizing.",
+    "extractedNumbers": [
+      {
+        "id": "group_profit",
+        "unit": "USD",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction consolidated",
+        "evidenceId": "oras-profit",
+        "value": 127800000
+      },
+      {
+        "id": "parent_profit",
+        "unit": "USD",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom Construction separate parent",
+        "evidenceId": "oras-parent",
+        "value": 5155743
+      },
+      {
+        "id": "scope_difference",
+        "unit": "USD",
+        "period": "six months ended 2026-06-30",
+        "entity": "Orascom consolidated minus separate",
+        "evidenceId": "oras-parent",
+        "value": 122644257
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "ca458c48c4f305b1005b11ebbefbd6bbf50aa1a630be5e17c3b05c212ab2a59b",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "3c95003675ec12eb881a074e53a7de6fc2ba39583eed09e079ffab1bd979dc1c",
+    "packetHash": "8460314b33a133b7233a45dbcb5b475b7616e6739ad888fd0876a0d7eb117bd0",
+    "outputHash": "71fdf687469ecf2fa4cf0109282db606ac13603cbd6398fb0e9b21fb5811156e",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-07.json",
+    "originalFileHash": "4204472f3410edf37454a8f7a26dbe098c19a430a94e62136148938835bfc163",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "599bc52728b1ac7caf2a82c61b5d1d698007c3d95f8494641c7158562f88b2f4"
+}

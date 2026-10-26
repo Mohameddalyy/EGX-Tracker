@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-08",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:36.2144571Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "ADIB total profit of EGP7,550,833 thousand converts to EGP7,550.833 million by dividing by 1,000 (adib-income). ORAS total profit is USD127.8 million as printed (oras-profit). Both cover six months ended 30 June 2026 and are consolidated total profit, but their currencies differ. The bare numbers cannot be ranked as monetary size or added into one total. A disclosed and purpose-appropriate FX conversion convention is required; no rate or rate history is supplied, so I do not invent one.\n\nEven after conversion, absolute profit is not an investment ranking. ADIB's bank economics depend on financing/deposit spreads, credit losses, funding stability and regulatory capital. ORAS's construction economics depend on project margins, backlog execution and cash collection timing. Different equity bases, leverage, business risks and earnings quality can reverse any conclusion based on profit size. Earnings available to common shareholders also require scope discipline: both selected totals include non-controlling interests.\n\nThe positive profits in both excerpts are supportive evidence of reported earnings. Counterevidence to a simplistic quality ranking is ADIB's quarter-level ECL release versus its small six-month charge, while the construction income statement alone contains no cash-conversion or backlog-quality evidence. Missing bank asset-quality and capital schedules and missing construction collection/cash schedules leave risk comparisons incomplete. Neither excerpt establishes durable growth or profitability under a common stress.\n\nBounded decision: report the native-currency figures side by side, request FX, attributable earnings, equity/capital and sector-specific cash/risk evidence, and postpone comparative valuation or allocation. There is no current price, liquidity or corporate-action clearance. These captured statement excerpts support arithmetic interpretation, not a verified historic-publication timeline or a market recommendation.",
+  "extractedNumbers": [
+    {
+      "id": "adib_profit_millions",
+      "unit": "EGP million",
+      "period": "six months ended 2026-06-30",
+      "entity": "ADIB Egypt consolidated",
+      "evidenceId": "adib-income",
+      "value": 7550.833
+    },
+    {
+      "id": "oras_profit_millions",
+      "unit": "USD million",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 127.8
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

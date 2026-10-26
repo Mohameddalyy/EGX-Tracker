@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-25T23:19:02.295Z",
+  "payload": {
+    "caseId": "W7-10",
+    "startedAt": "2026-10-25T23:12:21Z",
+    "finishedAt": "2026-10-25T23:16:07.135919Z",
+    "output": "From 30 September 2025 to the synthetic assessment date of 26 October 2026 is 391 elapsed calendar days. Palm Hills physical page 4's historical recognized revenue remains EGP25,549,856 thousand for nine months ended 30 September 2025. The scenario's EGP15 quote is expressly hypothetical and unverified; it neither establishes a tradable price nor refreshes the revenue period.\n\nA developer's sales pace, construction costs, customer collections, project completion and debt may change substantially over such an interval. Historical revenue and the release's positive earnings are useful baseline evidence, but cannot prove that economics persisted. Conversely, staleness is not evidence that the business deteriorated. A price-to-revenue or earnings valuation would additionally require appropriate current shares, entity scope, corporate actions, current debt/cash and comparable current or forecast fundamentals; mechanically pairing a fresh-looking price with old results produces false precision. No subsequent financial or action clearance is admitted here. Decision: wait for current permitted fundamentals and verified security/quote data before an investable valuation; preserve the historical number and its age in research rather than annualizing nine-month results as if they were current forward earnings.",
+    "extractedNumbers": [
+      {
+        "id": "financial_period_age",
+        "unit": "calendar days",
+        "period": "2025-09-30 to 2026-10-26",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "scenario-stale",
+        "value": 391
+      },
+      {
+        "id": "historical_revenue",
+        "unit": "EGP thousand",
+        "period": "nine months ended 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements",
+        "value": 25549856
+      }
+    ],
+    "toolCalls": 0,
+    "latencyBasis": {
+      "type": "shared_batch_authoring_interval",
+      "batchStartedAt": "2026-10-25T23:12:21Z",
+      "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+      "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+    },
+    "originalToolCalls": [],
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_source_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "830e31a16f63a64ccf0c65343431c80d390f551ff9aa8343140592a7982b17ee",
+    "promptHash": "50d69b8697440ce71a7398300b1cc940f750d7d575f3a378760ebc3a166a9ba7",
+    "fullPromptHash": "ac6c91bbefec88ab77138378d862ad5d56f14c585fa6ba130b1e107fc8a77a9d",
+    "toolPermissionsHash": "4c11b1c4905f13ad19390f9c7529ec996a3ee8cc78bf2e14f7c95c2d77ee0a5e",
+    "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+    "packetHash": "e51b2f5952a9e7a778872197865fc7f631664c5512eaeae9dceb95a51c7b110d",
+    "outputHash": "309e3f7dd89ceba0ce85fb3694ae725dcba3a4bf10494f37bed21c90fc938915",
+    "originalFilePath": "verification/w7-completion-20261026/source-analyst-outputs/W7-10.json",
+    "originalFileHash": "d95923127c8f22f151a8c1bbb17bcd0c648fa3fe257de6de329d6323b54a387c",
+    "registrationHash": "f77d6d277d55c555ccc7a11a920cff75196b945f422aee0098db75180fc4231a",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "b3cbffd73857b43cfb1dcd84592c216309c22ca455e0542e6a15a465460a7c47"
+}

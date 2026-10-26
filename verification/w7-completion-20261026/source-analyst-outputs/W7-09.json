@@ -1,0 +1,23 @@
+{
+  "caseId": "W7-09",
+  "startedAt": "2026-10-25T23:12:21Z",
+  "finishedAt": "2026-10-25T23:16:07.135919Z",
+  "output": "The inspected Palm Hills first page states a financial period end of 30 September 2025 and a release date of 13 November 2025. The elapsed calendar interval is 44 days. In the explicitly synthetic historical audit, the decision date is 1 November 2025, twelve days before the printed release date. This later-dated release cannot be retroactively treated as evidence known for that decision. It can be analyzed in the later audit, clearly segregated from the contemporaneous information set.\n\nDocument date, period end and retained capture answer different questions. The packet's actual retained capture is 25 October 2026 at 22:52:57.067Z; it establishes this retained artifact, not first public availability in 2025. The printed date is evidence of a document-stated release date, also not independent verification of the first public timestamp. An archived exchange announcement or equivalent contemporaneous record would be needed to admit specific earlier information. It remains possible some financial facts existed elsewhere before 1 November, but this packet does not establish that. For developers, sales and backlog information can affect valuation before audited statements, making timestamp discipline consequential. Decision: exclude this release from the original decision's evidence set, retain it for subsequent review, and do not transform historical growth or backlog into a prediction or retrospective trade justification.",
+  "extractedNumbers": [
+    {
+      "id": "period_end_to_release_days",
+      "unit": "calendar days",
+      "period": "2025-09-30 to 2025-11-13",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-highlights",
+      "value": 44
+    }
+  ],
+  "toolCalls": [],
+  "latencyBasis": {
+    "type": "shared_batch_authoring_interval",
+    "batchStartedAt": "2026-10-25T23:12:21Z",
+    "batchFinishedAt": "2026-10-25T23:16:07.135919Z",
+    "description": "All 22 answers were authored in one batch after shared source inspection. This is not a separate per-case inference latency. Shared reads, rendering, arithmetic and tools are recorded once in telemetry.json; do not multiply the batch interval by 22."
+  }
+}

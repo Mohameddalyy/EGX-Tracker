@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "kind": "case",
+  "createdAt": "2026-10-25T23:06:44.912Z",
+  "payload": {
+    "id": "W7-12",
+    "categories": [
+      "corporateActions"
+    ],
+    "task": "Extract cash dividend per share and calculate hypothetical gross entitlement. State record and payment dates in narrative; do not relabel either as ex-date. Explain why shareholder total return is unavailable from this packet. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"cash_dividend_per_share\",\"unit\":\"EGP per share\",\"period\":\"2026 cash dividend\",\"entity\":\"Commercial International Bank Egypt\",\"evidenceId\":\"cib-dividends\"},{\"id\":\"gross_cash_entitlement\",\"unit\":\"EGP\",\"period\":\"2026 cash dividend hypothetical position\",\"entity\":\"Commercial International Bank Egypt\",\"evidenceId\":\"scenario-dividend\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+    "evidence": [
+      {
+        "id": "cib-dividends",
+        "contentHash": "559495e3e2dc167f0688ac8cd7b43528f0f123bcc803c8fe39fa32f1dc5ba8f5",
+        "source": "https://www.cibeg.com/en/investor-relations/governance/dividends",
+        "availableAt": "2026-10-25T22:56:12.986Z",
+        "passage": "Physical page HTML dividend table. Official issuer dividend table: 2026 cash dividend EGP6 per share; record date 06 April 2026; payment 09 April 2026. 2025 stock dividend 1 for 10; record date 16 December 2025; payment date 17 December 2025. Table does not label an ex-date.",
+        "localPath": "data/research/evidence/w7-evaluation/cib-dividends-web-capture.json",
+        "page": "HTML dividend table",
+        "availabilityBasis": "Actual web-tool capture of official issuer page; direct HTTP HTML download was an Incapsula challenge and is retained only as a failed attempt, not as evidence."
+      },
+      {
+        "id": "scenario-dividend",
+        "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+        "source": "local:authored-synthetic-engineering-scenarios",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "passage": "SYNTHETIC_POSITION_ASSUMPTION. Hypothetical holder has 1,000 CIB shares and meets the stated 2026 cash-dividend entitlement condition. Compute gross cash before any tax or fees. No ex-date or before/after market prices are supplied in this packet.",
+        "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+      }
+    ],
+    "cutoffAt": "2026-10-25T22:56:32.892Z",
+    "frozenAt": "2026-10-25T23:06:44.912Z",
+    "truth": {
+      "checkedBy": "/root/w7_case_curator",
+      "checkedAt": "2026-10-25T22:56:32.892Z",
+      "numbers": [
+        {
+          "id": "cash_dividend_per_share",
+          "value": 6,
+          "absoluteTolerance": 0,
+          "unit": "EGP per share",
+          "period": "2026 cash dividend",
+          "entity": "Commercial International Bank Egypt",
+          "evidenceId": "cib-dividends"
+        },
+        {
+          "id": "gross_cash_entitlement",
+          "value": 6000,
+          "absoluteTolerance": 0,
+          "unit": "EGP",
+          "period": "2026 cash dividend hypothetical position",
+          "entity": "Commercial International Bank Egypt",
+          "evidenceId": "scenario-dividend"
+        }
+      ]
+    },
+    "curation": {
+      "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+      "notes": [
+        "Pre-freeze source binding repair: issuer page content is retained in raw web-tool response; direct HTML challenge cannot support dividend facts."
+      ],
+      "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+      "syntheticContext": true,
+      "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+    },
+    "caseHash": "e4b4a43f2c15443d07175e35f28ed36eded809b5fb44c25bd5a65703cf03b88f",
+    "groundTruthStatus": "SUPPLIED_ADJUDICATION_REQUIRES_INDEPENDENT_REVIEW"
+  },
+  "contentHash": "a99b5e8719db50705402e5cdabdf3e80e1713e5686b90e915aa2e11b44691a98"
+}

@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {executionFixture,acceptance,minuteFixture} from '../../../app/v5/execution-fixtures.mjs';
+import {initialState,transition} from '../../../app/v5/execution.mjs';
+import {fixedExitAttributionFromEvents} from '../../../app/v5/fixed-exit-attribution.mjs';
+const f=executionFixture('B1','base');
+let state=initialState(f.config);const events=[];
+function add(type,at,data={}){const event={id:'review-'+events.length,type,at,data};state=transition(state,event).state;events.push(event);}
+add('OPEN_DAY','2026-10-25T06:40:00Z',{book:f.book,marks:[]});
+add('SET_PAUSE','2026-10-25T06:45:00Z',{paused:false,reason:'Independent synthetic diagnostic reproduction'});
+add('SUBMIT','2026-10-25T06:51:00.000Z',acceptance(f,state));
+add('TICK','2026-10-25T07:20:00Z');
+const control=fixedExitAttributionFromEvents({config:f.config,events});
+assert.equal(control.actualMinusFixedExitEquityCents,0);
+const supplemented=fixedExitAttributionFromEvents({config:f.config,events,supplementalEvents:[{id:'additional-minute',type:'MINUTE',at:'2026-10-25T07:17:10Z',data:{book:f.book,bar:minuteFixture(f.isin)}}]});
+assert.equal(supplemented.suppressedRiskExits,0);
+assert.equal(supplemented.actual.positions.length,0);
+assert.equal(supplemented.counterfactual.positions.length,1);
+assert.notEqual(supplemented.actualMinusFixedExitEquityCents,0);
+const result={reviewerActorId:'/root/w7_independent_review',reviewedAt:new Date().toISOString(),scope:'SYNTHETIC_INDEPENDENT_REPRODUCTION',controlDeltaCents:control.actualMinusFixedExitEquityCents,supplementedDeltaCents:supplemented.actualMinusFixedExitEquityCents,suppressedRiskExits:supplemented.suppressedRiskExits,actualPositions:supplemented.actual.positions.length,counterfactualPositions:supplemented.counterfactual.positions.length,conclusion:'Extra observations alone create apparent fixed-exit attribution with no discretionary exits.'};
+writeFileSync(new URL('fixed-exit-repro-result.json',import.meta.url),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify(result));

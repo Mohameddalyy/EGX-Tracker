@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.894Z",
+  "caseHash": "de998f956679dfbe3b2f816d341466c2f137e28e14086c9a873e75b9a4afd4bb",
+  "runHash": "c7486586042780dfe5499f9b99d39e5d043290181f07405719c21e8cc41a4d2c",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains construction billing, retention and working-capital timing as possible mechanisms, not proven causes."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Uses source cash, advances/billings and financing/investing flows to balance accrual profit and collection strain."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Full source cash bridge independently checks:127.8+72.8-249.6-5.5=-54.5 million; receivables remain a movement, not a balance or proven loss."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Targets aging, subsequent collections, restrictions and debt maturities before sizing."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not assign unexplained residual to a particular adjustment or assert unrestricted cash."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

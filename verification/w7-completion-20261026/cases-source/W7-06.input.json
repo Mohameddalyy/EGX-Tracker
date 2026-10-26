@@ -1,0 +1,65 @@
+{
+  "id": "W7-06",
+  "categories": [
+    "property",
+    "incompleteFinancials"
+  ],
+  "task": "Calculate current-assets-minus-current-liabilities and extract rounded net debt. Explain why missing customer advances, maturity, restrictions and off-balance-sheet details prevent a cash-runway or liquidation-value conclusion. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"net_current_assets\",\"unit\":\"EGP thousand\",\"period\":\"as at 2025-09-30\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-statements\"},{\"id\":\"rounded_net_debt\",\"unit\":\"EGP billion\",\"period\":\"as at 2025-09-30\",\"entity\":\"Palm Hills Developments consolidated\",\"evidenceId\":\"phdc-summary\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "evidence": [
+    {
+      "id": "phdc-summary",
+      "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "source": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+      "availableAt": "2026-10-25T22:52:57.067Z",
+      "passage": "Physical page 2. Financial Review in EGP million: 9M2025 revenue 25,549; EBITDA 6,690; net profit after tax and minority 3,542. For 9M2024 EBITDA summary table says 4,132, while the EBITDA chart prints 4,144. Net debt EGP4.2 billion and receivables including off-balance-sheet EGP248 billion at end 9M2025. No debt maturity or customer-advance schedule in this excerpt.",
+      "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+      "page": 2,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability",
+      "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html"
+    },
+    {
+      "id": "phdc-statements",
+      "contentHash": "9ec3cd062d3706eac97b4b76399964c31143c926e7fb796d028ee5a43829e5b8",
+      "source": "https://preview-assets-us-01.kc-usercontent.com/9d7970fc-dc69-001d-cf10-ddbde8cd2225/02dca288-cffa-4e5a-9310-c99e9c354206/3Q2025%20Earnings%20Release%20-%20English.pdf",
+      "availableAt": "2026-10-25T22:52:57.067Z",
+      "passage": "Physical page 4. Selected consolidated statements in EGP thousand, 9M ended 30 September 2025: revenue 25,549,856; EBITDA 6,690,062; operating profit 6,449,386; net profit after tax 3,700,433; non-controlling interest deduction (158,326); profit after tax and minority 3,542,107. Comparative 9M2024 EBITDA 4,144,677. At 30 September 2025: current assets 99,982,419; current liabilities 98,786,344; total liabilities 144,999,591; total equity 18,175,839; cash and equivalents 9,204,446. Operating cash flow 748,335. These are selected statements, not the full footnotes.",
+      "localPath": "data/research/evidence/w7-evaluation/phdc-9m-2025.pdf",
+      "page": 4,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability",
+      "provenance": "Official https://ir.palmhillsdevelopments.com/en-us/financial/resultcenter Q3 2025 Earnings Release link; index retained as phdc-results-index.html"
+    }
+  ],
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "frozenAt": "2026-10-25T22:55:55.225Z",
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T22:55:55.225Z",
+    "numbers": [
+      {
+        "id": "net_current_assets",
+        "value": 1196075,
+        "absoluteTolerance": 0,
+        "unit": "EGP thousand",
+        "period": "as at 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-statements"
+      },
+      {
+        "id": "rounded_net_debt",
+        "value": 4.2,
+        "absoluteTolerance": 0,
+        "unit": "EGP billion",
+        "period": "as at 2025-09-30",
+        "entity": "Palm Hills Developments consolidated",
+        "evidenceId": "phdc-summary"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_ONLY",
+    "notes": [],
+    "sourceSelection": "Purposive; repeated issuers and intentionally incomplete packets; no random or out-of-sample claim",
+    "syntheticContext": false,
+    "independence": "Curator is separate from analyst; independent reviewer must still check passages and numerical calculations."
+  }
+}

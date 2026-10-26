@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:16:19.898Z",
+  "caseHash": "92727f8dc462f00d84fb10dc548b14a2e749f99a442fcd06c28e4ba8c8aaa8b4",
+  "runHash": "70f47e432769b5ce6969418026e323c0db66ac43bef0b85ef878fc69669ebafe",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Interprets developer inventories, installment receivables and customer advances with timing discipline."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Balances positive current assets/cash with narrow buffer, net debt and obligations."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Computes net current assets correctly without confusing classification surplus with cash."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Declines unsupported runway and liquidation values and identifies required timed schedules."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Preserves uncertainty over restrictions, collectability, covenants and off-balance-sheet claims."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Original source inspection was prohibited by this registered excerpt-only tool configuration; no original-source-access conformity claim."
+  ]
+}

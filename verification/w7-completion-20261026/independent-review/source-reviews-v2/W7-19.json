@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.972Z",
+  "caseHash": "66547e41417a2a655bdee8b1d8b6aadfd64dee55639f563d73b578f66c34df70",
+  "runHash": "cbb5f3ce26a326025c3954f7417758b98d6eb63fc028baf905ef74e24af74296",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains construction working-capital risks without asserting the unverified cause."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Positive profit, cash and advance movements are weighed against receivable absorption."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct cash-profit gap and preserves one mechanical opportunity."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Preserves the one mechanical opportunity and separates research refusal from technical failure while prioritizing collections and missing entry checks."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "No fraud/distress inevitability or actual signal/fill is fabricated."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

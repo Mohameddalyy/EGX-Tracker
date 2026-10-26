@@ -1,0 +1,47 @@
+{
+  "caseId": "W7-13",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-13",
+    "cutoffAt": "2026-10-25T23:04:24.080Z",
+    "evidence": [
+      {
+        "id": "oras-combination",
+        "availableAt": "2026-10-23T16:27:45.520Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 196598.56
+      },
+      {
+        "id": "scenario-combination",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 508.874
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.435Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-13\",\"cutoffAt\":\"2026-10-25T23:04:24.080Z\",\"evidence\":[{\"id\":\"oras-combination\",\"availableAt\":\"2026-10-23T16:27:45.520Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196598.56},{\"id\":\"scenario-combination\",\"availableAt\":\"2026-10-25T22:55:55.206Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":508.874}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nOriginal ORAS page 68 states the proposed exchange ratio is 0.4634 newly issued ORAS shares for each OCI share. The hypothetical 1,000 OCI shares therefore correspond arithmetically to 463.4 ORAS shares, before any fractional settlement rule. I do not round this to a deliverable whole-share entitlement or invent cash compensation.\n\nThis is a proposed business combination, not a rights subscription. The source records Orascom shareholder approval on 22 January 2026, which supports transaction progress, but also says OCI shareholder and required regulatory approvals remained conditions and completion had not occurred at reporting date. The long-stop date was extended to 30 December 2026; a scheduled condition deadline is not completion. The note treats the transaction as non-adjusting. It is available at this evaluation cutoff, while its report-date status is not a fresh confirmation of today's transaction state. Construction exposure, acquired business mix, financing and integration could change the investment thesis; the exchange ratio alone establishes none of the expected synergies or returns. Current approvals, effective date, total issuance, pro forma ownership/debt and fractional terms are missing. I would keep the exchange arithmetic as a conditional scenario and wait for effective corporate-action documentation before dilution calculations, valuation or sizing. No trade is authorized.",
+  "extractedNumbers": [
+    {
+      "id": "exchange_ratio",
+      "unit": "ORAS shares per OCI share",
+      "period": "proposed combination at H1 2026 reporting",
+      "entity": "Orascom Construction PLC",
+      "evidenceId": "oras-combination",
+      "value": 0.4634
+    },
+    {
+      "id": "arithmetic_new_shares",
+      "unit": "ORAS shares",
+      "period": "hypothetical 1000 OCI share exchange",
+      "entity": "Hypothetical OCI shareholder",
+      "evidenceId": "scenario-combination",
+      "value": 463.4
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

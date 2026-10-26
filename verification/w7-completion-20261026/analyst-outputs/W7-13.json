@@ -1,0 +1,27 @@
+{
+  "caseId": "W7-13",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:37.5338660Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "The proposed exchange ratio is 0.4634 newly issued ORAS shares per OCI share (oras-combination). For the hypothetical 1,000 OCI shares, arithmetic entitlement before fractional treatment is 1,000 x 0.4634 = 463.4 ORAS shares (scenario-combination). This is not a promise of delivery of a fractional share or cash in lieu; the settlement rule is missing.\n\nThe note says ORAS shareholders approved resolutions on 22 January 2026, the long-stop date was extended to 30 December 2026, OCI shareholder and regulatory approvals remained outstanding, and the transaction was not completed at reporting. It was considered a non-adjusting subsequent event. One party's approval and a proposed ratio are supportive evidence that a defined transaction process exists, but they are counterbalanced by remaining conditions and an extended timeline. They establish neither eventual completion nor failure.\n\nThis is an exchange-ratio combination, not a rights entitlement involving a subscription by existing holders. Potential new shares could dilute existing ownership percentages, but completed dilution cannot be computed without completed issuance, total eligible OCI shares, the ORAS share base and final terms. Nor does dilution in percentage ownership alone establish economic loss: acquired assets, liabilities, earnings and consideration economics would matter. Those inputs and pro forma funding/cash-generation evidence are absent.\n\nFor a construction shareholder, a combination can change business mix, leverage, governance and project/customer exposures; no synergies or improved diversification are demonstrated here. Bounded decision: preserve the proposed ratio as a contingent scenario and request current approvals, completion documentation, fractional rules and pro forma capitalization before valuation or sizing. Do not trade on the hypothetical 463.4 shares, claim action clearance from the old note, or invent later outcomes.",
+  "extractedNumbers": [
+    {
+      "id": "exchange_ratio",
+      "unit": "ORAS shares per OCI share",
+      "period": "proposed combination at H1 2026 reporting",
+      "entity": "Orascom Construction PLC",
+      "evidenceId": "oras-combination",
+      "value": 0.4634
+    },
+    {
+      "id": "arithmetic_new_shares",
+      "unit": "ORAS shares",
+      "period": "hypothetical 1000 OCI share exchange",
+      "entity": "Hypothetical OCI shareholder",
+      "evidenceId": "scenario-combination",
+      "value": 463.4
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

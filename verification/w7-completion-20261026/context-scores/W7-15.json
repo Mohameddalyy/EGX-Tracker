@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.779Z",
+  "payload": {
+    "caseId": "W7-15",
+    "caseHash": "a9e915688e499720d8f9990d49d5e43c6563a39c9790f683bdafcda0edf93edf",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "0e09fcef7daeff407eecd4262ff526a95144fe660428dade3e9d747f8e2a98fa",
+    "reviewHash": "7e510813bd62fc20ba1e5c88b92239edd81c2fd435f70112b9be20516307a7e8",
+    "categories": [
+      "thinLiquidity",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "exit_capacity",
+        "status": "CORRECT"
+      },
+      {
+        "id": "executed_exit",
+        "status": "CORRECT"
+      },
+      {
+        "id": "retained_shares",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 3,
+    "denominator": 3,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Explains continuing liquidity exposure while declining invented issuer distress or sector."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Daily allowance cannot negate minute failure and absent later observation."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct 200 minute, 1500 daily, zero sale and 800 retained shares."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Keeps pending exit and position visible without booking proceeds."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "No price, stop fill, current monetary value or future capacity is invented."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.436,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "31d217650635470ad216a10d80cab3d02e565244effac43d2d7ff0dca80f1151"
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.205Z",
+  "payload": {
+    "caseId": "W7-23",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-23",
+      "cutoffAt": "2026-10-25T23:20:01.003Z",
+      "evidence": [
+        {
+          "id": "temporal-facts-23",
+          "availableAt": "2026-10-25T23:19:59.892Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 1.111
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.443Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-23\",\"cutoffAt\":\"2026-10-25T23:20:01.003Z\",\"evidence\":[{\"id\":\"temporal-facts-23\",\"availableAt\":\"2026-10-25T23:19:59.892Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.111}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-23, cutoffAt \"2026-10-25T23:20:01.003Z\". The fixture record is available at 23:19:59.892Z, 1.111 seconds before this exact cutoff. Within the fictional facts, publication at 23:19:55.892Z and notice capture at 23:19:58.892Z are already past. Elapsed time from notice capture to this cutoff is 2.111 seconds; scheduled action at 23:20:14.892Z is 13.889 seconds after it. Notice capture is not the later evaluation-record capture.\n\nThe existence of an announced schedule is knowable at this cutoff, even though the scheduled action is future. That does not establish completed action. The record expressly has no completion observation, so I retain status as scheduled, completion unconfirmed; I do not infer failure either. A later completion record, cancellation, postponement or other verified event observation would be required to change that status. The dates are synthetic scenario events, not issuer observations. No financial period, security valuation, sector effect or trading implication is supplied, so none is invented. The bounded paper conclusion is to accept the available notice as a notice and withhold any conclusion about actual proceedings or completion.",
+    "extractedNumbers": [
+      {
+        "id": "capture_age_seconds",
+        "unit": "seconds",
+        "period": "relative to W7-23 cutoffAt",
+        "entity": "SYNTHETIC-TEMPORAL-23",
+        "evidenceId": "temporal-facts-23",
+        "value": 2.111
+      },
+      {
+        "id": "seconds_until_scheduled_action",
+        "unit": "seconds",
+        "period": "relative to W7-23 cutoffAt",
+        "entity": "SYNTHETIC-TEMPORAL-23",
+        "evidenceId": "temporal-facts-23",
+        "value": 13.889
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "3fb6651420c69125d683218e2a57c6b1f63daab9ef3e4e0c785c079154379f1b",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "a819c2fbe01e22d24427f820972e223e55e3c0b583347cbf8c310f9d290d869c",
+    "packetHash": "5f507525d274a2c04187b0e8c965c2bf1a132587f1f370cfa514ca9c2c82c1b3",
+    "outputHash": "6474c2ab2ec9ae8abf8ce1c09b0e1bf840f444cfe54baf7db2be2b635d387dbf",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-23.json",
+    "originalFileHash": "61a0abc5da29637a00a9b44f1067dced20d6c562240413fbc18285900e12edc1",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "457ae1ec9de86ba40275f8f029a93792195d737dc935b52d33861aae1e980f7f"
+}

@@ -1,0 +1,19 @@
+{
+  "caseId": "W7-09",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:37.4295243Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "There are 44 elapsed calendar days from 30 September 2025 to 13 November 2025: 31 days through 31 October plus 13 days in November (phdc-highlights). This uses ordinary date subtraction, not inclusive counting of both endpoints.\n\nThe hypothetical original decision date is 1 November 2025 (scenario-timing). The document is dated 13 November, twelve days later. It cannot be retroactively treated as known at that decision. Its financial measurement period ending earlier does not make the later publication available earlier. The actual retained capture is 25 October 2026 at 22:52:57.067Z. That is evidence of capture then; the printed release date is a document claim, and neither proves a verified first public availability timestamp. The supplied official-results-link provenance supports origin, not archival availability on 1 November.\n\nDeveloper sales, backlog and collection data may materially inform demand and cash-conversion judgments, so importing these figures into the historical decision would create look-ahead bias even if the figures are accurate. Counterevidence to treating all information as unknowable is that some earlier information could theoretically have existed, but none is supplied and I cannot assume its content matched this release. Conversely, the release can be examined in the present audit because it is captured before the current evaluation cutoff.\n\nBounded decision: exclude this later-dated release from the original November 1 information set. Label it later evidence when analyzing what was learned afterward. Seek independently archived, timestamped contemporaneous disclosures for any historical reassessment; do not rewrite the original decision using hindsight. The 44-day publication lag calculation says nothing by itself about current investability, trade clearance or future outcomes.",
+  "extractedNumbers": [
+    {
+      "id": "period_end_to_release_days",
+      "unit": "calendar days",
+      "period": "2025-09-30 to 2025-11-13",
+      "entity": "Palm Hills Developments consolidated",
+      "evidenceId": "phdc-highlights",
+      "value": 44
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

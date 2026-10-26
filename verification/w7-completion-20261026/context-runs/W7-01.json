@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:08.953Z",
+  "payload": {
+    "caseId": "W7-01",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-01",
+      "cutoffAt": "2026-10-25T22:55:55.225Z",
+      "evidence": [
+        {
+          "id": "adib-income",
+          "availableAt": "2026-10-23T16:27:23.557Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 196111.668
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.421Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-01\",\"cutoffAt\":\"2026-10-25T22:55:55.225Z\",\"evidence\":[{\"id\":\"adib-income\",\"availableAt\":\"2026-10-23T16:27:23.557Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":196111.668}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe original ADIB income table on physical page 4 confirms six months ended 30 June 2026, consolidated, EGP thousands. Income of 29,117,908 less deposit and similar costs of 16,863,967 equals net income from funds of 12,253,941. The ECL line is (2,176), hence signed income-statement contribution -2,176, an expense rather than a release. The separate three-month release of 78,142 must not replace this six-month charge.\n\nFor an Islamic bank, the funding spread and deposit repricing are core operating drivers. The positive net funds income and low net impairment charge support reported earnings, but they do not establish durable margins or sound credit quality. Net releases may offset new provisions; the quarter's release itself cautions against extrapolating the small half-year net charge. Cost of risk cannot be calculated from this page: average gross financing/loan exposure, a consistent scope of credit impairment numerator, and an agreed period/annualization convention are absent. Dividing ECL by income or profit would not produce cost of risk. Stage migration, impaired financing, coverage, write-offs, collateral, capital and liquidity data are also missing. My bounded decision is further bank-specific research, with no investment clearance or assertion of clean loans; the arithmetic is reliable within the page, while credit sustainability and valuation remain unresolved.",
+    "extractedNumbers": [
+      {
+        "id": "net_funds",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": 12253941
+      },
+      {
+        "id": "ecl_signed",
+        "unit": "EGP thousand",
+        "period": "six months ended 2026-06-30",
+        "entity": "ADIB Egypt consolidated",
+        "evidenceId": "adib-income",
+        "value": -2176
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "ecff246d14bdecb348f88f7afa487defd7babaeb082911fd4143ffcd82ccb3c4",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+    "packetHash": "16be56e167231d2e9db3ff520fa692d055de0414e80b90db46e4c3ffd03a4673",
+    "outputHash": "c433cb6f079f0bcecdbeda175aacc164e03473572e95391fdce2059a447f07cf",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-01.json",
+    "originalFileHash": "f980a052fa769fc7301b15584752c3116652386228581fcd3571c52897b6e511",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "0744da322e36ec964e19174fab7c85baefe3ab6423ecc6b76a00ced4c7b145c3"
+}

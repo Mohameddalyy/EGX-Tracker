@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.885Z",
+  "caseHash": "90417f6c4ccdf3239a536ca5c2c88a45baeef2feb83c713df7f3038825f77024",
+  "runHash": "a4d2af93b865738e277c7ff6708b8ffe1d42766d89c2f91f722f825b240ccb46",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects Islamic financing spread and deposit repricing to bank earnings."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Weighs positive funds income against net provisioning and quarter-release extrapolation risk."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Reconciles funds income and signed six-month ECL without using the quarterly release instead."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Names the missing average-exposure denominator and credit/capital work before investment clearance."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Separates reliable page arithmetic from unknown credit sustainability and valuation."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "count": 22,
+  "metadataExact": true,
+  "originalSourceHashesRechecked": true,
+  "answers": [
+    {
+      "caseId": "W7-01",
+      "sha256": "b16b3b4edad35c86d7e8170d564f13a66419210c4e46761ba491f7b1cd55a512",
+      "outputWords": 205,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-02",
+      "sha256": "55a582c047852d5766d7ac097066678752202baba5f6bc819478ecba2920eb6a",
+      "outputWords": 192,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-03",
+      "sha256": "0d845ba2b708f20be5c50975a9703d4ee501abd91850f3b561d417498a20b06a",
+      "outputWords": 201,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-04",
+      "sha256": "99cd0597c55924e433cb23545adcb3914061a1034942146531e3ce7d836fe9bf",
+      "outputWords": 224,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-05",
+      "sha256": "b98d2cb417e34ae4ce414f5a0b0ee742cd7e191459aa85e73b68de74da28824e",
+      "outputWords": 211,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-06",
+      "sha256": "567dc458e4616d6dfbadcabe470f48695042f30c73806298c67594f33a74fa4a",
+      "outputWords": 203,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-07",
+      "sha256": "7fb36484b9104f1185d36e3bba5b3f0404fe1f16b7b0e4574fff620666df1003",
+      "outputWords": 211,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-08",
+      "sha256": "3d5e2d21c25bd81f3d6c9c7690ffe5538e1dbe0e67f671a1d21b44fc65b80a96",
+      "outputWords": 184,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-09",
+      "sha256": "a2db357bebb448403d95773fef9235015250bcf4a3ece7db93be240e3daa6150",
+      "outputWords": 209,
+      "numericFields": 1
+    },
+    {
+      "caseId": "W7-10",
+      "sha256": "d95923127c8f22f151a8c1bbb17bcd0c648fa3fe257de6de329d6323b54a387c",
+      "outputWords": 179,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-11",
+      "sha256": "67218b41d23602c9689335766eac8a81e2c3adbbce7f30e3a901a2fd41dcf8ea",
+      "outputWords": 212,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-12",
+      "sha256": "eb8b83b88d253f18f6c786cec039a467ca61bbac85fb898ffe428a3d055f7407",
+      "outputWords": 205,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-13",
+      "sha256": "bf45c38a980906ee083d01af9e89935ef6714c425a12139c9d9a8cf13fac9b3f",
+      "outputWords": 225,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-14",
+      "sha256": "c6d7ca9548c63a8a1aabe32d9125e2b8c459fb554866de48553bf38c99facd57",
+      "outputWords": 200,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-15",
+      "sha256": "b7b987a58ab1aad9b325b555aed02d5a7f62e2a1a1538d2ae9ee392926a546b5",
+      "outputWords": 190,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-16",
+      "sha256": "316c5b88ea381ab42831f3554297a06353dc1738003e8d786ee37241ffc43ab4",
+      "outputWords": 177,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-17",
+      "sha256": "55954714f4e7a0c5472f4ab23c56bb972f9540dc60d2f520619b0759a2da598c",
+      "outputWords": 185,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-18",
+      "sha256": "8f4d031fb88703130770e29506b6995682e95a26f29192533431473f5a6e75bc",
+      "outputWords": 173,
+      "numericFields": 3
+    },
+    {
+      "caseId": "W7-19",
+      "sha256": "772b6c4797c2a3a6bb60618b66d77c0016e58f0ab09317ee3ff2c4942d50adc4",
+      "outputWords": 200,
+      "numericFields": 2
+    },
+    {
+      "caseId": "W7-20",
+      "sha256": "a986fc456416262e59fd8082f341d50abeb74810f796817b761614712efa5814",
+      "outputWords": 210,
+      "numericFields": 1
+    },
+    {
+      "caseId": "W7-21",
+      "sha256": "ea7ce4bd839726331326970e3b33b71e8c0ad086351e529f9a4d8abb0ea819a4",
+      "outputWords": 344,
+      "numericFields": 4
+    },
+    {
+      "caseId": "W7-22",
+      "sha256": "a7dc906cfd54acabf59ef9e63c66f15c37b74c044800cb6550785e66136ed95e",
+      "outputWords": 320,
+      "numericFields": 5
+    }
+  ]
+}

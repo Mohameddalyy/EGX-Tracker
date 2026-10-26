@@ -1,0 +1,11 @@
+{
+  "reviewerActorId": "/root/w7_independent_review",
+  "reviewedAt": "2026-10-25T22:55:26.017Z",
+  "scope": "SYNTHETIC_INDEPENDENT_REPRODUCTION",
+  "controlDeltaCents": 0,
+  "supplementedDeltaCents": 10656,
+  "suppressedRiskExits": 0,
+  "actualPositions": 0,
+  "counterfactualPositions": 1,
+  "conclusion": "Extra observations alone create apparent fixed-exit attribution with no discretionary exits."
+}

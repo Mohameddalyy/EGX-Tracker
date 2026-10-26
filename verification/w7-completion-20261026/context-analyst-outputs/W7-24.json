@@ -1,0 +1,49 @@
+{
+  "caseId": "W7-24",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-24",
+    "cutoffAt": "2026-10-25T23:20:02.110Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-24",
+        "availableAt": "2026-10-25T23:20:01.006Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 1.104
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.444Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-24\",\"cutoffAt\":\"2026-10-25T23:20:02.110Z\",\"evidence\":[{\"id\":\"temporal-facts-24\",\"availableAt\":\"2026-10-25T23:20:01.006Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.104}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-24, cutoffAt \"2026-10-25T23:20:02.110Z\". Its own evidence is captured at 23:20:01.006Z, 1.104 seconds before this cutoff and is available for this evaluation. The fictional financial period ends at 2026-10-25T00:00:00.000Z; publication is at 21:00:00.000Z, 21 hours or 1,260 minutes later. The hypothetical original decision at 20:59:30.000Z precedes publication by 30 seconds.\n\nSharing a calendar date does not make the period-end timestamp a publication timestamp. On the stated facts this document was not yet published at the hypothetical decision, so it cannot be treated as then-public evidence merely because the measured period had ended. At the current evaluation cutoff, both publication and capture are past, permitting retrospective inspection with the correct temporal label. This is not contradictory availability: the relevant information sets differ. The fixture does not establish earlier disclosure of equivalent facts or the contents of any other decision archive. Such evidence would be needed to expand that archive, and later publication cannot prove what was knowable beforehand. My bounded conclusion is current inspectability with exclusion as a published document from the earlier decision's stated set. No issuer quality, sector conclusion or trade follows from this synthetic timing exercise.",
+  "extractedNumbers": [
+    {
+      "id": "period_to_publication_minutes",
+      "unit": "minutes",
+      "period": "financial period end to document publication",
+      "entity": "SYNTHETIC-TEMPORAL-24",
+      "evidenceId": "temporal-facts-24",
+      "value": 1260
+    },
+    {
+      "id": "decision_to_publication_seconds",
+      "unit": "seconds",
+      "period": "hypothetical original decision to publication",
+      "entity": "SYNTHETIC-TEMPORAL-24",
+      "evidenceId": "temporal-facts-24",
+      "value": 30
+    },
+    {
+      "id": "capture_age_seconds",
+      "unit": "seconds",
+      "period": "relative to W7-24 cutoffAt",
+      "entity": "SYNTHETIC-TEMPORAL-24",
+      "evidenceId": "temporal-facts-24",
+      "value": 1.104
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

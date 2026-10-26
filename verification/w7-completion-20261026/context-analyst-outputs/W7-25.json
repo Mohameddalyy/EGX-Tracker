@@ -1,0 +1,41 @@
+{
+  "caseId": "W7-25",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-25",
+    "cutoffAt": "2026-10-25T23:20:03.220Z",
+    "evidence": [
+      {
+        "id": "temporal-facts-25",
+        "availableAt": "2026-10-25T23:20:02.112Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 1.108
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  },
+  "startedAt": "2026-10-26T08:51:56Z",
+  "finishedAt": "2026-10-26T09:03:37.445Z",
+  "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+  "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-25\",\"cutoffAt\":\"2026-10-25T23:20:03.220Z\",\"evidence\":[{\"id\":\"temporal-facts-25\",\"availableAt\":\"2026-10-25T23:20:02.112Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.108}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-25, cutoffAt \"2026-10-25T23:20:03.220Z\". Its announcement record was captured at 23:20:02.112Z and is available 1.108 seconds before this cutoff. Fictional announcement publication at 23:05:02.112Z is 901.108 seconds earlier, or 15.018466666666667 minutes. The scheduled meeting at 2026-11-04T23:20:02.112Z remains 863,998.892 seconds after this case's exact cutoff.\n\nAlready knowable facts are the announcement's existence, its stated publication/capture times and the scheduled meeting time. The future date does not make the existing announcement unavailable. What is not established is whether the meeting will occur, be postponed or canceled, what proceedings will take place, or whether any resolution will be approved or completed. The notice explicitly supplies no proceedings or completion record; treating announcement as approval would overstate the evidence. Conversely, it is unwarranted to label the announcement itself unusable simply because its subject is future. I would preserve the schedule in the paper record and leave outcome and completion unknown pending contemporaneous proceedings or an updated notice. No sector, security or real market inference is supported by these authored timestamps.",
+  "extractedNumbers": [
+    {
+      "id": "announcement_age_minutes",
+      "unit": "minutes",
+      "period": "relative to W7-25 cutoffAt",
+      "entity": "SYNTHETIC-TEMPORAL-25",
+      "evidenceId": "temporal-facts-25",
+      "value": 15.018466666666665
+    },
+    {
+      "id": "seconds_until_meeting",
+      "unit": "seconds",
+      "period": "relative to W7-25 cutoffAt",
+      "entity": "SYNTHETIC-TEMPORAL-25",
+      "evidenceId": "temporal-facts-25",
+      "value": 863998.892
+    }
+  ],
+  "toolCalls": 0,
+  "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases."
+}

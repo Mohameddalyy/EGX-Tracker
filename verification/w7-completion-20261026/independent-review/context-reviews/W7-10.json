@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.943Z",
+  "caseHash": "8650103d9a2dedb1fb7e0acf4ad306a6296220c5c7457360d74db0146976e306",
+  "runHash": "618273eff12b24cc9c36c13c022ff925523d63b210a0ee50549d6de64db94485",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Connects stale developer figures to changing costs, delivery, collections and finance."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Preserves favorable historical growth while noting weak cash conversion and missing updates."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct 391-day period age and revenue; hypothetical quote and aggregate/per-share mismatch handled correctly."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Names refreshed statements/actions/identity/liquidity and cash valuation requirements."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not confuse hypothetical assessment date with packet capture availability."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+  ]
+}

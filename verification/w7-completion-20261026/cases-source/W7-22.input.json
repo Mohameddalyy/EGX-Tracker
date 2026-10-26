@@ -1,0 +1,81 @@
+{
+  "id": "W7-22",
+  "categories": [
+    "riskExceptions",
+    "noTrade"
+  ],
+  "task": "Calculate desired whole shares, the stated upside percentage, the stipulated adverse price return percentage, adverse portfolio equity after the proposed allocation and retained mechanical opportunity count. Assess a justified discretionary abstention despite full funding and cleared mechanical entry prerequisites, with no invented fixed cap. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"desired_shares\",\"unit\":\"shares\",\"period\":\"fixture proposed allocation\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"stated_upside_percent\",\"unit\":\"percent price return\",\"period\":\"fixture target versus entry\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"adverse_price_return_percent\",\"unit\":\"percent price return\",\"period\":\"fixture adverse value versus entry\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"adverse_portfolio_equity\",\"unit\":\"EGP\",\"period\":\"fixture adverse valuation after allocation\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"},{\"id\":\"retained_mechanical_opportunities\",\"unit\":\"opportunities\",\"period\":\"fixture decision event\",\"entity\":\"SYNTHETIC-FULL-ABSTENTION\",\"evidenceId\":\"full-abstention\"}]. Explain sector/common-factor risk, material counterevidence, uncertainty, alternatives, funding and a bounded decision. Do not claim real market or trading validation.",
+  "cutoffAt": "2026-10-25T23:06:08.457Z",
+  "frozenAt": "2026-10-25T23:06:08.457Z",
+  "evidence": [
+    {
+      "id": "full-abstention",
+      "source": "local:authored-synthetic-full-discretion-scenarios",
+      "contentHash": "d4e4c1083a9bc46d0b7f4a252c41bf2a0a4c208ba729c65c4fbb14c36d59e2ea",
+      "availableAt": "2026-10-25T23:06:08.457Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO. Paper-only FULL discretionary risk-reasoning exercise; these are authored assumptions, not issuer facts, market observations, forecasts or trading authorization. The scenario has no fixed name, sector, concentration or minimum-cash cap; do not invent one. Portfolio starts with EGP100,000 settled unreserved cash and no holdings. A proposed EGP60,000 allocation at assumed executable EGP20/share is fully funded; zero fees are assumed solely for arithmetic. Security identity, corporate actions and initial-entry execution are assumed cleared inside this fixture. Exactly one mechanical opportunity passes the technical gate. The proponent asserts a valuation target of EGP22/share and a plausible adverse valuation of EGP12/share, but supplies no calibrated probabilities or valuation sensitivity beyond those two levels. The claimed catalyst is an unverified renewal rumor for a customer providing 60% of sales. Synthetic financial diligence shows positive EBITDA of EGP12 million alongside operating cash outflow of EGP8 million and overdue customer receivables; renewal terms and receivable collectability remain unresolved. No observed fraud or certain insolvency is established. A smaller position reduces monetary loss but does not improve evidence quality or the adverse versus upside asymmetry. Evaluate a justified abstention versus investment or smaller sizing using substantive evidence and uncertainty, without attributing abstention to a nonexistent concentration cap or insufficient cash. Preserve the single mechanical opportunity in the denominator if discretion declines it. The adverse valuation scenario is not a forecast probability or a guaranteed stop fill.",
+      "localPath": "data/research/evidence/w7-evaluation/full-discretion-scenarios.json"
+    }
+  ],
+  "truth": {
+    "checkedBy": "/root/w7_case_curator",
+    "checkedAt": "2026-10-25T23:06:08.457Z",
+    "numbers": [
+      {
+        "id": "desired_shares",
+        "value": 3000,
+        "absoluteTolerance": 0,
+        "unit": "shares",
+        "period": "fixture proposed allocation",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention"
+      },
+      {
+        "id": "stated_upside_percent",
+        "value": 10,
+        "absoluteTolerance": 0.000001,
+        "unit": "percent price return",
+        "period": "fixture target versus entry",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention"
+      },
+      {
+        "id": "adverse_price_return_percent",
+        "value": -40,
+        "absoluteTolerance": 0.000001,
+        "unit": "percent price return",
+        "period": "fixture adverse value versus entry",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention"
+      },
+      {
+        "id": "adverse_portfolio_equity",
+        "value": 76000,
+        "absoluteTolerance": 0,
+        "unit": "EGP",
+        "period": "fixture adverse valuation after allocation",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention"
+      },
+      {
+        "id": "retained_mechanical_opportunities",
+        "value": 1,
+        "absoluteTolerance": 0,
+        "unit": "opportunities",
+        "period": "fixture decision event",
+        "entity": "SYNTHETIC-FULL-ABSTENTION",
+        "evidenceId": "full-abstention"
+      }
+    ]
+  },
+  "curation": {
+    "scope": "RETROSPECTIVE_TASK_ACCURACY_AND_SYNTHETIC_REASONING_ONLY",
+    "syntheticContext": true,
+    "notes": [
+      "Supplemental FULL discretionary case; no fixed cap, policy amendment, observed execution or prospective-performance claim.",
+      "Arithmetic has adjudicated truth; the chosen allocation does not have a predetermined numerical correct answer.",
+      "Pre-freeze shared-source revision: W7-21 now first purchase A70,000 from cash85,000 plus existing B15,000; no pyramiding or averaging permitted. Numerical truth unchanged. W7-22 passage unchanged but shared source hash/time updated."
+    ],
+    "independence": "Separate curator numerical truth; independent reviewer must verify calculations and assess reasoning."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "actorId": "/root/w7_completion_reviewer",
+  "at": "2026-10-26T09:08:08.998Z",
+  "caseHash": "e5a9c9ac73899d7c16d53207af504b1f765930c44ade88dd6d1e7d3c6da0f1fa",
+  "runHash": "1520be337a8ab0e34c0db03ceb12b80d4f671b36a962ad5e3894db699a023d58",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Explains concentrated customer/collection dependence without inventing an industry or correlation."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Weighs funding, EBITDA and technical pass against rumor, overdue receivables and negative operating cash."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct shares, returns, EGP76000 adverse equity, EGP6000 versus EGP24000 outcomes and one opportunity."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Justifies abstention on evidence and asymmetry despite cleared entry/funding, retaining the opportunity denominator."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Does not infer fraud, insolvency, probabilities or assured stop fill; smaller sizing does not repair evidence."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity.",
+    "Permitted original source contained a preFreezeCorrection review-history cue; see qualitative disposition."
+  ]
+}

@@ -1,0 +1,29 @@
+✔ unchanged exits reproduce original economics: B1/base (297.6798ms)
+✔ unchanged exits reproduce original economics: B1/stress (238.2763ms)
+✔ unchanged exits reproduce original economics: FULL/base (201.4119ms)
+✔ unchanged exits reproduce original economics: FULL/stress (202.9502ms)
+✔ discretionary exit suppressed; cash and shares remain in the alternate portfolio (210.5138ms)
+✔ missing later mark stays blocked, does not borrow original sale proceeds (224.4251ms)
+✔ additional held-name prior-close mark is verified and bound to original open (276.5177ms)
+✔ mandatory stop still needs a later eligible minute and full liquidity (331.1899ms)
+✔ supplement cannot create exposure on only one side with no discretionary exit (163.4881ms)
+✔ supplements cannot change decisions or extend the period (233.217ms)
+✔ tampered original approval fails before attribution (134.9617ms)
+✔ mandatory corporate-action hold cannot be erased by discretionary attribution (210.4965ms)
+✔ later desired entry recomputes funded cash after the original sale is suppressed (383.0431ms)
+✔ ledger wrapper is read-only and forbids event/config substitution (456.2715ms)
+✔ source-bound reporting retains gaps and cannot upgrade engineering scope (311.4689ms)
+✔ late baseline cannot attach earlier P&L to a later period (317.1282ms)
+✔ missing registered entry session fails, not a compressed return horizon (302.6341ms)
+✔ changed scoring release cannot reuse an old trial silently (234.7034ms)
+✔ omitted post-entry session cannot compress the daily calendar (304.9859ms)
+✔ matrix refuses attribution from another ledger state (484.389ms)
+✔ approved amendment binds exact document and adds no activation (18.5123ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6000.6313

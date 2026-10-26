@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.177Z",
+  "payload": {
+    "caseId": "W7-21",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-21",
+      "cutoffAt": "2026-10-25T23:06:08.457Z",
+      "evidence": [
+        {
+          "id": "full-concentration",
+          "availableAt": "2026-10-25T23:06:08.457Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 0
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.441Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-21\",\"cutoffAt\":\"2026-10-25T23:06:08.457Z\",\"evidence\":[{\"id\":\"full-concentration\",\"availableAt\":\"2026-10-25T23:06:08.457Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":0}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThe proposed first A purchase spends EGP70,000 of EGP85,000 free settled cash: A becomes 70% of unchanged EGP100,000 starting equity and remaining cash is EGP15,000. A and B together expose 70,000 + 15,000 = 85,000, or 85%, to domestic construction-demand risk. Under the stipulated joint mark, A becomes 52,500 and B 12,000, so equity is 52,500 + 12,000 + 15,000 = EGP79,500: a 20,500 loss, or 20.5% of starting equity. This is a stress mark, not a loss probability, maximum possible loss or assured exit price.\n\nFULL can defend this funded concentration within the fictional premises if the decision maker explicitly accepts that quantified downside and the possibility of worse or prolonged losses. Recurring collected receipts, no financial debt, twelve months' contracted-cost cash cover and a signed three-year contract provide substantive support beyond confidence. The challenge is serious: 45% customer concentration and performance termination clauses can weaken both receipts and the supposed buffer; collection slippage and shared construction demand reduce diversification. Initial-entry clearance does not guarantee a prompt whole-position exit later. No calibrated expected return or valuation sensitivity justifies claiming this is optimal.\n\nA concrete smaller first purchase of EGP35,000 would leave 50,000 cash, 35% A exposure and 50% common-factor exposure; the same stipulated marks would leave 88,250 equity, an 11.75% loss. Abstention leaves the B-only adverse equity at 97,000 and preserves flexibility but forgoes possible A gains. I judge full size conditionally defensible, while preferring the smaller initial commitment if tolerance for illiquidity or deeper downside is unestablished. This is judgment, not an invented name/sector/minimum-cash cap. There is no existing A holding; no-pyramiding/no-averaging remains mandatory and a smaller entry cannot be presented as permission to top up later. No real trading validation follows.",
+    "extractedNumbers": [
+      {
+        "id": "post_addition_name_percent",
+        "unit": "percent of equity",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 70
+      },
+      {
+        "id": "remaining_cash",
+        "unit": "EGP",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 15000
+      },
+      {
+        "id": "common_factor_percent",
+        "unit": "percent of equity",
+        "period": "fixture after proposed addition",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 85
+      },
+      {
+        "id": "joint_adverse_equity",
+        "unit": "EGP",
+        "period": "fixture joint adverse valuation",
+        "entity": "SYNTHETIC-FULL-CONCENTRATION",
+        "evidenceId": "full-concentration",
+        "value": 79500
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "f1e023431aefa5214b3bfa0c656b906c751a59a56c38d6f7ca31ebc184f482c8",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "1986d035759403030f579e1cdef8be9773341ae7220ea17fb8b525fbad201a9e",
+    "packetHash": "4092ec4ef9e6efc9db4efb5ac2b63ae11f1a7612b7c6ff5a70cca96c9cc5e9df",
+    "outputHash": "e01a84825f8eac47ba639df4f65ab0f835a05085f4ee2381e980c513effbdea5",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-21.json",
+    "originalFileHash": "15cd1d64032bd1b8c9d8d30c1bcf91a330fed296d401acf56d8351fe5101c44c",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "208a94878922c3df6b9283b00608e620c7757c32f2d18f0cb0310e32851986e9"
+}

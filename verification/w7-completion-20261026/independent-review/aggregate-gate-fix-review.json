@@ -1,0 +1,15 @@
+{
+  "reviewedAt": "2026-10-25T23:16:47.076Z",
+  "reviewerActorId": "/root/w7_independent_review",
+  "evaluationReleaseHash": "015b9b8deb5208e68ca66abef8e54a639d4eb25ba8b575b9cb43909dad441316",
+  "change": "Suite numerical accuracy now uses aggregate >=95% with zero critical errors; case failures retained rather than an unregistered per-case95% veto.",
+  "disposition": "CONFORMS_TO_FROZEN_AGGREGATE_FACTUAL_GATE",
+  "validation": {
+    "command": "node --test app/v5-evaluation.test.mjs app/v5-w7.test.mjs",
+    "passed": 70,
+    "failed": 0,
+    "skipped": 0,
+    "log": "independent-review/evaluation-regression-aggregate.txt"
+  },
+  "outcomeSelection": "Both actual attempts reported55/55 targets at this point; change cannot erase a critical error and excerpt attempt still fails. Prior source reviews/results remain retained."
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "model-case-score",
+  "createdAt": "2026-10-26T09:09:29.809Z",
+  "payload": {
+    "caseId": "W7-26",
+    "caseHash": "c307c2363cd338a4b9011d7d7c32c0c8a5de1ab5b2c0364d3629d22f76c766e7",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "actorId": "/root/w7_context_analyst",
+    "reviewer": "/root/w7_completion_reviewer",
+    "runHash": "1cc1d56479a8ed3fdcef5637b449f940b82b24cb4db96f5f6c55461579967c1d",
+    "reviewHash": "fbca3e5ab7aa6a38147819e21bba5296463d1de937a86d27f176fc4730c33250",
+    "categories": [
+      "delayedEvents",
+      "noTrade"
+    ],
+    "numbers": [
+      {
+        "id": "decision_to_capture_seconds",
+        "status": "CORRECT"
+      },
+      {
+        "id": "incoming_capture_age_seconds",
+        "status": "CORRECT"
+      }
+    ],
+    "correct": 2,
+    "denominator": 2,
+    "accuracy": 1,
+    "criticalFabrications": 0,
+    "criticalUnitPeriodIdentityErrors": 0,
+    "rubric": {
+      "sectorReasoning": {
+        "score": 3,
+        "reason": "Limits conclusion to temporal archive evidence rather than issuer/sector inference."
+      },
+      "counterevidence": {
+        "score": 4,
+        "reason": "Distinguishes absence of earlier archive receipt from proof of global nonpublication."
+      },
+      "numericalInterpretation": {
+        "score": 4,
+        "reason": "Correct 90-second delay, 31.107 incoming age and 1.107 evaluation-record age."
+      },
+      "decisionUsefulness": {
+        "score": 4,
+        "reason": "Permits retrospective inspection and excludes document from demonstrated original decision inputs."
+      },
+      "uncertainty": {
+        "score": 4,
+        "reason": "Keeps first public availability null and refuses backdating from calendar document date."
+      }
+    },
+    "disagreements": [],
+    "missingEvidence": [
+      "Development-case evidence only; no current trading validation, predictive reliability or independently attested provider/model identity."
+    ],
+    "status": "FACTUAL_GATE_PASS",
+    "analyticalQuality": "REVIEW_REQUIRED_NO_AGGREGATE_RUBRIC_PASS_THRESHOLD_FROZEN",
+    "durationSeconds": 701.446,
+    "toolCalls": 0,
+    "independenceLimitation": "Distinct actor IDs are provenance, not proof of independent humans or uncorrelated errors. Source answers and factual-error adjudication remain review responsibilities."
+  },
+  "contentHash": "e7c3aeeb51d0f9423a5aa64cae20e2e5920d1f823e179a2052d6ee3e673455e8"
+}

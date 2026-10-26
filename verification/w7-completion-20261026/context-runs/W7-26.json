@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "actual-model-run",
+  "createdAt": "2026-10-26T09:04:09.237Z",
+  "payload": {
+    "caseId": "W7-26",
+    "packetFormat": "CASE_CONTEXT_1",
+    "caseContext": {
+      "caseId": "W7-26",
+      "cutoffAt": "2026-10-25T23:20:04.330Z",
+      "evidence": [
+        {
+          "id": "temporal-facts-26",
+          "availableAt": "2026-10-25T23:20:03.223Z",
+          "availableAtCutoff": true,
+          "secondsBeforeCutoff": 1.107
+        }
+      ],
+      "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+    },
+    "startedAt": "2026-10-26T08:51:56Z",
+    "finishedAt": "2026-10-26T09:03:37.446Z",
+    "latencyBasis": "Shared analyst batch: timestamp sampled during initial permitted packet/source setup after READY; all 26 cases were inspected and authored in one session. The elapsed interval is not isolated per-case latency, provider inference time, or per-case cost. finishedAt is actual exclusive-write time.",
+    "output": "Verified caseContext (case-specific capture availability checked before reasoning): {\"caseId\":\"W7-26\",\"cutoffAt\":\"2026-10-25T23:20:04.330Z\",\"evidence\":[{\"id\":\"temporal-facts-26\",\"availableAt\":\"2026-10-25T23:20:03.223Z\",\"availableAtCutoff\":true,\"secondsBeforeCutoff\":1.107}],\"meaning\":\"Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct.\"}\n\nThis is W7-26, cutoffAt \"2026-10-25T23:20:04.330Z\". Its evaluation record was captured at 23:20:03.223Z and is available 1.107 seconds before cutoff. Within the synthetic facts, the hypothetical original decision was at 23:18:03.223Z, incoming evidence capture was at 23:19:33.223Z, and their difference is 90 seconds. From that incoming capture to this exact cutoff is 31.107 seconds. The 31.107-second incoming-document age must not be replaced with the 1.107-second evaluation-record age.\n\nThe document may be inspected for the current retrospective assessment because incoming capture precedes this cutoff. The supplied original archive contains no earlier receipt, so it does not belong in the demonstrated original decision information set. issuerDocumentDate merely says 2026-10-25 and cannot backdate receipt to midnight or to the original decision. First public availability is explicitly null: the document might have been public earlier, but this record does not prove when, and absence of earlier archived receipt does not prove global nonpublication. A publication log or dated contemporaneous receipt would be needed to resolve that separate question. I would use the document as later evidence in the audit and clearly exclude it from claims about the original decision's recorded inputs. No issuer, sector, market or trading conclusion follows.",
+    "extractedNumbers": [
+      {
+        "id": "decision_to_capture_seconds",
+        "unit": "seconds",
+        "period": "hypothetical original decision to incoming capture",
+        "entity": "SYNTHETIC-TEMPORAL-26",
+        "evidenceId": "temporal-facts-26",
+        "value": 90
+      },
+      {
+        "id": "incoming_capture_age_seconds",
+        "unit": "seconds",
+        "period": "relative to W7-26 cutoffAt",
+        "entity": "SYNTHETIC-TEMPORAL-26",
+        "evidenceId": "temporal-facts-26",
+        "value": 31.107
+      }
+    ],
+    "toolCalls": 0,
+    "toolCallsBasis": "Shared source-inspection and batch-authoring tool calls are counted once in telemetry.json, not allocated to individual cases.",
+    "originalToolCalls": 0,
+    "telemetryNormalization": "Empty dedicated-call array means zero dedicated calls; shared calls remain in original telemetry. No output or numerical answer changed.",
+    "actorId": "/root/w7_context_analyst",
+    "modelId": "gpt-6-astra",
+    "configurationHash": "2bf9fa7b51cce645a8383e3043fb8ed7f71e1a121223d806c6c3a0a4f99841f6",
+    "promptHash": "c39f4610cf9b13e97179cf91ff1f5da9b9d5dc229405ace875c2ee70a4eb914a",
+    "fullPromptHash": "8992f285fa6b1d2f5d603590bd74bbcdfe01d3da7cf5c64ff28e4eda6116011a",
+    "toolPermissionsHash": "b46e39955c7b2a5cea8db53adb162342f987fdb2c0ad784117f1b94abda439d5",
+    "caseHash": "c307c2363cd338a4b9011d7d7c32c0c8a5de1ab5b2c0364d3629d22f76c766e7",
+    "packetHash": "05d41d1f9e3c084b4f60ab79a2f150210496ab7c501f9309be9b962f6ecb6838",
+    "outputHash": "9de357aa592f3db62910664c6a162ffa94e2ad88cb32ca91928c3bf965907a73",
+    "originalFilePath": "verification/w7-completion-20261026/context-analyst-outputs/W7-26.json",
+    "originalFileHash": "5548829d330306a6d6afc2c9b0ca3f1b016df72873761e3b1f9507a92f6d651c",
+    "registrationHash": "e153f1fdbd6e9fc69b052ce028468014ffc7b3f95eb9caf95b5464de9d4ce7a7",
+    "synthetic": false,
+    "modelIdentityBasis": "Local configured model inheritance; not independent provider attestation"
+  },
+  "contentHash": "d33e2f192e048a91c92c53c4a7798e378844003357e3c2f1feee152e89d6e5e3"
+}

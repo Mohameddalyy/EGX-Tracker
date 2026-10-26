@@ -1,0 +1,35 @@
+{
+  "caseId": "W7-07",
+  "startedAt": "2026-10-25T23:06:54.5661685Z",
+  "finishedAt": "2026-10-25T23:13:36.2011092Z",
+  "latencyBasis": "Shared batch interval from the first measured pre-read timestamp to this original output serialization. Case drafting overlapped in one batch; isolated per-case analysis latency is unavailable and is not estimated.",
+  "output": "Consolidated total net profit is USD127.8 million, or USD127,800,000 (oras-profit). Separate-parent profit is USD5,155,743, already stated in USD and not in millions (oras-parent). Consolidated minus separate-parent profit is therefore USD122,644,257. This is a scope difference, not an incremental profit pool to add to consolidated earnings. Consolidation includes subsidiaries and consolidation adjustments; parent-only income can have a very different composition and timing.\n\nThe separate statement shows six-month EPS of USD1.05, but expressly says EPS is computed from consolidated statements. Dividing separate-parent profit by that EPS mixes a parent-only numerator with a group-based per-share statistic and cannot estimate a valid share count. Even using total group net profit is not necessarily correct: the consolidated statement separately identifies USD115.3 million attributable to owners and USD12.5 million to non-controlling interests. A share-count reconstruction would need the actual EPS numerator adjustments, weighted-average share methodology and rounding details.\n\nConstruction businesses often operate through subsidiaries and project entities. Group profit helps describe consolidated operations, while parent cash available for dividends or obligations may depend on distributions and restrictions elsewhere in the group. Strong consolidated profit is supportive; the much smaller parent result is counterevidence to assuming all group earnings are immediately parent-distributable cash. It is not proof of trapped cash or poor earnings quality by itself.\n\nRequest intercompany distributions, cash accessibility, debt guarantees and the EPS note/share reconciliation. Bounded decision: preserve the two scopes separately and decline valuation or sizing based on the invalid quotient. The packet supplies neither current corporate-action clearance nor market valuation, and the captured document does not establish later outcomes.",
+  "extractedNumbers": [
+    {
+      "id": "group_profit",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction consolidated",
+      "evidenceId": "oras-profit",
+      "value": 127800000
+    },
+    {
+      "id": "parent_profit",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom Construction separate parent",
+      "evidenceId": "oras-parent",
+      "value": 5155743
+    },
+    {
+      "id": "scope_difference",
+      "unit": "USD",
+      "period": "six months ended 2026-06-30",
+      "entity": "Orascom consolidated minus separate",
+      "evidenceId": "oras-parent",
+      "value": 122644257
+    }
+  ],
+  "toolCalls": 0,
+  "telemetry": "All reads, drafting storage and writes were shared batch calls and are not individually attributable. Zero means no dedicated per-case tool call, not zero run cost. See telemetry.json for actual shared invocation totals. No token, provider latency, calibrated probability or monetary-cost telemetry is available."
+}

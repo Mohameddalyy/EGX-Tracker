@@ -1,0 +1,31 @@
+{
+  "id": "W7-17",
+  "caseHash": "2866f2eec4b045ee16de087acbd953fd611494d17eb6a78693804f9872cb4fdd",
+  "task": "Calculate combined exposure and percent of equity exposed to the described shared USD-input risk. Explain why missing returns do not imply zero correlation and why exposure sum is not a statistical covariance estimate. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"combined_exposure\",\"unit\":\"EGP\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-D and ENGINEERING-E\",\"evidenceId\":\"scenario-correlation\"},{\"id\":\"shared_exposure_percent\",\"unit\":\"percent of equity\",\"period\":\"fixture decision event\",\"entity\":\"ENGINEERING-D and ENGINEERING-E\",\"evidenceId\":\"scenario-correlation\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T22:55:55.225Z",
+  "evidence": [
+    {
+      "id": "scenario-correlation",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_RECORDED_ENGINEERING_SCENARIO; not market observations. Portfolio equity EGP100,000. Holding ENGINEERING-D exposure EGP30,000 and ENGINEERING-E exposure EGP20,000. Both depend on imported inputs priced in USD and sell in EGP. No return history or hedging evidence is supplied. Do not infer correlation coefficients from exposure descriptions.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld.",
+  "packetFormat": "CASE_CONTEXT_1",
+  "caseContext": {
+    "caseId": "W7-17",
+    "cutoffAt": "2026-10-25T22:55:55.225Z",
+    "evidence": [
+      {
+        "id": "scenario-correlation",
+        "availableAt": "2026-10-25T22:55:55.206Z",
+        "availableAtCutoff": true,
+        "secondsBeforeCutoff": 0.019
+      }
+    ],
+    "meaning": "Capture availability versus this case cutoff only. Financial period, event date and hypothetical decision cutoff inside the task remain distinct."
+  }
+}

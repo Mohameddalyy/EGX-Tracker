@@ -1,0 +1,27 @@
+{
+  "id": "W7-13",
+  "caseHash": "fa5259bcc7c2819f0dfbdb963e526623a386e4f936685cedbc17ef8fb073c178",
+  "task": "Extract proposed exchange ratio and compute arithmetic shares for the hypothetical OCI holding before any fractional settlement rule. Explain why this is not completed dilution, a rights entitlement or permission to size a trade. Return extractedNumbers with exactly these IDs and metadata (plus value): [{\"id\":\"exchange_ratio\",\"unit\":\"ORAS shares per OCI share\",\"period\":\"proposed combination at H1 2026 reporting\",\"entity\":\"Orascom Construction PLC\",\"evidenceId\":\"oras-combination\"},{\"id\":\"arithmetic_new_shares\",\"unit\":\"ORAS shares\",\"period\":\"hypothetical 1000 OCI share exchange\",\"entity\":\"Hypothetical OCI shareholder\",\"evidenceId\":\"scenario-combination\"}]. Also explain sector implications, counterevidence, uncertainty, missing inputs and a bounded decision; do not invent market clearance or future outcomes.",
+  "cutoffAt": "2026-10-25T23:04:24.080Z",
+  "evidence": [
+    {
+      "id": "oras-combination",
+      "contentHash": "28c5d26067780ad79a837c346c2e1b23195c1c130a07883a3999018ffb3fb533",
+      "source": "https://orascom.com/wp-content/uploads/H1-2026-Reviewed-Financial-Statements.pdf",
+      "availableAt": "2026-10-23T16:27:45.520Z",
+      "passage": "Physical page 68. Note 21 Potential Strategic Combination. Proposed acquisition terms: OCI Global shareholders would receive 0.4634 newly issued Orascom Construction shares per OCI share. Orascom shareholders approved resolutions on 22 January 2026. Long-stop date extended to 30 December 2026. Combination remained subject to OCI shareholder and regulatory approvals, was not completed as at reporting date, and was considered a non-adjusting subsequent event. This is an exchange-ratio combination, not a rights issue.",
+      "localPath": "data/research/evidence/w7-evaluation/oras-h1-2026.pdf",
+      "page": 68,
+      "availabilityBasis": "Actual retained capture; document period/date is not verified first-publication availability"
+    },
+    {
+      "id": "scenario-combination",
+      "contentHash": "6274ded6b758ea563a75be9abc6a64dd4932fdfd7404dc378e1a389724fe5e86",
+      "source": "local:authored-synthetic-engineering-scenarios",
+      "availableAt": "2026-10-25T22:55:55.206Z",
+      "passage": "SYNTHETIC_POSITION_ASSUMPTION. A hypothetical OCI shareholder holds 1,000 OCI shares. Apply only the stated exchange ratio arithmetically. Completion, fractional settlement, current approvals and total new share issuance are not established by this packet.",
+      "localPath": "data/research/evidence/w7-evaluation/recorded-engineering-scenarios.json"
+    }
+  ],
+  "instruction": "Use only the supplied evidence and permitted tools at cutoff. State missingness and counterevidence. Future outcomes, truth answers and other model answers are withheld."
+}

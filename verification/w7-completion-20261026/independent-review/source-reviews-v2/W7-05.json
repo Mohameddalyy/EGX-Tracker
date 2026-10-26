@@ -1,0 +1,34 @@
+{
+  "actorId": "/root/w7_independent_review",
+  "at": "2026-10-25T23:19:21.903Z",
+  "caseHash": "c0877676d2a6578d7411d95d1ee171c0821b2bdd44e48f4df8db870be2d04701",
+  "runHash": "0c6ace9fa5ed8bf1a3d6dcfbbcfeb5a6a99bec917de9be616967ade872cefbfa",
+  "rubric": {
+    "sectorReasoning": {
+      "score": 4,
+      "reason": "Distinguishes developer contracting, recognition, collections and construction cash obligations."
+    },
+    "counterevidence": {
+      "score": 4,
+      "reason": "Uses low operating cash flow and construction obligations against optimistic gross-collections inference."
+    },
+    "numericalInterpretation": {
+      "score": 4,
+      "reason": "Correct conversion to billions and source-specific rounding disagreement retained."
+    },
+    "decisionUsefulness": {
+      "score": 4,
+      "reason": "Calls for cancellation, cost-to-complete and maturity schedules before funding assessment."
+    },
+    "uncertainty": {
+      "score": 4,
+      "reason": "Acknowledges a possible intermediate-rounding explanation but explicitly says cause is unestablished; selected statement amount remains anchor."
+    }
+  },
+  "criticalFabrications": 0,
+  "criticalUnitPeriodIdentityErrors": 0,
+  "disagreements": [],
+  "missingEvidence": [
+    "No current investment/market validation inferred; source inspection covers relevant selected pages rather than full issuer due diligence."
+  ]
+}

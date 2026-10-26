@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kind": "comparison-amendment",
+  "createdAt": "2026-10-25T23:07:29.351Z",
+  "payload": {
+    "version": "w7-comparison-1.0",
+    "status": "APPROVED",
+    "authorizedBy": "USER",
+    "approvedAt": "2026-10-25T23:07:29.351Z",
+    "approvalEvidence": {
+      "questionItemId": "[\"request_user_input_async\",\"call_9abd60c76a0642f8aecfc1c57b62bac6\",0]",
+      "answer": "Approve this evaluation amendment",
+      "timestampBasis": "Actual time approval recorded; no earlier submission time inferred"
+    },
+    "documentPath": "verification/w7-completion-20261026/COMPARISON-AMENDMENT-PROPOSAL.md",
+    "documentHash": "40ff1737eaa4b10d6d36245e3f55c945c43c8c3ab1f92f8fa71b8c2958782f97",
+    "endpointSessions": 126,
+    "minimumAppropriateClosedObservations": 100,
+    "minimumAdditionalNetWealthCents": 100000,
+    "familySize": 16,
+    "riskAcceptance": "Separate human judgment, no added FULL risk cap",
+    "basket": "Five prior-median20-value-ranked admitted ordinary EGP names; EGP20000 budget each, no replacement; fixed prior-close limit and frozen cost/fill controls",
+    "automaticPromotion": false,
+    "entryAuthorization": false,
+    "schedulerAuthorization": false,
+    "realCapitalAuthorization": false
+  },
+  "contentHash": "b011fc50380405f76ba0339251da4151099711e19e1e59e9f3e186e7b8eda911"
+}
