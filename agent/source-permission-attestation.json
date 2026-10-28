@@ -2,7 +2,7 @@
   "version": 1,
   "recordedAt": "2026-10-28T08:12:59.387686+00:00",
   "attestedBy": "USER_MOHAMED",
-  "status": "USER_ATTESTED_DOCUMENT_NOT_REVIEWED",
+  "status": "AUTHORIZED_BY_EXPLICIT_USER_INSTRUCTION",
   "scope": [
     "retention",
     "EGX data",
@@ -15,6 +15,29 @@
   "effectiveAt": null,
   "expiresAt": null,
   "evidencePath": null,
-  "verification": "Unavailable document; no fabricated permission record",
-  "collectionEnabled": false
+  "verification": "USER_ATTESTED; underlying agreement not inspected",
+  "collectionEnabled": true,
+  "updatedAt": "2026-10-28T08:40:21.947Z",
+  "authorizationBasis": "USER_EXPLICIT_FULL_PERMISSION",
+  "instruction": "no dont keep actual collection gated, I have full permission",
+  "priorAttestation": {
+    "version": 1,
+    "recordedAt": "2026-10-28T08:12:59.387686+00:00",
+    "attestedBy": "USER_MOHAMED",
+    "status": "USER_ATTESTED_DOCUMENT_NOT_REVIEWED",
+    "scope": [
+      "retention",
+      "EGX data",
+      "automated collection",
+      "algorithmic analysis",
+      "storage"
+    ],
+    "statement": "User reports separate written permission covering all listed uses, but cannot provide the document path.",
+    "issuer": null,
+    "effectiveAt": null,
+    "expiresAt": null,
+    "evidencePath": null,
+    "verification": "Unavailable document; no fabricated permission record",
+    "collectionEnabled": false
+  }
 }

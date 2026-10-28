@@ -3,7 +3,7 @@ import {reportInventory} from './workflow-documents.mjs';
 import {DatabaseSync} from 'node:sqlite';
 import {existsSync,readFileSync} from 'node:fs';
 import {join} from 'node:path';
-import {historyRefreshState} from './refresh-selection.mjs';
+import {historyRefreshState,expectedHistorySession} from './refresh-selection.mjs';
 import {routeAnnouncements} from './exchange-evidence.mjs';
 import {paperState} from './paper.mjs';
 import {workflowHash} from './workflow-store.mjs';
@@ -15,7 +15,7 @@ export function readWorkflowInputs(root,now=new Date()){
  const db=new DatabaseSync(join(root,'data','egx.sqlite'),{readOnly:true});
  try{
  const inputErrors=[],optionalJson=(path,fallback)=>{try{const value=readJson(path,fallback);if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(fallback).some(k=>!value[k]||typeof value[k]!=='object'||Array.isArray(value[k])))throw Error('Invalid retained source index shape');return value;}catch(e){inputErrors.push({path,code:'RETAINED_SOURCE_UNREADABLE',message:e.message});return fallback;}};
- const stockRows=rows(db,'stocks','SELECT s.*,m.status catalog_status FROM stocks s LEFT JOIN market_catalog m ON m.ticker=s.ticker'),stocks=stockRows.map(s=>{const bar=db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON c.ticker=b.ticker AND c.day=b.day WHERE b.ticker=? ORDER BY b.day DESC LIMIT 1').get(s.ticker);return {ticker:s.ticker,catalogStatus:s.catalog_status,retrievedAt:s.retrieved_at,latest:bar||null,readiness:historyRefreshState(s,bar,now),fingerprint:workflowHash([s.retrieved_at,s.metadata,bar])};});
+ const stockRows=rows(db,'stocks','SELECT s.*,m.status catalog_status FROM stocks s LEFT JOIN market_catalog m ON m.ticker=s.ticker'),stocks=stockRows.map(s=>{const expected=expectedHistorySession(s,now),latestObservedDay=db.prepare('SELECT MAX(day) day FROM bars WHERE ticker=?').get(s.ticker)?.day||null;const bar=db.prepare('SELECT b.*,c.captured_at,c.finality FROM bars b LEFT JOIN bar_captures c ON c.ticker=b.ticker AND c.day=b.day WHERE b.ticker=? AND (? IS NULL OR b.day<=?) ORDER BY b.day DESC LIMIT 1').get(s.ticker,expected.day,expected.day);return {ticker:s.ticker,latestObservedDay,catalogStatus:s.catalog_status,retrievedAt:s.retrieved_at,latest:bar||null,readiness:historyRefreshState(s,bar,now),fingerprint:workflowHash([s.retrieved_at,s.metadata,bar])};});
  const decisions=rows(db,'agent_decisions').map(d=>{try{return {...d,payload:JSON.parse(d.payload)};}catch(e){inputErrors.push({decisionId:d.id,code:'DECISION_PAYLOAD_UNREADABLE',message:e.message});return {...d,payload:{reviewConditions:'Repair unreadable original decision; do not infer a disposition'}};}}),queue=rows(db,'research_queue'),catalog=optionalJson(join(root,'data/market/catalog.json'),{});
  const exchange=optionalJson(join(root,'data/research/evidence/exchange/index.json'),{records:{},windows:{}}),library=optionalJson(join(root,'data/research/evidence/library/index.json'),{items:{}});
  const evidence=Object.fromEntries(stocks.map(s=>[s.ticker,[]])),unmapped=[];

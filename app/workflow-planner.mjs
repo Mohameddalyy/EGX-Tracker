@@ -2,7 +2,7 @@ import {cairoDate} from './finality.mjs';
 import {workflowHash} from './workflow-store.mjs';
 export const workflowLimits={baseline:{targetMs:25*60000,hardMs:30*60000},screen:{targetMs:2*60000,hardMs:5*60000},checkpoint:{targetMs:5*60000,hardMs:8*60000}};
 const active=['pending','researching','awaiting_decision'];
-export function sourcePermission(access,source,now){const a=access[source];return !!(a?.status==='approved'&&a.evidencePath&&a.purpose==='personal-automated-analysis'&&Date.parse(a.effectiveAt)<=+now&&Date.parse(a.expiresAt)>+now);}
+export function sourcePermission(access,source,now){const a=access[source];return !!(a?.status==='approved'&&a.evidencePath&&a.purpose==='personal-automated-analysis'&&Date.parse(a.effectiveAt)<=+now&&(Date.parse(a.expiresAt)>+now||a.expiresAt===null&&a.untilRevoked===true&&a.authorizationBasis==='USER_EXPLICIT_FULL_PERMISSION'&&a.authorizedBy==='USER_MOHAMED'));}
 export function planWorkflow(input,{workload='checkpoint',now=new Date(),invocationAt=input.observedAt}={}){
  if(!workflowLimits[workload])throw Error('Unknown workload');
  const day=cairoDate(now),bucket=new Date(Math.floor(+now/1800000)*1800000).toISOString(),jobs=[],sourceGaps=[...(input.inputErrors||[])],stockMap=new Map(input.stocks.map(s=>[s.ticker,s]));

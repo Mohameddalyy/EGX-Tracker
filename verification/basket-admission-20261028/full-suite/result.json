@@ -1,0 +1,1962 @@
+{
+  "at": "2026-10-28T08:48:40.993Z",
+  "node": "v24.22.1",
+  "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+  "evaluationReleaseHash": "d6c2807e9ca461cb06b242c6820256e04dc81ae20cecfad96866a120d88a1a70",
+  "planHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+  "decisionSchemaHash": "8678334e55aa7877a6f7c2ffc6a36170729386704681e194d001d8429cc61535",
+  "scope": "OFFLINE_ENGINEERING_ONLY",
+  "activation": false,
+  "status": "BLOCKED",
+  "exitCode": 1,
+  "error": null,
+  "counts": {
+    "tests": 354,
+    "pass": 353,
+    "fail": 1,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "files": [
+    {
+      "path": "app/alert-relay.test.mjs",
+      "sha256": "95173687479617fd828bb7afdd4b9c55b8328dcc907b6b776055faa66a74690f"
+    },
+    {
+      "path": "app/analysis.test.mjs",
+      "sha256": "440d732eb316808227c69d4bfb4e9379e2431305850265d26dc80ec31252127e"
+    },
+    {
+      "path": "app/attention.test.mjs",
+      "sha256": "414f7f709f2e40629dd4361bea2763774b8419cc870d70d28279fe542f784fad"
+    },
+    {
+      "path": "app/audit-remediation.test.mjs",
+      "sha256": "961c1242cca62b2b68a54c8671546e16493c41c31e54893d6862588569a1f1b2"
+    },
+    {
+      "path": "app/basket-accounting.test.mjs",
+      "sha256": "59ebcc9e8e60bc07cb16776d7368ca4ee70ae95dcffffa690ffaeeb55674e00a"
+    },
+    {
+      "path": "app/basket-plan.test.mjs",
+      "sha256": "f814b0f11c75fe71daa891df3fd385fd6bd85d26e8e9ac88c775c0cb94f2c4f9"
+    },
+    {
+      "path": "app/completed-session.test.mjs",
+      "sha256": "b88997d7c51fa1ba02b7326f67a7a51a3c4f02871f294ea08592f545c1d9109c"
+    },
+    {
+      "path": "app/core.test.mjs",
+      "sha256": "6085f52a3df4df8757444e7b178032368b5a13beae51b3b45abf7ccc6d58242f"
+    },
+    {
+      "path": "app/data-preparation.test.mjs",
+      "sha256": "4d73aeb55de71c1667fd79aa2b2336cd2d94588e88db147df94146bdf4d9cce0"
+    },
+    {
+      "path": "app/decision-execution.test.mjs",
+      "sha256": "d67ca456cb1ee73043b21636b7c9f72a87205bdc0ff7ea8f225a5ca5db24e840"
+    },
+    {
+      "path": "app/decision-monitor.test.mjs",
+      "sha256": "95f23988b98cc8b4b7cfa84e47da2913651ea96ac17db59b2d65d0daf9f28ee5"
+    },
+    {
+      "path": "app/experiment-review.test.mjs",
+      "sha256": "d35f29c7d861c88272dc9d1658c1d4e3159c065845a0fce6af7a69e746a6b45c"
+    },
+    {
+      "path": "app/finality.test.mjs",
+      "sha256": "c04430ea4ab3b5a7730961e418493d9e097da821320782a10e6d12de155c36fc"
+    },
+    {
+      "path": "app/intraday-service.test.mjs",
+      "sha256": "624660ae7a3662afd11aafb8b436fca73c9e6337ad8a5334e48d5cdf82d541b8"
+    },
+    {
+      "path": "app/intraday.test.mjs",
+      "sha256": "b3640b93070f2f3d8cbb23fa2932bfa56e51271a0c82ca33727767361c493c0e"
+    },
+    {
+      "path": "app/journal.test.mjs",
+      "sha256": "472eb000b6f09445cca651e2e0960b26952e7877e64608750ee0dd355e880c27"
+    },
+    {
+      "path": "app/levels.test.mjs",
+      "sha256": "02e3fbda0114c9c054e8bf8a3229d4c5e13dc8c7b20362ecd288e42481b5c163"
+    },
+    {
+      "path": "app/market.test.mjs",
+      "sha256": "38c0a1e982e2617f829ce2903a5f9a07547f455a45fe52493c0caad7b0fa65a1"
+    },
+    {
+      "path": "app/operations.test.mjs",
+      "sha256": "0a2f187d2f4d48c01f30dc52b22d7c038874620e1fa3207c3996924901693743"
+    },
+    {
+      "path": "app/paper-performance.test.mjs",
+      "sha256": "3ce15405a8148f611849e4e69b0c5379d923510f39f2093fd84a936f9dfa6e29"
+    },
+    {
+      "path": "app/paper-workflow.test.mjs",
+      "sha256": "15ea40a0aa639b836ac479390492f3104ec388c8af0c8a12c317f42ce37dddfb"
+    },
+    {
+      "path": "app/paper.test.mjs",
+      "sha256": "3abcb68508d08da653a146152798b3e4c8f5103cbbf8c3180c85d08284dd31f2"
+    },
+    {
+      "path": "app/pipeline-progress.test.mjs",
+      "sha256": "0bef1e82c1beb34eb43d19a1abd8b8cf41954714d4a5ca9cb27bbba0df9d7b29"
+    },
+    {
+      "path": "app/positions.test.mjs",
+      "sha256": "8089f423bdc149c9ee7119c1ce4822cbe87adb5af1df3fcae64f59fd898d8722"
+    },
+    {
+      "path": "app/repair.test.mjs",
+      "sha256": "8e448178561d8552ac629071d79c45607bebdc2bdbefedc60be2bb4defd981b3"
+    },
+    {
+      "path": "app/research-card.test.mjs",
+      "sha256": "2d9cb4b1305819370c8722b2f1b6499f42b8b06185a2ef99bf52234bcd28ffa3"
+    },
+    {
+      "path": "app/research.test.mjs",
+      "sha256": "a4229b2280e59e8b926f79334e7ec54bafcc912f26bd773ae5bc32caec444521"
+    },
+    {
+      "path": "app/scout-efficient.test.mjs",
+      "sha256": "b4886d5ee0e6b3d9d610df4b285681ae2c9b2eb37242cbe184be9ede15636f1a"
+    },
+    {
+      "path": "app/scout.test.mjs",
+      "sha256": "b1582ffccf9e91b6fa004bfcaae89010b28e79340942fcdf66551af101b12921"
+    },
+    {
+      "path": "app/source-repair.test.mjs",
+      "sha256": "72c8fd4f09664137cec4914856560988534e995677abd7c990f22392976ef2eb"
+    },
+    {
+      "path": "app/trade-plans.test.mjs",
+      "sha256": "ee356e7991a12cb30fb54d5c7a4d160af1f0879c05015265ca798981f8fab8ac"
+    },
+    {
+      "path": "app/tv-deadline.test.mjs",
+      "sha256": "44ae50e436a70e04877854eca9400795f22b7ae54361015f2f27de15e82ee589"
+    },
+    {
+      "path": "app/v5-client.test.mjs",
+      "sha256": "7a92b6183196f1d84e56105ac5a1c684995b27979641af6275b957b29bccb0e1"
+    },
+    {
+      "path": "app/v5-evaluation.test.mjs",
+      "sha256": "04226336050bd78c44c3f02c1acd978ed561bdcc24fcea71e6e79892d92a23dd"
+    },
+    {
+      "path": "app/v5-execution.test.mjs",
+      "sha256": "10bf1ad1614e3241b65e4e22010500c62b12052cf7d9ce62f60fd40c4da8d4e3"
+    },
+    {
+      "path": "app/v5-release.test.mjs",
+      "sha256": "d75252bb279cd739ad4da09161c4bd98b18ebdc6d6c5e805639acb11e608a13f"
+    },
+    {
+      "path": "app/v5-w7.test.mjs",
+      "sha256": "da8d1e7834a726425dffa271f349f0c2f59a08b6b5ff5ef0a75147d849a61590"
+    },
+    {
+      "path": "app/v5.test.mjs",
+      "sha256": "8603498776993113cfdd0576c30c66d8f06dfac513cb52586a993d0e7387272d"
+    },
+    {
+      "path": "app/validation.test.mjs",
+      "sha256": "5dadb9a207de5f6e3dce688cc8aca9d0cc03d663e98f46e699891f45a6ea4230"
+    },
+    {
+      "path": "app/watchlist.test.mjs",
+      "sha256": "7873d8f26b975da944931df32f5bbadf05484b6ceb933ee508e5f7ff08e06660"
+    },
+    {
+      "path": "app/workflow.test.mjs",
+      "sha256": "2917fe35122972a8236e9caf2c4e5351debff12498cbc55dff2986bab31708a4"
+    }
+  ],
+  "logHash": "664ff2e40a6415c8cfed07dc881921edaf8b18eb3495380f66645c0a2d36ddd3",
+  "tests": [
+    {
+      "status": "PASS",
+      "name": "HTTP relay authenticates rules/webhooks, rejects malformed events, deduplicates retries and protects inbox",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "accepted deliveries and deduplication survive receiver restart while the local PC is offline",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source provenance rejects excluded domains, future publication and unsafe artifacts; immutable identities survive retries",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "verified statements reconcile scale, owners equity and cash-flow bridges, and reject weighted-average shares",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "conservative bilingual extraction preserves negative values and flags multi-column ambiguity without verifying anything",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "sector models reproduce simple analytical identities and keep minority interests distinct",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "valuation links a verified dated statement, guards sector/currency and consolidated minority adjustment",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "all-company market analysis exposes stale/FX coverage and separates momentum, quality, value and liquidity",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "portfolio historical VaR/CVaR use the entire aligned supplied portfolio and never impute absent holdings",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "events deduplicate canonical evidence, retain unknown expectations and require an economic hypothesis",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "price-discovery challenger emits a precommitted exit policy without fabricating a resistance target",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "expectancy uses only earlier mature quality-controlled samples and uncertainty stays explicit for small date clusters",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "shadow forecasts freeze model/rules, require future sessions and never create fills",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "blinded model packets share the same dossier, score numeric/citation errors and retain reviewer evidence",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "evidence bundles roll back atomically when a statement is inconsistent",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "interim DCF rejects annualization and overlapping TTM periods, but accepts a contiguous comparable bridge",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "property NAV discounts dated cash flows and saved models cannot silently use undated annual slots",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "macro observations require authoritative dates and company-specific transmission never fabricates sensitivity",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "shadow exits use only the precommitted path; later prices cannot alter a completed outcome and gaps are explicit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "integrated dossier, frozen comparison and complete-universe panel preserve the original database and reject changed geometry",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "thresholds are inclusive and paused/stale data suppress market flags",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "plan touches exclude pre-plan/same-day OHLC and closed plans; ambiguous touches are explicit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "review state persists for identical evidence, changed evidence reopens, history retained",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unconfirmed dates, missing history, gaps and failed imports appear as data issues",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "audit: full promotion rejects omitted value/quality claim dependencies",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "audit: full promotion rejects old core evidence even in fresh report",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "audit: legacy omission cannot bypass the new promotion contract",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "audit: unknown claim family cannot waive conditional dependencies",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "audit: unavailable accounting checks are not a successful reconciliation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "audit: recent metadata does not refresh old retained bar provenance",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "valid technical and value reviews pass; old filing dates need current subsequent-event coverage",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "old approval cutoff and future checks fail; missing optional features do not block research approval",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "exact retained ISIN maps to research evidence, while shared and conflicting identities stay quarantined",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "partial recapture retains bars but snapshot and preparation quarantine the untouched latest tail",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "efficient service fills remaining handoff slots without taking over an existing owner",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "stage metrics retain failure and reuse without inventing model token consumption",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket durable entry replay is idempotent, restart-safe and preserves cash; no strategy exits",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket no-fill reservations persist through window and clear only at reconciliation deadline",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket dividends reconcile receivable to cash once, without assuming gross taxes or unsettled entitlement",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket whole-share splits preserve invested cost and invalidate old marks; unknown fractions blocked",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket valuation requires exact-date confirmed marks and complete known-action coverage",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "explicit user permission can be until revoked, but an unapproved assertion cannot authorize collection",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "rule/source reviews bind exact retained bytes and interpreted payload, not a verified flag",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "fresh admission binds full current universe, raw source bytes and official-rule interpretation; stale/omitted/corrupt data fail",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "fixed endpoint cannot be booked before final close even for an all-cash basket",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "approved basket ranks five prior-close names by actual turnover/ISIN and funds whole-share cost-inclusive commitments",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing raw turnover or identity does not shrink the ranking denominator or silently substitute a proxy",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket rejects incomplete/duplicate/late universe and reports insufficient names without replacements",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "basket preserves uncertainty for missing effective action rules and invalid daily bands",
+      "skipped": false
+    },
+    {
+      "status": "FAIL",
+      "name": "provisional intraday bar does not hide a confirmed last-completed-session recapture or delete the provisional data",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "RV20 excludes current volume and ATR uses previous close",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing volume and duplicate timestamps are rejected",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "repeated ingestion is idempotent and notes survive",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "changed adjustment and old captures cannot overwrite data",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "duplicate session within a transaction rolls back all writes",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "document index has a single owner; an old release cannot remove a new lock",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "running selector reuses Thursday on Friday/weekend/preopen and advances after next close",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "provider holiday and unknown metadata do not create a fabricated current session",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "stale metadata capture and unsupported session cannot certify reuse",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "repair attempts are retained, target scoped and honor retry timestamps",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "bulk receipts retain missing symbols without repeating successful component",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "new live promotion contract permits explicit noncritical ownership gap with independent treatment",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing corporate action or solvency evidence cannot use degraded route",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "value-thesis input declared as relied upon cannot be omitted",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unexplained partial sections cannot slip through new contract",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "optional verified claims still require sources and cannot contradict a gap",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "field levels distinguish optional, conditional and sector inapplicability",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "all dictionary fields persist for missing stock without deletion or invented trade readiness",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "excluded and local document routes rejected including redirect destinations",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "document capture deduplicates content and conditional validation retains original evidence",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "linking an approved plan is idempotent and creates no fills; only recorded trades change position/P&L",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "all actions use only forward confirmed observations; forecasts do not imply correctness",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "elapsed time alone does not finalize old intraday captures and no future data is invented",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing sessions block forecast scoring, while known holidays are excluded",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "invalid prices and stale captures are explicit; same-bar touches never assume ordering",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "monitor appends revised evidence, deduplicates identical observations, and includes Avoid",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "new same-day evidence gets a fresh handoff while identical triggers remain idempotent",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "empty-trade final narrative reports untested execution, missing checkpoints and unavailable benchmarks without fabricating metrics",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "post-close boundary includes feed delay and buffer, in Cairo summer and winter time",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "waiting and midnight rollover cannot promote a pre-cutoff capture; future timestamps cannot pass",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "weekends, provider holidays and missing or unsupported metadata cannot qualify same-day bars",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "provider extensions and date overrides delay eligibility; shorter sessions do not lower the verified floor",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "ingestion persists capture evidence; dashboard, levels, screening and monitoring accept the same post-close bar",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing current-session data is flagged after cutoff, not before; historical observations remain untouched",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "configuration requires HTTPS off-loopback and never permits credentials in URL",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "Basic plan blocks webhook configuration and performs no cloud or model calls",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "only pending event work launches a model; zero exit without a saved decision is blocked and not retried",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "service advances cursor only after durable import and resumes without duplicate candidates",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "duplicate delivery creates one queue/notice, preserves fills/bars and never leaks a token",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "symbol, future timestamp, empty price and threshold mismatches are rejected",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "paused, superseded/retired, out-of-order and old delivery remain audit-only",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "events coalesce during research, distinct risk event after completion queues new review",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "no entry rules from Wait, holdings survive expired/superseded setups and close with recorded sells",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "approved entry boundary outside zone cannot queue a buy review; stop event retires entry monitoring",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "snapshots stay immutable across source changes and reviews; retries do not duplicate",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "invalid prices, stale source and missing thesis are rejected without saving",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "confirmed swings cluster with dated evidence and exact risk formulas",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unconfirmed pivots and current-day extremes do not affect levels",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "a broken pivot stays invalidated after price recovers",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "no invented levels on flat series; insufficient history and nonpositive stops handled",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "catalog separates market coverage from watchlist; adding and reimport preserve user notes",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "catalog validation and currency changes are atomic; USD prices never become EGP",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "an import lock prevents chart jobs, but adding a watchlist stock stays available",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "dead importer locks recover and preserve stored progress",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "Cairo evening target follows daylight saving and skips Friday/Saturday",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "late catch-up is recorded at actual time, duplicate runs blocked, original result immutable",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missed and stalled runs stay visible; recovery is explicit and never expires a live owner",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "old missed checkpoint cannot become a backdated run",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "weekly drawdown latches, cancels entries and preserves exits; missing preflight blocks independently",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "pre-start risk revisions retain history and cannot change a running experiment",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "scorecard separates missing observations from zero performance, counts missed runs and matches dated index returns",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "isolated screen → analyst → guarded decision → confirmed trigger → sized order → evidenced fills",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "whole-share sizing includes roundtrip fees and all risk caps",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "future post-decision fill has one fee, slippage, and idempotency",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing first minute or inadequate volume never fabricates a fill/fee",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "ambiguous stop/target records stop first and exits on next minute with second fee",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "incomplete delayed bars and malformed raw volume are rejected",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "preflight requires evidence and expires",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "live progress prioritizes unfinished final review and preserves the older decision without certifying fresh evidence",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing saved report is a visible blocker and does not disappear as an empty queue",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "weighted cost, partial exit, fees and remaining stop risk reconcile",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "fills reject overselling/backdating, retry safely and preserve void audit trail",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "fresh retrieval with older source tail is explicitly unresolved, not a no-trade assertion",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "observed wrong-series timeout differs from empty chart and unobserved failure",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "recovery persists original, refuses a live collector and restores only with ownership and verification",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source repair distinguishes missing routes, blocked access, large files and transient errors",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "ratings preserve unavailable and boundary values",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "peer comparisons exclude stale, different industry/currency and nonpositive PE; missing differs from negative",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "entry risk works without portfolio capital and includes explicit cost scenarios",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unknown capital blocks sizing; portfolio, cash and liquidity caps constrain it",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "reports reject unsupported citations and model-written sizing",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "compact change report keeps full-market exclusions and limits ranked candidates",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing, previous-session and provisional histories stay due",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "only evidenced same-session captures are reused; future proof is rejected",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "screen excludes stale, illiquid, missing and USD inputs, never awarding missing fundamentals",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "price finality excludes current-day/unconfirmed extremes; broad Finance groups do not become peers",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "screen queue is limited, deduplicated per session and does not alter watchlists",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "promotion requires complete analyst evidence, current data and valid risk assumptions",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "production promotion accepts reviewed noncritical gaps while retaining plan and critical-data gates",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "analyst hands off without promotion; final decision guards evidence, preserves pauses and freezes history",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "financial snapshots reject currency/identity mismatch atomically and preserve null values",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "exchange windows resume, reuse and then overlap rather than re-fetching the full month",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "exchange response errors and wrong pagination cannot certify a complete capture",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "exchange records preserve original text, identity links, versions and unreviewed status",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "selected exchange context exposes exact ticker records and keeps unmatched records in the archive",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "reviewed facts require unchanged source bytes, page references, units and explicit limitations",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "document revisions retain the previous URL, hash and capture date without duplicating the same capture",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "prices, targets and risk derive from frozen levels, tick sizes and explicit costs; arbitrary edits fail",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "breakout uses the next measured resistance; absent structure, unknown ticks and weak reward/risk cannot approve",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "monitor distinguishes entry condition, no-chase, expiry and ambiguous touches without making up fills",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "connector deadlines preserve values and original errors",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "an unresponsive chart rejects rather than hanging a collector",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 five representative cards derive from engine, not invented approvals",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 expiry uses view clock without mutating ledger or claiming late entry",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 pause persists actor/reason/effect; rejects stale command; monitoring stays possible",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 cancellation retains reservation until reconciliation, cannot bypass rules",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 candidate states cannot manufacture executable orders",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 rendered evidence escapes hostile markup and unsafe links",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 checkpoint incomplete reports delivered and duplicates quiet; late delivery visible",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 original human answers, elapsed time and reviews are append-only; no fabricated pass",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 notes preserve decisions and retain original reason",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 no registry means no automatic historic experiment enrollment",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 client API enforces token/origin and does not expose answer keys",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 unfilled, open, pending exit and closed states follow actual execution events",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 held cards show active raised stop, scheduled stop, and unknown stale concentration",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 client history detects tampering",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 all five timed answers and separate reviews required for acceptance",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 explicit placeholder classification cannot become acceptance",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 registry and candidate publication are explicit and preserve prior versions",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 input failure is a visible incident with unknown holdings, never an empty success",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W8 real dispatcher timeout publishes a partial checkpoint and retains owner/monitoring",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "closed ledger reconciles cash plus unsettled proceeds with integer P&L and costs",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "open mark P&L includes entry fee but not a fabricated exit fee",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "stale or action-held marks invalidate total return without erasing cash or realized P&L",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "pending illiquid exits remain exposure and are not counted as completed trades",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unfilled intents change counts without generating profit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "inconsistent entry costs and fees fail reconciliation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "cash flow outside supported engine cannot silently become profit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing fill reference is unavailable slippage, never zero",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "drawdown is snapshot-specific and gaps retain incomplete status",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "no event-time marks are misrepresented as daily closing equity",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "read-only SQLite reader replays results and leaves database bytes unchanged",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "hash-chain corruption is rejected before metrics",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "nonisolated database is refused",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "trial retains all 18 arms and all 6 classes of unproven claims outside activation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing/duplicate comparison arms cannot be silently dropped",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "available research arm requires real actor/configuration bindings",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "immutable artifact refuses overwrite and detects edited payload",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "cohort retains full catalog times variants, unanswered and waiting candidates",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unknown and retroactive cohort decisions fail",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "forecast 5/20/60 anchors are original signal close with session denominators",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "immature, missing and incoherent forecast outcomes remain distinct",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "same-period index excess uses baseline close; no executable basket fiction",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "benchmark gaps and missing portfolio marks cannot forward fill",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "benchmark identity duplicates and mismatched return bases rejected or unavailable",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "checkpoint denominator retains missing runs and actual lateness",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "bootstrap has deterministic seed and zero effects yield p=1",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "paired moving blocks detect constant mean effect without inventing variance",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "bootstrap rejects inadequate blocks/nonfinite values",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "Holm retains unavailable p=1 hypotheses in the denominator",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "no trades, history and missing arms never produce superiority claims",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "blind packet excludes truth, other answers and future outcomes",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "future evidence rejected before freezing blind case",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "separate bound review scores numerical extraction and fixed rubric",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing extraction is in accuracy denominator",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "critical fabricated fact fails despite correct numerical output",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "self-review, edited output and fictional synthetic runs cannot pass",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "case-suite missing actual model work stays blocked",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "repeated case answers are not silently selected for best score",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "matrix keeps unavailable arms null and separates engineering from analytical value",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "matrix refuses duplicate-arm selection and different execution releases",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "drawdown dates retain the maximum drawdown peak after a new high",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "forecast does not use a price claiming availability before its market date",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "new model case refuses excluded sources while history remains untouched",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "critical units are checked even if the numerical value matches",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "changing the frozen case after seeing an answer invalidates its hash",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "daily-only backtests cannot enter the minute-validated inference family",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "adequate aligned samples return the frozen diagnostic but never auto-promote",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "perfect extraction with poor reasoning cannot claim analytical validation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: decimal money rounds once and charges modeled costs once",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: full schema rejects additional properties, invalid dates, conditional risk omissions and failed checks",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: bounded sizing versus funded near-all-capital FULL with explicit exceptions",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: risk budget and cash budget independently constrain; quantity cannot be model edited",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: important gaps apply one aggregate haircut and can only be waived in discretionary variant",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: semantic gates reject tampered quantities, incomplete checks, wrong actor and stale approvals",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: pre-open rule and five-session cohort cannot be bypassed",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: B0 cannot submit and paused engineering ledger cannot accept",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: lower entry price never increases approved quantity and reserve reconciles exactly",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: empty capacity, range failure, halt, stale capture and processing never fabricate fills",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: expired window retains reservation and accepts timely delayed in-window bar",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: cancellation preserves previously authorized events and blocks later bars",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: deadline censors missing evidence, releases reserves, prevents retrospective fills",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: stop creates actual-time exit intent, no same-bar exit, unsellable shares stay exposed",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: complete buy-stop-exit-T+2 lifecycle reconciles principal, modeled fees and realized return",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: all-or-none exit with reduced volume remains pending and never partially liquidates",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: base and stress scenarios use separate sizing and independently recheck range/zone",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: unknown marks block new allocation and forward risk never offsets another exposure",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: descriptive correlations use aligned 60 returns and disclose missing/constant samples",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: immutable store rejects production DB, replays exactly and recovers without duplicate reservation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: atomic rollback on invalid acceptance leaves no order, fee or event",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: cancellation cannot be revived by revalidation and still expires honestly",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: revalidation preserves own reservation and never increases approved size",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: daily trailing latches for next session, preserves original risk, never loosens",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: trend and 20-session time exits use admitted calculations and never expire held risk",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: risk-led full exit needs independent bound report and cannot postpone mandatory exit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: drawdown thresholds are hard for controls and scoped exceptions for FULL",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: duplicate observations cannot fill twice, changed versions are rejected and backward events fail",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: missing settlement calendar and unknown source identities block allocation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: source-backed stress arithmetic and 25 percent liquidity disclose full-fill deadlock",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: action-basis mismatch and explicit corporate-action hold retain exposure without invented shares",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: two pre-open orders reserve sequentially and cannot reuse settled cash",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: persisted state tampering is rejected before append",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: persisted blocked preparations remain visible and create no reservation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "execution: cached signal calculation is isolated from caller mutation and invalidates on changed input",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 real inputs and planner retain unmapped exposure as critical unknown, never a null minute symbol",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 failed external checkpoint closes durably and does not retry a broken sink",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 hanging checkpoint is bounded, finalized and explicitly undelivered",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 production command finalizes input failure when report directory is obstructed",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 production deadline reserves final minute instead of giving adapter entire budget",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 intervened and legacy unclassified reports cannot be mixed into policy matrix",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 minute completion requires every requested identity and verified retained capture, not a success flag",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 pending reconciliation maps order context identity and rejects contradictory/malformed metadata",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 corrupted legacy account does not suppress independently readable v5 obligations",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 temporary listings and currency substitutions remain explicit excluded cohort members",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "W9 limit lock and off-session minutes cannot fill an otherwise accepted intent",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unchanged exits reproduce original economics: B1/base",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unchanged exits reproduce original economics: B1/stress",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unchanged exits reproduce original economics: FULL/base",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unchanged exits reproduce original economics: FULL/stress",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "discretionary exit suppressed; cash and shares remain in the alternate portfolio",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing later mark stays blocked, does not borrow original sale proceeds",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "additional held-name prior-close mark is verified and bound to original open",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "mandatory stop still needs a later eligible minute and full liquidity",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "supplement cannot create exposure on only one side with no discretionary exit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "supplements cannot change decisions or extend the period",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "tampered original approval fails before attribution",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "mandatory corporate-action hold cannot be erased by discretionary attribution",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "later desired entry recomputes funded cash after the original sale is suppressed",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "ledger wrapper is read-only and forbids event/config substitution",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source-bound reporting retains gaps and cannot upgrade engineering scope",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "late baseline cannot attach earlier P&L to a later period",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "missing registered entry session fails, not a compressed return horizon",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "changed scoring release cannot reuse an old trial silently",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "omitted post-entry session cannot compress the daily calendar",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "matrix refuses attribution from another ledger state",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "approved amendment binds exact document and adds no activation",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "suite uses registered aggregate95% floor while retaining noncritical case failures",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "case context distinguishes heterogeneous cutoffs and preserves legacy packet bindings",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "v5 runtime plan and schema match frozen bytes; legacy median RV stays separate",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "hand calculations: fixed Wilder seed, aligned SMAs, H20 and R63",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "RV excludes current volume, keeps verified zero, rejects null and zero denominator",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "piecewise decimal ticks handle boundary, exact tick and strict next without floating overshoot",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "nearest rank and deterministic ISIN ties; tiers use entire prior eligible population",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "full cohort records every arm/name and separates research pending from executable trades",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "no current-high contamination and no future-price leakage",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "null volume, missing sessions, provisional/future capture and action discontinuity block with exact reasons",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "verified zero is not missing volume; unchanged no-trade close and 18/20 rule remain enforced",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "benchmark missing endpoint is blocked rather than changing the relative-return gate",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "261-bar signal remains usable for fixed comparison; tier-aware prior eligibility needs one more session",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "signal-day turnover surge cannot change liquidity tier; omitted universe blocks eligibility",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "turnover uses actual values or conservative proxy bounds; ambiguity is not threshold rejection",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "threshold rejection and excluded instrument stay in waterfall; empty cohort records no opportunity",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "sector strength needs five peers, aligned dates and 80% coverage; denominator retains missing peers",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "packets separate observations, derivations, judgment, uncertainty and remove ablation contexts",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "ablation cannot remove critical safety or retain a dependency on omitted evidence",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source policy rejects excluded domains and evidence unavailable at cutoff",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "valid substantive Watch passes to risk controls without target, size, order or fill authorization",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "Wait and Avoid retain incomplete research as explicit nonexecuting dispositions",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "Watch rejects stale packet, wrong instrument/variant/hash, same actor, critical dissent and low confidence",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "critical omission cannot be waived by technical confidence or field declaration",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "bank model cannot substitute industrial ratios; peers need consistent positive denominators",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "negative sector gate cannot be waived; unknown is an important gap and ablation removes only that gate",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "probability is not inferred from qualitative confidence or agent agreement",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "manual CLI writes immutable isolated evaluation and never activates the engine",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "global missing calendar retains every instrument/variant as data-blocked, not a no-opportunity conclusion",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "126 valid prior RV observations may extend before the fixed ATR window",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "FULL and FULL-BOUNDED share identical mechanical eligibility and deterministic rank",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "statement reconciliation uses sourced numbers and preserves partial coverage; contradictions block Watch",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "sourced valuation cannot omit its conditional value dependencies",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "broad Finance sector does not choose a bank model by name; explicit model classification governs review",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "an intraday capture stays unconfirmed after rollover; later recapture confirms it",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "replay uses next open, stop first for ambiguous candles and subtracts costs",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "future bars do not change a closed trade; entry beyond target is skipped",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "unfinished horizons are not counted and missing sessions suppress affected trades",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "new tickers ingest; pause and resume preserve history and notes",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "reject invalid symbols and duplicates; support more than twenty watched stocks",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "planner checks all actions and superseded decisions; unchanged history does not create downloads",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "changed filing/new news invalidates only affected company review despite unchanged price scores",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "same-day news refresh is independent of daily facts and detects stale first page in mixed window",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "minute targets use held positions, sell obligations, candidates and valid setups; expired entry stays excluded",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "future source backoff preserves overdue critical coverage; unavailable baseline names defer to Sunday",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "durable receipt survives database close/reopen and completed work is not repeated",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "restart requires exact recorded recovery; live owner/child cannot be stolen and prior success stays saved",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source failure does not discard successes or block independent mandatory monitoring; retries are due only",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "timeout writes truthful checkpoint, preserves position status and leaves unresponsive ownership for recovery",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source permission is explicit and unresolved adapters launch no process",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "owned claim voluntarily waits; event/time resume is capacity bounded, with legacy owner recovery explicit",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "reassessment overflow remains waiting and resumes before new candidates without exceeding five",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "actual child timeout is terminated and awaited; stderr stays in local log",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "real local worker commands checkpoint positions and export history without changing paper ledger",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "real observation-only minute command retains exact targets and never mutates paper ledger",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "real decision worker records changed evidence as a bounded reassessment without changing original decision",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "client checkpoint renders unfinished work safely without presenting it as approval",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "old/invalid minute observations are retained with explicit quality; no observation grants execution",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "broken optional document index leaves position and all-decision obligation work runnable",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "source lock recovery needs exact dead owner and leaves an audit event",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "clock jump or PC sleep ends work with actual late timestamps rather than backfilled observations",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "new cited report routes are discovered once; unchanged reports reuse inventory and excluded sources stay excluded",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "screen workload keeps expensive sources separate while reporting their missing coverage",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "changing news window cannot bypass source backoff; explicit new evidence invalidation is recorded",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "real catalog import worker applies a retained new version without fetching or changing paper ledger",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "new source content replans urgent monitoring within the same run without repeating unchanged work",
+      "skipped": false
+    },
+    {
+      "status": "PASS",
+      "name": "in-run replanning reuses invocation health and unchanged positions; progress survives before completion",
+      "skipped": false
+    }
+  ],
+  "legacyNpmTest": "Not authoritative: package script omits newer suites; unchanged because package is frozen execution-release input.",
+  "durationMs": 15356.7225
+}

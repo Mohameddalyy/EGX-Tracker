@@ -1,0 +1,179 @@
+{
+  "at": "2026-10-28T08:57:07.744892+00:00",
+  "scope": "Engineering plus explicitly authorized ongoing manual collection; no pilot",
+  "files": [
+    {
+      "path": "agent/source-access.json",
+      "sha256": "c7c8a22cd137dd37b2460618f81b91eb68f83eb32ff94b2f163ad66b6a0ac17c"
+    },
+    {
+      "path": "agent/source-permission-attestation.json",
+      "sha256": "3120935ac6987fc44d04d89e151557b9402fc042eb854962ab38ed4e0e34322c"
+    },
+    {
+      "path": "agent/v5-release-status.md",
+      "sha256": "5cc41d31d72ad3ac3255235ce4b3fcf8382bd064733c6a32d01ec880de2230f4"
+    },
+    {
+      "path": "app/basket-accounting.test.mjs",
+      "sha256": "f04ef7bdffa67062e4266d88b5353a39f4d85fe342e3f93a355590911592be14"
+    },
+    {
+      "path": "app/basket-ledger-agent.mjs",
+      "sha256": "a816a02301f38a0c3c4bb845136c80be2e9c1e7f8118aee576d2db1ca1b27e26"
+    },
+    {
+      "path": "app/completed-session.test.mjs",
+      "sha256": "db94b9aef6112b2c706b6545ba44ed66c9072ea20aa76a0e532939da1e264fca"
+    },
+    {
+      "path": "app/fresh-admission-agent.mjs",
+      "sha256": "4da62f329e12fb625cadf985e8ffbfafa207a533735aec6c21cda759af34e0b4"
+    },
+    {
+      "path": "app/launch-readiness-agent.mjs",
+      "sha256": "83b90fdd6973ce45b7fbfd48c7e04329d3f28c601fa3cfe1676906dc34fd6d96"
+    },
+    {
+      "path": "app/v5/basket-execution.mjs",
+      "sha256": "18d6842e6af2cef5cccb69acfe869bdb18f6221853dce9fac9873424982d55fb"
+    },
+    {
+      "path": "app/v5/basket-plan.mjs",
+      "sha256": "86cd38565f3d1b9f139f9d441907b4f85a49caba86be2757727b3f8b0265bf37"
+    },
+    {
+      "path": "app/v5/basket-store.mjs",
+      "sha256": "195425bf956781c2112e5b3e1e861ec0d6835e70b1dffcfd26745f2ed70e99dc"
+    },
+    {
+      "path": "app/v5/fresh-admission.mjs",
+      "sha256": "51fa381ce9531887dc6c9a632a0fd40c09192f801f87487916c2f4cd8cec154f"
+    },
+    {
+      "path": "app/workflow-inputs.mjs",
+      "sha256": "d976652e9f3e7bcc05dec5ad9ec6a9132dfb9fd2ded6883b63624d3b82fa1479"
+    },
+    {
+      "path": "app/workflow-planner.mjs",
+      "sha256": "fcbdcd8093605192eae5859d4e5c0dcfd09b64e74a274f2cbb5c00ad66a95bef"
+    },
+    {
+      "path": "verification/basket-admission-20261028/RESULTS.md",
+      "sha256": "266c1e8dc277bcfb74897c24796ee5431ac4357c95fce2dbc1a58ca48e9b3683"
+    },
+    {
+      "path": "verification/basket-admission-20261028/accounting-tests-2.tap",
+      "sha256": "77db235e69110bc7db0044412786348637a6081aa42606846719f9ae00491131"
+    },
+    {
+      "path": "verification/basket-admission-20261028/accounting-tests-3.tap",
+      "sha256": "56199da21ba0b462fa37b5fdaef0df3aa163226a6f14b016eb8267b2ae7a3876"
+    },
+    {
+      "path": "verification/basket-admission-20261028/accounting-tests-4.tap",
+      "sha256": "bb619c4fe6f5ffc2cdde0a9590a8fb06e5b781abc992a7e5fd1b49ef3b8686f9"
+    },
+    {
+      "path": "verification/basket-admission-20261028/accounting-tests.tap",
+      "sha256": "d4863027fce715d1ddad12db892ce6729261c790d453e79a67730e33193f4aec"
+    },
+    {
+      "path": "verification/basket-admission-20261028/collection-progress-final-snapshot.jsonl",
+      "sha256": "7a129734d6f5d29c9ab5e281a83006c869c4f099d305816395903a83004e29b9"
+    },
+    {
+      "path": "verification/basket-admission-20261028/collection-progress-latest.jsonl",
+      "sha256": "838ba6cd2d9f16f5308b30d84cb58310a4515ada8c1fb7f69daa2c9aae608979"
+    },
+    {
+      "path": "verification/basket-admission-20261028/collection-progress.jsonl",
+      "sha256": "881593d60a88ef1d377ffa7c30c34b3c69569f502e5702657e00e02a57fb82ea"
+    },
+    {
+      "path": "verification/basket-admission-20261028/current-readiness.json",
+      "sha256": "34b4cff14da6be097f97b9fb13572adb68880b194f2c9e82a79da912b52c970f"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-2/invocation.json",
+      "sha256": "365e7b4b86f8c7928ff854e6d6a6b1a6817106f007d619a2381c73194959cb29"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-2/result.json",
+      "sha256": "abbbc754c9a0d8664cd2a9f87c10a3c233a72ac797316df5175060dcec4e22e1"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-2/suite.tap",
+      "sha256": "18b48638fdde3a1693e5cca5bb8289ca76f1da478f6f56386555c475187f060a"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-3/invocation.json",
+      "sha256": "f56941bdd9fa7b928813a5dcb0af63b43ce7a6b0b838ac8e82b9d1f939ba6268"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-3/result.json",
+      "sha256": "8fd07749d4138cbae707988ad5ffe0c4772f7dfd90f2819d3a8bf0cd3dde33a6"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-3/suite.tap",
+      "sha256": "b940b92299cf7de1f1d3076045590c1813dfd2a8ce5fa887855820913227646f"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-closed/invocation.json",
+      "sha256": "6e85c7a886ec9a1ceb31f74b79ca0a93da691e654fdd2d395b98fdb8082bf180"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-closed/result.json",
+      "sha256": "d0d9d73583ff37d18d5f17f87f91ae0c821e0d2ddd8d7e8e8123cae28df14b05"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-closed/suite.tap",
+      "sha256": "46e8f32ccefc57fa4149b06a5d8d8b4ff2f6a4f5dcc3d9aac40f8322870f2bad"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-final/invocation.json",
+      "sha256": "ba7852ebfc9f94ba201b7f8d20da7ac550940a7ba239052a98953fc2252c6920"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-final/result.json",
+      "sha256": "d9a0cb1b1a7a6b15ff3d1725c78804bb89844e33d6fab44577a0fb72f6325d46"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite-final/suite.tap",
+      "sha256": "91d2dd450ae2dafb95ccb96092e27fb1204397e8307b666e10a940befb8f9071"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite/invocation.json",
+      "sha256": "96c2eead679d415ed328e050d6d4468a8b111343a7023958bd127d09a94571c8"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite/result.json",
+      "sha256": "6ce084af72dc0cf3e0695f5878d4160a50a856b20c108fe0f88ba9ccf76537d3"
+    },
+    {
+      "path": "verification/basket-admission-20261028/full-suite/suite.tap",
+      "sha256": "664ff2e40a6415c8cfed07dc881921edaf8b18eb3495380f66645c0a2d36ddd3"
+    },
+    {
+      "path": "verification/basket-admission-20261028/official-attempts/results.json",
+      "sha256": "0c684d927c9daeca900a176478616f082120dcd016c15ebd4ae094750b3d48ec"
+    },
+    {
+      "path": "verification/basket-admission-20261028/readiness-latest.json",
+      "sha256": "c31cefd442ac1f21222681bd7f17d5e48b26b6293ada02a3f341cd70d78a2bae"
+    },
+    {
+      "path": "verification/basket-admission-20261028/retained-verification-resumed.json",
+      "sha256": "73d20c4cea5fb484c88ea521483bf8c6d194a36478c9b396cd2e7941dabe50ba"
+    },
+    {
+      "path": "verification/basket-admission-20261028/targeted-tests-2.tap",
+      "sha256": "3240cc45fdd530bdb7b5be62457f5e39f725bb45bdd73eeb705ebf6f646a0eba"
+    },
+    {
+      "path": "verification/basket-admission-20261028/targeted-tests.tap",
+      "sha256": "cacd483af1cf248f24673d0e179fd6c2373acc87016c34f8d4de5429b60e083f"
+    }
+  ],
+  "ongoingCollection": "Live collector log excluded from immutable batch manifest; durable run ID and fixed snapshots retained."
+}

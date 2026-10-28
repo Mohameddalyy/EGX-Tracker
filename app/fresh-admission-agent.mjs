@@ -1,0 +1,2 @@
+import {readFileSync,writeFileSync} from 'node:fs';import {resolve} from 'node:path';import {admitFreshSnapshot} from './v5/fresh-admission.mjs';
+const [root,request,out]=process.argv.slice(2);if(!out)throw Error('Supply root, admission request JSON and NEW output JSON');const report=admitFreshSnapshot(resolve(root),JSON.parse(readFileSync(request,'utf8')));writeFileSync(out,JSON.stringify(report,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({status:report.status,denominator:report.denominator,admitted:report.admitted,output:out}));

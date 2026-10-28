@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.egx.com.eg/en/Trading_hours.aspx",
+    "error": "fetch failed",
+    "at": "2026-10-28T08:50:28.113Z",
+    "status": "UNAVAILABLE"
+  },
+  {
+    "url": "https://www.egx.com.eg/en/Trading_Rules.aspx",
+    "error": "fetch failed",
+    "at": "2026-10-28T08:50:28.109Z",
+    "status": "UNAVAILABLE"
+  },
+  {
+    "url": "https://www.mcdr.com.eg/",
+    "error": "fetch failed",
+    "at": "2026-10-28T08:50:28.326Z",
+    "status": "UNAVAILABLE"
+  }
+]
