@@ -1,3 +1,4 @@
+import {verifyMinuteReceipt} from './workflow-minute-receipt.mjs';
 import {spawn} from 'node:child_process';
 import {existsSync,readFileSync,writeFileSync,mkdirSync,openSync,closeSync} from 'node:fs';
 import {join,resolve} from 'node:path';
@@ -44,7 +45,7 @@ export function workflowAdapter(db,root){
  default:throw Error('Unsupported workflow adapter '+p.kind);
  }
  const processResult=await runWorkflowProcess(join(root,'app',file),args,{...options,env});if(processResult.status!=='succeeded')return processResult;
- if(p.kind==='minutes'){const result=readJson(outputPath,{status:'failed',message:'Minute receipt missing'});return {...result,logPath,fetched:result.status==='succeeded'?result.tickers.length:0};}
+ if(p.kind==='minutes'){const result=readJson(outputPath,{status:'failed',message:'Minute receipt missing'});return {...verifyMinuteReceipt(root,result,p.tickers,job.started_at||job.created_at),logPath};}
  // Validate component receipts after process success; exit zero alone is not data completeness.
  const input=readWorkflowInputs(root),now=new Date();let complete=true,watermark=null;
  if(p.kind==='history'){const s=input.stocks.find(s=>s.ticker===p.target);complete=!!s&&!s.readiness.due;watermark=s?.latest?.day||null;}

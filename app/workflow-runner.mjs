@@ -1,14 +1,16 @@
+import {checkpointWriter} from './workflow-checkpoint.mjs';
 import {performance} from 'node:perf_hooks';
 import {claimJob,registerJobs,finishJob,runJobs,finishWorkflow,workflowEvent} from './workflow-store.mjs';
 // Child adapters must honor cancellation and return only after child termination.
 // A nonresponsive adapter remains owned/running for explicit recovery; the report still closes.
-export async function executeWorkflow(db,run,plan,{execute,clock=()=>new Date(),monotonic=()=>performance.now(),checkpoint=()=>{},replan=null}={}){
+export async function executeWorkflow(db,run,plan,{execute,clock=()=>new Date(),monotonic=()=>performance.now(),checkpoint=()=>{},checkpointTimeoutMs=5000,reportReserveMs=null,replan=null}={}){
  const start=monotonic(),budget=Date.parse(run.deadlineAt)-Date.parse(run.startedAt),counts={fetched:0,reused:0,deferred:0,failed:0};
+ const reserve=reportReserveMs??(budget>=60000?Math.min(60000,budget/2):0),deliver=checkpointWriter(db,run,checkpoint,{timeoutMs:checkpointTimeoutMs});
  registerJobs(db,run,plan.jobs,clock());let refreshed=false;const visited=new Set();
- async function flush(status){const jobs=runJobs(db,run.id),observedAt=clock().toISOString(),latenessMs=Math.max(0,Date.parse(observedAt)-Date.parse(run.deadlineAt)),report={version:'incremental-workflow-1',runId:run.id,workload:run.workload,status,plannedAt:run.plannedAt,startedAt:run.startedAt,observedAt,deadlineAt:run.deadlineAt,deadlineMissed:latenessMs>0,latenessMs,startDelayMs:Math.max(0,Date.parse(run.startedAt)-Date.parse(run.plannedAt)),durationMs:monotonic()-start,counts:{...counts},coverage:plan.counts||null,obligations:plan.obligations,sourceGaps:plan.sourceGaps,minuteTargets:plan.minuteTargets,jobs:jobs.map(j=>({id:j.id,kind:j.kind,target:j.target,status:j.status,startedAt:j.started_at,finishedAt:j.finished_at,nextRetry:j.next_retry,critical:j.payload.critical,blockedBy:(j.payload.dependsOn||[]).filter(id=>!db.prepare("SELECT 1 FROM workflow_receipts WHERE job_id=?").get(id)),result:j.result,owner:j.status==='running'?j.owner:null,childPid:j.child_pid})),model:null,provider:null,modelTokens:null,telemetry:'No model invocation in this dispatcher; provider/model usage unmeasured, not zero',entryAuthorization:false,limitation:'Checkpoint completion is not research completion, event clearance, execution or an investment disposition.'};db.prepare("UPDATE workflow_runs SET report=? WHERE id=? AND owner=? AND status='running'").run(JSON.stringify(report),run.id,run.owner);await checkpoint(report);return report;}
+ async function flush(status){const jobs=runJobs(db,run.id),observedAt=clock().toISOString(),latenessMs=Math.max(0,Date.parse(observedAt)-Date.parse(run.deadlineAt)),report={version:'incremental-workflow-1',runId:run.id,workload:run.workload,status,plannedAt:run.plannedAt,startedAt:run.startedAt,observedAt,deadlineAt:run.deadlineAt,deadlineMissed:latenessMs>0,latenessMs,startDelayMs:Math.max(0,Date.parse(run.startedAt)-Date.parse(run.plannedAt)),durationMs:monotonic()-start,counts:{...counts},coverage:plan.counts||null,obligations:plan.obligations,sourceGaps:plan.sourceGaps,minuteTargets:plan.minuteTargets,jobs:jobs.map(j=>({id:j.id,kind:j.kind,target:j.target,status:j.status,startedAt:j.started_at,finishedAt:j.finished_at,nextRetry:j.next_retry,critical:j.payload.critical,blockedBy:(j.payload.dependsOn||[]).filter(id=>!db.prepare("SELECT 1 FROM workflow_receipts WHERE job_id=?").get(id)),result:j.result,owner:j.status==='running'?j.owner:null,childPid:j.child_pid})),model:null,provider:null,modelTokens:null,telemetry:'No model invocation in this dispatcher; provider/model usage unmeasured, not zero',reportReserveMs:reserve,entryAuthorization:false,limitation:'Checkpoint completion is not research completion, event clearance, execution or an investment disposition.'};return deliver(report);}
  try{
  while(true){
-  const remaining=Math.min(budget-(monotonic()-start),Date.parse(run.deadlineAt)-+clock());if(remaining<=0)break;
+  const remaining=Math.min(budget-(monotonic()-start),Date.parse(run.deadlineAt)-+clock());if(remaining<=reserve)break;
   const next=runJobs(db,run.id).find(j=>!visited.has(j.id));
   if(!next){if(replan&&!refreshed){refreshed=true;const updated=await replan();plan=updated;registerJobs(db,run,updated.jobs,clock());continue;}break;}
   visited.add(next.id);
@@ -16,7 +18,7 @@ export async function executeWorkflow(db,run,plan,{execute,clock=()=>new Date(),
   if(next.payload.dependsOn?.some(key=>!db.prepare("SELECT 1 FROM workflow_jobs WHERE id=? AND status='succeeded'").get(key))){counts.deferred++;continue;}
   const job=claimJob(db,next.id,run,clock());if(!job){counts.deferred++;continue;}
   const controller=new AbortController(),stageStart=monotonic();let timer;
-  const allowed=Math.min(remaining,job.payload.maxMs??remaining);
+  const allowed=Math.min(remaining-reserve,job.payload.maxMs??remaining);
   const task=Promise.resolve().then(()=>execute(job,{signal:controller.signal,budgetMs:allowed,owner:run.owner}));
   // Always observe the adapter rejection even after its checkpoint deadline.
   task.catch(()=>{});

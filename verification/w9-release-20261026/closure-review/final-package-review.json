@@ -1,0 +1,22 @@
+{
+  "reviewer": "/root/w9_closure_reviewer",
+  "at": "2026-10-28T08:04:33.296182+00:00",
+  "status": "PASS_OFFLINE_ENGINEERING_ONLY",
+  "files": 446,
+  "archiveSha256": "eb94159149cdfcd1db80e3053af0b092c01c28163606e10cfebd54e3996638c4",
+  "sourceTreeDigest": "d3932c0cf646d77294798e4153a3bbb393f5c327727feed2c52818ebc8c78ae9",
+  "reconstructedSuite": {
+    "tests": 340,
+    "pass": 340,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "testPlanHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+  "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+  "evaluationReleaseHash": "d6c2807e9ca461cb06b242c6820256e04dc81ae20cecfad96866a120d88a1a70",
+  "syntheticDatabaseEmpty": true,
+  "retainedVerificationPassed": true,
+  "scope": "Separate AI artifact review; same host dependencies and original absolute amendment path required; no prospective readiness or external human validation"
+}

@@ -1,0 +1,22 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: review: Research packet coverage expired
+
+
+1 !== 0
+
+    at cli (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release-sessions.mjs:30:353)
+    at sessionCases (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release-sessions.mjs:51:451)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/[eval1]:1:88 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1

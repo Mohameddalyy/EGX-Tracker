@@ -1,0 +1,233 @@
+TAP version 13
+# Subtest: W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger
+ok 1 - W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger
+  ---
+  duration_ms: 939.0429
+  type: 'test'
+  ...
+# Subtest: W9 real inputs and planner retain unmapped exposure as critical unknown, never a null minute symbol
+ok 2 - W9 real inputs and planner retain unmapped exposure as critical unknown, never a null minute symbol
+  ---
+  duration_ms: 332.5665
+  type: 'test'
+  ...
+# Subtest: W9 failed external checkpoint closes durably and does not retry a broken sink
+ok 3 - W9 failed external checkpoint closes durably and does not retry a broken sink
+  ---
+  duration_ms: 4.5985
+  type: 'test'
+  ...
+# {"runId":"workflow-6e7ace94-1edf-4c70-823b-dca2b9303b40","status":"failed","counts":null,"obligations":0,"pending":[],"reportPath":"C:\\\\Users\\\\LENOVO\\\\AppData\\\\Local\\\\Temp\\\\w9-cli-Ai33fe\\\\data\\\\operations\\\\workflow-reports\\\\workflow-6e7ace94-1edf-4c70-823b-dca2b9303b40.json","activation":false}
+# Subtest: W9 hanging checkpoint is bounded, finalized and explicitly undelivered
+ok 4 - W9 hanging checkpoint is bounded, finalized and explicitly undelivered
+  ---
+  duration_ms: 28.6507
+  type: 'test'
+  ...
+# Subtest: W9 production command finalizes input failure when report directory is obstructed
+ok 5 - W9 production command finalizes input failure when report directory is obstructed
+  ---
+  duration_ms: 34.8733
+  type: 'test'
+  ...
+# Subtest: W9 production deadline reserves final minute instead of giving adapter entire budget
+ok 6 - W9 production deadline reserves final minute instead of giving adapter entire budget
+  ---
+  duration_ms: 3.2574
+  type: 'test'
+  ...
+# Subtest: W9 intervened and legacy unclassified reports cannot be mixed into policy matrix
+ok 7 - W9 intervened and legacy unclassified reports cannot be mixed into policy matrix
+  ---
+  duration_ms: 508.6785
+  type: 'test'
+  ...
+# Subtest: W9 minute completion requires every requested identity and verified retained capture, not a success flag
+ok 8 - W9 minute completion requires every requested identity and verified retained capture, not a success flag
+  ---
+  duration_ms: 103.401
+  type: 'test'
+  ...
+# Subtest: W9 pending reconciliation maps order context identity and rejects contradictory/malformed metadata
+ok 9 - W9 pending reconciliation maps order context identity and rejects contradictory/malformed metadata
+  ---
+  duration_ms: 809.6659
+  type: 'test'
+  ...
+# Subtest: W9 corrupted legacy account does not suppress independently readable v5 obligations
+ok 10 - W9 corrupted legacy account does not suppress independently readable v5 obligations
+  ---
+  duration_ms: 277.3286
+  type: 'test'
+  ...
+# Subtest: planner checks all actions and superseded decisions; unchanged history does not create downloads
+ok 11 - planner checks all actions and superseded decisions; unchanged history does not create downloads
+  ---
+  duration_ms: 6.1294
+  type: 'test'
+  ...
+# Subtest: changed filing/new news invalidates only affected company review despite unchanged price scores
+ok 12 - changed filing/new news invalidates only affected company review despite unchanged price scores
+  ---
+  duration_ms: 1.297
+  type: 'test'
+  ...
+# Subtest: same-day news refresh is independent of daily facts and detects stale first page in mixed window
+ok 13 - same-day news refresh is independent of daily facts and detects stale first page in mixed window
+  ---
+  duration_ms: 1.2224
+  type: 'test'
+  ...
+# Subtest: minute targets use held positions, sell obligations, candidates and valid setups; expired entry stays excluded
+ok 14 - minute targets use held positions, sell obligations, candidates and valid setups; expired entry stays excluded
+  ---
+  duration_ms: 0.8394
+  type: 'test'
+  ...
+# Subtest: future source backoff preserves overdue critical coverage; unavailable baseline names defer to Sunday
+ok 15 - future source backoff preserves overdue critical coverage; unavailable baseline names defer to Sunday
+  ---
+  duration_ms: 1.1427
+  type: 'test'
+  ...
+# Subtest: durable receipt survives database close/reopen and completed work is not repeated
+ok 16 - durable receipt survives database close/reopen and completed work is not repeated
+  ---
+  duration_ms: 55.0904
+  type: 'test'
+  ...
+# Subtest: restart requires exact recorded recovery; live owner/child cannot be stolen and prior success stays saved
+ok 17 - restart requires exact recorded recovery; live owner/child cannot be stolen and prior success stays saved
+  ---
+  duration_ms: 2.6702
+  type: 'test'
+  ...
+# Subtest: source failure does not discard successes or block independent mandatory monitoring; retries are due only
+ok 18 - source failure does not discard successes or block independent mandatory monitoring; retries are due only
+  ---
+  duration_ms: 8.8742
+  type: 'test'
+  ...
+# Subtest: timeout writes truthful checkpoint, preserves position status and leaves unresponsive ownership for recovery
+ok 19 - timeout writes truthful checkpoint, preserves position status and leaves unresponsive ownership for recovery
+  ---
+  duration_ms: 29.7795
+  type: 'test'
+  ...
+# Subtest: source permission is explicit and unresolved adapters launch no process
+ok 20 - source permission is explicit and unresolved adapters launch no process
+  ---
+  duration_ms: 7.2448
+  type: 'test'
+  ...
+# Subtest: owned claim voluntarily waits; event/time resume is capacity bounded, with legacy owner recovery explicit
+ok 21 - owned claim voluntarily waits; event/time resume is capacity bounded, with legacy owner recovery explicit
+  ---
+  duration_ms: 5.022
+  type: 'test'
+  ...
+# Subtest: reassessment overflow remains waiting and resumes before new candidates without exceeding five
+ok 22 - reassessment overflow remains waiting and resumes before new candidates without exceeding five
+  ---
+  duration_ms: 5.4885
+  type: 'test'
+  ...
+# Subtest: actual child timeout is terminated and awaited; stderr stays in local log
+ok 23 - actual child timeout is terminated and awaited; stderr stays in local log
+  ---
+  duration_ms: 115.9738
+  type: 'test'
+  ...
+# Subtest: real local worker commands checkpoint positions and export history without changing paper ledger
+ok 24 - real local worker commands checkpoint positions and export history without changing paper ledger
+  ---
+  duration_ms: 1269.4022
+  type: 'test'
+  ...
+# Subtest: real observation-only minute command retains exact targets and never mutates paper ledger
+ok 25 - real observation-only minute command retains exact targets and never mutates paper ledger
+  ---
+  duration_ms: 797.7487
+  type: 'test'
+  ...
+# Subtest: real decision worker records changed evidence as a bounded reassessment without changing original decision
+ok 26 - real decision worker records changed evidence as a bounded reassessment without changing original decision
+  ---
+  duration_ms: 923.3945
+  type: 'test'
+  ...
+# Subtest: client checkpoint renders unfinished work safely without presenting it as approval
+ok 27 - client checkpoint renders unfinished work safely without presenting it as approval
+  ---
+  duration_ms: 0.7367
+  type: 'test'
+  ...
+# Subtest: old/invalid minute observations are retained with explicit quality; no observation grants execution
+ok 28 - old/invalid minute observations are retained with explicit quality; no observation grants execution
+  ---
+  duration_ms: 1.0092
+  type: 'test'
+  ...
+# Subtest: broken optional document index leaves position and all-decision obligation work runnable
+ok 29 - broken optional document index leaves position and all-decision obligation work runnable
+  ---
+  duration_ms: 459.2092
+  type: 'test'
+  ...
+# Subtest: source lock recovery needs exact dead owner and leaves an audit event
+ok 30 - source lock recovery needs exact dead owner and leaves an audit event
+  ---
+  duration_ms: 17.9916
+  type: 'test'
+  ...
+# Subtest: clock jump or PC sleep ends work with actual late timestamps rather than backfilled observations
+ok 31 - clock jump or PC sleep ends work with actual late timestamps rather than backfilled observations
+  ---
+  duration_ms: 2.5236
+  type: 'test'
+  ...
+# Subtest: new cited report routes are discovered once; unchanged reports reuse inventory and excluded sources stay excluded
+ok 32 - new cited report routes are discovered once; unchanged reports reuse inventory and excluded sources stay excluded
+  ---
+  duration_ms: 392.9277
+  type: 'test'
+  ...
+# Subtest: screen workload keeps expensive sources separate while reporting their missing coverage
+ok 33 - screen workload keeps expensive sources separate while reporting their missing coverage
+  ---
+  duration_ms: 0.5871
+  type: 'test'
+  ...
+# Subtest: changing news window cannot bypass source backoff; explicit new evidence invalidation is recorded
+ok 34 - changing news window cannot bypass source backoff; explicit new evidence invalidation is recorded
+  ---
+  duration_ms: 2.0967
+  type: 'test'
+  ...
+# Subtest: real catalog import worker applies a retained new version without fetching or changing paper ledger
+ok 35 - real catalog import worker applies a retained new version without fetching or changing paper ledger
+  ---
+  duration_ms: 679.2675
+  type: 'test'
+  ...
+# Subtest: new source content replans urgent monitoring within the same run without repeating unchanged work
+ok 36 - new source content replans urgent monitoring within the same run without repeating unchanged work
+  ---
+  duration_ms: 3.8516
+  type: 'test'
+  ...
+# Subtest: in-run replanning reuses invocation health and unchanged positions; progress survives before completion
+ok 37 - in-run replanning reuses invocation health and unchanged positions; progress survives before completion
+  ---
+  duration_ms: 3.1148
+  type: 'test'
+  ...
+1..37
+# tests 37
+# suites 0
+# pass 37
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5403.9627

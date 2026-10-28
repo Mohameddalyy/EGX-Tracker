@@ -2,7 +2,7 @@
 // trusting user-supplied return vectors or an asserted prospective scope.
 import {hash,required,finite} from './contract.mjs';
 import {readArtifact,evaluationReleaseHash} from './evaluation-contract.mjs';
-import {readEvaluationLedger,dailyEquity} from './evaluation-ledger.mjs';
+import {readEvaluationLedger,dailyEquity,interventionAttribution} from './evaluation-ledger.mjs';
 import {comparisonFamily} from './evaluation-statistics.mjs';
 
 export function boundComparisonInput({trialPath,ledgers,sessions,baselineDay}) {
@@ -14,6 +14,7 @@ export function boundComparisonInput({trialPath,ledgers,sessions,baselineDay}) {
   for(const binding of ledgers) {
     required(t.arms.some(a=>a.id===binding.id),'Unregistered ledger arm');
     const audit=readEvaluationLedger(binding.path);
+    required(interventionAttribution(audit).policyComparisonEligible,'User-intervened ledger must remain separate from policy comparisons');
     required(audit.transitionReplay==='VERIFIED'&&audit.state.releaseHash===t.bindings.executionReleaseHash,'Registered matching execution release required');
     required(audit.state.variantId+':'+audit.state.scenario===binding.id,'Ledger variant/scenario substitution');
     required(baselineDay<audit.config.entryDays[0]&&audit.events.every(e=>e.at.slice(0,10)>baselineDay),'Baseline must precede all ledger activity and the registered entry window');

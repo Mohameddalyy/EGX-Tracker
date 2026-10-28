@@ -1,0 +1,18 @@
+{
+  "scope": "W9_ENGINEERING_ONLY",
+  "registeredAt": "2026-10-26T11:23:46.407612+00:00",
+  "seed": 20261023,
+  "generatedCases": 1000,
+  "sessionScenarios": [
+    "entry-exit-rejection",
+    "outage-no-fill-blocked-exit",
+    "crash-restart-reconciliation"
+  ],
+  "launchAuthorization": false,
+  "preserve": [
+    "frozen execution release",
+    "historical evidence",
+    "paused schedules"
+  ],
+  "mandatoryOmissions": "BLOCKED, never PASS"
+}

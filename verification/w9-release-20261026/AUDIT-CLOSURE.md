@@ -1,0 +1,26 @@
+# W9 audit finding dispositions
+
+Closure date: 28 October 2026 (Africa/Cairo). Historical test artifacts retain their actual 26 October timestamps.
+
+Every disposition below is [VERIFIED] as an artifact/code disposition, not proof of prospective trading quality. Original finding severity and evidence remain in ../independent-audit-20261024/AUDIT.md. No original report is rewritten.
+
+| Finding | Disposition | Changed implementation / closure files | Evidence | Residual limitation |
+|---|---|---|---|---|
+| 1 | Closed for offline engineering | app/v5/{signals,research,risk,execution,execution-store}.mjs; app/v5-release-sessions.mjs | full-suite-3/result.json; final-sessions-1/result.json | Actual-session activation excluded; integration scenarios use synthetic evidence. |
+| 2 | Closed for tested promotion contracts | app/evidence-policy.mjs; app/audit-remediation.test.mjs | full-suite-3/suite.tap; requirement-matrix.json | Collectors cannot authenticate an official source by asserting verified=true; source admission still required. |
+| 3 | BLOCKED; collection excluded | app/workflow-adapters.mjs; app/workflow-runner.mjs | final-sessions-1/result.json; retained-verification.json | Automated-source rights and official rule bundle absent. No launch permission implied. |
+| 4 | Engineering repaired; actual readiness BLOCKED | app/workflow-{planner,runner,checkpoint}.mjs | full-suite-3/suite.tap; final-sessions-1/result.json | Short fixture timing is not host endurance or actual-session throughput. W10 rehearsal required. |
+| 5 | Routing repaired; current event admission BLOCKED | app/exchange-evidence.mjs; app/workflow-v5.mjs | retained-verification.json; full-suite-3/suite.tap | Historical 23 notices/11 tickers recovered; unresolved identities stay visible and quarantined. Current event-through coverage required. |
+| 6 | Closed for tested freshness contracts | app/finality.mjs; app/refresh-selection.mjs; app/evidence-policy.mjs | full-suite-3/suite.tap; requirement-matrix.json | Historical verification cutoff is not current data admission. |
+| 7 | Historical alpha capability excluded | app/v5/signals.mjs; app/v5/evaluation-{cohorts,provenance}.mjs | full-suite-3/suite.tap | Merged old history is exploratory; no untouched out-of-sample claim. Prospective vintages remain necessary. |
+| 8 | Controlled cases completed; economic inference excluded | app/v5/evaluation-*.mjs; app/v5-w7.test.mjs | ../w7-completion-20261026/RESULTS.md; full-suite-3/result.json | Same configured model, separate analyst/reviewer; no model-superiority or trading-edge claim. Five-name comparator runtime still absent. |
+| 9 | Closed for tested queue capacity | app/scout-efficient.mjs | full-suite-3/suite.tap; requirement-matrix.json | Preserved claims resumed; available capacity capped at five unfinished handoffs. Actual throughput unproved. |
+| 10 | Closed for packaged same-host engineering release | app/contracts/evidence-dictionary.json; package-release.py; source-manifest.json | source-manifest.json; reconstruction-files.json; independent-review/baseline-restore-migration-result.json; rollback-2/result.json | Installed dependencies not vendored; approved amendment retains absolute original path. Old code replay only; no safe operational downgrade claim. |
+| 11 | Paper scope retained; live capability excluded | app/v5/{risk,execution,execution-rules}.mjs | generated-1000-expanded.json; final-sessions-1/result.json | FULL discretionary funded risk has no hidden cap. All-or-none exit can remain blocked. No real order connector or live mandate. |
+| 12 | Completeness/math contracts repaired; unavailable entitlements excluded | app/analysis.mjs; app/v5/{math,money,evaluation-ledger}.mjs | full-suite-3/suite.tap; requirement-matrix.json | Unavailable dividends/actions/marks remain unavailable; economic comparison blocked until adequate basis. |
+| 13 | Interface implemented; human acceptance BLOCKED | app/v5/client-{cards,service}.mjs; app/v5-client.test.mjs | ../w8-client-20261026/RESULTS.md; final-sessions-1/result.json | User classified original responses as placeholders. No genuine comprehension pass or waiver recorded. |
+| 14 | Timing/checkpoint instrumentation implemented; provider cost unavailable | app/workflow-{runner,checkpoint,worker}.mjs; app/v5-release-agent.mjs | full-suite-3/result.json; final-sessions-1/result.json | No measured live provider token/cost or session endurance. Unavailable is not zero; 18 trial arms retained. |
+
+Critical/high findings requiring actual source permissions, current admission, human acceptance or economic validation remain open for launch. The released capability is isolated offline verification only. Live collection, prospective comparisons and operational downgrade are explicitly outside this release scope.
+
+W9-specific repairs: preserve registered v5 exposure despite legacy failures or ambiguous identities; retain expired reconciliation obligations; finalize a durable checkpoint even when report delivery fails; reserve reporting time; validate actual minute receipts; keep user-intervened ledgers separate from policy comparisons. See app/v5-release.test.mjs and requirement-matrix.json.

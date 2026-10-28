@@ -1,0 +1,164 @@
+✔ W8 five representative cards derive from engine, not invented approvals (37.0673ms)
+✔ W8 expiry uses view clock without mutating ledger or claiming late entry (473.2963ms)
+✔ W8 pause persists actor/reason/effect; rejects stale command; monitoring stays possible (670.2593ms)
+✔ W8 cancellation retains reservation until reconciliation, cannot bypass rules (472.0544ms)
+✔ W8 candidate states cannot manufacture executable orders (0.9702ms)
+✔ W8 rendered evidence escapes hostile markup and unsafe links (0.8468ms)
+✔ W8 checkpoint incomplete reports delivered and duplicates quiet; late delivery visible (21.5734ms)
+✔ W8 original human answers, elapsed time and reviews are append-only; no fabricated pass (70.2686ms)
+✔ W8 notes preserve decisions and retain original reason (21.0819ms)
+✔ W8 no registry means no automatic historic experiment enrollment (6.9397ms)
+✔ W8 client API enforces token/origin and does not expose answer keys (137.9315ms)
+✔ W8 unfilled, open, pending exit and closed states follow actual execution events (645.7649ms)
+✔ W8 held cards show active raised stop, scheduled stop, and unknown stale concentration (253.4673ms)
+✔ W8 client history detects tampering (24.3065ms)
+✔ W8 all five timed answers and separate reviews required for acceptance (154.3962ms)
+✔ W8 explicit placeholder classification cannot become acceptance (48.4467ms)
+✔ W8 registry and candidate publication are explicit and preserve prior versions (337.9139ms)
+✔ W8 input failure is a visible incident with unknown holdings, never an empty success (0.2739ms)
+✔ W8 real dispatcher timeout publishes a partial checkpoint and retains owner/monitoring (71.7501ms)
+✔ closed ledger reconciles cash plus unsettled proceeds with integer P&L and costs (4.6023ms)
+✔ open mark P&L includes entry fee but not a fabricated exit fee (0.7679ms)
+✔ stale or action-held marks invalidate total return without erasing cash or realized P&L (0.6849ms)
+✔ pending illiquid exits remain exposure and are not counted as completed trades (0.5255ms)
+✔ unfilled intents change counts without generating profit (133.7572ms)
+✔ inconsistent entry costs and fees fail reconciliation (23.0225ms)
+✔ cash flow outside supported engine cannot silently become profit (17.4042ms)
+✔ missing fill reference is unavailable slippage, never zero (12.9289ms)
+✔ drawdown is snapshot-specific and gaps retain incomplete status (0.5472ms)
+✔ no event-time marks are misrepresented as daily closing equity (1.1243ms)
+✔ read-only SQLite reader replays results and leaves database bytes unchanged (286.1805ms)
+✔ hash-chain corruption is rejected before metrics (57.1388ms)
+✔ nonisolated database is refused (10.3384ms)
+✔ trial retains all 18 arms and all 6 classes of unproven claims outside activation (48.4145ms)
+✔ missing/duplicate comparison arms cannot be silently dropped (13.2813ms)
+✔ available research arm requires real actor/configuration bindings (8.5692ms)
+✔ immutable artifact refuses overwrite and detects edited payload (29.9893ms)
+✔ cohort retains full catalog times variants, unanswered and waiting candidates (77.633ms)
+✔ unknown and retroactive cohort decisions fail (37.038ms)
+✔ forecast 5/20/60 anchors are original signal close with session denominators (1.8792ms)
+✔ immature, missing and incoherent forecast outcomes remain distinct (0.3367ms)
+✔ same-period index excess uses baseline close; no executable basket fiction (1.3975ms)
+✔ benchmark gaps and missing portfolio marks cannot forward fill (0.452ms)
+✔ benchmark identity duplicates and mismatched return bases rejected or unavailable (0.4287ms)
+✔ checkpoint denominator retains missing runs and actual lateness (0.4342ms)
+✔ bootstrap has deterministic seed and zero effects yield p=1 (18.4091ms)
+✔ paired moving blocks detect constant mean effect without inventing variance (8.7625ms)
+✔ bootstrap rejects inadequate blocks/nonfinite values (0.4892ms)
+✔ Holm retains unavailable p=1 hypotheses in the denominator (0.6401ms)
+✔ no trades, history and missing arms never produce superiority claims (0.8092ms)
+✔ blind packet excludes truth, other answers and future outcomes (1.176ms)
+✔ future evidence rejected before freezing blind case (1.4143ms)
+✔ separate bound review scores numerical extraction and fixed rubric (2.9749ms)
+✔ missing extraction is in accuracy denominator (1.1505ms)
+✔ critical fabricated fact fails despite correct numerical output (1.0339ms)
+✔ self-review, edited output and fictional synthetic runs cannot pass (1.354ms)
+✔ case-suite missing actual model work stays blocked (1.1578ms)
+✔ repeated case answers are not silently selected for best score (1.5125ms)
+✔ matrix keeps unavailable arms null and separates engineering from analytical value (21.795ms)
+✔ matrix refuses duplicate-arm selection and different execution releases (22.1728ms)
+✔ drawdown dates retain the maximum drawdown peak after a new high (0.2305ms)
+✔ forecast does not use a price claiming availability before its market date (0.2645ms)
+✔ new model case refuses excluded sources while history remains untouched (0.8189ms)
+✔ critical units are checked even if the numerical value matches (0.7252ms)
+✔ changing the frozen case after seeing an answer invalidates its hash (0.8687ms)
+✔ daily-only backtests cannot enter the minute-validated inference family (2.0783ms)
+✔ adequate aligned samples return the frozen diagnostic but never auto-promote (10.1022ms)
+✔ perfect extraction with poor reasoning cannot claim analytical validation (0.8898ms)
+✔ planner checks all actions and superseded decisions; unchanged history does not create downloads (8.3061ms)
+✔ changed filing/new news invalidates only affected company review despite unchanged price scores (1.4531ms)
+✔ same-day news refresh is independent of daily facts and detects stale first page in mixed window (1.7431ms)
+✔ minute targets use held positions, sell obligations, candidates and valid setups; expired entry stays excluded (0.9987ms)
+✔ future source backoff preserves overdue critical coverage; unavailable baseline names defer to Sunday (1.2762ms)
+✔ durable receipt survives database close/reopen and completed work is not repeated (75.0702ms)
+✔ restart requires exact recorded recovery; live owner/child cannot be stolen and prior success stays saved (4.5949ms)
+✔ source failure does not discard successes or block independent mandatory monitoring; retries are due only (14.2127ms)
+✔ timeout writes truthful checkpoint, preserves position status and leaves unresponsive ownership for recovery (36.9198ms)
+✔ source permission is explicit and unresolved adapters launch no process (8.4802ms)
+✔ owned claim voluntarily waits; event/time resume is capacity bounded, with legacy owner recovery explicit (7.8759ms)
+✔ reassessment overflow remains waiting and resumes before new candidates without exceeding five (4.3538ms)
+✔ actual child timeout is terminated and awaited; stderr stays in local log (117.6076ms)
+✖ real local worker commands checkpoint positions and export history without changing paper ledger (1228.0202ms)
+✔ real observation-only minute command retains exact targets and never mutates paper ledger (924.1467ms)
+✖ real decision worker records changed evidence as a bounded reassessment without changing original decision (769.6416ms)
+✔ client checkpoint renders unfinished work safely without presenting it as approval (0.7745ms)
+✔ old/invalid minute observations are retained with explicit quality; no observation grants execution (0.5009ms)
+✔ broken optional document index leaves position and all-decision obligation work runnable (424.5157ms)
+✔ source lock recovery needs exact dead owner and leaves an audit event (7.2582ms)
+✔ clock jump or PC sleep ends work with actual late timestamps rather than backfilled observations (2.2611ms)
+✔ new cited report routes are discovered once; unchanged reports reuse inventory and excluded sources stay excluded (389.4365ms)
+✔ screen workload keeps expensive sources separate while reporting their missing coverage (0.9204ms)
+✔ changing news window cannot bypass source backoff; explicit new evidence invalidation is recorded (2.4577ms)
+✖ real catalog import worker applies a retained new version without fetching or changing paper ledger (688.7481ms)
+✔ new source content replans urgent monitoring within the same run without repeating unchanged work (4.9251ms)
+✔ in-run replanning reuses invocation health and unchanged positions; progress survives before completion (2.0873ms)
+ℹ tests 94
+ℹ suites 0
+ℹ pass 91
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5529.0332
+
+✖ failing tests:
+
+test at app\workflow.test.mjs:94:1
+✖ real local worker commands checkpoint positions and export history without changing paper ledger (1228.0202ms)
+  AssertionError [ERR_ASSERTION]: {"status":"failed","exitCode":1,"exitSignal":null,"logPath":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\egx-workflow-integration-qCBVr9\\data\\operations\\workflow-artifacts\\e547b3e46629a9460fb28dcb130edecd3cb0f92acd8b6a81f622d576c08f5b9d-1.log","incident":"TOOL_OR_PROVIDER_FAILURE"}
+  + actual - expected
+  
+  + 'failed'
+  - 'succeeded'
+  
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/workflow.test.mjs:96:256)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'failed',
+    expected: 'succeeded',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at app\workflow.test.mjs:110:1
+✖ real decision worker records changed evidence as a bounded reassessment without changing original decision (769.6416ms)
+  AssertionError [ERR_ASSERTION]: {"status":"failed","exitCode":1,"exitSignal":null,"logPath":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\egx-workflow-integration-Iu1rXX\\data\\operations\\workflow-artifacts\\80b88a03be1bc1d489ffc54f9ccb9d7e82ab06b3ba8291a0e1904242fe85e8d0-1.log","incident":"TOOL_OR_PROVIDER_FAILURE"}
+  + actual - expected
+  
+  + 'failed'
+  - 'succeeded'
+  
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/workflow.test.mjs:113:363)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'failed',
+    expected: 'succeeded',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at app\workflow.test.mjs:148:1
+✖ real catalog import worker applies a retained new version without fetching or changing paper ledger (688.7481ms)
+  AssertionError [ERR_ASSERTION]: {"status":"failed","exitCode":1,"exitSignal":null,"logPath":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\egx-workflow-integration-vJW5n9\\data\\operations\\workflow-artifacts\\84fc55deb70f2da69e0781668b53aae6ced6bcbd8876aa66164da465619caec2-1.log","incident":"TOOL_OR_PROVIDER_FAILURE"}
+  + actual - expected
+  
+  + 'failed'
+  - 'succeeded'
+  
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/workflow.test.mjs:151:275)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'failed',
+    expected: 'succeeded',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

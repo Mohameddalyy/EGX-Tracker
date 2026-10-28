@@ -1,0 +1,58 @@
+✖ W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger (311.6191ms)
+✖ W9 real inputs and planner retain unmapped exposure as critical unknown, never a null minute symbol (194.1418ms)
+✔ W9 failed external checkpoint closes durably and does not retry a broken sink (5.16ms)
+{"runId":"workflow-4a491410-1f88-4a53-bba3-851ab93460f0","status":"failed","counts":null,"obligations":0,"pending":[],"reportPath":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\w9-cli-kndb7z\\data\\operations\\workflow-reports\\workflow-4a491410-1f88-4a53-bba3-851ab93460f0.json","activation":false}
+✔ W9 hanging checkpoint is bounded, finalized and explicitly undelivered (35.6794ms)
+✔ W9 production command finalizes input failure when report directory is obstructed (37.0588ms)
+✔ W9 production deadline reserves final minute instead of giving adapter entire budget (4.74ms)
+✖ W9 intervened and legacy unclassified reports cannot be mixed into policy matrix (174.8039ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 4
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1449.0526
+
+✖ failing tests:
+
+test at app\v5-release.test.mjs:21:1
+✖ W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger (311.6191ms)
+  Error: Explicit ID, path, label and controls flag required
+      at required (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/contract.mjs:4:65)
+      at registerClientLedger (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/client-service.mjs:62:2)
+      at fixture (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release.test.mjs:20:691)
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release.test.mjs:21:117)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at app\v5-release.test.mjs:22:1
+✖ W9 real inputs and planner retain unmapped exposure as critical unknown, never a null minute symbol (194.1418ms)
+  Error: Explicit ID, path, label and controls flag required
+      at required (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/contract.mjs:4:65)
+      at registerClientLedger (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/client-service.mjs:62:2)
+      at fixture (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release.test.mjs:20:691)
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release.test.mjs:22:120)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at app\v5-release.test.mjs:27:1
+✖ W9 intervened and legacy unclassified reports cannot be mixed into policy matrix (174.8039ms)
+  Error: Explicit ID, path, label and controls flag required
+      at required (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/contract.mjs:4:65)
+      at registerClientLedger (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5/client-service.mjs:62:2)
+      at fixture (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release.test.mjs:20:691)
+      at TestContext.<anonymous> (file:///C:/Users/LENOVO/Documents/ChatGPT/EGX-Tracker/app/v5-release.test.mjs:27:101)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

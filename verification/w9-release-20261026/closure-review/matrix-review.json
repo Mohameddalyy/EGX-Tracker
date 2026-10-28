@@ -1,0 +1,166 @@
+{
+  "reviewer": "/root/w9_closure_reviewer",
+  "scope": "Separate AI artifact closure review; not external human validation, not new full execution or actual-session observation",
+  "tests": {
+    "tests": 340,
+    "pass": 340,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "testSourcesMatchRetainedSuite": true,
+  "testGroups": [
+    {
+      "id": "TP5-01",
+      "requirement": "Identity/catalog",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-02",
+      "requirement": "Sessions/finality",
+      "mappedTests": 4,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-03",
+      "requirement": "Missing data",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-04",
+      "requirement": "Signal math",
+      "mappedTests": 4,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-05",
+      "requirement": "Event timing",
+      "mappedTests": 4,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-06",
+      "requirement": "Critical/optional",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-07",
+      "requirement": "Price/cost",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-08",
+      "requirement": "Cash/settlement",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-09",
+      "requirement": "Delayed fills",
+      "mappedTests": 4,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-10",
+      "requirement": "Liquidity/exits",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-11",
+      "requirement": "Risk discretion",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-12",
+      "requirement": "Overrides",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-13",
+      "requirement": "Portfolio risk",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-14",
+      "requirement": "Lifecycle",
+      "mappedTests": 4,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-15",
+      "requirement": "Deadline",
+      "mappedTests": 5,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-16",
+      "requirement": "Coverage",
+      "mappedTests": 4,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-17",
+      "requirement": "Isolation",
+      "mappedTests": 3,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    },
+    {
+      "id": "TP5-18",
+      "requirement": "Accounting",
+      "mappedTests": 5,
+      "status": "VERIFIED_ARTIFACT_MAPPING"
+    }
+  ],
+  "faultRequirementsMapped": 8,
+  "restoreOriginalTables": 37,
+  "restoreOriginalRows": 267353,
+  "rollback": "VERIFIED_RETAINED_RESULT_READ_ONLY_REPLAY_ONLY",
+  "launchGates": [
+    {
+      "id": "L1",
+      "status": "BLOCKED",
+      "requirement": "Applicable automated-source permissions and verified official sessions/rules/settlement bundle",
+      "evidence": "agent/source-access.json absent; W1 source approval must not be inferred from connection success"
+    },
+    {
+      "id": "L2",
+      "status": "BLOCKED",
+      "requirement": "Current W3 full-universe identity/event/action/data admission and monitoring readiness",
+      "evidence": "Retained historical verification is not current-session admission"
+    },
+    {
+      "id": "L3",
+      "status": "BLOCKED",
+      "requirement": "W8 genuine client comprehension acceptance or separately approved protocol amendment",
+      "evidence": "verification/w8-client-20261026/RESULTS.md; placeholder answers explicitly excluded"
+    },
+    {
+      "id": "L4",
+      "status": "BLOCKED",
+      "requirement": "Separate authorization and two actual verified no-order sessions meeting frozen coverage/timing/throughput gates",
+      "evidence": "No schedules resumed; synthetic session equivalents cannot satisfy W10.1"
+    },
+    {
+      "id": "L5",
+      "status": "BLOCKED_FOR_ECONOMIC_COMPARISON",
+      "requirement": "Approved attainable five-name basket runtime/entitlements and same-period observations before economic comparison",
+      "evidence": "W7 approved amendment is specified, not an operational basket. This W9 scope admits no prospective economic comparison; no waiver or deletion of the mandate"
+    },
+    {
+      "id": "L6",
+      "status": "NOT_AUTHORIZED",
+      "requirement": "Separately authorized five-session pilot, later cohorts, and independent live-capital gates",
+      "evidence": "Engineering run cannot activate any of these"
+    }
+  ],
+  "status": "PRELIMINARY_PASS_PENDING_RELEASE_PACKAGE_AND_CLOSURE"
+}

@@ -1,0 +1,75 @@
+{
+  "closedAt": "2026-10-28T08:05:21.755779+00:00",
+  "engineeringStatus": "COMPLETE",
+  "operationalReleaseGate": "BLOCKED",
+  "activation": false,
+  "scope": "ISOLATED_OFFLINE_ENGINEERING_ONLY",
+  "requirements": {
+    "W9.1": "PASS_OFFLINE_SCOPE",
+    "W9.2": "PASS_OFFLINE_SCOPE",
+    "W9.3": "PASS_OFFLINE_SCOPE",
+    "W9.4": "PASS_OFFLINE_SCOPE",
+    "W9.5": "PASS_OFFLINE_SCOPE",
+    "W9.6": "PASS_OFFLINE_SCOPE",
+    "W9.7": "PASS_OFFLINE_SCOPE"
+  },
+  "tests": {
+    "tests": 340,
+    "pass": 340,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "reconstructedSource": "source-manifest.json",
+  "generatedCases": 1000,
+  "sessionEquivalentScenarios": 3,
+  "actualObservedExchangeSessions": 0,
+  "auditFindingsDispositioned": 14,
+  "review": "closure-review/FINAL-REVIEW.md",
+  "reviewLimitation": "AI subagent, same repository; no external human certification",
+  "launchGates": [
+    {
+      "id": "L1",
+      "status": "BLOCKED",
+      "requirement": "Applicable automated-source permissions and verified official sessions/rules/settlement bundle",
+      "evidence": "agent/source-access.json absent; W1 source approval must not be inferred from connection success"
+    },
+    {
+      "id": "L2",
+      "status": "BLOCKED",
+      "requirement": "Current W3 full-universe identity/event/action/data admission and monitoring readiness",
+      "evidence": "Retained historical verification is not current-session admission"
+    },
+    {
+      "id": "L3",
+      "status": "BLOCKED",
+      "requirement": "W8 genuine client comprehension acceptance or separately approved protocol amendment",
+      "evidence": "verification/w8-client-20261026/RESULTS.md; placeholder answers explicitly excluded"
+    },
+    {
+      "id": "L4",
+      "status": "BLOCKED",
+      "requirement": "Separate authorization and two actual verified no-order sessions meeting frozen coverage/timing/throughput gates",
+      "evidence": "No schedules resumed; synthetic session equivalents cannot satisfy W10.1"
+    },
+    {
+      "id": "L5",
+      "status": "BLOCKED_FOR_ECONOMIC_COMPARISON",
+      "requirement": "Approved attainable five-name basket runtime/entitlements and same-period observations before economic comparison",
+      "evidence": "W7 approved amendment is specified, not an operational basket. This W9 scope admits no prospective economic comparison; no waiver or deletion of the mandate"
+    },
+    {
+      "id": "L6",
+      "status": "NOT_AUTHORIZED",
+      "requirement": "Separately authorized five-session pilot, later cohorts, and independent live-capital gates",
+      "evidence": "Engineering run cannot activate any of these"
+    }
+  ],
+  "rollbackScope": "READ_ONLY_REPLAY_ONLY",
+  "sameHostReconstructionOnly": true,
+  "schedules": "PAUSED; four confirmed in retained-verification-closure.json",
+  "unrestrictedW9LaunchProof": "NOT_MET until applicable W0-W8 and actual-session gates are met",
+  "reviewVerdict": "PASS_OFFLINE_ENGINEERING_ONLY",
+  "reviewSha256": "fe8cbfa0491bb97fc65e54ebdb90a1a85bb457e44eac7dc53e700910e2a18346"
+}

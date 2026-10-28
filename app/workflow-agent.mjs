@@ -1,3 +1,4 @@
+import {checkpointWriter} from './workflow-checkpoint.mjs';
 import {saveCheckpoint} from './v5/client-service.mjs';
 import {existsSync,mkdirSync,writeFileSync,renameSync,readFileSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
@@ -20,10 +21,10 @@ export async function workflowCommand(args=process.argv.slice(2),root=dirname(di
  if(['recover','recover-run','recover-lock','invalidate-retry'].includes(command)){const record=JSON.parse(readFileSync(recordPath,'utf8'));if(command==='recover')recoverJob(db,workload,{...record,isAlive:processAlive});else if(command==='recover-run')recoverWorkflow(db,workload,{...record,isAlive:processAlive});else if(command==='recover-lock')recoverSourceLock(db,root,{...record,source:workload,isAlive:processAlive});else invalidateRetry(db,workload,record);console.log(JSON.stringify({recorded:command,id:workload}));return;}
  if(!workflowLimits[workload])throw Error('Unknown workload');
  const now=new Date(),plannedAt=args.find(x=>x.startsWith('--planned-at='))?.slice(13)||now.toISOString(),run=beginWorkflow(db,{workload,plannedAt,deadlineMs:workflowLimits[workload].hardMs},now);
- const reports=join(dir,'workflow-reports');mkdirSync(reports,{recursive:true});const reportPath=join(reports,run.id+'.json');
- const checkpoint=report=>{writeFileSync(reportPath+'.tmp',JSON.stringify(report,null,2));renameSync(reportPath+'.tmp',reportPath);saveCheckpoint(root,report);};
+ const reports=join(dir,'workflow-reports');const reportPath=join(reports,run.id+'.json');
+ const checkpoint=report=>{mkdirSync(reports,{recursive:true});writeFileSync(reportPath+'.tmp',JSON.stringify(report,null,2));renameSync(reportPath+'.tmp',reportPath);saveCheckpoint(root,report);};
  const makePlan=()=>planWorkflow(readWorkflowInputs(root),{workload,invocationAt:run.startedAt});let report;
- try{report=await executeWorkflow(db,run,makePlan(),{execute:workflowAdapter(db,root),checkpoint,replan:makePlan});}catch(error){const prior=existsSync(reportPath)?JSON.parse(readFileSync(reportPath,'utf8')):{runId:run.id,startedAt:run.startedAt,deadlineAt:run.deadlineAt,counts:null,jobs:[],obligations:[],positionStatus:'UNKNOWN: input failure is not zero holdings'};report={...prior,status:'failed',observedAt:new Date().toISOString(),message:error.message,incident:'DISPATCHER_OR_INPUT_FAILURE',entryAuthorization:false};checkpoint(report);finishWorkflow(db,run,report);}
+ try{report=await executeWorkflow(db,run,makePlan(),{execute:workflowAdapter(db,root),checkpoint,replan:makePlan});}catch(error){const saved=db.prepare('SELECT report FROM workflow_runs WHERE id=?').get(run.id)?.report;const prior=saved?JSON.parse(saved):{runId:run.id,startedAt:run.startedAt,deadlineAt:run.deadlineAt,counts:null,jobs:[],obligations:[],positionStatus:'UNKNOWN: input failure is not zero holdings'};report={...prior,status:'failed',observedAt:new Date().toISOString(),message:error.message,incident:'DISPATCHER_OR_INPUT_FAILURE',entryAuthorization:false};await checkpointWriter(db,run,checkpoint)(report);finishWorkflow(db,run,report);}
  console.log(JSON.stringify({runId:run.id,status:report.status,counts:report.counts,durationMs:report.durationMs,obligations:report.obligations.length,pending:report.jobs.filter(j=>j.status!=='succeeded').map(j=>({kind:j.kind,target:j.target,status:j.status,critical:j.critical})),reportPath,activation:false}));return report;
  }finally{db.close();}
 }

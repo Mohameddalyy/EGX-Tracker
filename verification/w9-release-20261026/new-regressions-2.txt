@@ -1,0 +1,16 @@
+✔ W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger (793.8587ms)
+✔ W9 real inputs and planner retain unmapped exposure as critical unknown, never a null minute symbol (287.3619ms)
+✔ W9 failed external checkpoint closes durably and does not retry a broken sink (2.5835ms)
+{"runId":"workflow-a90d0712-efeb-4b39-a8a5-003b64c3994b","status":"failed","counts":null,"obligations":0,"pending":[],"reportPath":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\w9-cli-wrk9di\\data\\operations\\workflow-reports\\workflow-a90d0712-efeb-4b39-a8a5-003b64c3994b.json","activation":false}
+✔ W9 hanging checkpoint is bounded, finalized and explicitly undelivered (23.2385ms)
+✔ W9 production command finalizes input failure when report directory is obstructed (32.6185ms)
+✔ W9 production deadline reserves final minute instead of giving adapter entire budget (3.0389ms)
+✔ W9 intervened and legacy unclassified reports cannot be mixed into policy matrix (456.5502ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2224.0569

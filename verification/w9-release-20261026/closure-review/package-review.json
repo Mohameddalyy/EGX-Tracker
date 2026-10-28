@@ -1,0 +1,10 @@
+{
+  "reviewer": "/root/w9_closure_reviewer",
+  "status": "PASS",
+  "scope": "Independent exact archive/workspace/reconstructed-source verification; runtime test result pending",
+  "files": 440,
+  "archiveSha256": "203eb22b20b960755be29c37ff06c45b2c4c32b7979f143b8878a2ba72f1f97e",
+  "sourceTreeDigest": "d03d69a37cde9f71eb97626b587bdcb1e54457959b81cb3c82a86323e8b9e191",
+  "dependenciesVendored": false,
+  "portabilityLimitAcknowledged": "Approved comparison amendment retains original absolute documentPath; exact approved document is bundled but same-host original path remains required. No claim of hermetic cross-host reconstruction."
+}

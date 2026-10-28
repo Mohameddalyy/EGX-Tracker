@@ -1,0 +1,523 @@
+{
+  "scope": "W9_OFFLINE_ENGINEERING_ONLY",
+  "suite": "full-suite-3/result.json",
+  "mandatorySkipped": 0,
+  "testGroups": [
+    {
+      "id": "TP5-01",
+      "requirement": "Identity/catalog",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/signals.mjs",
+        "app/v5/execution-rules.mjs"
+      ],
+      "passingTests": [
+        "W9 temporary listings and currency substitutions remain explicit excluded cohort members",
+        "W9 pending reconciliation maps order context identity and rejects contradictory/malformed metadata",
+        "catalog validation and currency changes are atomic; USD prices never become EGP"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-02",
+      "requirement": "Sessions/finality",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/../finality.mjs",
+        "app/v5/execution-rules.mjs"
+      ],
+      "passingTests": [
+        "post-close boundary includes feed delay and buffer, in Cairo summer and winter time",
+        "weekends, provider holidays and missing or unsupported metadata cannot qualify same-day bars",
+        "provider extensions and date overrides delay eligibility; shorter sessions do not lower the verified floor",
+        "W9 limit lock and off-session minutes cannot fill an otherwise accepted intent"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-03",
+      "requirement": "Missing data",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/signals.mjs",
+        "app/v5/../refresh-selection.mjs"
+      ],
+      "passingTests": [
+        "null volume, missing sessions, provisional/future capture and action discontinuity block with exact reasons",
+        "verified zero is not missing volume; unchanged no-trade close and 18/20 rule remain enforced",
+        "partial recapture retains bars but snapshot and preparation quarantine the untouched latest tail"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-04",
+      "requirement": "Signal math",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/math.mjs",
+        "app/v5/signals.mjs"
+      ],
+      "passingTests": [
+        "hand calculations: fixed Wilder seed, aligned SMAs, H20 and R63",
+        "RV excludes current volume, keeps verified zero, rejects null and zero denominator",
+        "nearest rank and deterministic ISIN ties; tiers use entire prior eligible population",
+        "no current-high contamination and no future-price leakage"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-05",
+      "requirement": "Event timing",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/../workflow-planner.mjs",
+        "app/v5/../exchange-evidence.mjs",
+        "app/v5/../analysis-store.mjs"
+      ],
+      "passingTests": [
+        "changed filing/new news invalidates only affected company review despite unchanged price scores",
+        "events deduplicate canonical evidence, retain unknown expectations and require an economic hypothesis",
+        "document revisions retain the previous URL, hash and capture date without duplicating the same capture",
+        "new same-day evidence gets a fresh handoff while identical triggers remain idempotent"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-06",
+      "requirement": "Critical/optional",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/research.mjs",
+        "app/v5/../evidence-policy.mjs"
+      ],
+      "passingTests": [
+        "missing corporate action or solvency evidence cannot use degraded route",
+        "old approval cutoff and future checks fail; missing optional features do not block research approval",
+        "execution: important gaps apply one aggregate haircut and can only be waived in discretionary variant"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-07",
+      "requirement": "Price/cost",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/math.mjs",
+        "app/v5/money.mjs",
+        "app/v5/execution.mjs"
+      ],
+      "passingTests": [
+        "piecewise decimal ticks handle boundary, exact tick and strict next without floating overshoot",
+        "execution: decimal money rounds once and charges modeled costs once",
+        "execution: base and stress scenarios use separate sizing and independently recheck range/zone"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-08",
+      "requirement": "Cash/settlement",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/risk.mjs",
+        "app/v5/execution.mjs"
+      ],
+      "passingTests": [
+        "execution: two pre-open orders reserve sequentially and cannot reuse settled cash",
+        "execution: lower entry price never increases approved quantity and reserve reconciles exactly",
+        "execution: complete buy-stop-exit-T+2 lifecycle reconciles principal, modeled fees and realized return"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-09",
+      "requirement": "Delayed fills",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/execution.mjs",
+        "app/v5/execution-rules.mjs"
+      ],
+      "passingTests": [
+        "execution: expired window retains reservation and accepts timely delayed in-window bar",
+        "execution: cancellation preserves previously authorized events and blocks later bars",
+        "execution: deadline censors missing evidence, releases reserves, prevents retrospective fills",
+        "execution: stop creates actual-time exit intent, no same-bar exit, unsellable shares stay exposed"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-10",
+      "requirement": "Liquidity/exits",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/execution.mjs",
+        "app/v5/execution-rules.mjs"
+      ],
+      "passingTests": [
+        "execution: all-or-none exit with reduced volume remains pending and never partially liquidates",
+        "execution: empty capacity, range failure, halt, stale capture and processing never fabricate fills",
+        "W9 limit lock and off-session minutes cannot fill an otherwise accepted intent"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-11",
+      "requirement": "Risk discretion",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/risk.mjs",
+        "app/v5/schema.mjs"
+      ],
+      "passingTests": [
+        "execution: bounded sizing versus funded near-all-capital FULL with explicit exceptions",
+        "execution: risk budget and cash budget independently constrain; quantity cannot be model edited",
+        "execution: two pre-open orders reserve sequentially and cannot reuse settled cash"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-12",
+      "requirement": "Overrides",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/risk.mjs",
+        "app/v5/research.mjs"
+      ],
+      "passingTests": [
+        "execution: semantic gates reject tampered quantities, incomplete checks, wrong actor and stale approvals",
+        "execution: drawdown thresholds are hard for controls and scoped exceptions for FULL",
+        "execution: risk-led full exit needs independent bound report and cannot postpone mandatory exit"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-13",
+      "requirement": "Portfolio risk",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/risk.mjs",
+        "app/v5/evaluation-ledger.mjs"
+      ],
+      "passingTests": [
+        "execution: unknown marks block new allocation and forward risk never offsets another exposure",
+        "execution: descriptive correlations use aligned 60 returns and disclose missing/constant samples",
+        "execution: source-backed stress arithmetic and 25 percent liquidity disclose full-fill deadlock"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-14",
+      "requirement": "Lifecycle",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/execution-store.mjs",
+        "app/v5/../workflow-store.mjs",
+        "app/v5/../workflow-recovery.mjs"
+      ],
+      "passingTests": [
+        "durable receipt survives database close/reopen and completed work is not repeated",
+        "restart requires exact recorded recovery; live owner/child cannot be stolen and prior success stays saved",
+        "execution: immutable store rejects production DB, replays exactly and recovers without duplicate reservation",
+        "source lock recovery needs exact dead owner and leaves an audit event"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-15",
+      "requirement": "Deadline",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/../workflow-runner.mjs",
+        "app/v5/../workflow-checkpoint.mjs"
+      ],
+      "passingTests": [
+        "timeout writes truthful checkpoint, preserves position status and leaves unresponsive ownership for recovery",
+        "actual child timeout is terminated and awaited; stderr stays in local log",
+        "clock jump or PC sleep ends work with actual late timestamps rather than backfilled observations",
+        "W9 production deadline reserves final minute instead of giving adapter entire budget",
+        "W9 hanging checkpoint is bounded, finalized and explicitly undelivered"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-16",
+      "requirement": "Coverage",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/../workflow-inputs.mjs",
+        "app/v5/../workflow-planner.mjs",
+        "app/v5/../workflow-v5.mjs"
+      ],
+      "passingTests": [
+        "planner checks all actions and superseded decisions; unchanged history does not create downloads",
+        "minute targets use held positions, sell obligations, candidates and valid setups; expired entry stays excluded",
+        "W9 registered held v5 exposure survives pause, unmapped identity and unrelated unreadable ledger",
+        "W9 pending reconciliation maps order context identity and rejects contradictory/malformed metadata"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-17",
+      "requirement": "Isolation",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/execution-store.mjs",
+        "app/v5/contract.mjs",
+        "app/v5/evaluation-contract.mjs"
+      ],
+      "passingTests": [
+        "nonisolated database is refused",
+        "v5 runtime plan and schema match frozen bytes; legacy median RV stays separate",
+        "ledger wrapper is read-only and forbids event/config substitution"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    },
+    {
+      "id": "TP5-18",
+      "requirement": "Accounting",
+      "status": "PASS_ENGINEERING",
+      "runtimeModules": [
+        "app/v5/money.mjs",
+        "app/v5/execution.mjs",
+        "app/v5/evaluation-ledger.mjs"
+      ],
+      "passingTests": [
+        "closed ledger reconciles cash plus unsettled proceeds with integer P&L and costs",
+        "stale or action-held marks invalidate total return without erasing cash or realized P&L",
+        "cash flow outside supported engine cannot silently become profit",
+        "inconsistent entry costs and fees fail reconciliation",
+        "execution: action-basis mismatch and explicit corporate-action hold retain exposure without invented shares"
+      ],
+      "integrationEvidence": "final-sessions-1/sessions/session-results.json; applicable provider faults and generated cases; source/rule/actual-host admission remains separate",
+      "basis": "Actual current source assertions and complete TAP result; no name-based claim of live-market validity"
+    }
+  ],
+  "additionalContracts": [
+    {
+      "id": "TP13-1",
+      "requirement": "reconciliation window",
+      "status": "PASS_ENGINEERING",
+      "tests": [
+        "execution: expired window retains reservation and accepts timely delayed in-window bar",
+        "execution: deadline censors missing evidence, releases reserves, prevents retrospective fills"
+      ]
+    },
+    {
+      "id": "TP13-2",
+      "requirement": "own/other reservation, revalidation and cancellation",
+      "status": "PASS_ENGINEERING",
+      "tests": [
+        "execution: revalidation preserves own reservation and never increases approved size",
+        "execution: two pre-open orders reserve sequentially and cannot reuse settled cash",
+        "execution: cancellation preserves previously authorized events and blocks later bars"
+      ]
+    },
+    {
+      "id": "TP13-3",
+      "requirement": "cash versus loss budget",
+      "status": "PASS_ENGINEERING",
+      "tests": [
+        "execution: risk budget and cash budget independently constrain; quantity cannot be model edited"
+      ]
+    },
+    {
+      "id": "TP13-4",
+      "requirement": "B0/B1/B2/FULL authority",
+      "status": "PASS_ENGINEERING",
+      "tests": [
+        "execution: B0 cannot submit and paused engineering ledger cannot accept",
+        "execution: full schema rejects additional properties, invalid dates, conditional risk omissions and failed checks",
+        "full cohort records every arm/name and separates research pending from executable trades"
+      ]
+    },
+    {
+      "id": "TP13-5",
+      "requirement": "risk exit versus mandatory exit",
+      "status": "PASS_ENGINEERING",
+      "tests": [
+        "execution: risk-led full exit needs independent bound report and cannot postpone mandatory exit",
+        "mandatory stop still needs a later eligible minute and full liquidity"
+      ]
+    },
+    {
+      "id": "TP13-6",
+      "requirement": "semantic validation beyond schema",
+      "status": "PASS_ENGINEERING",
+      "tests": [
+        "execution: semantic gates reject tampered quantities, incomplete checks, wrong actor and stale approvals",
+        "execution: full schema rejects additional properties, invalid dates, conditional risk omissions and failed checks"
+      ]
+    }
+  ],
+  "frozenPlanSections": [
+    {
+      "section": 1,
+      "status": "PASS_ENGINEERING",
+      "evidence": "Separate claim fields in release gate"
+    },
+    {
+      "section": 2,
+      "status": "PASS_ENGINEERING",
+      "evidence": "registration.json; source manifest; prior outcomes/failed attempts preserved"
+    },
+    {
+      "section": 3,
+      "status": "PASS_ENGINEERING",
+      "evidence": "18-arm contract/matrix tests and approved amendment; no promoted arms"
+    },
+    {
+      "section": 4,
+      "status": "SCOPED_OR_BLOCKED",
+      "evidence": "Admission tests; historical data not claimed point-in-time, missing historical minute/research excluded"
+    },
+    {
+      "section": 5,
+      "status": "PASS_ENGINEERING",
+      "evidence": "18 groups and 1,000 seeded cases"
+    },
+    {
+      "section": 6,
+      "status": "SCOPED_OR_BLOCKED",
+      "evidence": "3 synthetic session pipelines passed; two real sessions BLOCKED"
+    },
+    {
+      "section": 7,
+      "status": "SCOPED_OR_BLOCKED",
+      "evidence": "No activation path; actual preflight/source/model readiness BLOCKED"
+    },
+    {
+      "section": 8,
+      "status": "SCOPED_OR_BLOCKED",
+      "evidence": "Zero engineering invariant/accounting failures; actual operational ratios not measured"
+    },
+    {
+      "section": 9,
+      "status": "SCOPED_OR_BLOCKED",
+      "evidence": "W7 metric/statistical code; missing prospective/basket evidence INCONCLUSIVE"
+    },
+    {
+      "section": 10,
+      "status": "SCOPED_OR_BLOCKED",
+      "evidence": "W7 retained actual case outputs/reviews; no new model-superiority claim"
+    },
+    {
+      "section": 11,
+      "status": "PASS_ENGINEERING",
+      "evidence": "Client/workflow regression and delivered partial checkpoints"
+    },
+    {
+      "section": 12,
+      "status": "PASS_ENGINEERING",
+      "evidence": "No schedules, policies or original experiment changed"
+    },
+    {
+      "section": 13,
+      "status": "PASS_ENGINEERING",
+      "evidence": "Six extra semantic-contract mappings"
+    }
+  ],
+  "faults": [
+    {
+      "requirement": "process crash",
+      "status": "PASS_ENGINEERING",
+      "evidence": "final-sessions-1/sessions/crash-recovery.json",
+      "limit": "Real child killed before transaction commit and after committed event; replay/idempotency asserted"
+    },
+    {
+      "requirement": "PC sleep/late wake",
+      "status": "PASS_ENGINEERING",
+      "evidence": "full-suite-3/suite.tap",
+      "limit": "Clock-jump test plus missed/stalled operations tests; simulated sleep, not a physical host endurance claim"
+    },
+    {
+      "requirement": "missing permission",
+      "status": "PASS_ENGINEERING",
+      "evidence": "final-sessions-1/sessions/session-2-outage-blocked-exit/dispatcher-result.json",
+      "limit": "Production adapter denied source and launched no collector"
+    },
+    {
+      "requirement": "model timeout",
+      "status": "PASS_ENGINEERING",
+      "evidence": "full-suite-3/suite.tap",
+      "limit": "Hung deep-review adapter/cancellation contract; actual provider availability remains unverified"
+    },
+    {
+      "requirement": "corrupt/partial/provider outage",
+      "status": "PASS_ENGINEERING",
+      "evidence": "final-sessions-1/sessions/session-2-outage-blocked-exit-dispatcher/w9-faults/fault-results.json",
+      "limit": "Real production process adapter with deliberately local provider stub; retained holdings, explicit failure"
+    },
+    {
+      "requirement": "lost collector owner",
+      "status": "PASS_ENGINEERING",
+      "evidence": "full-suite-3/suite.tap",
+      "limit": "Exact-owner recovery and live-child fencing; no TTL takeover"
+    },
+    {
+      "requirement": "report destination",
+      "status": "PASS_ENGINEERING",
+      "evidence": "full-suite-3/suite.tap",
+      "limit": "Actual CLI obstructed directory, throwing sink and hanging sink; durable SQLite fallback"
+    },
+    {
+      "requirement": "clock/session mismatch",
+      "status": "PASS_ENGINEERING",
+      "evidence": "full-suite-3/suite.tap",
+      "limit": "Off-session/DST/midnight and client earlier-than-ledger negative; actual versus labeled synthetic clocks retained"
+    }
+  ],
+  "launchGates": [
+    {
+      "id": "L1",
+      "status": "BLOCKED",
+      "requirement": "Applicable automated-source permissions and verified official sessions/rules/settlement bundle",
+      "evidence": "agent/source-access.json absent; W1 source approval must not be inferred from connection success"
+    },
+    {
+      "id": "L2",
+      "status": "BLOCKED",
+      "requirement": "Current W3 full-universe identity/event/action/data admission and monitoring readiness",
+      "evidence": "Retained historical verification is not current-session admission"
+    },
+    {
+      "id": "L3",
+      "status": "BLOCKED",
+      "requirement": "W8 genuine client comprehension acceptance or separately approved protocol amendment",
+      "evidence": "verification/w8-client-20261026/RESULTS.md; placeholder answers explicitly excluded"
+    },
+    {
+      "id": "L4",
+      "status": "BLOCKED",
+      "requirement": "Separate authorization and two actual verified no-order sessions meeting frozen coverage/timing/throughput gates",
+      "evidence": "No schedules resumed; synthetic session equivalents cannot satisfy W10.1"
+    },
+    {
+      "id": "L5",
+      "status": "BLOCKED_FOR_ECONOMIC_COMPARISON",
+      "requirement": "Approved attainable five-name basket runtime/entitlements and same-period observations before economic comparison",
+      "evidence": "W7 approved amendment is specified, not an operational basket. This W9 scope admits no prospective economic comparison; no waiver or deletion of the mandate"
+    },
+    {
+      "id": "L6",
+      "status": "NOT_AUTHORIZED",
+      "requirement": "Separately authorized five-session pilot, later cohorts, and independent live-capital gates",
+      "evidence": "Engineering run cannot activate any of these"
+    }
+  ]
+}

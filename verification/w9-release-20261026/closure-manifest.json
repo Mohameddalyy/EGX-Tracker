@@ -1,0 +1,190 @@
+{
+  "scope": "W9 closure evidence exact byte hashes; source archive and evidence archive have their own manifests",
+  "files": [
+    {
+      "path": "verification/w9-release-20261026/AUDIT-CLOSURE.md",
+      "bytes": 5211,
+      "sha256": "e776670e9ec72421b60734f0feb82b39e6ed7ba1d63bd9c0ab4770102020ddbb"
+    },
+    {
+      "path": "verification/w9-release-20261026/build-closure.py",
+      "bytes": 10731,
+      "sha256": "70ecba3974cbd1ceddef4ea267773735c05aff93ba79007ee7e97bdc470e8175"
+    },
+    {
+      "path": "verification/w9-release-20261026/build-matrix.py",
+      "bytes": 9639,
+      "sha256": "0ee80404657be5400bc3d0f856c7fba2a5e5c42b7f9165ebefff871c807a5c86"
+    },
+    {
+      "path": "verification/w9-release-20261026/closure-review/final-package-review.json",
+      "bytes": 997,
+      "sha256": "382c1a355921198dd558af91b67255e9fa799df4a1cbfb79e14e0b89456481a5"
+    },
+    {
+      "path": "verification/w9-release-20261026/closure-review/FINAL-REVIEW.md",
+      "bytes": 5073,
+      "sha256": "fe8cbfa0491bb97fc65e54ebdb90a1a85bb457e44eac7dc53e700910e2a18346"
+    },
+    {
+      "path": "verification/w9-release-20261026/closure-review/matrix-review.json",
+      "bytes": 5056,
+      "sha256": "95d9feba6af50807ded0d7e1e404b16925735f3deae01708822cb6be914465bc"
+    },
+    {
+      "path": "verification/w9-release-20261026/closure-review/package-review.json",
+      "bytes": 651,
+      "sha256": "e81e8657558644d76442802a5ed49f669c11fc3d626da5d35a65e11911d579ce"
+    },
+    {
+      "path": "verification/w9-release-20261026/evidence-manifest.json",
+      "bytes": 28505,
+      "sha256": "16de86f48be25943fc4a2a7d9064fc5ed0f87f490f4ba868c17923ae782d3a22"
+    },
+    {
+      "path": "verification/w9-release-20261026/first-regression.txt",
+      "bytes": 12018,
+      "sha256": "ee3a228ba45bb63c2a25c22b49bb5b04605ec9332b3a2672a7446232f49926c0"
+    },
+    {
+      "path": "verification/w9-release-20261026/generated-1000-expanded.json",
+      "bytes": 996605,
+      "sha256": "a859d3721a63a3f5c6ab6ad1d2fdf838380c511196112f633317bcab531c5d10"
+    },
+    {
+      "path": "verification/w9-release-20261026/generated-1000-expanded.log",
+      "bytes": 761,
+      "sha256": "67569ae671f4c68f2f87106dd97bb3c40968b3402ac60b25448db4803f22e4e9"
+    },
+    {
+      "path": "verification/w9-release-20261026/generated-1000.json",
+      "bytes": 628594,
+      "sha256": "30b445ab671969284232217e43b8ce501b77d6e35db65356ddefb1bee148d15e"
+    },
+    {
+      "path": "verification/w9-release-20261026/generated-1000.log",
+      "bytes": 62,
+      "sha256": "ad8f3fd12fe56c641fcc309704858d050273346c7951e1b42c9fb2ec68ee9fb0"
+    },
+    {
+      "path": "verification/w9-release-20261026/new-regressions-2.txt",
+      "bytes": 1133,
+      "sha256": "aacc1ab4e9781c57b263a55985eafc9a308ada58504be8b61c6dafb2ef4c5fd8"
+    },
+    {
+      "path": "verification/w9-release-20261026/new-regressions.txt",
+      "bytes": 4186,
+      "sha256": "5c9687a2b9d0fdb16dddbcc16a5c65499e6cf390af71acee6004a2e8a2c85a49"
+    },
+    {
+      "path": "verification/w9-release-20261026/package-evidence.py",
+      "bytes": 1378,
+      "sha256": "ebf123112a0d12fd84933ff807d647ce0f7f16a731a1e7ab2bb42dcb599edbdc"
+    },
+    {
+      "path": "verification/w9-release-20261026/package-release.py",
+      "bytes": 3713,
+      "sha256": "f00dde02b3a43b0f7bd4a780d2e7905a2a7e7fae14407ce1adfb08743349b3a6"
+    },
+    {
+      "path": "verification/w9-release-20261026/reconstruct-release.py",
+      "bytes": 1008,
+      "sha256": "b63288c8de8c9f94728ca76b396264f6f27173cddc398aa3fbacf1cb776a23c0"
+    },
+    {
+      "path": "verification/w9-release-20261026/reconstruction-files.json",
+      "bytes": 305,
+      "sha256": "5ab3beea015094b1c5f93f61e22e9f139bc79a806f9d1ad35557ad617408f3fc"
+    },
+    {
+      "path": "verification/w9-release-20261026/registration.json",
+      "bytes": 462,
+      "sha256": "ea886ac17f10012fe5d83c4f7a05965c901647208dce9410894fb602a2e52367"
+    },
+    {
+      "path": "verification/w9-release-20261026/RELEASE-GATE.json",
+      "bytes": 3144,
+      "sha256": "0ad0aad2ea4465017e8e6ba87f860b9804c09e3b254c029fe3d99dc2656422ff"
+    },
+    {
+      "path": "verification/w9-release-20261026/requirement-matrix.json",
+      "bytes": 25212,
+      "sha256": "490889c2b72700ee1d1cc0895271f0dc7684556bff788d8847045c98db98f6a1"
+    },
+    {
+      "path": "verification/w9-release-20261026/REQUIREMENT-MATRIX.md",
+      "bytes": 4489,
+      "sha256": "d15ffc4ce559270c05a41759a480b3afc8ef4483ededa568cecf8b37df1b2a4d"
+    },
+    {
+      "path": "verification/w9-release-20261026/RESULTS.md",
+      "bytes": 5964,
+      "sha256": "4c172bd7a11120007701c1911ec42c7287bb2020989bf3f4d5290a57c6982de7"
+    },
+    {
+      "path": "verification/w9-release-20261026/retained-verification-closure.json",
+      "bytes": 221,
+      "sha256": "b7bdd9f403a51321eb9d656a368e063098291ec05bcb922d9aebe31eae936e35"
+    },
+    {
+      "path": "verification/w9-release-20261026/retained-verification.json",
+      "bytes": 12512,
+      "sha256": "7554c67f13e983f574c8ffa0c484bb8bd91d5d35d50cb6f7e38ed7bb489e43af"
+    },
+    {
+      "path": "verification/w9-release-20261026/rollback-first-attempt.py",
+      "bytes": 3564,
+      "sha256": "b991ab790a0ab6af8e077ff80d331adc8e68018099fe2725a5369e25be6b83b7"
+    },
+    {
+      "path": "verification/w9-release-20261026/rollback.py",
+      "bytes": 3545,
+      "sha256": "ce832aa4692f201d3877cf0d3517c51243b49cb27896775c70b88cc02e19c1f4"
+    },
+    {
+      "path": "verification/w9-release-20261026/session-attempt-1.log",
+      "bytes": 700,
+      "sha256": "3b1b16f1625610150fffcedb066ebe01959ac9f05ad97de195fb57e497c54976"
+    },
+    {
+      "path": "verification/w9-release-20261026/session-attempt-2.log",
+      "bytes": 2179,
+      "sha256": "f8b0b90f4a1cc40677801fbf886bc6f863c05d3d0276de06c342690f1b27a475"
+    },
+    {
+      "path": "verification/w9-release-20261026/session-attempt-3.log",
+      "bytes": 4229,
+      "sha256": "a4a2893f20bcda96a54629a411ca97a32c4a12623b4e756e971988bfd2c580a3"
+    },
+    {
+      "path": "verification/w9-release-20261026/source-manifest.json",
+      "bytes": 79936,
+      "sha256": "9583ba199e4c59c4f4d20c5348015d591f6fcd4000894507bd316b85f3a856bd"
+    },
+    {
+      "path": "verification/w9-release-20261026/source-release.zip",
+      "bytes": 1275202,
+      "sha256": "eb94159149cdfcd1db80e3053af0b092c01c28163606e10cfebd54e3996638c4"
+    },
+    {
+      "path": "verification/w9-release-20261026/targeted-final.tap",
+      "bytes": 10148,
+      "sha256": "4104c35b370059f0b51115e9a5a653a772f59bf4636fae6a47b2783961d1654d"
+    },
+    {
+      "path": "verification/w9-release-20261026/verification-evidence.zip",
+      "bytes": 1959789,
+      "sha256": "a748af99ebd74fbc0b341fabe1e85bd9acc17d6be8e9b4de48995ac4a27ed54f"
+    },
+    {
+      "path": "verification/w9-release-20261026/verify-retained.mjs",
+      "bytes": 5218,
+      "sha256": "05bad8db12b05bcfa25b0e9a872fce050e7a7579160782d31d2b0428d5794fc8"
+    },
+    {
+      "path": "verification/w9-release-20261026/workflow-regression.txt",
+      "bytes": 3158,
+      "sha256": "3107fba2328ef5a20e4725fbaf6b8d2e7bc7cf565447396ec2e1de204032e046"
+    }
+  ]
+}

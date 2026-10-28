@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "fileCount": 446,
+  "allExactBytes": true,
+  "archiveSha256": "eb94159149cdfcd1db80e3053af0b092c01c28163606e10cfebd54e3996638c4",
+  "sourceTreeDigest": "d3932c0cf646d77294798e4153a3bbb393f5c327727feed2c52818ebc8c78ae9",
+  "scope": "SAME_HOST_WITH_INSTALLED_DEPENDENCIES"
+}

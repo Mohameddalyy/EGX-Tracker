@@ -1,0 +1,35 @@
+✔ planner checks all actions and superseded decisions; unchanged history does not create downloads (5.4546ms)
+✔ changed filing/new news invalidates only affected company review despite unchanged price scores (0.9345ms)
+✔ same-day news refresh is independent of daily facts and detects stale first page in mixed window (1.9635ms)
+✔ minute targets use held positions, sell obligations, candidates and valid setups; expired entry stays excluded (0.9819ms)
+✔ future source backoff preserves overdue critical coverage; unavailable baseline names defer to Sunday (0.8752ms)
+✔ durable receipt survives database close/reopen and completed work is not repeated (57.73ms)
+✔ restart requires exact recorded recovery; live owner/child cannot be stolen and prior success stays saved (3.4328ms)
+✔ source failure does not discard successes or block independent mandatory monitoring; retries are due only (10.7931ms)
+✔ timeout writes truthful checkpoint, preserves position status and leaves unresponsive ownership for recovery (25.6868ms)
+✔ source permission is explicit and unresolved adapters launch no process (6.4193ms)
+✔ owned claim voluntarily waits; event/time resume is capacity bounded, with legacy owner recovery explicit (5.5956ms)
+✔ reassessment overflow remains waiting and resumes before new candidates without exceeding five (3.8578ms)
+✔ actual child timeout is terminated and awaited; stderr stays in local log (125.7476ms)
+✔ real local worker commands checkpoint positions and export history without changing paper ledger (1233.6946ms)
+✔ real observation-only minute command retains exact targets and never mutates paper ledger (674.6067ms)
+✔ real decision worker records changed evidence as a bounded reassessment without changing original decision (870.4791ms)
+✔ client checkpoint renders unfinished work safely without presenting it as approval (0.983ms)
+✔ old/invalid minute observations are retained with explicit quality; no observation grants execution (0.6126ms)
+✔ broken optional document index leaves position and all-decision obligation work runnable (436.9004ms)
+✔ source lock recovery needs exact dead owner and leaves an audit event (6.1497ms)
+✔ clock jump or PC sleep ends work with actual late timestamps rather than backfilled observations (2.5322ms)
+✔ new cited report routes are discovered once; unchanged reports reuse inventory and excluded sources stay excluded (378.944ms)
+✔ screen workload keeps expensive sources separate while reporting their missing coverage (0.7199ms)
+✔ changing news window cannot bypass source backoff; explicit new evidence invalidation is recorded (2.1763ms)
+✔ real catalog import worker applies a retained new version without fetching or changing paper ledger (647.9252ms)
+✔ new source content replans urgent monitoring within the same run without repeating unchanged work (3.6016ms)
+✔ in-run replanning reuses invocation health and unchanged positions; progress survives before completion (1.7944ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5125.0382
