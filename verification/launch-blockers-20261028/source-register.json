@@ -1,0 +1,67 @@
+{
+  "recordedAt": "2026-10-28T08:12:59.387686+00:00",
+  "scope": "Research register; not runtime source-access approval",
+  "adapters": [
+    {
+      "id": "tradingview",
+      "owner": "TradingView and relevant data licensors",
+      "capabilities": [
+        "scanner",
+        "daily history",
+        "minutes",
+        "reported fundamentals",
+        "indexes"
+      ],
+      "licenseStatus": "USER_ATTESTED_SEPARATE_PERMISSION_DOCUMENT_UNAVAILABLE",
+      "evidence": "agent/source-permission-attestation.json",
+      "publicTerms": "https://www.tradingview.com/policies/",
+      "automatedExtractionPolicy": "https://www.tradingview.com/support/solutions/43000674726-why-is-my-account-banned-due-to-suspicious-activity/",
+      "uncertainties": [
+        "Issuing authority",
+        "Effective period",
+        "Applicable account",
+        "Whether exchange/data-licensor rights covered",
+        "Rate limits",
+        "Correction/retention obligations"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "egx-exchange",
+      "owner": "EGX / applicable exchange data licensor",
+      "capabilities": [
+        "announcements",
+        "events",
+        "listing status"
+      ],
+      "licenseStatus": "UNKNOWN",
+      "enabled": false
+    },
+    {
+      "id": "issuer-documents",
+      "owner": "Each issuer/document host",
+      "capabilities": [
+        "financial disclosures",
+        "corporate actions"
+      ],
+      "licenseStatus": "HOST_SPECIFIC_REVIEW_REQUIRED",
+      "enabled": false
+    },
+    {
+      "id": "egid-candidate",
+      "owner": "EGID; EGX subsidiary per company website",
+      "capabilities": [
+        "Market data feed; detail subject to vendor confirmation"
+      ],
+      "licenseStatus": "CANDIDATE_NO_AGREEMENT",
+      "source": "https://www.egidegypt.com/",
+      "enabled": false
+    }
+  ],
+  "excludedSources": [
+    "Stock Analysis",
+    "Mubasher",
+    "Thndr"
+  ],
+  "officialRulesStatus": "NOT_VERIFIED; no public search summary promoted to effective trading rules"
+}

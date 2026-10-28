@@ -1,0 +1,12 @@
+✔ approved basket ranks five prior-close names by actual turnover/ISIN and funds whole-share cost-inclusive commitments (148.883ms)
+✔ missing raw turnover or identity does not shrink the ranking denominator or silently substitute a proxy (128.2276ms)
+✔ basket rejects incomplete/duplicate/late universe and reports insufficient names without replacements (123.7498ms)
+✔ basket preserves uncertainty for missing effective action rules and invalid daily bands (60.1077ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1115.7978

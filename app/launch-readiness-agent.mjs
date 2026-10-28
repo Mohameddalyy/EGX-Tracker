@@ -1,0 +1,12 @@
+import {readWorkflowInputs} from './workflow-inputs.mjs';
+import {planWorkflow} from './workflow-planner.mjs';
+import {existsSync,readFileSync,writeFileSync} from 'node:fs';
+import {join,resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
+export function launchReadiness(root,now=new Date()){
+ const input=readWorkflowInputs(root,now),p=planWorkflow(input,{workload:'baseline',now}),counts={};
+ for(const s of input.stocks)counts[s.readiness.code]=(counts[s.readiness.code]||0)+1;
+ const has=s=>existsSync(join(root,s));
+ return {at:now.toISOString(),status:'BLOCKED',scope:'READ_ONLY_DIAGNOSTIC_NOT_ADMISSION',entryAuthorization:false,catalog:{retained:input.stocks.length,capturedAt:input.catalogCapturedAt,preparationCodes:counts,denominator:'All retained stock rows; independent current ordinary-EGP eligibility denominator not yet certified',executionCertified:false},obligations:{decisions:input.decisions.length,positions:input.positions.length,livePositions:input.livePositions.length,pendingIntents:input.intents.length,unmappedEvents:input.unmappedEvents.count,inputErrors:input.inputErrors},activeCollectors:input.activeCollectors,sourceGaps:p.sourceGaps,jobs:p.jobs.map(j=>({kind:j.kind,target:j.target,critical:j.critical,source:j.source??null})),evidence:{sourceAccessRegister:has('agent/source-access.json'),permissionAttestation:has('agent/source-permission-attestation.json')},launchGates:[{id:'L1',status:'BLOCKED',reason:'Permission attestation awaiting supporting evidence; official effective rule bundle required'},{id:'L2',status:'BLOCKED',reason:'Provider preparation freshness is not current v5 identity/action/session admission'},{id:'L3',status:'BLOCKED',reason:'Actual client comprehension acceptance pending'},{id:'L4',status:'BLOCKED',reason:'Two actual verified no-order sessions pending prerequisites and explicit start'},{id:'L5',status:'PARTIAL',reason:'Basket planning implemented; execution/entitlements/endpoint integration and observed comparison pending'},{id:'L6',status:'NOT_AUTHORIZED',reason:'Pilot and real capital need separate authorization'}]};
+}
+if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){const [root,out]=process.argv.slice(2);if(!root||!out)throw Error('Explicit project root and new output JSON required');const r=launchReadiness(resolve(root));writeFileSync(out,JSON.stringify(r,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({status:r.status,catalog:r.catalog,obligations:r.obligations,output:out}));}

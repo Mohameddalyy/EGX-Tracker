@@ -1,0 +1,3774 @@
+{
+  "at": "2026-10-28T08:11:43.932Z",
+  "status": "BLOCKED",
+  "scope": "READ_ONLY_DIAGNOSTIC_NOT_ADMISSION",
+  "entryAuthorization": false,
+  "catalog": {
+    "retained": 296,
+    "capturedAt": "2026-10-18T20:53:55.950Z",
+    "preparationCodes": {
+      "EXPECTED_SESSION_ABSENT": 295,
+      "SESSION_METADATA_UNAVAILABLE": 1
+    },
+    "denominator": "All retained stock rows; independent current ordinary-EGP eligibility denominator not yet certified",
+    "executionCertified": false
+  },
+  "obligations": {
+    "decisions": 33,
+    "positions": 0,
+    "livePositions": 0,
+    "pendingIntents": 0,
+    "unmappedEvents": 347,
+    "inputErrors": []
+  },
+  "activeCollectors": [],
+  "sourceGaps": [
+    {
+      "kind": "minutes",
+      "target": "COMI,CPCI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "exchange",
+      "target": "2026-10-28",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": true
+    },
+    {
+      "kind": "documents",
+      "target": "2026-10-28",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "catalog",
+      "target": "EGX",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "facts",
+      "target": "EGX",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "COMI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": true
+    },
+    {
+      "kind": "history",
+      "target": "AMOC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SWDY",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TMGH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "HRHO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ETEL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AALR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ABUK",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ACAMD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ACAP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ACFR",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "ACGC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ACTF",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ADCI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ADIB",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ADPC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ADRI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AFDI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AFMC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AIDC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AIFI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AIH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AJWA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ALCN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ALEX",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ALUM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ALXD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AMER",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AMES",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AMIA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AMII",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AMPI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ANCC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "APPC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "APSW",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ARAB",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ARCC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AREH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ASCM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ASPI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ATLC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ATQA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "AXPH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "BIDI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "BIGP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "BINV",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "BIOC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "BONY",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "BTFH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CAED",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CANA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CCAP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CCRS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CEFM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CERA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CFGH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CICH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CID",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "CIEB",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CIRA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CLHO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CNFN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "COPR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "COSG",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CPCI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": true
+    },
+    {
+      "kind": "history",
+      "target": "CPME",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CRST",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "CSAG",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DAPH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DCCC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "DCRC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DEIN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DGTZ",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DOMT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DSCW",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "DTPP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EALR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EASB",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EAST",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EBSC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ECAP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EDFM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EEII",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EEP",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EFAC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EFIC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EFID",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EFIH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGAL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGAS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGBE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGCH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGOTH",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EGREF",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS30AJ1C016-EGP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS370O1C013",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS3E071C013-EGP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS3I0S1C019",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS48271C018-EGP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS65101C015",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EGS65621C012",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EGS65861C014",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EGS659O1C015",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGS72L31C011",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EGSA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGTS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EGWA",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EITP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ELAB",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "ELEC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ELKA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ELNA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ELSH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ELWA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EMFD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ENGC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ENPI",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "EOSB",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EPCO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EPPK",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ETRS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "EXPA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FAIT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FAITA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FERC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FIRE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FNAR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FTNS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "FWRY",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GBCO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GDWA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GEOS",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "GGCC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GGRN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GIHD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GMCI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GOUR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GPIM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GPPL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GRCA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GROV",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "GSSC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GTEX",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GTHE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "GTWL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "HALN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "HBCO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "HDBK",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "HDST",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "HELI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "IBCT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ICFC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ICID",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ICLE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "IDRE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "IEEC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "IFAP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "INEG",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "INFI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "IRAX",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "IRON",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ISMA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ISMQ",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ISPH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "JUFO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "KABO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "KNGC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "KORA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "KRDI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "KWIN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "KZPC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "LCSW",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "LKGP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "LUTS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MAAL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MASR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MBEG",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MBSC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MCQE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MCRO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MEGM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MENA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MEPA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MFPC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MFSC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MHOT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MICH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MILS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MIPH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MISR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MITR",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "MLIC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "MMAT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MMHC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "MOED",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MOIL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MOIN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MOSC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MPCI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MPCO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MPRC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "MTIE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NAHO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NAMI",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "NARE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NBCC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NBKE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NCCW",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NCGC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NDRL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NEDA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NFCI",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "NHPS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NINH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NIPH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "NMIN",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "OBRI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "OCAP",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "OCDI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "OCPH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ODIN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "OFH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "OIH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "OLFI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ORAS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ORHD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ORWE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PACH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PHAR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PHDC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PHGC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PHTV",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PMSC",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "POCO",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "POUL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PRCL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PRDC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "PRMH",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "QNBE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RACC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RAKT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RAYA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RKAZ",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RMDA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RMTV",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "ROTO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RREI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RTVC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "RUBX",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SAIB",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SAUD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SCEM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SCFM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SCTS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SDTI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SEIG",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SEIGA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SIEG",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "SINA",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "SIPC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SKPC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SMFR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SMPP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SNFC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SNFI",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SPHT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SPIN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SPMD",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SUCE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SUGR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "SVCE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TALM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TANM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TAQA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TORA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TOUR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TRTO",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TWSA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "TYCN",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UBEE",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UEFM",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UEGC",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UNIP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UNIT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UPMS",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "UTOP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "VALU",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "VERT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "VLMR",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "VLMRA",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "WATP",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "WCDF",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "WKOL",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "YAYT",
+      "code": "SUNDAY_REPAIR",
+      "critical": false,
+      "overdueCoverage": true
+    },
+    {
+      "kind": "history",
+      "target": "ZEOT",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    },
+    {
+      "kind": "history",
+      "target": "ZMID",
+      "code": "PERMISSION_UNRESOLVED",
+      "critical": false
+    }
+  ],
+  "jobs": [
+    {
+      "kind": "health",
+      "target": "local",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "positions",
+      "target": "all",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-amia-initial",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-cana-initial",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-cira-initial",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-hdbk-initial",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261008-masr-initial",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-amoc-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-acgc-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-moin-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-twsa-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-oras-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-adri-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-aih-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-adib-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-ajwa-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261011-amoc-universe-02",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261012-arab-universe-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-comi-representative-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-cira-representative-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-amoc-representative-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-comi-pullback-02",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261015-cira-pullback-02",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261018-ajwa-completeness-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-arab-material-reassessment-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-ajwa-material-reassessment-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-hdbk-support-reassessment-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-moin-support-reassessment-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-amia-support-reassessment-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-cpci-ranked-primary-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-adci-ranked-primary-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-napr-ranked-primary-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261019-adri-ranked-primary-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261020-aih-ranked-primary-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "decision-monitor",
+      "target": "decision-20261022-cira-reassessment-01",
+      "critical": true,
+      "source": null
+    },
+    {
+      "kind": "minute-obligations",
+      "target": "tracked",
+      "critical": false,
+      "source": null
+    },
+    {
+      "kind": "minutes",
+      "target": "COMI,CPCI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "queue-resume",
+      "target": "existing",
+      "critical": false,
+      "source": null
+    },
+    {
+      "kind": "document-discovery",
+      "target": "cited-reports",
+      "critical": false,
+      "source": null
+    },
+    {
+      "kind": "learning-export",
+      "target": "all",
+      "critical": false,
+      "source": null
+    },
+    {
+      "kind": "exchange",
+      "target": "2026-10-28",
+      "critical": true,
+      "source": "egx-exchange"
+    },
+    {
+      "kind": "documents",
+      "target": "2026-10-28",
+      "critical": false,
+      "source": "issuer-documents"
+    },
+    {
+      "kind": "catalog",
+      "target": "EGX",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "catalog-import",
+      "target": "EGX",
+      "critical": false,
+      "source": null
+    },
+    {
+      "kind": "facts",
+      "target": "EGX",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "COMI",
+      "critical": true,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AMOC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SWDY",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TMGH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "HRHO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ETEL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AALR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ABUK",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ACAMD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ACAP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ACGC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ACTF",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ADCI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ADIB",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ADPC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ADRI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AFDI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AFMC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AIDC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AIFI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AIH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AJWA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ALCN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ALEX",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ALUM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ALXD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AMER",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AMES",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AMIA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AMII",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AMPI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "APPC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "APSW",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ARAB",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ARCC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AREH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ASCM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ASPI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ATLC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ATQA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "AXPH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "BIDI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "BIGP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "BINV",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "BIOC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "BONY",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "BTFH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CAED",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CANA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CCAP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CCRS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CEFM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CERA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CFGH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CICH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CIEB",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CIRA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CLHO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CNFN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "COPR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "COSG",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CPCI",
+      "critical": true,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CPME",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CRST",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "CSAG",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DAPH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DCRC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DEIN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DGTZ",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DOMT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DSCW",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "DTPP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EALR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EASB",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EAST",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EBSC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ECAP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EDFM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EEII",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EFIC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EFID",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EFIH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGAL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGAS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGBE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGCH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGREF",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGS30AJ1C016-EGP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGS370O1C013",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGS3E071C013-EGP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGS3I0S1C019",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGS48271C018-EGP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGS659O1C015",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGSA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EGTS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EITP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ELEC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ELKA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ELNA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ELSH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ELWA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EMFD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ENGC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EOSB",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EPCO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EPPK",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ETRS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "EXPA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FAIT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FAITA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FERC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FIRE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FNAR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FTNS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "FWRY",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GBCO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GDWA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GGCC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GGRN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GIHD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GMCI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GOUR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GPIM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GPPL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GRCA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GSSC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GTEX",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GTHE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "GTWL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "HALN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "HBCO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "HDBK",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "HELI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "IBCT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ICFC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ICID",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ICLE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "IDRE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "IEEC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "IFAP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "INEG",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "INFI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "IRAX",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "IRON",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ISMA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ISMQ",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ISPH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "JUFO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "KABO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "KORA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "KRDI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "KWIN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "KZPC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "LCSW",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "LKGP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "LUTS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MAAL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MASR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MBEG",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MBSC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MCQE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MCRO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MEGM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MENA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MEPA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MFPC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MFSC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MHOT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MICH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MILS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MIPH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MISR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MMAT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MOED",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MOIL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MOIN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MOSC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MPCI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MPCO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MPRC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "MTIE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NAHO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NARE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NBCC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NBKE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NCCW",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NCGC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NDRL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NEDA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NHPS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NINH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "NIPH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "OBRI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "OCDI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "OCPH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ODIN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "OFH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "OIH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "OLFI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ORAS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ORHD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ORWE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PACH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PHAR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PHDC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PHGC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PHTV",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "POUL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PRCL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PRDC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "PRMH",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "QNBE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RACC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RAKT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RAYA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RKAZ",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RMDA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ROTO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RREI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RTVC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "RUBX",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SAIB",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SAUD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SCEM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SCFM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SCTS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SDTI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SEIG",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SEIGA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SIPC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SKPC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SMFR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SMPP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SNFC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SNFI",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SPHT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SPIN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SPMD",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SUCE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SUGR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "SVCE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TALM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TANM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TAQA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TORA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TOUR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TRTO",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TWSA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "TYCN",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UBEE",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UEFM",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UEGC",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UNIP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UNIT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UPMS",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "UTOP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "VALU",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "VERT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "VLMR",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "VLMRA",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "WATP",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "WCDF",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "WKOL",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ZEOT",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "history",
+      "target": "ZMID",
+      "critical": false,
+      "source": "tradingview"
+    },
+    {
+      "kind": "screen",
+      "target": "EGX",
+      "critical": false,
+      "source": null
+    },
+    {
+      "kind": "preparation",
+      "target": "retained",
+      "critical": false,
+      "source": null
+    }
+  ],
+  "evidence": {
+    "sourceAccessRegister": false,
+    "permissionAttestation": false
+  },
+  "launchGates": [
+    {
+      "id": "L1",
+      "status": "BLOCKED",
+      "reason": "Permission attestation awaiting supporting evidence; official effective rule bundle required"
+    },
+    {
+      "id": "L2",
+      "status": "BLOCKED",
+      "reason": "Provider preparation freshness is not current v5 identity/action/session admission"
+    },
+    {
+      "id": "L3",
+      "status": "BLOCKED",
+      "reason": "Actual client comprehension acceptance pending"
+    },
+    {
+      "id": "L4",
+      "status": "BLOCKED",
+      "reason": "Two actual verified no-order sessions pending prerequisites and explicit start"
+    },
+    {
+      "id": "L5",
+      "status": "PARTIAL",
+      "reason": "Basket planning implemented; execution/entitlements/endpoint integration and observed comparison pending"
+    },
+    {
+      "id": "L6",
+      "status": "NOT_AUTHORIZED",
+      "reason": "Pilot and real capital need separate authorization"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "POST_W9_BLOCKER_REMEDIATION_BATCH; no activation",
+  "files": [
+    {
+      "path": "app/v5/basket-plan.mjs",
+      "sha256": "112c6e69a3c814553e506b7fabf90599b86031829207c6a256e07a0519fec6ec"
+    },
+    {
+      "path": "app/basket-plan-agent.mjs",
+      "sha256": "3eb402d7496a255f96660ac32db2ff8be42d63520a63e2e7ee458dd33de811ef"
+    },
+    {
+      "path": "app/basket-plan.test.mjs",
+      "sha256": "46a472a8791fff8efc4c943438a77036edc92841756fedf42ebda1926327c2ac"
+    },
+    {
+      "path": "app/launch-readiness-agent.mjs",
+      "sha256": "d565ac5a89981561169fb79f726161ab72a7d132cef86494ba55dfdbde0d6e95"
+    },
+    {
+      "path": "agent/v5-release-status.md",
+      "sha256": "4d0b18c8e6a805a2c39da7a26920ac90c2d1962c340318bed38f1d88417b86b4"
+    },
+    {
+      "path": "agent/source-permission-attestation.json",
+      "sha256": "3e9d763dc765600f626aff418f300a73ddd2ef93b7cec1b18daa7dc6eb0d62a1"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/basket-tests.tap",
+      "sha256": "480e195d730b4cc2fd7f7fd4ac9033ad367f69afcf1cf4a1808c07bd29cd538f"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/DATA-CONTRACT-REQUEST.md",
+      "sha256": "fb45de688226153f4884376f68faa573bb8c831fde67acffcb6c53c381d86efd"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/readiness-with-attestation.json",
+      "sha256": "0822043f6d1f1c450e3f5057627e90f17f786e5875d208a889fe21a009e9552d"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/readiness.json",
+      "sha256": "48df1884a8cd6ddde98417a28cdd0c8c10673dc74c2de74e903705151ce16396"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/RESULTS.md",
+      "sha256": "bf4fe6664e399131dacd2d096b979a12e1240d4787f687ca8ba4d8ded6f81346"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/source-register.json",
+      "sha256": "70941e84b1ca8dc1338c821e10dd8e72a6b68d10dd51a512288c0bb7f4eafee6"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/full-suite/invocation.json",
+      "sha256": "919c2f7d731f40adcb2d4f73d6509e9501df24293789375d722f5cb939f22fc9"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/full-suite/result.json",
+      "sha256": "aff8d73a9e085c9b66581b8575f8b49f41cac50f584cfb2b75942a11413d2499"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/full-suite/suite.tap",
+      "sha256": "b089e7e32494fa5618219af947a6a100df91d8888dae786cbf7cb0eedd515ce8"
+    },
+    {
+      "path": "verification/launch-blockers-20261028/retained-check.json",
+      "sha256": "52dda72c1442b0410e87a651ab063d1cd2dfbdc61fb8e5d20f68cd8df1bc8fb0"
+    }
+  ]
+}
