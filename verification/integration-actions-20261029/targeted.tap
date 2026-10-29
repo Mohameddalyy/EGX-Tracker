@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: basket durable entry replay is idempotent, restart-safe and preserves cash; no strategy exits
+ok 1 - basket durable entry replay is idempotent, restart-safe and preserves cash; no strategy exits
+  ---
+  duration_ms: 433.9522
+  type: 'test'
+  ...
+# Subtest: basket no-fill reservations persist through window and clear only at reconciliation deadline
+ok 2 - basket no-fill reservations persist through window and clear only at reconciliation deadline
+  ---
+  duration_ms: 47.8403
+  type: 'test'
+  ...
+# Subtest: basket dividends reconcile receivable to cash once, without assuming gross taxes or unsettled entitlement
+ok 3 - basket dividends reconcile receivable to cash once, without assuming gross taxes or unsettled entitlement
+  ---
+  duration_ms: 76.7767
+  type: 'test'
+  ...
+# Subtest: basket whole-share splits preserve invested cost and invalidate old marks; unknown fractions blocked
+ok 4 - basket whole-share splits preserve invested cost and invalidate old marks; unknown fractions blocked
+  ---
+  duration_ms: 62.9687
+  type: 'test'
+  ...
+# Subtest: basket valuation requires exact-date confirmed marks and complete known-action coverage
+ok 5 - basket valuation requires exact-date confirmed marks and complete known-action coverage
+  ---
+  duration_ms: 67.0662
+  type: 'test'
+  ...
+# Subtest: explicit user permission can be until revoked, but an unapproved assertion cannot authorize collection
+ok 6 - explicit user permission can be until revoked, but an unapproved assertion cannot authorize collection
+  ---
+  duration_ms: 0.3976
+  type: 'test'
+  ...
+# Subtest: rule/source reviews bind exact retained bytes and interpreted payload, not a verified flag
+ok 7 - rule/source reviews bind exact retained bytes and interpreted payload, not a verified flag
+  ---
+  duration_ms: 21.2751
+  type: 'test'
+  ...
+# Subtest: fresh admission binds full current universe, raw source bytes and official-rule interpretation; stale/omitted/corrupt data fail
+ok 8 - fresh admission binds full current universe, raw source bytes and official-rule interpretation; stale/omitted/corrupt data fail
+  ---
+  duration_ms: 117.6367
+  type: 'test'
+  ...
+# Subtest: fixed endpoint cannot be booked before final close even for an all-cash basket
+ok 9 - fixed endpoint cannot be booked before final close even for an all-cash basket
+  ---
+  duration_ms: 93.8192
+  type: 'test'
+  ...
+# Subtest: fractional reverse split and cash-in-lieu preserve the exact cash ledger and disclosed remaining basis
+ok 10 - fractional reverse split and cash-in-lieu preserve the exact cash ledger and disclosed remaining basis
+  ---
+  duration_ms: 140.5635
+  type: 'test'
+  ...
+# Subtest: capital return and full cash redemption reconcile without rewriting the original investment
+ok 11 - capital return and full cash redemption reconcile without rewriting the original investment
+  ---
+  duration_ms: 61.5319
+  type: 'test'
+  ...
+# Subtest: merger transfers cost and whole-share quantity to a distinct successor; missing prices remain unavailable
+ok 12 - merger transfers cost and whole-share quantity to a distinct successor; missing prices remain unavailable
+  ---
+  duration_ms: 50.067
+  type: 'test'
+  ...
+# Subtest: rights distribution retains a separately visible asset and requires funded precommitted subscription
+ok 13 - rights distribution retains a separately visible asset and requires funded precommitted subscription
+  ---
+  duration_ms: 67.9984
+  type: 'test'
+  ...
+# Subtest: unreconciled action changes and retrospective choices cannot mutate the ledger
+ok 14 - unreconciled action changes and retrospective choices cannot mutate the ledger
+  ---
+  duration_ms: 51.5625
+  type: 'test'
+  ...
+# Subtest: registered basket exposure and pending orders enter shared monitoring; ambiguous identity remains critical
+ok 15 - registered basket exposure and pending orders enter shared monitoring; ambiguous identity remains critical
+  ---
+  duration_ms: 350.2695
+  type: 'test'
+  ...
+# Subtest: prospective preparation has no activation path without explicit pilot authorization
+ok 16 - prospective preparation has no activation path without explicit pilot authorization
+  ---
+  duration_ms: 34.9663
+  type: 'test'
+  ...
+# Subtest: official source collector keeps raw failures and does not certify a reachable homepage as rules
+ok 17 - official source collector keeps raw failures and does not certify a reachable homepage as rules
+  ---
+  duration_ms: 8.6296
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3510.7553

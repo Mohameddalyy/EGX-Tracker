@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: fractional reverse split and cash-in-lieu preserve the exact cash ledger and disclosed remaining basis
+ok 1 - fractional reverse split and cash-in-lieu preserve the exact cash ledger and disclosed remaining basis
+  ---
+  duration_ms: 86.4327
+  type: 'test'
+  ...
+# Subtest: capital return and full cash redemption reconcile without rewriting the original investment
+ok 2 - capital return and full cash redemption reconcile without rewriting the original investment
+  ---
+  duration_ms: 55.9328
+  type: 'test'
+  ...
+# Subtest: merger transfers cost and whole-share quantity to a distinct successor; missing prices remain unavailable
+ok 3 - merger transfers cost and whole-share quantity to a distinct successor; missing prices remain unavailable
+  ---
+  duration_ms: 47.0649
+  type: 'test'
+  ...
+# Subtest: rights distribution retains a separately visible asset and requires funded precommitted subscription
+ok 4 - rights distribution retains a separately visible asset and requires funded precommitted subscription
+  ---
+  duration_ms: 48.7058
+  type: 'test'
+  ...
+# Subtest: unreconciled action changes and retrospective choices cannot mutate the ledger
+ok 5 - unreconciled action changes and retrospective choices cannot mutate the ledger
+  ---
+  duration_ms: 44.0102
+  type: 'test'
+  ...
+# Subtest: registered basket exposure and pending orders enter shared monitoring; ambiguous identity remains critical
+ok 6 - registered basket exposure and pending orders enter shared monitoring; ambiguous identity remains critical
+  ---
+  duration_ms: 344.3473
+  type: 'test'
+  ...
+# Subtest: prospective preparation has no activation path without explicit pilot authorization
+ok 7 - prospective preparation has no activation path without explicit pilot authorization
+  ---
+  duration_ms: 25.381
+  type: 'test'
+  ...
+# Subtest: official source collector keeps raw failures and does not certify a reachable homepage as rules
+ok 8 - official source collector keeps raw failures and does not certify a reachable homepage as rules
+  ---
+  duration_ms: 6.6093
+  type: 'test'
+  ...
+# Subtest: prospective config accepts a matching explicitly authorized admitted fixture and rejects substituted input
+ok 9 - prospective config accepts a matching explicitly authorized admitted fixture and rejects substituted input
+  ---
+  duration_ms: 334.5409
+  type: 'test'
+  ...
+# Subtest: unknown action notices remain an explicit accounting gap until a matching reconciled resolution
+ok 10 - unknown action notices remain an explicit accounting gap until a matching reconciled resolution
+  ---
+  duration_ms: 53.6864
+  type: 'test'
+  ...
+# Subtest: rights lapse realizes its allocated basis only after expiry and preserves original funding
+ok 11 - rights lapse realizes its allocated basis only after expiry and preserves original funding
+  ---
+  duration_ms: 49.0114
+  type: 'test'
+  ...
+# Subtest: rights subscription cannot use external capital or an election made after processing
+ok 12 - rights subscription cannot use external capital or an election made after processing
+  ---
+  duration_ms: 49.5196
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1681.0492

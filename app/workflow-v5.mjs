@@ -1,4 +1,5 @@
 // Read-only obligation bridge. Registry enrollment is explicit; no trading authorization.
+import {basketObligations} from './v5/basket-registry.mjs';
 import {registry,registeredLedger} from './v5/client-service.mjs';
 import {readEvaluationLedger} from './v5/evaluation-ledger.mjs';
 import {workflowHash} from './workflow-store.mjs';
@@ -17,5 +18,6 @@ export function v5Obligations(root,stocks=[]) {
   // Even cancelled/expired unresolved orders need delayed-fill reconciliation.
   for(const o of Object.values(a.state.orders))if(!o.resolved&&!o.fill)intents.push({...mapped(o),reconciliationRequired:true,plan:{side:'BUY',expiresAt:o.context?.reconciliationDeadline}});
  }catch(e){errors.push({code:'V5_LEDGER_UNREADABLE',critical:true,ledgerId:entry.id,message:e.message});}
+ const basket=basketObligations(root,stocks);positions.push(...basket.positions);intents.push(...basket.intents);errors.push(...basket.errors);ledgers.push(...basket.ledgers);
  return {positions,intents,errors,ledgers,status:errors.length?'INCOMPLETE_NOT_ZERO_HOLDINGS':'VERIFIED',fingerprint:workflowHash([positions,intents,ledgers,errors]),entryAuthorization:false};
 }

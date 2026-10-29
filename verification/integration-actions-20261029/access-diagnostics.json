@@ -1,0 +1,25 @@
+[
+  {
+    "url": "https://mcdr.com.eg/en",
+    "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))"
+  },
+  {
+    "url": "https://mcdr.com.eg/en/activities-services/clearing-settlement",
+    "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))"
+  },
+  {
+    "url": "https://www.mcsd.com.eg/en/activities-services/clearing-settlement",
+    "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))"
+  },
+  {
+    "url": "https://www.egx.com.eg/en/Trading_hours.aspx",
+    "error": "RemoteDisconnected('Remote end closed connection without response')"
+  },
+  {
+    "url": "https://beta.egx.com.eg/en/",
+    "finalUrl": "https://beta.egx.com.eg/en",
+    "status": 200,
+    "bytes": 400792,
+    "contentType": "text/html; charset=utf-8"
+  }
+]

@@ -1,3 +1,5 @@
+import {basketOverviews} from './basket-registry.mjs';
+import {cairoDate} from '../finality.mjs';
 import {clientOperations} from './client-operations.mjs';
 import {DatabaseSync} from 'node:sqlite';
 import {existsSync,readFileSync,mkdirSync,writeFileSync,renameSync,realpathSync} from 'node:fs';
@@ -13,8 +15,8 @@ export function registry(root){const p=join(directory(root),'registry.json');ret
 export function registeredLedger(root,id){const row=registry(root).ledgers.find(r=>r.id===id);required(row,'Unknown registered ledger');const base=realpathSync(root),p=realpathSync(resolve(root,row.path)),r=relative(base,p);required(r&&!r.startsWith('..')&&!isAbsolute(r),'Ledger must remain inside workspace');return {...row,path:p};}
 export function clientOverview(root,at=new Date().toISOString()){
  const r=registry(root),ledgers=r.ledgers.map(entry=>{try{const target=registeredLedger(root,entry.id),audit=readEvaluationLedger(target.path);return {id:entry.id,label:entry.label||entry.id,paused:audit.state.paused,sequence:audit.state.sequence,stateHash:audit.stateHash,status:audit.transitionReplay,controlsEnabled:entry.allowControls===true,cards:ledgerCards(audit,at)};}catch(e){return {id:entry.id,status:'UNAVAILABLE',error:e.message,cards:[]};}});
- const reportsPath=join(directory(root),'latest-checkpoint.json');
- return {at,operations:clientOperations(root,new Date(at)),schedules:'Not changed by this interface; scheduled reviews remain separately paused.',activation:false,realOrders:false,ledgers,candidates:[...(r.candidates||[]),...latestCandidates(root)].map(c=>candidateCard(c,at)),checkpoint:existsSync(reportsPath)?read(reportsPath):null,emptyReason:!r.ledgers.length?'No engineering ledger registered. Historical experiments are not automatically enrolled.':null};
+ const reportsPath=join(directory(root),'latest-checkpoint.json'),baskets=basketOverviews(root,cairoDate(new Date(at)));
+ return {at,baskets,operations:clientOperations(root,new Date(at)),schedules:'Not changed by this interface; scheduled reviews remain separately paused.',activation:false,realOrders:false,ledgers,candidates:[...(r.candidates||[]),...latestCandidates(root)].map(c=>candidateCard(c,at)),checkpoint:existsSync(reportsPath)?read(reportsPath):null,emptyReason:!r.ledgers.length&&!baskets.length?'No engineering ledger registered. Historical experiments are not automatically enrolled.':null};
 }
 // Read snapshot, then lock and compare it inside the same transaction that records the intervention.
 // This preserves the execution engine's immutable event/hash semantics without changing that release.

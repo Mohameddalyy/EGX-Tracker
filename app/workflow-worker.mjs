@@ -19,7 +19,7 @@ try{
   const integrity=db.prepare('PRAGMA quick_check').all(),active=db.prepare("SELECT id,pid FROM market_jobs WHERE status='running'").all();
   result={status:integrity.every(x=>Object.values(x)[0]==='ok')?'succeeded':'failed',integrity,activeCollectors:active,clockObservedAt:now.toISOString(),clockSynchronization:'UNKNOWN: operating system UTC is observed, not externally certified',providerDelay:'UNKNOWN',fetched:0};
  }else if(job.kind==='positions'){
-  const v5=existsSync(join(root,'data/v5-client/registry.json'))?(await import('./workflow-v5.mjs')).v5Obligations(root,db.prepare('SELECT * FROM stocks').all()):{positions:[],intents:[],errors:[],status:'VERIFIED',ledgers:[]};
+  const v5=(existsSync(join(root,'data/v5-client/registry.json'))||existsSync(join(root,'data/v5-client/baskets.json')))?(await import('./workflow-v5.mjs')).v5Obligations(root,db.prepare('SELECT * FROM stocks').all()):{positions:[],intents:[],errors:[],status:'VERIFIED',ledgers:[]};
   let state={positions:[],pending:[]},integrity=[],legacyError=null;
   try{const config=JSON.parse(readFileSync(join(root,'research/paper-experiment.json'),'utf8')),path=join(root,'data/experiments',config.id,'paper.sqlite');if(!existsSync(path))throw Error('Legacy paper ledger unavailable');const paper=new DatabaseSync(path,{readOnly:true});try{integrity=paper.prepare('PRAGMA quick_check').all();state=paperState(paper);}finally{paper.close();}}catch(e){legacyError=e.message;}
   let live=[],liveError=null;try{live=db.prepare("SELECT j.ticker,SUM(CASE WHEN f.side='Buy' THEN f.quantity ELSE -f.quantity END) quantity FROM fills f JOIN journal j ON j.id=f.entry_id WHERE f.voided_at IS NULL GROUP BY j.ticker HAVING quantity>0").all();}catch(e){liveError=e.message;}

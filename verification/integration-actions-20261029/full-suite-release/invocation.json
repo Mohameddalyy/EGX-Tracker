@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-29T20:13:12.364Z",
+  "node": "v24.22.1",
+  "executionReleaseHash": "c532d61c9e7b406b9f00e7aecc5b317734841cfa77f7451c5f72e12eef592a76",
+  "evaluationReleaseHash": "d6c2807e9ca461cb06b242c6820256e04dc81ae20cecfad96866a120d88a1a70",
+  "planHash": "b214cb37674a993dae8023f95945b051f2133df46ab16ad61b536575aed3547e",
+  "decisionSchemaHash": "8678334e55aa7877a6f7c2ffc6a36170729386704681e194d001d8429cc61535",
+  "scope": "OFFLINE_ENGINEERING_ONLY",
+  "activation": false,
+  "command": "tests"
+}

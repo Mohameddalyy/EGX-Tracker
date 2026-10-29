@@ -31,7 +31,7 @@ export function openBasketStore(path,config=null) {
         this.replay();
         const prior=db.prepare('SELECT * FROM basket_events WHERE id=?').get(event.id);
         if(prior){required(prior.event===JSON.stringify(event),'Event ID reuse with different payload');db.exec('COMMIT');return {...JSON.parse(prior.result),idempotent:true};}
-        const before=read(),last=db.prepare('SELECT eventHash,stateHash,sequence FROM basket_events ORDER BY sequence DESC LIMIT 1').get(),config=JSON.parse(db.prepare('SELECT json FROM basket_config').get().json);
+        const before=read();if(before.scope==='PROSPECTIVE_BASKET_PAPER')required(Math.abs(ms(event.at)-+clock)<60000,'Actual prospective commit clock required');const last=db.prepare('SELECT eventHash,stateHash,sequence FROM basket_events ORDER BY sequence DESC LIMIT 1').get(),config=JSON.parse(db.prepare('SELECT json FROM basket_config').get().json);
         required(last ? last.stateHash===hash(before)&&last.sequence===before.sequence : hash(before)===hash(initialState(config)),'Persisted state integrity mismatch');
         const {state,result}=transition(before,event),previousHash=last?.eventHash||hash(config);
         const eventHash=hash({previousHash,event,stateHash:hash(state)});

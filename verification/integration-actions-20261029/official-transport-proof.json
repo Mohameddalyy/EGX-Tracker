@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-29T20:09:58.862Z",
+  "rows": [
+    {
+      "id": "egx-current",
+      "url": "https://beta.egx.com.eg/en",
+      "purpose": "SITE_ENTRY_ONLY",
+      "replaces": "https://www.egx.com.eg/en/Trading_hours.aspx",
+      "at": "2026-10-29T20:09:58.862Z",
+      "status": "CAPTURED_UNREVIEWED",
+      "httpStatus": 200,
+      "finalUrl": "https://beta.egx.com.eg/en",
+      "contentType": "text/html; charset=utf-8",
+      "title": "EGX",
+      "sha256": "73c6aad6f91f57923012f0abdd60a36da991188d3012435a917ea7fd5d1dea61",
+      "path": "C:\\Users\\LENOVO\\Documents\\ChatGPT\\EGX-Tracker\\data\\research\\evidence\\official-access\\73c6aad6f91f57923012f0abdd60a36da991188d3012435a917ea7fd5d1dea61.response",
+      "bytes": 400792,
+      "ruleAdmission": false
+    },
+    {
+      "id": "mcdr-current",
+      "url": "https://mcdr.com.eg/en",
+      "purpose": "SITE_ENTRY_ONLY",
+      "at": "2026-10-29T20:09:58.862Z",
+      "status": "NETWORK_UNAVAILABLE",
+      "error": "fetch failed",
+      "cause": "ECONNREFUSED",
+      "ruleAdmission": false
+    },
+    {
+      "id": "mcdr-actions",
+      "url": "https://www.mcdr.com.eg/ar/activities-services/prescribed-operations/distribute-cash-profits",
+      "purpose": "ACTION_OVERVIEW_NOT_EFFECTIVE_INSTRUMENT_RULES",
+      "at": "2026-10-29T20:09:58.862Z",
+      "status": "NETWORK_UNAVAILABLE",
+      "error": "fetch failed",
+      "cause": "ECONNREFUSED",
+      "ruleAdmission": false
+    }
+  ],
+  "scope": "Official-source transport diagnostics and retained evidence; no rule verification inferred"
+}
